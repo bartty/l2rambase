@@ -1,0 +1,1253 @@
+# List of working quests and static quest drop
+# Drop: currentDrop/neededItems
+# Chance: chanceToDropQuestItem
+
+# 101 Sword Of Solidarity
+Drop: 1/1 
+Chance: 100%
+
+#102 Fungus Fever
+Drop: 2/10 
+Chance: 100%
+
+#10273 Good Day To Fly
+Drop: 1/5
+Chance: 100%
+
+# 10275 Containing The Attribute Power
+Drop: 1/6
+Chance: 100%
+
+#10276 Mutated Kaneus - Gludio
+Drop: 1/1
+Chance: 100%
+
+#10277 Mutated Kaneus - Dion
+Drop: 1/1
+Chance: 100%
+
+#10278 Mutated Kaneus - Heine
+Drop: 1/1
+Chance: 100%
+
+#10279 Mutated Kaneus - Oren
+Drop: 1/1
+Chance: 100%
+
+#10280 Mutated Kaneus - Schuttgart
+Drop: 1/1
+Chance: 100%
+
+#10281 Mutated Kaneus - Rune
+Drop: 1/1
+Chance: 100%
+
+#103 Spirit of Craftsman
+Drop: 2/10
+Chance: 100%
+
+#104 Spirit of Mirrors
+Drop: 1/1
+Chance: 100%
+
+#105 Skirmish with Orcs
+Drop: 1/1
+Chance: 100%
+
+#106 Forgotten Truth
+Drop: 1/1
+Chance: 100%
+
+#107 Merciless Punishment
+Drop: 1/1
+Chance: 100%
+
+#108 Jumble Tumble Diamond Fuss
+Drop: 2/10
+Drop: 1/1
+Chance: 100%
+
+#111 Elrokian Hunters Proof
+Drop: 5/45
+Drop: 2/10
+Chance: 100%
+
+#117 Ocean of Distant Star
+Drop: 1/1
+Chance: 100%
+
+#118 To Lead and be led
+Drop: 1/10
+Drop: 1/8
+Chance: 100%
+
+#123 The Leader and the Follower
+Drop: 1/10
+Drop: 1/8
+Chance: 100%
+
+#134 Temple Missionary
+Drop: 1/3
+Drop: 1/1
+Chance: 100%
+
+#135 Temple Executor
+Drop: 2/10
+Chance: 100%
+
+#136 More than Meets the Eye
+Drop: 5/35
+Drop: 5/5
+Chance: 100%
+
+#137 Temple Champion Part 1
+Drop: 3/30
+Chance: 100%
+
+#138 Temple Champion Part 2
+Drop: 2/10
+Chance: 100%
+
+#139 Shadow Fox Part 1
+Drop: 5/Unlimited
+Chance: 100%
+Drop: 2/Unlimited
+Chance: 70%
+
+#140 Shadow Fox Part 2
+Drop: 5/Unlimited
+Chance: 100%
+
+#141 Shadow Fox Part 3
+Drop: 5/30
+Chance: 100%
+
+#142 Fallen Angel Request of Dawn
+Drop: 5/30
+Chance: 100%
+
+#144 Pailaka Injuired Dragon
+Drop: 1/1
+Chance: 100%
+
+#151 Save My Sister
+Drop: 1/1
+Chance: 100%
+
+#152 Shards of Golem
+Drop: 1/5
+Chance: 100%
+
+#154 Sacrifice To Sea
+Drop: 2/10
+Chance: 100%
+
+#157 Recover Smuggled
+Drop: 5/20
+Chance: 100%
+
+#158 Seed of Evil
+Drop: 1/1
+Chance: 100%
+
+#159 Protect Headsprings
+Drop: 1/1
+Drop: 1/5
+Chance: 100%
+
+#162 Curse of Fortress
+Drop: 2/10
+Drop: 1/3
+Chance: 100%
+
+#163 Legacy of Poet
+Drop: 1/4
+Chance: 100%
+
+#164 BloodFiend
+Drop: 1/1
+Chance: 100%
+
+#165 Wild Hunt
+Drop: 1/12
+Chance: 100%
+
+#169 Nightmare Children
+Drop: 1/1
+Drop: 1/Unlimited
+Chance: 100%
+
+#170 Dangerous Allure
+Drop: 1/1
+Chance: 100%
+
+#171 Acts of Evil
+Drop: 5/20
+Drop: 5/30
+Chance: 100%
+Spawn: 10%
+Drop: 1/1
+Chance: 100%
+
+#175 The Way of the Warrior
+Drop: 1/5
+Drop: 2/10
+
+#186 Contract Execution
+Drop: 1/1
+Chance: 100%
+
+#193 Seven Sign Dying Message
+Drop: 1/1
+Chance: 100%
+
+#196 Seven Sign Seal of the Emperor
+Drop: 1/4
+Chance: 100%
+
+#197 Seven Sign The Sacred Book of Seal
+Drop: 1/1
+Chance: 100%
+
+#198 Seven Sign Embryo
+Drop: 1/1
+Chance: 100%
+
+#211 Trial of Chalenger
+Drop: 1/1
+Chance: 100%
+
+#212 Trial of Duty
+Drop: 1/20
+Drop: 1/1
+Chance: 100%
+
+#213 Trial of Seeker
+Drop: 1/1
+Drop: 1/10
+Chance: 100%
+
+#214 Trial of Scholar
+Drop: 1/1
+Drop: 1/2
+Drop: 1/3
+Chance: 100%
+
+#215 Trial of Pilgrim
+Drop: 1/1
+Chance: 100%
+
+#216 Trial of Guildsman
+Drop: 1/1
+Drop: 1/29
+Drop: 5/70
+Drop: 7/70
+Drop: 10/70
+Chance: 100%
+
+# 217 Testimony of Trust
+Drop: 1/10
+Drop: 1/5
+Chance: 100%
+
+#218 Testimony of Life
+Drop: 1/20
+Drop: 1/1
+Chance: 100%
+
+#219 Testimony of Fate
+Drop: 1/10
+Drop: 1/1
+Chance: 100%
+
+#22 Tragedy in Von Hellmann Forest
+Drop: 1/1
+Chance: 100%
+
+#220 Testimony of Glory
+Drop: 1/1
+Drop: 1/2
+Drop: 1/4
+Drop: 1/20
+Drop: 1/30
+Chance: 100%
+
+#221 Testimony of Prosperity
+Drop: 1/10
+Drop: 1/20
+Chance: 100%
+
+#222 Test of Duelist
+Drop: 1/3
+Drop: 1/10
+Chance: 100%
+
+#223 Test of Champion
+Drop: 1/10
+Drop: 1/30
+Chance: 100%
+
+#224 Test of Sagitarius
+Drop: 1/1
+Drop: 1/10
+Chance: 100%
+
+#225 Test of Searcher
+Drop: 1/1
+Drop: 1/4
+Drop: 1/10
+Chance: 100%
+
+#226 Test of Healer
+Drop: 1/1
+Chance: 100%
+
+#227 Test of Reformer
+Drop: 1/1
+Chance: 100%
+
+#228 Test of Magus
+Drop: 1/5
+Drop: 1/10
+Drop: 1/20
+Chance: 100%
+
+#229 Test of Witchcraft
+Drop:  1/1
+Drop: 1/20
+Chance: 100%
+
+#230 Test of Summoner
+Drop: 1/1
+Drop: 1/2
+Drop: 1/3
+Drop: 1/4
+Drop: 1/5
+Chance: 100%
+
+#231 Test of Maestro
+Drop: 1/1
+Drop: 1/10
+Chance: 100%
+
+#232 Test of Lord
+Drop: 1/1
+Drop: 1/10
+Drop: 1/20
+Chance: 100%
+
+#233 Test of Warspirit
+Drop; 1/1
+Drop: 1/10
+Drop 1/13
+Chance: 100%
+
+#234 Fates Whisper
+Drop: Normal
+Chance: 100%
+
+#235 Mimirs Elixir
+Drop: Normal
+Chance: 100%
+
+#236 Seed of Chaos
+Drop: Normal
+Chance: 100%
+
+#238 Succes Failure of Business
+Drop: 2/10
+Drop: 2/20
+Chance: 100%
+
+#239 Wont You Join Us
+Drop: 2/20
+Drop: 2/20
+Chance: 100%
+
+#24 Inhabitants of the Forest Of The Dead
+Drop: 1/1
+Chance: 100%
+
+#240 Im the only one you can trust
+Drop: 5/20
+Chance: 100%
+
+#241 Possessor of a Precious Soul Part 1
+Drop: 1/1
+Drop: 1/5
+Drop: 1/10
+Chance: 100%
+
+#242 Possesor of a Precious Soul Part 2
+Drop: 1/5
+Chance: 100%
+
+#243 Possesor of a Precious Soul Part 3
+Drop: 1/1
+Chance: 100%
+
+#25 Hifing Behind The Truth
+Drop: 1/1
+Chance: 100%
+
+#257 Guard is Busy
+Drop: 3/Unlimited
+Chance: 100%
+
+#258 Bring Wolf Pelt
+Drop: 5/40
+Chance: 100%
+
+#259 Ranchers Plea
+Drop: 3/Unlimited
+Chance: 100%
+
+#260 Hunt for Orcs
+Drop: 3/Unlimited
+Chance: 100%
+
+#261 Dream of Moneylender
+Drop: 2/8
+Chance: 100%
+
+#262 Bring Me Mushrooms
+Drop: 2/10
+Chance: 100%
+
+#263 Kill All Syplhs
+Drop: 3/Unlimited
+Chance: 100%
+
+#264 Keen Claws
+Drop: 5/50
+Chance: 100%
+
+#265 Chains of Slavery
+Drop: 2/Unlimited
+Chance: 100%
+
+#266 Plea of Pixies
+Drop: 5/100
+Chance: 100%
+
+#267 Wrath of Verdure
+Drop: 4/Unlimited
+Chance: 100%
+
+#268 Traces of Evil
+Drop: 1/29
+Chance: 100%
+
+#269 Invention Ambition
+Drop: 1/Unlimited
+Chance: 100%
+
+#271 Proof ov Valor
+Drop: 5/50
+Chance: 100%
+
+#272 Wrath of Ancestors
+Drop: 5/50
+Chance: 100%
+
+#273 Invaders of Holyland
+Drop: 2/Unlimited
+Chance: 100%
+
+#274 Against Wolf Men
+Drop: 5/40
+Chance: 100%
+
+#275 Black Winged Spies
+Drop: 5/70
+Chance: 100%
+
+#276 Totem of the Hestui
+Drop: 1/1
+Chance: 100%
+
+#277 Gatekeeper Offering
+Drop: 5/20
+Chance: 100%
+
+#280 The Food Chain
+Drop: 2/Unlimited
+Drop: 3/Unlimited
+Chance: 100%
+
+#281 Head for the Hills
+Drop: 3/Unlimited
+Chance: 100%
+
+#283 The Few, The Proud, The Brave
+Drop: 3/Unlimited
+Chance: 100%
+
+#284 Muertos Feather
+Drop: 3/Unlimited
+Chance: 100%
+
+#286 Fabulous Feathers
+Drop: 4/80
+Chance: 100%
+
+#291 Red Bonnets Revenge
+Drop: 5/40
+Chance: 100%
+
+#292 Crush Brugands
+Drop: 3/Unlimited
+Chance: 100%
+
+#293 The Hidden Veins
+Drop: 3/Unlimited
+Chance: 50%(1) - 50%(2) = 100%
+
+#294 Covert Business
+Drop: 5/100
+Chance: 100%
+
+#295 Dreams of Fight
+Drop: 5/50
+Chance: 100%
+
+#296 Silk of Tarantula
+Drop: 2/Unlimited
+Chance: 50%(1) - 50%(2) = 100%
+
+#297 Gatekeepers Favor
+Drop: 5/20
+Chance: 100%
+
+#298 Lizardmens Conspiracy
+Drop: 5/50
+Chance: 100%
+
+#299 Gather Ingrediens For A Pie
+Drop: 5/100
+Chance: 100%
+
+#3 Will the Seal be broken?
+Drop: 1/1
+Chance: 100%
+
+#300 Hunting Leto Lizardman
+Drop: 3/60
+Chance: 100%
+
+#303 Collect Arrowheads
+Drop: 2/10
+Chance: 100%
+
+#306 Crystal Of Fireice
+Drop: 3/Unlimited
+Chance: 100%
+
+#308 Reed Field Maintenance
+Drop: 1/Unlimited
+Chance: 100%
+
+#309 For A Good Cause
+Drop: 1/Unlimited
+Chance: 100%
+
+#311 Explusion of Evil Spirits
+Drop: 1/10
+Drop: 1/Unlimited
+Chance: 100%
+
+#312 Take Advantage of The Crisis
+Drop: 1/Unlimited
+Chance: 100%
+
+#313 Colect Spores
+Drop: 2/10
+Chance: 100%
+
+#316 Destroy Plaguebringers
+Drop: 1/1
+Drop: 3/Unlimited
+Chance: 100%
+
+#317 Catch the Wind
+Drop: 3/Unlimited
+Chance: 100%
+
+#319 Scent of Death
+Drop: 1/5
+Chance: 100%
+
+#32 An Obvious Lie
+Drop: 2/20
+Chance: 100%
+
+#320 Bones Tell Future
+Drop: 2/10
+Chance: 100%
+
+#324 Sweetest venom
+Drop: 2/10
+Chance: 100%
+
+#325 Grim Collector
+Drop: 2/Unlimited
+Chance: 100%
+
+#326 Vanquish Remnants
+Drop: 3/Unlimited
+Chance: 100%
+
+#327 Reclaim The Land
+Drop: 3/Unlimited
+Chance: 100%
+
+#328 Sense For Business
+Drop: 3/Unlimited
+Drop: 2/Unlimited 
+Chance: 100%
+
+#329 Curiosity Of Dwarf
+Drop: 2/Unlimited
+Chance: 100%
+
+#330 Adept of Taste
+Drop: 2/10
+Drop: 2/20
+Drop: 2/30
+Drop: 2/40
+Chance: 100%
+
+#331 Arrow For Vengeance
+Drop: 3/Unlimited
+Chance: 100%
+
+#333 Black Lion Hunt
+Drop: 3/Unlimited
+Drop: 2/Unlimited
+Chance: 100%
+
+#334 The Wishing Potion
+Drop: 1/1
+Chance-Spawn: 50%
+Chance-Drop: 100%
+
+#335 The Song of The Hunter
+Drop: 1/1
+Drop: 1/20
+Drop: 1/30
+Drop: 1/40
+Chance: 100%
+
+#336 Coins of Magic
+Drop: 1/1
+Drop: 4/Unlimited
+Chance: 100%
+
+#337 Audience with Land Dragon
+Drop: 1/1
+Chance: 100%
+
+#338 Alligator Hunter
+Drop: 3/Unlimited
+Chance: 100%
+
+#34 In Search of Clothes
+Drop: 2/10
+Chance: 100%
+
+#340 Subjugation of Lizardmen
+Drop: 1/1
+Drop: 2/30
+Chance: 100%
+
+#341 Hunting for Wild Beast
+Drop: 2/20
+Chance: 100%
+
+#344 1000 Years, the End of Lamentation
+Drop: 4/Unlimited
+Chance: 100%
+
+#345 Method To Raise The Dead
+Drop: 1/1
+Drop: 2-9/Unlimited
+Chance: 100%
+
+#347 Calculator
+Drop: 2/10
+Chance: 100%
+
+#348 Arrogant Search
+Drop: 1/1
+Chance: 100%
+
+#35 Find Glittering Jewelery
+Drop: 2/10
+Chance: 100%
+
+#351 Black Swan
+Drop_Fang:  3/Unlimited
+Chance: 100%
+Drop_Barrel: 3/Unlimited
+Chance: 40%
+Exchange Barrel  - Bills: 1/2
+
+#352 Help Rood Raise a new Pet
+Drop: 2/ Unlimited
+Chance: 100%
+
+#353 Power of Darkness
+Drop: 3/Unlimited
+Chance: 100%
+
+#354 Conquest of Alligator Island
+Drop_Map: 1/10
+Chance: 30%
+Drop_Toth: 2/Unlimited
+Chance: 100%
+
+#355 Family Honor
+Drop: 2/Unlimited
+Chance: 50%(1)-50%(2) = 100%
+
+#356 Dig Up The Sea Of Spores
+Drop: 2/50
+Chance: 100%
+
+#357 Warehouse Keepers Ambitio
+Drop: 3/Unlimited
+Chane: 100%
+
+#358 Illegitimate Child of a Goddess
+Drop: 3/108
+Chance: 100%
+
+#359 For Sleepless
+Drop: 3/60
+Chance: 100%
+
+#36 Make a Seewing Kit
+Drop: 1/5
+Chance: 100%
+
+#360 Plunder Their Supplies
+Drop: 3/Unlimited
+Drop 1/5
+Chance: 100%
+
+#365  Devils Legacy
+Drop: 2/Unlimited
+Chance: 100%
+
+#366 Silver Haired Shaman
+Drop: 2/Unlimited
+Chance: 100%
+
+#368 Trespassing Into The Sacred Area
+Drop: 3/Unlimited
+Chance: 100%
+
+#369 Collector of Jewels
+Drop: 5/50
+Drop: 5/200
+Chance: 100%
+
+#370 A wiseman Sows Seeds
+Drop: 1/1
+Chance: 100%
+
+#371 Shriek Of Ghosts
+Drop: 2/Unlimited
+Chance: 50%(1)-50%(2)=100%
+
+#372 Legacy Of Insolence
+Drop: 4/Unlimited
+Chance: 100%
+
+#373 Suplier of Reagents
+Drop: 2/Unlimited
+Chance: 100%
+
+#374 Whisper of Dreams Part 1
+Drop: 5/65
+Chance: 100%
+Reward: Light,Heavy,Robe Parts
+
+#375 Whisper of Dreams Part 2
+Drop: 5/100
+Chance: 100%
+Reward: Random Light,Heavy,Robe Recipes
+
+#376 Giants Exploration Part 1
+Drop: 1/Unlimited
+Chance: 100%
+
+#377 Giants Exploration Part 2
+Drop: 1/Unlimited
+Chance: 100%
+
+#379 Fantasy Wine
+Drop: 2/80
+Drop: 2/100
+Chance: 100%
+
+#38 Dragon Fangs
+Drop: 5/100
+Drop; 5/50
+Chance: 100%
+
+#380 Bring out The Flavor of Ingredients
+Drop: 2/4
+Drop: 2/10
+Drop: 2/20
+Chance: 100%
+
+#381 Lets Become a Royal Member
+Drop: 1/1
+Chance: 100%
+
+#382 Kalis Magic Coin
+Drop: 4/Unlimited
+Chance: 100%
+
+#384 Warehouse Keepers Pastime
+Drop: 2/Unlimited
+Chance: 100%
+
+#385 Yoke of the Past
+Drop: 2/Unlimited
+Chance: 100%
+
+#386 Stolen Diginity
+Drop: 5/100
+Chance: 100%
+
+#39 Red Eyed Invaders
+Drop: 5/30
+Drop: 5/100
+Chance: 100%
+
+#401 Path to Warrior
+Drop: 1/10
+Drop: 2/20
+Chance: 100%
+
+#402 Path to Knight
+Drop: 2/10
+Drop: 2/12
+Drop: 2/20
+Chance: 100%
+
+#403 Path to Rouge
+Drop: 2/10
+Drop: 1/1
+Chance: 100%
+
+#404 Path to Wizard
+Drop: 1/1
+Chance: 100%
+
+#405 Path to Cleric
+Drop: 1/1
+Chance: 100%
+
+#406 Path to Elven Knight
+Drop: 2/20
+Chance: 100%
+
+#407 Path to Elven Scout
+Drop: 1/1
+Chance: 100%
+
+#408 Path to Elven Wizard
+Drop: 1/5
+Drop: 1/5
+Drop: 1/2
+Chance: 100%
+
+#409 Path to Oracle
+Drop: 1/1
+Drop: 1/1
+Chance: 100%
+
+#410 Path to Palus Knight
+Drop: 1/13
+Drop: 1/1
+Drop: 1/5
+Chance: 100%
+
+#411 Path to Assassin
+Drop: 1/1
+Drop: 1/10
+Chance: 100%
+
+#412 Path to Dark Wizard
+Drop: 1/2
+Drop: 1/3
+Drop: 1/3
+Chance: 100%
+
+#413 Path to Shilien Oracle
+Drop: 1/1
+Drop: 2/10
+Chance: 100%
+
+#414 Path to Orc Rider
+Drop: 2/40
+Drop: 1/10
+Drop: 1/2
+Drop: 1/1
+Chance: 100%
+
+#415 Path to Orc Monk
+Drop: 1/1
+Chance: 100%
+
+#416 Path to Orc Shaman
+Drop: 1/1
+Drop: 1/2
+Chance: 100%
+
+#417 Path to Scavenger
+Drop: 1/5
+Drop: 2/20
+Chance: 100%
+
+#418 Path to Artisan
+Drop: 1/10
+Drop: 1/2
+Drop: 1/1
+Chance: 100%
+
+#419 Get a Pet
+Drop: 5/50
+Chance: 100%
+
+#42 Help The Uncle
+Drop: 3/30
+Chance: 100%
+
+#420 Little Wings
+Drop: 1/10
+Drop: 1/20
+Chance: 100%
+
+#422 Repent Your Sins
+Drop: 1/1
+Drop: 1/3
+Drop: 1/10
+Chance: 100%
+
+#426 Fishing Shot
+Drop: 4-8/Unlimited
+Chance: 100%
+
+#43 Help The Sister
+Drop: 3/30
+Chance: 100%
+
+#431 Wedding March
+Drop: 5/50
+Chance: 100%
+
+#432 Brithday Party Song
+Drop: 5/50
+Chance: 100%
+
+#44 Help The Son
+Drop: 3/30
+Chance: 100%
+
+#50 Lanoscos Special Bait
+Drop: 5/100
+Chance: 100%
+
+#501 Proof of Clan Alliance
+Drop_Herb: 1/1
+Chance: 100%
+Bingo_Chance: 25%
+
+#503 Pursuit of Clan Ambition
+Drop: 1/6
+Drop: 1/10
+Chance: 100%
+
+#508 The Clan Reputation
+Drop: 1/1
+Chance: 100%
+
+#509 The Clan Prestige
+Drop: 1/1
+Chance: 100%
+
+#51 O Fulles Special Bait
+Drop: 5/100
+Chance: 100%
+
+#510 A Clans Reputation
+Drop: 1/1
+Chance: 100%
+
+#52 Willie's Special Bait
+Drop: 5/100
+Chance: 100%
+
+#53 Linnaeus Special Bait
+Drop: 5/100
+Chance: 100%
+
+#60 Good Work Reward
+Drop: 1/1
+Chance: 100%
+
+#601 Watching Eyes
+Drop: 5/100
+Chance: 100%
+
+#602 Shadow of Light
+Drop: 5/100
+Chance: 100%
+
+#603 Daimon the White-Eyed Part 1
+Drop: 5/200
+Chance: 100%
+
+#604 Daimon the White-Eyed Part 2
+Drop: 1/1
+Drop: 1/1
+Chance: 100%
+
+#605 Alliance with Ketra Orcs
+Drop: 4/100
+Drop: 4/200
+Drop: 4/300
+Chance: 100%
+
+#606 War with Varka Silenos
+Drop: 2/Unlimited
+Chance: 100%
+
+#607 Prove Your Courage! - Ketra
+Drop: 1/1
+Chance: 100%
+
+#608 Slay the Enemy Commander - Ketra
+Drop: 1/1
+Chance: 100%
+
+#610 Magical Power of Water Part 2
+Drop: 1/1
+Chance: 100%
+
+#611 Alliance with Varka Silenos
+Drop: 4/100
+Drop: 4/200
+Drop: 4/300
+Chance: 100%
+
+#612 War with Ketra Orcs
+Drop: 2/Unlimited
+Chance: 100%
+
+#613 Prove Your Courage - Varka
+Drop: 1/1
+Chance: 100%
+
+#614 Slay the Enemy Commander - Varka
+Drop: 1/1
+Chance: 100%
+
+#616 Magical Power of Fire Part 2
+Drop: 1/1
+Chance: 100%
+
+#617 Gather The Flames
+Drop: 2/Unlimited
+Chance: 100%
+
+#618 Into The Flame
+Drop: 5/50
+Chance: 100%
+
+#619 Relics of the Old Empire
+Drop: 2/Unlimited
+Chance: 100%
+Drop: 1/Unlimited
+Chance: 15%
+
+#62 Path of the Trooper
+Drop: 1/1
+Drop: 1/5
+Drop: 1/10
+Chance: 100%
+
+#620 Four Goblets
+Drop_Box: 1/Unlimited
+Chance: 100%
+
+#623 The Finest Food
+Drop: 5/100
+Chance: 100%
+
+#624 The Finest Ingredients Part 1
+Drop: 5/50
+Chance: 100%
+
+#625 The Finest Ingredients Part 2
+Drop: 1/1
+Chance: 100%
+
+#626 A Dark Twilight
+Drop: 2/300
+Chance: 100%
+
+#627 Hearth In Search of Power
+Drop: 3/300
+Chance: 100%
+
+#628 Hunt of the Golden Ram Mercenary Force
+Drop: 2/100
+Chance: 100%
+
+#629 CleanUpTheSwampOfScreams
+Drop:  2/Unlimited
+Chance: 100%
+
+#63 Path of the Warder
+Drop: 1/1
+Drop: 1/5
+Drop: 1/10
+Chance: 100%
+
+#631 Delicious Top Choice Meat
+Drop: 4/120
+Chance: 100%
+
+#632 Necromancers Request
+Drop: 3/Unlimited
+Drop: 5/200
+Chance: 100%
+
+#633 In Forgotten Village
+Drop: 3/Unlimited
+Drop: 5/200
+Chance: 100%
+
+#634 In Search of Dimensional Fragments
+Drop: 4-12/Unlimited
+Chance: 100%
+
+#637 Through the Gate Once More
+Drop: 2/10
+Chance: 100%
+
+#638 Seekers of the Holy Grail
+Drop: 3/X
+Reward Chance: 30%
+Chance: 100%
+
+#639 Guardians of the Holly Grail
+Drop: 2/X
+Chance: 100%
+
+#64 Certifiued Berserker
+Drop: 1/1
+Drop: 1/20
+Chance: 100%
+
+#640 The Zero Hour
+Drop: 3/Unlimited
+Rewards: Epilogue + Final
+Chance: 100%
+
+#642 A powerfull Primeval Creature
+Drop: 2/Unlimited
+Chance: 100%
+
+#643 Rise and Fall of the Elroki Tribe
+Drop: 2/Unlimited
+Chance: 100%
+
+#644 Grave Robber Annihilation
+Drop: 3/120
+Chance: 100%
+
+#645 GhostsOfBatur
+Drop: 1/Unlimited
+Chance: 100%
+
+#647 InfluxOfMachines
+Drop: 5/500
+Chance: 100%
+
+#648 An Ice Merchant Dream
+Drop: 4/Unlimited
+Chance: 100%
+Drop: 2/Unlimited
+Chance: 90%
+
+#649 A Looter and a Railroad Man
+Drop: 5/200
+Chance: 100%
+
+#65 Certifited SoulBraker
+Drop: 1/10
+Chance: 100%
+
+#650 A broken dream
+Drop: 4/Unlimited
+Chance: 100%
+
+#654 Journey to a Settlement
+Drop: 1/1
+Chance: 100%
+
+#659  I'd Rather be Collecting Fairy Breath
+Drop: 3/Unlimited
+Chance: 100%
+
+#66 Certified Arbalester
+Drop: 1/10
+Drop: 1/30
+Chance: 100%
+
+#660 Aiding the Floran Village
+Drop: 2/Unlimited
+Chance: 100%
+
+#661 Making the Harvest Ground Safe
+Drop: 2/Unlimited
+Chance: 100%
+
+#662 A Game of Cards
+Drop[<65]: 3/Unlimited
+Drop [66-70]: 2/Unlimited
+Drop[>70]: 1/Unlimited
+Chance: 100%
+
+#663 Seductive Whispers
+Drop[<55]: 3/Unlimited
+Drop[55-65]: 2/Unlimited
+Drop[>66]: 1/Unlimited
+Chance: 100%
+Round_1: 50%
+Round_2: 35%
+Round_3: 20%
+Round_4: 15%
+Round_5: 10%
+Round_6: 10%
+Round_7: 10%
+Round_8: 10%
+
+#668 Defeat The Elrokian Raiders
+Drop: 1/Unlimited
+Chance: 100%
+
+#999 Turtorial 
+Drop: 1/1
+Chance: 100%
+
+#Awl Under Foot
+Drop[Boss]: 1/Unlimited
+Drop[Minion]: 15-50/Unlimited
+Reward:  +/- 800 per 4h

@@ -1,0 +1,66 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<list applyTaxes="true">
+
+  <!-- Blessed Scrolls -->
+  <item id="1">
+    <ingredient id="13419" count="350"/>
+    <ingredient id="57" count="1500000"/>
+    <production id="13731" count="1"/>
+  </item>
+
+  <!-- Blessed Scrolls -->
+  <item id="2">
+    <ingredient id="13419" count="350"/>
+    <ingredient id="57" count="1500000"/>
+    <production id="13732" count="1"/>
+  </item>
+
+  <!-- Blessed Scrolls -->
+  <item id="3">
+    <ingredient id="13419" count="350"/>
+    <ingredient id="57" count="1500000"/>
+    <production id="13733" count="1"/>
+  </item>
+
+  <!-- Blessed Scrolls -->
+  <item id="4">
+    <ingredient id="13419" count="350"/>
+    <ingredient id="57" count="1500000"/>
+    <production id="13734" count="1"/>
+  </item>
+
+  <!-- Blessed Scrolls -->
+  <item id="5">
+    <ingredient id="13419" count="350"/>
+    <ingredient id="57" count="1500000"/>
+    <production id="13735" count="1"/>
+  </item>
+
+  <!-- Blessed Scrolls -->
+  <item id="6">
+    <ingredient id="13419" count="350"/>
+    <ingredient id="57" count="1500000"/>
+    <production id="13736" count="1"/>
+  </item>
+
+  <!-- Blessed Scrolls -->
+  <item id="7">
+    <ingredient id="13419" count="350"/>
+    <ingredient id="57" count="1500000"/>
+    <production id="13737" count="1"/>
+  </item>
+
+  <!-- Blessed Scrolls -->
+  <item id="8">
+    <ingredient id="13419" count="350"/>
+    <ingredient id="57" count="1500000"/>
+    <production id="13738" count="1"/>
+  </item>
+
+  <!-- Blessed Scrolls -->
+  <item id="9">
+    <ingredient id="13419" count="350"/>
+    <ingredient id="57" count="1500000"/>
+    <production id="13739" count="1"/>
+  </item>
+</list>

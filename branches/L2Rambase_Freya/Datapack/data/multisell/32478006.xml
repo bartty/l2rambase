@@ -1,0 +1,227 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<list applyTaxes="true">
+
+  <!-- Belt -->
+  <item id="1">
+    <ingredient id="13419" count="150"/>
+    <ingredient id="57" count="150000"/>
+    <production id="13938" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="2">
+    <ingredient id="13419" count="200"/>
+    <ingredient id="57" count="200000"/>
+    <production id="13939" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="3">
+    <ingredient id="13419" count="250"/>
+    <ingredient id="57" count="250000"/>
+    <production id="13940" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="4">
+    <ingredient id="13419" count="300"/>
+    <ingredient id="57" count="300000"/>
+    <production id="13941" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="5">
+    <ingredient id="13419" count="200"/>
+    <ingredient id="57" count="200000"/>
+    <production id="13942" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="6">
+    <ingredient id="13419" count="250"/>
+    <ingredient id="57" count="250000"/>
+    <production id="13943" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="7">
+    <ingredient id="13419" count="300"/>
+    <ingredient id="57" count="300000"/>
+    <production id="13944" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="8">
+    <ingredient id="13419" count="350"/>
+    <ingredient id="57" count="350000"/>
+    <production id="13945" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="9">
+    <ingredient id="13419" count="250"/>
+    <ingredient id="57" count="250000"/>
+    <production id="13946" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="10">
+    <ingredient id="13419" count="300"/>
+    <ingredient id="57" count="300000"/>
+    <production id="13947" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="11">
+    <ingredient id="13419" count="350"/>
+    <ingredient id="57" count="350000"/>
+    <production id="13948" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="12">
+    <ingredient id="13419" count="400"/>
+    <ingredient id="57" count="400000"/>
+    <production id="13949" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="13">
+    <ingredient id="13419" count="300"/>
+    <ingredient id="57" count="300000"/>
+    <production id="13950" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="14">
+    <ingredient id="13419" count="350"/>
+    <ingredient id="57" count="350000"/>
+    <production id="13951" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="15">
+    <ingredient id="13419" count="400"/>
+    <ingredient id="57" count="400000"/>
+    <production id="13952" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="16">
+    <ingredient id="13419" count="450"/>
+    <ingredient id="57" count="450000"/>
+    <production id="13953" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="17">
+    <ingredient id="13419" count="350"/>
+    <ingredient id="57" count="350000"/>
+    <production id="13954" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="18">
+    <ingredient id="13419" count="400"/>
+    <ingredient id="57" count="400000"/>
+    <production id="13955" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="19">
+    <ingredient id="13419" count="450"/>
+    <ingredient id="57" count="450000"/>
+    <production id="13956" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="20">
+    <ingredient id="13419" count="500"/>
+    <ingredient id="57" count="500000"/>
+    <production id="13957" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="21">
+    <ingredient id="13419" count="400"/>
+    <ingredient id="57" count="400000"/>
+    <production id="13958" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="22">
+    <ingredient id="13419" count="450"/>
+    <ingredient id="57" count="450000"/>
+    <production id="13959" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="23">
+    <ingredient id="13419" count="500"/>
+    <ingredient id="57" count="500000"/>
+    <production id="13960" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="24">
+    <ingredient id="13419" count="550"/>
+    <ingredient id="57" count="550000"/>
+    <production id="13961" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="25">
+    <ingredient id="13419" count="450"/>
+    <ingredient id="57" count="450000"/>
+    <production id="13962" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="26">
+    <ingredient id="13419" count="500"/>
+    <ingredient id="57" count="500000"/>
+    <production id="13963" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="27">
+    <ingredient id="13419" count="550"/>
+    <ingredient id="57" count="550000"/>
+    <production id="13964" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="28">
+    <ingredient id="13419" count="600"/>
+    <ingredient id="57" count="600000"/>
+    <production id="13965" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="29">
+    <ingredient id="13419" count="500"/>
+    <ingredient id="57" count="500000"/>
+    <production id="13966" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="30">
+    <ingredient id="13419" count="550"/>
+    <ingredient id="57" count="550000"/>
+    <production id="13967" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="31">
+    <ingredient id="13419" count="600"/>
+    <ingredient id="57" count="600000"/>
+    <production id="13968" count="1"/>
+  </item>
+
+  <!-- Belt -->
+  <item id="32">
+    <ingredient id="13419" count="650"/>
+    <ingredient id="57" count="650000"/>
+    <production id="13969" count="1"/>
+  </item>
+</list>

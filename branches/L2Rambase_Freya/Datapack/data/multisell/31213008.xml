@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Potki -->
+<list>
+  <!-- CP Potion -->
+  <item id="1">
+    <ingredient id="13693" count="50" />
+    <production id="5592" count="100" />
+  </item>
+  <!-- Greater Swift Attacks Potion -->
+  <item id="2">
+    <ingredient id="13693" count="20" />
+    <production id="1375" count="100" />
+  </item>
+  <!-- Greater Haste Potion -->
+  <item id="3">
+    <ingredient id="13693" count="20" />
+    <production id="1374" count="100" />
+  </item>
+  <!-- Greater Magic Haste Potion -->
+  <item id="4">
+    <ingredient id="13693" count="20" />
+    <production id="6036" count="100" />
+  </item>
+  <item id="5">
+    <ingredient id="13693" count="40" />
+    <production id="22027" count="20" />
+  </item>
+  <item id="6">
+    <ingredient id="13693" count="40" />
+    <production id="22028" count="20" />
+  </item>
+  <item id="7">
+    <ingredient id="13693" count="40" />
+    <production id="22029" count="20" />
+  </item>
+  <item id="8">
+    <ingredient id="13693" count="40" />
+    <production id="22030" count="20" />
+  </item>
+  <item id="9">
+    <ingredient id="13693" count="40" />
+    <production id="22031" count="20" />
+  </item>
+  <item id="10">
+    <ingredient id="13693" count="40" />
+    <production id="22032" count="20" />
+  </item>
+  <item id="11">
+    <ingredient id="13693" count="40" />
+    <production id="22033" count="20" />
+  </item>
+  <item id="12">
+    <ingredient id="13693" count="40" />
+    <production id="22034" count="20" />
+  </item>
+  <item id="13">
+    <ingredient id="13693" count="40" />
+    <production id="22035" count="20" />
+  </item>
+  <item id="14">
+    <ingredient id="13693" count="40" />
+    <production id="22036" count="20" />
+  </item>
+  <item id="15">
+    <ingredient id="13693" count="50" />
+    <production id="20393" count="10" />
+  </item>
+  <item id="16">
+    <ingredient id="13693" count="50" />
+    <production id="20394" count="10" />
+  </item>
+</list>

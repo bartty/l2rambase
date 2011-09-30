@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<item id="17004" name="Agathion Seal Bracelet - Kid Rudolph - Event">
+		<for />
+	</item>
+	<item id="17006" name="Sealed Vesper Noble Breastplate">
+		<for>
+			<add order="0x10" stat="pDef" val="236" />
+		</for>
+	</item>
+	<item id="17007" name="Sealed Vesper Noble Leather Breastplate">
+		<for>
+			<add order="0x10" stat="pDef" val="177" />
+		</for>
+	</item>
+	<item id="17008" name="Sealed Vesper Noble Tunic">
+		<for>
+			<add order="0x10" stat="pDef" val="118" />
+			<add order="0x40" stat="maxMp" val="637" />
+		</for>
+	</item>
+	<item id="17009" name="Sealed Vesper Noble Gaiters">
+		<for>
+			<add order="0x10" stat="pDef" val="148" />
+		</for>
+	</item>
+	<item id="17010" name="Sealed Vesper Noble Gauntlet">
+		<for>
+			<add order="0x10" stat="pDef" val="68" />
+		</for>
+	</item>
+	<item id="17011" name="Sealed Vesper Noble Boots">
+		<for>
+			<add order="0x10" stat="pDef" val="68" />
+		</for>
+	</item>
+	<item id="17012" name="Sealed Vesper Noble Leather Leggings">
+		<for>
+			<add order="0x10" stat="pDef" val="111" />
+		</for>
+	</item>
+	<item id="17013" name="Sealed Vesper Noble Leather Gloves">
+		<for>
+			<add order="0x10" stat="pDef" val="68" />
+		</for>
+	</item>
+	<item id="17014" name="Sealed Vesper Noble Leather Boots">
+		<for>
+			<add order="0x10" stat="pDef" val="68" />
+		</for>
+	</item>
+	<item id="17015" name="Sealed Vesper Noble Stockings">
+		<for>
+			<add order="0x10" stat="pDef" val="74" />
+			<add order="0x40" stat="maxMp" val="415" />
+		</for>
+	</item>
+	<item id="17016" name="Sealed Vesper Noble Gloves">
+		<for>
+			<add order="0x10" stat="pDef" val="68" />
+		</for>
+	</item>
+	<item id="17017" name="Sealed Vesper Noble Shoes">
+		<for>
+			<add order="0x10" stat="pDef" val="68" />
+		</for>
+	</item>
+</list>

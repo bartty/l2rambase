@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<item id="14982" name="Dark Crystal Shield of Friendship">
+		<for>
+			<sub order="0x10" stat="rEvas" val="8" />
+			<set order="0x08" stat="rShld" val="20" />
+			<set order="0x08" stat="sDef" val="243" />
+		</for>
+	</item>
+	<item id="14987" name="Avadon Shield of Friendship">
+		<for>
+			<sub order="0x10" stat="rEvas" val="8" />
+			<set order="0x08" stat="rShld" val="20" />
+			<set order="0x08" stat="sDef" val="216" />
+		</for>
+	</item>
+</list>

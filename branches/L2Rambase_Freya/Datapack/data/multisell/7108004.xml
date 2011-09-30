@@ -1,0 +1,112 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<list>
+
+  <!-- Avadon Shield of Friendship -->
+  <item id="1">
+    <ingredient id="15279" count="11000"/>
+    <production id="14987" count="1"/>
+  </item>
+
+  <!-- Avadon Shield of Friendship -->
+  <item id="2">
+    <ingredient id="15279" count="10000"/>
+    <production id="15101" count="1"/>
+  </item>
+
+  <!-- Avadon Shield of Friendship -->
+  <item id="3">
+    <ingredient id="15279" count="14000"/>
+    <production id="16875" count="1"/>
+  </item>
+
+  <!-- Brigandine Shield of Friendship -->
+  <item id="4">
+    <ingredient id="15279" count="7000"/>
+    <production id="15026" count="1"/>
+  </item>
+
+  <!-- Brigandine Shield of Friendship -->
+  <item id="5">
+    <ingredient id="15279" count="6000"/>
+    <production id="15140" count="1"/>
+  </item>
+
+  <!-- Brigandine Shield of Friendship -->
+  <item id="6">
+    <ingredient id="15279" count="10000"/>
+    <production id="16914" count="1"/>
+  </item>
+
+  <!-- Dark Crystal Shield of Friendship -->
+  <item id="7">
+    <ingredient id="15279" count="13000"/>
+    <production id="14982" count="1"/>
+  </item>
+
+  <!-- Dark Crystal Shield of Friendship -->
+  <item id="8">
+    <ingredient id="15279" count="12000"/>
+    <production id="15096" count="1"/>
+  </item>
+
+  <!-- Dark Crystal Shield of Friendship -->
+  <item id="9">
+    <ingredient id="15279" count="16000"/>
+    <production id="16870" count="1"/>
+  </item>
+
+  <!-- Doom Shield of Friendship -->
+  <item id="10">
+    <ingredient id="15279" count="11000"/>
+    <production id="15007" count="1"/>
+  </item>
+
+  <!-- Doom Shield of Friendship -->
+  <item id="11">
+    <ingredient id="15279" count="10000"/>
+    <production id="15121" count="1"/>
+  </item>
+
+  <!-- Doom Shield of Friendship -->
+  <item id="12">
+    <ingredient id="15279" count="14000"/>
+    <production id="16895" count="1"/>
+  </item>
+
+  <!-- Full Plate Shield of Friendship -->
+  <item id="13">
+    <ingredient id="15279" count="9000"/>
+    <production id="15016" count="1"/>
+  </item>
+
+  <!-- Full Plate Shield of Friendship -->
+  <item id="14">
+    <ingredient id="15279" count="8000"/>
+    <production id="15130" count="1"/>
+  </item>
+
+  <!-- Full Plate Shield of Friendship -->
+  <item id="15">
+    <ingredient id="15279" count="12000"/>
+    <production id="16904" count="1"/>
+  </item>
+
+  <!-- Friendship Shield of Nightmare -->
+  <item id="16">
+    <ingredient id="15279" count="13000"/>
+    <production id="15031" count="1"/>
+  </item>
+
+  <!-- Friendship Shield of Nightmare -->
+  <item id="17">
+    <ingredient id="15279" count="12000"/>
+    <production id="15145" count="1"/>
+  </item>
+
+  <!-- Friendship Shield of Nightmare -->
+  <item id="18">
+    <ingredient id="15279" count="16000"/>
+    <production id="16919" count="1"/>
+  </item>
+</list>

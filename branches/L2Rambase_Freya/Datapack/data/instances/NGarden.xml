@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance name="NGarden">
+	<activityTime val="60" />
+	<timeDelay val="24" />
+	<returnteleport x="-84757" y="60009" z="-2581" />
+	<doorlist>
+		<door doorId="16200001" />
+		<door doorId="16200002" />
+		<door doorId="16200003" />
+		<door doorId="16200005" />
+		<door doorId="16200006" />
+		<door doorId="16200007" />
+		<door doorId="16200008" />
+		<door doorId="16200009" />
+		<door doorId="16200010" />
+		<door doorId="16200011" />
+		<door doorId="16200012" />
+		<door doorId="16200013" />
+		<door doorId="16200014" />
+		<door doorId="16200015" />
+		<door doorId="16200016" />
+		<door doorId="16200017" />
+		<door doorId="16200018" />
+		<door doorId="16200019" />
+		<door doorId="16200023" />
+		<door doorId="16200024" />
+		<door doorId="16200025" />
+	</doorlist>
+</instance>

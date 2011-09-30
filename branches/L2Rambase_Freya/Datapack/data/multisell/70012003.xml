@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- A grade Parts Armors for Light Stones -->
+<list>
+	<!-- Dark Crystal -->
+	<item id="1">
+		<ingredient id="7911" count="50" />
+		<production id="5478" count="3" />
+	</item>
+	<item id="2">
+		<ingredient id="7911" count="50" />
+		<production id="5482" count="3" />
+	</item>
+	<item id="3">
+		<ingredient id="7911" count="50" />
+		<production id="5486" count="3" />
+	</item>
+	<item id="4">
+		<ingredient id="7911" count="50" />
+		<production id="5496" count="3" />
+	</item>
+	<item id="5">
+		<ingredient id="7911" count="50" />
+		<production id="5508" count="3" />
+	</item>
+	<item id="6">
+		<ingredient id="7911" count="50" />
+		<production id="5520" count="3" />
+	</item>
+	<item id="7">
+		<ingredient id="7911" count="50" />
+		<production id="5524" count="3" />
+	</item>
+	<item id="8">
+		<ingredient id="7911" count="50" />
+		<production id="5525" count="3" />
+	</item>
+	<!-- Tallum Set Parts -->
+	<item id="9">
+		<ingredient id="7911" count="50" />
+		<production id="5479" count="3" />
+	</item>
+	<item id="10">
+		<ingredient id="7911" count="50" />
+		<production id="5485" count="3" />
+	</item>
+	<item id="11">
+		<ingredient id="7911" count="50" />
+		<production id="5497" count="3" />
+	</item>
+	<item id="12">
+		<ingredient id="7911" count="50" />
+		<production id="5509" count="3" />
+	</item>
+	<item id="13">
+		<ingredient id="7911" count="50" />
+		<production id="5521" count="3" />
+	</item>
+	<item id="14">
+		<ingredient id="7911" count="50" />
+		<production id="5526" count="3" />
+	</item>
+	<!-- Nightmare Set Parts -->
+	<item id="15">
+		<ingredient id="7911" count="50" />
+		<production id="5480" count="3" />
+	</item>
+	<item id="16">
+		<ingredient id="7911" count="50" />
+		<production id="5487" count="3" />
+	</item>
+	<item id="17">
+		<ingredient id="7911" count="50" />
+		<production id="5502" count="3" />
+	</item>
+	<item id="18">
+		<ingredient id="7911" count="50" />
+		<production id="5514" count="3" />
+	</item>
+	<item id="19">
+		<ingredient id="7911" count="50" />
+		<production id="5522" count="3" />
+	</item>
+	<item id="20">
+		<ingredient id="7911" count="50" />
+		<production id="5527" count="3" />
+	</item>
+	<!-- Majestic Set Parts -->
+	<item id="21">
+		<ingredient id="7911" count="50" />
+		<production id="5481" count="3" />
+	</item>
+	<item id="21">
+		<ingredient id="7911" count="50" />
+		<production id="5481" count="3" />
+	</item>
+	<item id="22">
+		<ingredient id="7911" count="50" />
+		<production id="5488" count="3" />
+	</item>
+	<item id="23">
+		<ingredient id="7911" count="50" />
+		<production id="5503" count="3" />
+	</item>
+	<item id="24">
+		<ingredient id="7911" count="50" />
+		<production id="5515" count="3" />
+	</item>
+	<item id="25">
+		<ingredient id="7911" count="50" />
+		<production id="5523" count="3" />
+	</item>
+	<item id="26">
+		<ingredient id="7911" count="50" />
+		<production id="5528" count="3" />
+	</item>
+</list>

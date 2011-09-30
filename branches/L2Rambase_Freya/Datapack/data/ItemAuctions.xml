@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ItemAuctions.xsd">
+	<!-- Samples -->
+	<!-- <instance id="NPC ID of the auctioneer" day_of_week="1 - Sunday, 7 - Saturday" hour_of_day="0-23" minute_of_hour="0-59"> -->
+	<!-- <item auctionItemId="1" itemId="9901" itemCount="1" auctionInitBid="100000" auctionLenght="300 (in minutes)"> -->
+	<!-- <extra enchant_level="15" augmentation_id="you can take it from item_attributes table" augmentation_skill_id="3241" augmentation_skill_lvl="10" /> -->
+	<!-- </item> -->
+	<!-- </instance> -->
+	<!-- instead of day_of_week you can use interval between auction in days -->
+	<!-- <instance id="NPC ID of the auctioneer" interval="1" hour_of_day="0-23" minute_of_hour="0-59"> -->
+	<!-- <item auctionItemId="1" itemId="10485" itemCount="1" auctionInitBid="100000" auctionLenght="300" /> -->
+	<!-- </instance> -->
+	<instance id="32320" interval="1" hour_of_day="13" minute_of_hour="0">
+		<!-- Aukcja: High Grade Life Stone 70 -->
+		<item auctionItemId="1" itemId="8751" itemCount="1" auctionInitBid="1000000" auctionLenght="300" />
+		<!-- Aukcja: High Grade Life Stone 76 -->
+		<item auctionItemId="2" itemId="8752" itemCount="1" auctionInitBid="2000000" auctionLenght="300" />
+		<!-- Aukcja: High Grade Life Stone 80 -->
+		<item auctionItemId="3" itemId="9575" itemCount="1" auctionInitBid="3000000" auctionLenght="300" />
+		<!-- Aukcja: High Grade Life Stone 82 -->
+		<item auctionItemId="4" itemId="10485" itemCount="1" auctionInitBid="4000000" auctionLenght="300" />
+		<!-- Aukcja: Top Grade Life Stone 70 -->
+		<item auctionItemId="5" itemId="8761" itemCount="1" auctionInitBid="2000000" auctionLenght="300" />
+		<!-- Aukcja: Top Grade Life Stone 76 -->
+		<item auctionItemId="6" itemId="8762" itemCount="1" auctionInitBid="3000000" auctionLenght="300" />
+		<!-- Aukcja: Top Grade Life Stone 80 -->
+		<item auctionItemId="7" itemId="9576" itemCount="1" auctionInitBid="4000000" auctionLenght="300" />
+		<!-- Aukcja: Top Grade Life Stone 82 -->
+		<item auctionItemId="8" itemId="10486" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<!-- Aukcja: Armor Backup Stone: Grade A -->
+		<item auctionItemId="9" itemId="12370" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<!-- Aukcja: Armor Backup Stone: Grade S -->
+		<item auctionItemId="10" itemId="12371" itemCount="1" auctionInitBid="6000000" auctionLenght="300" />
+		<!-- Aukcja: Weapon Backup Stone: Grade A -->
+		<item auctionItemId="11" itemId="12365" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<!-- Aukcja: Weapon Backup Stone: Grade S -->
+		<item auctionItemId="12" itemId="12366" itemCount="1" auctionInitBid="6000000" auctionLenght="300" />
+		<!-- Aukcja: Feather of Blessing -->
+		<item auctionItemId="13" itemId="10649" itemCount="1" auctionInitBid="15000000" auctionLenght="300" />
+		<!-- Aukcja: Hats -->
+		<item auctionItemId="14" itemId="8185" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="15" itemId="8186" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="16" itemId="8187" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="17" itemId="8188" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="18" itemId="8189" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="19" itemId="8560" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="20" itemId="8561" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="21" itemId="8562" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="22" itemId="8563" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="23" itemId="8564" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="24" itemId="8565" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="25" itemId="8922" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<!-- Aukcja: Weapons -->
+		<item auctionItemId="26" itemId="14056" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="27" itemId="14057" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="28" itemId="14058" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<!-- Aukcja: Buff Packs -->
+		<item auctionItemId="29" itemId="22087" itemCount="15" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="30" itemId="22088" itemCount="15" auctionInitBid="5000000" auctionLenght="300" />
+	</instance>
+	<instance id="32321" interval="1" hour_of_day="15" minute_of_hour="0">
+		<!-- Aukcja: High Grade Life Stone 70 -->
+		<item auctionItemId="1" itemId="8751" itemCount="1" auctionInitBid="1000000" auctionLenght="300" />
+		<!-- Aukcja: High Grade Life Stone 76 -->
+		<item auctionItemId="2" itemId="8752" itemCount="1" auctionInitBid="2000000" auctionLenght="300" />
+		<!-- Aukcja: High Grade Life Stone 80 -->
+		<item auctionItemId="3" itemId="9575" itemCount="1" auctionInitBid="3000000" auctionLenght="300" />
+		<!-- Aukcja: High Grade Life Stone 82 -->
+		<item auctionItemId="4" itemId="10485" itemCount="1" auctionInitBid="4000000" auctionLenght="300" />
+		<!-- Aukcja: Top Grade Life Stone 70 -->
+		<item auctionItemId="5" itemId="8761" itemCount="1" auctionInitBid="2000000" auctionLenght="300" />
+		<!-- Aukcja: Top Grade Life Stone 76 -->
+		<item auctionItemId="6" itemId="8762" itemCount="1" auctionInitBid="3000000" auctionLenght="300" />
+		<!-- Aukcja: Top Grade Life Stone 80 -->
+		<item auctionItemId="7" itemId="9576" itemCount="1" auctionInitBid="4000000" auctionLenght="300" />
+		<!-- Aukcja: Top Grade Life Stone 82 -->
+		<item auctionItemId="8" itemId="10486" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<!-- Aukcja: Armor Backup Stone: Grade A -->
+		<item auctionItemId="9" itemId="12370" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<!-- Aukcja: Armor Backup Stone: Grade S -->
+		<item auctionItemId="10" itemId="12371" itemCount="1" auctionInitBid="6000000" auctionLenght="300" />
+		<!-- Aukcja: Weapon Backup Stone: Grade A -->
+		<item auctionItemId="11" itemId="12365" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<!-- Aukcja: Weapon Backup Stone: Grade S -->
+		<item auctionItemId="12" itemId="12366" itemCount="1" auctionInitBid="6000000" auctionLenght="300" />
+		<!-- Aukcja: Forgotten Books -->
+		<item auctionItemId="13" itemId="10552" itemCount="1" auctionInitBid="15000000" auctionLenght="300" />
+		<item auctionItemId="14" itemId="10553" itemCount="1" auctionInitBid="15000000" auctionLenght="300" />
+		<item auctionItemId="15" itemId="14219" itemCount="1" auctionInitBid="15000000" auctionLenght="300" />
+		<item auctionItemId="16" itemId="10549" itemCount="1" auctionInitBid="15000000" auctionLenght="300" />
+		<item auctionItemId="17" itemId="10550" itemCount="1" auctionInitBid="15000000" auctionLenght="300" />
+		<item auctionItemId="18" itemId="10551" itemCount="1" auctionInitBid="15000000" auctionLenght="300" />
+		<!-- Aukcja: Hats -->
+		<item auctionItemId="19" itemId="8185" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="20" itemId="8186" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="21" itemId="8187" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="22" itemId="8188" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="23" itemId="8189" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="24" itemId="8560" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="25" itemId="8561" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="26" itemId="8562" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="27" itemId="8563" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="28" itemId="8564" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="29" itemId="8565" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="30" itemId="8922" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+	</instance>
+	<instance id="32322" interval="1" hour_of_day="17" minute_of_hour="0">
+		<!-- Aukcja: High Grade Life Stone 70 -->
+		<item auctionItemId="1" itemId="8751" itemCount="1" auctionInitBid="1000000" auctionLenght="300" />
+		<!-- Aukcja: High Grade Life Stone 76 -->
+		<item auctionItemId="2" itemId="8752" itemCount="1" auctionInitBid="2000000" auctionLenght="300" />
+		<!-- Aukcja: High Grade Life Stone 80 -->
+		<item auctionItemId="3" itemId="9575" itemCount="1" auctionInitBid="3000000" auctionLenght="300" />
+		<!-- Aukcja: High Grade Life Stone 82 -->
+		<item auctionItemId="4" itemId="10485" itemCount="1" auctionInitBid="4000000" auctionLenght="300" />
+		<!-- Aukcja: Top Grade Life Stone 70 -->
+		<item auctionItemId="5" itemId="8761" itemCount="1" auctionInitBid="2000000" auctionLenght="300" />
+		<!-- Aukcja: Top Grade Life Stone 76 -->
+		<item auctionItemId="6" itemId="8762" itemCount="1" auctionInitBid="3000000" auctionLenght="300" />
+		<!-- Aukcja: Top Grade Life Stone 80 -->
+		<item auctionItemId="7" itemId="9576" itemCount="1" auctionInitBid="4000000" auctionLenght="300" />
+		<!-- Aukcja: Top Grade Life Stone 82 -->
+		<item auctionItemId="8" itemId="10486" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<!-- Aukcja: Armor Backup Stone: Grade A -->
+		<item auctionItemId="9" itemId="12370" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<!-- Aukcja: Armor Backup Stone: Grade S -->
+		<item auctionItemId="10" itemId="12371" itemCount="1" auctionInitBid="6000000" auctionLenght="300" />
+		<!-- Aukcja: Weapon Backup Stone: Grade A -->
+		<item auctionItemId="11" itemId="12365" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<!-- Aukcja: Weapon Backup Stone: Grade S -->
+		<item auctionItemId="12" itemId="12366" itemCount="1" auctionInitBid="6000000" auctionLenght="300" />
+		<!-- Aukcja: Feather of Blessing -->
+		<item auctionItemId="13" itemId="10649" itemCount="1" auctionInitBid="15000000" auctionLenght="300" />
+		<!-- Aukcja: Weapons -->
+		<item auctionItemId="14" itemId="14056" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="15" itemId="14057" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="16" itemId="14058" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<!-- Aukcja: Buff Packs -->
+		<item auctionItemId="17" itemId="22087" itemCount="15" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="18" itemId="22088" itemCount="15" auctionInitBid="5000000" auctionLenght="300" />
+		<!-- Aukcja: Hats -->
+		<item auctionItemId="19" itemId="8185" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="20" itemId="8186" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="21" itemId="8187" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="22" itemId="8188" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="23" itemId="8189" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="24" itemId="8560" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="25" itemId="8561" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="26" itemId="8562" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="27" itemId="8563" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="28" itemId="8564" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="29" itemId="8565" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+		<item auctionItemId="30" itemId="8922" itemCount="1" auctionInitBid="5000000" auctionLenght="300" />
+	</instance>
+</list>

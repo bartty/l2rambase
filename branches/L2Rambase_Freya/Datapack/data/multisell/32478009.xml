@@ -1,0 +1,86 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<list>
+  <!-- Red Soul Crystall 10-11 -->
+  <item id="1">
+    <ingredient id="13419" count="250"/>
+    <ingredient id="4639" count="1"/>
+    <production id="5577" count="1"/>
+  </item>
+
+  <!-- Green Soul Crystall 10-11 -->
+  <item id="2">
+    <ingredient id="13419" count="250"/>
+    <ingredient id="4650" count="1"/>
+    <production id="5578" count="1"/>
+  </item>
+
+  <!-- Blue Soul Crystall 10-11 -->
+  <item id="3">
+    <ingredient id="13419" count="250"/>
+    <ingredient id="4661" count="1"/>
+    <production id="5579" count="1"/>
+  </item>
+
+  <!-- Red Soul Crystall 11-12 -->
+  <item id="4">
+    <ingredient id="13419" count="500"/>
+    <ingredient id="5577" count="1"/>
+    <production id="5580" count="1"/>
+  </item>
+
+  <!-- Green Soul Crystall 11-12 -->
+  <item id="5">
+    <ingredient id="13419" count="500"/>
+    <ingredient id="5578" count="1"/>
+    <production id="5581" count="1"/>
+  </item>
+
+  <!-- Blue Soul Crystall 11-12 -->
+  <item id="6">
+    <ingredient id="13419" count="500"/>
+    <ingredient id="5579" count="1"/>
+    <production id="5582" count="1"/>
+  </item>
+
+  <!-- Red Soul Crystall 12-13 -->
+  <item id="7">
+    <ingredient id="13419" count="750"/>
+    <ingredient id="5580" count="1"/>
+    <production id="5908" count="1"/>
+  </item>
+
+  <!-- Green Soul Crystall 12-13 -->
+  <item id="8">
+    <ingredient id="13419" count="750"/>
+    <ingredient id="5581" count="1"/>
+    <production id="5911" count="1"/>
+  </item>
+
+  <!-- Blue Soul Crystall 12-13 -->
+  <item id="9">
+    <ingredient id="13419" count="1000"/>
+    <ingredient id="5582" count="1"/>
+    <production id="5914" count="1"/>
+  </item>
+
+  <!-- Red Soul Crystall 13-14 -->
+  <item id="10">
+    <ingredient id="13419" count="1000"/>
+    <ingredient id="5908" count="1"/>
+    <production id="9570" count="1"/>
+  </item>
+
+  <!-- Green Soul Crystall 13-14 -->
+  <item id="11">
+    <ingredient id="13419" count="1000"/>
+    <ingredient id="5911" count="1"/>
+    <production id="9572" count="1"/>
+  </item>
+
+  <!-- Blue Soul Crystall 13-14 -->
+  <item id="12">
+    <ingredient id="13419" count="1000"/>
+    <ingredient id="5914" count="1"/>
+    <production id="9571" count="1"/>
+  </item>
+</list>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<item id="13034" name="Sprite's Sword">
+		<cond msgId="1518">
+			<and>
+				<player instanceId="43" />
+			</and>
+		</cond>
+		<for>
+			<set val="107" order="0x08" stat="pAtk" />
+			<set val="72" order="0x08" stat="mAtk" />
+			<set val="8" order="0x08" stat="rCrit" />
+			<add val="0" order="0x10" stat="accCombat" />
+			<set val="325" order="0x08" stat="pAtkSpd" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="13035" name="Enhanced Sprite's Sword">
+		<cond msgId="1518">
+			<and>
+				<player instanceId="43" />
+			</and>
+		</cond>
+		<for>
+			<set val="127" order="0x08" stat="pAtk" />
+			<set val="82" order="0x08" stat="mAtk" />
+			<set val="8" order="0x08" stat="rCrit" />
+			<add val="0" order="0x10" stat="accCombat" />
+			<set val="325" order="0x08" stat="pAtkSpd" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="13036" name="Sword of Ice and Fire">
+		<cond msgId="1518">
+			<and>
+				<player instanceId="43" />
+			</and>
+		</cond>
+		<for>
+			<set val="147" order="0x08" stat="pAtk" />
+			<set val="92" order="0x08" stat="mAtk" />
+			<set val="8" order="0x08" stat="rCrit" />
+			<add val="0" order="0x10" stat="accCombat" />
+			<set val="325" order="0x08" stat="pAtkSpd" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="13042" name="Ancient Legacy Sword">
+		<for>
+			<set order="0x08" stat="pAtk" val="259" />
+			<set order="0x08" stat="mAtk" val="143" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+		<cond msgId="1518">
+			<and>
+				<player instanceId="44" />
+			</and>
+		</cond>
+	</item>
+	<item id="13043" name="Enhanced Ancient Legacy Sword">
+		<for>
+			<set order="0x08" stat="pAtk" val="279" />
+			<set order="0x08" stat="mAtk" val="153" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+		<cond msgId="1518">
+			<and>
+				<player instanceId="44" />
+			</and>
+		</cond>
+	</item>
+	<item id="13044" name="Complete Ancient Legacy Sword">
+		<for>
+			<set order="0x08" stat="pAtk" val="299" />
+			<set order="0x08" stat="mAtk" val="163" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+		<cond msgId="1518">
+			<and>
+				<player instanceId="44" />
+			</and>
+		</cond>
+	</item>
+	<item id="13052" name="Spear of Silenos">
+		<for>
+			<set order="0x08" stat="pAtk" val="251" />
+			<set order="0x08" stat="mAtk" val="161" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+		<cond msgId="1518">
+			<and>
+				<player instanceId="45" />
+			</and>
+		</cond>
+	</item>
+	<item id="13053" name="Enhanced Spear of Silenos">
+		<for>
+			<set order="0x08" stat="pAtk" val="271" />
+			<set order="0x08" stat="mAtk" val="171" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+		<cond msgId="1518">
+			<and>
+				<player instanceId="45" />
+			</and>
+		</cond>
+	</item>
+	<item id="13054" name="Complete Spear of Silenos">
+		<for>
+			<set order="0x08" stat="pAtk" val="291" />
+			<set order="0x08" stat="mAtk" val="181" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+		<cond msgId="1518">
+			<and>
+				<player instanceId="45" />
+			</and>
+		</cond>
+	</item>
+	<item id="13061" name="Exclusive to Monsters (Baroness' Employee)">
+		<for>
+			<set order="0x08" stat="pAtk" val="267" />
+			<set order="0x08" stat="mAtk" val="202" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+		</for>
+	</item>
+	<item id="13062" name="Exclusive to Monsters (Employee's Friend)">
+		<for>
+			<set order="0x08" stat="pAtk" val="442" />
+			<set order="0x08" stat="mAtk" val="163" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+		</for>
+	</item>
+</list>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+	<item id="1">
+		<ingredient id="10639" count="20"/>
+		<production id="4401" count="1"/>
+	</item>
+	<item id="2">
+		<ingredient id="10639" count="20"/>
+		<production id="4402" count="1"/>
+	</item>
+	<item id="3">
+		<ingredient id="10639" count="20"/>
+		<production id="4403" count="1"/>
+	</item>
+</list>

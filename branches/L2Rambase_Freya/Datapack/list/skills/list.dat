@@ -1,0 +1,1132 @@
+#######
+## Skills List
+#
+# skill 610 - Residence Fortune need core update
+# 
+#######
+#
+<skill id="1546" levels="1" name="Strider Fear">
+#
+# Christmas Skills
+#
+<skill id="2137" levels="1" name="Summon Regular Tree">
+<skill id="2138" levels="1" name="Summon Special Tree">
+#
+# Special Items
+#
+<skill id="2215" levels="4" name="Item - Quest Special Box">
+<skill id="2216" levels="4" name="Item - Quest Special Fish">
+#
+# Clan Hall Residence Hot Springs
+#
+<skill id="2240" levels="1" name="Hot Spring Nectar">
+<skill id="2241" levels="1" name="Hot Spring Mineral Water">
+<skill id="2242" levels="1" name="Hot Spring Fountain Water">
+<skill id="2243" levels="1" name="Hot Spring Sulfur">
+#
+# Fish Skills 
+#
+<skill id="2271" levels="1" name="Item - Hot Spring Fish">
+<skill id="2273" levels="1" name="Item - Red Devil Support Box">
+#
+# Event Box
+#
+<skill id="2277" levels="6" name="Event Gift Box">
+#
+# Event Item: Heaven & Hell
+#
+<skill id="2290" levels="1" name="Coffer of Shadows">
+#
+# 36 Event Items
+#
+<skill id="2308" levels="36" name="Event Item">
+#
+# Special Key for Event Chest
+#
+<skill id="2322" levels="1" name="Chest Key - For Events Only">
+#
+# Elemental Stones of Energy
+#
+<skill id="2329" levels="4" name="Fire Stone">
+<skill id="2330" levels="4" name="Water Stone">
+<skill id="2331" levels="4" name="Wind Stone">
+<skill id="2332" levels="4" name="Earth Stone">
+<skill id="2333" levels="4" name="Divine Stone">
+<skill id="2334" levels="4" name="Dark Stone">
+#
+# Hellbound Keys
+#
+<skill id="2362" levels="1" name="Prison Gate Key">
+<skill id="2363" levels="1" name="Underground Warehouse Key">
+#
+# Crystal Caverns: Door Trap Keys
+#
+<skill id="2366" levels="1" name="Blue Coral Key">
+<skill id="2367" levels="1" name="Red Coral Key">
+#
+# Primevale Isle Skill
+#
+<skill id="2399" levels="1" name="Capture Rope">
+#
+# Crystal Caverns: Red Box Chest Key
+#
+<skill id="2400" levels="1" name="Red Coral Treasure Chest Key">
+#
+# Seeds Evil Lump ??
+#
+<skill id="2420" levels="1" name="White Seed of Evil Lump">
+<skill id="2421" levels="1" name="Black Seed of Evil Lump">
+#
+# Lucky Clovers for Raids
+#
+<skill id="2515" levels="1" name="Lucky Clover - D-Grade">
+<skill id="2516" levels="1" name="Lucky Clover - C-Grade">
+<skill id="2517" levels="1" name="Lucky Clover - B-Grade">
+<skill id="2518" levels="1" name="Lucky Clover - A-Grade">
+<skill id="2519" levels="1" name="Lucky Clover - S-Grade">
+<skill id="2520" levels="1" name="Lucky Clover - D-Grade">
+<skill id="2521" levels="1" name="Lucky Clover - C-Grade">
+<skill id="2522" levels="1" name="Lucky Clover - B-Grade">
+<skill id="2523" levels="1" name="Lucky Clover - A-Grade">
+<skill id="2524" levels="1" name="Lucky Clover - S-Grade">
+#
+# Territory War Item - Battlefield Use Recovery
+#
+<skill id="2530" levels="1" name="Recovery Item for Battlefield Use">
+#
+# Cure Death Clock ??
+#
+<skill id="2579" levels="1" name="Cure Death Clock">
+#
+# no used skills
+#
+<skill id="2581" levels="1" name="not_used">
+<skill id="2582" levels="1" name="not_used">
+<skill id="2583" levels="1" name="not_used">
+#
+# Vitality Extra Potion skill
+#
+<skill id="2586" levels="2" name="Energy Replenishing Potion">
+#
+# MyTeleport Special Skills
+#
+<skill id="2587" levels="1" name="Increase number of teleport slots.">
+<skill id="2588" levels="1" name="My Teleport">
+#
+# Special Pass to Kamaloka
+#
+<skill id="2589" levels="1" name="Extra Entrance Pass - Kamaloka (Hall of the Abyss)">
+<skill id="2590" levels="1" name="Extra Entrance Pass - Near Kamaloka">
+<skill id="2591" levels="1" name="Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss)">
+#
+# Grain Gift Box
+#
+<skill id="2606" levels="1" name="Gran Kain's Gift Box">
+#
+# 
+#
+<skill id="2610" levels="1" name="Register Bookmark (Event)">
+<skill id="2611" levels="1" name="Large Firework">
+<skill id="2612" levels="1" name="Large Firework">
+<skill id="2613" levels="1" name="Large Firework">
+<skill id="2614" levels="1" name="Large Firework">
+<skill id="2615" levels="1" name="Destroyed Darkness Fragment Powder">
+<skill id="2616" levels="1" name="Bond Sealant">
+<skill id="2617" levels="1" name="Stun Planter">
+<skill id="2618" levels="1" name="Stun Land Mine">
+#
+# Item: Extra Entrance to Kamaloka
+#
+<skill id="2619" levels="1" name="Extra Entrance Pass - Kamaloka (Hall of the Abyss) (Event)">
+<skill id="2620" levels="1" name="Extra Entrance Pass - Near Kamaloka (Event)">
+<skill id="2621" levels="1" name="Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss) (Event)">
+#
+#
+#
+<skill id="2622" levels="1" name="Summon Life-size Decoy">
+<skill id="2623" levels="1" name="Alkaline Therapy">
+<skill id="2624" levels="1" name="Life Aid Banding">
+<skill id="2625" levels="1" name="Enbalming">
+<skill id="2626" levels="1" name="Lighting Incense">
+<skill id="2627" levels="1" name="Elixir Miracle">
+<skill id="2628" levels="1" name="Structure Scarab">
+<skill id="2629" levels="1" name="Ancient Treasure Sack">
+#
+# Five Years of Lineage II Items
+#
+<skill id="2637" levels="1" name="Scroll: Enchant Weapon (Event)">
+<skill id="2638" levels="1" name="Five-year anniversary event box">
+<skill id="2639" levels="1" name="Five-year anniversary event box">
+<skill id="2640" levels="1" name="Five-year anniversary event box">
+<skill id="2641" levels="1" name="Five-Year Anniversary Event Box">
+<skill id="2642" levels="1" name="Five-Year Anniversary Event Box">
+<skill id="2643" levels="1" name="Five-Year Anniversary Event Box">
+<skill id="2644" levels="1" name="Five-Year Anniversary Event Box">
+<skill id="2645" levels="1" name="Multi-Colored Honey Rice Cake">
+<skill id="2646" levels="1" name="Honey Wheat Cake">
+#
+# Recovery Stone - HP_MP Heal
+#
+<skill id="2802" levels="1" name="Recovery Stone">
+#
+# Gracia Skills
+#
+<skill id="2837" levels="1" name="Gracia Key">
+<skill id="2839" levels="1" name="Sacred Light Fragment">
+#
+# PC Cafe Points System - Item to get points
+#
+<skill id="2841" levels="1" name="PC Cafe Points">
+#
+# Christmas Prizes
+#
+<skill id="2858" levels="1" name="Christmas Red Sock">
+#
+# Potion Skill
+#
+<skill id="2863" levels="1" name="Highest Power Healing Potion">
+#
+# Aghations Skills
+#
+<skill id="2865" levels="1" name="Agathion's New Year's Gift 1">
+<skill id="2866" levels="1" name="Agathion's New Year's Gift 2">
+<skill id="2867" levels="1" name="Cupid's Cure">
+<skill id="2868" levels="1" name="Cupid's Enhanced Cure">
+#
+# Holly Cow Skills: Need something to do
+#
+<skill id="2871" levels="1" name="Summon Gloomy Milk Cow">
+<skill id="2872" levels="1" name="Summon Head Gloomy Milk Cow">
+#
+# Candy Event:
+#
+<skill id="2882" levels="1" name="Crystal Cube">
+#
+# Candy Event
+#
+<skill id="2892" levels="1" name="Event - Extra Entrance Pass">
+<skill id="2893" levels="1" name="Solo Escape Petition">
+<skill id="2895" levels="1" name="Special White Day Candy Basket">
+<skill id="2896" levels="1" name="White Day Candy Basket">
+<skill id="2897" levels="1" name="Baguette's Herb">
+<skill id="2898" levels="1" name="Fresh Cream Herb">
+<skill id="2899" levels="1" name="Cheesecake Herb">
+#
+# Special Items ??
+#
+<skill id="2904" levels="1" name="Guardian Spirit's Divine Protection">
+<skill id="2906" levels="1" name="Incubation Accelerator">
+<skill id="2907" levels="1" name="Battlefield Use Secret Medicine of Life">
+<skill id="2908" levels="1" name="Battlefield Use Secret Medicine of Mind">
+<skill id="2909" levels="1" name="Battlefield Use Secret Medicine of Will">
+<skill id="2910" levels="1" name="Skull Key of Pain">
+<skill id="2911" levels="1" name="Skull Key of Erosion">
+<skill id="2912" levels="1" name="Skull Key of the Heart">
+<skill id="2913" levels="1" name="Soul Extraction">
+<skill id="2914" levels="2" name="Equipment Set 90 Day Pack">
+#
+# Special Skill Pet ??
+#
+<skill id="2916" levels="1" name="Feed for Enriched Enhanced Pets">
+#
+# Ancient Herb Skill
+#
+<skill id="2993" levels="1" name="Ancient herb - Deceiver">
+#
+# Pc Points System - Pc room skills
+#
+<skill id="2995" levels="1" name="PC room private weapon strengthening order sheet - D grade">
+<skill id="2996" levels="1" name="PC room private weapon strengthening order sheet - C grade">
+<skill id="2997" levels="1" name="PC room private weapon strengthening order sheet - B grade">
+<skill id="2998" levels="1" name="PC room private weapon strengthening order sheet - A grade">
+<skill id="2999" levels="1" name="PC room private weapon strengthening order sheet - S grade">
+#
+# Special Skill ??
+#
+<skill id="3360" levels="1" name="Cheap Shot">
+#
+# Jewelery Skills ??
+#
+<skill id="3362" levels="1" name="Traits Strengthen Necklace">
+<skill id="3363" levels="1" name="Traits Strengthen Ring">
+<skill id="3364" levels="1" name="Traits Strengthen Earring">
+<skill id="3368" levels="1" name="Traits Strengthen Necklace">
+<skill id="3369" levels="1" name="Traits Strengthen Ring">
+<skill id="3370" levels="1" name="Traits Strengthen Earring">
+<skill id="3374" levels="1" name="Traits Strengthen Necklace">
+<skill id="3375" levels="1" name="Traits Strengthen Ring">
+<skill id="3376" levels="1" name="Traits Strengthen Earring">
+<skill id="3380" levels="1" name="Traits Strengthen Necklace">
+<skill id="3381" levels="1" name="Traits Strengthen Ring">
+<skill id="3382" levels="1" name="Traits Strengthen Earring">
+<skill id="3386" levels="1" name="Traits Strengthen Necklace">
+<skill id="3387" levels="1" name="Traits Strengthen Ring">
+<skill id="3388" levels="1" name="Traits Strengthen Earring">
+<skill id="3392" levels="1" name="Traits Strengthen Necklace">
+<skill id="3393" levels="1" name="Traits Strengthen Ring">
+<skill id="3394" levels="1" name="Traits Strengthen Earring">
+<skill id="3398" levels="1" name="Traits Strengthen Necklace">
+<skill id="3399" levels="1" name="Traits Strengthen Ring">
+#
+# Jewelery Skill ??
+#
+<skill id="3400" levels="1" name="Traits Strengthen Earring">
+#
+# Wolf Mount& Dismount ??
+#
+<skill id="3421" levels="1" name="Wolf Mount">
+<skill id="3422" levels="1" name="Wolf Dismount">
+#
+# Armors Masterwork
+#
+<skill id="3677" levels="1" name="Tunic of Zubei">
+<skill id="3686" levels="1" name="Avadon Breastplate">
+<skill id="3690" levels="1" name="Avadon Leather Armor">
+<skill id="3694" levels="1" name="Avadon Robe">
+<skill id="3698" levels="1" name="Doom Plate Armor">
+<skill id="3701" levels="1" name="Leather Armor of Doom">
+<skill id="3707" levels="1" name="Tunic of Doom">
+<skill id="3710" levels="1" name="Blue Wolf Breastplate">
+<skill id="3715" levels="1" name="Blue Wolf Leather Armor">
+<skill id="3721" levels="1" name="Blue Wolf Tunic">
+<skill id="3725" levels="1" name="Dark Crystal Breastplate">
+<skill id="3730" levels="1" name="Dark Crystal Leather Armor">
+<skill id="3736" levels="1" name="Dark Crystal Robe">
+<skill id="3741" levels="1" name="Tallum Plate Armor">
+<skill id="3743" levels="1" name="Tallum Leather Armor">
+<skill id="3749" levels="1" name="Tallum Tunic">
+<skill id="3754" levels="1" name="Majestic Plate Armor">
+<skill id="3757" levels="1" name="Majestic Leather Armor">
+<skill id="3761" levels="1" name="Majestic Robe">
+<skill id="3764" levels="1" name="Armor of Nightmare">
+<skill id="3768" levels="1" name="Nightmarish Leather Armor">
+<skill id="3772" levels="1" name="Nightmare Robe">
+<skill id="3777" levels="1" name="Draconic Leather Armor">
+<skill id="3780" levels="1" name="Major Arcana Robe">
+<skill id="3788" levels="1" name="Imperial Crusader Breastplate">
+<skill id="3789" levels="1" name="Dynasty Breastplate">
+<skill id="3795" levels="1" name="Dynasty Leather Armor">
+<skill id="3799" levels="1" name="Dynasty Tunic">
+#
+# Skills not used
+#
+<skill id="3855" levels="1" name="not_used">
+<skill id="3871" levels="1" name="not_used">
+#
+# Potion Drinking ?? 
+#
+<skill id="4469" levels="1" name="Potion Drinking">
+#
+# Inspiration of Einhasad - sacred attack ??
+#
+<skill id="5021" levels="12" name="Inspiration of Einhasad">
+#
+# NPC - Ultra Bomb Skill ??
+#
+<skill id="5039" levels="1" name="NPC - Ultra Bomb">
+#
+# NPC Remove Death Penalty Skill ??
+#
+<skill id="5077" levels="1" name="NPC Remove Death Penalty">
+#
+# Primevale Isle Special Skills ??
+#
+<skill id="5085" levels="1" name="Anesthesia">
+<skill id="5088" levels="1" name="Signal">
+<skill id="5098" levels="2" name="Capture Penalty">
+#
+# Npc Spell Skills ??
+#
+<skill id="5396" levels="1" name="NPC - Spell Stance">
+<skill id="5397" levels="3" name="NPC - Spell Force">
+#
+# Invincible Blow
+#
+<skill id="5419" levels="1" name="Invincible Blow">
+#
+# ??
+#
+<skill id="5432" levels="2" name="Weapon Supply">
+<skill id="5436" levels="1" name="Increase Recovery Rate">
+#
+# NPC Full Recover ??
+#
+<skill id="5457" levels="1" name="NPC Full Recover">
+#
+# Debuffs & Counters Skills
+#
+<skill id="5459" levels="1" name="Paralysis" >
+<skill id="5460" levels="1" name="Fear" >
+<skill id="5481" levels="1" name="Transform Penalty" >
+<skill id="5482" levels="1" name="Transform Penalty" >
+<skill id="5483" levels="1" name="Counter Aggression" >
+<skill id="5484" levels="1" name="Endurance Defense Up" >
+<skill id="5485" levels="1" name="Endurance Defense Up" >
+<skill id="5486" levels="1" name="Endurance Offense Up" >
+<skill id="5487" levels="1" name="Counter Delete Aggression" >
+<skill id="5488" levels="1" name="Counter Critical Power Up" >
+<skill id="5489" levels="1" name="Counter Critical Rate Up" >
+<skill id="5490" levels="1" name="Weakened Life" >
+#
+# Naia Production
+#
+<skill id="5493" levels="1" name="Naia Production" >
+#
+# Blossom skills ??
+#
+<skill id="5505" levels="1" name="Fire Blossom">
+<skill id="5506" levels="1" name="Water Blossom">
+<skill id="5507" levels="1" name="Wind Blossom">
+#
+#
+#
+<skill id="5513" levels="1" name="Fire Taint">
+<skill id="5514" levels="1" name="Water Taint">
+<skill id="5515" levels="1" name="Wind Taint">
+<skill id="5516" levels="1" name="Earth Taint">
+<skill id="5517" levels="1" name="Nurture">
+<skill id="5518" levels="1" name="Last Stand">
+<skill id="5519" levels="1" name="Chain Buff - Power Up">
+<skill id="5520" levels="1" name="Chain Buff - Vampiric Shield">
+<skill id="5521" levels="1" name="Chain Buff - Critical Sense">
+<skill id="5522" levels="1" name="Chain Magic - Dark Explosion">
+<skill id="5523" levels="1" name="Chain Magic - Unholy Castle">
+<skill id="5524" levels="1" name="Chain Buff - Resistance to Bow and Magic attacks">
+<skill id="5525" levels="1" name="Chain Buff - Resistance to Melee Attacks">
+<skill id="5526" levels="1" name="Challenger's Blessing">
+<skill id="5527" levels="1" name="Overflow">
+<skill id="5528" levels="1" name="Self-Destruct">
+#
+# Beleth Skills ??
+#
+<skill id="5532" levels="1" name="Direction-Beleth Summon Skill 1">
+<skill id="5533" levels="1" name="Direction-Beleth Self-Destruction Skill 1">
+<skill id="5534" levels="1" name="Direction-Beleth Transformation Skill 1">
+#
+# Alert Skill ??
+#
+<skill id="5546" levels="1" name="Alert"
+#
+# Weakness Skill ??
+#
+<skill id="5549" levels="1" name="Physical Short-range Weakness">
+#
+# Npc Skills ??
+#
+<skill id="5550" levels="12" name="NPC Trigger Stun">
+<skill id="5552" levels="12" name="NPC Hill Up">
+<skill id="5553" levels="12" name="NPC HP Region">
+<skill id="5554" levels="12" name="NPC Silence Resistance enhanced">
+<skill id="5555" levels="12" name="NPC Silence Resistance weakened">
+#
+# Invalid Cancel ??
+#
+<skill id="5597" levels="1" name="Invalid Skill cancel" >
+#
+# Sounds Skills ??
+#
+<skill id="5609" levels="1" name="Sound 1">
+<skill id="5610" levels="1" name="Sound 2">
+<skill id="5611" levels="1" name="Sound 3">
+<skill id="5612" levels="1" name="Sound 4">
+#
+# Special Skill ??
+#
+<skill id="5622" levels="7" name="Double Skill Attack">
+#
+# not use skills
+#
+<skill id="5641" levels="1" name="not_used">
+<skill id="5642" levels="4" name="not_used">
+<skill id="5644" levels="1" name="not_used">
+<skill id="5645" levels="3" name="not_used">
+<skill id="5649" levels="2" name="not_used">
+<skill id="5650" levels="3" name="not_used">
+<skill id="5651" levels="1" name="not_used">
+#
+# Presentations Skills ??
+#
+<skill id="5661" levels="1" name="Match Participation">
+<skill id="5662" levels="1" name="Presentation - Resurrection Possible">
+#
+# Special Skill ??
+#
+<skill id="5800" levels="1" name="Self-Destruction">
+#
+# Presentations Skills ??
+#
+<skill id="5814" levels="3" name="Self-Destruction">
+<skill id="5822" levels="1" name="Drake Bait">
+#
+# Npc Skills ??
+#
+<skill id="5845" levels="12" name="NPC Trigger Bleed">
+<skill id="5847" levels="1" name="Flip Nearby Blocks">
+<skill id="5848" levels="1" name="Block Trigger Slow">
+<skill id="5850" levels="1" name="Block Trigger Stun">
+<skill id="5854" levels="1" name="Decrease Speed">
+<skill id="5855" levels="1" name="Shock">
+#
+# Tainted Shackle Skills ??
+#
+<skill id="5889" levels="3" name="Tainted Shackle">
+<skill id="5890" levels="3" name="Tainted Mass Shackle">
+#
+#
+#
+<skill id="5902" levels="1" name="NPC Trigger Target Cancel">
+<skill id="5906" levels="1" name="Ritual of Revive">
+<skill id="5907" levels="2" name="Ritual of Entombment">
+<skill id="5908" levels="2" name="Ritual of Entombment">
+<skill id="5915" levels="9" name="Mummifying Aura">
+<skill id="5916" levels="9" name="Cruising Aura">
+<skill id="5917" levels="9" name="Shrouding Aura">
+<skill id="5918" levels="9" name="Physical Root Weakness">
+<skill id="5919" levels="1" name="Obey">
+<skill id="5920" levels="1" name="Tentacle of Agony">
+<skill id="5921" levels="1" name="Inhale">
+<skill id="5922" levels="1" name="Exhale">
+<skill id="5923" levels="1" name="Soul Retain">
+<skill id="5924" levels="1" name="Devour Soul">
+<skill id="5925" levels="1" name="Goring Charge">
+<skill id="5926" levels="1" name="Breath Corruption">
+<skill id="5927" levels="4" name="Immortal Frenzy">
+<skill id="5928" levels="4" name="Immortal Resilience">
+<skill id="5929" levels="1" name="Pairing of the Lost">
+<skill id="5930" levels="1" name="Shielding of the Lost">
+<skill id="5931" levels="1" name="Ultimate Shield">
+<skill id="5934" levels="1" name="Meet the soul of darkness and fight against it.">
+<skill id="5937" levels="1" name="Self Stun">
+<skill id="5938" levels="1" name="Attack Ability Up">
+<skill id="5939" levels="5" name="Defense Ability Up">
+<skill id="5940" levels="12" name="Energy of Generation">
+<skill id="5941" levels="1" name="Energy of Erosion">
+<skill id="5942" levels="1" name="Energy of Pollution">
+<skill id="5943" levels="1" name="Energy of Contamination">
+<skill id="5944" levels="1" name="Energy of Oblivion">
+<skill id="5945" levels="1" name="Region2 Rotation5">
+<skill id="5960" levels="1" name="Stronghold Reactivate">
+<skill id="5962" levels="1" name="Air Defense Cannon">
+<skill id="5963" levels="1" name="Emery Conversion">
+<skill id="5964" levels="1" name="Fairy Flame">
+<skill id="5967" levels="2" name="Hate Aura" >
+<skill id="5970" levels="1" name="Seduced Knight's Help" >
+<skill id="5971" levels="1" name="Seduced Ranger's Help" >
+<skill id="5972" levels="1" name="Seduced Wizard's Help" >
+<skill id="5973" levels="1" name="Seduced Warrior's Help" >
+<skill id="5974" levels="1" name="Tiat Transformation" >
+<skill id="5976" levels="3" name="Dark Storm" >
+<skill id="5977" levels="3" name="Dark Strike" >
+<skill id="5979" levels="1" name="Forced Move" >
+<skill id="5980" levels="3" name="Seal Isolation" >
+<skill id="5981" levels="3" name="Lilith's Curse" >
+<skill id="5984" levels="1" name="Hand of Death" >
+<skill id="5985" levels="9" name="Decaying Aura" >
+<skill id="5986" levels="9" name="Vampiric Aura" >
+<skill id="5989" levels="1" name="Invincible" >
+<skill id="5993" levels="1" name="Command of Anger" >
+<skill id="5995" levels="1" name="not_used" >
+<skill id="5996" levels="1" name="not_used" >
+<skill id="5997" levels="1" name="not_used" >
+<skill id="5998" levels="1" name="not_used" >
+<skill id="5999" levels="1" name="not_used" >
+#
+# not used skills
+#
+<skill id="6000" levels="1" name="not_used">
+<skill id="6001" levels="1" name="not_used">
+<skill id="6002" levels="1" name="not_used">
+<skill id="6003" levels="1" name="not_used">
+<skill id="6004" levels="1" name="not_used">
+<skill id="6005" levels="1" name="not_used">
+<skill id="6006" levels="1" name="not_used">
+<skill id="6007" levels="1" name="not_used">
+<skill id="6008" levels="1" name="not_used">
+<skill id="6009" levels="1" name="not_used">
+<skill id="6010" levels="1" name="not_used">
+<skill id="6011" levels="1" name="not_used">
+<skill id="6012" levels="1" name="not_used">
+<skill id="6013" levels="1" name="not_used">
+<skill id="6014" levels="1" name="not_used">
+<skill id="6015" levels="1" name="not_used">
+<skill id="6016" levels="1" name="not_used">
+<skill id="6017" levels="1" name="not_used">
+<skill id="6018" levels="1" name="not_used">
+#
+# Searching Master Skill ??
+#
+<skill id="6019" levels="1" name="Searching Master">
+#
+# not used skills
+#
+<skill id="6025" levels="1" name="not_used">
+<skill id="6026" levels="1" name="not_used">
+<skill id="6027" levels="1" name="not_used">
+<skill id="6028" levels="1" name="not_used">
+<skill id="6029" levels="1" name="not_used">
+<skill id="6030" levels="1" name="not_used">
+<skill id="6031" levels="1" name="not_used">
+<skill id="6032" levels="1" name="not_used">
+#
+# Treasure Seekers Skill ??
+#
+<skill id="6033" levels="1" name="Treasure Seeker's Betrayal">
+#
+# ??
+#
+<skill id="6037" levels="1" name="Soul Unleash">
+<skill id="6038" levels="1" name="Report Status">
+<skill id="6039" levels="1" name="Report Status">
+<skill id="6040" levels="1" name="Report Status">
+#
+#
+#
+<skill id="6055" levels="1" name="Report Status">
+<skill id="6056" levels="1" name="Report Status">
+<skill id="6057" levels="1" name="Report Status">
+<skill id="6058" levels="1" name="Report Status">
+#
+#
+#
+<skill id="6061" levels="1" name="Decrease Weight">
+#
+#
+#
+<skill id="6088" levels="1" name="Block Buff">
+<skill id="6089" levels="1" name="Attack Motion">
+#
+#
+#
+<skill id="6097" levels="1" name="Scissors">
+<skill id="6098" levels="1" name="Rock">
+<skill id="6099" levels="1" name="Paper">
+#
+#
+#
+<skill id="6117" levels="3" name="Choice - Scissors">
+<skill id="6121" levels="1" name="Agathion's New Year's Gift 1">
+<skill id="6122" levels="1" name="Agathion's New Year's Gift 2">
+#
+#
+#
+<skill id="6127" levels="1" name="Anti-limit">
+<skill id="6129" levels="1" name="Shock">
+<skill id="6130" levels="1" name="Curse of the Mutant Animal">
+<skill id="6131" levels="1" name="Decrease Spd">
+<skill id="6132" levels="1" name="Decrease Atk. Spd">
+<skill id="6134" levels="1" name="Curse of the Mutant Animal">
+<skill id="6135" levels="1" name="Cow Basic Attack">
+#
+#
+#
+<skill id="6140" levels="3" name="Bog Stride">
+<skill id="6141" levels="1" name="Swamp's Wish">
+<skill id="6142" levels="3" name="Tar Spite">
+<skill id="6143" levels="1" name="Ancient Beam">
+<skill id="6144" levels="1" name="Ancient Beam">
+<skill id="6145" levels="1" name="Earthworm's Evil Aura">
+<skill id="6146" levels="1" name="Forfeiture of Will">
+<skill id="6153" levels="4" name="Kasha's Yearning">
+<skill id="6166" levels="1" name="Hold">
+<skill id="6167" levels="12" name="Shock">
+<skill id="6168" levels="12" name="Shock">
+
+<skill id="6196" levels="1" name="Agathion Oink Oink's Ability">
+#
+#
+#
+<skill id="6208" levels="1" name="Blessed Guidance">
+#
+#
+#
+<skill id="6217" levels="1" name="Raid Boss - Level 81">
+<skill id="6218" levels="1" name="Raid Boss - Level 81">
+<skill id="6219" levels="1" name="Raid Boss - Level 81">
+<skill id="6220" levels="1" name="Raid Boss - Level 81">
+<skill id="6221" levels="1" name="Raid Boss - Level 82">
+<skill id="6222" levels="1" name="Raid Boss - Level 84">
+<skill id="6223" levels="1" name="Raid Boss - Level 84">
+<skill id="6224" levels="1" name="Raid Boss - Level 84">
+<skill id="6225" levels="1" name="Raid Boss - Level 84">
+<skill id="6226" levels="1" name="Raid Boss - Level 84">
+<skill id="6227" levels="1" name="Raid Boss - Level 84">
+<skill id="6228" levels="1" name="Raid Boss - Level 83">
+<skill id="6229" levels="1" name="Raid Boss - Level 84">
+<skill id="6230" levels="1" name="Raid Boss - Level 82">
+<skill id="6231" levels="1" name="Raid Boss - Level 82">
+<skill id="6232" levels="1" name="Raid Boss - Level 83">
+<skill id="6233" levels="1" name="Raid Boss - Level 83">
+<skill id="6234" levels="1" name="Presentation - Adena Firework">
+<skill id="6235" levels="1" name="Blessed Focus">
+<skill id="6237" levels="1" name="Moving Speed Decrease">
+<skill id="6238" levels="1" name="Moving Speed Decrease">
+<skill id="6239" levels="1" name="Proof of Space and Time">
+<skill id="6240" levels="5" name="Heatstroke">
+<skill id="6241" levels="1" name="Heatstroke Prevention Effect - Gludio">
+<skill id="6242" levels="1" name="Heatstroke Prevention Effect - Dion">
+<skill id="6243" levels="1" name="Heatstroke Prevention Effect - Giran">
+<skill id="6244" levels="1" name="Heatstroke Prevention Effect - Oren">
+<skill id="6245" levels="1" name="Heatstroke Prevention Effect - Aden">
+<skill id="6246" levels="1" name="Heatstroke Prevention Effect - Innadril">
+<skill id="6247" levels="1" name="Heatstroke Prevention Effect - Goddard">
+<skill id="6248" levels="1" name="Heatstroke Prevention Effect - Rune">
+<skill id="6249" levels="1" name="Heatstroke Prevention Effect -Schuttgart">
+<skill id="6250" levels="1" name="Severe Heatstroke">
+<skill id="6251" levels="1" name="Summon Humidity">
+<skill id="6252" levels="1" name="Humidity Attack">
+<skill id="6253" levels="1" name="Heatstroke Prevention Effect - Gludio">
+<skill id="6254" levels="1" name="Heatstroke Prevention Effect - Dion">
+<skill id="6255" levels="1" name="Heatstroke Prevention Effect - Giran">
+<skill id="6256" levels="1" name="Heatstroke Prevention Effect - Oren">
+<skill id="6257" levels="1" name="Heatstroke Prevention Effect - Aden">
+<skill id="6258" levels="1" name="Heatstroke Prevention Effect - Innadril">
+<skill id="6259" levels="1" name="Heatstroke Prevention Effect - Goddard">
+<skill id="6260" levels="1" name="Heatstroke Prevention Effect - Rune">
+<skill id="6261" levels="1" name="Heatstroke Prevention Effect - Schuttgart">
+#
+#
+#
+<skill id="6464" levels="1" name="Three Siblings' Trickery">
+<skill id="6465" levels="1" name="Jack O'Lantern Card">
+<skill id="6466" levels="1" name="Rotten Jack O'Lantern Card">
+<skill id="6467" levels="1" name="Jack O'Lantern Card - Confirm Skill">
+<skill id="6468" levels="1" name="Rotten Jack O'Lantern Card - Confirm Skill">
+<skill id="6469" levels="1" name="Halloween Defeat">
+<skill id="6470" levels="1" name="1 win">
+<skill id="6471" levels="1" name="2 win">
+<skill id="6472" levels="1" name="3 win">
+<skill id="6473" levels="1" name="4 win">
+<skill id="6474" levels="1" name="5 win">
+<skill id="6475" levels="1" name="6 win">
+<skill id="6476" levels="1" name="7 win">
+<skill id="6477" levels="1" name="8 win">
+<skill id="6478" levels="1" name="9 win">
+<skill id="6479" levels="1" name="10 win">
+<skill id="6480" levels="1" name="11 win">
+<skill id="6481" levels="1" name="12 win">
+<skill id="6482" levels="1" name="13 win">
+<skill id="6483" levels="1" name="14 win">
+<skill id="6484" levels="1" name="15 win">
+<skill id="6486" levels="1" name="17 win">
+<skill id="6487" levels="1" name="18 win">
+<skill id="6488" levels="1" name="19 win">
+<skill id="6489" levels="1" name="20 win">
+<skill id="6490" levels="1" name="Jack's game - Gauge">
+<skill id="6491" levels="1" name="Jack's game - Target">
+#
+#
+#
+<skill id="6685" levels="1" name="Santa Claus's Gift">
+#
+#
+#
+<skill id="7000" levels="1" name="NPC Default">
+#
+#
+#
+<skill id="7008" levels="1" name="not_used">
+<skill id="7009" levels="1" name="not_used">
+<skill id="7010" levels="1" name="not_used">
+<skill id="7011" levels="1" name="not_used">
+<skill id="7012" levels="1" name="not_used">
+<skill id="7013" levels="1" name="not_used">
+#
+#
+#
+<skill id="7014" levels="1" name="Test - Critical Damage Up">
+<skill id="7015" levels="1" name="Test - Critical Damage Down">
+<skill id="7016" levels="1" name="Test - Critical Damage Up">
+<skill id="7017" levels="1" name="Test - Critical Damage Down">
+<skill id="7018" levels="1" name="Test - Critical Rate Up">
+<skill id="7019" levels="1" name="Test - Critical Rate Down">
+<skill id="7020" levels="1" name="Test - Critical Rate Up">
+<skill id="7021" levels="1" name="Test - Critical Rate Down">
+<skill id="7022" levels="1" name="Test - Find Hidden Door">
+#
+#
+#
+<skill id="7023" levels="1" name="not_used">
+<skill id="7024" levels="1" name="not_used">
+<skill id="7025" levels="1" name="not_used">
+<skill id="7026" levels="1" name="not_used">
+<skill id="7027" levels="1" name="not_used">
+#
+#
+#
+<skill id="7028" levels="1" name="For Stationary NPCs">
+<skill id="7033" levels="1" name="not_used">
+<skill id="7034" levels="1" name="not_used">
+<skill id="7035" levels="1" name="not_used">
+<skill id="7036" levels="1" name="not_used">
+<skill id="7037" levels="1" name="not_used">
+<skill id="7038" levels="1" name="not_used">
+<skill id="7039" levels="1" name="not_used">
+<skill id="7040" levels="1" name="not_used">
+#
+#
+#
+<skill id="7065" levels="1" name="Test - Charge">
+<skill id="7066" levels="1" name="Test Stun Charge">
+<skill id="7067" levels="1" name="Test Range Charge">
+<skill id="7068" levels="1" name="Test Steal Abnormal State">
+<skill id="7069" levels="1" name="Test Abnormal State DD">
+<skill id="7070" levels="1" name="Test - Soul Eating Passive">
+<skill id="7071" levels="1" name="Test - Soul Transfer">
+<skill id="7072" levels="1" name="Test - Basic Trap">
+<skill id="7073" levels="1" name="Test - Find Trap">
+<skill id="7074" levels="1" name="Test - Cancel Trap">
+<skill id="7075" levels="1" name="Test - Distance DD">
+<skill id="7076" levels="1" name="Test - Delay Debuff">
+<skill id="7077" levels="1" name="Test - Delay Debuff - Call">
+<skill id="7078" levels="1" name="Test - Blink">
+<skill id="7079" levels="1" name="Test - Party Damage Absorb">
+<skill id="7080" levels="1" name="Test - General Attack Prohibited">
+<skill id="7081" levels="1" name="Effect Test - Land Shot">
+<skill id="7082" levels="1" name="Effect Test - Chain Lightning">
+<skill id="7083" levels="1" name="Test - Trap Skill">
+<skill id="7084" levels="1" name="Test - Trap Skill">
+# -- <skill id="7085" levels="1" name="Self-Destruct Explosion"> Donate Skill
+<skill id="7086" levels="1" name="Last Stand_test">
+<skill id="7087" levels="1" name="Chain Magic - Dark Explosion_test">
+#
+#
+#
+<skill id="8249" levels="1" name="Cancel Critical Hit">
+<skill id="8252" levels="1" name="Test - Transform Mount1">
+<skill id="8253" levels="1" name="Test - Transform Mount2">
+#
+#
+#
+<skill id="8266" levels="1" name="Gludio Talisman">
+<skill id="8267" levels="1" name="Dion Talisman">
+<skill id="8268" levels="1" name="Giran Talisman">
+<skill id="8269" levels="1" name="Oren Talisman">
+<skill id="8270" levels="1" name="Aden Talisman">
+<skill id="8271" levels="1" name="Innadril Talisman">
+<skill id="8272" levels="1" name="Goddard Talisman">
+<skill id="8273" levels="1" name="Rune Talisman">
+<skill id="8274" levels="1" name="Schuttgart Talisman">
+#
+#
+#
+<skill id="8282" levels="1" name="Cloak Slot Add">
+#
+#
+#
+<skill id="8315" levels="1" name="Santa Claus' Blessed Weapon">
+<skill id="8316" levels="1" name="Santa Claus' Blessed Weapon">
+<skill id="8317" levels="1" name="Santa Claus' Blessed Weapon">
+<skill id="8318" levels="1" name="Santa Claus' Blessed Weapon">
+<skill id="8319" levels="1" name="Santa Claus' Blessed Weapon">
+<skill id="8320" levels="1" name="Santa Claus' Blessed Weapon">
+<skill id="8321" levels="1" name="Santa Claus' Blessed Weapon">
+<skill id="8322" levels="1" name="Santa Claus' Blessed Weapon">
+<skill id="8323" levels="1" name="Notifier">
+#
+#
+#<skill id="8334" levels="1" name="Blue Talisman - Lord's Divine Protection">
+#
+#
+#
+<skill id="8359" levels="1" name="Notifier">
+<skill id="8360" levels="1" name="Energy Maintenance Effect">
+<skill id="8365" levels="1" name="Dynasty Tunic">
+<skill id="8366" levels="1" name="Dynasty Jewel Leather Armor">
+<skill id="8367" levels="1" name="Dynasty Jewel Leather Mail">
+<skill id="8368" levels="1" name="Dynasty Jewel Leather Mail">
+<skill id="8369" levels="1" name="Halloween Pumpkin Card">
+<skill id="8370" levels="1" name="Rotten Pumpkin Card">
+<skill id="8372" levels="1" name="Super Strong Giant's Mask">
+<skill id="8373" levels="1" name="Silent Scream's Mask">
+<skill id="8374" levels="1" name="Wrathful Spirit's Mask">
+<skill id="8375" levels="1" name="Unrotten Corpse's Mask">
+<skill id="8376" levels="1" name="Planet X235 Alien Mask's Effect">
+<skill id="8377" levels="1" name="Golden Jack O'Lantern Mask's Effect">
+#
+#
+#
+<skill id="8465" levels="1" name="Notifier">
+#
+#
+#
+<skill id="9000" levels="1" name="PC room private weapon strengthening order sheet - D grade">
+<skill id="9001" levels="1" name="PC room private armor strengthening order sheet - C grade">
+<skill id="9002" levels="1" name="PC room private armor strengthening order sheet - B grade">
+<skill id="9003" levels="1" name="PC room private weapon strengthening order sheet - A grade">
+<skill id="9004" levels="1" name="PC room private armor strengthening order sheet - S grade">
+<skill id="9005" levels="1" name="PC room private blessed weapon strengthening order sheet - D grade">
+<skill id="9006" levels="1" name="PC room private blessed weapon strengthening order sheet - C grade">
+<skill id="9007" levels="1" name="PC room private blessed weapon strengthening order sheet - B grade">
+<skill id="9008" levels="1" name="PC room private blessed weapon strengthening order sheet - A grade">
+<skill id="9009" levels="1" name="PC room private blessed weapon strengthening order sheet - S grade">
+#
+# Skills
+#
+<skill id="9010" levels="1" name="Cool air cannon">
+<skill id="9011" levels="1" name="Might">
+<skill id="9012" levels="1" name="Shield">
+<skill id="9013" levels="1" name="Wind Walk">
+<skill id="9014" levels="1" name="Focus">
+<skill id="9015" levels="1" name="Death Whisper">
+<skill id="9016" levels="1" name="Guidance">
+<skill id="9017" levels="1" name="Blessed Shield">
+<skill id="9018" levels="1" name="Blessed Body">
+<skill id="9019" levels="1" name="Haste">
+<skill id="9020" levels="1" name="Vampiric Rage">
+<skill id="9021" levels="1" name="Berserker Spirit">
+<skill id="9024" levels="1" name="Empower">
+<skill id="9025" levels="1" name="Acumen">
+<skill id="9026" levels="1" name="Clarity">
+#
+#
+#
+<skill id="9027" levels="1" name="PC cafe personal instant lottery">
+<skill id="9028" levels="1" name="Cool air cannon of fortune">
+<skill id="9029" levels="1" name="Watermelon Seed">
+<skill id="9030" levels="1" name="Honey Watermelon Seed">
+<skill id="9031" levels="1" name="Copied Watermelon Seed">
+<skill id="9032" levels="1" name="Copied Honey Watermelon Seed">
+<skill id="9033" levels="1" name="Herdsman's Love Scroll">
+<skill id="9034" levels="1" name="Vitality Belt Enchant Scroll">
+<skill id="9035" levels="1" name="Steamed Rice Cake">
+<skill id="9036" levels="1" name="Special July 7th Parcel">
+<skill id="9037" levels="1" name="Special July 7th Parcel (Event)">
+<skill id="9038" levels="1" name="Steamed Rice Cake">
+<skill id="9039" levels="1" name="Steamed Rice Cake">
+<skill id="9040" levels="1" name="PC Cafe Points">
+<skill id="9041" levels="1" name="Sixth Anniversary Cake">
+<skill id="9042" levels="1" name="6th Anniversary Cube">
+<skill id="9043" levels="1" name="6th Anniversary Cube">
+<skill id="9044" levels="1" name="6th Anniversary Cube">
+<skill id="9045" levels="1" name="6th Anniversary Cube">
+<skill id="9046" levels="1" name="6th Anniversary Cube">
+<skill id="9047" levels="1" name="6th Anniversary Cube">
+<skill id="9048" levels="1" name="6th Anniversary Cube">
+<skill id="9061" levels="1" name="Uldie Summon Scroll">
+<skill id="9062" levels="1" name="Belldandy Summon Scroll">
+<skill id="9063" levels="1" name="Skooldie Summon Scroll">
+<skill id="9064" levels="1" name="Halloween Toy Chest">
+<skill id="9065" levels="1" name="Shiny Halloween Toy Chest">
+<skill id="9066" levels="1" name="Scroll of Transformation Box">
+<skill id="9069" levels="1" name="10,000 SP scroll">
+<skill id="9070" levels="1" name="Halloween Pumpkin">
+<skill id="9071" levels="1" name="Halloween Pumpkin - event">
+<skill id="9072" levels="1" name="Small Halloween Pumpkin">
+<skill id="9079" levels="1" name="Santa's Buff Scroll">
+<skill id="9080" levels="1" name="Santa's Sock">
+<skill id="9081" levels="1" name="Christmas Cake">
+<skill id="9082" levels="1" name="White Christmas Petition">
+<skill id="9083" levels="1" name="Christmas Cake - event">
+<skill id="9084" levels="1" name="White Christmas Petition - event">
+<skill id="9085" levels="1" name="Santa Claus's Gift"> 
+<skill id="9086" levels="1" name="Santa - Potion of Will">
+#
+#
+#
+<skill id="21042" levels="1" name="Baguette's Blessing">
+#
+#
+#
+<skill id="21120" levels="1" name="Jack O'Lantern Card">
+<skill id="21121" levels="1" name="Rotten Jack O'Lantern Card">
+#
+#
+#
+<skill id="21172" levels="1" name="Enhanced Authority - CON+1 STR+1">
+<skill id="21173" levels="1" name="Enhanced Authority - WIT+1 INT+1">
+<skill id="21174" levels="1" name="Enhanced Authority - WIT+1 MEN+1">
+<skill id="21175" levels="1" name="Enhanced Authority - CON+1 DEX+1">
+<skill id="21176" levels="1" name="Divine Protection - Divinity">
+<skill id="21177" levels="1" name="Divine Protection - Water">
+<skill id="21178" levels="1" name="Divine Protection - Fire">
+<skill id="21179" levels="1" name="Divine Protection - Wind">
+<skill id="21180" levels="1" name="Divine Protection - Earth">
+<skill id="21181" levels="1" name="Divine Protection - Darkness">
+<skill id="21182" levels="1" name="Blessing of Resistance - Hold">
+<skill id="21183" levels="1" name="Blessing of Resistance - Paralysis">
+<skill id="21184" levels="1" name="Blessing of Resistance - Sleep">
+<skill id="21185" levels="1" name="Blessing of Resistance - Movement Speed Decrease">
+<skill id="21186" levels="1" name="Blessing of Resistance - Bleed">
+<skill id="21187" levels="1" name="Blessing of Resistance - Stun">
+<skill id="21188" levels="1" name="Recovery Power - HP">
+<skill id="21189" levels="1" name="Recovery Power - MP">
+<skill id="21190" levels="1" name="Soul Shield">
+<skill id="21193" levels="1" name="Power of Guardian Deity">
+#
+#
+#
+<skill id="22003" levels="1" name="Sweet-and-Sour White Kimchee">
+#
+#
+#
+<skill id="22007" levels="1" name="Good Luck Lucky Bag">
+<skill id="22008" levels="1" name="Lucky Four-leaf Clover">
+<skill id="22009" levels="1" name="Holiday Miracle">
+<skill id="22010" levels="1" name="Mysterious Formal Dress">
+#
+#
+#
+<skill id="22019" levels="1" name="Extra Entrance Pass - Kamaloka (Hall of the Abyss)">
+<skill id="22020" levels="1" name="Extra Entrance Pass - Near Kamaloka">
+<skill id="22021" levels="1" name="Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss)">
+<skill id="22022" levels="1" name="Premium Valentine Decoration">
+#
+#
+#
+<skill id="22027" levels="1" name="Heavenly Valentine Cake">
+#
+#
+#
+<skill id="22032" levels="1" name="Baguette Legacy">
+<skill id="22033" levels="1" name="Baguette Legacy - Kamael">
+#
+#
+#
+<skill id="22041" levels="2" name="Rune of Crystal Form Level">
+#
+#
+#
+<skill id="22071" levels="1" name="Huge Fortuna Box">
+<skill id="22072" levels="1" name="Huge Fortuna Cube">
+<skill id="22073" levels="1" name="Weapon Enchant Scroll - S Grade">
+<skill id="22074" levels="1" name="Armor Enchant Scroll - S Grade">
+<skill id="22075" levels="1" name="Ancient Weapon Enchant Crystal - S grade">
+<skill id="22076" levels="1" name="Ancient Armor Enchant Crystal - S grade">
+<skill id="22077" levels="1" name="Divine Weapon Enchant Crystal - S grade">
+<skill id="22078" levels="1" name="Divine Armor Enchant Crystal - S grade">
+#
+#
+#
+<skill id="22091" levels="1" name="Eva's Rune">
+<skill id="22092" levels="1" name="Scroll Master 1">
+<skill id="22093" levels="1" name="Scroll Master 2">
+<skill id="22094" levels="1" name="Exp. Master">
+<skill id="22097" levels="1" name="Girl's Gift of Gratitude">
+<skill id="22098" levels="1" name="Boy's Gift of Gratitude">
+#
+#
+#
+<skill id="22101" levels="1" name="Fortune of Love Box">
+#
+#
+#
+<skill id="22108" levels="1" name="Halloween Toy Box">
+<skill id="22109" levels="1" name="Shiny Halloween Toy Box">
+#
+#
+#
+<skill id="22114" levels="1" name="Morph Scroll Box">
+<skill id="22115" levels="1" name="Santa's Weapon Exchange Ticket Box">
+<skill id="22116" levels="1" name="Summon Flames Box">
+<skill id="22117" levels="1" name="Flames Box Firework">
+#
+#
+#
+<skill id="22126" levels="1" name="Baby Food Skill">
+<skill id="22127" levels="1" name="Summon Warm Kotatz">
+#
+#
+#
+
+<skill id="22129" levels="1" name="Red Dimensional Stone">
+<skill id="22130" levels="1" name="Food of Doubt's Effect">
+#
+#
+#
+<skill id="22137" levels="1" name="Star Food">
+<skill id="22138" levels="1" name="Mango Dessert">
+#
+#
+#
+<skill id="22162" levels="1" name="Mt. Fuji Herb">
+<skill id="22163" levels="1" name="Hawk Herb">
+<skill id="22164" levels="1" name="Eggplant Herb">
+<skill id="22165" levels="1" name="Energy Replenish">
+<skill id="22166" levels="1" name="Energy Replenish">
+<skill id="22167" levels="1" name="April Fools' Day Vesper Weapon Gift">
+#
+#
+#
+<skill id="23021" levels="3" name="Turkey's Attack Scissors">
+#
+#
+#
+<skill id="23023" levels="1" name="Reset Consecutive Wins">
+#
+#
+#
+<skill id="23069" levels="1" name="Threatening Roar">
+<skill id="23070" levels="1" name="Red Flame">
+<skill id="23071" levels="1" name="Blue Flame">
+<skill id="23072" levels="1" name="Eva's Wrath">
+<skill id="23073" levels="1" name="Switch Mode">
+<skill id="23074" levels="1" name="Icy Air Explosion">
+<skill id="23075" levels="1" name="Flame Shock">
+#
+#
+#
+<skill id="23091" levels="1" name="Trick of Halloween Children">
+<skill id="23092" levels="1" name="Jack O'Lantern Card">
+<skill id="23093" levels="1" name="Rotten Jack O'Lantern Card">
+<skill id="23094" levels="1" name="Jack O'Lantern Card - Confirm Skill">
+<skill id="23095" levels="1" name="Rotten Jack O'Lantern Card - Confirm Skill">
+<skill id="23096" levels="1" name="Halloween Defeat">
+<skill id="23097" levels="1" name="First Consecutive Win">
+<skill id="23098" levels="1" name="2nd Consecutive Win">
+<skill id="23099" levels="1" name="Third Consecutive Win">
+#
+#
+#
+<skill id="23100" levels="1" name="Fourth Consecutive Win">
+<skill id="23101" levels="1" name="5th Consecutive Win">
+<skill id="23102" levels="1" name="6th Consecutive Win">
+<skill id="23103" levels="1" name="7th Consecutive Win">
+<skill id="23104" levels="1" name="8th Consecutive Win">
+<skill id="23105" levels="1" name="9th Consecutive Win">
+<skill id="23106" levels="1" name="10th Consecutive Win">
+<skill id="23107" levels="1" name="11th Consecutive Win">
+<skill id="23108" levels="1" name="12th Consecutive Win">
+<skill id="23109" levels="1" name="13th Consecutive Win">
+<skill id="23110" levels="1" name="14th Consecutive Win">
+<skill id="23111" levels="1" name="15th Consecutive Win">
+<skill id="23112" levels="1" name="16th Consecutive Win">
+<skill id="23113" levels="1" name="17th Consecutive Win">
+<skill id="23114" levels="1" name="18th Consecutive Win">
+<skill id="23115" levels="1" name="19th Consecutive Win">
+<skill id="23116" levels="1" name="20th Consecutive Win">
+#
+#
+#
+<skill id="23121" levels="1" name="Jack Game - Gauge">
+<skill id="23122" levels="1" name="Jack Game - Target">
+<skill id="23124" levels="1" name="Gwangong Agathion Special Skill - Aura of Fury">
+<skill id="23126" levels="1" name="Gwanseum Nyang Nyang Agathion Special Skill - Blessing of Mercy">
+<skill id="23128" levels="1" name="Blue Opera Agathion Special Skill - Sword of Recovery">
+<skill id="23129" levels="1" name="Blue Opera Agathion Special Skill - Sword of Water">
+<skill id="23131" levels="1" name="Red Opera Agathion Special Skill - Spear of Flames">
+#
+#
+#
+<skill id="23155" levels="1" name="Reindeer Scratch">
+<skill id="23163" levels="1" name="Turkey's Big Mistake">
+#
+#
+#
+<skill id="23165" levels="1" name="Inadequate Affection">
+<skill id="23166" levels="1" name="no name">
+#
+#
+#
+<skill id="23174" levels="1" name="Narrow Escape from Death">
+<skill id="23175" levels="1" name="Soul Stealth">
+<skill id="23176" levels="1" name="Hide">
+<skill id="23177" levels="1" name="Soul Stealth">
+<skill id="23178" levels="1" name="Soul Stealth">
+#
+#
+#
+<skill id="23180" levels="1" name="Joy of Vitality">
+#
+# End of skills table
+#
+######

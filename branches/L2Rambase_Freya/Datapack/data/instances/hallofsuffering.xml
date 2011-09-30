@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance name="Hall Of Suffering">
+	<activityTime val="60" />
+	<emptyDestroyTime val="600"/>
+	<spawnPoint spawnX="-183292" spawnY="206063" spawnZ="-12888" />
+</instance>

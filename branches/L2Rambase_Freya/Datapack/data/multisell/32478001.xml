@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Vitamin Manager Grade Prizes-->
+    <list>
+        <item id="1">
+            <production id="13021" count="1"/>
+            <ingredient id="13419" count="50"/>
+        </item>
+        <item id="2">
+            <production id="20033" count="1"/>
+            <ingredient id="13419" count="250"/>
+        </item>
+        <item id="3">
+            <production id="13016" count="1"/>
+            <ingredient id="13419" count="50"/>
+        </item>
+        <item id="4">
+            <production id="13015" count="1"/>
+            <ingredient id="13419" count="1000"/>
+        </item>
+        <item id="5">
+            <production id="14065" count="1"/>
+            <ingredient id="13419" count="5000"/>
+        </item>
+        <item id="6">
+            <production id="10414" count="1"/>
+            <ingredient id="13419" count="3000"/>
+        </item>
+        <item id="7">
+            <production id="10649" count="1"/>
+            <ingredient id="13419" count="5000"/>
+        </item>
+</list>

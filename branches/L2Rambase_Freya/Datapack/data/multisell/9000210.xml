@@ -1,0 +1,248 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Created with Lineage II - Multisell Manager -->
+<!-- © 2007 by tReXpert -->
+
+<list maintainEnchantment="true">
+
+  <!-- Mana Potion -->
+  <item id="1">
+    <ingredient id="57" count="50000"/>
+    <production id="728" count="1"/>
+  </item>
+
+  <!-- Healing Potion -->
+  <item id="2">
+    <ingredient id="57" count="400"/>
+    <production id="1061" count="1"/>
+  </item>
+
+  <!-- Greater Healing Potion -->
+  <item id="3">
+    <ingredient id="57" count="1000"/>
+    <production id="1539" count="1"/>
+  </item>
+
+  <!-- Scroll of Escape -->
+  <item id="4">
+    <ingredient id="57" count="450"/>
+    <production id="736" count="1"/>
+  </item>
+
+  <!-- Blessed Scroll of Escape -->
+  <item id="5">
+    <ingredient id="57" count="150000"/>
+    <production id="1538" count="1"/>
+  </item>
+
+  <!-- Aden Blessed Scroll of Escape -->
+  <item id="6">
+    <ingredient id="57" count="500000"/>
+    <production id="13735" count="1"/>
+  </item>
+
+  <!-- Dion Blessed Scroll of Escape -->
+  <item id="7">
+    <ingredient id="57" count="500000"/>
+    <production id="13732" count="1"/>
+  </item>
+
+  <!-- Giran Blessed Scroll of Escape -->
+  <item id="8">
+    <ingredient id="57" count="500000"/>
+    <production id="13733" count="1"/>
+  </item>
+
+  <!-- Gludio Blessed Scroll of Escape -->
+  <item id="9">
+    <ingredient id="57" count="500000"/>
+    <production id="13731" count="1"/>
+  </item>
+
+  <!-- Goddard Blessed Scroll of Escape -->
+  <item id="10">
+    <ingredient id="57" count="500000"/>
+    <production id="13737" count="1"/>
+  </item>
+
+  <!-- Innadril Blessed Scroll of Escape -->
+  <item id="11">
+    <ingredient id="57" count="500000"/>
+    <production id="13736" count="1"/>
+  </item>
+
+  <!-- Oren Blessed Scroll of Escape -->
+  <item id="12">
+    <ingredient id="57" count="500000"/>
+    <production id="13734" count="1"/>
+  </item>
+
+  <!-- Rune Blessed Scroll of Escape -->
+  <item id="13">
+    <ingredient id="57" count="500000"/>
+    <production id="13738" count="1"/>
+  </item>
+
+  <!-- Schuttgart Blessed Scroll of Escape -->
+  <item id="14">
+    <ingredient id="57" count="500000"/>
+    <production id="13739" count="1"/>
+  </item>
+
+  <!-- My Teleport Scroll -->
+  <item id="15">
+    <ingredient id="57" count="5000000"/>
+    <production id="13016" count="1"/>
+  </item>
+
+  <!-- My Teleport Spellbook -->
+  <item id="16">
+    <ingredient id="57" count="45000000"/>
+    <production id="13015" count="1"/>
+  </item>
+
+  <!-- My Teleport Flag -->
+  <item id="17">
+    <ingredient id="57" count="50000000"/>
+    <production id="20033" count="1"/>
+  </item>
+
+  <!-- Soul Ore -->
+  <item id="18">
+    <ingredient id="57" count="300"/>
+    <production id="1785" count="1"/>
+  </item>
+
+  <!-- Spirit Ore -->
+  <item id="19">
+    <ingredient id="57" count="450"/>
+    <production id="3031" count="1"/>
+  </item>
+
+  <!-- Gemstone D -->
+  <item id="20">
+    <ingredient id="57" count="1100"/>
+    <production id="2130" count="1"/>
+  </item>
+
+  <!-- Gemstone C -->
+  <item id="21">
+    <ingredient id="57" count="3300"/>
+    <production id="2131" count="1"/>
+  </item>
+
+  <!-- Gemstone B -->
+  <item id="22">
+    <ingredient id="57" count="11000"/>
+    <production id="2132" count="1"/>
+  </item>
+
+  <!-- Crystal: D-Grade -->
+  <item id="23">
+    <ingredient id="57" count="1000"/>
+    <production id="1458" count="1"/>
+  </item>
+
+  <!-- Crystal: C-Grade -->
+  <item id="24">
+    <ingredient id="57" count="7500"/>
+    <production id="1459" count="1"/>
+  </item>
+
+  <!-- Crystal: B-Grade -->
+  <item id="25">
+    <ingredient id="57" count="15000"/>
+    <production id="1460" count="1"/>
+  </item>
+
+  <!-- Wooden Bolt -->
+  <item id="26">
+    <ingredient id="57" count="1"/>
+    <production id="9632" count="1"/>
+  </item>
+
+  <!-- Bone Bolt -->
+  <item id="27">
+    <ingredient id="57" count="2"/>
+    <production id="9633" count="1"/>
+  </item>
+
+  <!-- Steel Bolt -->
+  <item id="28">
+    <ingredient id="57" count="5"/>
+    <production id="9634" count="1"/>
+  </item>
+
+  <!-- Silver Bolt -->
+  <item id="29">
+    <ingredient id="57" count="7"/>
+    <production id="9635" count="1"/>
+  </item>
+
+  <!-- Mithril Bolt -->
+  <item id="30">
+    <ingredient id="57" count="10"/>
+    <production id="9636" count="1"/>
+  </item>
+
+  <!-- Shining Bolt -->
+  <item id="31">
+    <ingredient id="57" count="15"/>
+    <production id="9637" count="1"/>
+  </item>
+
+  <!-- Wooden Arrow -->
+  <item id="32">
+    <ingredient id="57" count="1"/>
+    <production id="17" count="1"/>
+  </item>
+
+  <!-- Bone Arrow -->
+  <item id="33">
+    <ingredient id="57" count="2"/>
+    <production id="1341" count="1"/>
+  </item>
+
+  <!-- Iron Arrow -->
+  <item id="34">
+    <ingredient id="57" count="5"/>
+    <production id="1342" count="1"/>
+  </item>
+
+  <!-- Silver Arrow -->
+  <item id="35">
+    <ingredient id="57" count="7"/>
+    <production id="1343" count="1"/>
+  </item>
+
+  <!-- Mithril Arrow -->
+  <item id="36">
+    <ingredient id="57" count="10"/>
+    <production id="1344" count="1"/>
+  </item>
+
+  <!-- Shining Arrow -->
+  <item id="37">
+    <ingredient id="57" count="15"/>
+    <production id="1345" count="1"/>
+  </item>
+
+  <!-- Seal Stone to AA -->
+  <item id="38">
+    <ingredient id="6360" count="1"/>
+    <production id="5575" count="3"/>
+  </item>
+
+  <!-- Seal Stone to AA -->
+  <item id="39">
+    <ingredient id="6361" count="1"/>
+    <production id="5575" count="5"/>
+  </item>
+
+  <!-- Seal Stone to AA -->
+  <item id="40">
+    <ingredient id="6362" count="1"/>
+    <production id="5575" count="10"/>
+  </item>
+
+</list>

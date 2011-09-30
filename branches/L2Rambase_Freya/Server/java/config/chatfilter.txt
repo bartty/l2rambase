@@ -1,0 +1,21 @@
+﻿# Example for <cr> and <lf>
+# (not allow players to confuse others by writing from beginning of the line)
+# \\r
+# \\n
+#
+# These words will be replaced:
+suck
+gay
+rape
+fuck
+dick
+chuj
+huj
+penis
+kurwa
+qrwa
+pizda
+piczka
+jebac
+pierdol
+debil

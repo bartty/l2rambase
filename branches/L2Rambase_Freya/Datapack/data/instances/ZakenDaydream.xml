@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance name="Cavern of the Pirate Captain (daydream)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="instance.xsd">
+	<activityTime val="60" />
+	<allowSummon val="false" />
+	<emptyDestroyTime val="600" />
+	<spawnPoint spawnX="47114" spawnY="187152" spawnZ="-3480" />
+	<doorlist>
+		<door doorId="21240006" />
+	</doorlist>
+</instance>

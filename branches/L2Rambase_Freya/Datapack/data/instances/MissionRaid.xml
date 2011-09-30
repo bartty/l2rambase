@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance name="Mission Raid Dungeon">
+  <activityTime val="30"/>
+  <allowSummon val="false"/>
+  <emptyDestroyTime val="1" />
+  <spawnPoint spawnX="82698" spawnY="148638" spawnZ="-3473" />
+  <returnteleport x="82698" y="148638" z="-3473" />
+</instance>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<item id="15280" name="NPC use clear 1HS">
+		<for>
+			<set order="0x08" stat="pAtk" val="24" />
+			<set order="0x08" stat="mAtk" val="17" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+		</for>
+	</item>
+	<item id="15281" name="NPC use clear 2HS">
+		<for>
+			<set order="0x08" stat="pAtk" val="78" />
+			<set order="0x08" stat="mAtk" val="39" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+		</for>
+	</item>
+</list>

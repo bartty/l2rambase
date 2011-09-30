@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance name="Castle Prison Dungeon">
+  <activityTime val="60"/>
+  <allowSummon val="false"/>
+  <emptyDestroyTime val="0" />
+</instance>

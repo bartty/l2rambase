@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- S grade Parts Weapons for Light Stones -->
+<list>
+	<item id="1">
+		<ingredient id="7911" count="150" />
+		<production id="6688" count="3" />
+	</item>
+	<item id="2">
+		<ingredient id="7911" count="150" />
+		<production id="6689" count="3" />
+	</item>
+	<item id="3">
+		<ingredient id="7911" count="150" />
+		<production id="6690" count="3" />
+	</item>
+	<item id="4">
+		<ingredient id="7911" count="150" />
+		<production id="6691" count="3" />
+	</item>
+	<item id="5">
+		<ingredient id="7911" count="150" />
+		<production id="6692" count="3" />
+	</item>
+	<item id="6">
+		<ingredient id="7911" count="150" />
+		<production id="6693" count="3" />
+	</item>
+	<item id="7">
+		<ingredient id="7911" count="150" />
+		<production id="6694" count="3" />
+	</item>
+	<item id="8">
+		<ingredient id="7911" count="150" />
+		<production id="6695" count="3" />
+	</item>
+	<item id="9">
+		<ingredient id="7911" count="150" />
+		<production id="6696" count="3" />
+	</item>
+	<item id="10">
+		<ingredient id="7911" count="150" />
+		<production id="6697" count="3" />
+	</item>
+</list>
