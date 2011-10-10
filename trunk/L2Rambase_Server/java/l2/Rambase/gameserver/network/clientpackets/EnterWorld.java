@@ -399,10 +399,10 @@ public class EnterWorld extends L2GameClientPacket
 		
 		sendPacket(new FriendList(activeChar));
 		
-		activeChar.sendMessage("Server use L2Rambase files " +
-		"and developed by the L2Rambase Team, " +
-		"you can find our info about project on www.l2Rambase.funsite.cz");
-		activeChar.sendMessage("L2Rambase Team: RobikBobik, St3et, mjaniko, FFs");
+		activeChar.sendMessage("Server use L2Rambase Project " +
+		"and developed by the L2Rambase Team. " +
+		"Info about project on www.l2Rambase.ucoz.ro");
+		activeChar.sendMessage("L2Rambase Team: ShadowMan, Wolfmark, Wyrda");
 
 		SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.FRIEND_S1_HAS_LOGGED_IN);
 		sm.addString(activeChar.getName());
