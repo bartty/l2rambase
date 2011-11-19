@@ -1,1 +1,0 @@
-UPDATE `npc` SET `type` = 'L2QuestGuard' WHERE `id` = 32358;
