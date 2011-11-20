@@ -118,12 +118,22 @@
 		<set name="icon" val="icon.etc_potion_red_i00" />
 		<set name="material" val="steel" />
 		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />			
 	</item>
 	<item id="21914" type="EtcItem" name="Unrefined Blue Dragon Blood">
 		<!-- Description: Unrefined Blue Dragon Blood collected from the dragons inside the Lair of Antharas. -->
 		<set name="icon" val="icon.etc_potion_blue_i00" />
 		<set name="material" val="steel" />
 		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />			
 	</item>
 	<item id="21915" type="EtcItem" name="Ice Candy Piece">
 		<!-- Description: Sweet ice candy piece. Collect 50 and bring them back to Santa Claus to receive a reward. -->

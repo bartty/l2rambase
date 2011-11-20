@@ -22,6 +22,7 @@ import l2.Rambase.gameserver.model.L2Object.InstanceType;
 import l2.Rambase.gameserver.model.actor.L2Character;
 import l2.Rambase.gameserver.model.actor.L2Npc;
 import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
+import l2.Rambase.gameserver.model.entity.CTF;
 import l2.Rambase.gameserver.model.entity.L2Event;
 import l2.Rambase.gameserver.model.quest.Quest;
 import l2.Rambase.gameserver.network.serverpackets.ActionFailed;
@@ -129,6 +130,18 @@ public class L2NpcAction implements IActionHandler
 					if (((L2Npc)target).isEventMob)
 					{
 						L2Event.showEventHtml(activeChar, String.valueOf(target.getObjectId()));
+					}
+					else if (((L2Npc) target)._isEventMobCTF)
+					{
+						CTF.showEventHtml(activeChar, String.valueOf(target.getObjectId()));
+					}
+					else if (((L2Npc) target)._isCTF_Flag && activeChar._inEventCTF)
+					{
+						CTF.showFlagHtml(activeChar, String.valueOf(target.getObjectId()), ((L2Npc) target)._CTF_FlagTeamName);
+					}
+					else if (((L2Npc) target)._isCTF_throneSpawn)
+					{
+						CTF.CheckRestoreFlags();
 					}
 					else
 					{
