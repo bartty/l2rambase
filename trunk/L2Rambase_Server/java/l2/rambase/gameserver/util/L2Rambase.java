@@ -23,11 +23,8 @@ public class L2Rambase
 	public static void info()
 	{
 		_log.info("-------------------------------------------------------------------------------");
-		_log.info("                           We are the Future!                                  ");
 		_log.info("                           Client: High Five                                   ");
-		_log.info("                                 2011                                          ");
-		_log.info("-------------------------------------------------------------------------------");
-		_log.info("                         www.l2Rambase.funsite.cz                                ");
+		_log.info("                            L2Rambase © 2011                                   ");
 		_log.info("-------------------------------------------------------------------------------");
 	}
 }
