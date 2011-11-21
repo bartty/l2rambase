@@ -51,10 +51,10 @@ read LSDBHOST
 if [ -z "$LSDBHOST" ]; then
   LSDBHOST="localhost"
 fi
-echo -ne "\nPlease enter MySQL Login Server database name (default l2Rambase_ls): "
+echo -ne "\nPlease enter MySQL Login Server database name (default l2jls): "
 read LSDB
 if [ -z "$LSDB" ]; then
-  LSDB="l2Rambase_ls"
+  LSDB="l2jls"
 fi
 echo -ne "\nPlease enter MySQL Login Server user (default root): "
 read LSUSER
@@ -77,10 +77,10 @@ read CBDBHOST
 if [ -z "$CBDBHOST" ]; then
   CBDBHOST="localhost"
 fi
-echo -ne "\nPlease enter MySQL Community Server database name (default l2Rambase_cb): "
+echo -ne "\nPlease enter MySQL Community Server database name (default l2jcb): "
 read CBDB
 if [ -z "$CBDB" ]; then
-  CBDB="l2Rambase_cb"
+  CBDB="l2jcb"
 fi
 echo -ne "\nPlease enter MySQL Community Server user (default root): "
 read CBUSER
@@ -103,10 +103,10 @@ read GSDBHOST
 if [ -z "$GSDBHOST" ]; then
   GSDBHOST="localhost"
 fi
-echo -ne "\nPlease enter MySQL Game Server database name (default l2Rambase_gs): "
+echo -ne "\nPlease enter MySQL Game Server database name (default l2jgs): "
 read GSDB
 if [ -z "$GSDB" ]; then
-  GSDB="l2Rambase_gs"
+  GSDB="l2jgs"
 fi
 echo -ne "\nPlease enter MySQL Game Server user (default $LSUSER): "
 read GSUSER
