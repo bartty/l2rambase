@@ -12,18 +12,18 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-Rambase hellbound.TowerOfInfinitum;
+package hellbound.TowerOfInfinitum;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import l2.brick.gameserver.instancemanager.HellboundManager;
-import l2.brick.gameserver.model.L2Party;
-import l2.brick.gameserver.model.Location;
-import l2.brick.gameserver.model.actor.L2Npc;
-import l2.brick.gameserver.model.actor.instance.L2PcInstance;
-import l2.brick.gameserver.model.quest.Quest;
-import l2.brick.gameserver.util.Util;
+import l2.Rambase.gameserver.instancemanager.HellboundManager;
+import l2.Rambase.gameserver.model.L2Party;
+import l2.Rambase.gameserver.model.Location;
+import l2.Rambase.gameserver.model.actor.L2Npc;
+import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
+import l2.Rambase.gameserver.model.quest.Quest;
+import l2.Rambase.gameserver.util.Util;
 
 /**
  * @author GKR

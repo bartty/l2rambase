@@ -12,12 +12,12 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-Rambase hellbound.Kanaf;
+package hellbound.Kanaf;
 
-import l2.brick.gameserver.model.actor.L2Npc;
-import l2.brick.gameserver.model.actor.instance.L2PcInstance;
-import l2.brick.gameserver.model.quest.Quest;
-import l2.brick.util.Rnd;
+import l2.Rambase.gameserver.model.actor.L2Npc;
+import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
+import l2.Rambase.gameserver.model.quest.Quest;
+import l2.Rambase.util.Rnd;
 
 /**
  * @author GKR

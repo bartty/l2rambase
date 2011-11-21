@@ -12,19 +12,19 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-Rambase hellbound.BaseTower;
+package hellbound.BaseTower;
 
 import java.util.Map;
 
 import javolution.util.FastMap;
 
-import l2.brick.gameserver.datatables.DoorTable;
-import l2.brick.gameserver.model.L2Effect;
-import l2.brick.gameserver.model.actor.L2Npc;
-import l2.brick.gameserver.model.actor.instance.L2PcInstance;
-import l2.brick.gameserver.model.base.ClassId;
-import l2.brick.gameserver.model.quest.Quest;
-import l2.brick.gameserver.skills.SkillHolder;
+import l2.Rambase.gameserver.datatables.DoorTable;
+import l2.Rambase.gameserver.model.L2Effect;
+import l2.Rambase.gameserver.model.actor.L2Npc;
+import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
+import l2.Rambase.gameserver.model.base.ClassId;
+import l2.Rambase.gameserver.model.quest.Quest;
+import l2.Rambase.gameserver.skills.SkillHolder;
 
 /**
  * @author GKR

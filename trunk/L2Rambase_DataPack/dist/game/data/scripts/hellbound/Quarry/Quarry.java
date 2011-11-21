@@ -12,24 +12,24 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-Rambase hellbound.Quarry;
+package hellbound.Quarry;
 
-import l2.brick.Config;
-import l2.brick.gameserver.ThreadPoolManager;
-import l2.brick.gameserver.ai.CtrlIntention;
-import l2.brick.gameserver.instancemanager.HellboundManager;
-import l2.brick.gameserver.instancemanager.ZoneManager;
-import l2.brick.gameserver.model.actor.L2Attackable;
-import l2.brick.gameserver.model.actor.L2Character;
-import l2.brick.gameserver.model.actor.L2Npc;
-import l2.brick.gameserver.model.actor.instance.L2PcInstance;
-import l2.brick.gameserver.model.actor.instance.L2QuestGuardInstance;
-import l2.brick.gameserver.model.quest.Quest;
-import l2.brick.gameserver.model.zone.L2ZoneType;
-import l2.brick.gameserver.network.NpcStringId;
-import l2.brick.gameserver.network.clientpackets.Say2;
-import l2.brick.gameserver.network.serverpackets.NpcSay;
-import l2.brick.util.Rnd;
+import l2.Rambase.Config;
+import l2.Rambase.gameserver.ThreadPoolManager;
+import l2.Rambase.gameserver.ai.CtrlIntention;
+import l2.Rambase.gameserver.instancemanager.HellboundManager;
+import l2.Rambase.gameserver.instancemanager.ZoneManager;
+import l2.Rambase.gameserver.model.actor.L2Attackable;
+import l2.Rambase.gameserver.model.actor.L2Character;
+import l2.Rambase.gameserver.model.actor.L2Npc;
+import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
+import l2.Rambase.gameserver.model.actor.instance.L2QuestGuardInstance;
+import l2.Rambase.gameserver.model.quest.Quest;
+import l2.Rambase.gameserver.model.zone.L2ZoneType;
+import l2.Rambase.gameserver.network.NpcStringId;
+import l2.Rambase.gameserver.network.clientpackets.Say2;
+import l2.Rambase.gameserver.network.serverpackets.NpcSay;
+import l2.Rambase.util.Rnd;
 
 /**
  * @author DS, GKR

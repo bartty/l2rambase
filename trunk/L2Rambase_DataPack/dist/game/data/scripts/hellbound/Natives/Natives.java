@@ -12,18 +12,18 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-Rambase hellbound.Natives;
+package hellbound.Natives;
 
-import l2.brick.gameserver.datatables.DoorTable;
-import l2.brick.gameserver.instancemanager.HellboundManager;
-import l2.brick.gameserver.model.actor.L2Npc;
-import l2.brick.gameserver.model.actor.instance.L2DoorInstance;
-import l2.brick.gameserver.model.actor.instance.L2PcInstance;
-import l2.brick.gameserver.model.quest.Quest;
-import l2.brick.gameserver.model.quest.QuestState;
-import l2.brick.gameserver.network.NpcStringId;
-import l2.brick.gameserver.network.clientpackets.Say2;
-import l2.brick.gameserver.network.serverpackets.NpcSay;
+import l2.Rambase.gameserver.datatables.DoorTable;
+import l2.Rambase.gameserver.instancemanager.HellboundManager;
+import l2.Rambase.gameserver.model.actor.L2Npc;
+import l2.Rambase.gameserver.model.actor.instance.L2DoorInstance;
+import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
+import l2.Rambase.gameserver.model.quest.Quest;
+import l2.Rambase.gameserver.model.quest.QuestState;
+import l2.Rambase.gameserver.network.NpcStringId;
+import l2.Rambase.gameserver.network.clientpackets.Say2;
+import l2.Rambase.gameserver.network.serverpackets.NpcSay;
 
 /**
  * This class manages Natives' behavior up to 9 level of Hellbound. 10 level are handled in Hellbound Town.

@@ -12,7 +12,7 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-Rambase hellbound;
+package hellbound;
 
 import java.io.File;
 import java.util.Map;
@@ -26,14 +26,14 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
-import l2.brick.Config;
-import l2.brick.gameserver.Announcements;
-import l2.brick.gameserver.datatables.DoorTable;
-import l2.brick.gameserver.instancemanager.HellboundManager;
-import l2.brick.gameserver.model.actor.L2Npc;
-import l2.brick.gameserver.model.actor.instance.L2DoorInstance;
-import l2.brick.gameserver.model.actor.instance.L2PcInstance;
-import l2.brick.gameserver.model.quest.Quest;
+import l2.Rambase.Config;
+import l2.Rambase.gameserver.Announcements;
+import l2.Rambase.gameserver.datatables.DoorTable;
+import l2.Rambase.gameserver.instancemanager.HellboundManager;
+import l2.Rambase.gameserver.model.actor.L2Npc;
+import l2.Rambase.gameserver.model.actor.instance.L2DoorInstance;
+import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
+import l2.Rambase.gameserver.model.quest.Quest;
 
 public class Engine extends Quest implements Runnable
 {

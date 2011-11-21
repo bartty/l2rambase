@@ -12,12 +12,12 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-Rambase hellbound.Shadai;
+package hellbound.Shadai;
 
-import l2.brick.gameserver.GameTimeController;
-import l2.brick.gameserver.ThreadPoolManager;
-import l2.brick.gameserver.model.actor.L2Npc;
-import l2.brick.gameserver.model.quest.Quest;
+import l2.Rambase.gameserver.GameTimeController;
+import l2.Rambase.gameserver.ThreadPoolManager;
+import l2.Rambase.gameserver.model.actor.L2Npc;
+import l2.Rambase.gameserver.model.quest.Quest;
 
 /**
  * @author GKR
