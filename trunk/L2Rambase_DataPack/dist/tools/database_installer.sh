@@ -51,10 +51,10 @@ read LSDBHOST
 if [ -z "$LSDBHOST" ]; then
   LSDBHOST="localhost"
 fi
-echo -ne "\nPlease enter MySQL Login Server database name (default l2jls): "
+echo -ne "\nPlease enter MySQL Login Server database name (default l2Rambase_ls): "
 read LSDB
 if [ -z "$LSDB" ]; then
-  LSDB="l2jls"
+  LSDB="l2Rambase_ls"
 fi
 echo -ne "\nPlease enter MySQL Login Server user (default root): "
 read LSUSER
@@ -77,10 +77,10 @@ read CBDBHOST
 if [ -z "$CBDBHOST" ]; then
   CBDBHOST="localhost"
 fi
-echo -ne "\nPlease enter MySQL Community Server database name (default l2jcs): "
+echo -ne "\nPlease enter MySQL Community Server database name (default l2Rambase_cb): "
 read CBDB
 if [ -z "$CBDB" ]; then
-  CBDB="l2jcs"
+  CBDB="l2Rambase_cb"
 fi
 echo -ne "\nPlease enter MySQL Community Server user (default root): "
 read CBUSER
@@ -103,10 +103,10 @@ read GSDBHOST
 if [ -z "$GSDBHOST" ]; then
   GSDBHOST="localhost"
 fi
-echo -ne "\nPlease enter MySQL Game Server database name (default l2jgs): "
+echo -ne "\nPlease enter MySQL Game Server database name (default l2Rambase_gs): "
 read GSDB
 if [ -z "$GSDB" ]; then
-  GSDB="l2jgs"
+  GSDB="l2Rambase_gs"
 fi
 echo -ne "\nPlease enter MySQL Game Server user (default $LSUSER): "
 read GSUSER
@@ -332,7 +332,7 @@ else
 echo "Upgrading communityserver content"
 fi
 if [ "$1" == "I" ]; then
-	for cb in $(ls ../cb_sql/*.sql);do
+	for cb in $(ls ../sql/community/*.sql);do
 		echo "Installing Community Board table : $cb"
 		$MYC < $cb
 	done
@@ -354,7 +354,7 @@ else
 echo "Upgrading gameserver content"
 fi
 
-for gs in $(ls ../sql/server/*.sql);do
+for gs in $(ls ../sql/game/*.sql);do
 	echo "Installing GameServer table : $gs"
 	$MYG < $gs
 done
@@ -398,7 +398,7 @@ while :
   done 
 clear
 echo "Installing custom content."
-for custom in $(ls ../sql/server/custom/*.sql);do 
+for custom in $(ls ../sql/game/custom/*.sql);do 
 	echo "Installing custom table: $custom"
 	$MYG < $custom
 done
@@ -409,7 +409,7 @@ done
 	echo -ne "Install "Wedding Mod" tables? (y/N): "
 	read modprompt
 	if [ "$modprompt" == "y" -o "$modprompt" == "Y" ]; then
-		for mod in $(ls ../sql/server/mods/*.sql);do
+		for mod in $(ls ../sql/game/mods/*.sql);do
 			echo "Installing custom mod table : $mod"
 			$MYG < $mod
 		done
@@ -446,7 +446,7 @@ while :
 	 echo ""
      echo "There we go, it may take some time..."
 	 echo "Installing Gameserver Updates"
-     for file in $(ls ../sql/server/updates/*.sql);do
+     for file in $(ls ../sql/game/updates/*.sql);do
         $MYG < $file 2>> gserror.log
 	 done
 	 echo "Installing Loginserver Updates"
@@ -471,7 +471,7 @@ while :
 	 echo ""
      echo "There we go, it may take some time..."
      echo "updates parser results. Last run: "`date` >cb_database_installer.log
-     for file in $(ls ../cb_sql/updates/*sql);do
+     for file in $(ls ../sql/community/updates/*sql);do
         echo $file|cut -d/ -f4 >> cb_database_installer.log
         $MYC < $file 2>> cb_database_installer.log
         if [ $? -eq 0 ];then
