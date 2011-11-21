@@ -12,7 +12,7 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-Rambase instances.FinalEmperialTomb;
+package instances.FinalEmperialTomb;
 
 import gnu.trove.map.hash.TIntObjectHashMap;
 
@@ -34,43 +34,43 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
-import l2.brick.Config;
-import l2.brick.gameserver.GeoData;
-import l2.brick.gameserver.ThreadPoolManager;
-import l2.brick.gameserver.ai.CtrlIntention;
-import l2.brick.gameserver.instancemanager.InstanceManager;
-import l2.brick.gameserver.instancemanager.InstanceManager.InstanceWorld;
-import l2.brick.gameserver.model.L2CharPosition;
-import l2.brick.gameserver.model.L2CommandChannel;
-import l2.brick.gameserver.model.L2Object.InstanceType;
-import l2.brick.gameserver.model.L2Party;
-import l2.brick.gameserver.model.L2Skill;
-import l2.brick.gameserver.model.L2Territory;
-import l2.brick.gameserver.model.L2World;
-import l2.brick.gameserver.model.actor.L2Attackable;
-import l2.brick.gameserver.model.actor.L2Character;
-import l2.brick.gameserver.model.actor.L2Npc;
-import l2.brick.gameserver.model.actor.instance.L2DoorInstance;
-import l2.brick.gameserver.model.actor.instance.L2GrandBossInstance;
-import l2.brick.gameserver.model.actor.instance.L2MonsterInstance;
-import l2.brick.gameserver.model.actor.instance.L2PcInstance;
-import l2.brick.gameserver.model.quest.Quest;
-import l2.brick.gameserver.model.quest.QuestState;
-import l2.brick.gameserver.network.NpcStringId;
-import l2.brick.gameserver.network.SystemMessageId;
-import l2.brick.gameserver.network.serverpackets.AbstractNpcInfo.NpcInfo;
-import l2.brick.gameserver.network.serverpackets.Earthquake;
-import l2.brick.gameserver.network.serverpackets.ExShowScreenMessage;
-import l2.brick.gameserver.network.serverpackets.L2GameServerPacket;
-import l2.brick.gameserver.network.serverpackets.MagicSkillCanceld;
-import l2.brick.gameserver.network.serverpackets.MagicSkillUse;
-import l2.brick.gameserver.network.serverpackets.SocialAction;
-import l2.brick.gameserver.network.serverpackets.SpecialCamera;
-import l2.brick.gameserver.network.serverpackets.SystemMessage;
-import l2.brick.gameserver.skills.SkillHolder;
-import l2.brick.gameserver.templates.skills.L2SkillType;
-import l2.brick.gameserver.util.Util;
-import l2.brick.util.Rnd;
+import l2.Rambase.Config;
+import l2.Rambase.gameserver.GeoData;
+import l2.Rambase.gameserver.ThreadPoolManager;
+import l2.Rambase.gameserver.ai.CtrlIntention;
+import l2.Rambase.gameserver.instancemanager.InstanceManager;
+import l2.Rambase.gameserver.instancemanager.InstanceManager.InstanceWorld;
+import l2.Rambase.gameserver.model.L2CharPosition;
+import l2.Rambase.gameserver.model.L2CommandChannel;
+import l2.Rambase.gameserver.model.L2Object.InstanceType;
+import l2.Rambase.gameserver.model.L2Party;
+import l2.Rambase.gameserver.model.L2Skill;
+import l2.Rambase.gameserver.model.L2Territory;
+import l2.Rambase.gameserver.model.L2World;
+import l2.Rambase.gameserver.model.actor.L2Attackable;
+import l2.Rambase.gameserver.model.actor.L2Character;
+import l2.Rambase.gameserver.model.actor.L2Npc;
+import l2.Rambase.gameserver.model.actor.instance.L2DoorInstance;
+import l2.Rambase.gameserver.model.actor.instance.L2GrandBossInstance;
+import l2.Rambase.gameserver.model.actor.instance.L2MonsterInstance;
+import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
+import l2.Rambase.gameserver.model.quest.Quest;
+import l2.Rambase.gameserver.model.quest.QuestState;
+import l2.Rambase.gameserver.network.NpcStringId;
+import l2.Rambase.gameserver.network.SystemMessageId;
+import l2.Rambase.gameserver.network.serverpackets.AbstractNpcInfo.NpcInfo;
+import l2.Rambase.gameserver.network.serverpackets.Earthquake;
+import l2.Rambase.gameserver.network.serverpackets.ExShowScreenMessage;
+import l2.Rambase.gameserver.network.serverpackets.L2GameServerPacket;
+import l2.Rambase.gameserver.network.serverpackets.MagicSkillCanceld;
+import l2.Rambase.gameserver.network.serverpackets.MagicSkillUse;
+import l2.Rambase.gameserver.network.serverpackets.SocialAction;
+import l2.Rambase.gameserver.network.serverpackets.SpecialCamera;
+import l2.Rambase.gameserver.network.serverpackets.SystemMessage;
+import l2.Rambase.gameserver.skills.SkillHolder;
+import l2.Rambase.gameserver.templates.skills.L2SkillType;
+import l2.Rambase.gameserver.util.Util;
+import l2.Rambase.util.Rnd;
 
 /*
 TODO:

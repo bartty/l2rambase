@@ -1,27 +1,27 @@
-Rambase instances.IceQueenKegor;
+package instances.IceQueenKegor;
 
 import java.util.List;
 import javolution.util.FastList;
 
-import l2.brick.gameserver.ai.CtrlIntention;
-import l2.brick.gameserver.datatables.SkillTable;
-import l2.brick.gameserver.instancemanager.InstanceManager;
-import l2.brick.gameserver.instancemanager.InstanceManager.InstanceWorld;
-import l2.brick.gameserver.model.L2CharPosition;
-import l2.brick.gameserver.model.L2Skill;
-import l2.brick.gameserver.model.actor.L2Attackable;
-import l2.brick.gameserver.model.actor.L2Npc;
-import l2.brick.gameserver.model.actor.instance.L2PcInstance;
-import l2.brick.gameserver.model.entity.Instance;
-import l2.brick.gameserver.model.quest.Quest;
-import l2.brick.gameserver.model.quest.QuestState;
-import l2.brick.gameserver.model.quest.State;
-import l2.brick.gameserver.network.NpcStringId;
-import l2.brick.gameserver.network.SystemMessageId;
-import l2.brick.gameserver.network.clientpackets.Say2;
-import l2.brick.gameserver.network.serverpackets.NpcSay;
-import l2.brick.gameserver.network.serverpackets.SystemMessage;
-import l2.brick.gameserver.util.Util;
+import l2.Rambase.gameserver.ai.CtrlIntention;
+import l2.Rambase.gameserver.datatables.SkillTable;
+import l2.Rambase.gameserver.instancemanager.InstanceManager;
+import l2.Rambase.gameserver.instancemanager.InstanceManager.InstanceWorld;
+import l2.Rambase.gameserver.model.L2CharPosition;
+import l2.Rambase.gameserver.model.L2Skill;
+import l2.Rambase.gameserver.model.actor.L2Attackable;
+import l2.Rambase.gameserver.model.actor.L2Npc;
+import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
+import l2.Rambase.gameserver.model.entity.Instance;
+import l2.Rambase.gameserver.model.quest.Quest;
+import l2.Rambase.gameserver.model.quest.QuestState;
+import l2.Rambase.gameserver.model.quest.State;
+import l2.Rambase.gameserver.network.NpcStringId;
+import l2.Rambase.gameserver.network.SystemMessageId;
+import l2.Rambase.gameserver.network.clientpackets.Say2;
+import l2.Rambase.gameserver.network.serverpackets.NpcSay;
+import l2.Rambase.gameserver.network.serverpackets.SystemMessage;
+import l2.Rambase.gameserver.util.Util;
 
 public class IceQueen_Kegor extends Quest
 {

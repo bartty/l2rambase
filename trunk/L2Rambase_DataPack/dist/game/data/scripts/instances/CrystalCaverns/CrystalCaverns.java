@@ -12,7 +12,7 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-Rambase instances.CrystalCaverns;
+package instances.CrystalCaverns;
 
 import java.util.List;
 import java.util.Map;
@@ -20,46 +20,46 @@ import java.util.Map;
 import javolution.util.FastList;
 import javolution.util.FastMap;
 
-import l2.brick.Config;
-import l2.brick.gameserver.GeoData;
-import l2.brick.gameserver.ai.CtrlIntention;
-import l2.brick.gameserver.datatables.SkillTable;
-import l2.brick.gameserver.instancemanager.InstanceManager;
-import l2.brick.gameserver.instancemanager.InstanceManager.InstanceWorld;
-import l2.brick.gameserver.model.L2CharPosition;
-import l2.brick.gameserver.model.L2Object;
-import l2.brick.gameserver.model.L2Party;
-import l2.brick.gameserver.model.L2Skill;
-import l2.brick.gameserver.model.L2World;
-import l2.brick.gameserver.model.Location;
-import l2.brick.gameserver.model.actor.L2Attackable;
-import l2.brick.gameserver.model.actor.L2Character;
-import l2.brick.gameserver.model.actor.L2Npc;
-import l2.brick.gameserver.model.actor.L2Summon;
-import l2.brick.gameserver.model.actor.L2Trap;
-import l2.brick.gameserver.model.actor.instance.L2DoorInstance;
-import l2.brick.gameserver.model.actor.instance.L2MonsterInstance;
-import l2.brick.gameserver.model.actor.instance.L2PcInstance;
-import l2.brick.gameserver.model.entity.Instance;
-import l2.brick.gameserver.model.item.instance.L2ItemInstance;
-import l2.brick.gameserver.model.quest.Quest;
-import l2.brick.gameserver.model.quest.QuestState;
-import l2.brick.gameserver.model.quest.State;
-import l2.brick.gameserver.model.zone.L2ZoneType;
-import l2.brick.gameserver.network.NpcStringId;
-import l2.brick.gameserver.network.SystemMessageId;
-import l2.brick.gameserver.network.serverpackets.ActionFailed;
-import l2.brick.gameserver.network.serverpackets.CreatureSay;
-import l2.brick.gameserver.network.serverpackets.FlyToLocation;
-import l2.brick.gameserver.network.serverpackets.FlyToLocation.FlyType;
-import l2.brick.gameserver.network.serverpackets.MagicSkillUse;
-import l2.brick.gameserver.network.serverpackets.PlaySound;
-import l2.brick.gameserver.network.serverpackets.SpecialCamera;
-import l2.brick.gameserver.network.serverpackets.SystemMessage;
-import l2.brick.gameserver.network.serverpackets.ValidateLocation;
-import l2.brick.gameserver.templates.skills.L2TargetType;
-import l2.brick.gameserver.util.Util;
-import l2.brick.util.Rnd;
+import l2.Rambase.Config;
+import l2.Rambase.gameserver.GeoData;
+import l2.Rambase.gameserver.ai.CtrlIntention;
+import l2.Rambase.gameserver.datatables.SkillTable;
+import l2.Rambase.gameserver.instancemanager.InstanceManager;
+import l2.Rambase.gameserver.instancemanager.InstanceManager.InstanceWorld;
+import l2.Rambase.gameserver.model.L2CharPosition;
+import l2.Rambase.gameserver.model.L2Object;
+import l2.Rambase.gameserver.model.L2Party;
+import l2.Rambase.gameserver.model.L2Skill;
+import l2.Rambase.gameserver.model.L2World;
+import l2.Rambase.gameserver.model.Location;
+import l2.Rambase.gameserver.model.actor.L2Attackable;
+import l2.Rambase.gameserver.model.actor.L2Character;
+import l2.Rambase.gameserver.model.actor.L2Npc;
+import l2.Rambase.gameserver.model.actor.L2Summon;
+import l2.Rambase.gameserver.model.actor.L2Trap;
+import l2.Rambase.gameserver.model.actor.instance.L2DoorInstance;
+import l2.Rambase.gameserver.model.actor.instance.L2MonsterInstance;
+import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
+import l2.Rambase.gameserver.model.entity.Instance;
+import l2.Rambase.gameserver.model.item.instance.L2ItemInstance;
+import l2.Rambase.gameserver.model.quest.Quest;
+import l2.Rambase.gameserver.model.quest.QuestState;
+import l2.Rambase.gameserver.model.quest.State;
+import l2.Rambase.gameserver.model.zone.L2ZoneType;
+import l2.Rambase.gameserver.network.NpcStringId;
+import l2.Rambase.gameserver.network.SystemMessageId;
+import l2.Rambase.gameserver.network.serverpackets.ActionFailed;
+import l2.Rambase.gameserver.network.serverpackets.CreatureSay;
+import l2.Rambase.gameserver.network.serverpackets.FlyToLocation;
+import l2.Rambase.gameserver.network.serverpackets.FlyToLocation.FlyType;
+import l2.Rambase.gameserver.network.serverpackets.MagicSkillUse;
+import l2.Rambase.gameserver.network.serverpackets.PlaySound;
+import l2.Rambase.gameserver.network.serverpackets.SpecialCamera;
+import l2.Rambase.gameserver.network.serverpackets.SystemMessage;
+import l2.Rambase.gameserver.network.serverpackets.ValidateLocation;
+import l2.Rambase.gameserver.templates.skills.L2TargetType;
+import l2.Rambase.gameserver.util.Util;
+import l2.Rambase.util.Rnd;
 
 /**
  * TODO:

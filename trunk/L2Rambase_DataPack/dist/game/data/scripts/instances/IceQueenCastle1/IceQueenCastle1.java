@@ -1,27 +1,27 @@
-Rambase instances.IceQueenCastle1;
+package instances.IceQueenCastle1;
 
 import javolution.util.FastList;
 
-import l2.brick.gameserver.Text;
-import l2.brick.gameserver.ai.CtrlIntention;
-import l2.brick.gameserver.datatables.SkillTable;
-import l2.brick.gameserver.instancemanager.InstanceManager;
-import l2.brick.gameserver.instancemanager.InstanceManager.InstanceWorld;
-import l2.brick.gameserver.model.L2CharPosition;
-import l2.brick.gameserver.model.L2Object;
-import l2.brick.gameserver.model.L2Skill;
-import l2.brick.gameserver.model.actor.L2Attackable;
-import l2.brick.gameserver.model.actor.L2Character;
-import l2.brick.gameserver.model.actor.L2Npc;
-import l2.brick.gameserver.model.actor.instance.L2PcInstance;
-import l2.brick.gameserver.model.quest.Quest;
-import l2.brick.gameserver.model.quest.QuestState;
-import l2.brick.gameserver.model.quest.State;
-import l2.brick.gameserver.network.NpcStringId;
-import l2.brick.gameserver.network.SystemMessageId;
-import l2.brick.gameserver.network.serverpackets.NpcSay;
-import l2.brick.gameserver.network.serverpackets.SystemMessage;
-import l2.brick.util.Rnd;
+import l2.Rambase.gameserver.Text;
+import l2.Rambase.gameserver.ai.CtrlIntention;
+import l2.Rambase.gameserver.datatables.SkillTable;
+import l2.Rambase.gameserver.instancemanager.InstanceManager;
+import l2.Rambase.gameserver.instancemanager.InstanceManager.InstanceWorld;
+import l2.Rambase.gameserver.model.L2CharPosition;
+import l2.Rambase.gameserver.model.L2Object;
+import l2.Rambase.gameserver.model.L2Skill;
+import l2.Rambase.gameserver.model.actor.L2Attackable;
+import l2.Rambase.gameserver.model.actor.L2Character;
+import l2.Rambase.gameserver.model.actor.L2Npc;
+import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
+import l2.Rambase.gameserver.model.quest.Quest;
+import l2.Rambase.gameserver.model.quest.QuestState;
+import l2.Rambase.gameserver.model.quest.State;
+import l2.Rambase.gameserver.network.NpcStringId;
+import l2.Rambase.gameserver.network.SystemMessageId;
+import l2.Rambase.gameserver.network.serverpackets.NpcSay;
+import l2.Rambase.gameserver.network.serverpackets.SystemMessage;
+import l2.Rambase.util.Rnd;
 
 public class IceQueenCastle1 extends Quest
 {

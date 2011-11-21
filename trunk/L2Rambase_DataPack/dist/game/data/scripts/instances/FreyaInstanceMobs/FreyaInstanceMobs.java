@@ -1,22 +1,22 @@
-Rambase instances.FreyaInstanceMobs;
+package instances.FreyaInstanceMobs;
 
-import l2.brick.gameserver.Text;
-import l2.brick.gameserver.ai.CtrlIntention;
-import l2.brick.gameserver.datatables.NpcTable;
-import l2.brick.gameserver.datatables.SkillTable;
-import l2.brick.gameserver.datatables.SpawnTable;
-import l2.brick.gameserver.instancemanager.InstanceManager;
-import l2.brick.gameserver.model.L2Effect;
-import l2.brick.gameserver.model.L2Skill;
-import l2.brick.gameserver.model.L2Spawn;
-import l2.brick.gameserver.model.actor.L2Attackable;
-import l2.brick.gameserver.model.actor.L2Character;
-import l2.brick.gameserver.model.actor.L2Npc;
-import l2.brick.gameserver.model.actor.instance.L2PcInstance;
-import l2.brick.gameserver.model.entity.Instance;
-import l2.brick.gameserver.network.serverpackets.Scenkos;
-import l2.brick.gameserver.templates.chars.L2NpcTemplate;
-import l2.brick.util.Rnd;
+import l2.Rambase.gameserver.Text;
+import l2.Rambase.gameserver.ai.CtrlIntention;
+import l2.Rambase.gameserver.datatables.NpcTable;
+import l2.Rambase.gameserver.datatables.SkillTable;
+import l2.Rambase.gameserver.datatables.SpawnTable;
+import l2.Rambase.gameserver.instancemanager.InstanceManager;
+import l2.Rambase.gameserver.model.L2Effect;
+import l2.Rambase.gameserver.model.L2Skill;
+import l2.Rambase.gameserver.model.L2Spawn;
+import l2.Rambase.gameserver.model.actor.L2Attackable;
+import l2.Rambase.gameserver.model.actor.L2Character;
+import l2.Rambase.gameserver.model.actor.L2Npc;
+import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
+import l2.Rambase.gameserver.model.entity.Instance;
+import l2.Rambase.gameserver.network.serverpackets.Scenkos;
+import l2.Rambase.gameserver.templates.chars.L2NpcTemplate;
+import l2.Rambase.util.Rnd;
 import intelligence.group_template.L2AttackableAIScript;
 
 public class FreyaInstanceMobs extends L2AttackableAIScript

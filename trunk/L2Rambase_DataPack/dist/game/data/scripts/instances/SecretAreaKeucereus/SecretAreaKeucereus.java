@@ -1,15 +1,15 @@
-Rambase instances.SecretAreaKeucereus;
+package instances.SecretAreaKeucereus;
 
-import l2.brick.gameserver.ai.CtrlIntention;
-import l2.brick.gameserver.instancemanager.InstanceManager;
-import l2.brick.gameserver.instancemanager.QuestManager;
-import l2.brick.gameserver.instancemanager.InstanceManager.InstanceWorld;
-import l2.brick.gameserver.model.actor.L2Npc;
-import l2.brick.gameserver.model.actor.instance.L2PcInstance;
-import l2.brick.gameserver.model.quest.Quest;
-import l2.brick.gameserver.model.quest.State;
-import l2.brick.gameserver.network.SystemMessageId;
-import l2.brick.gameserver.network.serverpackets.SystemMessage;
+import l2.Rambase.gameserver.ai.CtrlIntention;
+import l2.Rambase.gameserver.instancemanager.InstanceManager;
+import l2.Rambase.gameserver.instancemanager.QuestManager;
+import l2.Rambase.gameserver.instancemanager.InstanceManager.InstanceWorld;
+import l2.Rambase.gameserver.model.actor.L2Npc;
+import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
+import l2.Rambase.gameserver.model.quest.Quest;
+import l2.Rambase.gameserver.model.quest.State;
+import l2.Rambase.gameserver.network.SystemMessageId;
+import l2.Rambase.gameserver.network.serverpackets.SystemMessage;
 
 public class SecretAreaKeucereus extends Quest
 {

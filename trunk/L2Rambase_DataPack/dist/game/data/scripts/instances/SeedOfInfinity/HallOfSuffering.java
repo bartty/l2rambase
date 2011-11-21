@@ -12,34 +12,34 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-Rambase instances.SeedOfInfinity;
+package instances.SeedOfInfinity;
 
 import java.util.Calendar;
 import java.util.Map;
 
 import javolution.util.FastMap;
 
-import l2.brick.gameserver.ai.CtrlEvent;
-import l2.brick.gameserver.cache.HtmCache;
-import l2.brick.gameserver.datatables.SkillTable;
-import l2.brick.gameserver.instancemanager.InstanceManager;
-import l2.brick.gameserver.instancemanager.InstanceManager.InstanceWorld;
-import l2.brick.gameserver.model.L2Object;
-import l2.brick.gameserver.model.L2Party;
-import l2.brick.gameserver.model.L2Skill;
-import l2.brick.gameserver.model.L2World;
-import l2.brick.gameserver.model.actor.L2Attackable;
-import l2.brick.gameserver.model.actor.L2Character;
-import l2.brick.gameserver.model.actor.L2Npc;
-import l2.brick.gameserver.model.actor.instance.L2MonsterInstance;
-import l2.brick.gameserver.model.actor.instance.L2PcInstance;
-import l2.brick.gameserver.model.quest.Quest;
-import l2.brick.gameserver.model.quest.QuestState;
-import l2.brick.gameserver.network.SystemMessageId;
-import l2.brick.gameserver.network.serverpackets.SystemMessage;
-import l2.brick.gameserver.templates.skills.L2SkillType;
-import l2.brick.gameserver.util.Util;
-import l2.brick.util.Rnd;
+import l2.Rambase.gameserver.ai.CtrlEvent;
+import l2.Rambase.gameserver.cache.HtmCache;
+import l2.Rambase.gameserver.datatables.SkillTable;
+import l2.Rambase.gameserver.instancemanager.InstanceManager;
+import l2.Rambase.gameserver.instancemanager.InstanceManager.InstanceWorld;
+import l2.Rambase.gameserver.model.L2Object;
+import l2.Rambase.gameserver.model.L2Party;
+import l2.Rambase.gameserver.model.L2Skill;
+import l2.Rambase.gameserver.model.L2World;
+import l2.Rambase.gameserver.model.actor.L2Attackable;
+import l2.Rambase.gameserver.model.actor.L2Character;
+import l2.Rambase.gameserver.model.actor.L2Npc;
+import l2.Rambase.gameserver.model.actor.instance.L2MonsterInstance;
+import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
+import l2.Rambase.gameserver.model.quest.Quest;
+import l2.Rambase.gameserver.model.quest.QuestState;
+import l2.Rambase.gameserver.network.SystemMessageId;
+import l2.Rambase.gameserver.network.serverpackets.SystemMessage;
+import l2.Rambase.gameserver.templates.skills.L2SkillType;
+import l2.Rambase.gameserver.util.Util;
+import l2.Rambase.util.Rnd;
 
 /**
  * TODO:

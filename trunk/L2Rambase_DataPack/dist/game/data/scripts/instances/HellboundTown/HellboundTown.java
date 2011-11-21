@@ -12,32 +12,32 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-Rambase instances.HellboundTown;
+package instances.HellboundTown;
 
 import java.util.concurrent.ScheduledFuture;
 
-import l2.brick.gameserver.ThreadPoolManager;
-import l2.brick.gameserver.instancemanager.HellboundManager;
-import l2.brick.gameserver.instancemanager.InstanceManager;
-import l2.brick.gameserver.instancemanager.InstanceManager.InstanceWorld;
-import l2.brick.gameserver.instancemanager.WalkingManager;
-import l2.brick.gameserver.model.L2Effect;
-import l2.brick.gameserver.model.L2Party;
-import l2.brick.gameserver.model.L2Skill;
-import l2.brick.gameserver.model.actor.L2Npc;
-import l2.brick.gameserver.model.actor.instance.L2MonsterInstance;
-import l2.brick.gameserver.model.actor.instance.L2PcInstance;
-import l2.brick.gameserver.model.actor.instance.L2QuestGuardInstance;
-import l2.brick.gameserver.model.entity.Instance;
-import l2.brick.gameserver.model.quest.Quest;
-import l2.brick.gameserver.network.NpcStringId;
-import l2.brick.gameserver.network.SystemMessageId;
-import l2.brick.gameserver.network.clientpackets.Say2;
-import l2.brick.gameserver.network.serverpackets.NpcSay;
-import l2.brick.gameserver.network.serverpackets.SystemMessage;
-import l2.brick.gameserver.skills.SkillHolder;
-import l2.brick.gameserver.util.Util;
-import l2.brick.util.Rnd;
+import l2.Rambase.gameserver.ThreadPoolManager;
+import l2.Rambase.gameserver.instancemanager.HellboundManager;
+import l2.Rambase.gameserver.instancemanager.InstanceManager;
+import l2.Rambase.gameserver.instancemanager.InstanceManager.InstanceWorld;
+import l2.Rambase.gameserver.instancemanager.WalkingManager;
+import l2.Rambase.gameserver.model.L2Effect;
+import l2.Rambase.gameserver.model.L2Party;
+import l2.Rambase.gameserver.model.L2Skill;
+import l2.Rambase.gameserver.model.actor.L2Npc;
+import l2.Rambase.gameserver.model.actor.instance.L2MonsterInstance;
+import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
+import l2.Rambase.gameserver.model.actor.instance.L2QuestGuardInstance;
+import l2.Rambase.gameserver.model.entity.Instance;
+import l2.Rambase.gameserver.model.quest.Quest;
+import l2.Rambase.gameserver.network.NpcStringId;
+import l2.Rambase.gameserver.network.SystemMessageId;
+import l2.Rambase.gameserver.network.clientpackets.Say2;
+import l2.Rambase.gameserver.network.serverpackets.NpcSay;
+import l2.Rambase.gameserver.network.serverpackets.SystemMessage;
+import l2.Rambase.gameserver.skills.SkillHolder;
+import l2.Rambase.gameserver.util.Util;
+import l2.Rambase.util.Rnd;
 
 /**
  * @author GKR
