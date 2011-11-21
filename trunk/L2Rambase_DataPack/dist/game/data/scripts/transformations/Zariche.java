@@ -1,7 +1,7 @@
-Rambase transformations;
+package transformations;
 
-import l2.brick.gameserver.instancemanager.TransformationManager;
-import l2.brick.gameserver.model.L2Transformation;
+import l2.Rambase.gameserver.instancemanager.TransformationManager;
+import l2.Rambase.gameserver.model.L2Transformation;
 
 public class Zariche extends L2Transformation
 {
