@@ -3354,7 +3354,7 @@ public final class Config
 					offlinemod.load(is);
 					OFFLINE_TRADE_ENABLE = Boolean.parseBoolean(offlinemod.getProperty("OfflineTradeEnable", "false"));
 					OFFLINE_CRAFT_ENABLE = Boolean.parseBoolean(offlinemod.getProperty("OfflineCraftEnable", "false"));
-					OFFLINE_MODE_IN_PEACE_ZONE = Boolean.parseBoolean(offlinemod.getProperty("OfflineModeInPaceZone", "False"));
+					OFFLINE_MODE_IN_PEACE_ZONE = Boolean.parseBoolean(offlinemod.getProperty("OfflineModeInPeaceZone", "False"));
 					OFFLINE_MODE_NO_DAMAGE = Boolean.parseBoolean(offlinemod.getProperty("OfflineModeNoDamage", "False"));
 					OFFLINE_SET_NAME_COLOR = Boolean.parseBoolean(offlinemod.getProperty("OfflineSetNameColor", "false"));
 					OFFLINE_NAME_COLOR = Integer.decode("0x" + offlinemod.getProperty("OfflineNameColor", "808080"));
