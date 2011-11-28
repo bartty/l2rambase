@@ -11,7 +11,7 @@ import events.EventsConfig;
 /**
  * @recoded for Hi5 - ShadowMan
  */
-public class DimMerchant extends Quest
+public class L2Marks extends Quest
 {
 	private static final String qn = "L2Marks";
 	//NPCs

@@ -179,7 +179,5 @@ public class FreyaCelebration extends Quest
 	public static void main(String[] args)
 	{
 		new FreyaCelebration(-1, "FreyaCelebration", "events");
-		if (Config.ENABLE_LOADING_INFO_FOR_SCRIPTS)
-		_log.info("Loaded Events: Freya Celebration");
 	}
 }
