@@ -1,130 +1,220 @@
-/*
- * This program is free software: you can redistribute it and/or modify it under
- * the terms of the GNU General Public License as published by the Free Software
- * Foundation, either version 3 of the License, or (at your option) any later
- * version.
- * 
- * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
- * details.
- * 
- * You should have received a copy of the GNU General Public License along with
- * this program. If not, see <http://www.gnu.org/licenses/>.
- */
 package events.TheValentineEvent;
 
 import l2.Rambase.gameserver.instancemanager.QuestManager;
-import l2.Rambase.gameserver.model.Location;
 import l2.Rambase.gameserver.model.actor.L2Npc;
 import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.Rambase.gameserver.model.quest.Quest;
 import l2.Rambase.gameserver.model.quest.QuestState;
-import l2.Rambase.gameserver.model.quest.State;
+import l2.Rambase.util.Rnd;
+
+import events.EventsConfig;
 
 /**
- * Event Code for "The Valentine Event" http://www.lineage2.com/archive/2009/01/the_valentine_e.html
- * @author Gnacik
+ * @author  L2RamBase Project
+ * @recoded for Hi5 ShadowMan
  */
 public class TheValentineEvent extends Quest
 {
-	private static final int _npc = 4301;
-	private static final int _recipe = 20191;
-	
-	private static final Location[] _spawns =
-	{
-		new Location(87792, -142240, -1343, 44000),
-		new Location(87616, -140688, -1542, 16500),
-		new Location(114733, -178691, -821, 0),
-		new Location(115708, -182362, -1449, 0),
-		new Location(-44337, -113669, -224, 0),
-		new Location(-44628, -115409, -240, 22500),
-		new Location(-13073, 122801, -3117, 0),
-		new Location(-13949, 121934, -2988, 32768),
-		new Location(-14822, 123708, -3117, 8192),
-		new Location(-80762, 151118, -3043, 28672),
-		new Location(-84049, 150176, -3129, 4096),
-		new Location(-82623, 151666, -3129, 49152),
-		new Location(-84516, 242971, -3730, 34000),
-		new Location(-86003, 243205, -3730, 60000),
-		new Location(11281, 15652, -4584, 25000),
-		new Location(11303, 17732, -4574, 57344),
-		new Location(47151, 49436, -3059, 32000),
-		new Location(79806, 55570, -1560, 0),
-		new Location(83328, 55824, -1525, 32768),
-		new Location(80986, 54504, -1525, 32768),
-		new Location(18178, 145149, -3054, 7400),
-		new Location(19208, 144380, -3097, 32768),
-		new Location(19508, 145775, -3086, 48000),
-		new Location(17396, 170259, -3507, 30000),
-		new Location(83332, 149160, -3405, 49152),
-		new Location(82277, 148598, -3467, 0),
-		new Location(81621, 148725, -3467, 32768),
-		new Location(81680, 145656, -3533, 32768),
-		new Location(117498, 76630, -2695, 38000),
-		new Location(115914, 76449, -2711, 59000),
-		new Location(119536, 76988, -2275, 40960),
-		new Location(147120, 27312, -2192, 40960),
-		new Location(147920, 25664, -2000, 16384),
-		new Location(111776, 221104, -3543, 16384),
-		new Location(107904, 218096, -3675, 0),
-		new Location(114920, 220020, -3632, 32768),
-		new Location(147888, -58048, -2979, 49000),
-		new Location(147285, -56461, -2776, 11500),
-		new Location(44176, -48732, -800, 33000),
-		new Location(44294, -47642, -792, 50000),
-		new Location(-116677, 46824, 360, 34828)
-	};
-	
-	public TheValentineEvent(int questId, String name, String descr)
-	{
-		super(questId, name, descr);
-		addStartNpc(_npc);
-		addFirstTalkId(_npc);
-		addTalkId(_npc);
-		for (Location loc : _spawns)
-			addSpawn(_npc, loc, false, 0);
-	}
-	
-	@Override
-	public String onAdvEvent(String event, L2Npc npc, L2PcInstance player)
-	{
-		String htmltext = "";
-		QuestState st = player.getQuestState(getName());
-		
-		htmltext = event;
-		if (event.equalsIgnoreCase("4301-3.htm"))
-		{
-			if (st.getState() == State.COMPLETED)
-			{
-				htmltext = "4301-4.htm";
-			}
-			else
-			{
-				st.giveItems(_recipe, 1);
-				st.playSound("Itemsound.quest_itemget");
-				st.setState(State.COMPLETED);
-			}
-		}
-		return htmltext;
-	}
-	
-	@Override
-	public String onFirstTalk(L2Npc npc, L2PcInstance player)
-	{
-		String htmltext = "";
-		QuestState st = player.getQuestState(getName());
-		if (st == null)
-		{
-			Quest q = QuestManager.getInstance().getQuest(getName());
-			st = q.newQuestState(player);
-		}
-		htmltext = npc.getNpcId() + ".htm";
-		return htmltext;
-	}
-	
-	public static void main(String[] args)
-	{
-		new TheValentineEvent(-1, "TheValentineEvent", "events");
-	}
+        private static final String qn = "TheValentineEvent";
+        private static final int _npc           = 4301;
+        
+        /**
+         * List of Event Monsters
+         * @param Npc
+         */
+        private static final int[] EventMonsters = 
+        { 
+                7000,7001,7002,7003,7004,7005,7006,7007,7008,7009,
+                7010,7011,7012,7013,7014,7015,7016,7017,7018,7019,
+                7020,7021,7022,7023
+        };
+        
+        public TheValentineEvent(int questId, String name, String descr)
+        {
+                super(questId, name, descr);
+                addStartNpc(_npc);
+                addFirstTalkId(_npc);
+                addTalkId(_npc);                
+        }
+        /**
+         * On Kill Monster Script
+         */
+        public final String onKill(L2Npc npc,L2PcInstance player, boolean isPet)
+        {
+                QuestState st = player.getQuestState(qn);
+                if (st == null)
+                {
+                        st = newQuestState(player);     
+                }
+                int npcId = npc.getNpcId();
+                if (EventsConfig.TVE_ACTIVE_DROP)
+                {
+                        for(int ID : EventMonsters)
+                        { 
+                                if (npcId == ID)
+                                {
+                                        switch(Rnd.get(1,9))
+                                        {
+                                                case 1:
+                                                        st.giveItems(4209,1);
+                                                        break;
+                                                case 2:
+                                                        st.giveItems(4210,1);
+                                                        break;
+                                                case 3:
+                                                        st.giveItems(4211,1);
+                                                        break;
+                                                case 4:
+                                                        st.giveItems(4212,1);
+                                                        break;
+                                                case 5:
+                                                        st.giveItems(4213,1);
+                                                        break;
+                                                case 6:
+                                                        st.giveItems(4214,1);
+                                                        break;
+                                                case 7:
+                                                        st.giveItems(4215,1);
+                                                        break;
+                                                case 8:
+                                                        st.giveItems(4216,1);
+                                                        break;
+                                                case 9:
+                                                        st.giveItems(4217,1);
+                                                        break;
+                                                default:
+                                                        break;
+                                        }
+                                }
+                        }                       
+                }
+                checkHeart(player,st);          
+                return super.onKill(npc, player, isPet);
+        }       
+        private void checkHeart(L2PcInstance player, QuestState st) 
+        {
+                long count1 = st.getQuestItemsCount(4209);
+                long count2 = st.getQuestItemsCount(4210);
+                long count3 = st.getQuestItemsCount(4211);
+                long count4 = st.getQuestItemsCount(4212);
+                long count5 = st.getQuestItemsCount(4213);
+                long count6 = st.getQuestItemsCount(4214);
+                long count7 = st.getQuestItemsCount(4215);
+                long count8 = st.getQuestItemsCount(4216);
+                long count9 = st.getQuestItemsCount(4217);
+                if (count1 >= 1 && count2 >= 1 && count3 >= 1 && count4 >= 1 && count5 >= 1 && count6 >= 1 && count7 >= 1 && count8 >= 1 && count9 >= 1)
+                {
+                        int chance;
+                        chance = Rnd.get(1,4);
+                        st.takeItems(4209, 1);
+                        st.takeItems(4210, 1);
+                        st.takeItems(4211, 1);
+                        st.takeItems(4212, 1);
+                        st.takeItems(4213, 1);
+                        st.takeItems(4214, 1);
+                        st.takeItems(4215, 1);
+                        st.takeItems(4216, 1);
+                        st.takeItems(4217, 1);
+                        switch(chance)
+                        {
+                                case 1:                                 
+                                        st.giveItems(EventsConfig.TVE_RECIPE, 1);
+                                        break;
+                                case 2:
+                                        st.giveItems(EventsConfig.TVE_REAGENT1, 1);
+                                        break;
+                                case 3:
+                                        st.giveItems(EventsConfig.TVE_REAGENT2, 1);
+                                        break;
+                                case 4:
+                                        st.giveItems(EventsConfig.TVE_REAGENT3, 1);
+                                        break;
+                        }                       
+                }               
+        }
+        public String onAdvEvent(String event, L2Npc npc, L2PcInstance player)
+        {
+                String htmltext = "";
+                QuestState st = player.getQuestState(qn);
+
+                htmltext = event;
+                if(event.equalsIgnoreCase("recipe"))
+                {
+                        long recipeCount = st.getQuestItemsCount(EventsConfig.TVE_RECIPE);
+                        long reagent1Count = st.getQuestItemsCount(EventsConfig.TVE_REAGENT1);
+                        long reagent2Count = st.getQuestItemsCount(EventsConfig.TVE_REAGENT2);
+                        long reagent3Count = st.getQuestItemsCount(EventsConfig.TVE_REAGENT3);
+                        if(recipeCount > 0 && reagent1Count > 4 && reagent2Count > 9 && reagent3Count > 9)
+                        {
+                                st.takeItems(EventsConfig.TVE_RECIPE, 1);
+                                st.takeItems(EventsConfig.TVE_REAGENT1, 5);
+                                st.takeItems(EventsConfig.TVE_REAGENT2, 10);
+                                st.takeItems(EventsConfig.TVE_REAGENT3, 10);
+                                int chance;
+                                chance = Rnd.get(100);
+                                if(chance > 79)
+                                {
+                                        st.giveItems(EventsConfig.TVE_CAKE1, 1);
+                                }
+                                else if(chance > 49 && chance < 80)
+                                {
+                                        st.giveItems(EventsConfig.TVE_CAKE2, 1);
+                                }
+                                else if(chance > 29 && chance < 50)
+                                {
+                                        st.giveItems(EventsConfig.TVE_CAKE3, 1);
+                                }
+                                else
+                                {
+                                        st.giveItems(EventsConfig.TVE_CAKE4, 1);
+                                }
+                        }
+                        else
+                        {
+                                htmltext = "<html><body>";
+                                htmltext += "Meow~ meow~ <br>";
+                                htmltext += "I cannot help you with cake you need:<br>";
+                                htmltext += "<font color=LEVEL> 1 Valentine Cake Recipe, 5 Valentine Fresh Cream, 10 Valentine White Chocolate and 10 Valentine Dark Chocolate</font><br>";
+                                htmltext += "<a action=\"bypass -h Quest TheValentineEvent 4301.htm\">I want check something else.</a><br>";
+                                htmltext += "</body></html>";
+                        }
+                }
+                else
+                {
+                        if (event.endsWith(".htm"))
+                        {
+                                htmltext = event;
+                        }
+                }
+                return htmltext;
+        }
+        
+        public String onFirstTalk(L2Npc npc, L2PcInstance player)
+        {
+                String htmltext = "";
+                QuestState st = player.getQuestState(getName());
+                if (st == null)
+                {
+                        Quest q = QuestManager.getInstance().getQuest(getName());
+                        st = q.newQuestState(player);
+                }
+                if (EventsConfig.TVE_STARTED)
+                {
+                        htmltext = npc.getNpcId() + ".htm";
+                }
+                else
+                {
+                        htmltext = EventsConfig.EVENT_DISABLED;
+                }
+                return htmltext;
+        }       
+        
+    	public static void main(String[] args)
+    	{
+    		new TheValentineEvent(-1,qn,"events");
+    		if (EventsConfig.TVE_STARTED)
+    			_log.info("Event System: The Valentine Event loaded ...");
+    	}
+    	
+    	
 }
