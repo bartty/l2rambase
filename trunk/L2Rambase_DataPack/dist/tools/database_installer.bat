@@ -1,6 +1,6 @@
 @echo off
 REM ###############################################
-REM ## L2Rambase Database Installer - (by DrLecter) #
+REM ##             L2J Database Installer        ##
 REM ###############################################
 
 set config_file=vars.txt
@@ -19,7 +19,7 @@ set cmode=c
 set fresh_setup=0
 
 :loadconfig
-title L2Rambase Installer - Reading Configuration from File...
+title L2J Installer - Reading Configuration from File...
 cls
 if not exist %config_file% goto configure
 ren %config_file% vars.bat
@@ -879,7 +879,7 @@ echo This wasn't a clean run, but don't worry.
 echo You can get help and support:
 echo.
 echo Search for a similar problem in our forums
-echo       (http://l2Rambase.funsite.cz/)
+echo       (http://l2Rambase.ucoz.ro/)
 echo.
 echo You can ask for support in our forums or irc channel:
 echo irc://irc.freenode.net channel: #L2Rambase
@@ -920,20 +920,20 @@ goto end
 
 :end
 call :colors 17
-title L2Rambase Installer - Script Execution Finished
+title L2J Installer - Script Execution Finished
 cls
 echo.
-echo L2Rambase Database Installer 2011
+echo L2J Database Installer 2011
 echo.
-echo (C) 2007-2011 L2Rambase DataPack Team
+echo (C) 2007-2011 L2J DataPack Team
 echo Database Installer comes with ABSOLUTELY NO WARRANTY;
 echo This is free software, and you are welcome to redistribute it
 echo under certain conditions; See the file gpl.txt for further
 echo details.
 echo.
 echo Thanks for using our software.
-echo visit http://l2Rambase.funsite.cz for more info about
-echo the L2Rambase DataPack Project.
+echo visit http://l2Rambase.ucoz.ro for more info about
+echo the L2Rambase Project.
 echo.
 pause
 color
