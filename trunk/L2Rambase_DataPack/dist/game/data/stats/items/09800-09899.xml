@@ -927,6 +927,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
 	</item>
 	<item id="9851" type="EtcItem" name="Standard Caravan Certificate">
 		<set name="icon" val="icon.etc_letter_white_i00" />
@@ -934,6 +935,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
 	</item>
 	<item id="9852" type="EtcItem" name="Premium Caravan Certificate">
 		<set name="icon" val="icon.etc_letter_white_i00" />
@@ -941,6 +943,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
 	</item>
 	<item id="9853" type="EtcItem" name="Mark of Friendship and Trust">
 		<set name="icon" val="icon.etc_letter_white_i00" />
@@ -948,6 +951,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
 	</item>
 	<item id="9854" type="Weapon" name="Dynasty Sword - Focus">
 		<set name="icon" val="icon.weapon_dynasty_blade_i01" />
