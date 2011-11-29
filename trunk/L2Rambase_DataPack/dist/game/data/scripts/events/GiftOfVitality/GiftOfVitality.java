@@ -181,7 +181,5 @@ public class GiftOfVitality extends Quest
 	public static void main(String[] args)
 	{
 		new GiftOfVitality(-1, "GiftOfVitality", "events");
-		if (Config.ENABLE_LOADING_INFO_FOR_SCRIPTS)
-		_log.info("Loaded Events: Gift of Vitality");
 	}
 }
