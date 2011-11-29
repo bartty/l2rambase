@@ -185,11 +185,11 @@ public class EventsConfig extends Quest
         public static final int ADVENTURER_HAT = 10250;
         public static final int BIRTHDAY_CAKE_SKILL = 5950;
         /**
-         * Dimensional Merchant
+         * L2Marks
          */
-        public static final boolean DIM_MERCHANT_STARTED = true;
-        public static final int DIM_VITAMIN_LEVEL = 77;
-        public static final int DIM_COIN  = 13419;
+        public static final boolean L2MARKS_MERCHANT_STARTED = true;
+        public static final int L2MARKS_VITAMIN_LEVEL = 77;
+        public static final int L2MARKS_COIN  = 13419;
         /**
          * Heavy Medal
          */     

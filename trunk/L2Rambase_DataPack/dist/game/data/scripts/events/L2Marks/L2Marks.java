@@ -15,7 +15,7 @@ public class L2Marks extends Quest
 {
 	private static final String qn = "L2Marks";
 	//NPCs
-	private static final int MERCHANT = 32478;
+	private static final int MERCHANT = 50024;
 	/*
 	 * List of Monsters 80+ Epiloque Farms
 	 * 
@@ -78,7 +78,7 @@ public class L2Marks extends Quest
 			st.setState(State.STARTED);
 		}
 		String htmltext = "";
-		if (EventsConfig.DIM_MERCHANT_STARTED)
+		if (EventsConfig.L2MARKS_MERCHANT_STARTED)
 		{
 			htmltext = "welcome.htm";
 		}
@@ -127,41 +127,41 @@ public class L2Marks extends Quest
 			st = newQuestState(player);	
 		}
 		int npcId = npc.getNpcId();
-		if (player.getLevel() > EventsConfig.DIM_VITAMIN_LEVEL)
+		if (player.getLevel() > EventsConfig.L2MARKS_VITAMIN_LEVEL)
 		{
 			if (contains(GiantCave, npcId))
 			{ 
-				st.giveItems(EventsConfig.DIM_COIN,1);
+				st.giveItems(EventsConfig.L2MARKS_COIN,1);
 			}
 			else if (contains(MithrilMines, npcId))
 			{ 
-				st.giveItems(EventsConfig.DIM_COIN,1);
+				st.giveItems(EventsConfig.L2MARKS_COIN,1);
 			}
 			else if (contains(Fields, npcId))
 			{ 
-				st.giveItems(EventsConfig.DIM_COIN,1);
+				st.giveItems(EventsConfig.L2MARKS_COIN,1);
 			}
 			else if (contains(DenOfEvil, npcId))
 			{ 
-				st.giveItems(EventsConfig.DIM_COIN,1);
+				st.giveItems(EventsConfig.L2MARKS_COIN,1);
 			}
 			else if (contains(StakatoNest, npcId))
 			{ 
-				st.giveItems(EventsConfig.DIM_COIN,1);
+				st.giveItems(EventsConfig.L2MARKS_COIN,1);
 			}
 			else if (contains(CryptOfDisgrace, npcId))
 			{ 
-				st.giveItems(EventsConfig.DIM_COIN,1);
+				st.giveItems(EventsConfig.L2MARKS_COIN,1);
 			}
 			else if (contains(PrimevalIsle, npcId))
 			{
-				st.giveItems(EventsConfig.DIM_COIN,1);
+				st.giveItems(EventsConfig.L2MARKS_COIN,1);
 			}
 		}
 		return super.onKill(npc, player, isPet);
 	}
 	
-	public DimMerchant(int questId, String name, String descr)
+	public L2Marks(int questId, String name, String descr)
 	{
 		super(questId, name, descr);
 		addStartNpc(MERCHANT);
@@ -194,7 +194,7 @@ public class L2Marks extends Quest
 	}
 	public static void main(String[] args)
 	{
-		new DimMerchant(-1,qn,"events");
+		new L2Marks(-1,qn,"events");
 		_log.warning("Event System: L2Marks loaded ...");
 	}
 }
