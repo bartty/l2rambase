@@ -36,6 +36,6 @@ be accessible in some way by means of clicking a link or button.
 	e-If a given file needs additional navigation facilities, all of them should be 
 		kept in the upper side of the page, right after the buttons described in "a" if
 		they appeared.
-4- L2Brick Mods introduced to the main distribution stream, should provide a set of 
+4- L2Rambase Mods introduced to the main distribution stream, should provide a set of 
 commands that could be added in the mods admin panel. Additionally, a help file should
-be desirable. Such a file should reside in help/L2Brickmod/.
+be desirable. Such a file should reside in help/L2Rambasemod/.
