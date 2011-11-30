@@ -45,11 +45,6 @@ import l2.Rambase.gameserver.util.Broadcast;
 import l2.Rambase.gameserver.util.Util;
 import l2.Rambase.util.Rnd;
 
-/**
- *
- * @author TheOne, janiii, Gigiikun, Synerge
- *
- */
 public class SavingSanta extends Quest
 {
 	private static final int[] REQUIRED_PIECES = { 5556, 5557, 5558, 5559 };
