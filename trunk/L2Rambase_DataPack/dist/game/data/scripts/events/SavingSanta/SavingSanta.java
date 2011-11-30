@@ -30,15 +30,12 @@ import l2.Rambase.gameserver.model.L2Skill;
 import l2.Rambase.gameserver.model.L2World;
 import l2.Rambase.gameserver.model.actor.L2Character;
 import l2.Rambase.gameserver.model.actor.L2Npc;
-import l2.Rambase.gameserver.ai.CtrlIntention;
-import l2.Rambase.gameserver.model.L2CharPosition;
 import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.Rambase.gameserver.model.quest.Quest;
 import l2.Rambase.gameserver.model.quest.QuestState;
 import l2.Rambase.gameserver.network.SystemMessageId;
 import l2.Rambase.gameserver.network.serverpackets.ActionFailed;
 import l2.Rambase.gameserver.network.serverpackets.MagicSkillUse;
-import l2.Rambase.gameserver.network.serverpackets.NpcSay;
 import l2.Rambase.gameserver.network.serverpackets.SocialAction;
 import l2.Rambase.gameserver.network.serverpackets.SystemMessage;
 import l2.Rambase.gameserver.util.Broadcast;
@@ -52,7 +49,7 @@ public class SavingSanta extends Quest
 	private static final int SANTA = 31863;
 	private static final int HOLIDAY_SANTA = 13185;
 	private static final int THOMAS = 13183;
-//	private static final int CHRISTMAS_TREE = 13006;	
+	private static final int CHRISTMAS_TREE = 13006;	
 	private static final int HOLIDAYSANTASREWARD = 20101;
 	private static final int HOLIDAYBUFFID = 23017;
 	
@@ -269,27 +266,26 @@ public class SavingSanta extends Quest
 			else if (event.equalsIgnoreCase("SantaSpawn"))
 			{
 				if (!isSantaFree)
-					return "";
-
-				startQuestTimer("SantaSpawn", 120000, null, null);
-				final Collection<L2PcInstance> plrs = getKnownList().getKnownPlayers().values();
-				for (final L2PcInstance pl : plrs)
 				{
-					if (pl != null && pl.isOnline() && pl.getLevel() >= 20 && pl.isInCombat() && !pl.isInsideZone(L2Character.ZONE_PEACE) && !pl.isFlyingMounted())
+					startQuestTimer("SantaSpawn", 120000, null, null);
+					for (final L2PcInstance pl : L2World.getInstance().getAllPlayers().values())
 					{
-						if (rewardedPlayers.containsKey(pl.getAccountName()))
+						if (pl != null && pl.isOnline() && pl.getLevel() >= 20 && pl.isInCombat() && !pl.isInsideZone(L2Character.ZONE_PEACE) && !pl.isFlyingMounted())
 						{
-							final long elapsedTimeSinceLastRewarded = System.currentTimeMillis() - rewardedPlayers.get(pl.getAccountName());
-							if (elapsedTimeSinceLastRewarded < MIN_TIME_BETWEEN_2_REWARDS)
-								continue;
-						}
-						else
-						{
-							final String data = loadGlobalQuestVar(pl.getAccountName());
-							if (!data.isEmpty() && (System.currentTimeMillis() - Long.parseLong(data)) < MIN_TIME_BETWEEN_2_REWARDS)
+							if (rewardedPlayers.containsKey(pl.getAccountName()))
 							{
-								rewardedPlayers.put(pl.getAccountName(), Long.parseLong(data));
-								continue;
+								final long elapsedTimeSinceLastRewarded = System.currentTimeMillis() - rewardedPlayers.get(pl.getAccountName());
+								if (elapsedTimeSinceLastRewarded < MIN_TIME_BETWEEN_2_REWARDS)
+									continue;
+							}
+							else
+							{
+								final String data = loadGlobalQuestVar(pl.getAccountName());
+								if (!data.isEmpty() && (System.currentTimeMillis() - Long.parseLong(data)) < MIN_TIME_BETWEEN_2_REWARDS)
+								{
+									rewardedPlayers.put(pl.getAccountName(), Long.parseLong(data));
+									continue;
+								}
 							}
 						}
 						
@@ -355,7 +351,7 @@ public class SavingSanta extends Quest
 			
 			st.giveItems(HOLIDAYSANTASREWARD, 1);
 			npc.broadcastPacket(new SocialAction(npc.getObjectId(), 2));
-			npc.broadcastNpcSay("Take a look in your inventory. I hope you like your present.");
+			npc.broadcastNpcSay("Take a look in your inventory. Hope you would like your present.");
 		}		
 		else if (event.equalsIgnoreCase("SantaBlessings"))
 		{
@@ -422,7 +418,7 @@ public class SavingSanta extends Quest
 			if (event.equalsIgnoreCase("Tree"))
 			{
 				int itemsOk = 0;
-				htmltext = "<html><title>L2 Christmas Event</title><body><br><br><table width=260><tr><td></td><td width=40></td><td width=40></td></tr><tr><td><font color=LEVEL>Christmas Tree</font></td><td width=40><img src=\"Icon.etc_x_mas_tree_i00\" width=32 height=32></td><td width=40></td></tr></table><br><br><table width=260>";
+				htmltext = "<html><title>L2Rambase Christmas Event</title><body><br><br><table width=260><tr><td></td><td width=40></td><td width=40></td></tr><tr><td><font color=LEVEL>Christmas Tree</font></td><td width=40><img src=\"Icon.etc_x_mas_tree_i00\" width=32 height=32></td><td width=40></td></tr></table><br><br><table width=260>";
 				
 				for (int i = 0; i < REQUIRED_PIECES.length; i++)
 				{
@@ -466,7 +462,7 @@ public class SavingSanta extends Quest
 			
 			else if (event.equalsIgnoreCase("SpecialTree") && !CONFIG[1])
 			{
-				htmltext = "<html><title>L2 Christmas Event</title><body><br><br><table width=260><tr><td></td><td width=40></td><td width=40></td></tr><tr><td><font color=LEVEL>Special Christmas Tree</font></td><td width=40><img src=\"Icon.etc_x_mas_tree_i00\" width=32 height=32></td><td width=40></td></tr></table><br><br><table width=260>";
+				htmltext = "<html><title>L2Rambase Christmas Event</title><body><br><br><table width=260><tr><td></td><td width=40></td><td width=40></td></tr><tr><td><font color=LEVEL>Special Christmas Tree</font></td><td width=40><img src=\"Icon.etc_x_mas_tree_i00\" width=32 height=32></td><td width=40></td></tr></table><br><br><table width=260>";
 				final long pieceCount = st.getQuestItemsCount(5560);
 				int itemsOk = 0;
 				
@@ -505,7 +501,7 @@ public class SavingSanta extends Quest
 			}			
 			else if (event.equalsIgnoreCase("SantaHat"))
 			{
-				htmltext = "<html><title>L2 Christmas Event</title><body><br><br><table width=260><tr><td></td><td width=40></td><td width=40></td></tr><tr><td><font color=LEVEL>Santa's Hat</font></td><td width=40><img src=\"Icon.Accessory_santas_cap_i00\" width=32 height=32></td><td width=40></td></tr></table><br><br><table width=260>";
+				htmltext = "<html><title>L2Rambase Christmas Event</title><body><br><br><table width=260><tr><td></td><td width=40></td><td width=40></td></tr><tr><td><font color=LEVEL>Santa's Hat</font></td><td width=40><img src=\"Icon.Accessory_santas_cap_i00\" width=32 height=32></td><td width=40></td></tr></table><br><br><table width=260>";
 				final long pieceCount = st.getQuestItemsCount(5560);
 				int itemsOk = 0;
 				
@@ -543,7 +539,7 @@ public class SavingSanta extends Quest
 			{
 				if (CONFIG[1])
 				{
-					htmltext = "<html><title>L2 Christmas Event</title><body><br><br><table width=260><tr><td></td><td width=40></td><td width=40></td></tr><tr><td><font color=LEVEL>Saving Santa's Hat</font></td><td width=40><img src=\"Icon.Accessory_santas_cap_i00\" width=32 height=32></td><td width=40></td></tr></table><br><br><table width=260>";
+					htmltext = "<html><title>L2Rambase Christmas Event</title><body><br><br><table width=260><tr><td></td><td width=40></td><td width=40></td></tr><tr><td><font color=LEVEL>Saving Santa's Hat</font></td><td width=40><img src=\"Icon.Accessory_santas_cap_i00\" width=32 height=32></td><td width=40></td></tr></table><br><br><table width=260>";
 					final long pieceCount = st.getQuestItemsCount(57);
 					int itemsOk = 0;
 					
