@@ -40,11 +40,13 @@ public class TaskDailyQuestClean extends Task
 	{
 		"463_IMustBeaGenius",
 		"464_Oath",
-		"458_PerfectForm",
 		"461_RumbleInTheBase",
 		"551_OlympiadStarter",
 		"552_OlympiadVeteran",
-		"553_OlympiadUndefeated"
+		"553_OlympiadUndefeated",
+		"Q455_WingsOfSand",
+		"Q456_DontKnowDontCare",
+		"Q905_RefinedDragonBlood"
 	};
 	
 	/**
