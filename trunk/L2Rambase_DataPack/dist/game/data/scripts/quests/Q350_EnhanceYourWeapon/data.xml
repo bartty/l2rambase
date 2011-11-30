@@ -340,7 +340,7 @@
 			<detail chance="9" skill="true" maxLevel="4" />
 		</item>
 		<item npcId="21629"> <!-- Pirate Zombie Captain -->
-			<detail skill="true" maxLevel="4" />
+			<detail chance="9" skill="true" maxLevel="4" />
 		</item>
 		<item npcId="21630"> <!-- Pirate Zombie Captain -->
 			<detail chance="9" skill="true" maxLevel="4" />
