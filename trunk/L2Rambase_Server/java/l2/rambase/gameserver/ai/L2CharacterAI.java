@@ -48,7 +48,6 @@ import l2.Rambase.gameserver.model.item.type.L2WeaponType;
 import l2.Rambase.gameserver.network.SystemMessageId;
 import l2.Rambase.gameserver.network.serverpackets.ActionFailed;
 import l2.Rambase.gameserver.network.serverpackets.AutoAttackStop;
-import l2.Rambase.gameserver.network.serverpackets.SystemMessage;
 import l2.Rambase.gameserver.taskmanager.AttackStanceTaskManager;
 import l2.Rambase.gameserver.templates.chars.L2NpcTemplate;
 import l2.Rambase.gameserver.templates.skills.L2SkillType;
@@ -1013,9 +1012,8 @@ public class L2CharacterAI extends AbstractAI
 			{
 				if (!((L2PcInstance)_actor).getTransformation().canStartFollowToCast())
 				{
-					((L2PcInstance)_actor).sendPacket(SystemMessage.getSystemMessage(SystemMessageId.DIST_TOO_FAR_CASTING_STOPPED));
-					((L2PcInstance)_actor).sendPacket(ActionFailed.STATIC_PACKET);
-					
+					_actor.sendPacket(SystemMessageId.DIST_TOO_FAR_CASTING_STOPPED);
+					_actor.sendPacket(ActionFailed.STATIC_PACKET);
 					return true;
 				}
 			}

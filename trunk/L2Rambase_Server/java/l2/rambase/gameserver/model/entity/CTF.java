@@ -1029,7 +1029,7 @@ public class CTF
 		
 		_joining = true;
 		spawnEventNpc(activeChar);
-		AnnounceToPlayers(true, "CTF Event: Registration opened for 15 minute(s)! Use .joinctf command to register. Rewards: 10 gold bars for all the winners!");
+		AnnounceToPlayers(true, "CTF Event: Registration opened for 15 minute(s)! Use .joinctf command to register!");
 	}
 	
 	public static void startJoin()
@@ -2843,6 +2843,23 @@ public class CTF
 			eventOffset = maxY;
 		if (eventOffset < maxZ)
 			eventOffset = maxZ;
+	}
+	
+	/**
+	 * Called on every potion use
+	 * @param playerObjectId
+	 * @param player 
+	 * @return boolean: true if player is allowed to use potions, otherwise false
+	 */
+	public static boolean onPotionUse(int playerObjectId, L2PcInstance player)
+	{
+		if (!_started)
+			return true;
+		
+		//if (CTF.startEventOk() && !Config.CTF_ALLOW_POTIONS)
+		if ((player != null && player.isOnline() && player._inEventCTF == true) && !Config.CTF_ALLOW_POTIONS)
+			return false;
+		return true;
 	}
 	
 	public static boolean isOutsideCTFArea(L2PcInstance _player)

@@ -34,7 +34,6 @@ import l2.Rambase.gameserver.model.entity.TvTRoundEvent;
 import l2.Rambase.gameserver.network.L2GameClient;
 import l2.Rambase.gameserver.network.SystemMessageId;
 import l2.Rambase.gameserver.network.serverpackets.ShowBoard;
-import l2.Rambase.gameserver.network.serverpackets.SystemMessage;
 
 public class CommunityBoard
 {
@@ -145,7 +144,7 @@ public class CommunityBoard
 		{
 			default:
 			case 0: 
-				activeChar.sendPacket(SystemMessage.getSystemMessage(SystemMessageId.CB_OFFLINE));
+				activeChar.sendPacket(SystemMessageId.CB_OFFLINE);
 				break;
 			case 1: 
 				RegionBBSManager.getInstance().parsecmd(command, activeChar);
