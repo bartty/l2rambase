@@ -134,6 +134,9 @@ public class L2Npc extends L2Character
 	/** Minimum interval between social packets*/
 	private final int _minimalSocialInterval = 6000;
 	
+	/** Support for random animation switching*/
+	private boolean _isRandomAnimationEnabled = true;
+	
 	protected RandomAnimationTask _rAniTask = null;
 	private int _currentLHandId; // normally this shouldn't change from the template, but there exist exceptions
 	private int _currentRHandId; // normally this shouldn't change from the template, but there exist exceptions
@@ -498,7 +501,23 @@ public class L2Npc extends L2Character
 	 */
 	public boolean hasRandomAnimation()
 	{
-		return (Config.MAX_NPC_ANIMATION > 0 && !getAiType().equals(AIType.CORPSE));
+		return (Config.MAX_NPC_ANIMATION > 0 && _isRandomAnimationEnabled && !getAiType().equals(AIType.CORPSE));
+	}
+	
+	/**
+	* Switches Random Animation state.<BR><BR>
+	*/
+	public void setRandomAnimationEnabled(boolean val)
+	{
+		_isRandomAnimationEnabled = val;
+	}
+	
+	/**
+	*  Returns Random Animation state.<BR><BR>
+	*/
+	public boolean isRandomAnimationEnabled()
+	{
+		return _isRandomAnimationEnabled;
 	}
 	
 	/**
