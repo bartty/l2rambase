@@ -22,7 +22,6 @@ import l2.Rambase.gameserver.model.quest.Quest;
 import l2.Rambase.gameserver.model.quest.QuestState;
 import l2.Rambase.gameserver.model.quest.State;
 import l2.Rambase.gameserver.network.SystemMessageId;
-import l2.Rambase.gameserver.util.Util;
 
 public class OracleTeleport extends Quest
 {
@@ -221,14 +220,14 @@ public class OracleTeleport extends Quest
 		int npcId = npc.getNpcId();
 		if (event.equalsIgnoreCase("Return"))
 		{
-			if (Util.contains(TEMPLE_PRIEST, npcId) && st.getState() == State.STARTED)
+			if (contains(TEMPLE_PRIEST, npcId) && st.getState() == State.STARTED)
 			{
 				Location loc = RETURN_LOCS[st.getInt("id")];
 				player.teleToLocation(loc, false);
 				player.setIsIn7sDungeon(false);
 				st.exitQuest(true);
 			}
-			else if (Util.contains(RIFT_POSTERS, npcId) && st.getState() == State.STARTED)
+			else if (contains(RIFT_POSTERS, npcId) && st.getState() == State.STARTED)
 			{
 				Location loc = RETURN_LOCS[st.getInt("id")];
 				player.teleToLocation(loc, false);
@@ -239,12 +238,12 @@ public class OracleTeleport extends Quest
 		else if (event.equalsIgnoreCase("Festival"))
 		{
 			int id = st.getInt("id");
-			if (Util.contains(TOWN_DAWN, id))
+			if (contains(TOWN_DAWN, id))
 			{
 				player.teleToLocation(-80157, 111344, -4901);
 				player.setIsIn7sDungeon(true);
 			}
-			else if (Util.contains(TOWN_DUSK, id))
+			else if (contains(TOWN_DUSK, id))
 			{
 				player.teleToLocation(-81261, 86531, -5157);
 				player.setIsIn7sDungeon(true);
@@ -317,7 +316,7 @@ public class OracleTeleport extends Quest
 		QuestState st = player.getQuestState(getName());
 		
 		int npcId = npc.getNpcId();
-		if (Util.contains(TOWN_DAWN, npcId))
+		if (contains(TOWN_DAWN, npcId))
 		{
 			st.setState(State.STARTED);
 			int i = 0;
@@ -332,7 +331,7 @@ public class OracleTeleport extends Quest
 			player.teleToLocation(-80157, 111344, -4901);
 			player.setIsIn7sDungeon(true);
 		}
-		if (Util.contains(TOWN_DUSK, npcId))
+		if (contains(TOWN_DUSK, npcId))
 		{
 			st.setState(State.STARTED);
 			int i = 0;
