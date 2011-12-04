@@ -21,6 +21,7 @@ import static l2.Rambase.gameserver.ai.CtrlIntention.AI_INTENTION_IDLE;
 import java.util.Collection;
 import java.util.concurrent.Future;
 import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javolution.util.FastList;
 
@@ -2564,4 +2565,3 @@ public class L2AttackableAI extends L2CharacterAI implements Runnable
 		return (L2Attackable)_actor;
 	}
 }
-
