@@ -12,7 +12,7 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package l2.brick.communityserver.cache;
+package l2.Rambase.communityserver.cache;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -29,7 +29,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
-import l2.brick.communityserver.Config;
+import l2.Rambase.communityserver.Config;
 
 /**
  * @author Layane

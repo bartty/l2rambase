@@ -12,13 +12,13 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package l2.brick.communityserver.communityboard;
+package l2.Rambase.communityserver.communityboard;
 
 import java.util.logging.Logger;
 
 import javolution.util.FastList;
 
-import l2.brick.communityserver.network.writepackets.PlayerShowBoard;
+import l2.Rambase.communityserver.network.writepackets.PlayerShowBoard;
 
 public abstract class CommunityBoard
 {

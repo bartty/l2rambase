@@ -12,7 +12,7 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package l2.brick.communityserver.communityboard;
+package l2.Rambase.communityserver.communityboard;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -23,22 +23,22 @@ import javolution.util.FastMap;
 
 import org.netcon.BaseWritePacket;
 
-import l2.brick.communityserver.Config;
-import l2.brick.communityserver.L2DatabaseFactory;
-import l2.brick.communityserver.communityboard.boards.ClanBoard;
-import l2.brick.communityserver.communityboard.boards.ClanPostBoard;
-import l2.brick.communityserver.communityboard.boards.ErrorBoard;
-import l2.brick.communityserver.communityboard.boards.FriendBoard;
-import l2.brick.communityserver.communityboard.boards.MailBoard;
-import l2.brick.communityserver.communityboard.boards.MemoBoard;
-import l2.brick.communityserver.communityboard.boards.RegionBoard;
-import l2.brick.communityserver.communityboard.boards.TopBoard;
-import l2.brick.communityserver.model.Forum;
-import l2.brick.communityserver.model.L2Castle;
-import l2.brick.communityserver.model.L2Clan;
-import l2.brick.communityserver.model.L2Player;
-import l2.brick.communityserver.network.GameServerThread;
-import l2.brick.communityserver.network.writepackets.RequestWorldInfo;
+import l2.Rambase.communityserver.Config;
+import l2.Rambase.communityserver.L2DatabaseFactory;
+import l2.Rambase.communityserver.communityboard.boards.ClanBoard;
+import l2.Rambase.communityserver.communityboard.boards.ClanPostBoard;
+import l2.Rambase.communityserver.communityboard.boards.ErrorBoard;
+import l2.Rambase.communityserver.communityboard.boards.FriendBoard;
+import l2.Rambase.communityserver.communityboard.boards.MailBoard;
+import l2.Rambase.communityserver.communityboard.boards.MemoBoard;
+import l2.Rambase.communityserver.communityboard.boards.RegionBoard;
+import l2.Rambase.communityserver.communityboard.boards.TopBoard;
+import l2.Rambase.communityserver.model.Forum;
+import l2.Rambase.communityserver.model.L2Castle;
+import l2.Rambase.communityserver.model.L2Clan;
+import l2.Rambase.communityserver.model.L2Player;
+import l2.Rambase.communityserver.network.GameServerThread;
+import l2.Rambase.communityserver.network.writepackets.RequestWorldInfo;
 
 public final class CommunityBoardManager
 {

@@ -12,7 +12,7 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package l2.brick.communityserver.communityboard.boards;
+package l2.Rambase.communityserver.communityboard.boards;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -20,18 +20,18 @@ import java.util.logging.Logger;
 
 import javolution.text.TextBuilder;
 
-import l2.brick.communityserver.Config;
-import l2.brick.communityserver.cache.HtmCache;
-import l2.brick.communityserver.communityboard.CommunityBoard;
-import l2.brick.communityserver.communityboard.CommunityBoardManager;
-import l2.brick.communityserver.model.Forum;
-import l2.brick.communityserver.model.L2Clan;
-import l2.brick.communityserver.model.L2Player;
-import l2.brick.communityserver.model.Post;
-import l2.brick.communityserver.model.Topic;
-import l2.brick.communityserver.model.Topic.ConstructorType;
-import l2.brick.communityserver.network.writepackets.PlayerSendMessage;
-import l2.brick.communityserver.network.writepackets.RequestWorldInfo;
+import l2.Rambase.communityserver.Config;
+import l2.Rambase.communityserver.cache.HtmCache;
+import l2.Rambase.communityserver.communityboard.CommunityBoard;
+import l2.Rambase.communityserver.communityboard.CommunityBoardManager;
+import l2.Rambase.communityserver.model.Forum;
+import l2.Rambase.communityserver.model.L2Clan;
+import l2.Rambase.communityserver.model.L2Player;
+import l2.Rambase.communityserver.model.Post;
+import l2.Rambase.communityserver.model.Topic;
+import l2.Rambase.communityserver.model.Topic.ConstructorType;
+import l2.Rambase.communityserver.network.writepackets.PlayerSendMessage;
+import l2.Rambase.communityserver.network.writepackets.RequestWorldInfo;
 
 public final class ClanBoard extends CommunityBoard
 {
