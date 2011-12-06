@@ -1256,6 +1256,7 @@ public class L2Attackable extends L2Npc
 			else
 				dropChance *= Config.RATE_DROP_SPOIL;
 		}
+		else
 		{
 			if (lastAttacker.getPremiumService()==1)
 				dropChance *= isRaid() && !isRaidMinion() ? Config.RATE_DROP_ITEMS_BY_RAID : Config.PREMIUM_RATE_DROP_ITEMS;
