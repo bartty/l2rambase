@@ -12,7 +12,7 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package l2.brick.gameserver.ai;
+package l2.Rambase.gameserver.ai;
 
 import static l2.Rambase.gameserver.ai.CtrlIntention.AI_INTENTION_ACTIVE;
 import static l2.Rambase.gameserver.ai.CtrlIntention.AI_INTENTION_ATTACK;
