@@ -1108,7 +1108,7 @@ public class L2AttackableAI extends L2CharacterAI implements Runnable
 			if (npc.hasLSkill() || npc.hasSSkill())
 			{
 				final FastList<L2Skill> shortRangeSkills = shortRangeSkillRender();
-				if (!shortRangeSkills.isEmpty() && npc.hasSSkill() && (dist2 <= 150) && Rnd.get(100) <= npc.getSSkillChance())
+				if (shortRangeSkills !=null && !shortRangeSkills.isEmpty() && npc.hasSSkill() && (dist2 <= 150) && Rnd.get(100) <= npc.getSSkillChance())
 				{
 					final L2Skill shortRangeSkill = shortRangeSkills.get(Rnd.get(shortRangeSkills.size()));
 					if ((shortRangeSkill != null) && cast(shortRangeSkill))
@@ -1125,7 +1125,7 @@ public class L2AttackableAI extends L2CharacterAI implements Runnable
 				}
 				
 				final FastList<L2Skill> longRangeSkills = longRangeSkillRender();
-				if (!longRangeSkills.isEmpty() && npc.hasLSkill() && (dist2 > 150) && Rnd.get(100) <= npc.getLSkillChance())
+				if (longRangeSkills !=null && !longRangeSkills.isEmpty() && npc.hasLSkill() && (dist2 > 150) && Rnd.get(100) <= npc.getLSkillChance())
 				{
 					final L2Skill longRangeSkill = longRangeSkills.get(Rnd.get(longRangeSkills.size()));
 					if ((longRangeSkill != null) && cast(longRangeSkill))
