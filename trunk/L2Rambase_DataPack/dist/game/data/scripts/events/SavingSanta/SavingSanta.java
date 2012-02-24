@@ -66,9 +66,9 @@ public class SavingSanta extends Quest
 	private static final int[] START_DATE = { 2011, 11, 28 };
 	private static final int[] END_DATE = { 2011, 12, 31 };
 	
-	private static final int[] SANTA_X = { 147698, 147443, 82218, 82754, 15064, 111067, -12965, 87362, -81037, 117412, 43983, -45907, 12153, -84458, 114750, -45656, -117195 };
-	private static final int[] SANTA_Y = { -56025, 26942, 148605, 53573, 143254, 218933, 122914, -143166, 150092, 76642, -47758, 49387, 16753, 244761, -178692, -113119, 46837 };
-	private static final int[] SANTA_Z = { -2775, -2205, -3470, -1496, -2668, -3543, -3117, -1293, -3044, -2695, -797, -3060, -4584, -3730, -820, -240, 367 };
+	private static final int[] SANTA_X = { 147698, 147443, 82218, 82754, 15064, 111067, -12965, 87362, -81037, 117412, 43983, -45907, 12153, -84458, 114750, -45656, -117195, -113310 };
+	private static final int[] SANTA_Y = { -56025, 26942, 148605, 53573, 143254, 218933, 122914, -143166, 150092, 76642, -47758, 49387, 16753, 244761, -178692, -113119, 46837, -245148 };
+	private static final int[] SANTA_Z = { -2775, -2205, -3470, -1496, -2668, -3543, -3117, -1293, -3044, -2695, -797, -3060, -4584, -3730, -820, -240, 367, -15542 };
 	
 	private static final int[] TREE_SPAWN_X = { 83254, 83278, 83241, 83281, 84304, 84311, 82948, 80905, 80908, 82957, 147849, 147580, 147581, 147847, 149085, 146340, 147826, 147584, 146235, 147840, 147055, 148694, 147733, 147197, 147266, 147646, 147456, 148078, 147348, 117056, 116473, 115785, 115939, 116833, 116666, -13130, -13165, -13126, 15733, 16208 };
 	private static final int[] TREE_SPAWN_Y = { 148340, 147900, 148898, 149343, 149133, 148101, 147658, 147659, 149556, 149554, -55119, -55117, -57244, -57261, -55826, -55829, -54095, -54070, 25921, 25568, 25568, 25929, 27366, 27364, 29065, 29065, 27664, -55960, -55939, 75627, 75352, 76111, 76544, 77400, 76210, 122533, 122425, 122806, 142767, 142710 };
@@ -270,7 +270,7 @@ public class SavingSanta extends Quest
 					startQuestTimer("SantaSpawn", 120000, null, null);
 					for (final L2PcInstance pl : L2World.getInstance().getAllPlayers().values())
 					{
-						if (pl != null && pl.isOnline() && pl.getLevel() >= 20 && pl.isInCombat() && !pl.isInsideZone(L2Character.ZONE_PEACE) && !pl.isFlyingMounted())
+						if (pl.isOnline() && pl.getLevel() >= 20 && pl.isInCombat() && !pl.isInsideZone(L2Character.ZONE_PEACE) && !pl.isFlyingMounted())
 						{
 							if (rewardedPlayers.containsKey(pl.getAccountName()))
 							{

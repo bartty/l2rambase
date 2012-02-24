@@ -14,7 +14,6 @@ public class EventsConfig extends Quest
         
         /**
          * Master of Enchanting date
-         * @author ShadowMan
          * @category Retail
          * January 1-31
          **/
@@ -22,7 +21,6 @@ public class EventsConfig extends Quest
         
          /** 
          * The Valentine Event date
-         * @author ShadowMan
          * @category Custom
          * February 2-28
          **/
@@ -31,7 +29,6 @@ public class EventsConfig extends Quest
         
         /**
          * Holly Cow Event date
-         * @author ShadowMan
          * @category Custom
          * March 1-31
          * */
@@ -39,31 +36,24 @@ public class EventsConfig extends Quest
         
         /**
          * April Fool's Day date
-         * @author ShadowMan
-         * @category Custom 
          * April 1-6
          **/
         public static boolean AP_STARTED = getEvent("AprilFools");
         
         /**
          * Ninja Adventures Event date
-         * @author ShadowMan
-         * @category Custom 
          * April 7-30
          **/
         public static boolean NA_STARTED = getEvent("NinjaAdventures"); 
         
         /**
          * Super Star Event date
-         * @author ShadowMan
-         * @category Custom 
          * May 1-31
          */
         public static boolean SS_STARTED = getEvent("SuperStar");
         
         /** 
          * Squish and Squash Event date
-         * @author ShadowMan
          * @category Retail
          * October 1-30
          **/
@@ -72,7 +62,6 @@ public class EventsConfig extends Quest
         
          /** 
          * L2Day Event date
-         * @author ShadowMan
          * @category Retail
          * July 1-31
          **/
@@ -81,7 +70,6 @@ public class EventsConfig extends Quest
         
         /**     
          * New Era Event
-         * @author ShadowMan
          * @category Retail  
          * August 1-31
          **/
@@ -90,8 +78,6 @@ public class EventsConfig extends Quest
         
          /** 
          * SchoolDays date
-         * @author ShadowMan
-         * @category Custom 
          * September 1-30 
          **/
         public static boolean SD_STARTED = getEvent("SchoolDays");
@@ -99,7 +85,7 @@ public class EventsConfig extends Quest
         
         /**
          * Trick or Transmutation Event date
-         * @author ShadowMan
+
          * @category Retail
          * June 1-31
          **/
@@ -108,8 +94,6 @@ public class EventsConfig extends Quest
         
         /** 
          * Hallowed You Event date
-         * @author ShadowMan
-         * @category Custom 
          * November 1-30
          **/
         public static boolean HY_STARTED = getEvent("HallowedYou");
@@ -117,7 +101,6 @@ public class EventsConfig extends Quest
         
         /**
          * Christmas Is Here Event date
-         * @author ShadowMan
          * @category Custom
          * December 1-31
          **/
@@ -172,7 +155,7 @@ public class EventsConfig extends Quest
                 return state;
         }
         
-        // Events Config is created by L2RamBase
+        // Events Config used on L2RamBase
         // How to change a event
         // 1. Change Boolean value of event
         // 2. Use command //quest_reload EventsConfig   
@@ -188,8 +171,11 @@ public class EventsConfig extends Quest
          * L2Marks
          */
         public static final boolean L2MARKS_MERCHANT_STARTED = true;
-        public static final int L2MARKS_VITAMIN_LEVEL = 77;
+        public static final int L2MARKS_VITAMIN_LEVEL = 74;
         public static final int L2MARKS_COIN  = 13419;
+        public static final int L2MARKS_GOLDEINHASAD  = 4356;
+        public static final int L2MARKS_APIGA  = 9142;
+        public static final int L2MARKS_GOLDAPIGA  = 9143;
         /**
          * Heavy Medal
          */     
@@ -265,13 +251,10 @@ public class EventsConfig extends Quest
          * The Valentine Event
          */
         public static final int TVE_RECIPE = 20191;
-        public static final int TVE_REAGENT1 = 20194;
-        public static final int TVE_REAGENT2 = 20192;
-        public static final int TVE_REAGENT3 = 20193;
-        public static final int TVE_CAKE1 = 20195;
-        public static final int TVE_CAKE2 = 20196;
-        public static final int TVE_CAKE3 = 20197;
-        public static final int TVE_CAKE4 = 20198;
+        public static final int TVE_BOW = 9140;
+        public static final int TVE_BOX = 20629;
+		public static final int TVE_CAKE1 = 20197;
+        public static final int TVE_CAKE2 = 20198;
         /**
          * Trick or Transmutation
          */
@@ -293,8 +276,10 @@ public class EventsConfig extends Quest
          * ChristmasIsHere
          */
         public static final int CH_CHRISTMAS_SOCK = 14612;
+		
         /**
          * SchoolDays
+		 * @to be added
          */
         
         /**
