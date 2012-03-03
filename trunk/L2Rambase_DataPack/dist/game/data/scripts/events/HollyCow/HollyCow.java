@@ -20,9 +20,13 @@ import l2.Rambase.gameserver.model.actor.L2Attackable;
 import l2.Rambase.gameserver.model.actor.L2Character;
 import l2.Rambase.gameserver.model.actor.L2Npc;
 import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
+import l2.Rambase.gameserver.instancemanager.QuestManager;
+import l2.Rambase.gameserver.model.quest.Quest;
 import l2.Rambase.gameserver.model.quest.QuestState;
 import l2.Rambase.gameserver.model.quest.State;
 import l2.Rambase.gameserver.model.quest.jython.QuestJython;
+import l2.Rambase.gameserver.network.SystemMessageId;
+import l2.Rambase.gameserver.network.serverpackets.SystemMessage;
 import l2.Rambase.util.Rnd;
 
 /**
@@ -33,20 +37,30 @@ public class HollyCow extends QuestJython
 {
 	private static final String		QN								= "HollyCow";
 
-	private static final boolean	HC_STARTED						= false;
+	private static final boolean	HC_STARTED						= true;
 
-	private static final int		FARMER							= 13183;
-
+	private static final int		FARMER							= 13195;
+	private static final int 		_hours 							= 1;
 	private static final int		MILK_COW						= 13187;
 	private static final int		HEAD_MILK_COW					= 13188;
 	private static final int		GLOOM_MILK_COW					= 13191;
 	private static final int		GLOOM_HEAD_MILK_COW				= 13192;
 	private static final int		HC_ADENA						= 57;
+	private static final int		HC_REVITA						= 20034;
+	private static final int		HC_QA							= 20902;
+	private static final int		HC_HLS76						= 8752;
+	private static final int		HC_TLS76						= 8762;
+	private static final int		HC_APIGA						= 9142;
+	private static final int		HC_GAPIGA						= 9143;
+	private static final int		HC_BSOE							= 9156;
+	private static final int		HC_BSOR							= 9157;
+	private static final int		HC_JEWCHEST						= 13992;
+	private static final int		HC_WEPCHEST						= 13990;
 	private static final int		HC_MILK							= 14739;
 	private static final int		HC_MILK_COW_SCROLL				= 14724;
 	private static final int		HC_HEAD_MILK_COW_SCROLL			= 14725;
-	private static final int		HC_GLOOM_MILK_COW_SCROLL		= 14725;
-	private static final int		HC_GLOOM_HEAD_MILK_COW_SCROLL	= 14725;
+	private static final int		HC_GLOOM_MILK_COW_SCROLL		= 14726;
+	private static final int		HC_GLOOM_HEAD_MILK_COW_SCROLL	= 14727;
 
 	/*
 	 * Disabled Scrolls ID till i find npc and correct skills
@@ -95,10 +109,9 @@ public class HollyCow extends QuestJython
 	public final String onAdvEvent(String event, L2Npc npc, L2PcInstance player)
 	{
 		QuestState st = player.getQuestState(QN);
-		if (st == null)
-		{
-			st = newQuestState(player);
-		}
+		Quest q = QuestManager.getInstance().getQuest(getName());
+		if (st == null || q == null)
+			return null;
 
 		String htmltext = "";
 		int chance = st.getInt("chance");
@@ -109,15 +122,35 @@ public class HollyCow extends QuestJython
 			{
 				if (st.getQuestItemsCount(HC_ADENA) > 45000)
 				{
-					st.takeItems(HC_ADENA, 45000);
-					st.giveItems(HC_MILK_COW_SCROLL, 1);
-					htmltext = "farmer.htm";
-					player.sendMessage("Farmer: I give you a scroll for summon cow for 2 minutes.");
+					long _curr_time = System.currentTimeMillis();
+					String value = q.loadGlobalQuestVar(player.getAccountName());
+					long _reuse_time = value == "" ? 0 : Long.parseLong(value);
+				
+					if (_curr_time > _reuse_time)
+					{
+						st.setState(State.STARTED);
+						st.takeItems(HC_ADENA, 45000);
+						st.giveItems(HC_MILK_COW_SCROLL, 1);
+						htmltext = "farmer.htm";
+						player.sendMessage("Farmer: I give you a scroll to summon a cow for 2 minutes.");
+						q.saveGlobalQuestVar(player.getAccountName(), Long.toString(System.currentTimeMillis() + (_hours * 3600000)));
+					}
+					else
+					{
+						long remainingTime = (_reuse_time - System.currentTimeMillis()) / 1000;
+						int hours = (int) (remainingTime / 3600);
+						int minutes = (int) ((remainingTime % 3600) / 60);
+						SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.AVAILABLE_AFTER_S1_S2_HOURS_S3_MINUTES);
+						sm.addItemName(HC_MILK_COW_SCROLL);
+						sm.addNumber(hours);
+						sm.addNumber(minutes);
+						player.sendPacket(sm);
+					}
 				}
 				else
 				{
 					htmltext = "farmer.htm";
-					player.sendMessage("Farmer: I don't give you anything if you don't have a money. Give me 45k Adena.");
+					player.sendMessage("Farmer: I don't give you anything if you don't have money. Give me 45k Adena.");
 				}
 			}
 		}
@@ -160,7 +193,7 @@ public class HollyCow extends QuestJython
 							if (Rnd.get(1, 10) > 8)
 							{
 								st.set("chance", "0");
-								player.sendMessage("I eat too much .... prepare for fight");
+								player.sendMessage("I ate too much... prepare for fight!");
 								htmltext = "";
 								npc.deleteMe();
 								L2Attackable newNpc = (L2Attackable) st.addSpawn(BULK, 60000);
@@ -180,7 +213,7 @@ public class HollyCow extends QuestJython
 							if (Rnd.get(1, 10) > 5)
 							{
 								st.set("chance", "0");
-								player.sendMessage("I eat too much .... prepare for fight");
+								player.sendMessage("I ate too much... prepare for fight!");
 								htmltext = "";
 								npc.deleteMe();
 								L2Attackable newNpc = (L2Attackable) st.addSpawn(HEAD_BULK, 60000);
@@ -191,7 +224,7 @@ public class HollyCow extends QuestJython
 							}
 							else
 							{
-								player.sendMessage("Myam ... myam ...");
+								player.sendMessage("Myam... myam...");
 								htmltext = "cows.htm";
 							}
 						}
@@ -236,7 +269,7 @@ public class HollyCow extends QuestJython
 						else
 						{
 							st.set("chance", "0");
-							player.sendMessage("This hurt me ... help");
+							player.sendMessage("This hurt me ... help!");
 							htmltext = "";
 							npc.deleteMe();
 							L2Attackable newNpc = (L2Attackable) st.addSpawn(HEAD_BULK, 60000);
@@ -278,7 +311,7 @@ public class HollyCow extends QuestJython
 							if (Rnd.get(1, 10) > 8)
 							{
 								st.set("chance", "0");
-								player.sendMessage("I eat too much .... prepare for fight");
+								player.sendMessage("I ate too much... prepare for fight!");
 								htmltext = "";
 								npc.deleteMe();
 								L2Attackable newNpc = (L2Attackable) st.addSpawn(HEAD_BULK, 60000);
@@ -298,7 +331,7 @@ public class HollyCow extends QuestJython
 							if (Rnd.get(1, 10) > 5)
 							{
 								st.set("chance", "0");
-								player.sendMessage("I eat too much .... prepare for fight");
+								player.sendMessage("I ate too much... prepare for fight!");
 								htmltext = "";
 								npc.deleteMe();
 								L2Attackable newNpc = (L2Attackable) st.addSpawn(HEAD_BULK, 60000);
@@ -354,7 +387,7 @@ public class HollyCow extends QuestJython
 						else
 						{
 							st.set("chance", "0");
-							player.sendMessage("This hurt me ... help");
+							player.sendMessage("This hurt me ... help!");
 							htmltext = "";
 							npc.deleteMe();
 							L2Attackable newNpc = (L2Attackable) st.addSpawn(HEAD_BULK, 60000);
@@ -396,7 +429,7 @@ public class HollyCow extends QuestJython
 							if (Rnd.get(1, 10) > 9)
 							{
 								st.set("chance", "0");
-								player.sendMessage("I eat too much .... prepare for fight");
+								player.sendMessage("I ate too much... prepare for fight!");
 								htmltext = "";
 								npc.deleteMe();
 								L2Attackable newNpc = (L2Attackable) st.addSpawn(BULK, 60000);
@@ -416,7 +449,7 @@ public class HollyCow extends QuestJython
 							if (Rnd.get(1, 10) > 6)
 							{
 								st.set("chance", "0");
-								player.sendMessage("I eat too much .... prepare for fight");
+								player.sendMessage("I ate too much... prepare for fight!");
 								htmltext = "";
 								npc.deleteMe();
 								L2Attackable newNpc = (L2Attackable) st.addSpawn(HEAD_BULK, 60000);
@@ -514,7 +547,7 @@ public class HollyCow extends QuestJython
 							if (Rnd.get(1, 10) > 9)
 							{
 								st.set("chance", "0");
-								player.sendMessage("I eat too much .... prepare for fight");
+								player.sendMessage("I ate too much... prepare for fight!");
 								htmltext = "";
 								npc.deleteMe();
 								L2Attackable newNpc = (L2Attackable) st.addSpawn(HEAD_BULK, 60000);
@@ -534,7 +567,7 @@ public class HollyCow extends QuestJython
 							if (Rnd.get(1, 10) > 6)
 							{
 								st.set("chance", "0");
-								player.sendMessage("I eat too much .... prepare for fight");
+								player.sendMessage("I ate too much... prepare for fight!");
 								htmltext = "";
 								npc.deleteMe();
 								L2Attackable newNpc = (L2Attackable) st.addSpawn(HEAD_BULK, 60000);
@@ -590,7 +623,7 @@ public class HollyCow extends QuestJython
 						else
 						{
 							st.set("chance", "0");
-							player.sendMessage("This hurt me ... help");
+							player.sendMessage("This hurt me ... help!");
 							htmltext = "";
 							npc.deleteMe();
 							L2Attackable newNpc = (L2Attackable) st.addSpawn(HEAD_BULK, 60000);
@@ -627,17 +660,29 @@ public class HollyCow extends QuestJython
 				switch (random_prize)
 				{
 					case 1:
+						st.giveItems(HC_BSOR, Rnd.get(1, 5));
+						break;
 					case 2:
-						st.giveItems(HC_ADENA, Rnd.get(1500, 5000));
+						st.giveItems(HC_ADENA, Rnd.get(150000, 500000));
 						break;
 					case 3:
+						st.giveItems(HC_HLS76, 1);
+						break;
 					case 4:
+						st.giveItems(HC_TLS76, 1);
+						break;
 					case 5:
 						if (Rnd.get(10) > 5)
 							st.giveItems(HC_MILK_COW_SCROLL, 1);
 						break;
 					case 6:
+						if (Rnd.get(10) > 5)
+							st.giveItems(HC_JEWCHEST, 1);
+						break;
 					case 7:
+						if (Rnd.get(10) > 5)
+							st.giveItems(HC_APIGA, Rnd.get(1, 5));
+						break;
 					case 8:
 						if (Rnd.get(10) > 5)
 							st.giveItems(HC_HEAD_MILK_COW_SCROLL, 1);
@@ -662,17 +707,29 @@ public class HollyCow extends QuestJython
 				switch (random_prize)
 				{
 					case 1:
+						st.giveItems(HC_QA, 1);
+						break;
 					case 2:
-						st.giveItems(HC_ADENA, Rnd.get(4500, 15000));
+						st.giveItems(HC_ADENA, Rnd.get(450000, 1000000));
 						break;
 					case 3:
+						st.giveItems(HC_REVITA, Rnd.get(1, 5));
+						break;
 					case 4:
+						st.giveItems(HC_BSOE, Rnd.get(1, 5));
+						break;
 					case 5:
 						if (Rnd.get(10) > 5)
 							st.giveItems(HC_MILK_COW_SCROLL, 2);
 						break;
 					case 6:
+						if (Rnd.get(10) > 5)
+							st.giveItems(HC_GAPIGA, 1);
+						break;
 					case 7:
+						if (Rnd.get(10) > 5)
+							st.giveItems(HC_WEPCHEST, 1);
+						break;
 					case 8:
 						if (Rnd.get(10) > 5)
 							st.giveItems(HC_HEAD_MILK_COW_SCROLL, 2);
