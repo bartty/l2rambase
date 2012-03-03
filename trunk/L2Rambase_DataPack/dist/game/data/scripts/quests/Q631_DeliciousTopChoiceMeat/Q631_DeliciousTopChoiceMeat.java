@@ -27,7 +27,7 @@ public class Q631_DeliciousTopChoiceMeat extends Quest
 	private static final String qn = "Q631_DeliciousTopChoiceMeat";
 	private static final int TUNATUN = 31537;
 	private static final int MEAT = 15534;
-	private static final int[] MONSTERS = {18898, 18876, 18891, 18884};
+	private static final int[] MONSTERS = {18897, 18877, 18890, 18883};
 	private static final int CHANCE = 172;
 	private static final int[] PIECES_REWARD = {10397, 10398, 10399, 10400, 10401, 10402, 10403, 10404, 10405};
 	private static final int[]RECIPE_REWARD = {10373, 10374, 10375, 10376, 10377, 10378, 10379, 10380, 10381};
