@@ -25,26 +25,21 @@ public class AprilFools extends Quest
         
         /**
          * Good Reward List:
-         * - Zaken or Queen Ant (20204 - 20207)         Chance 5%
-         * - Event Dress (20099)                                        Chance 27%
+         * - Vesper Weapon/Armour Box (20958 - 17161)   Chance 2% and 3%
+         * - Formal Dress 7 days (20099)                Chance 10%
          * - Special Aghations (14093,14094)            Chance 15%
-         * - Coke (3434 - only one)                                     Chance 3%
-         * 
+         * - Noblesse Oblige (20967)                    Chance 5%
+		 * - Vesper Crown (20965)                       Chance 5%
+         * - Vesper Circlet (20966)                     Chance 7%
+		 * - Vitality full (20000)                      Chance 3%
          * Bad Reward List:
-         * - give 5000 karma                                            Chance 15%
-         * - get 150k Adena                                                     Chance 3%
+         * - give 5000 karma                            Chance 15%
+         * - get 150k Adena                             Chance 3%
          * - Death Penalty - (skill 5076 lvl 15)        Chance 7%
-         * - set Vitality to 0                                          Chance 25%
+         * - set Vitality to 0                          Chance 25%
          */
         
-        private static final int APRIL_GIFT = 20958;
-        
-        private static final int[] EventMonsters = 
-        { 
-                7000,7001,7002,7003,7004,7005,7006,7007,7008,7009,
-                7010,7011,7012,7013,7014,7015,7016,7017,7018,7019,
-                7020,7021,7022,7023
-        };
+        private static final int GRACIAN_COIN = 13693;
         
         public final String onFirstTalk(L2Npc npc, L2PcInstance player)
         {
@@ -75,9 +70,9 @@ public class AprilFools extends Quest
                 String htmltext = "";
                 if (event.equalsIgnoreCase("play"))
                 {
-                        if (st.getQuestItemsCount(APRIL_GIFT) >= 100)
+                        if (st.getQuestItemsCount(GRACIAN_COIN) >= 100)
                         {
-                                st.takeItems(APRIL_GIFT,100);
+                                st.takeItems(GRACIAN_COIN,100);
                                 htmltext = giveReward(st,player);
                         }
                         else
@@ -101,73 +96,99 @@ public class AprilFools extends Quest
                         {
                                 if (Rnd.get(2) == 2)
                                 {
-                                        if (st.getQuestItemsCount(20204) < 1)
+                                        if (st.getQuestItemsCount(20958) < 1)
                                         {
-                                                st.giveItems(20204, 1);
+                                                st.giveItems(20958, 1); // - Weapon Box Vesper
                                         }
                                         else
                                         {
-                                                st.giveAdena(5000, true);
+                                                st.giveAdena(500000, true);
                                         }
                                 }
                                 else
                                 {
-                                        if (st.getQuestItemsCount(20207) < 1)
+                                        if (st.getQuestItemsCount(17161) < 1)
                                         {
-                                                st.giveItems(20207, 1);
+                                                st.giveItems(17161, 1); // - Armour Box Vesper
                                         }
                                         else
                                         {
-                                                st.giveAdena(15000, true);
+                                                st.giveAdena(150000, true);
                                         }
                                 }
                         }
-                        else if (randomGet >5 && randomGet <=32)
+                        else if (randomGet > 5 && randomGet <= 15) // 10%
                         {
                                 if (st.getQuestItemsCount(20099) < 1)
                                 {
-                                        st.giveItems(20099, 1);
+                                        st.giveItems(20099, 1); // - Formal Dress 7 day
                                 }
                                 else
                                 {
-                                        st.giveAdena(5000, true);
+                                        st.giveAdena(500000, true);
                                 }
                         }
-                        else if (randomGet > 32 && randomGet <=47)
+						else if (randomGet > 15 && randomGet <= 20)  // 5%
+                        {
+                                if (st.getQuestItemsCount(20967) < 1)
+                                {
+                                        st.giveItems(20967, 1); // - Noblesse Oblige
+                                }
+                                else
+                                {
+                                        st.giveAdena(250000, true);
+                                }
+                        }
+						else if (randomGet > 20 && randomGet <= 25)  // 5%
+                        {
+                                if (st.getQuestItemsCount(20965) < 1)
+                                {
+                                        st.giveItems(20965, 1); // - Vesper Crown
+                                }
+                                else
+                                {
+                                        st.giveAdena(250000, true);
+                                }
+                        }
+						else if (randomGet > 25 && randomGet <= 32)  // 7%
+                        {
+                                if (st.getQuestItemsCount(20966) < 1)
+                                {
+                                        st.giveItems(20966, 1); // - Vesper Circlet
+                                }
+                                else
+                                {
+                                        st.giveAdena(250000, true);
+                                }
+                        }
+                        else if (randomGet > 32 && randomGet <=47) // 15%
                         {
                                 if(Rnd.get(2) == 2)
                                 {
                                         if (st.getQuestItemsCount(14093) < 1)
                                         {
-                                                st.giveItems(14093,1);
+                                            st.giveItems(14093,1); // - Sudden Agathion - 7-day limited period
                                         }
                                         else
                                         {
-                                                st.giveAdena(5000, true);
+                                            st.giveAdena(150000, true);
                                         }
                                 }
                                 else
                                 {
                                         if (st.getQuestItemsCount(14094) < 1)
                                         {
-                                                st.giveItems(14094,1);
+                                            st.giveItems(14094,1); // - Shiny Agathion - 7-day limited period
                                         }
                                         else
                                         {
-                                                st.giveAdena(5000, true);
+                                            st.giveAdena(150000, true);
                                         }
                                 }
                         }
                         else
                         {
-                                if (st.getQuestItemsCount(3434) < 1)
-                                {
-                                        st.giveItems(3434,1);
-                                }
-                                else
-                                {
-                                        st.giveAdena(50000, true);
-                                }
+                            player.setVitalityPoints(20000, true);
                         }
                         text = good;
                 }
@@ -201,46 +222,19 @@ public class AprilFools extends Quest
                         }
                         text = bad;
                 }
-                return text;
-        }
-
-        public final String onKill(L2Npc npc,L2PcInstance player, boolean isPet)
-        {               
-                QuestState st = player.getQuestState(qn);
-                if (st == null)
-                {
-                        st = newQuestState(player);     
-                }
-                int npcId = npc.getNpcId();
-                if (EventsConfig.AP_STARTED)
-                {
-                        for(int ID : EventMonsters)
-                        { 
-                                if (npcId == ID)
-                                {
-                                        st.giveItems(APRIL_GIFT,1);                                     
-                                }
-                        }                       
-                }
-                return super.onKill(npc, player, isPet);
+             return text;
         }
         
         public AprilFools(int questId, String name, String descr)
         {
-                super(questId, name, descr);
-
-                addStartNpc(April_Npc);
-                addFirstTalkId(April_Npc);
-                addTalkId(April_Npc);
-                for (int MONSTER: EventMonsters)
-                {
-                        addKillId(MONSTER);
-                }
+            super(questId, name, descr);
+            addStartNpc(April_Npc);
+            addFirstTalkId(April_Npc);
+            addTalkId(April_Npc);
         }       
         
     	public static void main(String[] args)
     	{
     		new AprilFools(-1,qn,"events");
-    		_log.warning("Event System: April Fools Day Event loaded ...");
     	}
 }
