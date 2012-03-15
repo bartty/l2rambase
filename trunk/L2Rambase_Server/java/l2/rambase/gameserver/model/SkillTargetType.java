@@ -14,7 +14,7 @@
  */
 package l2.rambase.gameserver.model;
 
-public class SkillTargetType
+public enum SkillTargetType
 {
         TARGET_ALLY,
         TARGET_AREA,
@@ -52,5 +52,5 @@ public class SkillTargetType
         TARGET_SUMMON,
         TARGET_UNDEAD,
         TARGET_UNLOCKABLE, 
-        TARGET_CHAIN_HEAL;
-}
+        TARGET_CHAIN_HEAL
+};
