@@ -24,4 +24,28 @@
 		<!-- Ancient Cloak -->
 		<production count="1" id="14609" />
 	</item>
+	<item>
+		<!-- Sealed Cloak of Zaken -->
+		<ingredient count="1" id="21713" />
+		<!-- Adena -->
+		<ingredient count="1186980" id="57" />
+		<!-- Cloak of Zaken -->
+		<production count="1" id="21716" />
+	</item>
+	<item>
+		<!-- Sealed Cloak of Frintezza -->
+		<ingredient count="1" id="21715" />
+		<!-- Adena -->
+		<ingredient count="1186980" id="57" />
+		<!-- Cloak of Frintezza -->
+		<production count="1" id="21718" />
+	</item>
+	<item>
+		<!-- Sealed Cloak of Freya -->
+		<ingredient count="1" id="21714" />
+		<!-- Adena -->
+		<ingredient count="1318800" id="57" />
+		<!-- Cloak of Freya -->
+		<production count="1" id="21717" />
+	</item>
 </list>
