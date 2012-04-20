@@ -73,7 +73,7 @@ public class Q10503_FrintezzaEmbroideredSoulCloak extends Quest
 		    else
 		        htmltext = "32612-00.htm";
 		}
-		else if (st.getInt("cond") == 2)
+		else if (st.getQuestItemsCount(Frintezzasoulfragment) > 19)
 		    htmltext = "32612-02.htm";
 		else
 		    htmltext = "32612-01.htm";
