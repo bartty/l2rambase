@@ -41,8 +41,9 @@ import l2.Rambase.gameserver.network.serverpackets.TutorialCloseHtml;
 import l2.Rambase.gameserver.network.serverpackets.TutorialEnableClientEvent;
 import l2.Rambase.gameserver.network.serverpackets.TutorialShowHtml;
 import l2.Rambase.gameserver.network.serverpackets.TutorialShowQuestionMark;
+import l2.Rambase.gameserver.skills.Stats;
 import l2.Rambase.gameserver.util.Util;
-
+import l2.Rambase.util.Rnd;
 /**
  * @author Luis Arias
  */
@@ -666,6 +667,16 @@ public final class QuestState
 		getQuest().playSound(getPlayer(), sound);
 	}
 	
+	/**
+	 * Add XP and SP as quest reward
+	 * @param exp
+	 * @param sp
+	 */
+	public void addExpAndSp(int exp, int sp)
+	{
+		getPlayer().addExpAndSp((int) getPlayer().calcStat(Stats.EXPSP_RATE, exp * Config.RATE_QUEST_REWARD_XP, null, null), (int) getPlayer().calcStat(Stats.EXPSP_RATE, sp * Config.RATE_QUEST_REWARD_SP, null, null));
+		PcCafePointsManager.getInstance().givePcCafePoint(getPlayer(), (long)(exp * Config.RATE_QUEST_REWARD_XP));
+	}
 	
 	/**
 	 * Return random value
