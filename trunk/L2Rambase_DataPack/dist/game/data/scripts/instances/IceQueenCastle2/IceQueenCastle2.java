@@ -4,7 +4,6 @@ import java.util.Calendar;
 
 import javolution.util.FastMap;
 import l2.Rambase.Config;
-import l2.Rambase.gameserver.Text;
 import l2.Rambase.gameserver.ThreadPoolManager;
 import l2.Rambase.gameserver.ai.CtrlIntention;
 import l2.Rambase.gameserver.datatables.NpcTable;
@@ -15,27 +14,30 @@ import l2.Rambase.gameserver.instancemanager.InstanceManager.InstanceWorld;
 import l2.Rambase.gameserver.model.L2CharPosition;
 import l2.Rambase.gameserver.model.L2Object;
 import l2.Rambase.gameserver.model.L2Party;
-import l2.Rambase.gameserver.model.L2Skill;
 import l2.Rambase.gameserver.model.L2Spawn;
 import l2.Rambase.gameserver.model.L2World;
 import l2.Rambase.gameserver.model.actor.L2Attackable;
 import l2.Rambase.gameserver.model.actor.L2Character;
 import l2.Rambase.gameserver.model.actor.L2Npc;
 import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
-import l2.Rambase.gameserver.model.actor.instance.Okoli;
+import l2.Rambase.gameserver.templates.chars.L2NpcTemplate;
+import l2.Rambase.gameserver.templates.skills.L2EffectType;
 import l2.Rambase.gameserver.model.entity.Instance;
 import l2.Rambase.gameserver.model.quest.Quest;
 import l2.Rambase.gameserver.model.quest.QuestState;
 import l2.Rambase.gameserver.model.quest.State;
+import l2.Rambase.gameserver.model.L2Skill;
 import l2.Rambase.gameserver.network.SystemMessageId;
+import l2.Rambase.gameserver.network.serverpackets.ExChangeNpcState;
 import l2.Rambase.gameserver.network.serverpackets.ExSendUIEvent;
+import l2.Rambase.gameserver.network.serverpackets.ExShowScreenMessage2;
 import l2.Rambase.gameserver.network.serverpackets.OnEventTrigger;
-import l2.Rambase.gameserver.network.serverpackets.Scenkos;
 import l2.Rambase.gameserver.network.serverpackets.SystemMessage;
-import l2.Rambase.gameserver.templates.chars.L2NpcTemplate;
-import l2.Rambase.gameserver.templates.skills.L2EffectType;
+import l2.Rambase.gameserver.util.Broadcast;
 import l2.Rambase.gameserver.util.Util;
 import l2.Rambase.util.Rnd;
+
+
 
 public class IceQueenCastle2 extends Quest
 {
@@ -44,10 +46,78 @@ public class IceQueenCastle2 extends Quest
 	private static final int INSTANCE_ID = 139;
 	
 	private boolean debug = false;
+	// Npc
+	private static int _sirra = 32762;
+	private static int Jinia = 32781;
+	// private static int Superior_Knight = 32777;
+	// Mobs
+	// private static int freya_controller = 18930; // TODO: Custom Npc
+	private static int glacier = 18853;
+	private static int archery_knight = 18855;
+	// Boss
+	private static int Glakias = 25699;
+	private static int freyaOnThrone = 29177;
+	private static int freyaSpelling = 29178;
+	private static int freyaStand = 29179;
+	// Door
+	private static int door = 23140101;
+	
+	// Hard
+	private static int freyaStand_hard = 29180;
+	private static int archery_knight_hard = 18856;
+	private static int Glakias_hard = 25700;
+	// Hard - end
+	private boolean _isEasy = false;
+	private boolean _isHard = false;
+	
+	private static int[] emmiters = 
+	{
+		23140202, 23140204, 23140206, 23140208, 23140212, 23140214, 23140216
+	};
+	private static int decoration = 0;
+	
+	private static final int[] archery_blocked_status =
+	{
+		11, 19, 22, 29, 39
+	};
+	
+	private static final int[] glacier_blocked_status =
+	{
+		11, 19, 29, 39
+	};
+	
+	private static final int[][] frozeKnightsSpawn =
+	{
+		{113845, -116091, -11168, 8264},
+		{113381, -115622, -11168, 8264},
+		{113380, -113978, -11168, -8224},
+		{113845, -113518, -11168, -8224},
+		{115591, -113516, -11168, -24504},
+		{116053, -113981, -11168, -24504},
+		{116061, -115611, -11168, 24804},
+		{115597, -116080, -11168, 24804},
+		{112942, -115480, -10960, 52},
+		{112940, -115146, -10960, 52},
+		{112945, -114453, -10960, 52},
+		{112945, -114123, -10960, 52},
+		{116497, -114117, -10960, 32724},
+		{116499, -114454, -10960, 32724},
+		{116501, -115145, -10960, 32724},
+		{116502, -115473, -10960, 32724}
+	};
+	
+	private static final int[][] _archeryKnightsSpawn = 
+	{
+		{114713, -115109, -11202, 16456},
+		{114008, -115080, -11202, 3568},
+		{114422, -115508, -11202, 12400},
+		{115023, -115508, -11202, 20016},
+		{115459, -115079, -11202, 27936}
+	};
 	
 	private class FreyaWorld extends InstanceWorld
 	{
-		public L2Attackable _freya_controller = null;
+		//public L2Attackable _freya_controller = null;
 		public L2Attackable _freyaThrone = null;
 		public L2Npc _freyaSpelling = null;
 		public L2Attackable _freyaStand = null;
@@ -58,11 +128,11 @@ public class IceQueenCastle2 extends Quest
 		public FastMap<Integer, L2Npc> _archery_knights = new FastMap<Integer, L2Npc>();
 		public FastMap<Integer, L2Npc> _simple_knights = new FastMap<Integer, L2Npc>();
 		public FastMap<Integer, L2Npc> _glaciers = new FastMap<Integer, L2Npc>();
-		//Hard
+		// Hard
 		public L2Attackable _freyaStand_hard = null;
 		public L2Attackable _glakias_hard = null;
 		public FastMap<Integer, L2Npc> _archery_knights_hard = new FastMap<Integer, L2Npc>();
-		//Hard - end
+		// Hard - end
 		public FreyaWorld()
 		{
 			InstanceManager.getInstance();
@@ -71,7 +141,6 @@ public class IceQueenCastle2 extends Quest
 	
 	private class spawnWave implements Runnable
 	{
-		
 		private int _waveId;
 		private FreyaWorld _world;
 		
@@ -80,22 +149,23 @@ public class IceQueenCastle2 extends Quest
 			_waveId = waveId;
 			_world = getWorld(instanceId);
 		}
+		@SuppressWarnings("cast")
+		@Override
 		public void run()
 		{
-			//Hard
+			// Hard
 			if (_isHard)
 			{
-				switch(_waveId)
+				switch (_waveId)
 				{
 					case 1:
 						// Freya controller
-						_world._freya_controller = (L2Attackable) spawnNpc(freya_controller, 114707, -114793, -11199, 0, _world.instanceId);
-						_world._freya_controller.setIsInvul(true);
+						//_world._freya_controller = (L2Attackable) spawnNpc(freya_controller, 114707, -114793, -11199, 0, _world.instanceId);
+						//_world._freya_controller.setIsInvul(true);
 						// Sirra
 						spawnNpc(_sirra, 114766, -113141, -11200, 15956, _world.instanceId);
 						handleWorldState(1 , _world.instanceId);
 						break;
-						
 					case 3:
 						if (_world == null)
 							break;
@@ -104,7 +174,7 @@ public class IceQueenCastle2 extends Quest
 						if (_world._archery_knights_hard.size() < 5 && _world.status < 44)
 						{
 							int[] spawnXY = getRandomPoint(114385, 115042, -115106, -114466);
-							L2Npc mob = spawnNpc(archery_knight_hard, spawnXY[0], spawnXY[1], -11200, 20016, _world.instanceId);
+							L2Attackable mob = (L2Attackable) spawnNpc(archery_knight_hard, spawnXY[0], spawnXY[1], -11200, 20016, _world.instanceId);
 							((L2Attackable) mob).setOnKillDelay(0);
 							L2PcInstance victim = getRandomPlayer(_world);
 							mob.setTarget(victim);
@@ -120,24 +190,22 @@ public class IceQueenCastle2 extends Quest
 						break;
 					case 4:
 						break;
-						
 					case 5:
 						if (_world != null && _world._glaciers.size() < 5
 								&& _world.status < 44
 								&& !Util.contains(glacier_blocked_status, _world.status))
 						{
 							int[] spawnXY = getRandomPoint(114385, 115042, -115106, -114466);
-							L2Npc mob = spawnNpc(glacier, spawnXY[0], spawnXY[1], -11200, 20016, _world.instanceId);
+							L2Attackable mob = (L2Attackable) spawnNpc(glacier, spawnXY[0], spawnXY[1], -11200, 20016, _world.instanceId);
 							_world._glaciers.put(mob.getObjectId(), mob);
 						}
 						if (_world.status < 44)
 							ThreadPoolManager.getInstance().scheduleGeneral(new spawnWave(5, _world.instanceId), (Rnd.get(10, 40) * 1000) + 20000);
 						break;
-						
 					case 6:
 						for (int[] iter : _archeryKnightsSpawn)
 						{
-							L2Npc mob = spawnNpc(archery_knight_hard, iter[0], iter[1], iter[2], iter[3], _world.instanceId);
+							L2Attackable mob = (L2Attackable) spawnNpc(archery_knight_hard, iter[0], iter[1], iter[2], iter[3], _world.instanceId);
 							((L2Attackable) mob).setOnKillDelay(0);
 							mob.setRunning();
 							L2PcInstance victim = getRandomPlayer(_world);
@@ -148,7 +216,6 @@ public class IceQueenCastle2 extends Quest
 						}
 						handleWorldState(_world.status+1, _world);
 						break;
-						
 					case 7:
 						handleWorldState(2, _world.instanceId);
 						break;
@@ -190,20 +257,19 @@ public class IceQueenCastle2 extends Quest
 						break;
 				}
 			}
-			//Hard - end
+			// Hard - end
 			else if (_isEasy)
 			{
-				switch(_waveId)
+				switch (_waveId)
 				{
 					case 1:
 						// Freya controller
-						_world._freya_controller = (L2Attackable) spawnNpc(freya_controller, 114707, -114793, -11199, 0, _world.instanceId);
-						_world._freya_controller.setIsInvul(true);
+						//_world._freya_controller = (L2Attackable) spawnNpc(freya_controller, 114707, -114793, -11199, 0, _world.instanceId);
+						//_world._freya_controller.setIsInvul(true);
 						// Sirra
 						spawnNpc(_sirra, 114766, -113141, -11200, 15956, _world.instanceId);
 						handleWorldState(1, _world.instanceId);
 						break;
-						
 					case 3:
 						if (_world == null)
 							break;
@@ -212,7 +278,7 @@ public class IceQueenCastle2 extends Quest
 						if (_world._archery_knights.size() < 5 && _world.status < 44)
 						{
 							int[] spawnXY = getRandomPoint(114385, 115042, -115106, -114466);
-							L2Npc mob = spawnNpc(archery_knight, spawnXY[0], spawnXY[1], -11200, 20016, _world.instanceId);
+							L2Attackable mob = (L2Attackable) spawnNpc(archery_knight, spawnXY[0], spawnXY[1], -11200, 20016, _world.instanceId);
 							((L2Attackable) mob).setOnKillDelay(0);
 							L2PcInstance victim = getRandomPlayer(_world);
 							mob.setTarget(victim);
@@ -235,17 +301,16 @@ public class IceQueenCastle2 extends Quest
 								&& !Util.contains(glacier_blocked_status, _world.status))
 						{
 							int[] spawnXY = getRandomPoint(114385, 115042, -115106, -114466);
-							L2Npc mob = spawnNpc(glacier, spawnXY[0], spawnXY[1], -11200, 20016, _world.instanceId);
+							L2Attackable mob = (L2Attackable) spawnNpc(glacier, spawnXY[0], spawnXY[1], -11200, 20016, _world.instanceId);
 							_world._glaciers.put(mob.getObjectId(), mob);
 						}
 						if (_world.status < 44)
 							ThreadPoolManager.getInstance().scheduleGeneral(new spawnWave(5, _world.instanceId), (Rnd.get(10, 40) * 1000) + 20000);
 						break;
-						
 					case 6:
 						for (int[] iter : _archeryKnightsSpawn)
 						{
-							L2Npc mob = spawnNpc(archery_knight, iter[0], iter[1], iter[2], iter[3], _world.instanceId);
+							L2Attackable mob = (L2Attackable) spawnNpc(archery_knight, iter[0], iter[1], iter[2], iter[3], _world.instanceId);
 							((L2Attackable) mob).setOnKillDelay(0);
 							mob.setRunning();
 							L2PcInstance victim = getRandomPlayer(_world);
@@ -256,7 +321,6 @@ public class IceQueenCastle2 extends Quest
 						}
 						handleWorldState(_world.status+1, _world);
 						break;
-						
 					case 7:
 						handleWorldState(2, _world.instanceId);
 						break;
@@ -307,76 +371,6 @@ public class IceQueenCastle2 extends Quest
 		}
 	}
 	
-	//freyaStand = 29179;
-	//archery_knight = 18855;
-	//Glakias	= 25699;
-	
-	private boolean _isEasy = false;
-	private boolean _isHard = false;
-	private static int Jinia = 32781;
-	private static int Superior_Knight = 32777;	
-	private static int freyaOnThrone = 29177;
-	private static int freyaSpelling = 29178;
-	private static int freyaStand = 29179;
-	private static int freya_controller = 36800;
-	private static int glacier = 18853;
-	private static int archery_knight = 18855;
-	private static int Glakias = 25699;
-	private static int _sirra = 32762;
-	//private static int tmp					= 32777;
-	private static int door = 23140101;
-	
-	//Hard
-	private static int freyaStand_hard = 29180;
-	private static int archery_knight_hard = 18856;
-	private static int Glakias_hard = 25700;
-	//Hard - end
-	
-	private static int[] emmiters = 
-	{
-		23140202, 23140204, 23140206, 23140208, 23140212, 23140214, 23140216
-	};
-	private static int decoration = 0;
-	
-	private static final int[] archery_blocked_status =
-	{
-		11, 19, 22, 29, 39
-	};
-	
-	private static final int[] glacier_blocked_status =
-	{
-		11, 19, 29, 39
-	};
-	
-	private static int[][] frozeKnightsSpawn =
-	{
-		{113845,-116091,-11168,8264},
-		{113381,-115622,-11168,8264},
-		{113380,-113978,-11168,-8224},
-		{113845,-113518,-11168,-8224},
-		{115591,-113516,-11168,-24504},
-		{116053,-113981,-11168,-24504},
-		{116061,-115611,-11168,24804},
-		{115597,-116080,-11168,24804},
-		{112942,-115480,-10960,52},
-		{112940,-115146,-10960,52},
-		{112945,-114453,-10960,52},
-		{112945,-114123,-10960,52},
-		{116497,-114117,-10960,32724},
-		{116499,-114454,-10960,32724},
-		{116501,-115145,-10960,32724},
-		{116502,-115473,-10960,32724}
-	};
-
-	private static final int[][] _archeryKnightsSpawn = 
-	{
-		{114713, -115109, -11202, 16456},
-		{114008, -115080, -11202, 3568},
-		{114422, -115508, -11202, 12400},
-		{115023, -115508, -11202, 20016},
-		{115459, -115079, -11202, 27936}
-	};
-	
 	private void broadcastMovie(int movieId, FreyaWorld world)
 	{
 		world.isMovieNow = true;
@@ -390,7 +384,7 @@ public class IceQueenCastle2 extends Quest
 		}
 		
 		int pause = 0;
-		//Hard
+		// Hard
 		if (_isHard)
 		{
 			switch (movieId)
@@ -420,7 +414,7 @@ public class IceQueenCastle2 extends Quest
 					pause = 0;
 			}
 		}
-		//Hard - end
+		// Hard - end
 		else if (_isEasy)
 		{
 			switch (movieId)
@@ -472,8 +466,8 @@ public class IceQueenCastle2 extends Quest
 	
 	private void broadcastString(int strId, int instanceId)
 	{
-		Text sm = new Text(strId, 3000, Text.ScreenMessageAlign.TOP_CENTER, true, false, -1, true);
-		Scenkos.toPlayersInInstance(sm, instanceId);
+		ExShowScreenMessage2 sm = new ExShowScreenMessage2(strId, 3000, ExShowScreenMessage2.ScreenMessageAlign.TOP_CENTER, true, false, -1, true);
+		Broadcast.toPlayersInInstance(sm, instanceId);
 	}
 	
 	private void broadcastTimer(FreyaWorld world)
@@ -495,10 +489,11 @@ public class IceQueenCastle2 extends Quest
 			System.out.println("Warning!!! Not Found world at handleWorldState(int, int).");
 	}
 	
+	@SuppressWarnings("cast")
 	private void handleWorldState(int statusId, FreyaWorld world)
 	{
 		int instanceId = world.instanceId;
-		//Hard
+		// Hard
 		if (_isHard)
 		{
 			switch (statusId)
@@ -533,14 +528,14 @@ public class IceQueenCastle2 extends Quest
 					
 					for (int[] iter : frozeKnightsSpawn)
 					{
-						L2Npc mob = spawnNpc(archery_knight_hard, iter[0], iter[1], iter[2], iter[3], instanceId);
+						L2Attackable mob = (L2Attackable) spawnNpc(archery_knight_hard, iter[0], iter[1], iter[2], iter[3], instanceId);
 						archerySpawn(mob);
 						world._simple_knights.put(mob.getObjectId(), mob);
 					}
 					
 					for (int[] iter : _archeryKnightsSpawn)
 					{
-						L2Npc mob = spawnNpc(archery_knight_hard, iter[0], iter[1], iter[2], iter[3], instanceId);
+						L2Attackable mob = (L2Attackable) spawnNpc(archery_knight_hard, iter[0], iter[1], iter[2], iter[3], instanceId);
 						archerySpawn(mob);
 						mob.setDisplayEffect(1);
 						world._archery_knights_hard.put(mob.getObjectId(), mob);
@@ -567,7 +562,7 @@ public class IceQueenCastle2 extends Quest
 					for (int i = 0; i < 5; i++)
 					{
 						int[] spawnXY = getRandomPoint(114385, 115042, -115106, -114466);
-						L2Npc mob = spawnNpc(glacier, spawnXY[0], spawnXY[1], -11200, 0, instanceId);
+						L2Attackable mob = (L2Attackable) spawnNpc(glacier, spawnXY[0], spawnXY[1], -11200, 0, instanceId);
 						world._glaciers.put(mob.getObjectId(), mob);
 					}
 					
@@ -598,7 +593,7 @@ public class IceQueenCastle2 extends Quest
 				case 20:
 					for (int[] iter : _archeryKnightsSpawn)
 					{
-						L2Npc mob = spawnNpc(archery_knight_hard, iter[0], iter[1], iter[2], iter[3], instanceId);
+						L2Attackable mob = (L2Attackable) spawnNpc(archery_knight_hard, iter[0], iter[1], iter[2], iter[3], instanceId);
 						archerySpawn(mob);
 						mob.setDisplayEffect(1);
 						world._archery_knights_hard.put(mob.getObjectId(), mob);
@@ -614,7 +609,7 @@ public class IceQueenCastle2 extends Quest
 					for (int i = 0; i < 5; i++)
 					{
 						int[] spawnXY = getRandomPoint(114385, 115042, -115106, -114466);
-						L2Npc mob = spawnNpc(glacier, spawnXY[0], spawnXY[1], -11200, 0, instanceId);
+						L2Attackable mob = (L2Attackable) spawnNpc(glacier, spawnXY[0], spawnXY[1], -11200, 0, instanceId);
 						world._glaciers.put(mob.getObjectId(), mob);
 					}
 					ThreadPoolManager.getInstance().scheduleGeneral(new spawnWave(5, world.instanceId), 7000);
@@ -638,7 +633,7 @@ public class IceQueenCastle2 extends Quest
 				case 30:
 					for (int[] iter : _archeryKnightsSpawn)
 					{
-						L2Npc mob = spawnNpc(archery_knight_hard, iter[0], iter[1], iter[2], iter[3], instanceId);
+						L2Attackable mob = (L2Attackable) spawnNpc(archery_knight_hard, iter[0], iter[1], iter[2], iter[3], instanceId);
 						((L2Attackable) mob).setOnKillDelay(0);
 						world._archery_knights_hard.put(mob.getObjectId(), mob);
 					}
@@ -650,12 +645,12 @@ public class IceQueenCastle2 extends Quest
 				case 31:
 					if (!debug)
 					{
-						Okoli as = new Okoli(decoration, 2);
-						Scenkos.toPlayersInInstance(as, world.instanceId);
+						ExChangeNpcState as = new ExChangeNpcState(decoration, 2);
+						Broadcast.toPlayersInInstance(as, world.instanceId);
 						for (int emitter : emmiters)
 						{
 							OnEventTrigger et = new OnEventTrigger(emitter, false);
-							Scenkos.toPlayersInInstance(et, world.instanceId);
+							Broadcast.toPlayersInInstance(et, world.instanceId);
 						}
 					}
 					
@@ -696,9 +691,11 @@ public class IceQueenCastle2 extends Quest
 					if (world._freyaStand_hard != null && !world._freyaStand_hard.isDead())
 					{
 						world._jinia.setTarget(world._freyaStand_hard);
+						world._jinia.setRunning();
 						world._jinia.addDamageHate(world._freyaStand_hard, 0, 9999);
 						world._jinia.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, world._freyaStand_hard);
 						world._kegor.setTarget(world._freyaStand_hard);
+						world._kegor.setRunning();
 						world._kegor.addDamageHate(world._freyaStand_hard, 0, 9999);
 						world._kegor.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, world._freyaStand_hard);
 					}
@@ -721,7 +718,6 @@ public class IceQueenCastle2 extends Quest
 					ThreadPoolManager.getInstance().scheduleGeneral(new spawnWave(15, instanceId), 6000);
 					break;
 				case 43:
-
 					break;
 				case 44:
 					broadcastMovie(19, world);
@@ -740,8 +736,8 @@ public class IceQueenCastle2 extends Quest
 					break;
 			}
 		}
-		//Hard - end
-		else if(_isEasy)
+		// Hard - end
+		else if (_isEasy)
 		{
 			switch (statusId)
 			{
@@ -775,14 +771,14 @@ public class IceQueenCastle2 extends Quest
 					
 					for (int[] iter : frozeKnightsSpawn)
 					{
-						L2Npc mob = spawnNpc(archery_knight, iter[0], iter[1], iter[2], iter[3], instanceId);
+						L2Attackable mob = (L2Attackable) spawnNpc(archery_knight, iter[0], iter[1], iter[2], iter[3], instanceId);
 						archerySpawn(mob);
 						world._simple_knights.put(mob.getObjectId(), mob);
 					}
 					
 					for (int[] iter : _archeryKnightsSpawn)
 					{
-						L2Npc mob = spawnNpc(archery_knight, iter[0], iter[1], iter[2], iter[3], instanceId);
+						L2Attackable mob = (L2Attackable) spawnNpc(archery_knight, iter[0], iter[1], iter[2], iter[3], instanceId);
 						archerySpawn(mob);
 						mob.setDisplayEffect(1);
 						world._archery_knights.put(mob.getObjectId(), mob);
@@ -809,7 +805,7 @@ public class IceQueenCastle2 extends Quest
 					for (int i = 0; i < 5; i++)
 					{
 						int[] spawnXY = getRandomPoint(114385, 115042, -115106, -114466);
-						L2Npc mob = spawnNpc(glacier, spawnXY[0], spawnXY[1], -11200, 0, instanceId);
+						L2Attackable mob = (L2Attackable) spawnNpc(glacier, spawnXY[0], spawnXY[1], -11200, 0, instanceId);
 						world._glaciers.put(mob.getObjectId(), mob);
 					}
 					
@@ -840,7 +836,7 @@ public class IceQueenCastle2 extends Quest
 				case 20:
 					for (int[] iter : _archeryKnightsSpawn)
 					{
-						L2Npc mob = spawnNpc(archery_knight, iter[0], iter[1], iter[2], iter[3], instanceId);
+						L2Attackable mob = (L2Attackable) spawnNpc(archery_knight, iter[0], iter[1], iter[2], iter[3], instanceId);
 						archerySpawn(mob);
 						mob.setDisplayEffect(1);
 						world._archery_knights.put(mob.getObjectId(), mob);
@@ -856,7 +852,7 @@ public class IceQueenCastle2 extends Quest
 					for (int i = 0; i < 5; i++)
 					{
 						int[] spawnXY = getRandomPoint(114385, 115042, -115106, -114466);
-						L2Npc mob = spawnNpc(glacier, spawnXY[0], spawnXY[1], -11200, 0, instanceId);
+						L2Attackable mob = (L2Attackable) spawnNpc(glacier, spawnXY[0], spawnXY[1], -11200, 0, instanceId);
 						world._glaciers.put(mob.getObjectId(), mob);
 					}
 					ThreadPoolManager.getInstance().scheduleGeneral(new spawnWave(5, world.instanceId), 7000);
@@ -880,7 +876,7 @@ public class IceQueenCastle2 extends Quest
 				case 30:
 					for (int[] iter : _archeryKnightsSpawn)
 					{
-						L2Npc mob = spawnNpc(archery_knight, iter[0], iter[1], iter[2], iter[3], instanceId);
+						L2Attackable mob = (L2Attackable) spawnNpc(archery_knight, iter[0], iter[1], iter[2], iter[3], instanceId);
 						((L2Attackable) mob).setOnKillDelay(0);
 						world._archery_knights.put(mob.getObjectId(), mob);
 					}
@@ -892,12 +888,12 @@ public class IceQueenCastle2 extends Quest
 				case 31:
 					if (!debug)
 					{
-						Okoli as = new Okoli(decoration, 2);
-						Scenkos.toPlayersInInstance(as, world.instanceId);
+						ExChangeNpcState as = new ExChangeNpcState(decoration, 2);
+						Broadcast.toPlayersInInstance(as, world.instanceId);
 						for (int emitter : emmiters)
 						{
 							OnEventTrigger et = new OnEventTrigger(emitter, false);
-							Scenkos.toPlayersInInstance(et, world.instanceId);
+							Broadcast.toPlayersInInstance(et, world.instanceId);
 						}
 					}
 					
@@ -938,9 +934,11 @@ public class IceQueenCastle2 extends Quest
 					if (world._freyaStand != null && !world._freyaStand.isDead())
 					{
 						world._jinia.setTarget(world._freyaStand);
+						world._jinia.setRunning();
 						world._jinia.addDamageHate(world._freyaStand, 0, 9999);
 						world._jinia.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, world._freyaStand);
 						world._kegor.setTarget(world._freyaStand);
+						world._kegor.setRunning();
 						world._kegor.addDamageHate(world._freyaStand, 0, 9999);
 						world._kegor.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, world._freyaStand);
 					}
@@ -963,7 +961,6 @@ public class IceQueenCastle2 extends Quest
 					ThreadPoolManager.getInstance().scheduleGeneral(new spawnWave(15, instanceId), 6000);
 					break;
 				case 43:
-	
 					break;
 				case 44:
 					broadcastMovie(19, world);
@@ -1042,7 +1039,7 @@ public class IceQueenCastle2 extends Quest
 			world = (FreyaWorld) tmpworld;
 		
 		if (world == null)
-			System.out.println("Warning!!! World not found in getWorld(int instanceId)");		
+			System.out.println("Warning!!! World not found in getWorld(int instanceId)");
 		return world;
 	}
 	
@@ -1050,7 +1047,7 @@ public class IceQueenCastle2 extends Quest
 	public String onAttack(L2Npc npc, L2PcInstance attacker, int damage, boolean isPet)
 	{
 		int npcId = npc.getNpcId();
-		//Hard
+		// Hard
 		if(_isHard)
 		{
 			if (npcId == archery_knight_hard)
@@ -1078,7 +1075,7 @@ public class IceQueenCastle2 extends Quest
 				}
 			}
 		}
-		//Easy
+		// Easy
 		else if (_isEasy)
 		{
 			if (npcId == archery_knight)
@@ -1113,8 +1110,8 @@ public class IceQueenCastle2 extends Quest
 	public String onKill(L2Npc npc, L2PcInstance killer, boolean isPet)
 	{
 		int npcId = npc.getNpcId();
-		//Hard
-		if(_isHard)
+		// Hard
+		if (_isHard)
 		{
 			FreyaWorld world = getWorld(killer);
 			if (npcId == glacier)
@@ -1159,7 +1156,7 @@ public class IceQueenCastle2 extends Quest
 				handleWorldState(44, killer.getInstanceId());
 			}
 		}
-		//Easy
+		// Easy
 		else if (_isEasy)
 		{
 			FreyaWorld world = getWorld(killer);
@@ -1229,232 +1226,229 @@ public class IceQueenCastle2 extends Quest
 	@Override
 	public String onTalk(L2Npc npc, L2PcInstance talker)
 	{
-		_log.info("id_talk=" + npc.getNpcId());
-		if( npc.getNpcId() == Jinia || npc.getNpcId() == Superior_Knight )
+		_log.info("id_talk = " + npc.getNpcId());
+		if(npc.getNpcId() == Jinia /*|| npc.getNpcId() == Superior_Knight*/)
 			return npc.getNpcId() + ".htm";
-		else
-			return null;
+		return null;
 	}
-	
+	/*
 	@Override
 	public String onAggroRangeEnter(L2Npc npc, L2PcInstance player, boolean isPet)
 	{
 		FreyaWorld world = getWorld(player);
-		if (world != null)
+		if (world != null && npc.getNpcId() == freya_controller)
 		{
 			world._freya_controller.deleteMe();
 			world._freya_controller = null;
 			ThreadPoolManager.getInstance().scheduleGeneral(new spawnWave(2, world.instanceId), 100);
 			handleWorldState(31, world.instanceId);
 		}
-		return super.onAggroRangeEnter(npc, player, isPet);
+		return null;
 	}
-	
+	*/
+	@Override
 	public String onFirstTalk(L2Npc npc, L2PcInstance player)
 	{
-		_log.info("id=" + npc.getNpcId());
-		if( npc.getNpcId() == Jinia || npc.getNpcId() == Superior_Knight )
+		_log.info("id = " + npc.getNpcId());
+		if (npc.getNpcId() == Jinia /*|| npc.getNpcId() == Superior_Knight*/)
 			return npc.getNpcId() + ".htm";
-		else
-			return null;
+		return null;
 	}
 	
 	private void enterInstance(L2PcInstance player, String template)
 	{
-		_log.info("starter=" + player.getName());
+		_log.info("starter player = " + player.getName());
 		int instanceId = 0;
-		//check for existing instances for this player
+		// check for existing instances for this player
 		InstanceWorld world = InstanceManager.getInstance().getPlayerWorld(player);
-		//existing instance
+		// existing instance
 		if (world != null)
 		{
 			if (!(world instanceof FreyaWorld))
 			{
-				player.sendPacket(SystemMessage.getSystemMessage(SystemMessageId.ALREADY_ENTERED_ANOTHER_INSTANCE_CANT_ENTER));
+				player.sendPacket(SystemMessageId.ALREADY_ENTERED_ANOTHER_INSTANCE_CANT_ENTER);
 				return;
 			}
-			teleportPlayer(player,(FreyaWorld)world);
+			teleportPlayer(player, (FreyaWorld) world);
 			return;
 		}
-		//New instance
-		else
+		// New instance
+		if (!checkConditions(player))
+			return;
+		L2Party party = player.getParty();
+		instanceId = InstanceManager.getInstance().createDynamicInstance(template);
+		world = new FreyaWorld();
+		
+		world.instanceId = instanceId;
+		world.templateId = INSTANCE_ID;
+		world.status = 0;
+		
+		InstanceManager.getInstance().addWorld(world);
+		_log.info("Freya started " + template + " Instance: " + instanceId + " created by player: " + player.getName());
+		
+		if ((debug) || (player.isGM()))
 		{
-			if (!checkConditions(player))
-				return;
-			L2Party party = player.getParty();
-			instanceId = InstanceManager.getInstance().createDynamicInstance(template);
-			world = new FreyaWorld();
-
-			world.instanceId = instanceId;
-			world.templateId = INSTANCE_ID;
-			world.status = 0;
-				
-			InstanceManager.getInstance().addWorld(world);
-			_log.info("Freya started " + template + " Instance: " + instanceId + " created by player: " + player.getName());
-			
-			if ((debug) || (player.isGM()))
+			QuestState qs = player.getQuestState("Q10286_ReunionWithSirra");
+			if (qs != null)
 			{
-				QuestState qs = player.getQuestState("Q10286_ReunionWithSirra");
+				if (qs.getInt("cond") == 5)
+				{
+					qs.set("cond", "6");
+					qs.playSound("ItemSound.quest_middle");
+				}
+			}
+			world.allowed.add(player.getObjectId());
+			teleportPlayer(player, (FreyaWorld) world);
+			ThreadPoolManager.getInstance().scheduleGeneral(new spawnWave(1, world.instanceId), 100);
+			return;
+		}
+		
+		if (party != null && party.isInCommandChannel())
+		{
+			for (L2PcInstance plr : party.getCommandChannel().getMembers())
+			{
+				QuestState qs = plr.getQuestState("Q10286_ReunionWithSirra");
 				if (qs != null)
+				{
 					if (qs.getInt("cond") == 5)
 					{
 						qs.set("cond", "6");
 						qs.playSound("ItemSound.quest_middle");
 					}
-				world.allowed.add(player.getObjectId());
-				teleportPlayer(player,(FreyaWorld)world);
-				ThreadPoolManager.getInstance().scheduleGeneral(new spawnWave(1, world.instanceId), 100);
-				return;
+				}
+				world.allowed.add(plr.getObjectId());
+				teleportPlayer(plr, (FreyaWorld) world);
 			}
 			
-			if (party != null && party.isInCommandChannel())
-			{
-				for (L2PcInstance plr : party.getCommandChannel().getMembers())
-				{
-					QuestState qs = plr.getQuestState("Q10286_ReunionWithSirra");
-					if (qs != null)
-					{
-						if (qs.getInt("cond") == 5)
-						{
-							qs.set("cond", "6");
-							qs.playSound("ItemSound.quest_middle");
-						}
-					}
-					world.allowed.add(plr.getObjectId());
-					teleportPlayer(plr,(FreyaWorld)world);
-				}
-				
-				ThreadPoolManager.getInstance().scheduleGeneral(new spawnWave(1, world.instanceId), 100);
-				return;
-			}
+			ThreadPoolManager.getInstance().scheduleGeneral(new spawnWave(1, world.instanceId), 100);
+			return;
 		}
 	}
 	
-    private boolean checkConditions(L2PcInstance player)
-    {
-    	if ((debug) || (player.isGM()))
-    		return true;
-    	
-    	if (player.getParty() == null)
-    	{
-    		player.sendPacket(SystemMessageId.NOT_IN_PARTY_CANT_ENTER);
-    		return false;
-    	}
-    	
-    	if (player.getParty().getCommandChannel() == null)
-    	{
-    		player.sendPacket(SystemMessageId.NOT_IN_COMMAND_CHANNEL_CANT_ENTER);
-    		return false;
-    	}
-    	
-    	if (player.getObjectId() != player.getParty().getCommandChannel().getChannelLeader().getObjectId())
-    	{
-    		player.sendPacket(SystemMessageId.ONLY_PARTY_LEADER_CAN_ENTER);
-    		return false;
-    	}
+	private boolean checkConditions(L2PcInstance player)
+	{
+		if ((debug) || (player.isGM()))
+			return true;
 		
-    	//Hard
-        if(_isHard)
-        {
-	    	if (player.getParty().getCommandChannel().getMemberCount() < Config.MIN_FREYA_HC_PLAYERS)
-	    	{
-	    		player.getParty().getCommandChannel().broadcastToChannelMembers(SystemMessage.getSystemMessage(2793).addNumber(10));
-	    		return false;
-	    	}
-	    	
-	    	if (player.getParty().getCommandChannel().getMemberCount() > Config.MAX_FREYA_HC_PLAYERS)
-	    	{
-	    		player.getParty().getCommandChannel().broadcastToChannelMembers(SystemMessage.getSystemMessage(2102));
-	    		return false;
-	    	}
-        }
-    	    //Easy
-        else if (_isEasy)
-        {
-	    	if (player.getParty().getCommandChannel().getMemberCount() < Config.MIN_FREYA_PLAYERS)
-	    	{
-	    		player.getParty().getCommandChannel().broadcastToChannelMembers(SystemMessage.getSystemMessage(2793).addNumber(10));
-	    		return false;
-	    	}
-	    	
-	    	if (player.getParty().getCommandChannel().getMemberCount() > Config.MAX_FREYA_PLAYERS)
-	    	{
-	    		player.getParty().getCommandChannel().broadcastToChannelMembers(SystemMessage.getSystemMessage(2102));
-	    		return false;
-	    	}
-        }
-    	
-    	for (L2PcInstance partyMember : player.getParty().getCommandChannel().getMembers())
-    	{
-    		  //Hard
-            if(_isHard)
-            {
-	            if (partyMember.getLevel() < Config.MIN_LEVEL_HC_PLAYERS)
-	            {
-	                    SystemMessage sm = SystemMessage.getSystemMessage(2097);
-	                    sm.addPcName(partyMember);
-	                    player.getParty().getCommandChannel().broadcastToChannelMembers(sm);
-	                    return false;
-	            }
-            }
-              //Easy
-            else if (_isEasy)
-            {
-	            if (partyMember.getLevel() < Config.MIN_LEVEL_PLAYERS)
-	            {
-	                    SystemMessage sm = SystemMessage.getSystemMessage(2097);
-	                    sm.addPcName(partyMember);
-	                    player.getParty().getCommandChannel().broadcastToChannelMembers(sm);
-	                    return false;
-	            }
-            }
-            
-            if (!Util.checkIfInRange(1000, player, partyMember, true))
-            {
-                    SystemMessage sm = SystemMessage.getSystemMessage(2096);
-                    sm.addPcName(partyMember);
-                    player.getParty().getCommandChannel().broadcastToChannelMembers(sm);
-                    return false;
-            }
-            
-            Long reentertime = InstanceManager.getInstance().getInstanceTime(partyMember.getObjectId(), INSTANCE_ID);
-            if (System.currentTimeMillis() < reentertime)
-            {
-                    SystemMessage sm = SystemMessage.getSystemMessage(2100);
-                    sm.addPcName(partyMember);
-                    player.getParty().getCommandChannel().broadcastToChannelMembers(sm);
-                    return false;
-            }
-                //Hard
-            if(_isHard)
-            {
-	    		QuestState st = partyMember.getQuestState("Q10286_ReunionWithSirra");
-	    		if( st == null || !st.isCompleted() )
-	    		{
+		if (player.getParty() == null)
+		{
+			player.sendPacket(SystemMessageId.NOT_IN_PARTY_CANT_ENTER);
+			return false;
+		}
+		
+		if (player.getParty().getCommandChannel() == null)
+		{
+			player.sendPacket(SystemMessageId.NOT_IN_COMMAND_CHANNEL_CANT_ENTER);
+			return false;
+		}
+		
+		if (player.getObjectId() != player.getParty().getCommandChannel().getChannelLeader().getObjectId())
+		{
+			player.sendPacket(SystemMessageId.ONLY_PARTY_LEADER_CAN_ENTER);
+			return false;
+		}
+		
+		// Hard
+		if (_isHard)
+		{
+			if (player.getParty().getCommandChannel().getMemberCount() < Config.MIN_FREYA_HC_PLAYERS)
+			{
+				player.getParty().getCommandChannel().broadcastToChannelMembers(SystemMessage.getSystemMessage(2793).addNumber(10));
+				return false;
+			}
+			
+			if (player.getParty().getCommandChannel().getMemberCount() > Config.MAX_FREYA_HC_PLAYERS)
+			{
+				player.getParty().getCommandChannel().broadcastToChannelMembers(SystemMessage.getSystemMessage(2102));
+				return false;
+			}
+		}
+		// Easy
+		else if (_isEasy)
+		{
+			if (player.getParty().getCommandChannel().getMemberCount() < Config.MIN_FREYA_PLAYERS)
+			{
+				player.getParty().getCommandChannel().broadcastToChannelMembers(SystemMessage.getSystemMessage(2793).addNumber(10));
+				return false;
+			}
+			
+			if (player.getParty().getCommandChannel().getMemberCount() > Config.MAX_FREYA_PLAYERS)
+			{
+				player.getParty().getCommandChannel().broadcastToChannelMembers(SystemMessage.getSystemMessage(2102));
+				return false;
+			}
+		}
+		
+		for (L2PcInstance partyMember : player.getParty().getCommandChannel().getMembers())
+		{
+			// Hard
+			if(_isHard)
+			{
+				if (partyMember.getLevel() < Config.MIN_LEVEL_HC_PLAYERS)
+				{
+					SystemMessage sm = SystemMessage.getSystemMessage(2097);
+					sm.addPcName(partyMember);
+					player.getParty().getCommandChannel().broadcastToChannelMembers(sm);
+					return false;
+				}
+			}
+			// Easy
+			else if (_isEasy)
+			{
+				if (partyMember.getLevel() < Config.MIN_LEVEL_PLAYERS)
+				{
+					SystemMessage sm = SystemMessage.getSystemMessage(2097);
+					sm.addPcName(partyMember);
+					player.getParty().getCommandChannel().broadcastToChannelMembers(sm);
+					return false;
+				}
+			}
+			
+			if (!Util.checkIfInRange(1000, player, partyMember, true))
+			{
+				SystemMessage sm = SystemMessage.getSystemMessage(2096);
+				sm.addPcName(partyMember);
+				player.getParty().getCommandChannel().broadcastToChannelMembers(sm);
+				return false;
+			}
+			
+			Long reentertime = InstanceManager.getInstance().getInstanceTime(partyMember.getObjectId(), INSTANCE_ID);
+			if (System.currentTimeMillis() < reentertime)
+			{
+				SystemMessage sm = SystemMessage.getSystemMessage(2100);
+				sm.addPcName(partyMember);
+				player.getParty().getCommandChannel().broadcastToChannelMembers(sm);
+				return false;
+			}
+			// Hard
+			if (_isHard)
+			{
+				QuestState st = partyMember.getQuestState("Q10286_ReunionWithSirra");
+				if( st == null || !st.isCompleted() )
+				{
 					SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.C1_QUEST_REQUIREMENT_NOT_SUFFICIENT);
 					sm.addPcName(partyMember);
 					player.getParty().getCommandChannel().broadcastToChannelMembers(sm);
-	    			return false;
-	    		}
-            }
-               //Easy
-            if(_isEasy)
-            {
-	    		QuestState st = partyMember.getQuestState("Q10286_ReunionWithSirra");
-	    		if( st == null || !st.isCompleted() )
-	    		{
+					return false;
+				}
+			}
+			// Easy
+			if (_isEasy)
+			{
+				QuestState st = partyMember.getQuestState("Q10286_ReunionWithSirra");
+	    		if (st == null || st.isCompleted())
+				{
 					SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.C1_QUEST_REQUIREMENT_NOT_SUFFICIENT);
 					sm.addPcName(partyMember);
 					player.getParty().getCommandChannel().broadcastToChannelMembers(sm);
-	    			return false;
-	    		}
-            }			
-            
-    	}
-    	
-        return true;
-    }
-    
+					return false;
+				}
+			}
+		}
+		
+		return true;
+	}
+	
 	private void teleportPlayer(L2PcInstance player, FreyaWorld world)
 	{
 		player.getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE);
@@ -1465,86 +1459,81 @@ public class IceQueenCastle2 extends Quest
 			player.getPet().getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE);
 			player.getPet().setInstanceId(world.instanceId);
 			player.getPet().teleToLocation(113991, -112297, -11200);
-		}			
+		}
 		return;
 	}
 	
 	private void setInstanceRestriction(FreyaWorld world)
 	{
-        Calendar reenter = Calendar.getInstance();
-        reenter.set(Calendar.MINUTE, 30);
-        reenter.set(Calendar.HOUR_OF_DAY, 6);
-        // if time is >= RESET_HOUR - roll to the next day
-        if (reenter.getTimeInMillis() <= System.currentTimeMillis())
-        	reenter.add(Calendar.DAY_OF_MONTH, 1);
-        if (reenter.get(Calendar.DAY_OF_WEEK) <= Calendar.WEDNESDAY)
-        	while(reenter.get(Calendar.DAY_OF_WEEK) != Calendar.WEDNESDAY)
-        		reenter.add(Calendar.DAY_OF_MONTH, 1);
-        else
-        	while(reenter.get(Calendar.DAY_OF_WEEK) != Calendar.SATURDAY)
-        		reenter.add(Calendar.DAY_OF_MONTH, 1);
-
-
-        SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.INSTANT_ZONE_S1_RESTRICTED);
-        sm.addString(InstanceManager.getInstance().getInstanceIdName(INSTANCE_ID));
-        
-        // set instance reenter time for all allowed players
-        for (int objectId : world.allowed)
-        {
-                L2PcInstance player = L2World.getInstance().getPlayer(objectId);
-                InstanceManager.getInstance().setInstanceTime(objectId, INSTANCE_ID, reenter.getTimeInMillis());
-                if (player != null && player.isOnline())
-                        player.sendPacket(sm);
-        }
+		Calendar reenter = Calendar.getInstance();
+		reenter.set(Calendar.MINUTE, 30);
+		reenter.set(Calendar.HOUR_OF_DAY, 6);
+		// if time is >= RESET_HOUR - roll to the next day
+		if (reenter.getTimeInMillis() <= System.currentTimeMillis())
+			reenter.add(Calendar.DAY_OF_MONTH, 1);
+		if (reenter.get(Calendar.DAY_OF_WEEK) <= Calendar.WEDNESDAY)
+			while(reenter.get(Calendar.DAY_OF_WEEK) != Calendar.WEDNESDAY)
+				reenter.add(Calendar.DAY_OF_MONTH, 1);
+		else
+			while(reenter.get(Calendar.DAY_OF_WEEK) != Calendar.SATURDAY)
+				reenter.add(Calendar.DAY_OF_MONTH, 1);
+		
+		SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.INSTANT_ZONE_S1_RESTRICTED);
+		sm.addString(InstanceManager.getInstance().getInstanceIdName(INSTANCE_ID));
+		
+		// set instance reenter time for all allowed players
+		for (int objectId : world.allowed)
+		{
+			L2PcInstance player = L2World.getInstance().getPlayer(objectId);
+			InstanceManager.getInstance().setInstanceTime(objectId, INSTANCE_ID, reenter.getTimeInMillis());
+			if (player != null && player.isOnline())
+				player.sendPacket(sm);
+		}
 	}
 	
 	@Override
 	public String onAdvEvent(String event, L2Npc npc, L2PcInstance player)
 	{
 		_log.info(event);
-		if( event.equalsIgnoreCase("hard") && npc.getNpcId() == Superior_Knight )
+		/*if (event.equalsIgnoreCase("hard") && npc.getNpcId() == Superior_Knight)
 		{
 			_log.info("Freya HARD started");
-			_isHard = true;		
+			_isHard = true;
 			enterInstance(player, "IceQueenCastle2.xml");
 		}
-		else if ( event.equalsIgnoreCase("easy") && npc.getNpcId() == Jinia )
+		else*/ if (event.equalsIgnoreCase("easy") && npc.getNpcId() == Jinia)
 		{
 			_log.info("Freya EASY started");
 			_isEasy = true;
 			enterInstance(player, "IceQueenCastle2.xml");
 		}
-		else if(event.startsWith("spawndeco"))
+		else if (event.startsWith("spawndeco"))
 		{
 			String[] params = event.split("_");
 			FreyaWorld world = getWorld(Integer.parseInt(params[5]));
-			//hard
+			// Hard
 			if (_isHard)
 			{
 				if (world != null && world.status < 44)
 				{
-					L2Npc mob = spawnNpc(archery_knight_hard, Integer.parseInt(params[1]), Integer.parseInt(params[2]), Integer.parseInt(params[3]), Integer.parseInt(params[4]), Integer.parseInt(params[5]));
+					L2Attackable mob = (L2Attackable) spawnNpc(archery_knight_hard, Integer.parseInt(params[1]), Integer.parseInt(params[2]), Integer.parseInt(params[3]), Integer.parseInt(params[4]), Integer.parseInt(params[5]));
 					mob.setIsImmobilized(true);
 					mob.setDisplayEffect(1);
 					world._simple_knights.put(mob.getObjectId(), mob);
 				}
 			}
-			//Easy
+			// Easy
 			else if (_isEasy)
 			{
 				if (world != null && world.status < 44)
 				{
-					L2Npc mob = spawnNpc(archery_knight, Integer.parseInt(params[1]), Integer.parseInt(params[2]), Integer.parseInt(params[3]), Integer.parseInt(params[4]), Integer.parseInt(params[5]));
+					L2Attackable mob = (L2Attackable) spawnNpc(archery_knight, Integer.parseInt(params[1]), Integer.parseInt(params[2]), Integer.parseInt(params[3]), Integer.parseInt(params[4]), Integer.parseInt(params[5]));
 					mob.setIsImmobilized(true);
 					mob.setDisplayEffect(1);
 					world._simple_knights.put(mob.getObjectId(), mob);
 				}
 			}
 		}
-		/*else if (event.equalsIgnoreCase("enterinstance"))
-		{
-			enterInstance(player, "IceQueenCastle2.xml");
-		}*/
 		return null;
 	}
 	
@@ -1576,6 +1565,7 @@ public class IceQueenCastle2 extends Quest
 		}
 		catch(Exception ignored)
 		{
+			_log.info("[IceQueenCastle2.java] Deu erro no Spawn dos npcs!");
 		}
 		return null;
 	}
@@ -1602,8 +1592,8 @@ public class IceQueenCastle2 extends Quest
 	{
 		if (world == null)
 			return;
-		//Hard
-		if(_isHard)
+		// Hard
+		if (_isHard)
 		{
 			if (world._freyaStand_hard != null && !world._freyaStand_hard.isDead())
 			{
@@ -1618,7 +1608,7 @@ public class IceQueenCastle2 extends Quest
 				}
 			}
 		}
-		//Easy
+		// Easy
 		else if (_isEasy)
 		{
 			if (world._freyaStand != null && !world._freyaStand.isDead())
@@ -1672,7 +1662,7 @@ public class IceQueenCastle2 extends Quest
 				target = mob.getTarget();
 			else
 				target = getRandomPlayer(world);
-
+			
 			if (mob.getNpcId() != glacier
 					&& !world._simple_knights.containsKey(mob.getObjectId())
 					&& mob instanceof L2Attackable)
@@ -1698,17 +1688,17 @@ public class IceQueenCastle2 extends Quest
 	public IceQueenCastle2(int questId, String name, String descr)
 	{
 		super(questId, name, descr);
-		//addFirstTalkId(32781);
-		addTalkId(Superior_Knight);
+		// addFirstTalkId(32781);
+		// addTalkId(Superior_Knight);
 		addTalkId(Jinia);
 		
 		addStartNpc(Jinia);
-		addFirstTalkId(Jinia);
-		addStartNpc(Superior_Knight);
-		addFirstTalkId(Superior_Knight);
+		// addFirstTalkId(Jinia);
+		// addStartNpc(Superior_Knight);
+		// addFirstTalkId(Superior_Knight);
 		
 		addKillId(Glakias);
-		addAggroRangeEnterId(freya_controller);
+		//addAggroRangeEnterId(freya_controller);
 		addAttackId(archery_knight);
 		addAttackId(freyaStand);
 		addKillId(freyaOnThrone);
@@ -1719,14 +1709,14 @@ public class IceQueenCastle2 extends Quest
 		addSpawnId(archery_knight);
 		addSpawnId(18854);
 		addSpawnId(glacier);
-		//hard
+		// Hard
 		addKillId(Glakias_hard);
 		addAttackId(archery_knight_hard);
 		addAttackId(freyaStand_hard);
 		addKillId(freyaStand_hard);
 		addKillId(archery_knight_hard);
 		addSpawnId(archery_knight_hard);
-		//hard - end
+		// Hard - end
 	}
 	
 	public static void main(String[] args)

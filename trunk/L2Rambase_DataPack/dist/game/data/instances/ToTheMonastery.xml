@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance name="To The Monastery">
+	<emptyDestroyTime val="1" />
+	<allowSummon val="false" />
+	<spawnPoint spawnX="115512" spawnY="-85000" spawnZ="-339" />
+	<spawnlist>
+	    <spawn npcId="32813" x="37623" y="-50882" z="-1157" heading="33304" respawn="0" />
+		<spawn npcId="32792" x="120928" y="-86462" z="-3397" heading="0" respawn="0" />
+		<spawn npcId="32803" x="85792" y="-249628" z="-8296" heading="49152" respawn="0" />
+		<spawn npcId="32804" x="82524" y="-249625" z="-8296" heading="0" respawn="0" />
+		<spawn npcId="32805" x="85786" y="-252505" z="-8296" heading="0" respawn="0" />
+		<spawn npcId="32806" x="88669" y="-249624" z="-8296" heading="0" respawn="0" />
+		<spawn npcId="32807" x="85785" y="-246730" z="-8296" heading="0" respawn="0" />
+		<spawn npcId="32816" x="84909" y="-249625" z="-8296" heading="0" respawn="0" />
+		<spawn npcId="32817" x="85791" y="-250507" z="-8296" heading="0" respawn="0" />
+		<spawn npcId="32818" x="86673" y="-249625" z="-8296" heading="0" respawn="0" />
+		<spawn npcId="32819" x="85792" y="-248744" z="-8296" heading="0" respawn="0" />
+		<spawn npcId="32821" x="81416" y="-249622" z="-8320" heading="34490" respawn="0" />
+		<spawn npcId="32822" x="82525" y="-250761" z="-8320" heading="49152" respawn="0" />
+		<spawn npcId="32823" x="83656" y="-249615" z="-8320" heading="401" respawn="0" />
+		<spawn npcId="32824" x="82524" y="-248498" z="-8320" heading="49152" respawn="0" />
+		<spawn npcId="32825" x="85794" y="-253651" z="-8320" heading="15313" respawn="0" />
+		<spawn npcId="32826" x="86928" y="-252506" z="-8320" heading="348" respawn="0" />
+		<spawn npcId="32827" x="85787" y="-251388" z="-8320" heading="13829" respawn="0" />
+		<spawn npcId="32828" x="84677" y="-252513" z="-8320" heading="32768" respawn="0" />
+		<spawn npcId="32829" x="89801" y="-249620" z="-8320" heading="0" respawn="0" />
+		<spawn npcId="32830" x="88660" y="-248504" z="-8320" heading="49152" respawn="0" />
+		<spawn npcId="32831" x="87555" y="-249627" z="-8320" heading="33168" respawn="0" />
+		<spawn npcId="32832" x="88663" y="-250762" z="-8320" heading="49152" respawn="0" />		
+		<spawn npcId="32833" x="85788" y="-247859" z="-8320" heading="50449" respawn="0" />
+		<spawn npcId="32834" x="86921" y="-246735" z="-8320" heading="0" respawn="0" />
+		<spawn npcId="32835" x="85791" y="-245610" z="-8320" heading="16384" respawn="0" />
+		<spawn npcId="32836" x="84679" y="-246729" z="-8320" heading="32768" respawn="0" />			
+	</spawnlist>
+</instance>
