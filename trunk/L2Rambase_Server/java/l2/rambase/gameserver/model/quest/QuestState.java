@@ -17,6 +17,7 @@ package l2.Rambase.gameserver.model.quest;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.Calendar;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -25,31 +26,22 @@ import javolution.util.FastMap;
 
 import l2.Rambase.Config;
 import l2.Rambase.L2DatabaseFactory;
-import l2.Rambase.gameserver.GameTimeController;
 import l2.Rambase.gameserver.cache.HtmCache;
-import l2.Rambase.gameserver.datatables.ItemTable;
 import l2.Rambase.gameserver.instancemanager.PcCafePointsManager;
 import l2.Rambase.gameserver.instancemanager.QuestManager;
-import l2.Rambase.gameserver.model.L2DropData;
 import l2.Rambase.gameserver.model.actor.L2Character;
 import l2.Rambase.gameserver.model.actor.L2Npc;
 import l2.Rambase.gameserver.model.actor.instance.L2MonsterInstance;
 import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
-import l2.Rambase.gameserver.model.item.instance.L2ItemInstance;
 import l2.Rambase.gameserver.model.itemcontainer.PcInventory;
-import l2.Rambase.gameserver.network.SystemMessageId;
 import l2.Rambase.gameserver.network.serverpackets.ExShowQuestMark;
-import l2.Rambase.gameserver.network.serverpackets.InventoryUpdate;
 import l2.Rambase.gameserver.network.serverpackets.PlaySound;
 import l2.Rambase.gameserver.network.serverpackets.QuestList;
-import l2.Rambase.gameserver.network.serverpackets.StatusUpdate;
-import l2.Rambase.gameserver.network.serverpackets.SystemMessage;
 import l2.Rambase.gameserver.network.serverpackets.TutorialCloseHtml;
 import l2.Rambase.gameserver.network.serverpackets.TutorialEnableClientEvent;
 import l2.Rambase.gameserver.network.serverpackets.TutorialShowHtml;
 import l2.Rambase.gameserver.network.serverpackets.TutorialShowQuestionMark;
-import l2.Rambase.gameserver.skills.Stats;
-import l2.Rambase.util.Rnd;
+import l2.Rambase.gameserver.util.Util;
 
 /**
  * @author Luis Arias
@@ -674,16 +666,6 @@ public final class QuestState
 		getQuest().playSound(getPlayer(), sound);
 	}
 	
-	/**
-	 * Add XP and SP as quest reward
-	 * @param exp
-	 * @param sp
-	 */
-	public void addExpAndSp(int exp, int sp)
-	{
-		PcCafePointsManager.getInstance().givePcCafePoint(getPlayer(), (long)(exp * Config.RATE_QUEST_REWARD_XP));
-		getQuest().addExpAndSp(getPlayer(), exp, sp);
-	}
 	
 	/**
 	 * Return random value
@@ -870,7 +852,7 @@ public final class QuestState
 	}
 	
 	/**
-	 * @param type the type of the quest, {@link l2.gp.gameserver.model.quest.QuestState.QuestType}.
+	 * @param type the type of the quest, {@link l2.Rambase.gameserver.model.quest.QuestState.QuestType}.
 	 * @return this quest state.
 	 */
 	public QuestState exitQuest(QuestType type)
