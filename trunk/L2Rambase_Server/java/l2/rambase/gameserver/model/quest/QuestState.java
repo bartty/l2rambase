@@ -1096,6 +1096,30 @@ public final class QuestState
 	{
 		return getQuest().showHtmlFile(getPlayer(), fileName);
 	}
+
+	/**
+	 * @param type the type of the quest, {@link l2.gp.gameserver.model.quest.QuestState.QuestType}.
+	 * @return this quest state.
+	 */
+	public QuestState exitQuest(QuestType type)
+	{
+		switch (type)
+		{
+			case REPEATABLE:
+			case ONE_TIME:
+			{
+				exitQuest(type == QuestType.REPEATABLE);
+				break;
+			}
+			case DAILY:
+			{
+				exitQuest(false);
+				setRestartTime();
+				break;
+			}
+		}
+		return this;
+	}
 	
 	/**
 	 * Destroy element used by quest when quest is exited
@@ -1179,4 +1203,31 @@ public final class QuestState
 	{
 		npc.dropItem(player, itemId, count);
 	}
+	
+	/**
+	 * Set the restart time for the daily quests.<br>
+	 * The time is hardcoded at {@link Quest#getResetHour()} hours, {@link Quest#getResetMinutes()} minutes of the following day.<br>
+	 * It can be overridden in scripts (quests).
+	 */
+	public void setRestartTime()
+	{
+		final Calendar reDo = Calendar.getInstance();
+		if (reDo.get(Calendar.HOUR_OF_DAY) >= getQuest().getResetHour())
+		{
+			reDo.add(Calendar.DATE, 1);
+		}
+		reDo.set(Calendar.HOUR_OF_DAY, getQuest().getResetHour());
+		reDo.set(Calendar.MINUTE, getQuest().getResetMinutes());
+		set("restartTime", String.valueOf(reDo.getTimeInMillis()));
+	}
+	
+	/**
+	 * @return {@code true} if the quest is available, for example daily quests, {@code false} otherwise.
+	 */
+	public boolean isNowAvailable()
+	{
+		final String val = get("restartTime");
+		return ((val == null) || !Util.isDigit(val)) || (Long.parseLong(val) <= System.currentTimeMillis());
+	}
 }
+
