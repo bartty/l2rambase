@@ -12,7 +12,7 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package quests.Q10294_SevenSignToTheMonastery;
+package quests.Q10294_SevenSignsToTheMonastery;
 
 import l2.Rambase.gameserver.model.quest.QuestState;
 import l2.Rambase.gameserver.model.quest.Quest;
@@ -26,9 +26,9 @@ import l2.Rambase.gameserver.network.serverpackets.SocialAction;
  *
  */
 
-public final class Q10294_SevenSignToTheMonastery extends Quest
+public final class Q10294_SevenSignsToTheMonastery extends Quest
 {
-	private static final String	qn = "Q10294_SevenSignToTheMonastery";
+	private static final String	qn = "Q10294_SevenSignsToTheMonastery";
 	
 	// NPCs
 	private static int AbyssalSaintessElcadia = 32784;
@@ -255,7 +255,7 @@ public final class Q10294_SevenSignToTheMonastery extends Quest
 		{ SouthReadingDesk1, SouthReadingDesk2, SouthReadingDesk3, SouthReadingDesk4 } 
 	};	
 	
-	public Q10294_SevenSignToTheMonastery(int questId, String name, String descr)
+	public Q10294_SevenSignsToTheMonastery(int questId, String name, String descr)
 	{
 		super(questId, name, descr);
 		addStartNpc(AbyssalSaintessElcadia);
@@ -281,6 +281,6 @@ public final class Q10294_SevenSignToTheMonastery extends Quest
 	
 	public static void main(String[] args)
 	{
-		new Q10294_SevenSignToTheMonastery(10294, qn, "Seven Sign To The Monastery");
+		new Q10294_SevenSignsToTheMonastery(10294, qn, "Seven Signs To The Monastery");
 	}
 }
