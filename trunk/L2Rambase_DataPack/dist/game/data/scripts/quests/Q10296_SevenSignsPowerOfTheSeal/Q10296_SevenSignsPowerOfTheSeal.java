@@ -188,6 +188,6 @@ public String onKill(L2Npc npc, L2PcInstance player, boolean isPet)
 
   public static void main(String[] args)
   {
-    new Q10296_SevenSignsPowerOfTheSeal(10296, qn, "_10296_SevenSignsPoweroftheSeal");
+    new Q10296_SevenSignsPowerOfTheSeal(10296, qn, "Q10296_SevenSignsPoweroftheSeal");
   }
 }
