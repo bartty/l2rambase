@@ -27,7 +27,7 @@ import org.xml.sax.SAXException;
 import l2.rambase.Config;
 import l2.rambase.gameserver.datatables.ItemTable;
 import l2.rambase.gameserver.model.L2ItemInstance;
-import l2.rambase.gameserver.model.L2RambaseanufactureItem;
+import l2.rambase.gameserver.model.L2ManufactureItem;
 import l2.rambase.gameserver.model.L2RecipeInstance;
 import l2.rambase.gameserver.model.L2RecipeList;
 import l2.rambase.gameserver.model.L2RecipeStatInstance;
@@ -452,7 +452,7 @@ public class RecipeController
 			// check that customer can afford to pay for creation services
 			if (_player != _target)
 			{
-				for (L2RambaseanufactureItem temp : _player.getCreateList().getList())
+				for (L2ManufactureItem temp : _player.getCreateList().getList())
 				{
 					if (temp.getRecipeId() == _recipeList.getId()) // find recipe for item we want manufactured
 					{

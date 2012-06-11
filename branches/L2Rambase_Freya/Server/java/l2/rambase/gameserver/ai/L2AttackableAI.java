@@ -32,8 +32,8 @@ import l2.rambase.gameserver.model.actor.instance.L2FestivalMonsterInstance;
 import l2.rambase.gameserver.model.actor.instance.L2FriendlyMobInstance;
 import l2.rambase.gameserver.model.actor.instance.L2GrandBossInstance;
 import l2.rambase.gameserver.model.actor.instance.L2GuardInstance;
-import l2.rambase.gameserver.model.actor.instance.L2RambaseinionInstance;
-import l2.rambase.gameserver.model.actor.instance.L2RambaseonsterInstance;
+import l2.rambase.gameserver.model.actor.instance.L2MinionInstance;
+import l2.rambase.gameserver.model.actor.instance.L2MonsterInstance;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.rambase.gameserver.model.actor.instance.L2RaidBossInstance;
 import l2.rambase.gameserver.model.actor.instance.L2RiftInvaderInstance;
@@ -227,8 +227,8 @@ public class L2AttackableAI extends L2CharacterAI implements Runnable
 			//	return ((L2Summon)target).getKarma() > 0;
 			
 			// Check if the L2RambaseonsterInstance target is aggressive
-			if (target instanceof L2RambaseonsterInstance && Config.GUARD_ATTACK_AGGRO_MOB)
-				return (((L2RambaseonsterInstance) target).isAggressive() && GeoData.getInstance().canSeeTarget(me, target));
+			if (target instanceof L2MonsterInstance && Config.GUARD_ATTACK_AGGRO_MOB)
+				return (((L2MonsterInstance) target).isAggressive() && GeoData.getInstance().canSeeTarget(me, target));
 			
 			return false;
 		}
@@ -415,7 +415,7 @@ public class L2AttackableAI extends L2CharacterAI implements Runnable
 	 * <li>Update every 1s the _globalAggro counter to come close to 0</li>
 	 * <li>If the actor is Aggressive and can attack, add all autoAttackable L2Character in its Aggro Range to its _aggroList, chose a target and order to attack it</li>
 	 * <li>If the actor is a L2GuardInstance that can't attack, order to it to return to its home location</li>
-	 * <li>If the actor is a L2RambaseonsterInstance that can't attack, order to it to random walk (1/100)</li><BR><BR>
+	 * <li>If the actor is a L2MonsterInstance that can't attack, order to it to random walk (1/100)</li><BR><BR>
 	 *
 	 */
 	private void thinkActive()
@@ -520,7 +520,7 @@ public class L2AttackableAI extends L2CharacterAI implements Runnable
 			return;
 		
 		// Minions following leader
-		if (_actor instanceof L2RambaseinionInstance && ((L2RambaseinionInstance) _actor).getLeader() != null)
+		if (_actor instanceof L2MinionInstance && ((L2MinionInstance) _actor).getLeader() != null)
 		{
 			final int offset;
 			final int minRadius = 30;
@@ -530,27 +530,27 @@ public class L2AttackableAI extends L2CharacterAI implements Runnable
 			else
 				offset = 200; // for normal minions - need correction :)
 				
-			if (((L2RambaseinionInstance) _actor).getLeader().isRunning())
+			if (((L2MinionInstance) _actor).getLeader().isRunning())
 				_actor.setRunning();
 			else
 				_actor.setWalking();
 			
-			if (_actor.getPlanDistanceSq(((L2RambaseinionInstance) _actor).getLeader()) > offset * offset)
+			if (_actor.getPlanDistanceSq(((L2MinionInstance) _actor).getLeader()) > offset * offset)
 			{
 				int x1, y1, z1;
 				x1 = Rnd.get(minRadius * 2, offset * 2); // x
 				y1 = Rnd.get(x1, offset * 2); // distance
 				y1 = (int) Math.sqrt(y1 * y1 - x1 * x1); // y
 				if (x1 > offset + minRadius)
-					x1 = ((L2RambaseinionInstance) _actor).getLeader().getX() + x1 - offset;
+					x1 = ((L2MinionInstance) _actor).getLeader().getX() + x1 - offset;
 				else
-					x1 = ((L2RambaseinionInstance) _actor).getLeader().getX() - x1 + minRadius;
+					x1 = ((L2MinionInstance) _actor).getLeader().getX() - x1 + minRadius;
 				if (y1 > offset + minRadius)
-					y1 = ((L2RambaseinionInstance) _actor).getLeader().getY() + y1 - offset;
+					y1 = ((L2MinionInstance) _actor).getLeader().getY() + y1 - offset;
 				else
-					y1 = ((L2RambaseinionInstance) _actor).getLeader().getY() - y1 + minRadius;
+					y1 = ((L2MinionInstance) _actor).getLeader().getY() - y1 + minRadius;
 				
-				z1 = ((L2RambaseinionInstance) _actor).getLeader().getZ();
+				z1 = ((L2MinionInstance) _actor).getLeader().getZ();
 				// Move the actor to Location (x,y,z) server side AND client side by sending Server->Client packet CharMoveToLocation (broadcast)
 				moveTo(x1, y1, z1);
 				return;
@@ -563,7 +563,7 @@ public class L2AttackableAI extends L2CharacterAI implements Runnable
 							return;
 			}
 		}
-		// Order to the L2RambaseonsterInstance to random walk (1/100)
+		// Order to the L2MonsterInstance to random walk (1/100)
 		else if (npc.getSpawn() != null && Rnd.nextInt(RANDOM_WALK_RATE) == 0 && !_actor.isNoRndWalk())
 		{
 			int x1, y1, z1;
@@ -826,7 +826,7 @@ public class L2AttackableAI extends L2CharacterAI implements Runnable
 		if (_actor.isRaid() || _actor.isRaidMinion())
 		{
 			chaostime++;
-			if (_actor instanceof L2RaidBossInstance && !((L2RambaseonsterInstance) _actor).hasMinions())
+			if (_actor instanceof L2RaidBossInstance && !((L2MonsterInstance) _actor).hasMinions())
 			{
 				if (chaostime > Config.RAID_CHAOS_TIME)
 					if (Rnd.get(100) <= 100 - (_actor.getCurrentHp() * 100 / _actor.getMaxHp()))
@@ -835,7 +835,7 @@ public class L2AttackableAI extends L2CharacterAI implements Runnable
 						chaostime = 0;
 					}
 			}
-			else if (_actor instanceof L2RaidBossInstance && ((L2RambaseonsterInstance) _actor).hasMinions())
+			else if (_actor instanceof L2RaidBossInstance && ((L2MonsterInstance) _actor).hasMinions())
 			{
 				if (chaostime > Config.RAID_CHAOS_TIME)
 					if (Rnd.get(100) <= 100 - (_actor.getCurrentHp() * 200 / _actor.getMaxHp()))
@@ -874,9 +874,9 @@ public class L2AttackableAI extends L2CharacterAI implements Runnable
 			if (_skillrender.hasHealSkill() && _skillrender._healskills != null)
 			{
 				double percentage = _actor.getCurrentHp() / _actor.getMaxHp() * 100;
-				if (_actor instanceof L2RambaseinionInstance)
+				if (_actor instanceof L2MinionInstance)
 				{
-					L2Character leader = ((L2RambaseinionInstance) _actor).getLeader();
+					L2Character leader = ((L2MinionInstance) _actor).getLeader();
 					if (leader != null && !leader.isDead() && Rnd.get(100) > (leader.getCurrentHp() / leader.getMaxHp() * 100))
 						for (L2Skill sk : _skillrender._healskills)
 						{
@@ -951,9 +951,9 @@ public class L2AttackableAI extends L2CharacterAI implements Runnable
 			//Res Skill Condition
 			if (_skillrender.hasResSkill())
 			{
-				if (_actor instanceof L2RambaseinionInstance)
+				if (_actor instanceof L2MinionInstance)
 				{
-					L2Character leader = ((L2RambaseinionInstance) _actor).getLeader();
+					L2Character leader = ((L2MinionInstance) _actor).getLeader();
 					if (leader != null && leader.isDead())
 						for (L2Skill sk : _skillrender._resskills)
 						{
@@ -970,7 +970,7 @@ public class L2AttackableAI extends L2CharacterAI implements Runnable
 							if (GeoData.getInstance().canSeeTarget(_actor, leader))
 							{
 								clientStopMoving(null);
-								_actor.setTarget(((L2RambaseinionInstance) _actor).getLeader());
+								_actor.setTarget(((L2MinionInstance) _actor).getLeader());
 								_actor.doCast(sk);
 								return;
 							}
@@ -1202,9 +1202,9 @@ public class L2AttackableAI extends L2CharacterAI implements Runnable
 			case BALANCE_LIFE:
 			{
 				double percentage = _actor.getCurrentHp() / _actor.getMaxHp() * 100;
-				if (_actor instanceof L2RambaseinionInstance && sk.getTargetType() != L2Skill.SkillTargetType.TARGET_SELF)
+				if (_actor instanceof L2MinionInstance && sk.getTargetType() != L2Skill.SkillTargetType.TARGET_SELF)
 				{
-					L2Character leader = ((L2RambaseinionInstance) _actor).getLeader();
+					L2Character leader = ((L2MinionInstance) _actor).getLeader();
 					if (leader != null && !leader.isDead() && Rnd.get(100) > (leader.getCurrentHp() / leader.getMaxHp() * 100))
 					{
 						if (!Util.checkIfInRange((sk.getCastRange() + _actor.getTemplate().collisionRadius + leader.getTemplate().collisionRadius), _actor, leader, false) && !isParty(sk) && !_actor.isMovementDisabled())
@@ -1277,9 +1277,9 @@ public class L2AttackableAI extends L2CharacterAI implements Runnable
 			{
 				if (!isParty(sk))
 				{
-					if (_actor instanceof L2RambaseinionInstance && sk.getTargetType() != L2Skill.SkillTargetType.TARGET_SELF)
+					if (_actor instanceof L2MinionInstance && sk.getTargetType() != L2Skill.SkillTargetType.TARGET_SELF)
 					{
-						L2Character leader = ((L2RambaseinionInstance) _actor).getLeader();
+						L2Character leader = ((L2MinionInstance) _actor).getLeader();
 						if (leader != null && leader.isDead())
 							if (!Util.checkIfInRange((sk.getCastRange() + _actor.getTemplate().collisionRadius + leader.getTemplate().collisionRadius), _actor, leader, false) && !isParty(sk) && !_actor.isMovementDisabled())
 							{
@@ -1288,7 +1288,7 @@ public class L2AttackableAI extends L2CharacterAI implements Runnable
 						if (GeoData.getInstance().canSeeTarget(_actor, leader))
 						{
 							clientStopMoving(null);
-							_actor.setTarget(((L2RambaseinionInstance) _actor).getLeader());
+							_actor.setTarget(((L2MinionInstance) _actor).getLeader());
 							_actor.doCast(sk);
 							return true;
 						}
@@ -2365,17 +2365,17 @@ public class L2AttackableAI extends L2CharacterAI implements Runnable
 			setIntention(CtrlIntention.AI_INTENTION_ATTACK, attacker);
 		}
 		
-		if (me instanceof L2RambaseonsterInstance)
+		if (me instanceof L2MonsterInstance)
 		{
-			L2RambaseonsterInstance master = (L2RambaseonsterInstance) me;
+			L2MonsterInstance master = (L2MonsterInstance) me;
 			
-			if (me instanceof L2RambaseinionInstance)
+			if (me instanceof L2MinionInstance)
 			{
-				master = ((L2RambaseinionInstance) me).getLeader();
+				master = ((L2MinionInstance) me).getLeader();
 				
 				if (master != null && !master.isInCombat() && !master.isDead())
 				{
-					master.notifyMinionAttacked(attacker, (L2RambaseinionInstance) me);
+					master.notifyMinionAttacked(attacker, (L2MinionInstance) me);
 				}
 			}
 			else if (master.hasMinions())
@@ -2416,17 +2416,17 @@ public class L2AttackableAI extends L2CharacterAI implements Runnable
 				setIntention(CtrlIntention.AI_INTENTION_ATTACK, target);
 			}
 			
-			/*if (me instanceof L2RambaseonsterInstance)
+			/*if (me instanceof L2MonsterInstance)
 			{
-				L2RambaseonsterInstance master = (L2RambaseonsterInstance) me;
+				L2MonsterInstance master = (L2MonsterInstance) me;
 				
-				if (me instanceof L2RambaseinionInstance)
+				if (me instanceof L2MinionInstance)
 				{
-					master = ((L2RambaseinionInstance) me).getLeader();
+					master = ((L2MinionInstance) me).getLeader();
 					
 					if (master != null && !master.isInCombat() && !master.isDead())
 					{
-						master.notifyMinionAttacked(target, (L2RambaseinionInstance) me);
+						master.notifyMinionAttacked(target, (L2MinionInstance) me);
 					}
 				}
 				else if (master.hasMinions())

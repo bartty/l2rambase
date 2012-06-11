@@ -28,7 +28,7 @@ import javax.script.SimpleScriptContext;
 import javolution.util.FastMap;
 
 import l2.rambase.Config;
-import l2.rambase.script.jython.JythonScriptEngine;
+//import l2.rambase.script.jython.JythonScriptEngine;
 
 /**
  * Caches script engines and provides funcionality for executing and managing scripts.<BR>
@@ -423,7 +423,7 @@ public final class L2ScriptEngineManager
 			context.setAttribute(ScriptEngine.FILENAME, file.getName(), ScriptContext.ENGINE_SCOPE);
 			context.setAttribute("classpath", SCRIPT_FOLDER.getAbsolutePath(), ScriptContext.ENGINE_SCOPE);
 			context.setAttribute("sourcepath", SCRIPT_FOLDER.getAbsolutePath(), ScriptContext.ENGINE_SCOPE);
-			context.setAttribute(JythonScriptEngine.JYTHON_ENGINE_INSTANCE, engine, ScriptContext.ENGINE_SCOPE);
+			//context.setAttribute(JythonScriptEngine.JYTHON_ENGINE_INSTANCE, engine, ScriptContext.ENGINE_SCOPE);
 			
 			this.setCurrentLoadingScript(file);
 			ScriptContext ctx = engine.getContext();

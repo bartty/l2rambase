@@ -1,4 +1,4 @@
-package com.l2jserver.loginserver.serverpackets;
+package l2.rambase.loginserver.serverpackets;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

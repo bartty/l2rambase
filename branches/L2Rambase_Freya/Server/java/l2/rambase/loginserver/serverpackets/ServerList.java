@@ -12,16 +12,16 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.l2jserver.loginserver.serverpackets;
+package l2.rambase.loginserver.serverpackets;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.List;
 
-import com.l2jserver.loginserver.GameServerTable;
-import com.l2jserver.loginserver.L2LoginClient;
-import com.l2jserver.loginserver.GameServerTable.GameServerInfo;
-import com.l2jserver.loginserver.gameserverpackets.ServerStatus;
+import l2.rambase.loginserver.GameServerTable;
+import l2.rambase.loginserver.L2LoginClient;
+import l2.rambase.loginserver.GameServerTable.GameServerInfo;
+import l2.rambase.loginserver.gameserverpackets.ServerStatus;
 
 import javolution.util.FastList;
 

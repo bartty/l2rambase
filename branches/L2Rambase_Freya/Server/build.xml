@@ -2,6 +2,23 @@
 <project name="L2Rambase" default="dist" basedir=".">
 	<description>
 		This script will build the L2Rambase Server.
+		
+		This program is free software; you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation; either version 3, or (at your option)
+		any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+		GNU General Public License for more details.
+
+		You should have received a copy of the GNU General Public License
+		along with this program; if not, write to the Free Software
+		Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+		02111-1307, USA.
+
+		http://www.gnu.org/copyleft/gpl.html
 
 	</description>
 
@@ -30,8 +47,8 @@
 	</path>
 
 	<target name="verifyRequirements" description="Checks if the necessary requirements for building L2Rambase are fulfilled">
-		<available classname="javax.script.ScriptContext" property="JDK6.present" />
-		<fail unless="JDK6.present" message="JDK 6 or greater is required." />
+		<available classname="javax.script.ScriptContext" property="JDK7.present" />
+		<fail unless="JDK7.present" message="JDK 7 or greater is required." />
 	</target>
 
 	<target name="init" depends="clean, verifyRequirements" description="Create the output directories.">
@@ -43,7 +60,7 @@
 	</target>
 
 	<target name="compile" depends="version" description="Compile the source.">
-		<javac destdir="${build.classes}" optimize="on" debug="on" source="1.6" target="1.6" nowarn="off">
+		<javac destdir="${build.classes}" optimize="on" debug="on" includeantruntime="false" source="1.7" target="1.7" nowarn="off">
 			<src path="${src}" />
 			<classpath refid="classpath" />
 		</javac>

@@ -107,8 +107,8 @@ import l2.rambase.gameserver.instancemanager.clanhallsiege.WildBeastFarmSiege;
 import l2.rambase.gameserver.instancemanager.games.FishermanManager;
 import l2.rambase.gameserver.model.AutoChatHandler;
 import l2.rambase.gameserver.model.AutoSpawnHandler;
-import l2.rambase.gameserver.model.L2Rambaseanor;
-import l2.rambase.gameserver.model.L2Rambaseultisell;
+import l2.rambase.gameserver.model.L2Manor;
+import l2.rambase.gameserver.model.L2Multisell;
 import l2.rambase.gameserver.model.L2World;
 import l2.rambase.gameserver.model.PartyMatchRoomList;
 import l2.rambase.gameserver.model.PartyMatchWaitingList;
@@ -218,7 +218,7 @@ public class GameServer
 		EnchantHPBonusData.getInstance(); 
 		MerchantPriceConfigTable.getInstance().loadInstances(); 
 		TradeController.getInstance(); 
-		L2Rambaseultisell.getInstance(); 
+		L2Multisell.getInstance(); 
 		RecipeController.getInstance(); 
 		ArmorSetsTable.getInstance(); 
 		FishTable.getInstance(); 
@@ -274,7 +274,7 @@ public class GameServer
         FortressOfTheDeadSiege.getInstance();
         WildBeastFarmSiege.getInstance();       		
 		
-		L2Rambaseanor.getInstance(); 
+		L2Manor.getInstance(); 
 	 		                 
 		printSection("Olympiad"); 
 		Olympiad.getInstance(); 

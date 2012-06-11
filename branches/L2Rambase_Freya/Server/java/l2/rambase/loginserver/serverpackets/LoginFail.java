@@ -12,7 +12,7 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.l2jserver.loginserver.serverpackets;
+package l2.rambase.loginserver.serverpackets;
 
 /**
  * Fromat: d
