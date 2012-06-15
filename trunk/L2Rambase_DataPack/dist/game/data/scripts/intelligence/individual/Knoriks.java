@@ -14,179 +14,151 @@
  */
 package intelligence.individual;
 
-import intelligence.group_template.L2AttackableAIScript;
-
 import l2.Rambase.gameserver.ai.CtrlIntention;
-import l2.Rambase.gameserver.datatables.SpawnTable;
 import l2.Rambase.gameserver.model.L2CharPosition;
-import l2.Rambase.gameserver.model.L2Spawn;
 import l2.Rambase.gameserver.model.actor.L2Attackable;
 import l2.Rambase.gameserver.model.actor.L2Npc;
 import l2.Rambase.gameserver.model.actor.instance.L2PcInstance;
+import intelligence.group_template.L2AttackableAIScript;
+
+/*
+ * Part: 1/7 - Knoriks
+ */
 
 public class Knoriks extends L2AttackableAIScript
 {
 	private static final int KNORIKS = 22857;
-	private static int _npcMoveX = 0;
-	private static int _npcMoveY = 0;
-	private static int _isRunTo = 0;
-	private static int _npcBlock = 0;
-	private static int X = 0;
-	private static int Y = 0;
-	private static int Z = 0;
-	private static final int[][] WALKS = {
-		{147212, 112375, -3725},{148310, 112051, -3725},{149145, 113373, -3728},
-		{149178, 115300, -3725},{148146, 115983, -3725},{146054, 116203, -3725},
-		{144901, 115402, -3725},{145307, 113010, -3725}};
 	
-	private static boolean _isAttacked = false;
-	private static boolean _isSpawned = false;
+	final private static String qn = "AntaharasLairWalkers_Knoriks_Part_1";
 	
-	public Knoriks (int id, String name, String descr)
+	private L2Npc knoriks1;
+	
+	private static final L2CharPosition knoriks1_1  = new L2CharPosition(148419, 111967, -3725, 0);//1*
+	private static final L2CharPosition knoriks1_2  = new L2CharPosition(149207, 114197, -3725, 0);//2*
+	private static final L2CharPosition knoriks1_3  = new L2CharPosition(148917, 115610, -3725, 0);//3*
+	private static final L2CharPosition knoriks1_4  = new L2CharPosition(147112, 116543, -3704, 0);//4*
+	private static final L2CharPosition knoriks1_5  = new L2CharPosition(144576, 114674, -3716, 0);//5*
+	private static final L2CharPosition knoriks1_6  = new L2CharPosition(145714, 112653, -3728, 0);//6*
+	private static final L2CharPosition knoriks1_7  = new L2CharPosition(148419, 111967, -3725, 0);//7*
+	
+	public Knoriks(int questId, String name, String descr)
 	{
-		super(id,name,descr);
-		int[] mobs = {KNORIKS};
-		registerMobs(mobs, QuestEventType.ON_ATTACK, QuestEventType.ON_KILL, QuestEventType.ON_SPAWN);
-		// wait 2 minutes after Start AI
-		startQuestTimer("check_ai", 5000, null, null, true);
-		
-		_isSpawned = false;
-		_isAttacked = false;
-		_isRunTo = 1;
-		_npcMoveX = 0;
-		_npcMoveY = 0;
-		_npcBlock = 0;
-	}
-	
-	public L2Npc findTemplate(int npcId)
-	{
-		L2Npc npc = null;
-		for (L2Spawn spawn : SpawnTable.getInstance().getSpawnTable())
-		{
-			if (spawn != null && spawn.getNpcid() == npcId)
-			{
-				npc = spawn.getLastSpawn();
-				break;
-			}
-		}
-		return npc;
+		super(questId, name, descr);
+		addKillId(KNORIKS);
+		addAggroRangeEnterId(KNORIKS);
+		startQuestTimer("knoriks1_spawn", 1000, null, null);
 	}
 	
 	@Override
-	public String onAdvEvent (String event, L2Npc npc, L2PcInstance player)
+	public String onAdvEvent(String event, L2Npc npc, L2PcInstance player)
 	{
-		X = WALKS[_isRunTo-1][0];
-		Y = WALKS[_isRunTo-1][1];
-		Z = WALKS[_isRunTo-1][2];
-		if (event.equalsIgnoreCase("time_isAttacked"))
+		if (event.equalsIgnoreCase("knoriks1_spawn") && knoriks1 == null)
 		{
-			_isAttacked = false;
-			if (npc.getNpcId() == KNORIKS)
+			knoriks1 = addSpawn(KNORIKS, 85137, 111995, -3083, 0, false, 0);
+			knoriks1.setIsNoRndWalk(true);
+			knoriks1.setRunning();
+			startQuestTimer("knoriks1_move1", 15000, knoriks1, null);
+		}
+		else if (event.equalsIgnoreCase("knoriks1_move1") && knoriks1 != null)
+		{
+			if (npc.isCastingNow() || npc.isAttackingNow() || npc.isInCombat())
+				startQuestTimer("knoriks1_move1", 60000, knoriks1, null);
+			else
 			{
-				npc.setRunning();
-				npc.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, new L2CharPosition(X, Y, Z, 0));
+				if (!knoriks1.isInsideRadius(knoriks1_1.x, knoriks1_1.y, knoriks1_1.z, 100, true, false))
+					knoriks1.teleToLocation(knoriks1_1.x, knoriks1_1.y, knoriks1_1.z);
+				knoriks1.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, knoriks1_2);
+				knoriks1.setRunning();
+				startQuestTimer("knoriks1_move15", 13000, knoriks1, null);
 			}
 		}
-		else if (event.equalsIgnoreCase("check_ai"))
+		else if (event.equalsIgnoreCase("knoriks1_move15") && knoriks1 != null)
 		{
-			cancelQuestTimer("check_ai", null, null);
-			if (_isSpawned == false)
+			if (npc.isCastingNow() || npc.isAttackingNow() || npc.isInCombat())
+				startQuestTimer("knoriks1_move15", 60000, knoriks1, null);
+			else
 			{
-				L2Npc knoriks_ai = findTemplate(KNORIKS);
-				if (knoriks_ai != null)
-				{
-					_isSpawned = true;
-					startQuestTimer("Start", 1000, knoriks_ai, null, true);
-					return super.onAdvEvent(event, npc, player);
-				}
+				knoriks1.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, knoriks1_3);
+				knoriks1.setRunning();
+				startQuestTimer("knoriks1_move2", 9000, knoriks1, null);
 			}
 		}
-		else if (event.equalsIgnoreCase("Start"))
+		else if (event.equalsIgnoreCase("knoriks1_move2") && knoriks1 != null)
 		{
-			if (npc != null && _isSpawned == true)
+			if (npc.isCastingNow() || npc.isAttackingNow() || npc.isInCombat())
+				startQuestTimer("knoriks1_move2", 60000, knoriks1, null);
+			else
 			{
-				if (_isAttacked == true)
-					return super.onAdvEvent(event, npc, player);
-				if (npc.getNpcId() == KNORIKS && (npc.getX()-50) <= X && (npc.getX()+50) >= X && (npc.getY()-50) <= Y && (npc.getY()+50) >= Y)
-				{
-					_isRunTo++;
-					if (_isRunTo > 55)
-						_isRunTo = 1;
-					X = WALKS[_isRunTo-1][0];
-					Y = WALKS[_isRunTo-1][1];
-					Z = WALKS[_isRunTo-1][2];
-					npc.setRunning();
-					npc.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO,new L2CharPosition(X, Y, Z, 0));
-				}
-				
-				// Test for unblock Npc
-				if (npc.getX() != _npcMoveX && npc.getY() != _npcMoveY)
-				{
-					_npcMoveX = npc.getX();
-					_npcMoveY = npc.getY();
-					_npcBlock = 0;
-				}
-				else if (npc.getNpcId() == KNORIKS)
-				{
-					_npcBlock++;
-					if (_npcBlock > 2)
-					{
-						npc.teleToLocation(X, Y, Z);
-						return super.onAdvEvent(event, npc, player);
-					}
-					if (_npcBlock > 0)
-						npc.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO,new L2CharPosition(X, Y, Z, 0));
-				}
-				// End Test unblock Npc
+				knoriks1.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, knoriks1_4);
+				knoriks1.setRunning();
+				startQuestTimer("knoriks1_move3", 12000, knoriks1, null);
+			}
+		}
+		else if (event.equalsIgnoreCase("knoriks1_move3") && knoriks1 != null)
+		{
+			if (npc.isCastingNow() || npc.isAttackingNow() || npc.isInCombat())
+				startQuestTimer("knoriks1_move3", 60000, knoriks1, null);
+			else
+			{
+				knoriks1.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, knoriks1_5);
+				knoriks1.setRunning();
+				startQuestTimer("knoriks1_move4", 15000, knoriks1, null);
+			}
+		}
+		else if (event.equalsIgnoreCase("knoriks1_move4") && knoriks1 != null)
+		{
+			if (npc.isCastingNow() || npc.isAttackingNow() || npc.isInCombat())
+				startQuestTimer("knoriks1_move4", 60000, knoriks1, null);
+			else
+			{
+				knoriks1.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, knoriks1_6);
+				knoriks1.setRunning();
+				startQuestTimer("knoriks1_move5", 14000, knoriks1, null);
+			}
+		}
+		else if (event.equalsIgnoreCase("knoriks1_move5") && knoriks1 != null)
+		{
+			if (npc.isCastingNow() || npc.isAttackingNow() || npc.isInCombat())
+				startQuestTimer("knoriks1_move5", 60000, knoriks1, null);
+			else
+			{
+				knoriks1.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, knoriks1_7);
+				knoriks1.setRunning();
+				startQuestTimer("knoriks1_move1", 13000, knoriks1, null);
 			}
 		}
 		return super.onAdvEvent(event, npc, player);
 	}
 	
 	@Override
-	public String onSpawn (L2Npc npc)
+	public String onKill (L2Npc npc, L2PcInstance killer, boolean isPet) 
 	{
-		if (npc.getNpcId() == KNORIKS && _npcBlock == 0)
-		{
-			_isSpawned = true;
-			_isRunTo = 1;
-			startQuestTimer("Start", 1000, npc, null, true);
-		}
-		return super.onSpawn(npc);
-	}
-	
-	@Override
-	public String onAttack (L2Npc npc, L2PcInstance player, int damage, boolean isPet)
-	{
+		if (npc == null)
+			return super.onKill(npc,killer,isPet);
 		if (npc.getNpcId() == KNORIKS)
 		{
-			_isAttacked = true;
-			cancelQuestTimer("time_isAttacked", null, null);
-			startQuestTimer("time_isAttacked", 5000, npc, null);
-			if (player != null)
+			if (npc == knoriks1)
 			{
-				npc.setRunning();
-				((L2Attackable)npc).addDamageHate(player, 0, 100);
-				npc.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, player);
+				startQuestTimer("knoriks1_spawn", 300000, null, null);
+				knoriks1 = null;
 			}
-		}
-		return super.onAttack(npc, player, damage, isPet);
-	}
-	
-	@Override
-	public String onKill (L2Npc npc, L2PcInstance killer, boolean isPet)
-	{
-		if (npc.getNpcId() == KNORIKS)
-		{
-			cancelQuestTimer("Start", null, null);
-			cancelQuestTimer("time_isAttacked", null, null);
-			_isSpawned = false;
 		}
 		return super.onKill(npc,killer,isPet);
 	}
 	
+	@Override
+	public String onAggroRangeEnter(L2Npc npc, L2PcInstance player, boolean isPet)
+	{
+		if (!npc.isCastingNow() && !npc.isAttackingNow() && !npc.isInCombat() && !player.isDead())
+		{
+			((L2Attackable) npc).addDamageHate(player, 0, 999);
+			((L2Attackable) npc).getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, player);
+		}
+		return super.onAggroRangeEnter(npc, player, isPet);
+	}
+	
 	public static void main(String[] args)
 	{
-		new Knoriks(-1,"knoriks","ai");
+		new Knoriks(-1,qn,"ai");
 	}
 }
