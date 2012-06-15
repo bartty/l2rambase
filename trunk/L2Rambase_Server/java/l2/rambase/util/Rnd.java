@@ -492,4 +492,9 @@ public final class Rnd
 	{
 		return rnd.nextLong();
 	}
+	
+	 public static final boolean getChance(int n)
+	 {
+	    return n > rnd.nextInt() * 100;
+	 }
 }
