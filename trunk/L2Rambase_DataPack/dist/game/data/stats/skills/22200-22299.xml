@@ -679,18 +679,28 @@
 		<set name="skillType" val="NOTDONE" />
 		<set name="operateType" val="OP_PASSIVE" />
 	</skill>
-	<skill id="22292" levels="1" name="Scroll: Antharas Call">
-		<!-- none -->
-		<set name="target" val="TARGET_NONE" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="operateType" val="OP_PASSIVE" />
-	</skill>
-	<skill id="22293" levels="1" name="Jewel of Antharas">
-		<!-- none -->
-		<set name="target" val="TARGET_NONE" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="operateType" val="OP_PASSIVE" />
-	</skill>
+     <skill id="22292" levels="1" name="Scroll: Antharas Call">
+       <set name="hitTime" val="3000" />
+       <set name="operateType" val="OP_ACTIVE" />
+       <set name="skillType" val="TELEPORT" />
+       <set name="staticHitTime" val="true" />
+       <set name="target" val="TARGET_SELF" />
+       <set name="reuseDelay" val="3600000" />
+       <set name="staticReuse" val="true" />
+       <set name="teleCoords" val="154248,121224,-3808" />
+           <set name="itemConsumeId" val="21897"/>
+       <set name="itemConsumeCount" val="1" />
+   </skill>
+   <skill id="22293" levels="1" name="Jewel of Antharas">
+       <set name="hitTime" val="3000" />
+       <set name="operateType" val="OP_ACTIVE" />
+       <set name="skillType" val="TELEPORT" />
+       <set name="staticHitTime" val="true" />
+       <set name="target" val="TARGET_SELF" />
+       <set name="reuseDelay" val="3600000" />
+       <set name="staticReuse" val="true" />
+       <set name="teleCoords" val="154248,121224,-3808" />
+    </skill>
 	<skill id="22294" levels="1" name="Totem of Body">
 		<set name="target" val="TARGET_SELF" />
 		<set name="skillType" val="SPAWN" />
@@ -735,16 +745,24 @@
 		<set name="despawnDelay" val="1800000" /> <!-- Guess -->
 		<set name="reuseDelay" val="600" />
 	</skill>
-	<skill id="22298" levels="1" name="Refined Red Dragon Blood">
-		<!-- none -->
-		<set name="target" val="TARGET_NONE" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="operateType" val="OP_PASSIVE" />
-	</skill>
-	<skill id="22299" levels="1" name="Refined Blue Dragon Blood">
-		<!-- none -->
-		<set name="target" val="TARGET_NONE" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="operateType" val="OP_PASSIVE" />
-	</skill>
+     <skill id="22298" levels="1" name="Refined Red Dragon Blood">
+       <!-- There is no available description. -->
+           <set name="reuseDelay" val="300000"/>
+           <set name="magicLevel" val="85"/>
+           <set name="power" val="4500"/>
+           <set name="target" val="TARGET_PARTY"/>
+           <set name="skillRadius" val="1000"/>
+           <set name="skillType" val="HEAL"/>
+           <set name="operateType" val="OP_PASSIVE" />
+   </skill>
+   <skill id="22299" levels="1" name="Refined Blue Dragon Blood">
+       <!-- There is no available description. -->
+           <set name="reuseDelay" val="300000"/>
+           <set name="magicLevel" val="85"/>
+           <set name="power" val="3500"/>
+           <set name="target" val="TARGET_PARTY"/>
+           <set name="skillRadius" val="1000"/>
+           <set name="skillType" val="MANAHEAL"/>
+           <set name="operateType" val="OP_PASSIVE" />
+    </skill>
 </list>

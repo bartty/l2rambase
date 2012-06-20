@@ -1331,20 +1331,36 @@
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="21897" type="EtcItem" name="Scroll: Antharas Call">
-		<!-- Description: One-time use scroll that teleports you to the entrance to Antharas's Lair. -->
-		<set name="icon" val="BranchSys2.icon.call_of_earth_dragon" />
-		<set name="material" val="paper" />
-		<set name="weight" val="10" />
-		<set name="is_stackable" val="true" />
-	</item>
-	<item id="21898" type="EtcItem" name="Jewel of Antharas">
-		<!-- Description: Mysterious jewel that teleports you to the entrance to Antharas's Lair. Re-use time is 60 minutes. -->
-		<set name="icon" val="BranchSys2.icon.orb_of_earth_dragon" />
-		<set name="material" val="paper" />
-		<set name="weight" val="10" />
-		<set name="is_stackable" val="true" />
-	</item>
+    <item id="21897" type="EtcItem" name="Scroll: Antharas Call">
+       <!-- Description: One-time use scroll that teleports you to the entrance to Antharas's Lair. -->
+       <set name="icon" val="BranchSys2.icon.call_of_earth_dragon" />
+       <set name="default_action" val="skill_reduce" />
+       <set name="etcitem_type" val="scroll" />
+       <set name="material" val="paper" />
+       <set name="weight" val="10" />
+       <set name="is_tradable" val="false" />
+       <set name="is_dropable" val="false" />
+       <set name="is_sellable" val="false" />
+       <set name="is_stackable" val="true" />
+       <set name="is_oly_restricted" val="true" />
+       <set name="handler" val="ItemSkills" />
+       <set name="item_skill" val="22292-1" />
+   </item>
+   <item id="21898" type="EtcItem" name="Jewel of Antharas">
+       <!-- Description: Mysterious jewel that teleports you to the entrance to Antharas's Lair. Re-use time is 60 minutes. -->
+       <set name="icon" val="BranchSys2.icon.orb_of_earth_dragon" />
+       <set name="default_action" val="skill_reduce" />
+       <set name="etcitem_type" val="scroll" />
+       <set name="material" val="paper" />
+       <set name="weight" val="10" />
+       <set name="is_tradable" val="false" />
+       <set name="is_dropable" val="false" />
+       <set name="is_sellable" val="false" />
+       <set name="is_stackable" val="true" />
+       <set name="is_oly_restricted" val="true" />
+       <set name="handler" val="ItemSkills" />
+       <set name="item_skill" val="22293-1" />
+    </item>
 	<item id="21899" type="EtcItem" name="Totem of Body">
 		<!-- Description: Summons a totem that increases HP recovery speed by 30% and decreases damage from the topography by 80%. Totem duration is 30 minutes. Can only be used inside the lairs of Valakas and Antharas. Re-use time is 10 minutes. -->
 		<set name="icon" val="BranchSys2.icon.totem_of_body" />
