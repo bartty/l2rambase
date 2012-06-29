@@ -19,10 +19,10 @@ import java.util.StringTokenizer;
 import l2.rambase.gameserver.handler.IBypassHandler;
 import l2.rambase.gameserver.instancemanager.CastleManager;
 import l2.rambase.gameserver.instancemanager.TerritoryWarManager;
-import l2.rambase.gameserver.model.L2Rambaseultisell;
+import l2.rambase.gameserver.model.L2Multisell;
 import l2.rambase.gameserver.model.actor.L2Character;
 import l2.rambase.gameserver.model.actor.L2Npc;
-import l2.rambase.gameserver.model.actor.instance.L2RambaseercenaryManagerInstance;
+import l2.rambase.gameserver.model.actor.instance.L2MercenaryManagerInstance;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.rambase.gameserver.network.serverpackets.ActionFailed;
 import l2.rambase.gameserver.network.serverpackets.ExBrExtraUserInfo;
@@ -60,10 +60,10 @@ public class TerritoryWar implements IBypassHandler
 				int castleId = Integer.parseInt(st.nextToken());
 				activeChar.sendPacket(new ExShowDominionRegistry(castleId, activeChar));
 			}
-			else if (!(target instanceof L2RambaseercenaryManagerInstance))
+			else if (!(target instanceof L2MercenaryManagerInstance))
 				return false;
 
-			L2RambaseercenaryManagerInstance mercman = ((L2RambaseercenaryManagerInstance)target);
+			L2MercenaryManagerInstance mercman = ((L2MercenaryManagerInstance)target);
 			if (actualCommand.equalsIgnoreCase("TW_Multisell"))
 			{
 				if (st.countTokens() < 1)
@@ -76,7 +76,7 @@ public class TerritoryWar implements IBypassHandler
 				}
 				
 				int val = Integer.parseInt(st.nextToken());
-				L2Rambaseultisell.getInstance().separateAndSend(val, activeChar, mercman.getNpcId(), false, mercman.getCastle().getTaxRate());
+				L2Multisell.getInstance().separateAndSend(val, activeChar, mercman.getNpcId(), false, mercman.getCastle().getTaxRate());
 			}
 			else if (actualCommand.equalsIgnoreCase("TW_Buy_List"))
 			{

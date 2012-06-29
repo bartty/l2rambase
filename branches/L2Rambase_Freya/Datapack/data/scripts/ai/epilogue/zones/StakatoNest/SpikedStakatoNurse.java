@@ -10,7 +10,7 @@ import ai.group_template.L2AttackableAIScript;
 import l2.rambase.gameserver.ai.CtrlIntention;
 import l2.rambase.gameserver.model.actor.L2Attackable;
 import l2.rambase.gameserver.model.actor.L2Npc;
-import l2.rambase.gameserver.model.actor.instance.L2Rambase ProjectonsterInstance;
+import l2.rambase.gameserver.model.actor.instance.L2MonsterInstance;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.rambase.util.Rnd;
 

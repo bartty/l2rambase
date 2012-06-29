@@ -33,7 +33,7 @@ import l2.rambase.gameserver.datatables.TeleportLocationTable;
 import l2.rambase.gameserver.handler.IAdminCommandHandler;
 import l2.rambase.gameserver.instancemanager.Manager;
 import l2.rambase.gameserver.instancemanager.QuestManager;
-import l2.rambase.gameserver.model.L2Rambaseultisell;
+import l2.rambase.gameserver.model.L2Multisell;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.rambase.gameserver.model.olympiad.Olympiad;
 import l2.rambase.gameserver.network.SystemMessageId;
@@ -232,7 +232,7 @@ public class AdminAdmin implements IAdminCommandHandler
 				type = st.nextToken();
 				if (type.equals("multisell"))
 				{
-					L2Rambaseultisell.getInstance().reload();
+					L2Multisell.getInstance().reload();
 					activeChar.sendMessage("All Multisells have been reloaded");
 				}
 				else if (type.startsWith("teleport"))

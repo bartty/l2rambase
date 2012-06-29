@@ -9,7 +9,7 @@ import l2.rambase.gameserver.ai.CtrlIntention;
 import l2.rambase.gameserver.datatables.DoorTable;
 import l2.rambase.gameserver.instancemanager.HellboundManager;
 import l2.rambase.gameserver.model.actor.L2Npc;
-import l2.rambase.gameserver.model.actor.instance.L2Rambase ProjectonsterInstance;
+import l2.rambase.gameserver.model.actor.instance.L2MonsterInstance;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
 
 /**
@@ -83,7 +83,7 @@ public class OutpostCaptain extends L2AttackableAIScript
         if (event.equalsIgnoreCase("attackPlayer"))
         {
         	npc.setRunning();
-        	L2Rambase ProjectonsterInstance npcAi = ((L2Rambase ProjectonsterInstance)npc);
+        	L2MonsterInstance npcAi = ((L2MonsterInstance)npc);
         	npcAi.addDamageHate(player, 0, 999);
         	//npc.addDamageHate(player, true, 999);
         	npc.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, player);
@@ -91,7 +91,7 @@ public class OutpostCaptain extends L2AttackableAIScript
         	{
         		for (int i=0; i < 6; i++)
         		{
-        			L2Rambase ProjectonsterInstance tempMinion = (L2Rambase ProjectonsterInstance) addSpawn(EnceinteDefender, MinionsLocs[i][0], MinionsLocs[i][1], MinionsLocs[i][2], 0, false, 900000);
+        			L2MonsterInstance tempMinion = (L2MonsterInstance) addSpawn(EnceinteDefender, MinionsLocs[i][0], MinionsLocs[i][1], MinionsLocs[i][2], 0, false, 900000);
         			tempMinion.addDamageHate(player, 0, 999);
         			tempMinion.setIsNoRndWalk(true);
         			tempMinion.setRunning();

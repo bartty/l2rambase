@@ -30,8 +30,8 @@ import l2.rambase.gameserver.model.actor.instance.L2DungeonBossInstance;
 import l2.rambase.gameserver.model.actor.instance.L2FlyMinionInstance;
 import l2.rambase.gameserver.model.actor.instance.L2FlyMonsterInstance;
 import l2.rambase.gameserver.model.actor.instance.L2GrandBossInstance;
-import l2.rambase.gameserver.model.actor.instance.L2RambaseinionInstance;
-import l2.rambase.gameserver.model.actor.instance.L2RambaseonsterInstance;
+import l2.rambase.gameserver.model.actor.instance.L2MinionInstance;
+import l2.rambase.gameserver.model.actor.instance.L2MonsterInstance;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.rambase.gameserver.model.actor.instance.L2RaidBossInstance;
 import l2.rambase.gameserver.network.serverpackets.MyTargetSelected;
@@ -341,11 +341,11 @@ public class L2NpcActionShift implements IActionHandler
 			html1.append("</body></html>");
 
 			html.setHtml(html1.toString());
-			if (target instanceof L2RambaseonsterInstance 
+			if (target instanceof L2MonsterInstance 
 					|| target instanceof L2DungeonBossInstance 
 					|| target instanceof L2RaidBossInstance 
 					|| target instanceof L2GrandBossInstance 
-					|| target instanceof L2RambaseinionInstance
+					|| target instanceof L2MinionInstance
 					|| target instanceof L2FlyMonsterInstance
 					|| target instanceof L2FlyMinionInstance
 					|| target instanceof L2ChestInstance

@@ -20,7 +20,7 @@ import l2.rambase.gameserver.instancemanager.CastleManorManager;
 import l2.rambase.gameserver.model.L2ItemInstance;
 import l2.rambase.gameserver.model.L2Skill;
 import l2.rambase.gameserver.model.actor.L2Playable;
-import l2.rambase.gameserver.model.actor.instance.L2RambaseonsterInstance;
+import l2.rambase.gameserver.model.actor.instance.L2MonsterInstance;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.rambase.gameserver.network.SystemMessageId;
 import l2.rambase.gameserver.network.serverpackets.ActionFailed;
@@ -33,7 +33,7 @@ public class Harvester implements IItemHandler
 {
 	
 	L2PcInstance _activeChar;
-	L2RambaseonsterInstance _target;
+	L2MonsterInstance _target;
 	
 	/**
 	 * 
@@ -49,14 +49,14 @@ public class Harvester implements IItemHandler
 		
 		_activeChar = (L2PcInstance) playable;
 		
-		if (!(_activeChar.getTarget() instanceof L2RambaseonsterInstance))
+		if (!(_activeChar.getTarget() instanceof L2MonsterInstance))
 		{
 			_activeChar.sendPacket(new SystemMessage(SystemMessageId.TARGET_IS_INCORRECT));
 			_activeChar.sendPacket(ActionFailed.STATIC_PACKET);
 			return;
 		}
 		
-		_target = (L2RambaseonsterInstance) _activeChar.getTarget();
+		_target = (L2MonsterInstance) _activeChar.getTarget();
 		
 		if (_target == null || !_target.isDead())
 		{

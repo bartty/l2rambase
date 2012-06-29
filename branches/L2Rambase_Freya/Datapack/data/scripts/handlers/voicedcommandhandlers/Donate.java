@@ -8,7 +8,7 @@ import l2.rambase.gameserver.instancemanager.CastleManager;
 import l2.rambase.gameserver.instancemanager.ClanHallManager;
 import l2.rambase.gameserver.instancemanager.FortManager;
 import l2.rambase.gameserver.model.L2ItemInstance;
-import l2.rambase.gameserver.model.L2Rambaseultisell;
+import l2.rambase.gameserver.model.L2Multisell;
 import l2.rambase.gameserver.model.L2Object.InstanceType;
 import l2.rambase.gameserver.model.actor.L2Character;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
@@ -391,71 +391,71 @@ public class Donate implements IVoicedCommandHandler
 				}
 				else if (event.equalsIgnoreCase("311262503"))
 				{
-					L2Rambaseultisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, false, 0.0);
+					L2Multisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, false, 0.0);
 				}
 				else if (event.equalsIgnoreCase("311262501"))
 				{
-					L2Rambaseultisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
+					L2Multisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
 				}
 				else if (event.equalsIgnoreCase("311262504"))
 				{
-					L2Rambaseultisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
+					L2Multisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
 				}
 				else if (event.equalsIgnoreCase("311262505"))
 				{
-					L2Rambaseultisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
+					L2Multisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
 				}
 				else if (event.equalsIgnoreCase("311262502"))
 				{
-					L2Rambaseultisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, false, 0.0);
+					L2Multisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, false, 0.0);
 				}
 				else if (event.equalsIgnoreCase("311262510"))
 				{
-					L2Rambaseultisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
+					L2Multisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
 				}
 				else if (event.equalsIgnoreCase("311262506"))
 				{
-					L2Rambaseultisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
+					L2Multisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
 				}
 				else if (event.equalsIgnoreCase("311262507"))
 				{
-					L2Rambaseultisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
+					L2Multisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
 				}
 				else if (event.equalsIgnoreCase("311262508"))
 				{
-					L2Rambaseultisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
+					L2Multisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
 				}
 				else if (event.equalsIgnoreCase("311262514"))
 				{
-					L2Rambaseultisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
+					L2Multisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
 				}
 				else if (event.equalsIgnoreCase("311262515"))
 				{
-					L2Rambaseultisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
+					L2Multisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
 				}
 				else if (event.equalsIgnoreCase("311262509"))
 				{
-					L2Rambaseultisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
+					L2Multisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
 				}
 				else if (event.equalsIgnoreCase("311262511"))
 				{
-					L2Rambaseultisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
+					L2Multisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
 				}
 				else if (event.equalsIgnoreCase("311262516"))
 				{
-					L2Rambaseultisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
+					L2Multisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
 				}
 				else if (event.equalsIgnoreCase("311262512"))
 				{
-					L2Rambaseultisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
+					L2Multisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, true, 0.0);
 				}
 				else if (event.equalsIgnoreCase("311262513"))
 				{
-					L2Rambaseultisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, false, 0.0);
+					L2Multisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, false, 0.0);
 				}
 				else if (event.equalsIgnoreCase("311132501"))
 				{
-					L2Rambaseultisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, false, 0.0);
+					L2Multisell.getInstance().separateAndSend(Integer.valueOf(event), activeChar, DONATE_NPC, false, 0.0);
 				}
 			}
 		}

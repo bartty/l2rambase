@@ -3,7 +3,7 @@ package events.SquashEvent;
 import l2.rambase.gameserver.model.L2Object;
 import l2.rambase.gameserver.model.L2Skill;
 import l2.rambase.gameserver.model.actor.L2Npc;
-import l2.rambase.gameserver.model.actor.instance.L2RambaseonsterInstance;
+import l2.rambase.gameserver.model.actor.instance.L2MonsterInstance;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.rambase.gameserver.model.quest.Quest;
 import l2.rambase.gameserver.model.quest.QuestState;
@@ -232,11 +232,11 @@ public class SquashEvent extends Quest
 						int adenaCount = Rnd.get(1000,5000);
 						if (drop[1] == 57)
 						{
-							((L2RambaseonsterInstance)mob).dropItem(player, drop[1], adenaCount);
+							((L2MonsterInstance)mob).dropItem(player, drop[1], adenaCount);
 						}
 						else
 						{
-							((L2RambaseonsterInstance)mob).dropItem(player, drop[1], 2);
+							((L2MonsterInstance)mob).dropItem(player, drop[1], 2);
 						}
 					}
 					else
@@ -244,11 +244,11 @@ public class SquashEvent extends Quest
 						int adenaCount = Rnd.get(5000,15000);
 						if (drop[1] == 57)
 						{
-							((L2RambaseonsterInstance)mob).dropItem(player, drop[1], adenaCount);
+							((L2MonsterInstance)mob).dropItem(player, drop[1], adenaCount);
 						}
 						else
 						{
-							((L2RambaseonsterInstance)mob).dropItem(player, drop[1], Rnd.get(2, 6));
+							((L2MonsterInstance)mob).dropItem(player, drop[1], Rnd.get(2, 6));
 						}
 					}
 					continue;

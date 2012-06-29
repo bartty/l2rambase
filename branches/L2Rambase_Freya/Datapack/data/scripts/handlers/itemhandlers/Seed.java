@@ -18,14 +18,14 @@ import l2.rambase.gameserver.datatables.MapRegionTable;
 import l2.rambase.gameserver.handler.IItemHandler;
 import l2.rambase.gameserver.instancemanager.CastleManorManager;
 import l2.rambase.gameserver.model.L2ItemInstance;
-import l2.rambase.gameserver.model.L2Rambaseanor;
+import l2.rambase.gameserver.model.L2Manor;
 import l2.rambase.gameserver.model.L2Object;
 import l2.rambase.gameserver.model.L2Skill;
 import l2.rambase.gameserver.model.actor.L2Character;
 import l2.rambase.gameserver.model.actor.L2Npc;
 import l2.rambase.gameserver.model.actor.L2Playable;
 import l2.rambase.gameserver.model.actor.instance.L2ChestInstance;
-import l2.rambase.gameserver.model.actor.instance.L2RambaseonsterInstance;
+import l2.rambase.gameserver.model.actor.instance.L2MonsterInstance;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.rambase.gameserver.network.SystemMessageId;
 import l2.rambase.gameserver.network.serverpackets.ActionFailed;
@@ -56,14 +56,14 @@ public class Seed implements IItemHandler
 			playable.sendPacket(ActionFailed.STATIC_PACKET);
 			return;
 		}
-		if (!(tgt instanceof L2RambaseonsterInstance) || tgt instanceof L2ChestInstance || ((L2Character)tgt).isRaid())
+		if (!(tgt instanceof L2MonsterInstance) || tgt instanceof L2ChestInstance || ((L2Character)tgt).isRaid())
 		{
 			playable.sendPacket(new SystemMessage(SystemMessageId.THE_TARGET_IS_UNAVAILABLE_FOR_SEEDING));
 			playable.sendPacket(ActionFailed.STATIC_PACKET);
 			return;
 		}
 
-		final L2RambaseonsterInstance target = (L2RambaseonsterInstance)tgt;		
+		final L2MonsterInstance target = (L2MonsterInstance)tgt;		
 		if (target.isDead())
 		{
 			playable.sendPacket(new SystemMessage(SystemMessageId.INCORRECT_TARGET));
@@ -104,6 +104,6 @@ public class Seed implements IItemHandler
 	 */
 	private boolean areaValid(int seedId, int castleId)
 	{
-		return (L2Rambaseanor.getInstance().getCastleIdForSeed(seedId) == castleId);
+		return (L2Manor.getInstance().getCastleIdForSeed(seedId) == castleId);
 	}
 }

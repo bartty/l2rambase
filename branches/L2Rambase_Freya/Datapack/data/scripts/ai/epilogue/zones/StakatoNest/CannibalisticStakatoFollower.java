@@ -10,7 +10,7 @@ import ai.group_template.L2AttackableAIScript;
 
 import l2.rambase.gameserver.ThreadPoolManager;
 import l2.rambase.gameserver.model.actor.L2Npc;
-import l2.rambase.gameserver.model.actor.instance.L2Rambase ProjectonsterInstance;
+import l2.rambase.gameserver.model.actor.instance.L2MonsterInstance;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.rambase.gameserver.network.serverpackets.MagicSkillUse;
 import l2.rambase.util.Rnd;
@@ -49,8 +49,8 @@ public class CannibalisticStakatoFollower extends L2AttackableAIScript
 	public L2Npc getLeaderMinion(L2Npc leader)
 	{
 		// For now, minions are set as minionInstance. If they change to only monster, use the above code
-		if (((L2Rambase ProjectonsterInstance)leader).hasMinions())
-			return ((L2Rambase ProjectonsterInstance)leader).getMinionList().getSpawnedMinions().get(0);
+		if (((L2MonsterInstance)leader).hasMinions())
+			return ((L2MonsterInstance)leader).getMinionList().getSpawnedMinions().get(0);
 		
 		return null;
 	}

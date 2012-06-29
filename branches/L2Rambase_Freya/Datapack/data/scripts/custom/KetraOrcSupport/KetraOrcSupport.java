@@ -1,7 +1,7 @@
 package custom.KetraOrcSupport;
 
 import l2.rambase.gameserver.datatables.SkillTable;
-import l2.rambase.gameserver.model.L2Rambaseultisell;
+import l2.rambase.gameserver.model.L2Multisell;
 import l2.rambase.gameserver.model.actor.L2Npc;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.rambase.gameserver.model.quest.Quest;
@@ -383,17 +383,17 @@ public class KetraOrcSupport extends Quest
 	    {
 	    	if (event.equalsIgnoreCase("sel1"))
 	    	{
-	    		L2Rambaseultisell.getInstance().separateAndSend(313750001, player, npc.getNpcId(), false, 0.0);
+	    		L2Multisell.getInstance().separateAndSend(313750001, player, npc.getNpcId(), false, 0.0);
 	    		htmltext = "";
 	    	}
 	    	if (event.equalsIgnoreCase("sel2"))
 	    	{
-	    		L2Rambaseultisell.getInstance().separateAndSend(313750002, player, npc.getNpcId(), false, 0.0);
+	    		L2Multisell.getInstance().separateAndSend(313750002, player, npc.getNpcId(), false, 0.0);
 	    		htmltext = "";
 	    	}
 	    	if (event.equalsIgnoreCase("sel3"))
 	    	{
-	    		L2Rambaseultisell.getInstance().separateAndSend(313750003, player, npc.getNpcId(), false, 0.0);
+	    		L2Multisell.getInstance().separateAndSend(313750003, player, npc.getNpcId(), false, 0.0);
 	    		htmltext = "";
 	    	}
 	    }

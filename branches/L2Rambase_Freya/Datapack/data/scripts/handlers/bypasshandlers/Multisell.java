@@ -15,7 +15,7 @@
 package handlers.bypasshandlers;
 
 import l2.rambase.gameserver.handler.IBypassHandler;
-import l2.rambase.gameserver.model.L2Rambaseultisell;
+import l2.rambase.gameserver.model.L2Multisell;
 import l2.rambase.gameserver.model.actor.L2Character;
 import l2.rambase.gameserver.model.actor.L2Npc;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
@@ -39,13 +39,13 @@ public class Multisell implements IBypassHandler
 			if (command.toLowerCase().startsWith(COMMANDS[0])) // multisell
 			{
 				listId = Integer.parseInt(command.substring(9).trim());
-				L2Rambaseultisell.getInstance().separateAndSend(listId, activeChar, ((L2Npc)target).getNpcId(), false, ((L2Npc)target).getCastle().getTaxRate());
+				L2Multisell.getInstance().separateAndSend(listId, activeChar, ((L2Npc)target).getNpcId(), false, ((L2Npc)target).getCastle().getTaxRate());
 				return true;
 			}
 			else if (command.toLowerCase().startsWith(COMMANDS[1])) // exc_multisell
 			{
 				listId = Integer.parseInt(command.substring(13).trim());
-				L2Rambaseultisell.getInstance().separateAndSend(listId, activeChar, ((L2Npc)target).getNpcId(), true, ((L2Npc)target).getCastle().getTaxRate());
+				L2Multisell.getInstance().separateAndSend(listId, activeChar, ((L2Npc)target).getNpcId(), true, ((L2Npc)target).getCastle().getTaxRate());
 				return true;
 			}
 			return false;

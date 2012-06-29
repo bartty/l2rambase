@@ -22,7 +22,7 @@ import l2.rambase.gameserver.model.L2ItemInstance;
 import l2.rambase.gameserver.model.L2Object;
 import l2.rambase.gameserver.model.L2Skill;
 import l2.rambase.gameserver.model.actor.L2Playable;
-import l2.rambase.gameserver.model.actor.instance.L2RambaseonsterInstance;
+import l2.rambase.gameserver.model.actor.instance.L2MonsterInstance;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.rambase.gameserver.network.SystemMessageId;
 import l2.rambase.gameserver.network.serverpackets.ActionFailed;
@@ -48,7 +48,7 @@ public class SoulCrystals implements IItemHandler
 		
 		L2PcInstance activeChar = (L2PcInstance) playable;
 		L2Object target = activeChar.getTarget();
-		if (!(target instanceof L2RambaseonsterInstance))
+		if (!(target instanceof L2MonsterInstance))
 		{
 			// Send a System Message to the caster
 			SystemMessage sm = new SystemMessage(SystemMessageId.INCORRECT_TARGET);
@@ -62,7 +62,7 @@ public class SoulCrystals implements IItemHandler
 		}
 		
 		// u can use soul crystal only when target hp goes below 50%
-		if (((L2RambaseonsterInstance) target).getCurrentHp() > ((L2RambaseonsterInstance) target).getMaxHp() / 2.0)
+		if (((L2MonsterInstance) target).getCurrentHp() > ((L2MonsterInstance) target).getMaxHp() / 2.0)
 		{
 			ActionFailed af = ActionFailed.STATIC_PACKET;
 			activeChar.sendPacket(af);

@@ -9,8 +9,8 @@ import l2.rambase.gameserver.model.L2Clan;
 import l2.rambase.gameserver.model.actor.L2Character;
 import l2.rambase.gameserver.model.actor.L2Npc;
 import l2.rambase.gameserver.model.actor.instance.L2CastleChamberlainInstance;
-import l2.rambase.gameserver.model.actor.instance.L2RambaseanorManagerInstance;
-import l2.rambase.gameserver.model.actor.instance.L2RambaseerchantInstance;
+import l2.rambase.gameserver.model.actor.instance.L2ManorManagerInstance;
+import l2.rambase.gameserver.model.actor.instance.L2MerchantInstance;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.rambase.gameserver.model.entity.Castle;
 import l2.rambase.gameserver.network.SystemMessageId;
@@ -36,7 +36,7 @@ public class ManorManager implements IBypassHandler
 	{
 		final L2Npc manager = activeChar.getLastFolkNPC();
 		final boolean isCastle = manager instanceof L2CastleChamberlainInstance;
-		if (!(manager instanceof L2RambaseanorManagerInstance || isCastle))
+		if (!(manager instanceof L2ManorManagerInstance || isCastle))
 			return false;
 
 		if (!activeChar.isInsideRadius(manager, L2Npc.INTERACTION_DISTANCE, true, false))
@@ -116,7 +116,7 @@ public class ManorManager implements IBypassHandler
 				case 6: // Buy harvester
 					if (isCastle)
 						break;
-					((L2RambaseerchantInstance)manager).showBuyWindow(activeChar, 300000 + manager.getNpcId());
+					((L2MerchantInstance)manager).showBuyWindow(activeChar, 300000 + manager.getNpcId());
 					break;
 				case 7: // Edit seed setup
 					if (!isCastle)

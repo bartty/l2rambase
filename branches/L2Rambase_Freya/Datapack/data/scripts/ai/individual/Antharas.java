@@ -24,7 +24,7 @@ import l2.rambase.gameserver.model.L2World;
 import l2.rambase.gameserver.model.actor.L2Character;
 import l2.rambase.gameserver.model.actor.L2Npc;
 import l2.rambase.gameserver.model.actor.instance.L2GrandBossInstance;
-import l2.rambase.gameserver.model.actor.instance.L2Rambase ProjectonsterInstance;
+import l2.rambase.gameserver.model.actor.instance.L2MonsterInstance;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.rambase.gameserver.model.zone.type.L2BossZone;
 import l2.rambase.gameserver.network.serverpackets.Earthquake;
@@ -890,9 +890,9 @@ public class Antharas extends L2AttackableAIScript
 			int countHPHerb = Rnd.get(Min_HP_Herbs, Max_HP_Herbs);
 			int countMPHerb = Rnd.get(Min_MP_Herbs, Max_MP_Herbs);
 			for (int i = 0; i < countHPHerb; i++)
-				((L2Rambase ProjectonsterInstance)npc).dropItem(killer, 8602, 1);
+				((L2MonsterInstance)npc).dropItem(killer, 8602, 1);
 			for (int i = 0; i < countMPHerb; i++)
-				((L2Rambase ProjectonsterInstance)npc).dropItem(killer, 8605, 1);
+				((L2MonsterInstance)npc).dropItem(killer, 8605, 1);
 		}
 		if (_monsters.contains(npc))
 			_monsters.remove(npc);

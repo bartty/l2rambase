@@ -1,6 +1,6 @@
 package custom.NewbieCoupons;
 
-import l2.rambase.gameserver.model.L2Rambaseultisell;
+import l2.rambase.gameserver.model.L2Multisell;
 import l2.rambase.gameserver.model.actor.L2Npc;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.rambase.gameserver.model.quest.Quest;
@@ -171,7 +171,7 @@ public class NewbieCoupons extends Quest
 			{
 				if ((level >= 6 && level <= 39) && pkkills < 1 && occupation_level == 0)
 				{
-					L2Rambaseultisell.getInstance().separateAndSend(WEAPON_MULTISELL, player, npc.getNpcId(), false, 0.0);
+					L2Multisell.getInstance().separateAndSend(WEAPON_MULTISELL, player, npc.getNpcId(), false, 0.0);
 				}
 				else
 				{
@@ -187,7 +187,7 @@ public class NewbieCoupons extends Quest
 			{
 				if ((level >= 6 && level <= 39) && pkkills < 1 && occupation_level > 0)
 				{
-					L2Rambaseultisell.getInstance().separateAndSend(ACCESORIES_MULTISELL, player, npc.getNpcId(), false, 0.0);
+					L2Multisell.getInstance().separateAndSend(ACCESORIES_MULTISELL, player, npc.getNpcId(), false, 0.0);
 				}
 				else
 				{

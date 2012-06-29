@@ -19,7 +19,7 @@ import java.util.logging.Logger;
 import l2.rambase.Config;
 import l2.rambase.gameserver.ai.CtrlIntention;
 import l2.rambase.gameserver.handler.ISkillHandler;
-import l2.rambase.gameserver.model.L2Rambaseanor;
+import l2.rambase.gameserver.model.L2Manor;
 import l2.rambase.gameserver.model.L2Object;
 import l2.rambase.gameserver.model.L2Skill;
 import l2.rambase.gameserver.model.actor.L2Character;
@@ -112,9 +112,9 @@ public class Sow implements ISkillHandler
 	
 	private boolean calcSuccess(L2Character activeChar, L2Character target, int seedId)
 	{
-		int basicSuccess = (L2Rambaseanor.getInstance().isAlternative(seedId) ? 20 : 90);
-		final int minlevelSeed = L2Rambaseanor.getInstance().getSeedMinLevel(seedId);
-		final int maxlevelSeed = L2Rambaseanor.getInstance().getSeedMaxLevel(seedId);
+		int basicSuccess = (L2Manor.getInstance().isAlternative(seedId) ? 20 : 90);
+		final int minlevelSeed = L2Manor.getInstance().getSeedMinLevel(seedId);
+		final int maxlevelSeed = L2Manor.getInstance().getSeedMaxLevel(seedId);
 		final int levelPlayer = activeChar.getLevel(); // Attacker Level
 		final int levelTarget = target.getLevel(); // target Level
 

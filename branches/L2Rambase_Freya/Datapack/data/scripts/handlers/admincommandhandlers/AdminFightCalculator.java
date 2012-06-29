@@ -20,7 +20,7 @@ import l2.rambase.gameserver.datatables.NpcTable;
 import l2.rambase.gameserver.handler.IAdminCommandHandler;
 import l2.rambase.gameserver.idfactory.IdFactory;
 import l2.rambase.gameserver.model.actor.L2Character;
-import l2.rambase.gameserver.model.actor.instance.L2RambaseonsterInstance;
+import l2.rambase.gameserver.model.actor.instance.L2MonsterInstance;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.rambase.gameserver.network.SystemMessageId;
 import l2.rambase.gameserver.network.serverpackets.NpcHtmlMessage;
@@ -235,8 +235,8 @@ public class AdminFightCalculator implements IAdminCommandHandler
 			mid1 = Integer.parseInt(st.nextToken());
 			mid2 = Integer.parseInt(st.nextToken());
 			
-			npc1 = new L2RambaseonsterInstance(IdFactory.getInstance().getNextId(), NpcTable.getInstance().getTemplate(mid1));
-			npc2 = new L2RambaseonsterInstance(IdFactory.getInstance().getNextId(), NpcTable.getInstance().getTemplate(mid2));
+			npc1 = new L2MonsterInstance(IdFactory.getInstance().getNextId(), NpcTable.getInstance().getTemplate(mid1));
+			npc2 = new L2MonsterInstance(IdFactory.getInstance().getNextId(), NpcTable.getInstance().getTemplate(mid2));
 		}
 		
 		int miss1 = 0;
@@ -451,8 +451,8 @@ public class AdminFightCalculator implements IAdminCommandHandler
 		
 		if (params.length() != 0)
 		{
-			((L2RambaseonsterInstance) npc1).deleteMe();
-			((L2RambaseonsterInstance) npc2).deleteMe();
+			((L2MonsterInstance) npc1).deleteMe();
+			((L2MonsterInstance) npc2).deleteMe();
 		}
 	}
 }

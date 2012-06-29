@@ -34,7 +34,7 @@ import l2.rambase.gameserver.model.L2Spawn;
 import l2.rambase.gameserver.model.L2World;
 import l2.rambase.gameserver.model.actor.L2Npc;
 import l2.rambase.gameserver.model.actor.instance.L2GrandBossInstance;
-import l2.rambase.gameserver.model.actor.instance.L2RambaseinionInstance;
+import l2.rambase.gameserver.model.actor.instance.L2MinionInstance;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.rambase.gameserver.model.actor.instance.L2RaidBossInstance;
 import l2.rambase.gameserver.network.SystemMessageId;
@@ -478,7 +478,7 @@ public class AdminTeleport implements IAdminCommandHandler
 	private void recallNPC(L2PcInstance activeChar)
 	{
 		L2Object obj = activeChar.getTarget();
-		if (obj instanceof L2Npc && !(obj instanceof L2RambaseinionInstance) && !(obj instanceof L2RaidBossInstance) && !(obj instanceof L2GrandBossInstance))
+		if (obj instanceof L2Npc && !(obj instanceof L2MinionInstance) && !(obj instanceof L2RaidBossInstance) && !(obj instanceof L2GrandBossInstance))
 		{
 			L2Npc target = (L2Npc) obj;
 			
@@ -506,7 +506,7 @@ public class AdminTeleport implements IAdminCommandHandler
 			
 			try
 			{
-				//L2RambaseonsterInstance mob = new L2RambaseonsterInstance(monsterTemplate, template1);
+				//L2MonsterInstance mob = new L2MonsterInstance(monsterTemplate, template1);
 				
 				spawn = new L2Spawn(template1);
 				if (Config.SAVE_GMSPAWN_ON_CUSTOM)

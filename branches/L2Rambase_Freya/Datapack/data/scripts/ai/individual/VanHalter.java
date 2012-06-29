@@ -27,7 +27,7 @@ import l2.rambase.gameserver.model.L2Spawn;
 import l2.rambase.gameserver.model.actor.L2Character;
 import l2.rambase.gameserver.model.actor.L2Npc;
 import l2.rambase.gameserver.model.actor.instance.L2DoorInstance;
-import l2.rambase.gameserver.model.actor.instance.L2Rambase ProjectonsterInstance;
+import l2.rambase.gameserver.model.actor.instance.L2MonsterInstance;
 import l2.rambase.gameserver.model.actor.instance.L2NpcInstance;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.rambase.gameserver.model.actor.instance.L2GrandBossInstance;
@@ -68,12 +68,12 @@ public class VanHalter extends L2AttackableAIScript
 	protected L2Spawn _vanHalterSpawn = null;
 
 	// instance of monsters.
-	protected List<L2Rambase ProjectonsterInstance> _monsters = new FastList<L2Rambase ProjectonsterInstance>();
-	protected List<L2Rambase ProjectonsterInstance> _royalGuard = new FastList<L2Rambase ProjectonsterInstance>();
-	protected List<L2Rambase ProjectonsterInstance> _royalGuardCaptain = new FastList<L2Rambase ProjectonsterInstance>();
-	protected List<L2Rambase ProjectonsterInstance> _royalGuardHepler = new FastList<L2Rambase ProjectonsterInstance>();
-	protected List<L2Rambase ProjectonsterInstance> _triolRevelation = new FastList<L2Rambase ProjectonsterInstance>();
-	protected List<L2Rambase ProjectonsterInstance> _guardOfAltar = new FastList<L2Rambase ProjectonsterInstance>();
+	protected List<L2MonsterInstance> _monsters = new FastList<L2MonsterInstance>();
+	protected List<L2MonsterInstance> _royalGuard = new FastList<L2MonsterInstance>();
+	protected List<L2MonsterInstance> _royalGuardCaptain = new FastList<L2MonsterInstance>();
+	protected List<L2MonsterInstance> _royalGuardHepler = new FastList<L2MonsterInstance>();
+	protected List<L2MonsterInstance> _triolRevelation = new FastList<L2MonsterInstance>();
+	protected List<L2MonsterInstance> _guardOfAltar = new FastList<L2MonsterInstance>();
 
 	protected List<L2NpcInstance> _cameraMarker = new FastList<L2NpcInstance>();
 
@@ -312,13 +312,13 @@ public class VanHalter extends L2AttackableAIScript
 		for (L2Spawn rgs : _royalGuardSpawn)
 		{
 			rgs.startRespawn();
-			_royalGuard.add((L2Rambase ProjectonsterInstance)rgs.doSpawn());
+			_royalGuard.add((L2MonsterInstance)rgs.doSpawn());
 		}
 	}
 
 	protected void deleteRoyalGuard()
 	{
-		for (L2Rambase ProjectonsterInstance rg : _royalGuard)
+		for (L2MonsterInstance rg : _royalGuard)
 		{
 			rg.getSpawn().stopRespawn();
 			rg.deleteMe();
@@ -397,7 +397,7 @@ public class VanHalter extends L2AttackableAIScript
 		for (L2Spawn trs : _triolRevelationSpawn)
 		{
 			trs.startRespawn();
-			_triolRevelation.add((L2Rambase ProjectonsterInstance) trs.doSpawn());
+			_triolRevelation.add((L2MonsterInstance) trs.doSpawn());
 			if (trs.getNpcid() != 32067 && trs.getNpcid() != 32068)
 				_triolRevelationAlive.add(trs);
 		}
@@ -405,7 +405,7 @@ public class VanHalter extends L2AttackableAIScript
 
 	protected void deleteTriolRevelation()
 	{
-		for (L2Rambase ProjectonsterInstance tr : _triolRevelation)
+		for (L2MonsterInstance tr : _triolRevelation)
 		{
 			tr.getSpawn().stopRespawn();
 			tr.deleteMe();
@@ -483,14 +483,14 @@ public class VanHalter extends L2AttackableAIScript
 		for (L2Spawn trs : _royalGuardCaptainSpawn)
 		{
 			trs.startRespawn();
-			_royalGuardCaptain.add((L2Rambase ProjectonsterInstance) trs.doSpawn());
+			_royalGuardCaptain.add((L2MonsterInstance) trs.doSpawn());
 		}
 		_isCaptainSpawned = true;
 	}
 
 	protected void deleteRoyalGuardCaptain()
 	{
-		for (L2Rambase ProjectonsterInstance tr : _royalGuardCaptain)
+		for (L2MonsterInstance tr : _royalGuardCaptain)
 		{
 			tr.getSpawn().stopRespawn();
 			tr.deleteMe();
@@ -565,13 +565,13 @@ public class VanHalter extends L2AttackableAIScript
 		for (L2Spawn trs : _royalGuardHelperSpawn)
 		{
 			trs.startRespawn();
-			_royalGuardHepler.add((L2Rambase ProjectonsterInstance) trs.doSpawn());
+			_royalGuardHepler.add((L2MonsterInstance) trs.doSpawn());
 		}
 	}
 
 	protected void deleteRoyalGuardHepler()
 	{
-		for (L2Rambase ProjectonsterInstance tr : _royalGuardHepler)
+		for (L2MonsterInstance tr : _royalGuardHepler)
 		{
 			tr.getSpawn().stopRespawn();
 			tr.deleteMe();
@@ -647,13 +647,13 @@ public class VanHalter extends L2AttackableAIScript
 		for (L2Spawn trs : _guardOfAltarSpawn)
 		{
 			trs.startRespawn();
-			_guardOfAltar.add((L2Rambase ProjectonsterInstance) trs.doSpawn());
+			_guardOfAltar.add((L2MonsterInstance) trs.doSpawn());
 		}
 	}
 
 	protected void deleteGuardOfAltar()
 	{
-		for (L2Rambase ProjectonsterInstance tr : _guardOfAltar)
+		for (L2MonsterInstance tr : _guardOfAltar)
 		{
 			tr.getSpawn().stopRespawn();
 			tr.deleteMe();
@@ -1198,7 +1198,7 @@ public class VanHalter extends L2AttackableAIScript
 	{
 		L2Skill bleed = SkillTable.getInstance().getInfo(4615, 12);
 
-		for (L2Rambase ProjectonsterInstance tr : _triolRevelation)
+		for (L2MonsterInstance tr : _triolRevelation)
 		{
 			if (tr.getKnownList().getKnownPlayersInRadius(tr.getAggroRange()).size() == 0 || tr.isDead())
 				continue;

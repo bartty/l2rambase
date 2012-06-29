@@ -20,7 +20,7 @@ import l2.rambase.Config;
 import l2.rambase.gameserver.handler.IBypassHandler;
 import l2.rambase.gameserver.model.actor.L2Character;
 import l2.rambase.gameserver.model.actor.L2Npc;
-import l2.rambase.gameserver.model.actor.instance.L2RambaseerchantInstance;
+import l2.rambase.gameserver.model.actor.instance.L2MerchantInstance;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.rambase.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2.rambase.gameserver.network.serverpackets.SetupGauge;
@@ -34,7 +34,7 @@ public class RentPet implements IBypassHandler
 
 	public boolean useBypass(String command, L2PcInstance activeChar, L2Character target)
 	{
-		if (!(target instanceof L2RambaseerchantInstance))
+		if (!(target instanceof L2MerchantInstance))
 			return false;
 
 		if (!Config.ALLOW_RENTPET)

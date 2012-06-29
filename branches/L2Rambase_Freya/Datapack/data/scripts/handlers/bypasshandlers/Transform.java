@@ -15,7 +15,7 @@
 package handlers.bypasshandlers;
 
 import l2.rambase.gameserver.handler.IBypassHandler;
-import l2.rambase.gameserver.model.L2Rambaseultisell;
+import l2.rambase.gameserver.model.L2Multisell;
 import l2.rambase.gameserver.model.actor.L2Character;
 import l2.rambase.gameserver.model.actor.L2Npc;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
@@ -56,7 +56,7 @@ public class Transform implements IBypassHandler
 		{
 			if (canTransform(activeChar))
 			{				
-				L2Rambaseultisell.getInstance().separateAndSend(32323001, activeChar, ((L2Npc)target).getNpcId(), false, ((L2Npc)target).getCastle().getTaxRate());
+				L2Multisell.getInstance().separateAndSend(32323001, activeChar, ((L2Npc)target).getNpcId(), false, ((L2Npc)target).getCastle().getTaxRate());
 				return true;
 			}
 			else

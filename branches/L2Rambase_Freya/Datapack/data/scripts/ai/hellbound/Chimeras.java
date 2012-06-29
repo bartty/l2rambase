@@ -9,7 +9,7 @@ import l2.rambase.gameserver.instancemanager.HellboundManager;
 import l2.rambase.gameserver.model.L2Object;
 import l2.rambase.gameserver.model.L2Skill;
 import l2.rambase.gameserver.model.actor.L2Npc;
-import l2.rambase.gameserver.model.actor.instance.L2Rambase ProjectonsterInstance;
+import l2.rambase.gameserver.model.actor.instance.L2MonsterInstance;
 import l2.rambase.gameserver.model.actor.instance.L2PcInstance;
 import l2.rambase.util.Rnd;
 
@@ -95,14 +95,14 @@ public class Chimeras extends L2AttackableAIScript
 					{
 						if (Rnd.get(100) < 10)
 						{
-							((L2Rambase ProjectonsterInstance)npc).dropItem(caster, Life_Force, 1);
+							((L2MonsterInstance)npc).dropItem(caster, Life_Force, 1);
 						}
-						((L2Rambase ProjectonsterInstance)npc).dropItem(caster, Dim_Life_Force, 1);
+						((L2MonsterInstance)npc).dropItem(caster, Dim_Life_Force, 1);
 						npc.onDecay();
 					}
 					if (npcId == Celtus)
 					{
-						((L2Rambase ProjectonsterInstance)npc).dropItem(caster, Contained_Life_Force, 1);
+						((L2MonsterInstance)npc).dropItem(caster, Contained_Life_Force, 1);
 						npc.onDecay();
 					}
 				}
