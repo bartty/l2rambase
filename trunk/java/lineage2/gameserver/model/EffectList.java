@@ -91,6 +91,11 @@ public class EffectList
 		_actor = owner;
 	}
 	
+	public int getCount()
+	{
+		return _effects.size();
+	}
+	
 	/**
 	 * Method getEffectsCountForSkill.
 	 * @param skill_id int

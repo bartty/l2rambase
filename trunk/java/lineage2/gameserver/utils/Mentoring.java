@@ -15,14 +15,20 @@ package lineage2.gameserver.utils;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import lineage2.gameserver.cache.Msg;
 import lineage2.gameserver.database.mysql;
+import lineage2.gameserver.model.Effect;
 import lineage2.gameserver.model.Player;
 import lineage2.gameserver.model.Skill;
 import lineage2.gameserver.model.World;
 import lineage2.gameserver.model.items.ItemInstance;
 import lineage2.gameserver.model.mail.Mail;
 import lineage2.gameserver.network.serverpackets.ExNoticePostArrived;
+import lineage2.gameserver.skills.effects.EffectTemplate;
+import lineage2.gameserver.stats.Env;
 import lineage2.gameserver.tables.SkillTable;
 
 /**
@@ -31,11 +37,21 @@ import lineage2.gameserver.tables.SkillTable;
  */
 public class Mentoring
 {
+
+	/**
+	 * Field _log.
+	 */
+	private static final Logger _log = LoggerFactory.getLogger(Mentoring.class);
+	
+	
 	/**
 	 * Field SIGN_OF_TUTOR.
 	 */
 	public static final Map<Integer, Integer> SIGN_OF_TUTOR = new HashMap<Integer, Integer>()
 	{
+		
+
+		
 		/**
 	 * 
 	 */
@@ -82,7 +98,8 @@ public class Mentoring
 			put(83, 850);
 			put(84, 987);
 			put(85, 1149);
-			put(86, 2015);
+			//removed level 86 from mentoring system
+			//put(86, 2015);
 		}
 	};
 	/**
@@ -120,16 +137,20 @@ public class Mentoring
 	 * Method applyMenteeBuffs.
 	 * @param menteePlayer Player
 	 */
-	public static void applyMenteeBuffs(Player menteePlayer)
+	public static void applyMenteeBuffs(Player mentee)
 	{
-		addMentoringSkills(menteePlayer);
-		if (menteePlayer.getLevel() < 86)
+		
+		if (mentee.canBeMentee())
 		{
-			for (int effect : effectsForMentee)
+			addMentoringSkills(mentee);	
+			for (int sid : effectsForMentee)
 			{
-				if (!menteePlayer.getEffectList().containEffectFromSkills(new int[effect]))
+				_log.info("Applying effect "+sid+" for mentee "+mentee.getName());
+			
+				if (!mentee.getEffectList().containEffectFromSkills(new int[sid]))
 				{
-					SkillTable.getInstance().getInfo(effect, 1).getEffects(menteePlayer, menteePlayer, false, false);
+					SkillTable.getInstance().getInfo(sid, 1).getEffects(mentee, mentee, false, false);
+
 				}
 			}
 		}
@@ -142,13 +163,15 @@ public class Mentoring
 	 */
 	public static void applyMentorBuffs(Player mentorPlayer)
 	{
-		addMentoringSkills(mentorPlayer);
-		if (mentorPlayer.getClassId().getId() > 138 && mentorPlayer.getLevel() > 85)
+		
+		if (mentorPlayer.canMentor())
 		{
+			addMentoringSkills(mentorPlayer);	
 			if (!mentorPlayer.getEffectList().containEffectFromSkills(new int[effectForMentor]))
 			{
-				SkillTable.getInstance().getInfo(effectForMentor, mentorPlayer.getMenteeMentorList().getOnlineMenteesCount(mentorPlayer)).getEffects(mentorPlayer, mentorPlayer, false, false);
+				SkillTable.getInstance().getInfo(effectForMentor, 1).getEffects(mentorPlayer, mentorPlayer, false, false);
 			}
+			
 		}
 	}
 	
@@ -160,8 +183,10 @@ public class Mentoring
 		}
 		for (int buff : effectsForMentee)
 		{
+			mentee.getEffectList().stopEffect(buff);
 			mentee.getEffectList().removeEffect(buff);
 		}
+		mentee.updateEffectIconsImpl();
 	}
 	
 	public static void cancelMentorBuffs(Player mentor)
@@ -169,9 +194,11 @@ public class Mentoring
 		if (mentor.getMenteeMentorList().someOneOnline(false) || mentor.getMenteeMentorList().someOneOnline(true))
 		{
 			mentor.getEffectList().removeEffect(effectForMentor);
-			SkillTable.getInstance().getInfo(effectForMentor, mentor.getMenteeMentorList().getOnlineMenteesCount(mentor)).getEffects(mentor, mentor, false, false);
+			
+			SkillTable.getInstance().getInfo(effectForMentor, 1).getEffects(mentor, mentor, false, false);
 			return;
 		}
+		mentor.getEffectList().stopEffect(effectForMentor);
 		mentor.getEffectList().removeEffect(effectForMentor);
 	}
 	
