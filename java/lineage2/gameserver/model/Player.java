@@ -5338,7 +5338,7 @@ public final class Player extends Playable implements PlayerGroup
 			{
 				String mentorName = getMenteeMentorList().getList().get(mentorId).getName();
 				Player mentorPlayer = World.getPlayer(mentorName);
-				if (getMenteeMentorList().someOneOnline(true) && getLevel() != 86)
+				if (getMenteeMentorList().someOneOnline(true) && getLevel() < 85)
 				{
 					Mentoring.applyMenteeBuffs(this);
 					Mentoring.applyMentorBuffs(mentorPlayer);
@@ -5361,7 +5361,7 @@ public final class Player extends Playable implements PlayerGroup
 						Mentoring.sendMentorMail(mentorPlayer, signOfTutor);
 					}
 				}
-				if (getLevel() >= 86)
+				if (getLevel() >= 85)
 				{
 					sendPacket(new SystemMessage2(SystemMsg.YOU_REACHED_LEVEL_86_RELATIONSHIP_WITH_S1_CAME_TO_AN_END).addString(mentorName));
 					getMenteeMentorList().remove(mentorName, false, false);
@@ -13411,7 +13411,7 @@ public final class Player extends Playable implements PlayerGroup
 		{
 			getMenteeMentorList().notify(true);
 
-			if (getClassId().getId() > 138 && getLevel() > 85)
+			if (canMentor())
 			{
 				Mentoring.applyMentorBuffs(this);
 				for (MenteeMentor mentee : getMenteeMentorList().getList().values())
@@ -13420,7 +13420,7 @@ public final class Player extends Playable implements PlayerGroup
 					Mentoring.applyMenteeBuffs(menteePlayer);
 				}
 			}
-			else
+			else if(canBeMentee())
 			{
 				Mentoring.applyMenteeBuffs(this);
 				Player mentorPlayer = World.getPlayer(getMenteeMentorList().getMentor());
@@ -13438,12 +13438,13 @@ public final class Player extends Playable implements PlayerGroup
 		{
 			getMenteeMentorList().notify(false);
 
-			if (getClassId().getId() > 138 && getLevel() > 85)
+			if (canMentor())
 			{
 				for (MenteeMentor mentee : getMenteeMentorList().getList().values())
 				{
 					Player menteePlayer = World.getPlayer(mentee.getName());
-					Mentoring.cancelMenteeBuffs(menteePlayer);
+					if(menteePlayer!=null && menteePlayer.isOnline())
+						Mentoring.cancelMenteeBuffs(menteePlayer);
 				}
 			}
 			else
@@ -14340,6 +14341,31 @@ public final class Player extends Playable implements PlayerGroup
 	{
 		return is_bbs_use;
 	}
+	
+	
+	/**
+	 * Method canMentor.
+	 * @return boolean
+	 * returns true if a character can be a Mentor
+	 */
+	public boolean canMentor()
+	{
+		return (getBaseClassId()>138 && getBaseSubClass().getLevel()>84);
+	}
+	
+	
+	/**
+	 * Method canBeMentee.
+	 * @return boolean
+	 * returns true if a character can be a Mentee
+	 */
+	public boolean canBeMentee()
+	{
+		return (getBaseSubClass().getLevel()<85);
+	}
+	
+	
+	
 	
 	/**
 	 * Method getSubClassList.

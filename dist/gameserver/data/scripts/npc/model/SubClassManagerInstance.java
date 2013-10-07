@@ -41,6 +41,7 @@ import lineage2.gameserver.model.base.ClassId;
 import lineage2.gameserver.model.base.ClassLevel;
 import lineage2.gameserver.model.entity.olympiad.Olympiad;
 import lineage2.gameserver.model.instances.NpcInstance;
+import lineage2.gameserver.network.serverpackets.NpcHtmlMessage;
 import lineage2.gameserver.network.serverpackets.components.SystemMsg;
 import lineage2.gameserver.tables.DualClassTable;
 import lineage2.gameserver.tables.SubClassTable;
@@ -144,6 +145,15 @@ public final class SubClassManagerInstance extends NpcInstance
 				if (player.getSubClassList().size() >= SubClassList.MAX_SUB_COUNT)
 				{
 					showChatWindow(player, "default/" + getNpcId() + "-add_no_limit.htm");
+					return;
+				}
+				if (player.getBaseSubClass().getLevel()<85)
+				{
+					NpcHtmlMessage html = new NpcHtmlMessage(player, this);
+					StringBuilder sb = new StringBuilder();
+					sb.append("<html><head><body>Need level 85 on main.</body></html>");
+					html.setHtml(sb.toString());
+					player.sendPacket(html);
 					return;
 				}
 				Collection<SubClass> subClasses = player.getSubClassList().values();

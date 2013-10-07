@@ -48,6 +48,7 @@ public class MentoringDAO
 	 * Field mentorList. (value is ""SELECT m.mentee AS charid, c.char_name, s.class_id, s.level FROM character_mentoring m LEFT JOIN characters c ON m.mentee = c.obj_Id LEFT JOIN character_subclasses s ON ( m.mentee = s.char_obj_id AND s.active =1 ) WHERE m.mentor = ?"")
 	 */
 	private static final String mentorList = "SELECT m.mentee AS charid, c.char_name, s.class_id, s.level FROM character_mentoring m LEFT JOIN characters c ON m.mentee = c.obj_Id LEFT JOIN character_subclasses s ON ( m.mentee = s.char_obj_id AND s.active =1 ) WHERE m.mentor = ?";
+
 	
 	/**
 	 * Method getInstance.
@@ -66,14 +67,31 @@ public class MentoringDAO
 	public Map<Integer, MenteeMentor> selectMenteeMentorList(Player listOwner)
 	{
 		Map<Integer, MenteeMentor> map = new HashMap<>();
+		String mentoring=null;
+		
+		if(listOwner.canMentor())
+		{
+			mentoring=mentorList;
+		}
+		else if(listOwner.canBeMentee())
+		{
+			mentoring=menteeList;
+		}
+		else
+		{
+			/*
+			_log.info("MentoringDao returning empty map for  " + listOwner.getName()+",class id is "+listOwner.getBaseClassId()+",main class level is " +listOwner.getSubClassList().getBaseSubClass().getLevel());
+			*/
+			return map;
+		}
+		
 		Connection con = null;
 		PreparedStatement statement = null;
 		ResultSet rset = null;
 		try
 		{
 			con = DatabaseFactory.getInstance().getConnection();
-			int clid = listOwner.getClassId().getId();
-			statement = con.prepareStatement(clid > 138 ? mentorList : menteeList);
+			statement = con.prepareStatement(mentoring);
 			statement.setInt(1, listOwner.getObjectId());
 			rset = statement.executeQuery();
 			while (rset.next())
@@ -82,7 +100,7 @@ public class MentoringDAO
 				String name = rset.getString("char_name");
 				int classId = rset.getInt("class_id");
 				int level = rset.getInt("level");
-				map.put(objectId, new MenteeMentor(objectId, name, classId, level, classId > 138));
+				map.put(objectId, new MenteeMentor(objectId, name, classId, level, listOwner.canBeMentee()));
 			}
 		}
 		catch (Exception e)

@@ -148,8 +148,11 @@ public class MenteeMentorList
 	 */
 	public void addMentee(Player menteePlayer)
 	{
+		if(_owner.canMentor() && menteePlayer.canBeMentee())
+		{
 		_menteeMentorList.put(menteePlayer.getObjectId(), new MenteeMentor(menteePlayer));
 		MentoringDAO.getInstance().insert(_owner, menteePlayer);
+		}
 	}
 	
 	/**
@@ -158,8 +161,11 @@ public class MenteeMentorList
 	 */
 	public void addMentor(Player mentorPlayer)
 	{
+		if(_owner.canBeMentee() && mentorPlayer.canMentor())
+		{
 		_menteeMentorList.put(mentorPlayer.getObjectId(), new MenteeMentor(mentorPlayer, true));
 		Mentoring.addMentoringSkills(mentorPlayer);
+		}
 	}
 	
 	/**
