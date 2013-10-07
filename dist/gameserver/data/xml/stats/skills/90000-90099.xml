@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="90001" levels="1" name="Mana potion">
+		<set name="icon" val="icon.etc_reagent_blue_i00"/>
+		<set name="displayId" val="2005"/>
+		<set name="itemConsumeId" val="728"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="buffDuration" val="15000" />
+		<set name="reuseDelay" val="15000" />
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="MANAHEAL"/>
+		<set name="power" val="1500"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="altUse" val="true"/>
+		<set name="isPotion" val="true" />
+		<set name="magicLvl" val="1" />
+		<set name="skillType" val="MPHOT" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="15" name="ManaHealOverTime" abnormalTime="1" val="100" stackOrder="1.5" abnormalLvl="1" abnormalType="mp_recover" />
+		</for>
+	</skill>
+</list>
