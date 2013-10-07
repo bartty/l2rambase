@@ -1283,9 +1283,6 @@
 			<skill id="28" level="34" cost="85000" name="Aggression" min_level="60" />
 			<skill id="28" level="35" cost="85000" name="Aggression" min_level="60" />
 			<skill id="984" level="8" cost="171000" name="Shield Strike" min_level="60" />
-
-
-
 			<skill id="18" level="22" cost="85000" name="Aura of Hate" min_level="60" />
 			<skill id="18" level="23" cost="85000" name="Aura of Hate" min_level="60" />
 			<skill id="217" level="30" cost="85000" name="Sword/Blunt Weapon Mastery" min_level="60" />
@@ -13775,7 +13772,6 @@
 			<skill id="142" level="4" cost="3300" name="Armor Mastery" min_level="15" />
 			<skill id="142" level="5" cost="3300" name="Armor Mastery" min_level="15" />
 			<skill id="141" level="3" cost="6700" name="Weapon Mastery" min_level="15" />
-
 			<skill id="239" level="1" name="Expertise D" min_level="20" />
 			<skill id="1320" level="2" name="Create Common Item" min_level="20" />
 			<skill id="1320" level="3" name="Create Common Item" min_level="28" />
@@ -16603,7 +16599,6 @@
 			<skill id="466" level="47" cost="160000" name="Magic Immunity" min_level="66" />
 			<skill id="626" level="4" cost="310000" name="Critical Sense" min_level="66" />
 			<skill id="1438" level="5" cost="310000" name="Annihilation Circle" min_level="66" />
-
 			<skill id="1435" level="8" cost="310000" name="Death Mark" min_level="66" />
 			<skill id="1510" level="1" cost="310000" name="Soul Cleanse" min_level="66" />
 			<skill id="1447" level="5" cost="310000" name="Voice Bind" min_level="66" />
@@ -17906,6 +17901,15 @@
 			<skill id="19089" level="1" min_level="85" name="Summon Wild Hog Cannon" race="dwarf"/>
 			<skill id="19090" level="1" min_level="85" name="Summon Swoop Cannon" race="dwarf"/>
 			<skill id="1321" level="1" min_level="85" name="Dwarven Craft" race="dwarf"/>
+			<skill id="172" level="2" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="3" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="4" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="5" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="6" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="7" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="8" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="9" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="10" name="Create Item" min_level="85" race="dwarf"/>
 			<skill id="172" level="11" name="Create Item" min_level="85" race="dwarf"/>
 			<skill id="172" level="12" name="Create Item" min_level="90" race="dwarf"/>
 			<skill id="172" level="13" name="Create Item" min_level="95" race="dwarf"/>
@@ -18098,6 +18102,15 @@
 			<skill id="19089" level="1" name="Summon Wild Hog Cannon" race="dwarf" min_level="85"/>
 			<skill id="19090" level="1" name="Summon Swoop Cannon" race="dwarf" min_level="85"/>
 			<skill id="1321" level="1" name="Dwarven Craft" race="dwarf" min_level="85"/>
+			<skill id="172" level="2" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="3" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="4" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="5" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="6" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="7" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="8" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="9" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="10" name="Create Item" min_level="85" race="dwarf"/>
 			<skill id="172" level="11" name="Create Item" min_level="85" race="dwarf"/>
 			<skill id="172" level="12" name="Create Item" min_level="90" race="dwarf"/>
 			<skill id="172" level="13" name="Create Item" min_level="95" race="dwarf"/>
@@ -18285,6 +18298,15 @@
 			<skill id="19089" level="1" name="Summon Wild Hog Cannon" race="dwarf" min_level="85"/>
 			<skill id="19090" level="1" name="Summon Swoop Cannon" race="dwarf" min_level="85"/>
 			<skill id="1321" level="1" name="Dwarven Craft" race="dwarf" min_level="85"/>
+			<skill id="172" level="2" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="3" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="4" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="5" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="6" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="7" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="8" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="9" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="10" name="Create Item" min_level="85" race="dwarf"/>
 			<skill id="172" level="11" name="Create Item" min_level="85" race="dwarf"/>
 			<skill id="172" level="12" name="Create Item" min_level="90" race="dwarf"/>
 			<skill id="172" level="13" name="Create Item" min_level="95" race="dwarf"/>
@@ -18490,6 +18512,15 @@
 			<skill id="19089" level="1" name="Summon Wild Hog Cannon" race="dwarf" min_level="85"/>
 			<skill id="19090" level="1" name="Summon Swoop Cannon" race="dwarf" min_level="85"/>
 			<skill id="1321" level="1" name="Dwarven Craft" race="dwarf" min_level="85"/>
+			<skill id="172" level="2" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="3" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="4" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="5" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="6" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="7" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="8" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="9" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="10" name="Create Item" min_level="85" race="dwarf"/>
 			<skill id="172" level="11" name="Create Item" min_level="85" race="dwarf"/>
 			<skill id="172" level="12" name="Create Item" min_level="90" race="dwarf"/>
 			<skill id="172" level="13" name="Create Item" min_level="95" race="dwarf"/>
@@ -18695,6 +18726,15 @@
 			<skill id="19089" level="1" name="Summon Wild Hog Cannon" race="dwarf" min_level="85"/>
 			<skill id="19090" level="1" name="Summon Swoop Cannon" race="dwarf" min_level="85"/>
 			<skill id="1321" level="1" name="Dwarven Craft" race="dwarf" min_level="85"/>
+			<skill id="172" level="2" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="3" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="4" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="5" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="6" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="7" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="8" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="9" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="10" name="Create Item" min_level="85" race="dwarf"/>
 			<skill id="172" level="11" name="Create Item" min_level="85" race="dwarf"/>
 			<skill id="172" level="12" name="Create Item" min_level="90" race="dwarf"/>
 			<skill id="172" level="13" name="Create Item" min_level="95" race="dwarf"/>
@@ -18904,6 +18944,15 @@
 			<skill id="19089" level="1" name="Summon Wild Hog Cannon" race="dwarf" min_level="85"/>
 			<skill id="19090" level="1" name="Summon Swoop Cannon" race="dwarf" min_level="85"/>
 			<skill id="1321" level="1" name="Dwarven Craft" race="dwarf" min_level="85"/>
+			<skill id="172" level="2" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="3" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="4" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="5" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="6" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="7" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="8" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="9" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="10" name="Create Item" min_level="85" race="dwarf"/>
 			<skill id="172" level="11" name="Create Item" min_level="85" race="dwarf"/>
 			<skill id="172" level="12" name="Create Item" min_level="90" race="dwarf"/>
 			<skill id="172" level="13" name="Create Item" min_level="95" race="dwarf"/>
@@ -19122,6 +19171,15 @@
 			<skill id="19089" level="1" name="Summon Wild Hog Cannon" race="dwarf" min_level="85"/>
 			<skill id="19090" level="1" name="Summon Swoop Cannon" race="dwarf" min_level="85"/>
 			<skill id="1321" level="1" name="Dwarven Craft" race="dwarf" min_level="85"/>
+			<skill id="172" level="2" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="3" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="4" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="5" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="6" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="7" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="8" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="9" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="10" name="Create Item" min_level="85" race="dwarf"/>
 			<skill id="172" level="11" name="Create Item" min_level="85" race="dwarf"/>
 			<skill id="172" level="12" name="Create Item" min_level="90" race="dwarf"/>
 			<skill id="172" level="13" name="Create Item" min_level="95" race="dwarf"/>
@@ -19341,6 +19399,15 @@
 			<skill id="19089" level="1" name="Summon Wild Hog Cannon" race="dwarf" min_level="85"/>
 			<skill id="19090" level="1" name="Summon Swoop Cannon" race="dwarf" min_level="85"/>
 			<skill id="1321" level="1" name="Dwarven Craft" race="dwarf" min_level="85"/>
+			<skill id="172" level="2" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="3" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="4" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="5" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="6" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="7" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="8" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="9" name="Create Item" min_level="85" race="dwarf"/>
+			<skill id="172" level="10" name="Create Item" min_level="85" race="dwarf"/>
 			<skill id="172" level="11" name="Create Item" min_level="85" race="dwarf"/>
 			<skill id="172" level="12" name="Create Item" min_level="90" race="dwarf"/>
 			<skill id="172" level="13" name="Create Item" min_level="95" race="dwarf"/>
