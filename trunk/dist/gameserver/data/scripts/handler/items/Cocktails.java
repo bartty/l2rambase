@@ -12,10 +12,15 @@
  */
 package handler.items;
 
+import lineage2.gameserver.Config;
+import lineage2.gameserver.model.Effect;
 import lineage2.gameserver.model.Player;
+import lineage2.gameserver.model.Skill;
 import lineage2.gameserver.model.items.ItemInstance;
 import lineage2.gameserver.network.serverpackets.MagicSkillUse;
 import lineage2.gameserver.network.serverpackets.SystemMessage;
+import lineage2.gameserver.skills.effects.EffectTemplate;
+import lineage2.gameserver.stats.Env;
 import lineage2.gameserver.tables.SkillTable;
 
 /**
@@ -58,52 +63,18 @@ public class Cocktails extends SimpleItemHandler
 	 */
 	private static final int[] luxury_fighter_list =
 	{
-		364,
-		264,
-		529,
-		265,
-		349,
-		305,
-		304,
-		267,
-		268,
-		530,
-		274,
-		275,
-		277,
-		310,
-		271,
-		1499,
-		1519,
-		1502,
-		1503,
-		1504,
-		1501,
-		1397,
-		1243,
-		1240,
-		1043,
-		1044,
-		834,
-		1444,
-		1363,
-		4699,
-		4703,
-		825,
-		828,
-		1352,
-		1353,
-		1354,
-		1392,
-		1393,
-		1032,
-		1035,
-		1182,
-		1191,
-		1033,
-		1189,
-		1548,
-		1259,
+		364,264,529,265,
+		349,305,304,267,
+		268,530,274,275,
+		277,310,271,1499,
+		1519,1502,1503,1504,
+		1501,1397,1243,1240,
+		1043,1044,834,1444,
+		1363,4699,4703,825,
+		828,1352,1353,1354,
+		1392,1393,1032,1035,
+		1182,1191,1033,1189,
+		1548,1259,
 	};
 	
 	/**
@@ -217,18 +188,32 @@ public class Cocktails extends SimpleItemHandler
 				break;
 				
 			case 30274:
-				for (int skill : luxury_fighter_list)
+				for (int tmp_skill : luxury_fighter_list)
 				{
-					player.broadcastPacket(new MagicSkillUse(player, player, skill, 1, 0, 0));
-					player.altOnMagicUseTimer(player, SkillTable.getInstance().getInfo(skill, 1));
+					Skill skill = SkillTable.getInstance().getInfo(tmp_skill, SkillTable.getInstance().getBaseLevel(tmp_skill));
+					for (EffectTemplate et : skill.getEffectTemplates())
+					{
+						Env env = new Env(player, player, skill);
+						Effect effect = et.getEffect(env);
+						effect.setPeriod((60*60)*1000);
+						player.getEffectList().addEffect(effect);
+						player.updateEffectIconsImpl();
+					}
 				}
 				break;
 				
 			case 34082:
-				for (int skill : luxury_mage_list)
+				for (int tmp_skill : luxury_mage_list)
 				{
-					player.broadcastPacket(new MagicSkillUse(player, player, skill, 1, 0, 0));
-					player.altOnMagicUseTimer(player, SkillTable.getInstance().getInfo(skill, 1));
+					Skill skill = SkillTable.getInstance().getInfo(tmp_skill, SkillTable.getInstance().getBaseLevel(tmp_skill));
+					for (EffectTemplate et : skill.getEffectTemplates())
+					{
+						Env env = new Env(player, player, skill);
+						Effect effect = et.getEffect(env);
+						effect.setPeriod((60*60)*1000);
+						player.getEffectList().addEffect(effect);
+						player.updateEffectIconsImpl();
+					}
 				}
 				break;
 				
