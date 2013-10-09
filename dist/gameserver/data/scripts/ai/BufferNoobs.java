@@ -43,7 +43,7 @@ public class BufferNoobs extends DefaultAI
 		265,
 		269,
 		276,
-		275;
+		275,
 		310,
 		273,
 		365,
