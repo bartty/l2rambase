@@ -298,16 +298,18 @@ id - порядковый номер сета (хранение, соответ�
 		<set_skills parts="4" skills="3536-1"/>
 	</set>
 	<!--S GRADE-->
-	<set chests="6373;30757" legs="6374;11505;30762" head="6378;11509;30758" gloves="6375;11506;30761" feet="6376;11507;30760" shield="6377;11508;30759" shield_skills="3554-1" enchant6skills="3623-1">	<!--Imperial Crusader Set (Heavy)-->
+	<set chests="6373;30757;21775" legs="6374;11505;30762;21776" head="6378;11509;30758;21779" gloves="6375;11506;30761;21777" feet="6376;11507;30760;21788" shield="6377;11508;30759;21780" shield_skills="3554-1" enchant6skills="3623-1">	<!--Imperial Crusader Set (Heavy)-->
 		<set_skills parts="5" skills="3553-1"/>
 	</set>
-	<set chests="6379;31412" head="6382;11486;31411" gloves="6380;11483;31414" feet="6381;11484;31413" enchant6skills="3624-1">	<!--Draconic Leather Set (Light)-->
+	<set chests="6379;31412;21782" head="6382;11486;31411;21785" gloves="6380;11483;31414;21783" feet="6381;11484;31413;21784" enchant6skills="3624-1">	<!--Draconic Leather Set (Light)-->
 		<set_skills parts="4" skills="3555-1"/>
 	</set>
-	<set chests="6383;31298" head="6386;11490;31296" gloves="6384;11487;31299" feet="6385;11489;31297" enchant6skills="3625-1">	<!--Major Arcana Robe Set (Robe)-->
+	<set chests="6383;31298;21787" head="6386;11490;31296;21790" gloves="6384;11487;31299;21788" feet="6385;11489;31297;21789" enchant6skills="3625-1">	<!--Major Arcana Robe Set (Robe)-->
 		<set_skills parts="4" skills="3556-1"/>
-	</set>			
-	<set chests="9432;33602" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Tunic Set (Robe)-->
+	</set>
+	
+	<!--Dynasty Tunic Set (Robe)-->
+	<set chests="9432;33602;21806" legs="9437;11558;33603;21807" head="9438;11539;33604;21808" gloves="9439;11514;33605;21809" feet="9440;11533;33606;21810" enchant6skills="3625-1">	<!--Dynasty Tunic Set (Robe)-->
 		<set_skills parts="5" skills="3416-1"/>
 	</set>
 	<set chests="9433" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Tunic Healer Set (Robe)-->
@@ -322,7 +324,8 @@ id - порядковый номер сета (хранение, соответ�
 	<set chests="9436" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Tunic Human Wizard Set (Robe)-->
 		<set_skills parts="5" skills="3357-1"/>
 	</set>
-	<set chests="9416;33591" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Blast Plate Set (Heavy)-->
+	<!--Dynasty Blast Plate Set (Heavy)-->
+	<set chests="9416;33591;21793" legs="9421;11512;33592;21794" head="9422;11557;33593;21797" gloves="9423;11513;33594;21795" feet="9424;11526;33595;21796" shield="9441;11532;33596;21798" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Blast Plate Set (Heavy)-->
 		<set_skills parts="5" skills="3412-1"/>
 	</set>
 	<set chests="9417" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Blast Plate Shield Master Set (Heavy)-->
@@ -337,7 +340,8 @@ id - порядковый номер сета (хранение, соответ�
 	<set chests="9420" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Blast Plate Bard Set (Heavy)-->
 		<set_skills parts="5" skills="3351-1"/>
 	</set>
-	<set chests="9425;33597" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Leather Armor Set (Light)-->
+	<!--Dynasty Leather Armor Set (Light)-->
+	<set chests="9425;33597;21800" legs="9428;11516;33598;21801" head="9429;11525;33599;21802" gloves="9430;11515;33600;21803" feet="9431;11524;33601;21804" enchant6skills="3624-1">	<!--Dynasty Leather Armor Set (Light)-->
 		<set_skills parts="5" skills="3413-1"/>
 	</set>
 	<set chests="9426" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Leather Armor Dagger Master Set (Light)-->

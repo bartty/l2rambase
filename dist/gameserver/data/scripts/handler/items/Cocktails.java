@@ -38,7 +38,9 @@ public class Cocktails extends SimpleItemHandler
 		14739,
 		32316,
 		33862,
-		33766
+		33766,
+		30274,
+		34082
 	};
 	
 	/**
@@ -50,6 +52,75 @@ public class Cocktails extends SimpleItemHandler
 	{
 		return ITEM_IDS;
 	}
+	
+	/**
+	 * Field luxury_fighter_list.
+	 */
+	private static final int[] luxury_fighter_list =
+	{
+		364,
+		264,
+		529,
+		265,
+		349,
+		305,
+		304,
+		267,
+		268,
+		530,
+		274,
+		275,
+		277,
+		310,
+		271,
+		1499,
+		1519,
+		1502,
+		1503,
+		1504,
+		1501,
+		1397,
+		1243,
+		1240,
+		1043,
+		1044,
+		834,
+		1444,
+		1363,
+		4699,
+		4703,
+		825,
+		828,
+		1352,
+		1353,
+		1354,
+		1392,
+		1393,
+		1032,
+		1035,
+		1182,
+		1191,
+		1033,
+		1189,
+		1548,
+		1259,
+	};
+	
+	/**
+	 * Field luxury_mage_list.
+	 */
+	private static final int[] luxury_mage_list =
+	{
+		264,529,270,265,363,
+		349,305,308,304,267,
+		268,530,276,272,365,
+		273,1503,1504,1501,1500,
+		1085,1062,1303,1078,1397,
+		1044,834,1444,1443,1413,
+		4700,4703,830,1352,1353,
+		1354,1392,1393,1032,1035,
+		1182,1191,1033,1189,1548,1259,
+	};
 	
 	/**
 	 * Field bless_list.
@@ -144,6 +215,23 @@ public class Cocktails extends SimpleItemHandler
 					player.altOnMagicUseTimer(player, SkillTable.getInstance().getInfo(skill, 1));
 				}
 				break;
+				
+			case 30274:
+				for (int skill : luxury_fighter_list)
+				{
+					player.broadcastPacket(new MagicSkillUse(player, player, skill, 1, 0, 0));
+					player.altOnMagicUseTimer(player, SkillTable.getInstance().getInfo(skill, 1));
+				}
+				break;
+				
+			case 34082:
+				for (int skill : luxury_mage_list)
+				{
+					player.broadcastPacket(new MagicSkillUse(player, player, skill, 1, 0, 0));
+					player.altOnMagicUseTimer(player, SkillTable.getInstance().getInfo(skill, 1));
+				}
+				break;
+				
 			case 10179:
 			case 15357:
 			case 20394:
@@ -153,6 +241,7 @@ public class Cocktails extends SimpleItemHandler
 					player.altOnMagicUseTimer(player, SkillTable.getInstance().getInfo(skill, 1));
 				}
 				break;
+				
 			case 32316:
 			case 33862:
 			case 33766:
@@ -162,6 +251,7 @@ public class Cocktails extends SimpleItemHandler
 					player.altOnMagicUseTimer(player, SkillTable.getInstance().getInfo(skill, 1));
 				}
 				break;
+				
 			case 14739:
 				player.broadcastPacket(new MagicSkillUse(player, player, 2873, 1, 0, 0));
 				player.altOnMagicUseTimer(player, SkillTable.getInstance().getInfo(2891, 6));

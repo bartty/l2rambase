@@ -193,9 +193,6 @@ public class Mentoring
 	{
 		if (mentor.getMenteeMentorList().someOneOnline(false) || mentor.getMenteeMentorList().someOneOnline(true))
 		{
-			mentor.getEffectList().removeEffect(effectForMentor);
-			
-			SkillTable.getInstance().getInfo(effectForMentor, 1).getEffects(mentor, mentor, false, false);
 			return;
 		}
 		mentor.getEffectList().stopEffect(effectForMentor);
