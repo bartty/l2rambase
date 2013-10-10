@@ -18,7 +18,7 @@
 			<add stat="pAtk" order="0x10" value="225"/>
 			<add stat="mAtk" order="0x10" value="175"/>
 			<set stat="atkBaseSpeed" order="0x08" value="379"/>
-			<set stat="baseCrit" order="0x08" value="4.0"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
 			<add stat="accCombat" order="0x10" value="4.0"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
@@ -41,7 +41,7 @@
 			<add stat="pAtk" order="0x10" value="246"/>
 			<add stat="mAtk" order="0x10" value="132"/>
 			<set stat="atkBaseSpeed" order="0x08" value="433"/>
-			<set stat="baseCrit" order="0x08" value="12.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
 			<add stat="accCombat" order="0x10" value="-3.0"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
@@ -65,7 +65,7 @@
 			<add stat="pAtk" order="0x10" value="581"/>
 			<add stat="mAtk" order="0x10" value="132"/>
 			<set stat="atkBaseSpeed" order="0x08" value="293"/>
-			<set stat="baseCrit" order="0x08" value="12.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
 			<add stat="accCombat" order="0x10" value="-3.0"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
@@ -88,7 +88,7 @@
 			<add stat="pAtk" order="0x10" value="281"/>
 			<add stat="mAtk" order="0x10" value="132"/>
 			<set stat="atkBaseSpeed" order="0x08" value="379"/>
-			<set stat="baseCrit" order="0x08" value="4.0"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
 			<add stat="accCombat" order="0x10" value="4.0"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
@@ -111,7 +111,7 @@
 			<add stat="pAtk" order="0x10" value="281"/>
 			<add stat="mAtk" order="0x10" value="132"/>
 			<set stat="atkBaseSpeed" order="0x08" value="379"/>
-			<set stat="baseCrit" order="0x08" value="8.0"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -133,7 +133,7 @@
 			<add stat="pAtk" order="0x10" value="342"/>
 			<add stat="mAtk" order="0x10" value="132"/>
 			<set stat="atkBaseSpeed" order="0x08" value="325"/>
-			<set stat="baseCrit" order="0x08" value="8.0"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -155,7 +155,7 @@
 			<add stat="pAtk" order="0x10" value="342"/>
 			<add stat="mAtk" order="0x10" value="132"/>
 			<set stat="atkBaseSpeed" order="0x08" value="325"/>
-			<set stat="baseCrit" order="0x08" value="4.0"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
 			<add stat="accCombat" order="0x10" value="4.0"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
@@ -178,7 +178,7 @@
 			<add stat="pAtk" order="0x10" value="342"/>
 			<add stat="mAtk" order="0x10" value="132"/>
 			<set stat="atkBaseSpeed" order="0x08" value="325"/>
-			<set stat="baseCrit" order="0x08" value="8.0"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -200,7 +200,7 @@
 			<add stat="pAtk" order="0x10" value="281"/>
 			<add stat="mAtk" order="0x10" value="132"/>
 			<set stat="atkBaseSpeed" order="0x08" value="325"/>
-			<set stat="baseCrit" order="0x08" value="8.0"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
 			<add stat="accCombat" order="0x10" value="-3.0"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
@@ -223,7 +223,7 @@
 			<add stat="pAtk" order="0x10" value="304"/>
 			<add stat="mAtk" order="0x10" value="132"/>
 			<set stat="atkBaseSpeed" order="0x08" value="350"/>
-			<set stat="baseCrit" order="0x08" value="8.0"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
 			<add stat="accCombat" order="0x10" value="2.0"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
@@ -246,7 +246,7 @@
 			<add stat="pAtk" order="0x10" value="255"/>
 			<add stat="mAtk" order="0x10" value="132"/>
 			<set stat="atkBaseSpeed" order="0x08" value="406"/>
-			<set stat="baseCrit" order="0x08" value="10.0"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
 			<add stat="accCombat" order="0x10" value="-1.0"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
@@ -269,7 +269,7 @@
 			<add stat="pAtk" order="0x10" value="356"/>
 			<add stat="mAtk" order="0x10" value="132"/>
 			<set stat="atkBaseSpeed" order="0x08" value="303"/>
-			<set stat="baseCrit" order="0x08" value="10.0"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
 			<add stat="accCombat" order="0x10" value="-1.0"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
@@ -292,7 +292,7 @@
 			<add stat="pAtk" order="0x10" value="267"/>
 			<add stat="mAtk" order="0x10" value="202"/>
 			<set stat="atkBaseSpeed" order="0x08" value="379"/>
-			<set stat="baseCrit" order="0x08" value="8.0"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -314,7 +314,7 @@
 			<add stat="pAtk" order="0x10" value="291"/>
 			<add stat="mAtk" order="0x10" value="151"/>
 			<set stat="atkBaseSpeed" order="0x08" value="433"/>
-			<set stat="baseCrit" order="0x08" value="12.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
 			<add stat="accCombat" order="0x10" value="-3.0"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
@@ -338,7 +338,7 @@
 			<add stat="pAtk" order="0x10" value="654"/>
 			<add stat="mAtk" order="0x10" value="151"/>
 			<set stat="atkBaseSpeed" order="0x08" value="293"/>
-			<set stat="baseCrit" order="0x08" value="12.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
 			<add stat="accCombat" order="0x10" value="-3.0"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
@@ -361,7 +361,7 @@
 			<add stat="pAtk" order="0x10" value="333"/>
 			<add stat="mAtk" order="0x10" value="151"/>
 			<set stat="atkBaseSpeed" order="0x08" value="379"/>
-			<set stat="baseCrit" order="0x08" value="4.0"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
 			<add stat="accCombat" order="0x10" value="4.0"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
@@ -384,7 +384,7 @@
 			<add stat="pAtk" order="0x10" value="333"/>
 			<add stat="mAtk" order="0x10" value="151"/>
 			<set stat="atkBaseSpeed" order="0x08" value="379"/>
-			<set stat="baseCrit" order="0x08" value="8.0"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -406,7 +406,7 @@
 			<add stat="pAtk" order="0x10" value="405"/>
 			<add stat="mAtk" order="0x10" value="151"/>
 			<set stat="atkBaseSpeed" order="0x08" value="325"/>
-			<set stat="baseCrit" order="0x08" value="8.0"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -428,7 +428,7 @@
 			<add stat="pAtk" order="0x10" value="405"/>
 			<add stat="mAtk" order="0x10" value="151"/>
 			<set stat="atkBaseSpeed" order="0x08" value="325"/>
-			<set stat="baseCrit" order="0x08" value="4.0"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
 			<add stat="accCombat" order="0x10" value="4.0"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
@@ -451,7 +451,7 @@
 			<add stat="pAtk" order="0x10" value="405"/>
 			<add stat="mAtk" order="0x10" value="151"/>
 			<set stat="atkBaseSpeed" order="0x08" value="325"/>
-			<set stat="baseCrit" order="0x08" value="8.0"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -473,7 +473,7 @@
 			<add stat="pAtk" order="0x10" value="333"/>
 			<add stat="mAtk" order="0x10" value="151"/>
 			<set stat="atkBaseSpeed" order="0x08" value="325"/>
-			<set stat="baseCrit" order="0x08" value="8.0"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
 			<add stat="accCombat" order="0x10" value="-3.0"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
@@ -496,7 +496,7 @@
 			<add stat="pAtk" order="0x10" value="361"/>
 			<add stat="mAtk" order="0x10" value="151"/>
 			<set stat="atkBaseSpeed" order="0x08" value="350"/>
-			<set stat="baseCrit" order="0x08" value="8.0"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
 			<add stat="accCombat" order="0x10" value="2.0"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
@@ -519,7 +519,7 @@
 			<add stat="pAtk" order="0x10" value="302"/>
 			<add stat="mAtk" order="0x10" value="151"/>
 			<set stat="atkBaseSpeed" order="0x08" value="406"/>
-			<set stat="baseCrit" order="0x08" value="10.0"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
 			<add stat="accCombat" order="0x10" value="-1.0"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
@@ -542,7 +542,7 @@
 			<add stat="pAtk" order="0x10" value="401"/>
 			<add stat="mAtk" order="0x10" value="151"/>
 			<set stat="atkBaseSpeed" order="0x08" value="303"/>
-			<set stat="baseCrit" order="0x08" value="10.0"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
 			<add stat="accCombat" order="0x10" value="-1.0"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
