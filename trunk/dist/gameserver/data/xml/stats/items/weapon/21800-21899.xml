@@ -14,12 +14,15 @@
 		<equip>
 			<slot id="RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="3047" level="2"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="225"/>
 			<add stat="mAtk" order="0x10" value="175"/>
-			<set stat="atkBaseSpeed" order="0x08" value="379"/>
 			<set stat="baseCrit" order="0x08" value="40"/>
-			<add stat="accCombat" order="0x10" value="4.0"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<add stat="accCombat" order="0x10" value="5.0000"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -37,12 +40,15 @@
 		<equip>
 			<slot id="RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="3572" level="1"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="246"/>
 			<add stat="mAtk" order="0x10" value="132"/>
-			<set stat="atkBaseSpeed" order="0x08" value="433"/>
 			<set stat="baseCrit" order="0x08" value="120"/>
-			<add stat="accCombat" order="0x10" value="-3.0"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<add stat="accCombat" order="0x10" value="-4.0000"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -61,12 +67,15 @@
 		<equip>
 			<slot id="LEFT_RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="3567" level="1"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="581"/>
 			<add stat="mAtk" order="0x10" value="132"/>
-			<set stat="atkBaseSpeed" order="0x08" value="293"/>
 			<set stat="baseCrit" order="0x08" value="120"/>
-			<add stat="accCombat" order="0x10" value="-3.0"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<add stat="accCombat" order="0x10" value="-4.0000"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -84,12 +93,15 @@
 		<equip>
 			<slot id="RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="3013" level="3"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="281"/>
 			<add stat="mAtk" order="0x10" value="132"/>
-			<set stat="atkBaseSpeed" order="0x08" value="379"/>
 			<set stat="baseCrit" order="0x08" value="40"/>
-			<add stat="accCombat" order="0x10" value="4.0"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<add stat="accCombat" order="0x10" value="5.0000"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -107,11 +119,14 @@
 		<equip>
 			<slot id="RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="3566" level="1"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="281"/>
 			<add stat="mAtk" order="0x10" value="132"/>
-			<set stat="atkBaseSpeed" order="0x08" value="379"/>
 			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -129,11 +144,14 @@
 		<equip>
 			<slot id="LEFT_RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="342"/>
 			<add stat="mAtk" order="0x10" value="132"/>
-			<set stat="atkBaseSpeed" order="0x08" value="325"/>
 			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -151,12 +169,14 @@
 		<equip>
 			<slot id="LEFT_RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="342"/>
 			<add stat="mAtk" order="0x10" value="132"/>
-			<set stat="atkBaseSpeed" order="0x08" value="325"/>
 			<set stat="baseCrit" order="0x08" value="40"/>
-			<add stat="accCombat" order="0x10" value="4.0"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -196,12 +216,14 @@
 		<equip>
 			<slot id="LEFT_RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="8297" level="1"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="281"/>
 			<add stat="mAtk" order="0x10" value="132"/>
-			<set stat="atkBaseSpeed" order="0x08" value="325"/>
 			<set stat="baseCrit" order="0x08" value="80"/>
-			<add stat="accCombat" order="0x10" value="-3.0"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -219,12 +241,14 @@
 		<equip>
 			<slot id="LEFT_RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="304"/>
 			<add stat="mAtk" order="0x10" value="132"/>
-			<set stat="atkBaseSpeed" order="0x08" value="350"/>
 			<set stat="baseCrit" order="0x08" value="80"/>
-			<add stat="accCombat" order="0x10" value="2.0"/>
+			<set stat="atkBaseSpeed" order="0x08" value="350"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -242,6 +266,9 @@
 		<equip>
 			<slot id="RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="255"/>
 			<add stat="mAtk" order="0x10" value="132"/>
@@ -265,12 +292,15 @@
 		<equip>
 			<slot id="LEFT_RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="356"/>
 			<add stat="mAtk" order="0x10" value="132"/>
-			<set stat="atkBaseSpeed" order="0x08" value="303"/>
+			<add stat="accCombat" order="0x10" value="-2.0"/>
 			<set stat="baseCrit" order="0x08" value="100"/>
-			<add stat="accCombat" order="0x10" value="-1.0"/>
+			<set stat="atkBaseSpeed" order="0x08" value="303"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -288,6 +318,9 @@
 		<equip>
 			<slot id="RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="3047" level="3"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="267"/>
 			<add stat="mAtk" order="0x10" value="202"/>
@@ -310,12 +343,15 @@
 		<equip>
 			<slot id="RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="3572" level="2"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="291"/>
 			<add stat="mAtk" order="0x10" value="151"/>
-			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
 			<set stat="baseCrit" order="0x08" value="120"/>
-			<add stat="accCombat" order="0x10" value="-3.0"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -334,12 +370,15 @@
 		<equip>
 			<slot id="LEFT_RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="654"/>
 			<add stat="mAtk" order="0x10" value="151"/>
-			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
 			<set stat="baseCrit" order="0x08" value="120"/>
-			<add stat="accCombat" order="0x10" value="-3.0"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -357,12 +396,14 @@
 		<equip>
 			<slot id="RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="3013" level="5"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="333"/>
 			<add stat="mAtk" order="0x10" value="151"/>
-			<set stat="atkBaseSpeed" order="0x08" value="379"/>
 			<set stat="baseCrit" order="0x08" value="40"/>
-			<add stat="accCombat" order="0x10" value="4.0"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -380,11 +421,14 @@
 		<equip>
 			<slot id="RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="333"/>
 			<add stat="mAtk" order="0x10" value="151"/>
-			<set stat="atkBaseSpeed" order="0x08" value="379"/>
 			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -402,11 +446,14 @@
 		<equip>
 			<slot id="LEFT_RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="405"/>
 			<add stat="mAtk" order="0x10" value="151"/>
-			<set stat="atkBaseSpeed" order="0x08" value="325"/>
 			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -424,12 +471,14 @@
 		<equip>
 			<slot id="LEFT_RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="405"/>
 			<add stat="mAtk" order="0x10" value="151"/>
-			<set stat="atkBaseSpeed" order="0x08" value="325"/>
 			<set stat="baseCrit" order="0x08" value="40"/>
-			<add stat="accCombat" order="0x10" value="4.0"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -469,12 +518,18 @@
 		<equip>
 			<slot id="LEFT_RIGHT_HAND"/>
 		</equip>
+		<triggers>
+			<trigger id="3070" level="1" type="CRIT" chance="100"/>
+		</triggers>
+		<skills>
+			<skill id="3552" level="2"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="333"/>
 			<add stat="mAtk" order="0x10" value="151"/>
-			<set stat="atkBaseSpeed" order="0x08" value="325"/>
 			<set stat="baseCrit" order="0x08" value="80"/>
-			<add stat="accCombat" order="0x10" value="-3.0"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<add stat="accCombat" order="0x10" value="-4.0000"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -492,6 +547,9 @@
 		<equip>
 			<slot id="LEFT_RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="3566" level="2"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="361"/>
 			<add stat="mAtk" order="0x10" value="151"/>
@@ -515,12 +573,17 @@
 		<equip>
 			<slot id="RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="3566" level="2"/>
+		</skills>
+		<enchant4_skill id="3426" level="1"/>
+		<!--Maximum Ability-->
 		<for>
 			<add stat="pAtk" order="0x10" value="302"/>
 			<add stat="mAtk" order="0x10" value="151"/>
-			<set stat="atkBaseSpeed" order="0x08" value="406"/>
 			<set stat="baseCrit" order="0x08" value="100"/>
-			<add stat="accCombat" order="0x10" value="-1.0"/>
+			<set stat="atkBaseSpeed" order="0x08" value="406"/>
+			<add stat="accCombat" order="0x10" value="-2.0000"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
@@ -538,12 +601,15 @@
 		<equip>
 			<slot id="LEFT_RIGHT_HAND"/>
 		</equip>
+		<skills>
+			<skill id="3567" level="2"/>
+		</skills>
 		<for>
 			<add stat="pAtk" order="0x10" value="401"/>
 			<add stat="mAtk" order="0x10" value="151"/>
-			<set stat="atkBaseSpeed" order="0x08" value="303"/>
 			<set stat="baseCrit" order="0x08" value="100"/>
-			<add stat="accCombat" order="0x10" value="-1.0"/>
+			<set stat="atkBaseSpeed" order="0x08" value="303"/>
+			<add stat="accCombat" order="0x10" value="-2.0000"/>
 			<enchant stat="pAtk" order="0x40" value="0"/>
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
