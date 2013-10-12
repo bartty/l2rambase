@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE list SYSTEM "item.dtd">
 <list>
-	<weapon id="22361" name="Эмеральдовый Меч">
+	<weapon id="22361" name="Emerald Sword">
 		<set name="crystal_type" value="NONE"/>
 		<set name="type" value="SWORD"/>
 		<set name="ex_type" value="SWORD"/>
@@ -20,7 +20,7 @@
 		</for>
 	</weapon>  
     
-	<weapon id="22362" name="Эмеральдовые Парные Мечи">
+	<weapon id="22362" name="Emerald Dual Sword">
 		<set name="crystal_type" value="NONE"/>
 		<set name="type" value="DUAL"/>
 		<set name="ex_type" value="DUAL_SWORD"/>
@@ -39,7 +39,7 @@
 		</for>
 	</weapon>
 
-	<weapon id="22365" name="Лапа Черного Медведя">
+	<weapon id="22365" name="Black Bear Paw">
 		<set name="crystal_type" value="NONE"/>
 		<set name="type" value="DUAL"/>
 		<set name="ex_type" value="DUAL_SWORD"/>
@@ -58,7 +58,7 @@
 		</for>
 	</weapon>
     
-	<weapon id="22366" name="Лапа Черного Медведя">
+	<weapon id="22366" name="Black Bear Paw">
 		<set name="crystal_type" value="NONE"/>
 		<set name="type" value="DUAL"/>
 		<set name="ex_type" value="DUAL_SWORD"/>
@@ -77,7 +77,7 @@
 		</for>
 	</weapon>    
     
-	<weapon id="22387" name="Коса Хэллоуина">
+	<weapon id="22387" name="Halloween Staf">
 		<set name="crystal_type" value="NONE"/>
 		<set name="type" value="BLUNT"/>
 		<set name="ex_type" value="BLUNT_WEAPON"/>
@@ -96,7 +96,7 @@
 		</for>
 	</weapon>    
     
-	<weapon id="22388" name="Коса Хэллоуина">
+	<weapon id="22388" name="Halloween Staf">
 		<set name="crystal_type" value="NONE"/>
 		<set name="type" value="BLUNT"/>
 		<set name="ex_type" value="BLUNT_WEAPON"/>

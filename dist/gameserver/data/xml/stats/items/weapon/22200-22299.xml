@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE list SYSTEM "item.dtd">
 <list>
-	<weapon id="22281" name="Жезл Трансформации в Суджин" add_name="7 дней (ивент)">
+	<weapon id="22281" name="Rod of Transformation Sugino" add_name="7 days (Event)">
 		<!--Done by ALF-->
 		<set name="icon" value="BranchSys2.icon.br_blessed_taigirl_i00"/>
 		<set name="type" value="SWORD"/>
@@ -20,7 +20,7 @@
 		</for>
 		<set name="crystallizable" value="false"/>
 	</weapon>
-	<weapon id="22283" name="Жезл Трансформации в Трежера" add_name="7 дней (ивент)">
+	<weapon id="22283" name="Rod of Transformation in Treasury" add_name="7 days (Event)">
 		<!--Done by ALF-->
 		<set name="icon" value="BranchSys2.icon.br_blessed_taiboy_i00"/>
 		<set name="type" value="SWORD"/>
