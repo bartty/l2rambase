@@ -169,7 +169,7 @@ public class KartiaLabyrinth85Solo extends Reflection
 			for (Player p : getPlayers())
 			{
 				p.sendPacket(new SystemMessage(2106).addNumber(5));
-				p.addExpAndSp(975674677, 8509978, 0, 0, true, false);
+				p.addExpAndSp(49756746, 850997, 0, 0, true, false);
 			}
 		}
 	}
