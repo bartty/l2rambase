@@ -2071,9 +2071,9 @@
 		<skills>
 			<skill id="4299" level="1"/>	<!--Race-->
 			<skill id="5462" level="1"/>	<!--Fire Attacks-->
-			<!--<skill id="4410" level="15" />	Strong P. Atk.-->
-			<!--<skill id="4412" level="15" />	Strong P. Def.-->
-			<!--<skill id="4413" level="5" />	Very Weak M. Def.-->
+			<skill id="4410" level="15" />	<!--Strong P. Atk.-->
+			<skill id="4412" level="15" />        <!--	Strong P. Def.-->
+			<skill id="4413" level="5" />	<!--Very Weak M. Def.-->
 			<skill id="4438" level="1"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="1"/>	<!--Greater Resist Hold-->
 			<skill id="4441" level="1"/>	<!--Greater Resist Mental Derangement-->
@@ -2165,9 +2165,9 @@
 		<skills>
 			<skill id="4416" level="1"/>	<!--Undead-->
 			<skill id="5462" level="1"/>	<!--Fire Attacks-->
-			<!--<skill id="4410" level="15" />	Strong P. Atk.-->
-			<!--<skill id="4412" level="15" />	Strong P. Def.-->
-			<!--<skill id="4413" level="5" />	Very Weak M. Def.-->
+			<skill id="4410" level="15" />	<!--Strong P. Atk.-->
+			<skill id="4412" level="15" />        <!--	Strong P. Def.-->
+			<skill id="4413" level="5" />	<!--Very Weak M. Def.-->
 			<skill id="4438" level="1"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="1"/>	<!--Greater Resist Hold-->
 			<skill id="4441" level="1"/>	<!--Greater Resist Mental Derangement-->
@@ -2260,8 +2260,8 @@
 		<skills>
 			<skill id="4299" level="4"/>	<!--Race-->
 			<skill id="5462" level="1"/>	<!--Fire Attacks-->
-			<!--<skill id="4411" level="15" />	Strong M. Atk.-->
-			<!--<skill id="4413" level="6" />	Very Weak M. Def.-->
+			<skill id="4411" level="15" />	<!--Strong M. Atk.-->
+			<skill id="4413" level="6" />	<!--Very Weak M. Def.-->
 			<skill id="4285" level="4"/>	<!--Resist Sleep Attacks-->
 			<skill id="4287" level="4"/>	<!--Resist Hold Attacks-->
 			<skill id="4441" level="5"/>	<!--Greater Resist Mental Derangement-->
@@ -2356,8 +2356,8 @@
 		<skills>
 			<skill id="4301" level="4"/>	<!--Race-->
 			<skill id="5467" level="1"/>	<!--Dark Attacks-->
-			<!--<skill id="4411" level="15" />	Strong M. Atk.-->
-			<!--<skill id="4413" level="6" />	Very Weak M. Def.-->
+			<skill id="4411" level="15" />	<!--Strong M. Atk.-->
+			<skill id="4413" level="6" />	<!--Very Weak M. Def.-->
 			<skill id="4274" level="4"/>	<!--Blunt Weapon Weak Point-->
 			<skill id="4285" level="4"/>	<!--Resist Sleep Attacks-->
 			<skill id="4287" level="4"/>	<!--Resist Hold Attacks-->
@@ -2448,8 +2448,8 @@
 		<skills>
 			<skill id="4301" level="1"/>	<!--Race-->
 			<skill id="5467" level="1"/>	<!--Dark Attacks-->
-			<!--<skill id="4411" level="15" />	Strong M. Atk.-->
-			<!--<skill id="4413" level="6" />	Very Weak M. Def.-->
+			<skill id="4411" level="15" />	<!--Strong M. Atk.-->
+			<skill id="4413" level="6" />	<!--Very Weak M. Def.-->
 			<skill id="4274" level="4"/>	<!--Blunt Weapon Weak Point-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
@@ -2540,8 +2540,8 @@
 		<skills>
 			<skill id="4299" level="4"/>	<!--Race-->
 			<skill id="5464" level="1"/>	<!--Wind Attacks-->
-			<!--<skill id="4411" level="15" />	Strong M. Atk.-->
-			<!--<skill id="4413" level="17" />	Very Strong M. Def.-->
+			<skill id="4411" level="15" />	<!--Strong M. Atk.-->
+			<skill id="4413" level="17" />	<!--Very Strong M. Def.-->
 			<skill id="4285" level="4"/>	<!--Resist Sleep Attacks-->
 			<skill id="4287" level="4"/>	<!--Resist Hold Attacks-->
 			<skill id="4441" level="5"/>	<!--Greater Resist Mental Derangement-->
@@ -2630,10 +2630,10 @@
 		<skills>
 			<skill id="4416" level="12"/>	<!--Bugs-->
 			<skill id="5463" level="1"/>	<!--Water Attacks-->
-			<!--<skill id="4410" level="13" />	Slightly Strong P. Atk.-->
-			<!--<skill id="4411" level="13" />	Slightly Strong M. Atk.-->
-			<!--<skill id="4412" level="15" />	Strong P. Def.-->
-			<!--<skill id="4413" level="5" />	Very Weak M. Def.-->
+			<skill id="4410" level="13" />	<!--Slightly Strong P. Atk.-->
+			<skill id="4411" level="13" />	 <!--Slightly Strong M. Atk.-->
+			<skill id="4412" level="15" />        <!--	Strong P. Def.-->
+			<skill id="4413" level="5" />	<!--Very Weak M. Def.-->
 			<skill id="4274" level="4"/>	<!--Blunt Weapon Weak Point-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
@@ -2727,10 +2727,10 @@
 		<skills>
 			<skill id="4416" level="10"/>	<!--Dragons-->
 			<skill id="5465" level="1"/>	<!--Earth Attacks-->
-			<!--<skill id="4410" level="15" />	Strong P. Atk.-->
-			<!--<skill id="4411" level="15" />	Strong M. Atk.-->
-			<!--<skill id="4412" level="15" />	Strong P. Def.-->
-			<!--<skill id="4413" level="13" />	Slightly Strong M. Def.-->
+			<skill id="4410" level="15" />	<!--Strong P. Atk.-->
+			<skill id="4411" level="15" />	<!--Strong M. Atk.-->
+			<skill id="4412" level="15" />        <!--	Strong P. Def.-->
+			<skill id="4413" level="13" />	<!--Slightly Strong M. Def.-->
 			<skill id="4285" level="4"/>	<!--Resist Sleep Attacks-->
 			<skill id="4287" level="4"/>	<!--Resist Hold Attacks-->
 			<skill id="4441" level="5"/>	<!--Greater Resist Mental Derangement-->
@@ -2818,10 +2818,10 @@
 		<skills>
 			<skill id="4416" level="10"/>	<!--Dragons-->
 			<skill id="5463" level="1"/>	<!--Water Attacks-->
-			<!--<skill id="4410" level="13" />	Slightly Strong P. Atk.-->
-			<!--<skill id="4411" level="14" />	Strong M. Atk.-->
-			<!--<skill id="4412" level="15" />	Strong P. Def.-->
-			<!--<skill id="4413" level="13" />	Slightly Strong M. Def.-->
+			<skill id="4410" level="13" />	<!--Slightly Strong P. Atk.-->
+			<skill id="4411" level="14" /> <!--	Strong M. Atk.-->
+			<skill id="4412" level="15" />        <!--	Strong P. Def.-->
+			<skill id="4413" level="13" />	<!--Slightly Strong M. Def.-->
 			<skill id="4285" level="4"/>	<!--Resist Sleep Attacks-->
 			<skill id="4287" level="4"/>	<!--Resist Hold Attacks-->
 			<skill id="4441" level="5"/>	<!--Greater Resist Mental Derangement-->
@@ -2915,9 +2915,9 @@
 		<skills>
 			<skill id="4416" level="10"/>	<!--Dragons-->
 			<skill id="5463" level="1"/>	<!--Water Attacks-->
-			<!--<skill id="4410" level="16" />	Very Strong P. Atk.-->
-			<!--<skill id="4412" level="16" />	Very Strong P. Def.-->
-			<!--<skill id="4413" level="8" />	Weak M. Def.-->
+			<skill id="4410" level="16" />	 <!--Very Strong P. Atk.-->
+			<skill id="4412" level="16" /> <!--	Very Strong P. Def.-->
+			<skill id="4413" level="8" />	<!--Weak M. Def.-->
 			<skill id="4285" level="4"/>	<!--Resist Sleep Attacks-->
 			<skill id="4287" level="4"/>	<!--Resist Hold Attacks-->
 			<skill id="4441" level="5"/>	<!--Greater Resist Mental Derangement-->
@@ -3014,9 +3014,9 @@
 		<skills>
 			<skill id="4416" level="10"/>	<!--Dragons-->
 			<skill id="5463" level="1"/>	<!--Water Attacks-->
-			<!--<skill id="4410" level="15" />	Strong P. Atk.-->
-			<!--<skill id="4412" level="15" />	Strong P. Def.-->
-			<!--<skill id="4413" level="7" />	Weak M. Def.-->
+			<skill id="4410" level="15" />	<!--Strong P. Atk.-->
+			<skill id="4412" level="15" />        <!--	Strong P. Def.-->
+			<skill id="4413" level="7" />	<!--Weak M. Def.-->
 			<skill id="4285" level="4"/>	<!--Resist Sleep Attacks-->
 			<skill id="4287" level="4"/>	<!--Resist Hold Attacks-->
 			<skill id="4441" level="5"/>	<!--Greater Resist Mental Derangement-->
@@ -3109,9 +3109,9 @@
 		<skills>
 			<skill id="4416" level="10"/>	<!--Dragons-->
 			<skill id="5464" level="1"/>	<!--Wind Attacks-->
-			<!--<skill id="4411" level="15" />	Strong M. Atk.-->
-			<!--<skill id="4412" level="15" />	Strong P. Def.-->
-			<!--<skill id="4413" level="7" />	Weak M. Def.-->
+			<skill id="4411" level="15" />	<!--Strong M. Atk.-->
+			<skill id="4412" level="15" />        <!--	Strong P. Def.-->
+			<skill id="4413" level="7" />	<!--Weak M. Def.-->
 			<skill id="4285" level="4"/>	<!--Resist Sleep Attacks-->
 			<skill id="4287" level="4"/>	<!--Resist Hold Attacks-->
 			<skill id="4441" level="5"/>	<!--Greater Resist Mental Derangement-->
@@ -3209,10 +3209,10 @@
 		<skills>
 			<skill id="4416" level="10"/>	<!--Dragons-->
 			<skill id="5464" level="1"/>	<!--Wind Attacks-->
-			<!--<skill id="4410" level="17" />	Very Strong P. Atk.-->
-			<!--<skill id="4411" level="15" />	Strong M. Atk.-->
-			<!--<skill id="4412" level="17" />	Very Strong P. Def.-->
-			<!--<skill id="4413" level="9" />	Slightly Weak M. Def.-->
+			<skill id="4410" level="17" /> 	<!--Very Strong P. Atk.-->
+			<skill id="4411" level="15" />	<!--Strong M. Atk.-->
+			<skill id="4412" level="17" /> 	<!--Very Strong P. Def.-->
+			<skill id="4413" level="9" />	<!--Slightly Weak M. Def.-->
 			<skill id="6881" level="1"/>	<!--Critical Strike-->
 		<skill id="4410" level="17"/>
 			<skill id="4411" level="15"/>
@@ -3431,10 +3431,10 @@
 		<skills>
 			<skill id="4416" level="9"/>	<!--Demons-->
 			<skill id="5467" level="1"/>	<!--Dark Attacks-->
-			<!--<skill id="4410" level="13" />	Slightly Strong P. Atk.-->
-			<!--<skill id="4411" level="13" />	Slightly Strong M. Atk.-->
-			<!--<skill id="4412" level="16" />	Very Strong P. Def.-->
-			<!--<skill id="4413" level="8" />	Weak M. Def.-->
+			<skill id="4410" level="13" />	<!--Slightly Strong P. Atk.-->
+			<skill id="4411" level="13" />	 <!--Slightly Strong M. Atk.-->
+			<skill id="4412" level="16" /> <!--	Very Strong P. Def.-->
+			<skill id="4413" level="8" />	<!--Weak M. Def.-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="4"/>	<!--Greater Resist Hold-->
@@ -3531,10 +3531,10 @@
 		<skills>
 			<skill id="4416" level="9"/>	<!--Demons-->
 			<skill id="5467" level="1"/>	<!--Dark Attacks-->
-			<!--<skill id="4410" level="12" />	Slightly Strong P. Atk.-->
-			<!--<skill id="4411" level="13" />	Slightly Strong M. Atk.-->
-			<!--<skill id="4412" level="14" />	Strong P. Def.-->
-			<!--<skill id="4413" level="4" />	Extremely Weak M. Def.-->
+			<skill id="4410" level="12" />	 <!--Slightly Strong P. Atk.-->
+			<skill id="4411" level="13" />	 <!--Slightly Strong M. Atk.-->
+			<skill id="4412" level="14" />	 <!--Strong P. Def.-->
+			<skill id="4413" level="4" />	<!--Extremely Weak M. Def.-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="4"/>	<!--Greater Resist Hold-->
@@ -3637,10 +3637,10 @@
 		<skills>
 			<skill id="4416" level="9"/>	<!--Demons-->
 			<skill id="5467" level="1"/>	<!--Dark Attacks-->
-			<!--<skill id="4410" level="13" />	Slightly Strong P. Atk.-->
-			<!--<skill id="4411" level="14" />	Strong M. Atk.-->
-			<!--<skill id="4412" level="12" />	Slightly Strong P. Def.-->
-			<!--<skill id="4413" level="4" />	Extremely Weak M. Def.-->
+			<skill id="4410" level="13" />	<!--Slightly Strong P. Atk.-->
+			<skill id="4411" level="14" /><!--	Strong M. Atk.-->
+			<skill id="4412" level="12" />	 <!--Slightly Strong P. Def.-->
+			<skill id="4413" level="4" />	<!--Extremely Weak M. Def.-->
 			<skill id="4276" level="2"/>	<!--Weak Point against Bow/Crossbow Weapons-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
@@ -3742,9 +3742,9 @@
 		<skills>
 			<skill id="4416" level="9"/>	<!--Demons-->
 			<skill id="5467" level="1"/>	<!--Dark Attacks-->
-			<!--<skill id="4410" level="13" />	Slightly Strong P. Atk.-->
-			<!--<skill id="4411" level="16" />	Very Strong M. Atk.-->
-			<!--<skill id="4413" level="6" />	Very Weak M. Def.-->
+			<skill id="4410" level="13" />	<!--Slightly Strong P. Atk.-->
+			<skill id="4411" level="16" />	 <!--Very Strong M. Atk.-->
+			<skill id="4413" level="6" />	<!--Very Weak M. Def.-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="4"/>	<!--Greater Resist Hold-->
@@ -3837,9 +3837,9 @@
 		<skills>
 			<skill id="4416" level="1"/>	<!--Undead-->
 			<skill id="5467" level="1"/>	<!--Dark Attacks-->
-			<!--<skill id="4410" level="13" />	Slightly Strong P. Atk.-->
-			<!--<skill id="4411" level="16" />	Very Strong M. Atk.-->
-			<!--<skill id="4413" level="6" />	Very Weak M. Def.-->
+			<skill id="4410" level="13" />	<!--Slightly Strong P. Atk.-->
+			<skill id="4411" level="16" />	 <!--Very Strong M. Atk.-->
+			<skill id="4413" level="6" />	<!--Very Weak M. Def.-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="4"/>	<!--Greater Resist Hold-->
@@ -3936,9 +3936,9 @@
 		<skills>
 			<skill id="4416" level="1"/>	<!--Undead-->
 			<skill id="5467" level="1"/>	<!--Dark Attacks-->
-			<!--<skill id="4411" level="14" />	Strong M. Atk.-->
-			<!--<skill id="4412" level="12" />	Slightly Strong P. Def.-->
-			<!--<skill id="4413" level="4" />	Extremely Weak M. Def.-->
+			<skill id="4411" level="14" /><!--	Strong M. Atk.-->
+			<skill id="4412" level="12" />	 <!--Slightly Strong P. Def.-->
+			<skill id="4413" level="4" />	<!--Extremely Weak M. Def.-->
 			<skill id="4276" level="2"/>	<!--Weak Point against Bow/Crossbow Weapons-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
@@ -4038,10 +4038,10 @@
 		<skills>
 			<skill id="4416" level="10"/>	<!--Dragons-->
 			<skill id="5465" level="1"/>	<!--Earth Attacks-->
-			<!--<skill id="4410" level="13" />	Slightly Strong P. Atk.-->
-			<!--<skill id="4411" level="16" />	Very Strong M. Atk.-->
-			<!--<skill id="4412" level="15" />	Strong P. Def.-->
-			<!--<skill id="4413" level="4" />	Extremely Weak M. Def.-->
+			<skill id="4410" level="13" />	<!--Slightly Strong P. Atk.-->
+			<skill id="4411" level="16" />	 <!--Very Strong M. Atk.-->
+			<skill id="4412" level="15" />        <!--	Strong P. Def.-->
+			<skill id="4413" level="4" />	<!--Extremely Weak M. Def.-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="4"/>	<!--Greater Resist Hold-->
@@ -4140,10 +4140,10 @@
 		<skills>
 			<skill id="4416" level="10"/>	<!--Dragons-->
 			<skill id="5465" level="1"/>	<!--Earth Attacks-->
-			<!--<skill id="4410" level="13" />	Slightly Strong P. Atk.-->
-			<!--<skill id="4411" level="16" />	Very Strong M. Atk.-->
-			<!--<skill id="4412" level="15" />	Strong P. Def.-->
-			<!--<skill id="4413" level="4" />	Extremely Weak M. Def.-->
+			<skill id="4410" level="13" />	<!--Slightly Strong P. Atk.-->
+			<skill id="4411" level="16" />	 <!--Very Strong M. Atk.-->
+			<skill id="4412" level="15" />        <!--	Strong P. Def.-->
+			<skill id="4413" level="4" />	<!--Extremely Weak M. Def.-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="4"/>	<!--Greater Resist Hold-->
@@ -4240,10 +4240,10 @@
 		<skills>
 			<skill id="4416" level="10"/>	<!--Dragons-->
 			<skill id="5465" level="1"/>	<!--Earth Attacks-->
-			<!--<skill id="4410" level="13" />	Slightly Strong P. Atk.-->
-			<!--<skill id="4411" level="16" />	Very Strong M. Atk.-->
-			<!--<skill id="4412" level="15" />	Strong P. Def.-->
-			<!--<skill id="4413" level="4" />	Extremely Weak M. Def.-->
+			<skill id="4410" level="13" />	<!--Slightly Strong P. Atk.-->
+			<skill id="4411" level="16" />	 <!--Very Strong M. Atk.-->
+			<skill id="4412" level="15" />        <!--	Strong P. Def.-->
+			<skill id="4413" level="4" />	<!--Extremely Weak M. Def.-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="4"/>	<!--Greater Resist Hold-->
@@ -4344,8 +4344,8 @@
 		<skills>
 			<skill id="4416" level="10"/>	<!--Dragons-->
 			<skill id="5465" level="1"/>	<!--Earth Attacks-->
-			<!--<skill id="4412" level="9" />	Slightly Weak P. Def.-->
-			<!--<skill id="4413" level="4" />	Extremely Weak M. Def.-->
+			<skill id="4412" level="9" />	<!--Slightly Weak P. Def.-->
+			<skill id="4413" level="4" />	<!--Extremely Weak M. Def.-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="4"/>	<!--Greater Resist Hold-->
@@ -4443,9 +4443,9 @@
 		<skills>
 			<skill id="4416" level="10"/>	<!--Dragons-->
 			<skill id="5465" level="1"/>	<!--Earth Attacks-->
-			<!--<skill id="4410" level="13" />	Slightly Strong P. Atk.-->
-			<!--<skill id="4412" level="15" />	Strong P. Def.-->
-			<!--<skill id="4413" level="4" />	Extremely Weak M. Def.-->
+			<skill id="4410" level="13" />	<!--Slightly Strong P. Atk.-->
+			<skill id="4412" level="15" />        <!--	Strong P. Def.-->
+			<skill id="4413" level="4" />	<!--Extremely Weak M. Def.-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="4"/>	<!--Greater Resist Hold-->
@@ -4545,9 +4545,9 @@
 		<skills>
 			<skill id="4416" level="10"/>	<!--Dragons-->
 			<skill id="5465" level="1"/>	<!--Earth Attacks-->
-			<!--<skill id="4410" level="15" />	Strong P. Atk.-->
-			<!--<skill id="4412" level="16" />	Very Strong P. Def.-->
-			<!--<skill id="4413" level="4" />	Extremely Weak M. Def.-->
+			<skill id="4410" level="15" />	<!--Strong P. Atk.-->
+			<skill id="4412" level="16" /> <!--	Very Strong P. Def.-->
+			<skill id="4413" level="4" />	<!--Extremely Weak M. Def.-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="4"/>	<!--Greater Resist Hold-->
@@ -4644,9 +4644,9 @@
 		<skills>
 			<skill id="4416" level="10"/>	<!--Dragons-->
 			<skill id="5465" level="1"/>	<!--Earth Attacks-->
-			<!--<skill id="4410" level="14" />	Strong P. Atk.-->
-			<!--<skill id="4412" level="14" />	Strong P. Def.-->
-			<!--<skill id="4413" level="4" />	Extremely Weak M. Def.-->
+			<skill id="4410" level="14" /> 	<!--Strong P. Atk.-->
+			<skill id="4412" level="14" />	 <!--Strong P. Def.-->
+			<skill id="4413" level="4" />	<!--Extremely Weak M. Def.-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="4"/>	<!--Greater Resist Hold-->
@@ -4741,9 +4741,9 @@
 		<skills>
 			<skill id="4416" level="10"/>	<!--Dragons-->
 			<skill id="5465" level="1"/>	<!--Earth Attacks-->
-			<!--<skill id="4410" level="12" />	Slightly Strong P. Atk.-->
-			<!--<skill id="4412" level="13" />	Slightly Strong P. Def.-->
-			<!--<skill id="4413" level="6" />	Very Weak M. Def.-->
+			<skill id="4410" level="12" />	 <!--Slightly Strong P. Atk.-->
+			<skill id="4412" level="13" />	 <!--Slightly Strong P. Def.-->
+			<skill id="4413" level="6" />	<!--Very Weak M. Def.-->
 			<skill id="4276" level="2"/>	<!--Weak Point against Bow/Crossbow Weapons-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
@@ -4835,10 +4835,10 @@
 		<skills>
 			<skill id="4416" level="10"/>	<!--Dragons-->
 			<skill id="5465" level="1"/>	<!--Earth Attacks-->
-			<!--<skill id="4410" level="16" />	Very Strong P. Atk.-->
-			<!--<skill id="4411" level="15" />	Strong M. Atk.-->
-			<!--<skill id="4412" level="16" />	Very Strong P. Def.-->
-			<!--<skill id="4413" level="5" />	Very Weak M. Def.-->
+			<skill id="4410" level="16" />	 <!--Very Strong P. Atk.-->
+			<skill id="4411" level="15" />	<!--Strong M. Atk.-->
+			<skill id="4412" level="16" /> <!--	Very Strong P. Def.-->
+			<skill id="4413" level="5" />	<!--Very Weak M. Def.-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="4"/>	<!--Greater Resist Hold-->
@@ -4935,9 +4935,9 @@
 		<skills>
 			<skill id="4416" level="10"/>	<!--Dragons-->
 			<skill id="5465" level="1"/>	<!--Earth Attacks-->
-			<!--<skill id="4410" level="15" />	Strong P. Atk.-->
-			<!--<skill id="4411" level="13" />	Slightly Strong M. Atk.-->
-			<!--<skill id="4413" level="8" />	Weak M. Def.-->
+			<skill id="4410" level="15" />	<!--Strong P. Atk.-->
+			<skill id="4411" level="13" />	 <!--Slightly Strong M. Atk.-->
+			<skill id="4413" level="4" />	<!--Weak M. Def.-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="4"/>	<!--Greater Resist Hold-->
@@ -5029,10 +5029,10 @@
 		<skills>
 			<skill id="4416" level="9"/>	<!--Demons-->
 			<skill id="5467" level="1"/>	<!--Dark Attacks-->
-			<!--<skill id="4410" level="19" />	Extremely Strong P. Atk.-->
-			<!--<skill id="4411" level="19" />	Extremely Strong M. Atk.-->
-			<!--<skill id="4412" level="19" />	Extremely Strong P. Def.-->
-			<!--<skill id="4413" level="5" />	Very Weak M. Def.-->
+			<skill id="4410" level="19" /> 	<!--Extremely Strong P. Atk.-->
+			<skill id="4411" level="19" /> 	<!--Extremely Strong M. Atk.-->
+			<skill id="4412" level="19" /> 	<!--Extremely Strong P. Def.-->
+			<skill id="4413" level="1" />	<!--Very Weak M. Def.-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="4"/>	<!--Greater Resist Hold-->
@@ -5124,10 +5124,10 @@
 		<skills>
 			<skill id="4416" level="9"/>	<!--Demons-->
 			<skill id="5467" level="1"/>	<!--Dark Attacks-->
-			<!--<skill id="4410" level="19" />	Extremely Strong P. Atk.-->
-			<!--<skill id="4411" level="19" />	Extremely Strong M. Atk.-->
-			<!--<skill id="4412" level="19" />	Extremely Strong P. Def.-->
-			<!--<skill id="4413" level="5" />	Very Weak M. Def.-->
+			<skill id="4410" level="19" /> 	<!--Extremely Strong P. Atk.-->
+			<skill id="4411" level="19" /> 	<!--Extremely Strong M. Atk.-->
+			<skill id="4412" level="19" /> 	<!--Extremely Strong P. Def.-->
+			<skill id="4413" level="2" />	<!--Very Weak M. Def.-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="4"/>	<!--Greater Resist Hold-->
@@ -5220,10 +5220,10 @@
 		<skills>
 			<skill id="4416" level="9"/>	<!--Demons-->
 			<skill id="5467" level="1"/>	<!--Dark Attacks-->
-			<!--<skill id="4410" level="19" />	Extremely Strong P. Atk.-->
-			<!--<skill id="4411" level="19" />	Extremely Strong M. Atk.-->
-			<!--<skill id="4412" level="19" />	Extremely Strong P. Def.-->
-			<!--<skill id="4413" level="5" />	Very Weak M. Def.-->
+			<skill id="4410" level="19" /> 	<!--Extremely Strong P. Atk.-->
+			<skill id="4411" level="19" /> 	<!--Extremely Strong M. Atk.-->
+			<skill id="4412" level="19" /> 	<!--Extremely Strong P. Def.-->
+			<skill id="4413" level="1" />	<!--Very Weak M. Def.-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="4"/>	<!--Greater Resist Hold-->
@@ -5329,10 +5329,10 @@
 		<skills>
 			<skill id="4416" level="6"/>	<!--Humanoids-->
 			<skill id="5467" level="1"/>	<!--Dark Attacks-->
-			<!--<skill id="4410" level="17" />	Very Strong P. Atk.-->
-			<!--<skill id="4411" level="13" />	Slightly Strong M. Atk.-->
-			<!--<skill id="4412" level="15" />	Strong P. Def.-->
-			<!--<skill id="4413" level="5" />	Very Weak M. Def.-->
+			<skill id="4410" level="17" /> 	<!--Very Strong P. Atk.-->
+			<skill id="4411" level="13" />	 <!--Slightly Strong M. Atk.-->
+			<skill id="4412" level="15" />   <!--	Strong P. Def.-->
+			<skill id="4413" level="2" />	<!--Very Weak M. Def.-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="4"/>	<!--Greater Resist Hold-->
@@ -5547,9 +5547,9 @@
 		<skills>
 			<skill id="4416" level="3"/>	<!--Beasts-->
 			<skill id="5462" level="1"/>	<!--Fire Attacks-->
-			<!--<skill id="4410" level="13" />	Slightly Strong P. Atk.-->
-			<!--<skill id="4412" level="13" />	Slightly Strong P. Def.-->
-			<!--<skill id="4413" level="13" />	Slightly Strong M. Def.-->
+			<skill id="4410" level="13" />	<!--Slightly Strong P. Atk.-->
+			<skill id="4412" level="13" />	 <!--Slightly Strong P. Def.-->
+			<skill id="4413" level="13" />	<!--Slightly Strong M. Def.-->
 			<skill id="4438" level="1"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="1"/>	<!--Greater Resist Hold-->
 			<skill id="4441" level="1"/>	<!--Greater Resist Mental Derangement-->
@@ -5606,9 +5606,9 @@
 		<skills>
 			<skill id="4416" level="12"/>	<!--Bugs-->
 			<skill id="5463" level="1"/>	<!--Water Attacks-->
-			<!--<skill id="4410" level="13" />	Slightly Strong P. Atk.-->
-			<!--<skill id="4412" level="15" />	Strong P. Def.-->
-			<!--<skill id="4413" level="5" />	Very Weak M. Def.-->
+			<skill id="4410" level="13" />	<!--Slightly Strong P. Atk.-->
+			<skill id="4412" level="15" />        <!--	Strong P. Def.-->
+			<skill id="4413" level="5" />	<!--Very Weak M. Def.-->
 			<skill id="4274" level="4"/>	<!--Blunt Weapon Weak Point-->
 			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
 			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
@@ -5708,9 +5708,9 @@
 		<skills>
 			<skill id="4301" level="4"/>	<!--Race-->
 			<skill id="5467" level="1"/>	<!--Dark Attacks-->
-			<!--<skill id="4410" level="13" />	Slightly Strong P. Atk.-->
-			<!--<skill id="4412" level="15" />	Strong P. Def.-->
-			<!--<skill id="4413" level="5" />	Very Weak M. Def.-->
+			<skill id="4410" level="13" />	<!--Slightly Strong P. Atk.-->
+			<skill id="4412" level="15" />        <!--	Strong P. Def.-->
+			<skill id="4413" level="5" />	<!--Very Weak M. Def.-->
 			<skill id="4274" level="4"/>	<!--Blunt Weapon Weak Point-->
 			<skill id="4285" level="4"/>	<!--Resist Sleep Attacks-->
 			<skill id="4287" level="4"/>	<!--Resist Hold Attacks-->
@@ -5804,9 +5804,9 @@
 		<skills>
 			<skill id="4299" level="1"/>	<!--Race-->
 			<skill id="5462" level="1"/>	<!--Fire Attacks-->
-			<!--<skill id="4410" level="13" />	Slightly Strong P. Atk.-->
-			<!--<skill id="4412" level="15" />	Strong P. Def.-->
-			<!--<skill id="4413" level="5" />	Very Weak M. Def.-->
+			<skill id="4410" level="13" />	<!--Slightly Strong P. Atk.-->
+			<skill id="4412" level="15" />        <!--	Strong P. Def.-->
+			<skill id="4413" level="5" />	<!--Very Weak M. Def.-->
 			<skill id="4438" level="1"/>	<!--Greater Resist Sleep-->
 			<skill id="4439" level="1"/>	<!--Greater Resist Hold-->
 			<skill id="4441" level="1"/>	<!--Greater Resist Mental Derangement-->

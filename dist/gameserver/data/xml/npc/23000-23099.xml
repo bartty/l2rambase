@@ -2200,6 +2200,9 @@
 		<set name="baseMAtkSpd" value="398"/>
 		<set name="baseRunSpd" value="120"/>
 		<set name="baseWalkSpd" value="45"/>
+		<equip>
+			<rhand item_id="213"/>	<!--Branch of the Mother Tree-->
+		</equip>
 		<attributes>
 			<defence attribute="fire" value="175"/>
 			<defence attribute="water" value="200"/>
