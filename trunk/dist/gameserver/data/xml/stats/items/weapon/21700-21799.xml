@@ -366,10 +366,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21780" name="Imperial Crusader Shield of Friendship" add_name="90-day limited period">
+	<weapon id="21780" name="Imperial Crusader Shield of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.shield_imperial_crusader_shield_i00"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="NONE"/>
 		<set name="weight" value="1170"/>
 		<equip>
@@ -383,10 +389,16 @@
 			<enchant stat="maxHp" order="0x80" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21798" name="Dynasty Shield of Friendship" add_name="90-day limited period">
+	<weapon id="21798" name="Dynasty Shield of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.shield_dynasty_shield_i00"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="NONE"/>
 		<set name="weight" value="1150"/>
 		<equip>

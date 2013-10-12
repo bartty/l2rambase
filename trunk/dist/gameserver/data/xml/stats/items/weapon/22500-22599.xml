@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE list SYSTEM "item.dtd">
 <list>
-	<weapon id="22547" name="(Тест) Световой Меч">
+	<weapon id="22547" name="(Test) Lightsaber">
 		<set name="crystal_type" value="NONE"/>
 		<set name="type" value="SWORD"/>
 		<set name="ex_type" value="SWORD"/>

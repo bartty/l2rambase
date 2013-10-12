@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE list SYSTEM "item.dtd">
 <list>
-	<weapon id="21821" name="Arcana Mace of Friendship" add_name="90-day limited period">
+	<weapon id="21821" name="Arcana Mace of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_arcana_mace_i01"/>
 		<set name="price" value="0"/>
 		<set name="type" value="BLUNT"/>
 		<set name="ex_type" value="BLUNT_WEAPON"/>
 		<set name="weight" value="1300"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="soulshots" value="1"/>
 		<set name="spiritshots" value="1"/>
 		<set name="rnd_dam" value="20"/>
@@ -27,10 +33,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21822" name="Angel Slayer of Friendship" add_name="90-day limited period">
+	<weapon id="21822" name="Angel Slayer of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_angel_slayer_i01"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="DAGGER"/>
 		<set name="ex_type" value="DAGGER"/>
 		<set name="weight" value="950"/>
@@ -53,10 +65,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21823" name="Draconic Bow of Friendship" add_name="90-day limited period">
+	<weapon id="21823" name="Draconic Bow of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_draconic_bow_i01"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="BOW"/>
 		<set name="ex_type" value="BOW"/>
 		<set name="weight" value="1650"/>
@@ -80,10 +98,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21824" name="Basalt Battlehammer of Friendship" add_name="90-day limited period">
+	<weapon id="21824" name="Basalt Battlehammer of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_basalt_battlehammer_i01"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="BLUNT"/>
 		<set name="ex_type" value="BLUNT_WEAPON"/>
 		<set name="weight" value="1570"/>
@@ -106,10 +130,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21825" name="Forgotten Blade of Friendship" add_name="90-day limited period">
+	<weapon id="21825" name="Forgotten Blade of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_forgotten_blade_i01"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="SWORD"/>
 		<set name="ex_type" value="SWORD"/>
 		<set name="weight" value="1300"/>
@@ -131,10 +161,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21826" name="Heaven's Divider of Friendship" add_name="90-day limited period">
+	<weapon id="21826" name="Heaven's Divider of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_heavens_divider_i01"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="BIGSWORD"/>
 		<set name="ex_type" value="BIG_SWORD"/>
 		<set name="weight" value="1380"/>
@@ -156,10 +192,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21827" name="Demon Splinter of Friendship" add_name="90-day limited period">
+	<weapon id="21827" name="Demon Splinter of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_demon_splinter_i01"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="DUALFIST"/>
 		<set name="ex_type" value="HAND_TO_HAND"/>
 		<set name="weight" value="1350"/>
@@ -181,10 +223,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21828" name="Tallum Blade*Dark Legion's Edge of Friendship" add_name="90-day limited period">
+	<weapon id="21828" name="Tallum Blade*Dark Legion's Edge of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_dual_sword_i00"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="DUAL"/>
 		<set name="ex_type" value="DUAL_SWORD"/>
 		<set name="weight" value="2080"/>
@@ -203,10 +251,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21829" name="Saint Spear of Friendship" add_name="90-day limited period">
+	<weapon id="21829" name="Saint Spear of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_saint_spear_i01"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="POLE"/>
 		<set name="ex_type" value="POLE"/>
 		<set name="weight" value="1800"/>
@@ -228,10 +282,15 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21830" name="Gram of Friendship" add_name="90-day limited period">
+	<weapon id="21830" name="Gram of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_gram_i01"/>
-		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="BIGSWORD"/>
 		<set name="ex_type" value="BIG_SWORD"/>
 		<set name="weight" value="1800"/>
@@ -253,10 +312,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21831" name="Laevateinn of Friendship" add_name="90-day limited period">
+	<weapon id="21831" name="Laevateinn of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_leavatein_i01"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="RAPIER"/>
 		<set name="ex_type" value="RAPIER"/>
 		<set name="weight" value="1300"/>
@@ -279,10 +344,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21832" name="Sarunga of Friendship" add_name="90-day limited period">
+	<weapon id="21832" name="Sarunga of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_sarnga_i01"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="CROSSBOW"/>
 		<set name="ex_type" value="CROSSBOW"/>
 		<set name="weight" value="1600"/>
@@ -305,10 +376,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21833" name="Dynasty Phantom of Friendship" add_name="90-day limited period">
+	<weapon id="21833" name="Dynasty Phantom of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_dynasty_magic_sword_i01"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="SWORD"/>
 		<set name="ex_type" value="SWORD"/>
 		<set name="weight" value="1520"/>
@@ -330,10 +407,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21834" name="Dynasty Knife of Friendship" add_name="90-day limited period">
+	<weapon id="21834" name="Dynasty Knife of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_dynasty_dagger_i01"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="DAGGER"/>
 		<set name="ex_type" value="DAGGER"/>
 		<set name="weight" value="1520"/>
@@ -356,10 +439,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21835" name="Dynasty Bow of Friendship" add_name="90-day limited period">
+	<weapon id="21835" name="Dynasty Bow of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_dynasty_bow_i01"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="BOW"/>
 		<set name="ex_type" value="BOW"/>
 		<set name="weight" value="1520"/>
@@ -383,10 +472,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21836" name="Dynasty Cudgel of Friendship" add_name="90-day limited period">
+	<weapon id="21836" name="Dynasty Cudgel of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_dynasty_hammer_i01"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="BLUNT"/>
 		<set name="ex_type" value="BLUNT_WEAPON"/>
 		<set name="weight" value="1740"/>
@@ -408,10 +503,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21837" name="Dynasty Sword of Friendship" add_name="90-day limited period">
+	<weapon id="21837" name="Dynasty Sword of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_dynasty_blade_i01"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="SWORD"/>
 		<set name="ex_type" value="SWORD"/>
 		<set name="weight" value="1520"/>
@@ -433,10 +534,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21838" name="Dynasty Blade of Friendship" add_name="90-day limited period">
+	<weapon id="21838" name="Dynasty Blade of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_dynasty_twohand_sword_i01"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="BIGSWORD"/>
 		<set name="ex_type" value="BIG_SWORD"/>
 		<set name="weight" value="1740"/>
@@ -458,10 +565,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21839" name="Dynasty Bagh-Nakh of Friendship" add_name="90-day limited period">
+	<weapon id="21839" name="Dynasty Bagh-Nakh of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_dynasty_jamadhr_i01"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="DUALFIST"/>
 		<set name="ex_type" value="HAND_TO_HAND"/>
 		<set name="weight" value="1550"/>
@@ -483,10 +596,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21840" name="Dynasty Dualsword of Friendship" add_name="90-day limited period">
+	<weapon id="21840" name="Dynasty Dualsword of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_dual_sword_i00"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="DUAL"/>
 		<set name="ex_type" value="DUAL_SWORD"/>
 		<set name="weight" value="1520"/>
@@ -505,10 +624,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21841" name="Dynasty Halberd of Friendship" add_name="90-day limited period">
+	<weapon id="21841" name="Dynasty Halberd of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_dynasty_spear_i01"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="POLE"/>
 		<set name="ex_type" value="POLE"/>
 		<set name="weight" value="2010"/>
@@ -534,10 +659,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21842" name="Dynasty Ancient Sword of Friendship" add_name="90-day limited period">
+	<weapon id="21842" name="Dynasty Ancient Sword of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_dynasty_ancient_sword_i01"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="BIGSWORD"/>
 		<set name="ex_type" value="BIG_SWORD"/>
 		<set name="weight" value="1800"/>
@@ -560,10 +691,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21843" name="Dynasty Rapier of Friendship" add_name="90-day limited period">
+	<weapon id="21843" name="Dynasty Rapier of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_dynasty_rapier_i01"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="RAPIER"/>
 		<set name="ex_type" value="RAPIER"/>
 		<set name="weight" value="1280"/>
@@ -588,10 +725,16 @@
 			<enchant stat="mAtk" order="0x40" value="0"/>
 		</for>
 	</weapon>
-	<weapon id="21844" name="Dynasty Crossbow of Friendship" add_name="90-day limited period">
+	<weapon id="21844" name="Dynasty Crossbow of Fortune" add_name="90-day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.weapon_dynasty_crossbow_i01"/>
 		<set name="price" value="0"/>
+		<set name="enchantable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="durability" value="129600"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="type" value="CROSSBOW"/>
 		<set name="ex_type" value="CROSSBOW"/>
 		<set name="weight" value="1580"/>
