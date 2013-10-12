@@ -620,7 +620,7 @@ public class glitmedal extends Functions implements ScriptFile, OnDeathListener,
 				if (isTalker == 1)
 				{
 					removeItem(player, Badge_of_Fox, 1);
-					removeItem(player, EVENT_GLITTMEDAL, getItemCount(player, EVENT_GLITTMEDAL));
+					removeItem(player, EVENT_GLITTMEDAL, 40);
 					addItem(player, Badge_of_Wolf, 1);
 					show("scripts/events/glitmedal/event_col_agent2_q0996_24.htm", player);
 					return;

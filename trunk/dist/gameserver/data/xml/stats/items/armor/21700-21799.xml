@@ -508,14 +508,14 @@
 			<enchant stat="maxHp" order="0x80" value="0"/>
 		</for>
 	</armor>
-	<armor id="21791" name="Arcana Sickle of Friendship" add_name="90 day limited period">
+	<armor id="21791" name="Arcana Sigil of Fortune" add_name="90 day limited period">
 		<set name="crystal_type" value="S"/>
 		<set name="icon" value="icon.arcana_sigil_i00"/>
 		<set name="price" value="0"/>
 		<set name="type" value="NONE"/>
 		<set name="weight" value="940"/>
 		<equip>
-			<slot id="NONE"/>
+			<slot id="LEFT_HAND"/>
 		</equip>
 		<set name="ex_type" value="OTHER_ITEMS"/>
 		<for>

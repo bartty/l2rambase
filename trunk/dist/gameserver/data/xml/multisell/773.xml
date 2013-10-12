@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MULTISELL - [Certificate of Hell] -->
+<list>
+    <config showall="true" notax="true"/>
+    <item>
+        <production id="19381" count="1"/>		<!-- Recipe: Specter Avenger (60%) -->
+        <ingredient id="30387" count="741"/>
+    </item>
+	<item>
+        <production id="19386" count="1"/>		<!-- Recipe: Specter Buster (60%) -->
+        <ingredient id="30387" count="741"/>
+    </item>
+	<item>
+        <production id="19387" count="1"/>		<!-- Recipe: Specter Caster (60%) -->
+        <ingredient id="30387" count="741"/>
+    </item>
+	<item>
+        <production id="19379" count="1"/>		<!-- Recipe: Specter Cutter (60%) -->
+        <ingredient id="30387" count="741"/>
+    </item>
+	<item>
+        <production id="19382" count="1"/>		<!-- Recipe: Specter Fighter (60%) -->
+        <ingredient id="30387" count="741"/>
+    </item>
+	<item>
+        <production id="19388" count="1"/>		<!-- Recipe: Specter Retributer (60%) -->
+        <ingredient id="30387" count="741"/>
+    </item>
+	<item>
+        <production id="19378" count="1"/>		<!-- Recipe: Specter Shaper (60%) -->
+        <ingredient id="30387" count="741"/>
+    </item>
+	<item>
+        <production id="19385" count="1"/>		<!-- Recipe: Specter Shooter (60%) -->
+        <ingredient id="30387" count="587"/>
+    </item>
+	<item>
+        <production id="19380" count="1"/>		<!-- Recipe: Specter Slasher (60%) -->
+        <ingredient id="30387" count="741"/>
+    </item>
+	<item>
+        <production id="19383" count="1"/>		<!-- Recipe: Specter Stormer (60%) -->
+        <ingredient id="30387" count="741"/>
+    </item>
+	<item>
+        <production id="19384" count="1"/>		<!-- Recipe: Specter Thrower (60%) -->
+        <ingredient id="30387" count="587"/>
+    </item>
+	<item>
+        <production id="19240" count="1"/>		<!-- Specter Avenger Fragment -->
+        <ingredient id="30387" count="74"/>
+    </item>
+	<item>
+        <production id="19245" count="1"/>		<!-- Specter Buster Fragment -->
+        <ingredient id="30387" count="74"/>
+    </item>
+	<item>
+        <production id="19246" count="1"/>		<!-- Specter Caster Fragment -->
+        <ingredient id="30387" count="74"/>
+    </item>
+	<item>
+        <production id="19238" count="1"/>		<!-- Specter Cutter Fragment -->
+        <ingredient id="30387" count="74"/>
+    </item>
+	<item>
+        <production id="19241" count="1"/>		<!-- Specter Fighter Fragment -->
+        <ingredient id="30387" count="74"/>
+    </item>
+	<item>
+        <production id="19247" count="1"/>		<!-- Specter Retributer Fragment -->
+        <ingredient id="30387" count="74"/>
+    </item>
+	<item>
+        <production id="19237" count="1"/>		<!-- Specter Shaper Fragment -->
+        <ingredient id="30387" count="74"/>
+    </item>
+	<item>
+        <production id="19244" count="1"/>		<!-- Specter Shooter Fragment -->
+        <ingredient id="30387" count="59"/>
+    </item>
+	<item>
+        <production id="19239" count="1"/>		<!-- Specter Slasher Fragment -->
+        <ingredient id="30387" count="74"/>
+    </item>
+	<item>
+        <production id="19242" count="1"/>		<!-- Specter Stormer Fragment -->
+        <ingredient id="30387" count="74"/>
+    </item>
+	<item>
+        <production id="19243" count="1"/>		<!-- Specter Thrower Fragment -->
+        <ingredient id="30387" count="59"/>
+    </item>
+</list>

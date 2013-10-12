@@ -15140,7 +15140,7 @@
 		</products>
 	</recipe>
 	-->
-	<recipe id="1001" name="Рецепт - Неопознанное Острие Реквиема (60%)" level="11" mp_consume="258" success_rate="60" item_id="19316" is_dwarven="true">
+	<recipe id="1001" name="Recipe - Unidentified Requiem tip (60%)" level="11" mp_consume="258" success_rate="60" item_id="19316" is_dwarven="true">
 		<materials>
 			<item id="19316" count="1"/>	<!--Рецепт - Неопознанное Острие Реквиема (60%)-->
 			<item id="19169" count="10"/>	<!--Часть Неопознанного Острия Реквиема-->
@@ -15155,7 +15155,7 @@
 			<item id="18103" count="1" chance="100"/>	<!--Неопознанное Острие Реквиема-->
 		</products>
 	</recipe>
-	<recipe id="1002" name="Рецепт - Неопознанный Резак Реквиема (60%)" level="11" mp_consume="258" success_rate="60" item_id="19317" is_dwarven="true">
+	<recipe id="1002" name="Recipe - Unidentified Requiem Cutter (60%)" level="11" mp_consume="258" success_rate="60" item_id="19317" is_dwarven="true">
 		<materials>
 			<item id="19317" count="1"/>	<!--Рецепт - Неопознанный Резак Реквиема (60%)-->
 			<item id="19170" count="10"/>	<!--Часть Неопознанного Резака Реквиема-->
@@ -15170,7 +15170,7 @@
 			<item id="18104" count="1" chance="100"/>	<!--Неопознанный Резак Реквиема-->
 		</products>
 	</recipe>
-	<recipe id="1003" name="Рецепт - Неопознанный Эспадон Реквиема (60%)" level="11" mp_consume="258" success_rate="60" item_id="19318" is_dwarven="true">
+	<recipe id="1003" name="Recipe - Unidentified Requiem Slasher (60%)" level="11" mp_consume="258" success_rate="60" item_id="19318" is_dwarven="true">
 		<materials>
 			<item id="19318" count="1"/>	<!--Рецепт - Неопознанный Эспадон Реквиема (60%)-->
 			<item id="19171" count="10"/>	<!--Часть Неопознанного Эспадона Реквиема-->
@@ -15185,7 +15185,7 @@
 			<item id="18105" count="1" chance="100"/>	<!--Неопознанный Эспадон Реквиема-->
 		</products>
 	</recipe>
-	<recipe id="1004" name="Рецепт - Неопознанный Мститель Реквиема (60%)" level="11" mp_consume="258" success_rate="60" item_id="19319" is_dwarven="true">
+	<recipe id="1004" name="Recipe - Unidentified Requiem Avenger (60%)" level="11" mp_consume="258" success_rate="60" item_id="19319" is_dwarven="true">
 		<materials>
 			<item id="19319" count="1"/>	<!--Рецепт - Неопознанный Мститель Реквиема (60%)-->
 			<item id="19172" count="10"/>	<!--Часть Неопознанного Мстителя Реквиема-->
@@ -15200,7 +15200,7 @@
 			<item id="18106" count="1" chance="100"/>	<!--Неопознанный Мститель Реквиема-->
 		</products>
 	</recipe>
-	<recipe id="1005" name="Рецепт - Неопознанный Воитель Реквиема (60%)" level="11" mp_consume="258" success_rate="60" item_id="19320" is_dwarven="true">
+	<recipe id="1005" name="Recipe - Unidentified Requiem Warrior (60%)" level="11" mp_consume="258" success_rate="60" item_id="19320" is_dwarven="true">
 		<materials>
 			<item id="19320" count="1"/>	<!--Рецепт - Неопознанный Воитель Реквиема (60%)-->
 			<item id="19173" count="10"/>	<!--Часть Неопознанного Воителя Реквиема-->
@@ -15215,7 +15215,7 @@
 			<item id="18107" count="1" chance="100"/>	<!--Неопознанный Воитель Реквиема-->
 		</products>
 	</recipe>
-	<recipe id="1006" name="Рецепт - Неопознанный Буревестник Реквиема (60%)" level="11" mp_consume="258" success_rate="60" item_id="19321" is_dwarven="true">
+	<recipe id="1006" name="Recipe - Unidentified Requiem Petrel (60%)" level="11" mp_consume="258" success_rate="60" item_id="19321" is_dwarven="true">
 		<materials>
 			<item id="19321" count="1"/>	<!--Рецепт - Неопознанный Буревестник Реквиема (60%)-->
 			<item id="19174" count="10"/>	<!--Часть Неопознанного Буревестника Реквиема-->
@@ -15230,7 +15230,7 @@
 			<item id="18108" count="1" chance="100"/>	<!--Неопознанный Буревестник Реквиема-->
 		</products>
 	</recipe>
-	<recipe id="1007" name="Рецепт - Неопознанный Бросок Реквиема (60%)" level="11" mp_consume="258" success_rate="60" item_id="19322" is_dwarven="true">
+	<recipe id="1007" name="Recipe - Unidentified Requiem Throw (60%)" level="11" mp_consume="258" success_rate="60" item_id="19322" is_dwarven="true">
 		<materials>
 			<item id="19322" count="1"/>	<!--Рецепт - Неопознанный Бросок Реквиема (60%)-->
 			<item id="19175" count="10"/>	<!--Часть Неопознанного Броска Реквиема-->
@@ -15245,7 +15245,7 @@
 			<item id="18109" count="1" chance="100"/>	<!--Неопознанный Бросок Реквиема-->
 		</products>
 	</recipe>
-	<recipe id="1008" name="Рецепт - Неопознанный Страж Реквиема (60%)" level="11" mp_consume="258" success_rate="60" item_id="19323" is_dwarven="true">
+	<recipe id="1008" name="Recipe - Unidentified Guardian Requiem (60%)" level="11" mp_consume="258" success_rate="60" item_id="19323" is_dwarven="true">
 		<materials>
 			<item id="19323" count="1"/>	<!--Рецепт - Неопознанный Страж Реквиема (60%)-->
 			<item id="19176" count="10"/>	<!--Часть Неопознанного Стража Реквиема-->
@@ -15260,7 +15260,7 @@
 			<item id="18110" count="1" chance="100"/>	<!--Неопознанный Страж Реквиема-->
 		</products>
 	</recipe>
-	<recipe id="1009" name="Рецепт - Неопознанный Расчленитель Реквиема (60%)" level="11" mp_consume="258" success_rate="60" item_id="19324" is_dwarven="true">
+	<recipe id="1009" name="Recipe - Unidentified Requiem Buster (60%)" level="11" mp_consume="258" success_rate="60" item_id="19324" is_dwarven="true">
 		<materials>
 			<item id="19324" count="1"/>	<!--Рецепт - Неопознанный Расчленитель Реквиема (60%)-->
 			<item id="19177" count="10"/>	<!--Часть Неопознанного Расчленителя Реквиема-->
@@ -15275,7 +15275,7 @@
 			<item id="18111" count="1" chance="100"/>	<!--Неопознанный Расчленитель Реквиема-->
 		</products>
 	</recipe>
-	<recipe id="1010" name="Рецепт - Неопознанный Заклинатель Реквиема (60%)" level="11" mp_consume="258" success_rate="60" item_id="19325" is_dwarven="true">
+	<recipe id="1010" name="Recipe - Unidentified Requiem Caster (60%)" level="11" mp_consume="258" success_rate="60" item_id="19325" is_dwarven="true">
 		<materials>
 			<item id="19325" count="1"/>	<!--Рецепт - Неопознанный Заклинатель Реквиема (60%)-->
 			<item id="19178" count="10"/>	<!--Часть Неопознанного Заклинателя Реквиема-->
@@ -15290,7 +15290,7 @@
 			<item id="18112" count="1" chance="100"/>	<!--Неопознанный Заклинатель Реквиема-->
 		</products>
 	</recipe>
-	<recipe id="1011" name="Рецепт - Неопознанное Возмездие Реквиема (60%)" level="11" mp_consume="258" success_rate="60" item_id="19326" is_dwarven="true">
+	<recipe id="1011" name="Recipe - Unidentified Requiem Retribution (60%)" level="11" mp_consume="258" success_rate="60" item_id="19326" is_dwarven="true">
 		<materials>
 			<item id="19326" count="1"/>	<!--Рецепт - Неопознанное Возмездие Реквиема (60%)-->
 			<item id="19179" count="10"/>	<!--Часть Неопознанного Возмездия Реквиема-->
@@ -15305,7 +15305,7 @@
 			<item id="18113" count="1" chance="100"/>	<!--Неопознанное Возмездие Реквиема-->
 		</products>
 	</recipe>
-	<recipe id="1012" name="Рецепт - Неопознанный Шлем Бессмертия (60%)" level="11" mp_consume="258" success_rate="60" item_id="19327" is_dwarven="true">
+	<recipe id="1012" name="Recipe - Unidentified Immortal Helmet (60%)" level="11" mp_consume="258" success_rate="60" item_id="19327" is_dwarven="true">
 		<materials>
 			<item id="19327" count="1"/>	<!--Рецепт - Неопознанный Шлем Бессмертия (60%)-->
 			<item id="19183" count="15"/>	<!--Материал Неопознанного Шлема Бессмертия-->
@@ -15319,7 +15319,7 @@
 			<item id="18117" count="1" chance="100"/>	<!--Неопознанный Шлем Бессмертия-->
 		</products>
 	</recipe>
-	<recipe id="1013" name="Рецепт - Неопознанная Кираса Бессмертия (60%)" level="11" mp_consume="258" success_rate="60" item_id="19328" is_dwarven="true">
+	<recipe id="1013" name="Recipe - Unidentified Immortal Breastplate (60%)" level="11" mp_consume="258" success_rate="60" item_id="19328" is_dwarven="true">
 		<materials>
 			<item id="19328" count="1"/>	<!--Рецепт - Неопознанная Кираса Бессмертия (60%)-->
 			<item id="19184" count="15"/>	<!--Материал Неопознанной Кирасы Бессмертия-->
@@ -15333,7 +15333,7 @@
 			<item id="18118" count="1" chance="100"/>	<!--Неопознанная Кираса Бессмертия-->
 		</products>
 	</recipe>
-	<recipe id="1014" name="Рецепт - Неопознанные Набедренники Бессмертия (60%)" level="11" mp_consume="258" success_rate="60" item_id="19329" is_dwarven="true">
+	<recipe id="1014" name="Recipe - Unidentified Immortal Gaiters (60%)" level="11" mp_consume="258" success_rate="60" item_id="19329" is_dwarven="true">
 		<materials>
 			<item id="19329" count="1"/>	<!--Рецепт - Неопознанные Набедренники Бессмертия (60%)-->
 			<item id="19185" count="15"/>	<!--Материал Неопознанных Набедренников Бессмертия-->
@@ -15347,7 +15347,7 @@
 			<item id="18119" count="1" chance="100"/>	<!--Неопознанные Набедренники Бессмертия-->
 		</products>
 	</recipe>
-	<recipe id="1015" name="Рецепт - Неопознанные Рукавицы Бессмертия (60%)" level="11" mp_consume="258" success_rate="60" item_id="19330" is_dwarven="true">
+	<recipe id="1015" name="Recipe - Unidentified Immortal Gauntlet (60%)" level="11" mp_consume="258" success_rate="60" item_id="19330" is_dwarven="true">
 		<materials>
 			<item id="19330" count="1"/>	<!--Рецепт - Неопознанные Рукавицы Бессмертия (60%)-->
 			<item id="19186" count="15"/>	<!--Материал Неопознанных Рукавиц Бессмертия-->
@@ -15360,7 +15360,7 @@
 			<item id="18120" count="1" chance="100"/>	<!--Неопознанные Рукавицы Бессмертия-->
 		</products>
 	</recipe>
-	<recipe id="1016" name="Рецепт - Неопознанные Сапоги Бессмертия (60%)" level="11" mp_consume="258" success_rate="60" item_id="19331" is_dwarven="true">
+	<recipe id="1016" name="Recipe - Unidentified Immortal Boots (60%)" level="11" mp_consume="258" success_rate="60" item_id="19331" is_dwarven="true">
 		<materials>
 			<item id="19331" count="1"/>	<!--Рецепт - Неопознанные Сапоги Бессмертия (60%)-->
 			<item id="19187" count="15"/>	<!--Материал Неопознанных Сапог Бессмертия-->
@@ -15373,7 +15373,7 @@
 			<item id="18121" count="1" chance="100"/>	<!--Неопознанные Сапоги Бессмертия-->
 		</products>
 	</recipe>
-	<recipe id="1017" name="Рецепт - Неопознанный Щит Бессмертия (60%)" level="11" mp_consume="258" success_rate="60" item_id="19332" is_dwarven="true">
+	<recipe id="1017" name="Recipe - Unidentified Immortal Shield (60%)" level="11" mp_consume="258" success_rate="60" item_id="19332" is_dwarven="true">
 		<materials>
 			<item id="19332" count="1"/>	<!--Рецепт - Неопознанный Щит Бессмертия (60%)-->
 			<item id="19188" count="15"/>	<!--Материал Неопознанного Щита Бессмертия-->
@@ -15386,7 +15386,7 @@
 			<item id="18122" count="1" chance="100"/>	<!--Неопознанный Щит Бессмертия-->
 		</products>
 	</recipe>
-	<recipe id="1018" name="Рецепт - Неопознанный Кожаный Шлем Бессмертия (60%)" level="11" mp_consume="258" success_rate="60" item_id="19333" is_dwarven="true">
+	<recipe id="1018" name="Recipe - Unidentified Immortal Leather Helmet (60%)" level="11" mp_consume="258" success_rate="60" item_id="19333" is_dwarven="true">
 		<materials>
 			<item id="19333" count="1"/>	<!--Рецепт - Неопознанный Кожаный Шлем Бессмертия (60%)-->
 			<item id="19189" count="15"/>	<!--Материал Неопознанного Кожаного Шлема Бессмертия-->
@@ -15400,7 +15400,7 @@
 			<item id="18123" count="1" chance="100"/>	<!--Неопознанный Кожаный Шлем Бессмертия-->
 		</products>
 	</recipe>
-	<recipe id="1019" name="Рецепт - Неопознанная Кожаная Кираса Бессмертия (60%)" level="11" mp_consume="258" success_rate="60" item_id="19334" is_dwarven="true">
+	<recipe id="1019" name="Recipe - Unidentified Immortal Leather Breastplate (60%)" level="11" mp_consume="258" success_rate="60" item_id="19334" is_dwarven="true">
 		<materials>
 			<item id="19334" count="1"/>	<!--Рецепт - Неопознанная Кожаная Кираса Бессмертия (60%)-->
 			<item id="19190" count="15"/>	<!--Материал Неопознанной Кожаной Кирасы Бессмертия-->
@@ -15414,7 +15414,7 @@
 			<item id="18124" count="1" chance="100"/>	<!--Неопознанный Кожаный Доспех Бессмертия-->
 		</products>
 	</recipe>
-	<recipe id="1020" name="Рецепт - Неопознанные Кожаные Брюки Бессмертия (60%)" level="11" mp_consume="258" success_rate="60" item_id="19335" is_dwarven="true">
+	<recipe id="1020" name="Recipe - Unidentified Immortal Leather Pants (60%)" level="11" mp_consume="258" success_rate="60" item_id="19335" is_dwarven="true">
 		<materials>
 			<item id="19335" count="1"/>	<!--Рецепт - Неопознанные Кожаные Брюки Бессмертия (60%)-->
 			<item id="19191" count="15"/>	<!--Материал Неопознанных Кожаных Брюк Бессмертия-->
@@ -15428,7 +15428,7 @@
 			<item id="18125" count="1" chance="100"/>	<!--Неопознанные Кожаные Брюки Бессмертия-->
 		</products>
 	</recipe>
-	<recipe id="1021" name="Рецепт - Неопознанные Кожаные Перчатки Бессмертия (60%)" level="11" mp_consume="258" success_rate="60" item_id="19336" is_dwarven="true">
+	<recipe id="1021" name="Recipe - Unidentified Immortal Leather Gloves (60%)" level="11" mp_consume="258" success_rate="60" item_id="19336" is_dwarven="true">
 		<materials>
 			<item id="19336" count="1"/>	<!--Рецепт - Неопознанные Кожаные Перчатки Бессмертия (60%)-->
 			<item id="19192" count="15"/>	<!--Материал Неопознанных Кожаных Перчаток Бессмертия-->
@@ -15441,7 +15441,7 @@
 			<item id="18126" count="1" chance="100"/>	<!--Неопознанные Кожаные Перчатки Бессмертия-->
 		</products>
 	</recipe>
-	<recipe id="1022" name="Рецепт - Неопознанные Кожаные Сапоги Бессмертия (60%)" level="11" mp_consume="258" success_rate="60" item_id="19337" is_dwarven="true">
+	<recipe id="1022" name="Recipe - Unidentified Immortal Leather Boots (60%)" level="11" mp_consume="258" success_rate="60" item_id="19337" is_dwarven="true">
 		<materials>
 			<item id="19337" count="1"/>	<!--Рецепт - Неопознанные Кожаные Сапоги Бессмертия (60%)-->
 			<item id="19193" count="15"/>	<!--Материал Неопознанных Кожаных Сапог Бессмертия-->
@@ -15454,7 +15454,7 @@
 			<item id="18127" count="1" chance="100"/>	<!--Неопознанные Кожаные Сапоги Бессмертия-->
 		</products>
 	</recipe>
-	<recipe id="1023" name="Рецепт - Неопознанная Диадема Бессмертия (60%)" level="11" mp_consume="258" success_rate="60" item_id="19338" is_dwarven="true">
+	<recipe id="1023" name="Recipe - Unidentified Immortal Tiara (60%)" level="11" mp_consume="258" success_rate="60" item_id="19338" is_dwarven="true">
 		<materials>
 			<item id="19338" count="1"/>	<!--Рецепт - Неопознанная Диадема Бессмертия (60%)-->
 			<item id="19194" count="15"/>	<!--Материал Неопознанной Диадемы Бессмертия-->
@@ -15468,7 +15468,7 @@
 			<item id="18128" count="1" chance="100"/>	<!--Неопознанная Диадема Бессмертия-->
 		</products>
 	</recipe>
-	<recipe id="1024" name="Рецепт - Неопознанная Туника Бессмертия (60%)" level="11" mp_consume="258" success_rate="60" item_id="19339" is_dwarven="true">
+	<recipe id="1024" name="Recipe - Unidentified Immortal Tunic (60%)" level="11" mp_consume="258" success_rate="60" item_id="19339" is_dwarven="true">
 		<materials>
 			<item id="19339" count="1"/>	<!--Рецепт - Неопознанная Туника Бессмертия (60%)-->
 			<item id="19195" count="15"/>	<!--Материал Неопознанной Туники Бессмертия-->
@@ -15482,7 +15482,7 @@
 			<item id="18129" count="1" chance="100"/>	<!--Неопознанная Туника Бессмертия-->
 		</products>
 	</recipe>
-	<recipe id="1025" name="Рецепт - Неопознанные Штаны Бессмертия (60%)" level="11" mp_consume="258" success_rate="60" item_id="19340" is_dwarven="true">
+	<recipe id="1025" name="Recipe - Unidentified Immortal Pants (60%)" level="11" mp_consume="258" success_rate="60" item_id="19340" is_dwarven="true">
 		<materials>
 			<item id="19340" count="1"/>	<!--Рецепт - Неопознанные Штаны Бессмертия (60%)-->
 			<item id="19196" count="15"/>	<!--Материал Неопознанных Штанов Бессмертия-->
@@ -15496,7 +15496,7 @@
 			<item id="18130" count="1" chance="100"/>	<!--Неопознанные Штаны Бессмертия-->
 		</products>
 	</recipe>
-	<recipe id="1026" name="Рецепт - Неопознанные Перчатки Бессмертия (60%)" level="11" mp_consume="258" success_rate="60" item_id="19341" is_dwarven="true">
+	<recipe id="1026" name="Recipe - Unidentified Immortal Gloves (60%)" level="11" mp_consume="258" success_rate="60" item_id="19341" is_dwarven="true">
 		<materials>
 			<item id="19341" count="1"/>	<!--Рецепт - Неопознанные Перчатки Бессмертия (60%)-->
 			<item id="19197" count="15"/>	<!--Материал Неопознанных Перчаток Бессмертия-->
@@ -15509,7 +15509,7 @@
 			<item id="18131" count="1" chance="100"/>	<!--Неопознанные Перчатки Бессмертия-->
 		</products>
 	</recipe>
-	<recipe id="1027" name="Рецепт - Неопознанные Ботинки Бессмертия (60%)" level="11" mp_consume="258" success_rate="60" item_id="19342" is_dwarven="true">
+	<recipe id="1027" name="Recipe - Unidentified Immortal Boots (60%)" level="11" mp_consume="258" success_rate="60" item_id="19342" is_dwarven="true">
 		<materials>
 			<item id="19342" count="1"/>	<!--Рецепт - Неопознанные Ботинки Бессмертия (60%)-->
 			<item id="19198" count="15"/>	<!--Материал Неопознанных Ботинок Бессмертия-->
@@ -15522,7 +15522,7 @@
 			<item id="18132" count="1" chance="100"/>	<!--Неопознанные Ботинки Бессмертия-->
 		</products>
 	</recipe>
-	<recipe id="1028" name="Рецепт - Неопознанный Символ Бессмертия (60%)" level="11" mp_consume="258" success_rate="60" item_id="19343" is_dwarven="true">
+	<recipe id="1028" name="Recipe - Unidentified symbol of immortality (60%)" level="11" mp_consume="258" success_rate="60" item_id="19343" is_dwarven="true">
 		<materials>
 			<item id="19343" count="1"/>	<!--Рецепт - Неопознанный Символ Бессмертия (60%)-->
 			<item id="19199" count="15"/>	<!--Материал Неопознанного Символа Бессмертия-->
@@ -15535,7 +15535,7 @@
 			<item id="18133" count="1" chance="100"/>	<!--Неопознанный Символ Бессмертия-->
 		</products>
 	</recipe>
-	<recipe id="1029" name="Рецепт - Неопознанное Ожерелье Бессмертия (60%)" level="11" mp_consume="258" success_rate="60" item_id="19344" is_dwarven="true">
+	<recipe id="1029" name="Recipe - Unidentified Immortal Necklace (60%)" level="11" mp_consume="258" success_rate="60" item_id="19344" is_dwarven="true">
 		<materials>
 			<item id="19344" count="1"/>	<!--Рецепт - Неопознанное Ожерелье Бессмертия (60%)-->
 			<item id="19200" count="20"/>	<!--Камень Неопознанного Ожерелья Бессмертия-->
@@ -15548,7 +15548,7 @@
 			<item id="18134" count="1" chance="100"/>	<!--Неопознанное Ожерелье Бессмертия-->
 		</products>
 	</recipe>
-	<recipe id="1030" name="Рецепт - Неопознанная Серьга Бессмертия (60%)" level="11" mp_consume="258" success_rate="60" item_id="19345" is_dwarven="true">
+	<recipe id="1030" name="Recipe - Unidentified Immortal Earring (60%)" level="11" mp_consume="258" success_rate="60" item_id="19345" is_dwarven="true">
 		<materials>
 			<item id="19345" count="1"/>	<!--Рецепт - Неопознанная Серьга Бессмертия (60%)-->
 			<item id="19201" count="20"/>	<!--Камень Неопознанной Серьги Бессмертия-->
@@ -15561,7 +15561,7 @@
 			<item id="18135" count="1" chance="100"/>	<!--Неопознанная Серьга Бессмертия-->
 		</products>
 	</recipe>
-	<recipe id="1031" name="Рецепт - Неопознанное Кольцо Бессмертия (60%)" level="11" mp_consume="258" success_rate="60" item_id="19346" is_dwarven="true">
+	<recipe id="1031" name="Recipe - Unidentified Immortal Ring (60%)" level="11" mp_consume="258" success_rate="60" item_id="19346" is_dwarven="true">
 		<materials>
 			<item id="19346" count="1"/>	<!--Рецепт - Неопознанное Кольцо Бессмертия (60%)-->
 			<item id="19202" count="20"/>	<!--Камень Неопознанного Кольца Бессмертия-->
@@ -15574,7 +15574,7 @@
 			<item id="18136" count="1" chance="100"/>	<!--Неопознанное Кольцо Бессмертия-->
 		</products>
 	</recipe>
-	<recipe id="1032" name="Рецепт - Неопознанное Острие Апокалипсиса (60%)" level="12" mp_consume="264" success_rate="60" item_id="19347" is_dwarven="true">
+	<recipe id="1032" name="Recipe - Unidentified tip of the Apocalypse (60%)" level="12" mp_consume="264" success_rate="60" item_id="19347" is_dwarven="true">
 		<materials>
 			<item id="19347" count="1"/>	<!--Рецепт - Неопознанное Острие Апокалипсиса (60%)-->
 			<item id="19203" count="10"/>	<!--Часть Неопознанного Острия Апокалипсиса-->
@@ -15589,7 +15589,7 @@
 			<item id="18137" count="1" chance="100"/>	<!--Неопознанное Острие Апокалипсиса-->
 		</products>
 	</recipe>
-	<recipe id="1033" name="Рецепт - Неопознанный Резак Апокалипсиса (60%)" level="12" mp_consume="264" success_rate="60" item_id="19348" is_dwarven="true">
+	<recipe id="1033" name="Recipe - Unidentified Apocalypse Cutter (60%)" level="12" mp_consume="264" success_rate="60" item_id="19348" is_dwarven="true">
 		<materials>
 			<item id="19348" count="1"/>	<!--Рецепт - Неопознанный Резак Апокалипсиса (60%)-->
 			<item id="19204" count="10"/>	<!--Часть Неопознанного Резака Апокалипсиса-->
@@ -15604,7 +15604,7 @@
 			<item id="18138" count="1" chance="100"/>	<!--Неопознанный Резак Апокалипсиса-->
 		</products>
 	</recipe>
-	<recipe id="1034" name="Рецепт - Неопознанный Эспадон Апокалипсиса (60%)" level="12" mp_consume="264" success_rate="60" item_id="19349" is_dwarven="true">
+	<recipe id="1034" name="Recipe - Unidentified Apocalypse Slasher (60%)" level="12" mp_consume="264" success_rate="60" item_id="19349" is_dwarven="true">
 		<materials>
 			<item id="19349" count="1"/>	<!--Рецепт - Неопознанный Эспадон Апокалипсиса (60%)-->
 			<item id="19205" count="10"/>	<!--Часть Неопознанного Эспадона Апокалипсиса-->
@@ -15619,7 +15619,7 @@
 			<item id="18139" count="1" chance="100"/>	<!--Неопознанный Эспадон Апокалипсиса-->
 		</products>
 	</recipe>
-	<recipe id="1035" name="Рецепт - Неопознанный Мститель Апокалипсиса (60%)" level="12" mp_consume="264" success_rate="60" item_id="19350" is_dwarven="true">
+	<recipe id="1035" name="Recipe - Unidentified Apocalypse Avenger (60%)" level="12" mp_consume="264" success_rate="60" item_id="19350" is_dwarven="true">
 		<materials>
 			<item id="19350" count="1"/>	<!--Рецепт - Неопознанный Мститель Апокалипсиса (60%)-->
 			<item id="19206" count="10"/>	<!--Часть Неопознанного Мстителя Апокалипсиса-->
@@ -15634,7 +15634,7 @@
 			<item id="18140" count="1" chance="100"/>	<!--Неопознанный Мститель Апокалипсиса-->
 		</products>
 	</recipe>
-	<recipe id="1036" name="Рецепт - Неопознанный Воитель Апокалипсиса (60%)" level="12" mp_consume="264" success_rate="60" item_id="19351" is_dwarven="true">
+	<recipe id="1036" name="Recipe - Unidentified Apocalypse Warrior (60%)" level="12" mp_consume="264" success_rate="60" item_id="19351" is_dwarven="true">
 		<materials>
 			<item id="19351" count="1"/>	<!--Рецепт - Неопознанный Воитель Апокалипсиса (60%)-->
 			<item id="19207" count="10"/>	<!--Часть Неопознанного Воителя Апокалипсиса-->
@@ -15649,7 +15649,7 @@
 			<item id="18141" count="1" chance="100"/>	<!--Неопознанный Воитель Апокалипсиса-->
 		</products>
 	</recipe>
-	<recipe id="1037" name="Рецепт - Неопознанный Буревестник Апокалипсиса (60%)" level="12" mp_consume="264" success_rate="60" item_id="19352" is_dwarven="true">
+	<recipe id="1037" name="Recipe - Unidentified Apocalypse Petrel (60%)" level="12" mp_consume="264" success_rate="60" item_id="19352" is_dwarven="true">
 		<materials>
 			<item id="19352" count="1"/>	<!--Рецепт - Неопознанный Буревестник Апокалипсиса (60%)-->
 			<item id="19208" count="10"/>	<!--Часть Неопознанного Буревестника Апокалипсиса-->
@@ -15664,7 +15664,7 @@
 			<item id="18142" count="1" chance="100"/>	<!--Неопознанный Буревестник Апокалипсиса-->
 		</products>
 	</recipe>
-	<recipe id="1038" name="Рецепт - Неопознанный Бросок Апокалипсиса (60%)" level="12" mp_consume="264" success_rate="60" item_id="19353" is_dwarven="true">
+	<recipe id="1038" name="Recipe - Unidentified Roll Apocalypse (60%)" level="12" mp_consume="264" success_rate="60" item_id="19353" is_dwarven="true">
 		<materials>
 			<item id="19353" count="1"/>	<!--Рецепт - Неопознанный Бросок Апокалипсиса (60%)-->
 			<item id="19209" count="10"/>	<!--Часть Неопознанного Броска Апокалипсиса-->
@@ -15679,7 +15679,7 @@
 			<item id="18143" count="1" chance="100"/>	<!--Неопознанный Бросок Апокалипсиса-->
 		</products>
 	</recipe>
-	<recipe id="1039" name="Рецепт - Неопознанный Страж Апокалипсиса (60%)" level="12" mp_consume="264" success_rate="60" item_id="19354" is_dwarven="true">
+	<recipe id="1039" name="Recipe - Unidentified Apocalypse Guardian (60%)" level="12" mp_consume="264" success_rate="60" item_id="19354" is_dwarven="true">
 		<materials>
 			<item id="19354" count="1"/>	<!--Рецепт - Неопознанный Страж Апокалипсиса (60%)-->
 			<item id="19210" count="10"/>	<!--Часть Неопознанного Стража Апокалипсиса-->
@@ -15694,7 +15694,7 @@
 			<item id="18144" count="1" chance="100"/>	<!--Неопознанный Страж Апокалипсиса-->
 		</products>
 	</recipe>
-	<recipe id="1040" name="Рецепт - Неопознанный Расчленитель Апокалипсиса (60%)" level="12" mp_consume="264" success_rate="60" item_id="19355" is_dwarven="true">
+	<recipe id="1040" name="Recipe - Unidentified Apocalypse Buster (60%)" level="12" mp_consume="264" success_rate="60" item_id="19355" is_dwarven="true">
 		<materials>
 			<item id="19355" count="1"/>	<!--Рецепт - Неопознанный Расчленитель Апокалипсиса (60%)-->
 			<item id="19211" count="10"/>	<!--Часть Неопознанного Расчленителя Апокалипсиса-->
@@ -15709,7 +15709,7 @@
 			<item id="18145" count="1" chance="100"/>	<!--Неопознанный Расчленитель Апокалипсиса-->
 		</products>
 	</recipe>
-	<recipe id="1041" name="Рецепт - Неопознанный Заклинатель Апокалипсиса (60%)" level="12" mp_consume="264" success_rate="60" item_id="19356" is_dwarven="true">
+	<recipe id="1041" name="Recipe - Unidentified Apocalypse caster (60%)" level="12" mp_consume="264" success_rate="60" item_id="19356" is_dwarven="true">
 		<materials>
 			<item id="19356" count="1"/>	<!--Рецепт - Неопознанный Заклинатель Апокалипсиса (60%)-->
 			<item id="19212" count="10"/>	<!--Часть Неопознанного Заклинателя Апокалипсиса-->
@@ -15724,7 +15724,7 @@
 			<item id="18146" count="1" chance="100"/>	<!--Неопознанный Заклинатель Апокалипсиса-->
 		</products>
 	</recipe>
-	<recipe id="1042" name="Рецепт - Неопознанное Возмездие Апокалипсиса (60%)" level="12" mp_consume="264" success_rate="60" item_id="19357" is_dwarven="true">
+	<recipe id="1042" name="Recipe - Unidentified Apocalypse Nemesis (60%)" level="12" mp_consume="264" success_rate="60" item_id="19357" is_dwarven="true">
 		<materials>
 			<item id="19357" count="1"/>	<!--Рецепт - Неопознанное Возмездие Апокалипсиса (60%)-->
 			<item id="19213" count="10"/>	<!--Часть Неопознанного Возмездия Апокалипсиса-->
@@ -15739,7 +15739,7 @@
 			<item id="18147" count="1" chance="100"/>	<!--Неопознанное Возмездие Апокалипсиса-->
 		</products>
 	</recipe>
-	<recipe id="1043" name="Рецепт - Неопознанный Шлем Ада (60%)" level="12" mp_consume="264" success_rate="60" item_id="19358" is_dwarven="true">
+	<recipe id="1043" name="Recipe - Unidentified Helm of Hell (60%)" level="12" mp_consume="264" success_rate="60" item_id="19358" is_dwarven="true">
 		<materials>
 			<item id="19358" count="1"/>	<!--Рецепт - Неопознанный Шлем Ада (60%)-->
 			<item id="19217" count="15"/>	<!--Материал Неопознанного Шлема Ада-->
@@ -15753,7 +15753,7 @@
 			<item id="18151" count="1" chance="100"/>	<!--Неопознанный Шлем Ада-->
 		</products>
 	</recipe>
-	<recipe id="1044" name="Рецепт - Неопознанная Кираса Ада (60%)" level="12" mp_consume="264" success_rate="60" item_id="19359" is_dwarven="true">
+	<recipe id="1044" name="Recipe - Unidentified Breastplate of Hell (60%)" level="12" mp_consume="264" success_rate="60" item_id="19359" is_dwarven="true">
 		<materials>
 			<item id="19359" count="1"/>	<!--Рецепт - Неопознанная Кираса Ада (60%)-->
 			<item id="19218" count="15"/>	<!--Материал Неопознанной Кирасы Ада-->
@@ -15767,7 +15767,7 @@
 			<item id="18152" count="1" chance="100"/>	<!--Неопознанная Кираса Ада-->
 		</products>
 	</recipe>
-	<recipe id="1045" name="Рецепт - Неопознанные Набедренники Ада (60%)" level="12" mp_consume="264" success_rate="60" item_id="19360" is_dwarven="true">
+	<recipe id="1045" name="Recipe - Unidentified Hell Gaiters (60%)" level="12" mp_consume="264" success_rate="60" item_id="19360" is_dwarven="true">
 		<materials>
 			<item id="19360" count="1"/>	<!--Рецепт - Неопознанные Набедренники Ада (60%)-->
 			<item id="19219" count="15"/>	<!--Материал Неопознанных Набедренников Ада-->
@@ -15781,7 +15781,7 @@
 			<item id="18153" count="1" chance="100"/>	<!--Неопознанные Набедренники Ада-->
 		</products>
 	</recipe>
-	<recipe id="1046" name="Рецепт - Неопознанные Рукавицы Ада (60%)" level="12" mp_consume="264" success_rate="60" item_id="19361" is_dwarven="true">
+	<recipe id="1046" name="Recipe - Unidentified Gauntlets of Hell (60%)" level="12" mp_consume="264" success_rate="60" item_id="19361" is_dwarven="true">
 		<materials>
 			<item id="19361" count="1"/>	<!--Рецепт - Неопознанные Рукавицы Ада (60%)-->
 			<item id="19220" count="15"/>	<!--Материал Неопознанных Рукавиц Ада-->
@@ -15794,7 +15794,7 @@
 			<item id="18154" count="1" chance="100"/>	<!--Неопознанные Рукавицы Ада-->
 		</products>
 	</recipe>
-	<recipe id="1047" name="Рецепт - Неопознанные Сапоги Ада (60%)" level="12" mp_consume="264" success_rate="60" item_id="19362" is_dwarven="true">
+	<recipe id="1047" name="Recipe - Unidentified Boots of Hell (60%)" level="12" mp_consume="264" success_rate="60" item_id="19362" is_dwarven="true">
 		<materials>
 			<item id="19362" count="1"/>	<!--Рецепт - Неопознанные Сапоги Ада (60%)-->
 			<item id="19221" count="15"/>	<!--Материал Неопознанных Сапог Ада-->
@@ -15807,7 +15807,7 @@
 			<item id="18155" count="1" chance="100"/>	<!--Неопознанные Сапоги Ада-->
 		</products>
 	</recipe>
-	<recipe id="1048" name="Рецепт - Неопознанный Щит Ада (60%)" level="12" mp_consume="264" success_rate="60" item_id="19363" is_dwarven="true">
+	<recipe id="1048" name="Recipe - Unidentified Shield of Hell (60%)" level="12" mp_consume="264" success_rate="60" item_id="19363" is_dwarven="true">
 		<materials>
 			<item id="19363" count="1"/>	<!--Рецепт - Неопознанный Щит Ада (60%)-->
 			<item id="19222" count="15"/>	<!--Материал Неопознанного Щита Ада-->
@@ -15820,7 +15820,7 @@
 			<item id="18156" count="1" chance="100"/>	<!--Неопознанный Щит Ада-->
 		</products>
 	</recipe>
-	<recipe id="1049" name="Рецепт - Неопознанный Кожаный Шлем Ада (60%)" level="12" mp_consume="264" success_rate="60" item_id="19364" is_dwarven="true">
+	<recipe id="1049" name="Recipe - Unidentified Leather Helmet of Hell (60%)" level="12" mp_consume="264" success_rate="60" item_id="19364" is_dwarven="true">
 		<materials>
 			<item id="19364" count="1"/>	<!--Рецепт - Неопознанный Кожаный Шлем Ада (60%)-->
 			<item id="19223" count="15"/>	<!--Материал Неопознанного Кожаного Шлема Ада-->
@@ -15834,7 +15834,7 @@
 			<item id="18157" count="1" chance="100"/>	<!--Неопознанный Кожаный Шлем Ада-->
 		</products>
 	</recipe>
-	<recipe id="1050" name="Рецепт - Неопознанная Кожаная Кираса Ада (60%)" level="12" mp_consume="264" success_rate="60" item_id="19365" is_dwarven="true">
+	<recipe id="1050" name="Recipe - Unidentified Leather Breastplate of Hell (60%)" level="12" mp_consume="264" success_rate="60" item_id="19365" is_dwarven="true">
 		<materials>
 			<item id="19365" count="1"/>	<!--Рецепт - Неопознанная Кожаная Кираса Ада (60%)-->
 			<item id="19224" count="15"/>	<!--Материал Неопознанной Кожаной Кирасы Ада-->
@@ -15848,7 +15848,7 @@
 			<item id="18158" count="1" chance="100"/>	<!--Неопознанный Кожаный Доспех Ада-->
 		</products>
 	</recipe>
-	<recipe id="1051" name="Рецепт - Неопознанные Кожаные Брюки Ада (60%)" level="12" mp_consume="264" success_rate="60" item_id="19366" is_dwarven="true">
+	<recipe id="1051" name="Recipe - Unidentified Leather Pants Hell (60%)" level="12" mp_consume="264" success_rate="60" item_id="19366" is_dwarven="true">
 		<materials>
 			<item id="19366" count="1"/>	<!--Рецепт - Неопознанные Кожаные Брюки Ада (60%)-->
 			<item id="19225" count="15"/>	<!--Материал Неопознанных Кожаных Брюк Ада-->
@@ -15862,7 +15862,7 @@
 			<item id="18159" count="1" chance="100"/>	<!--Неопознанные Кожаные Брюки Ада-->
 		</products>
 	</recipe>
-	<recipe id="1052" name="Рецепт - Неопознанные Кожаные Перчатки Ада (60%)" level="12" mp_consume="264" success_rate="60" item_id="19367" is_dwarven="true">
+	<recipe id="1052" name="Recipe - Unidentified Hell Leather Gloves (60%)" level="12" mp_consume="264" success_rate="60" item_id="19367" is_dwarven="true">
 		<materials>
 			<item id="19367" count="1"/>	<!--Рецепт - Неопознанные Кожаные Перчатки Ада (60%)-->
 			<item id="19226" count="15"/>	<!--Материал Неопознанных Кожаных Перчаток Ада-->
@@ -15875,7 +15875,7 @@
 			<item id="18160" count="1" chance="100"/>	<!--Неопознанные Кожаные Перчатки Ада-->
 		</products>
 	</recipe>
-	<recipe id="1053" name="Рецепт - Неопознанные Кожаные Сапоги Ада (60%)" level="12" mp_consume="264" success_rate="60" item_id="19368" is_dwarven="true">
+	<recipe id="1053" name="Recipe - Unidentified Leather Boots of Hell (60%)" level="12" mp_consume="264" success_rate="60" item_id="19368" is_dwarven="true">
 		<materials>
 			<item id="19368" count="1"/>	<!--Рецепт - Неопознанные Кожаные Сапоги Ада (60%)-->
 			<item id="19227" count="15"/>	<!--Материал Неопознанных Кожаных Сапог Ада-->
@@ -15888,7 +15888,7 @@
 			<item id="18161" count="1" chance="100"/>	<!--Неопознанные Кожаные Сапоги Ада-->
 		</products>
 	</recipe>
-	<recipe id="1054" name="Рецепт - Неопознанная Диадема Ада (60%)" level="12" mp_consume="264" success_rate="60" item_id="19369" is_dwarven="true">
+	<recipe id="1054" name="Recipe - Unidentified Diadem of Hell (60%)" level="12" mp_consume="264" success_rate="60" item_id="19369" is_dwarven="true">
 		<materials>
 			<item id="19369" count="1"/>	<!--Рецепт - Неопознанная Диадема Ада (60%)-->
 			<item id="19228" count="15"/>	<!--Материал Неопознанной Диадемы Ада-->
@@ -15902,7 +15902,7 @@
 			<item id="18162" count="1" chance="100"/>	<!--Неопознанная Диадема Ада-->
 		</products>
 	</recipe>
-	<recipe id="1055" name="Рецепт - Неопознанная Туника Ада (60%)" level="12" mp_consume="264" success_rate="60" item_id="19370" is_dwarven="true">
+	<recipe id="1055" name="Recipe - Unidentified Tunic Hell (60%)" level="12" mp_consume="264" success_rate="60" item_id="19370" is_dwarven="true">
 		<materials>
 			<item id="19370" count="1"/>	<!--Рецепт - Неопознанная Туника Ада (60%)-->
 			<item id="19229" count="15"/>	<!--Материал Неопознанной Туники Ада-->
@@ -15916,7 +15916,7 @@
 			<item id="18163" count="1" chance="100"/>	<!--Неопознанная Туника Ада-->
 		</products>
 	</recipe>
-	<recipe id="1056" name="Рецепт - Неопознанные Штаны Ада (60%)" level="12" mp_consume="264" success_rate="60" item_id="19371" is_dwarven="true">
+	<recipe id="1056" name="Recipe - Unidentified Hell Pants (60%)" level="12" mp_consume="264" success_rate="60" item_id="19371" is_dwarven="true">
 		<materials>
 			<item id="19371" count="1"/>	<!--Рецепт - Неопознанные Штаны Ада (60%)-->
 			<item id="19230" count="15"/>	<!--Материал Неопознанных Штанов Ада-->
@@ -15930,7 +15930,7 @@
 			<item id="18164" count="1" chance="100"/>	<!--Неопознанные Штаны Ада-->
 		</products>
 	</recipe>
-	<recipe id="1057" name="Рецепт - Неопознанные Перчатки Ада (60%)" level="12" mp_consume="264" success_rate="60" item_id="19372" is_dwarven="true">
+	<recipe id="1057" name="Recipe - Unidentified Gloves of Hell (60%)" level="12" mp_consume="264" success_rate="60" item_id="19372" is_dwarven="true">
 		<materials>
 			<item id="19372" count="1"/>	<!--Рецепт - Неопознанные Перчатки Ада (60%)-->
 			<item id="19231" count="15"/>	<!--Материал Неопознанных Перчаток Ада-->
@@ -15943,7 +15943,7 @@
 			<item id="18165" count="1" chance="100"/>	<!--Неопознанные Перчатки Ада-->
 		</products>
 	</recipe>
-	<recipe id="1058" name="Рецепт - Неопознанные Ботинки Ада (60%)" level="12" mp_consume="264" success_rate="60" item_id="19373" is_dwarven="true">
+	<recipe id="1058" name="Recipe - Unidentified Boots of Hell (60%)" level="12" mp_consume="264" success_rate="60" item_id="19373" is_dwarven="true">
 		<materials>
 			<item id="19373" count="1"/>	<!--Рецепт - Неопознанные Ботинки Ада (60%)-->
 			<item id="19232" count="15"/>	<!--Материал Неопознанных Ботинок Ада-->
@@ -15956,7 +15956,7 @@
 			<item id="18166" count="1" chance="100"/>	<!--Неопознанные Ботинки Ада-->
 		</products>
 	</recipe>
-	<recipe id="1059" name="Рецепт - Неопознанный Символ Ада (60%)" level="12" mp_consume="264" success_rate="60" item_id="19374" is_dwarven="true">
+	<recipe id="1059" name="Recipe - Unidentified symbol of Hell (60%)" level="12" mp_consume="264" success_rate="60" item_id="19374" is_dwarven="true">
 		<materials>
 			<item id="19374" count="1"/>	<!--Рецепт - Неопознанный Символ Ада (60%)-->
 			<item id="19233" count="15"/>	<!--Материал Неопознанного Символа Ада-->
@@ -15969,7 +15969,7 @@
 			<item id="18167" count="1" chance="100"/>	<!--Неопознанный Символ Ада-->
 		</products>
 	</recipe>
-	<recipe id="1060" name="Рецепт - Неопознанное Ожерелье Ада (60%)" level="12" mp_consume="264" success_rate="60" item_id="19375" is_dwarven="true">
+	<recipe id="1060" name="Recipe - Unidentified Necklace of Hell (60%)" level="12" mp_consume="264" success_rate="60" item_id="19375" is_dwarven="true">
 		<materials>
 			<item id="19375" count="1"/>	<!--Рецепт - Неопознанное Ожерелье Ада (60%)-->
 			<item id="19234" count="20"/>	<!--Камень Неопознанного Ожерелья Ада-->
@@ -15982,7 +15982,7 @@
 			<item id="18168" count="1" chance="100"/>	<!--Неопознанное Ожерелье Ада-->
 		</products>
 	</recipe>
-	<recipe id="1061" name="Рецепт - Неопознанная Серьга Ада (60%)" level="12" mp_consume="264" success_rate="60" item_id="19376" is_dwarven="true">
+	<recipe id="1061" name="Recipe - Unidentified Earring Hell (60%)" level="12" mp_consume="264" success_rate="60" item_id="19376" is_dwarven="true">
 		<materials>
 			<item id="19376" count="1"/>	<!--Рецепт - Неопознанная Серьга Ада (60%)-->
 			<item id="19235" count="20"/>	<!--Камень Неопознанной Серьги Ада-->
@@ -15995,7 +15995,7 @@
 			<item id="18169" count="1" chance="100"/>	<!--Неопознанная Серьга Ада-->
 		</products>
 	</recipe>
-	<recipe id="1062" name="Рецепт - Неопознанное Кольцо Ада (60%)" level="12" mp_consume="264" success_rate="60" item_id="19377" is_dwarven="true">
+	<recipe id="1062" name="Recipe - Unidentified Ring of Hell (60%)" level="12" mp_consume="264" success_rate="60" item_id="19377" is_dwarven="true">
 		<materials>
 			<item id="19377" count="1"/>	<!--Рецепт - Неопознанное Кольцо Ада (60%)-->
 			<item id="19236" count="20"/>	<!--Камень Неопознанного Кольца Ада-->
@@ -16008,7 +16008,7 @@
 			<item id="18170" count="1" chance="100"/>	<!--Неопознанное Кольцо Ада-->
 		</products>
 	</recipe>
-	<recipe id="1063" name="Рецепт - Неопознанное Острие Фантазмы (60%)" level="13" mp_consume="270" success_rate="60" item_id="19378" is_dwarven="true">
+	<recipe id="1063" name="Recipe - Unidentified tip Phantasms (60%)" level="13" mp_consume="270" success_rate="60" item_id="19378" is_dwarven="true">
 		<materials>
 			<item id="19378" count="1"/>	<!--Рецепт - Неопознанное Острие Фантазмы (60%)-->
 			<item id="19237" count="10"/>	<!--Часть Неопознанного Острия Фантазмы-->
@@ -16023,7 +16023,7 @@
 			<item id="18171" count="1" chance="100"/>	<!--Неопознанное Острие Фантазмы-->
 		</products>
 	</recipe>
-	<recipe id="1064" name="Рецепт - Неопознанный Резак Фантазмы (60%)" level="13" mp_consume="270" success_rate="60" item_id="19379" is_dwarven="true">
+	<recipe id="1064" name="Recipe - Unidentified Cutter Phantasms (60%)" level="13" mp_consume="270" success_rate="60" item_id="19379" is_dwarven="true">
 		<materials>
 			<item id="19379" count="1"/>	<!--Рецепт - Неопознанный Резак Фантазмы (60%)-->
 			<item id="19238" count="10"/>	<!--Часть Неопознанного Резака Фантазмы-->
@@ -16038,7 +16038,7 @@
 			<item id="18172" count="1" chance="100"/>	<!--Неопознанный Резак Фантазмы-->
 		</products>
 	</recipe>
-	<recipe id="1065" name="Рецепт - Неопознанный Эспадон Фантазмы (60%)" level="13" mp_consume="270" success_rate="60" item_id="19380" is_dwarven="true">
+	<recipe id="1065" name="Recipe - Unidentified Slasher Phantasms (60%)" level="13" mp_consume="270" success_rate="60" item_id="19380" is_dwarven="true">
 		<materials>
 			<item id="19380" count="1"/>	<!--Рецепт - Неопознанный Эспадон Фантазмы (60%)-->
 			<item id="19239" count="10"/>	<!--Часть Неопознанного Эспадона Фантазмы-->
@@ -16053,7 +16053,7 @@
 			<item id="18173" count="1" chance="100"/>	<!--Неопознанный Эспадон Фантазмы-->
 		</products>
 	</recipe>
-	<recipe id="1066" name="Рецепт - Неопознанный Мститель Фантазмы (60%)" level="13" mp_consume="270" success_rate="60" item_id="19381" is_dwarven="true">
+	<recipe id="1066" name="Recipe - Unidentified Avenger Phantasms (60%)" level="13" mp_consume="270" success_rate="60" item_id="19381" is_dwarven="true">
 		<materials>
 			<item id="19381" count="1"/>	<!--Рецепт - Неопознанный Мститель Фантазмы (60%)-->
 			<item id="19240" count="10"/>	<!--Часть Неопознанного Мстителя Фантазмы-->
@@ -16068,7 +16068,7 @@
 			<item id="18174" count="1" chance="100"/>	<!--Неопознанный Мститель Фантазмы-->
 		</products>
 	</recipe>
-	<recipe id="1067" name="Рецепт - Неопознанный Воитель Фантазмы (60%)" level="13" mp_consume="270" success_rate="60" item_id="19382" is_dwarven="true">
+	<recipe id="1067" name="Recipe - Unknown Warrior Phantasms (60%)" level="13" mp_consume="270" success_rate="60" item_id="19382" is_dwarven="true">
 		<materials>
 			<item id="19382" count="1"/>	<!--Рецепт - Неопознанный Воитель Фантазмы (60%)-->
 			<item id="19241" count="10"/>	<!--Часть Неопознанного Воителя Фантазмы-->
@@ -16083,7 +16083,7 @@
 			<item id="18175" count="1" chance="100"/>	<!--Неопознанный Воитель Фантазмы-->
 		</products>
 	</recipe>
-	<recipe id="1068" name="Рецепт - Неопознанный Буревестник Фантазмы (60%)" level="13" mp_consume="270" success_rate="60" item_id="19383" is_dwarven="true">
+	<recipe id="1068" name="Recipe - Unidentified Puffin Phantasms (60%)" level="13" mp_consume="270" success_rate="60" item_id="19383" is_dwarven="true">
 		<materials>
 			<item id="19383" count="1"/>	<!--Рецепт - Неопознанный Буревестник Фантазмы (60%)-->
 			<item id="19242" count="10"/>	<!--Часть Неопознанного Буревестника Фантазмы-->
@@ -16098,7 +16098,7 @@
 			<item id="18176" count="1" chance="100"/>	<!--Неопознанный Буревестник Фантазмы-->
 		</products>
 	</recipe>
-	<recipe id="1069" name="Рецепт - Неопознанный Бросок Фантазмы (60%)" level="13" mp_consume="270" success_rate="60" item_id="19384" is_dwarven="true">
+	<recipe id="1069" name="Recipe - Unidentified Throw Phantasms (60%)" level="13" mp_consume="270" success_rate="60" item_id="19384" is_dwarven="true">
 		<materials>
 			<item id="19384" count="1"/>	<!--Рецепт - Неопознанный Бросок Фантазмы (60%)-->
 			<item id="19243" count="10"/>	<!--Часть Неопознанного Броска Фантазмы-->
@@ -16113,7 +16113,7 @@
 			<item id="18177" count="1" chance="100"/>	<!--Неопознанный Бросок Фантазмы-->
 		</products>
 	</recipe>
-	<recipe id="1070" name="Рецепт - Неопознанный Страж Фантазмы (60%)" level="13" mp_consume="270" success_rate="60" item_id="19385" is_dwarven="true">
+	<recipe id="1070" name="Recipe - Unidentified Guardian Phantasms (60%)" level="13" mp_consume="270" success_rate="60" item_id="19385" is_dwarven="true">
 		<materials>
 			<item id="19385" count="1"/>	<!--Рецепт - Неопознанный Страж Фантазмы (60%)-->
 			<item id="19244" count="10"/>	<!--Часть Неопознанного Стража Фантазмы-->
@@ -16128,7 +16128,7 @@
 			<item id="18178" count="1" chance="100"/>	<!--Неопознанный Страж Фантазмы-->
 		</products>
 	</recipe>
-	<recipe id="1071" name="Рецепт - Неопознанный Расчленитель Фантазмы (60%)" level="13" mp_consume="270" success_rate="60" item_id="19386" is_dwarven="true">
+	<recipe id="1071" name="Recipe - Unidentified Buster Phantasms (60%)" level="13" mp_consume="270" success_rate="60" item_id="19386" is_dwarven="true">
 		<materials>
 			<item id="19386" count="1"/>	<!--Рецепт - Неопознанный Расчленитель Фантазмы (60%)-->
 			<item id="19245" count="10"/>	<!--Часть Неопознанного Расчленителя Фантазмы-->
@@ -16143,7 +16143,7 @@
 			<item id="18179" count="1" chance="100"/>	<!--Неопознанный Расчленитель Фантазмы-->
 		</products>
 	</recipe>
-	<recipe id="1072" name="Рецепт - Неопознанный Заклинатель Фантазмы (60%)" level="13" mp_consume="270" success_rate="60" item_id="19387" is_dwarven="true">
+	<recipe id="1072" name="Recipe - Unidentified Whisperer Phantasms (60%)" level="13" mp_consume="270" success_rate="60" item_id="19387" is_dwarven="true">
 		<materials>
 			<item id="19387" count="1"/>	<!--Рецепт - Неопознанный Заклинатель Фантазмы (60%)-->
 			<item id="19246" count="10"/>	<!--Часть Неопознанного Заклинателя Фантазмы-->
@@ -16158,7 +16158,7 @@
 			<item id="18180" count="1" chance="100"/>	<!--Неопознанный Заклинатель Фантазмы-->
 		</products>
 	</recipe>
-	<recipe id="1073" name="Рецепт - Неопознанное Возмездие Фантазмы (60%)" level="13" mp_consume="270" success_rate="60" item_id="19388" is_dwarven="true">
+	<recipe id="1073" name="Recipe - Unidentified Retribution Phantasms (60%)" level="13" mp_consume="270" success_rate="60" item_id="19388" is_dwarven="true">
 		<materials>
 			<item id="19388" count="1"/>	<!--Рецепт - Неопознанное Возмездие Фантазмы (60%)-->
 			<item id="19247" count="10"/>	<!--Часть Неопознанного Возмездия Фантазмы-->
@@ -16173,7 +16173,7 @@
 			<item id="18181" count="1" chance="100"/>	<!--Неопознанное Возмездие Фантазмы-->
 		</products>
 	</recipe>
-	<recipe id="1074" name="Рецепт - Неопознанный Шлем Кадейры (60%)" level="13" mp_consume="270" success_rate="60" item_id="19389" is_dwarven="true">
+	<recipe id="1074" name="Recipe - Unidentified Seraph Helmet (60%)" level="13" mp_consume="270" success_rate="60" item_id="19389" is_dwarven="true">
 		<materials>
 			<item id="19389" count="1"/>	<!--Рецепт - Неопознанный Шлем Кадейры (60%)-->
 			<item id="19251" count="15"/>	<!--Материал Неопознанного Шлема Кадейры-->
@@ -16187,7 +16187,7 @@
 			<item id="18185" count="1" chance="100"/>	<!--Неопознанный Шлем Кадейры-->
 		</products>
 	</recipe>
-	<recipe id="1075" name="Рецепт - Неопознанная Кираса Кадейры (60%)" level="13" mp_consume="270" success_rate="60" item_id="19390" is_dwarven="true">
+	<recipe id="1075" name="Recipe - Unidentified Seraph's Breastplate (60%)" level="13" mp_consume="270" success_rate="60" item_id="19390" is_dwarven="true">
 		<materials>
 			<item id="19390" count="1"/>	<!--Рецепт - Неопознанная Кираса Кадейры (60%)-->
 			<item id="19252" count="15"/>	<!--Материал Неопознанной Кирасы Кадейры-->
@@ -16201,7 +16201,7 @@
 			<item id="18186" count="1" chance="100"/>	<!--Неопознанная Кираса Кадейры-->
 		</products>
 	</recipe>
-	<recipe id="1076" name="Рецепт - Неопознанные Набедренники Кадейры (60%)" level="13" mp_consume="270" success_rate="60" item_id="19391" is_dwarven="true">
+	<recipe id="1076" name="Recipe - Unidentified Seraph Gaiters (60%)" level="13" mp_consume="270" success_rate="60" item_id="19391" is_dwarven="true">
 		<materials>
 			<item id="19391" count="1"/>	<!--Рецепт - Неопознанные Набедренники Кадейры (60%)-->
 			<item id="19253" count="15"/>	<!--Материал Неопознанных Набедренников Кадейры-->
@@ -16215,7 +16215,7 @@
 			<item id="18187" count="1" chance="100"/>	<!--Неопознанные Набедренники Кадейры-->
 		</products>
 	</recipe>
-	<recipe id="1077" name="Рецепт - Неопознанные Рукавицы Кадейры (60%)" level="13" mp_consume="270" success_rate="60" item_id="19392" is_dwarven="true">
+	<recipe id="1077" name="Recipe - Unidentified Seraph Gloves (60%)" level="13" mp_consume="270" success_rate="60" item_id="19392" is_dwarven="true">
 		<materials>
 			<item id="19392" count="1"/>	<!--Рецепт - Неопознанные Рукавицы Кадейры (60%)-->
 			<item id="19254" count="15"/>	<!--Материал Неопознанных Рукавиц Кадейры-->
@@ -16228,7 +16228,7 @@
 			<item id="18188" count="1" chance="100"/>	<!--Неопознанные Рукавицы Кадейры-->
 		</products>
 	</recipe>
-	<recipe id="1078" name="Рецепт - Неопознанные Сапоги Кадейры (60%)" level="13" mp_consume="270" success_rate="60" item_id="19393" is_dwarven="true">
+	<recipe id="1078" name="Recipe - Unidentified Seraph Boots (60%)" level="13" mp_consume="270" success_rate="60" item_id="19393" is_dwarven="true">
 		<materials>
 			<item id="19393" count="1"/>	<!--Рецепт - Неопознанные Сапоги Кадейры (60%)-->
 			<item id="19255" count="15"/>	<!--Материал Неопознанных Сапог Кадейры-->
@@ -16241,7 +16241,7 @@
 			<item id="18189" count="1" chance="100"/>	<!--Неопознанные Сапоги Кадейры-->
 		</products>
 	</recipe>
-	<recipe id="1079" name="Рецепт - Неопознанный Щит Кадейры (60%)" level="13" mp_consume="270" success_rate="60" item_id="19394" is_dwarven="true">
+	<recipe id="1079" name="Recipe - Unidentified Seraph Shield (60%)" level="13" mp_consume="270" success_rate="60" item_id="19394" is_dwarven="true">
 		<materials>
 			<item id="19394" count="1"/>	<!--Рецепт - Неопознанный Щит Кадейры (60%)-->
 			<item id="19256" count="15"/>	<!--Материал Неопознанного Щита Кадейры-->
@@ -16254,7 +16254,7 @@
 			<item id="18190" count="1" chance="100"/>	<!--Неопознанный Щит Кадейры-->
 		</products>
 	</recipe>
-	<recipe id="1080" name="Рецепт - Неопознанный Кожаный Шлем Кадейры (60%)" level="13" mp_consume="270" success_rate="60" item_id="19395" is_dwarven="true">
+	<recipe id="1080" name="Recipe - Unidentified Seraph Leather Helmet (60%)" level="13" mp_consume="270" success_rate="60" item_id="19395" is_dwarven="true">
 		<materials>
 			<item id="19395" count="1"/>	<!--Рецепт - Неопознанный Кожаный Шлем Кадейры (60%)-->
 			<item id="19257" count="15"/>	<!--Материал Неопознанного Кожаного Шлема Кадейры-->
@@ -16268,7 +16268,7 @@
 			<item id="18191" count="1" chance="100"/>	<!--Неопознанный Кожаный Шлем Кадейры-->
 		</products>
 	</recipe>
-	<recipe id="1081" name="Рецепт - Неопознанная Кожаная Кираса Кадейры (60%)" level="13" mp_consume="270" success_rate="60" item_id="19396" is_dwarven="true">
+	<recipe id="1081" name="Recipe - Unidentified Seraph Leather Breastplate (60%)" level="13" mp_consume="270" success_rate="60" item_id="19396" is_dwarven="true">
 		<materials>
 			<item id="19396" count="1"/>	<!--Рецепт - Неопознанная Кожаная Кираса Кадейры (60%)-->
 			<item id="19258" count="15"/>	<!--Материал Неопознанной Кожаной Кирасы Кадейры-->
@@ -16282,7 +16282,7 @@
 			<item id="18192" count="1" chance="100"/>	<!--Неопознанный Кожаный Доспех Кадейры-->
 		</products>
 	</recipe>
-	<recipe id="1082" name="Рецепт - Неопознанные Кожаные Брюки Кадейры (60%)" level="13" mp_consume="270" success_rate="60" item_id="19397" is_dwarven="true">
+	<recipe id="1082" name="Recipe - Unidentified Seraph Leather Pants (60%)" level="13" mp_consume="270" success_rate="60" item_id="19397" is_dwarven="true">
 		<materials>
 			<item id="19397" count="1"/>	<!--Рецепт - Неопознанные Кожаные Брюки Кадейры (60%)-->
 			<item id="19259" count="15"/>	<!--Материал Неопознанных Кожаных Брюк Кадейры-->
@@ -16296,7 +16296,7 @@
 			<item id="18193" count="1" chance="100"/>	<!--Неопознанные Кожаные Брюки Кадейры-->
 		</products>
 	</recipe>
-	<recipe id="1083" name="Рецепт - Неопознанные Кожаные Перчатки Кадейры (60%)" level="13" mp_consume="270" success_rate="60" item_id="19398" is_dwarven="true">
+	<recipe id="1083" name="Recipe - Unidentified Seraph Leather Gloves (60%)" level="13" mp_consume="270" success_rate="60" item_id="19398" is_dwarven="true">
 		<materials>
 			<item id="19398" count="1"/>	<!--Рецепт - Неопознанные Кожаные Перчатки Кадейры (60%)-->
 			<item id="19260" count="15"/>	<!--Материал Неопознанных Кожаных Перчаток Кадейры-->
@@ -16309,7 +16309,7 @@
 			<item id="18194" count="1" chance="100"/>	<!--Неопознанные Кожаные Перчатки Кадейры-->
 		</products>
 	</recipe>
-	<recipe id="1084" name="Рецепт - Неопознанные Кожаные Сапоги Кадейры (60%)" level="13" mp_consume="270" success_rate="60" item_id="19399" is_dwarven="true">
+	<recipe id="1084" name="Recipe - Unidentified Seraph Leather Boots (60%)" level="13" mp_consume="270" success_rate="60" item_id="19399" is_dwarven="true">
 		<materials>
 			<item id="19399" count="1"/>	<!--Рецепт - Неопознанные Кожаные Сапоги Кадейры (60%)-->
 			<item id="19261" count="15"/>	<!--Материал Неопознанных Кожаных Сапог Кадейры-->
@@ -16322,7 +16322,7 @@
 			<item id="18195" count="1" chance="100"/>	<!--Неопознанные Кожаные Сапоги Кадейры-->
 		</products>
 	</recipe>
-	<recipe id="1085" name="Рецепт - Неопознанная Диадема Кадейры (60%)" level="13" mp_consume="270" success_rate="60" item_id="19400" is_dwarven="true">
+	<recipe id="1085" name="Recipe - Unidentified Seraph Tiara (60%)" level="13" mp_consume="270" success_rate="60" item_id="19400" is_dwarven="true">
 		<materials>
 			<item id="19400" count="1"/>	<!--Рецепт - Неопознанная Диадема Кадейры (60%)-->
 			<item id="19262" count="15"/>	<!--Материал Неопознанной Диадемы Кадейры-->
@@ -16336,7 +16336,7 @@
 			<item id="18196" count="1" chance="100"/>	<!--Неопознанная Диадема Кадейры-->
 		</products>
 	</recipe>
-	<recipe id="1086" name="Рецепт - Неопознанная Туника Кадейры (60%)" level="13" mp_consume="270" success_rate="60" item_id="19401" is_dwarven="true">
+	<recipe id="1086" name="Recipe - Unidentified Seraph Tunic (60%)" level="13" mp_consume="270" success_rate="60" item_id="19401" is_dwarven="true">
 		<materials>
 			<item id="19401" count="1"/>	<!--Рецепт - Неопознанная Туника Кадейры (60%)-->
 			<item id="19263" count="15"/>	<!--Материал Неопознанной Туники Кадейры-->
@@ -16350,7 +16350,7 @@
 			<item id="18197" count="1" chance="100"/>	<!--Неопознанная Туника Кадейры-->
 		</products>
 	</recipe>
-	<recipe id="1087" name="Рецепт - Неопознанные Штаны Кадейры (60%)" level="13" mp_consume="270" success_rate="60" item_id="19402" is_dwarven="true">
+	<recipe id="1087" name="Recipe - Unidentified Seraph Pants (60%)" level="13" mp_consume="270" success_rate="60" item_id="19402" is_dwarven="true">
 		<materials>
 			<item id="19402" count="1"/>	<!--Рецепт - Неопознанные Штаны Кадейры (60%)-->
 			<item id="19264" count="15"/>	<!--Материал Неопознанных Штанов Кадейры-->
@@ -16364,7 +16364,7 @@
 			<item id="18198" count="1" chance="100"/>	<!--Неопознанные Штаны Кадейры-->
 		</products>
 	</recipe>
-	<recipe id="1088" name="Рецепт - Неопознанные Перчатки Кадейры (60%)" level="13" mp_consume="270" success_rate="60" item_id="19403" is_dwarven="true">
+	<recipe id="1088" name="Recipe - Unidentified Seraph Gloves (60%)" level="13" mp_consume="270" success_rate="60" item_id="19403" is_dwarven="true">
 		<materials>
 			<item id="19403" count="1"/>	<!--Рецепт - Неопознанные Перчатки Кадейры (60%)-->
 			<item id="19265" count="15"/>	<!--Материал Неопознанных Перчаток Кадейры-->
@@ -16377,7 +16377,7 @@
 			<item id="18199" count="1" chance="100"/>	<!--Неопознанные Перчатки Кадейры-->
 		</products>
 	</recipe>
-	<recipe id="1089" name="Рецепт - Неопознанные Ботинки Кадейры (60%)" level="13" mp_consume="270" success_rate="60" item_id="19404" is_dwarven="true">
+	<recipe id="1089" name="Recipe - Unidentified Seraph Boots (60%)" level="13" mp_consume="270" success_rate="60" item_id="19404" is_dwarven="true">
 		<materials>
 			<item id="19404" count="1"/>	<!--Рецепт - Неопознанные Ботинки Кадейры (60%)-->
 			<item id="19266" count="15"/>	<!--Материал Неопознанных Ботинок Кадейры-->
@@ -16390,7 +16390,7 @@
 			<item id="18200" count="1" chance="100"/>	<!--Неопознанные Ботинки Кадейры-->
 		</products>
 	</recipe>
-	<recipe id="1090" name="Рецепт - Неопознанный Символ Кадейры (60%)" level="13" mp_consume="270" success_rate="60" item_id="19405" is_dwarven="true">
+	<recipe id="1090" name="Recipe - Unidentified Seraph symbol (60%)" level="13" mp_consume="270" success_rate="60" item_id="19405" is_dwarven="true">
 		<materials>
 			<item id="19405" count="1"/>	<!--Рецепт - Неопознанный Символ Кадейры (60%)-->
 			<item id="19267" count="15"/>	<!--Материал Неопознанного Символа Кадейры-->
@@ -16403,7 +16403,7 @@
 			<item id="18201" count="1" chance="100"/>	<!--Неопознанный Символ Кадейры-->
 		</products>
 	</recipe>
-	<recipe id="1091" name="Рецепт - Неопознанное Ожерелье Кадейры (60%)" level="13" mp_consume="270" success_rate="60" item_id="19406" is_dwarven="true">
+	<recipe id="1091" name="Recipe - Unidentified Seraph Necklace (60%)" level="13" mp_consume="270" success_rate="60" item_id="19406" is_dwarven="true">
 		<materials>
 			<item id="19406" count="1"/>	<!--Рецепт - Неопознанное Ожерелье Кадейры (60%)-->
 			<item id="19268" count="20"/>	<!--Камень Неопознанного Ожерелья Кадейры-->
@@ -16416,7 +16416,7 @@
 			<item id="18202" count="1" chance="100"/>	<!--Неопознанное Ожерелье Кадейры-->
 		</products>
 	</recipe>
-	<recipe id="1092" name="Рецепт - Неопознанная Серьга Кадейры (60%)" level="13" mp_consume="270" success_rate="60" item_id="19407" is_dwarven="true">
+	<recipe id="1092" name="Recipe - Unidentified Seraph Earring (60%)" level="13" mp_consume="270" success_rate="60" item_id="19407" is_dwarven="true">
 		<materials>
 			<item id="19407" count="1"/>	<!--Рецепт - Неопознанная Серьга Кадейры (60%)-->
 			<item id="19269" count="20"/>	<!--Камень Неопознанной Серьги Кадейры-->
@@ -16429,7 +16429,7 @@
 			<item id="18203" count="1" chance="100"/>	<!--Неопознанная Серьга Кадейры-->
 		</products>
 	</recipe>
-	<recipe id="1093" name="Рецепт - Неопознанное Кольцо Кадейры (60%)" level="13" mp_consume="270" success_rate="60" item_id="19408" is_dwarven="true">
+	<recipe id="1093" name="Recipe - Unidentified Seraph Ring (60%)" level="13" mp_consume="270" success_rate="60" item_id="19408" is_dwarven="true">
 		<materials>
 			<item id="19408" count="1"/>	<!--Рецепт - Неопознанное Кольцо Кадейры (60%)-->
 			<item id="19270" count="20"/>	<!--Камень Неопознанного Кольца Кадейры-->
@@ -16442,7 +16442,7 @@
 			<item id="18204" count="1" chance="100"/>	<!--Неопознанное Кольцо Кадейры-->
 		</products>
 	</recipe>
-	<recipe id="1094" name="Рецепт - Неопознанное Острие Хелиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19409" is_dwarven="true">
+	<recipe id="1094" name="Recipe - Unidentified Amaranthine tip (60%)" level="14" mp_consume="276" success_rate="60" item_id="19409" is_dwarven="true">
 		<materials>
 			<item id="19409" count="1"/>	<!--Рецепт - Неопознанное Острие Хелиоса (60%)-->
 			<item id="19271" count="10"/>	<!--Часть Неопознанного Острия Хелиоса-->
@@ -16457,7 +16457,7 @@
 			<item id="18205" count="1" chance="100"/>	<!--Неопознанное Острие Хелиоса-->
 		</products>
 	</recipe>
-	<recipe id="1095" name="Рецепт - Неопознанный Резак Хелиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19410" is_dwarven="true">
+	<recipe id="1095" name="Recipe - Unidentified Amaranthine Cutter (60%)" level="14" mp_consume="276" success_rate="60" item_id="19410" is_dwarven="true">
 		<materials>
 			<item id="19410" count="1"/>	<!--Рецепт - Неопознанный Резак Хелиоса (60%)-->
 			<item id="19272" count="10"/>	<!--Часть Неопознанного Резака Хелиоса-->
@@ -16472,7 +16472,7 @@
 			<item id="18206" count="1" chance="100"/>	<!--Неопознанный Резак Хелиоса-->
 		</products>
 	</recipe>
-	<recipe id="1096" name="Рецепт - Неопознанный Эспадон Хелиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19411" is_dwarven="true">
+	<recipe id="1096" name="Recipe - Unidentified Amaranthine Slasher (60%)" level="14" mp_consume="276" success_rate="60" item_id="19411" is_dwarven="true">
 		<materials>
 			<item id="19411" count="1"/>	<!--Рецепт - Неопознанный Эспадон Хелиоса (60%)-->
 			<item id="19273" count="10"/>	<!--Часть Неопознанного Эспадона Хелиоса-->
@@ -16487,7 +16487,7 @@
 			<item id="18207" count="1" chance="100"/>	<!--Неопознанный Эспадон Хелиоса-->
 		</products>
 	</recipe>
-	<recipe id="1097" name="Рецепт - Неопознанный Мститель Хелиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19412" is_dwarven="true">
+	<recipe id="1097" name="Recipe - Unidentified Amaranthine Avenger (60%)" level="14" mp_consume="276" success_rate="60" item_id="19412" is_dwarven="true">
 		<materials>
 			<item id="19412" count="1"/>	<!--Рецепт - Неопознанный Мститель Хелиоса (60%)-->
 			<item id="19274" count="10"/>	<!--Часть Неопознанного Мстителя Хелиоса-->
@@ -16502,7 +16502,7 @@
 			<item id="18208" count="1" chance="100"/>	<!--Неопознанный Мститель Хелиоса-->
 		</products>
 	</recipe>
-	<recipe id="1098" name="Рецепт - Неопознанный Воитель Хелиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19413" is_dwarven="true">
+	<recipe id="1098" name="Recipe - Unidentified Amaranthine Warrior (60%)" level="14" mp_consume="276" success_rate="60" item_id="19413" is_dwarven="true">
 		<materials>
 			<item id="19413" count="1"/>	<!--Рецепт - Неопознанный Воитель Хелиоса (60%)-->
 			<item id="19275" count="10"/>	<!--Часть Неопознанного Воителя Хелиоса-->
@@ -16517,7 +16517,7 @@
 			<item id="18209" count="1" chance="100"/>	<!--Неопознанный Воитель Хелиоса-->
 		</products>
 	</recipe>
-	<recipe id="1099" name="Рецепт - Неопознанный Буревестник Хелиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19414" is_dwarven="true">
+	<recipe id="1099" name="Recipe - Unidentified Amaranthine Petrel (60%)" level="14" mp_consume="276" success_rate="60" item_id="19414" is_dwarven="true">
 		<materials>
 			<item id="19414" count="1"/>	<!--Рецепт - Неопознанный Буревестник Хелиоса (60%)-->
 			<item id="19276" count="10"/>	<!--Часть Неопознанного Буревестника Хелиоса-->
@@ -16532,7 +16532,7 @@
 			<item id="18210" count="1" chance="100"/>	<!--Неопознанный Буревестник Хелиоса-->
 		</products>
 	</recipe>
-	<recipe id="1100" name="Рецепт - Неопознанный Бросок Хелиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19415" is_dwarven="true">
+	<recipe id="1100" name="Recipe - Unidentified Amaranthine Throw (60%)" level="14" mp_consume="276" success_rate="60" item_id="19415" is_dwarven="true">
 		<materials>
 			<item id="19415" count="1"/>	<!--Рецепт - Неопознанный Бросок Хелиоса (60%)-->
 			<item id="19277" count="10"/>	<!--Часть Неопознанного Броска Хелиоса-->
@@ -16547,7 +16547,7 @@
 			<item id="18211" count="1" chance="100"/>	<!--Неопознанный Бросок Хелиоса-->
 		</products>
 	</recipe>
-	<recipe id="1101" name="Рецепт - Неопознанный Страж Хелиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19416" is_dwarven="true">
+	<recipe id="1101" name="Recipe - Unidentified Amaranthine Guardian (60%)" level="14" mp_consume="276" success_rate="60" item_id="19416" is_dwarven="true">
 		<materials>
 			<item id="19416" count="1"/>	<!--Рецепт - Неопознанный Страж Хелиоса (60%)-->
 			<item id="19278" count="10"/>	<!--Часть Неопознанного Стража Хелиоса-->
@@ -16562,7 +16562,7 @@
 			<item id="18212" count="1" chance="100"/>	<!--Неопознанный Страж Хелиоса-->
 		</products>
 	</recipe>
-	<recipe id="1102" name="Рецепт - Неопознанный Расчленитель Хелиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19417" is_dwarven="true">
+	<recipe id="1102" name="Recipe - Unidentified Amaranthine Buster (60%)" level="14" mp_consume="276" success_rate="60" item_id="19417" is_dwarven="true">
 		<materials>
 			<item id="19417" count="1"/>	<!--Рецепт - Неопознанный Расчленитель Хелиоса (60%)-->
 			<item id="19279" count="10"/>	<!--Часть Неопознанного Расчленителя Хелиоса-->
@@ -16577,7 +16577,7 @@
 			<item id="18213" count="1" chance="100"/>	<!--Неопознанный Расчленитель Хелиоса-->
 		</products>
 	</recipe>
-	<recipe id="1103" name="Рецепт - Неопознанный Заклинатель Хелиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19418" is_dwarven="true">
+	<recipe id="1103" name="Recipe - Unidentified Amaranthine Exorcist (60%)" level="14" mp_consume="276" success_rate="60" item_id="19418" is_dwarven="true">
 		<materials>
 			<item id="19418" count="1"/>	<!--Рецепт - Неопознанный Заклинатель Хелиоса (60%)-->
 			<item id="19280" count="10"/>	<!--Часть Неопознанного Заклинателя Хелиоса-->
@@ -16592,7 +16592,7 @@
 			<item id="18214" count="1" chance="100"/>	<!--Неопознанный Заклинатель Хелиоса-->
 		</products>
 	</recipe>
-	<recipe id="1104" name="Рецепт - Неопознанное Возмездие Хелиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19419" is_dwarven="true">
+	<recipe id="1104" name="Recipe - Unidentified Amaranthine Retribution (60%)" level="14" mp_consume="276" success_rate="60" item_id="19419" is_dwarven="true">
 		<materials>
 			<item id="19419" count="1"/>	<!--Рецепт - Неопознанное Возмездие Хелиоса (60%)-->
 			<item id="19281" count="10"/>	<!--Часть Неопознанного Возмездия Хелиоса-->
@@ -16607,7 +16607,7 @@
 			<item id="18215" count="1" chance="100"/>	<!--Неопознанное Возмездие Хелиоса-->
 		</products>
 	</recipe>
-	<recipe id="1105" name="Рецепт - Неопознанный Шлем Айдиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19420" is_dwarven="true">
+	<recipe id="1105" name="Recipe - Unidentified Eternal Helmet (60%)" level="14" mp_consume="276" success_rate="60" item_id="19420" is_dwarven="true">
 		<materials>
 			<item id="19420" count="1"/>	<!--Рецепт - Неопознанный Шлем Айдиоса (60%)-->
 			<item id="19285" count="15"/>	<!--Материал Неопознанного Шлема Айдиоса-->
@@ -16621,7 +16621,7 @@
 			<item id="18219" count="1" chance="100"/>	<!--Неопознанный Шлем Айдиоса-->
 		</products>
 	</recipe>
-	<recipe id="1106" name="Рецепт - Неопознанная Кираса Айдиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19421" is_dwarven="true">
+	<recipe id="1106" name="Recipe - Unidentified Eternal Breastplate (60%)" level="14" mp_consume="276" success_rate="60" item_id="19421" is_dwarven="true">
 		<materials>
 			<item id="19421" count="1"/>	<!--Рецепт - Неопознанная Кираса Айдиоса (60%)-->
 			<item id="19286" count="15"/>	<!--Материал Неопознанной Кирасы Айдиоса-->
@@ -16635,7 +16635,7 @@
 			<item id="18220" count="1" chance="100"/>	<!--Неопознанная Кираса Айдиоса-->
 		</products>
 	</recipe>
-	<recipe id="1107" name="Рецепт - Неопознанные Набедренники Айдиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19422" is_dwarven="true">
+	<recipe id="1107" name="Recipe - Unidentified Eternal Gaiters (60%)" level="14" mp_consume="276" success_rate="60" item_id="19422" is_dwarven="true">
 		<materials>
 			<item id="19422" count="1"/>	<!--Рецепт - Неопознанные Набедренники Айдиоса (60%)-->
 			<item id="19287" count="15"/>	<!--Материал Неопознанных Набедренников Айдиоса-->
@@ -16649,7 +16649,7 @@
 			<item id="18221" count="1" chance="100"/>	<!--Неопознанные Набедренники Айдиоса-->
 		</products>
 	</recipe>
-	<recipe id="1108" name="Рецепт - Неопознанные Рукавицы Айдиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19423" is_dwarven="true">
+	<recipe id="1108" name="Recipe - Unidentified Eternal Gauntlet (60%)" level="14" mp_consume="276" success_rate="60" item_id="19423" is_dwarven="true">
 		<materials>
 			<item id="19423" count="1"/>	<!--Рецепт - Неопознанные Рукавицы Айдиоса (60%)-->
 			<item id="19288" count="15"/>	<!--Материал Неопознанных Рукавиц Айдиоса-->
@@ -16662,7 +16662,7 @@
 			<item id="18222" count="1" chance="100"/>	<!--Неопознанные Рукавицы Айдиоса-->
 		</products>
 	</recipe>
-	<recipe id="1109" name="Рецепт - Неопознанные Сапоги Айдиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19424" is_dwarven="true">
+	<recipe id="1109" name="Recipe - Unidentified Eternal Boots (60%)" level="14" mp_consume="276" success_rate="60" item_id="19424" is_dwarven="true">
 		<materials>
 			<item id="19424" count="1"/>	<!--Рецепт - Неопознанные Сапоги Айдиоса (60%)-->
 			<item id="19289" count="15"/>	<!--Материал Неопознанных Сапог Айдиоса-->
@@ -16675,7 +16675,7 @@
 			<item id="18223" count="1" chance="100"/>	<!--Неопознанные Сапоги Айдиоса-->
 		</products>
 	</recipe>
-	<recipe id="1110" name="Рецепт - Неопознанный Щит Айдиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19425" is_dwarven="true">
+	<recipe id="1110" name="Recipe - Unidentified Eternal Shield (60%)" level="14" mp_consume="276" success_rate="60" item_id="19425" is_dwarven="true">
 		<materials>
 			<item id="19425" count="1"/>	<!--Рецепт - Неопознанный Щит Айдиоса (60%)-->
 			<item id="19290" count="15"/>	<!--Материал Неопознанного Щита Айдиоса-->
@@ -16688,7 +16688,7 @@
 			<item id="18224" count="1" chance="100"/>	<!--Неопознанный Щит Айдиоса-->
 		</products>
 	</recipe>
-	<recipe id="1111" name="Рецепт - Неопознанный Кожаный Шлем Айдиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19426" is_dwarven="true">
+	<recipe id="1111" name="Recipe - Unidentified Eternal Leather Helmet (60%)" level="14" mp_consume="276" success_rate="60" item_id="19426" is_dwarven="true">
 		<materials>
 			<item id="19426" count="1"/>	<!--Рецепт - Неопознанный Кожаный Шлем Айдиоса (60%)-->
 			<item id="19291" count="15"/>	<!--Материал Неопознанного Кожаного Шлема Айдиоса-->
@@ -16702,7 +16702,7 @@
 			<item id="18225" count="1" chance="100"/>	<!--Неопознанный Кожаный Шлем Айдиоса-->
 		</products>
 	</recipe>
-	<recipe id="1112" name="Рецепт - Неопознанная Кожаная Кираса Айдиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19427" is_dwarven="true">
+	<recipe id="1112" name="Recipe - Unidentified Eternal Leather Breastplate (60%)" level="14" mp_consume="276" success_rate="60" item_id="19427" is_dwarven="true">
 		<materials>
 			<item id="19427" count="1"/>	<!--Рецепт - Неопознанная Кожаная Кираса Айдиоса (60%)-->
 			<item id="19292" count="15"/>	<!--Материал Неопознанной Кожаной Кирасы Айдиоса-->
@@ -16716,7 +16716,7 @@
 			<item id="18226" count="1" chance="100"/>	<!--Неопознанный Кожаный Доспех Айдиоса-->
 		</products>
 	</recipe>
-	<recipe id="1113" name="Рецепт - Неопознанные Кожаные Брюки Айдиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19428" is_dwarven="true">
+	<recipe id="1113" name="Recipe - Unidentified Eternal Leather Pants (60%)" level="14" mp_consume="276" success_rate="60" item_id="19428" is_dwarven="true">
 		<materials>
 			<item id="19428" count="1"/>	<!--Рецепт - Неопознанные Кожаные Брюки Айдиоса (60%)-->
 			<item id="19293" count="15"/>	<!--Материал Неопознанных Кожаных Брюк Айдиоса-->
@@ -16730,7 +16730,7 @@
 			<item id="18227" count="1" chance="100"/>	<!--Неопознанные Кожаные Брюки Айдиоса-->
 		</products>
 	</recipe>
-	<recipe id="1114" name="Рецепт - Неопознанные Кожаные Перчатки Айдиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19429" is_dwarven="true">
+	<recipe id="1114" name="Recipe - Unidentified Eternal Leather Gloves (60%)" level="14" mp_consume="276" success_rate="60" item_id="19429" is_dwarven="true">
 		<materials>
 			<item id="19429" count="1"/>	<!--Рецепт - Неопознанные Кожаные Перчатки Айдиоса (60%)-->
 			<item id="19294" count="15"/>	<!--Материал Неопознанных Кожаных Перчаток Айдиоса-->
@@ -16743,7 +16743,7 @@
 			<item id="18228" count="1" chance="100"/>	<!--Неопознанные Кожаные Перчатки Айдиоса-->
 		</products>
 	</recipe>
-	<recipe id="1115" name="Рецепт - Неопознанные Кожаные Сапоги Айдиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19430" is_dwarven="true">
+	<recipe id="1115" name="Recipe - Unidentified Eternal Leather Boots (60%)" level="14" mp_consume="276" success_rate="60" item_id="19430" is_dwarven="true">
 		<materials>
 			<item id="19430" count="1"/>	<!--Рецепт - Неопознанные Кожаные Сапоги Айдиоса (60%)-->
 			<item id="19295" count="15"/>	<!--Материал Неопознанных Кожаных Сапог Айдиоса-->
@@ -16756,7 +16756,7 @@
 			<item id="18229" count="1" chance="100"/>	<!--Неопознанные Кожаные Сапоги Айдиоса-->
 		</products>
 	</recipe>
-	<recipe id="1116" name="Рецепт - Неопознанная Диадема Айдиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19431" is_dwarven="true">
+	<recipe id="1116" name="Recipe - Unidentified Eternal Tiara (60%)" level="14" mp_consume="276" success_rate="60" item_id="19431" is_dwarven="true">
 		<materials>
 			<item id="19431" count="1"/>	<!--Рецепт - Неопознанная Диадема Айдиоса (60%)-->
 			<item id="19296" count="15"/>	<!--Материал Неопознанной Диадемы Айдиоса-->
@@ -16770,7 +16770,7 @@
 			<item id="18230" count="1" chance="100"/>	<!--Неопознанная Диадема Айдиоса-->
 		</products>
 	</recipe>
-	<recipe id="1117" name="Рецепт - Неопознанная Туника Айдиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19432" is_dwarven="true">
+	<recipe id="1117" name="Recipe - Unidentified Eternal Tunic (60%)" level="14" mp_consume="276" success_rate="60" item_id="19432" is_dwarven="true">
 		<materials>
 			<item id="19432" count="1"/>	<!--Рецепт - Неопознанная Туника Айдиоса (60%)-->
 			<item id="19297" count="15"/>	<!--Материал Неопознанной Туники Айдиоса-->
@@ -16784,7 +16784,7 @@
 			<item id="18231" count="1" chance="100"/>	<!--Неопознанная Туника Айдиоса-->
 		</products>
 	</recipe>
-	<recipe id="1118" name="Рецепт - Неопознанные Штаны Айдиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19433" is_dwarven="true">
+	<recipe id="1118" name="Recipe - Unidentified Eternal Pants (60%)" level="14" mp_consume="276" success_rate="60" item_id="19433" is_dwarven="true">
 		<materials>
 			<item id="19433" count="1"/>	<!--Рецепт - Неопознанные Штаны Айдиоса (60%)-->
 			<item id="19298" count="15"/>	<!--Материал Неопознанных Штанов Айдиоса-->
@@ -16798,7 +16798,7 @@
 			<item id="18232" count="1" chance="100"/>	<!--Неопознанные Штаны Айдиоса-->
 		</products>
 	</recipe>
-	<recipe id="1119" name="Рецепт - Неопознанные Перчатки Айдиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19434" is_dwarven="true">
+	<recipe id="1119" name="Recipe - Unidentified Eternal Gloves (60%)" level="14" mp_consume="276" success_rate="60" item_id="19434" is_dwarven="true">
 		<materials>
 			<item id="19434" count="1"/>	<!--Рецепт - Неопознанные Перчатки Айдиоса (60%)-->
 			<item id="19299" count="15"/>	<!--Материал Неопознанных Перчаток Айдиоса-->
@@ -16811,7 +16811,7 @@
 			<item id="18233" count="1" chance="100"/>	<!--Неопознанные Перчатки Айдиоса-->
 		</products>
 	</recipe>
-	<recipe id="1120" name="Рецепт - Неопознанные Ботинки Айдиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19435" is_dwarven="true">
+	<recipe id="1120" name="Recipe - Unidentified Eternal Boots (60%)" level="14" mp_consume="276" success_rate="60" item_id="19435" is_dwarven="true">
 		<materials>
 			<item id="19435" count="1"/>	<!--Рецепт - Неопознанные Ботинки Айдиоса (60%)-->
 			<item id="19300" count="15"/>	<!--Материал Неопознанных Ботинок Айдиоса-->
@@ -16824,7 +16824,7 @@
 			<item id="18234" count="1" chance="100"/>	<!--Неопознанные Ботинки Айдиоса-->
 		</products>
 	</recipe>
-	<recipe id="1121" name="Рецепт - Неопознанный Символ Айдиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19436" is_dwarven="true">
+	<recipe id="1121" name="Recipe - Unidentified Symbol of Eternal (60%)" level="14" mp_consume="276" success_rate="60" item_id="19436" is_dwarven="true">
 		<materials>
 			<item id="19436" count="1"/>	<!--Рецепт - Неопознанный Символ Айдиоса (60%)-->
 			<item id="19301" count="15"/>	<!--Материал Неопознанного Символа Айдиоса-->
@@ -16837,7 +16837,7 @@
 			<item id="18235" count="1" chance="100"/>	<!--Неопознанный Символ Айдиоса-->
 		</products>
 	</recipe>
-	<recipe id="1122" name="Рецепт - Неопознанное Ожерелье Айдиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19437" is_dwarven="true">
+	<recipe id="1122" name="Recipe - Unidentified Eternal Necklace (60%)" level="14" mp_consume="276" success_rate="60" item_id="19437" is_dwarven="true">
 		<materials>
 			<item id="19437" count="1"/>	<!--Рецепт - Неопознанное Ожерелье Айдиоса (60%)-->
 			<item id="19302" count="20"/>	<!--Камень Неопознанного Ожерелья Айдиоса-->
@@ -16850,7 +16850,7 @@
 			<item id="18236" count="1" chance="100"/>	<!--Неопознанное Ожерелье Айдиоса-->
 		</products>
 	</recipe>
-	<recipe id="1123" name="Рецепт - Неопознанная Серьга Айдиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19438" is_dwarven="true">
+	<recipe id="1123" name="Recipe - Unidentified Eternal Earring (60%)" level="14" mp_consume="276" success_rate="60" item_id="19438" is_dwarven="true">
 		<materials>
 			<item id="19438" count="1"/>	<!--Рецепт - Неопознанная Серьга Айдиоса (60%)-->
 			<item id="19303" count="20"/>	<!--Камень Неопознанной Серьги Айдиоса-->
@@ -16863,7 +16863,7 @@
 			<item id="18237" count="1" chance="100"/>	<!--Неопознанная Серьга Айдиоса-->
 		</products>
 	</recipe>
-	<recipe id="1124" name="Рецепт - Неопознанное Кольцо Айдиоса (60%)" level="14" mp_consume="276" success_rate="60" item_id="19439" is_dwarven="true">
+	<recipe id="1124" name="Recipe - Unidentified Eternal Ring (60%)" level="14" mp_consume="276" success_rate="60" item_id="19439" is_dwarven="true">
 		<materials>
 			<item id="19439" count="1"/>	<!--Рецепт - Неопознанное Кольцо Айдиоса (60%)-->
 			<item id="19304" count="20"/>	<!--Камень Неопознанного Кольца Айдиоса-->
@@ -16876,34 +16876,34 @@
 			<item id="18238" count="1" chance="100"/>	<!--Неопознанное Кольцо Айдиоса-->
 		</products>
 	</recipe>
-	<recipe id="1125" name="Рецепт - Заряд Души Ранг R" level="11" mp_consume="258" success_rate="100" item_id="30423" is_dwarven="true">
+	<recipe id="1125" name="Recipe - Soulshot R" level="11" mp_consume="258" success_rate="100" item_id="30423" is_dwarven="true">
 		<materials>
-			<item id="1785" count="80"/>	<!--Руда Души-->
-			<item id="17371" count="2"/>	<!--Символ Дерзости-->
+			<item id="1785" count="80"/>	<!-- Soulstone -->
+			<item id="17371" count="2"/>	<!-- Crystal R -->
 		</materials>
 		<products>
-			<item id="17754" count="500" chance="100"/>	<!--Заряд Души: Ранг R-->
+			<item id="17754" count="500" chance="100"/>	<!-- Soulshot (R-Grade) -->
 		</products>
 	</recipe>
-	<recipe id="1126" name="Рецепт - Заряд Духа: Ранг R" level="11" mp_consume="258" success_rate="100" item_id="30424" is_dwarven="true">
+	<recipe id="1126" name="Recipe - Spirit Shots: Grade R" level="11" mp_consume="258" success_rate="100" item_id="30424" is_dwarven="true">
 		<materials>
-			<item id="3031" count="188"/>	<!--Руда Духов-->
-			<item id="17371" count="2"/>	<!--Символ Дерзости-->
+			<item id="3031" count="188"/>	<!-- Spirit Ore -->
+			<item id="17371" count="2"/>	<!-- Crystal R -->
 		</materials>
 		<products>
-			<item id="19441" count="500" chance="100"/>	<!--Заряды Духа: Ранг R-->
+			<item id="19441" count="500" chance="100"/>	<!--Spiritshots (R-Grade)-->
 		</products>
 	</recipe>
-	<recipe id="1127" name="Рецепт - Благословенный Заряд: Ранг R" level="11" mp_consume="258" success_rate="100" item_id="30425" is_dwarven="true">
+	<recipe id="1127" name="Recipe - Blessed Spiritshots: Grade R" level="11" mp_consume="258" success_rate="100" item_id="30425" is_dwarven="true">
 		<materials>
-			<item id="3031" count="750"/>	<!--Руда Духов-->
-			<item id="17371" count="2"/>	<!--Символ Дерзости-->
+			<item id="3031" count="750"/>	<!-- Spirit Ore -->
+			<item id="17371" count="2"/>	<!-- Crystal R -->
 		</materials>
 		<products>
-			<item id="19442" count="500" chance="100"/>	<!--Благословенные Заряды Духа: Ранг R-->
+			<item id="19442" count="500" chance="100"/>	<!-- Blessed Spiritshots (R-Grade)-->
 		</products>
 	</recipe>
-	<recipe id="1128" name="Рецепт - Эликсир Жизни: Ранг R" level="10" mp_consume="246" success_rate="100" item_id="30426" is_dwarven="false">
+	<recipe id="1128" name="Recipe - Elixir of Life: Grade R" level="10" mp_consume="246" success_rate="100" item_id="30426" is_dwarven="false">
 		<materials>
 			<item id="1785" count="350"/>	<!--Руда Души-->
 			<item id="8658" count="100"/>	<!--Мистический Раствор-->
@@ -16913,7 +16913,7 @@
 			<item id="30357" count="10" chance="100"/>	<!--Эликсир Жизни - Ранг R-->
 		</products>
 	</recipe>
-	<recipe id="1129" name="Рецепт - Эликсир Ментальной Силы: Ранг R" level="10" mp_consume="246" success_rate="100" item_id="30427" is_dwarven="false">
+	<recipe id="1129" name="Recipe - Elixir of Mental Strength: Grade R" level="10" mp_consume="246" success_rate="100" item_id="30427" is_dwarven="false">
 		<materials>
 			<item id="3031" count="215"/>	<!--Руда Духов-->
 			<item id="17371" count="3"/>	<!--Символ Дерзости-->
@@ -16923,7 +16923,7 @@
 			<item id="30358" count="10" chance="100"/>	<!--Эликсир Ментальной Жизни - Ранг R-->
 		</products>
 	</recipe>
-	<recipe id="1130" name="Рецепт - Эликсир CP: Ранг R" level="10" mp_consume="246" success_rate="100" item_id="30428" is_dwarven="false">
+	<recipe id="1130" name="Recipe - Elixir of CP: R Rank" level="10" mp_consume="246" success_rate="100" item_id="30428" is_dwarven="false">
 		<materials>
 			<item id="1785" count="146"/>	<!--Руда Души-->
 			<item id="8658" count="100"/>	<!--Мистический Раствор-->
@@ -16933,7 +16933,7 @@
 			<item id="30359" count="10" chance="100"/>	<!--Эликсир CP - Ранг R-->
 		</products>
 	</recipe>
-	<recipe id="1131" name="Рецепт - Парик Людей(М) (100%)" level="10" mp_consume="258" success_rate="100" item_id="32273" is_dwarven="false">
+	<recipe id="1131" name="Recipe - Wig Men (M) (100%)" level="10" mp_consume="258" success_rate="100" item_id="32273" is_dwarven="false">
 		<materials>
 			<item id="1868" count="4500"/>	<!--Нитки-->
 			<item id="1884" count="1500"/>	<!--Веревка-->
@@ -16950,7 +16950,7 @@
 			<item id="17758" count="1" chance="25"/>	<!--Мужской Парик Человека - D-->
 		</products>
 	</recipe>
-	<recipe id="1132" name="Рецепт - Парик Людей(Ж) (100%)" level="10" mp_consume="258" success_rate="100" item_id="32274" is_dwarven="false">
+	<recipe id="1132" name="Recipe - Men's Wig (F) (100%)" level="10" mp_consume="258" success_rate="100" item_id="32274" is_dwarven="false">
 		<materials>
 			<item id="1868" count="4500"/>	<!--Нитки-->
 			<item id="1884" count="1500"/>	<!--Веревка-->
@@ -16967,7 +16967,7 @@
 			<item id="17762" count="1" chance="25"/>	<!--Женский Парик Человека - D-->
 		</products>
 	</recipe>
-	<recipe id="1133" name="Рецепт - Парик Мага Людей (100%)" level="10" mp_consume="258" success_rate="100" item_id="32275" is_dwarven="false">
+	<recipe id="1133" name="Recipe - Magician Wig Men (100%)" level="10" mp_consume="258" success_rate="100" item_id="32275" is_dwarven="false">
 		<materials>
 			<item id="1868" count="4500"/>	<!--Нитки-->
 			<item id="1884" count="1500"/>	<!--Веревка-->
@@ -17205,7 +17205,7 @@
 			<item id="17818" count="1" chance="25"/>	<!--Женский Парик Камаэля - D-->
 		</products>
 	</recipe>
-	<recipe id="1147" name="Рецепт - Пояс Бессмертия (60%)" level="10" mp_consume="246" success_rate="60" item_id="32292" is_dwarven="false">
+	<recipe id="1147" name="Recipe - Belt Immortality (60%)" level="10" mp_consume="246" success_rate="60" item_id="32292" is_dwarven="false">
 		<materials>
 			<item id="32304" count="1"/>	<!--Часть Пояса Бессмертия-->
 			<item id="19308" count="1"/>	<!--Загатовка Оружейника Гигантов-->
@@ -17801,7 +17801,7 @@
 			<item id="18065" count="1" chance="2" /> <!-- Благословенный Символ Кадейры Магический -->
 		</products>
 	</recipe>
-	<recipe id="1194" item_id="35448" name="Рецепт - Ожерелья Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1194" item_id="35448" name="Recipe - Necklaces Seraph (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35448" count="1" /> <!-- Рецепт - Ожерелья Кадейры(60%) -->
 			<item id="35324" count="10" /> <!-- Камень Ожерелья Кадейры -->
@@ -17815,7 +17815,7 @@
 			<item id="18066" count="1" chance="2" /> <!-- Благословенное Ожерелье Кадейры -->
 		</products>
 	</recipe>
-	<recipe id="1195" item_id="35449" name="Рецепт - Серьги Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1195" item_id="35449" name="Recipe - Seraph Earrings (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35449" count="1" /> <!-- Рецепт - Серьги Кадейры(60%) -->
 			<item id="35325" count="10" /> <!-- Камень Серьги Кадейры -->
@@ -17829,7 +17829,7 @@
 			<item id="18067" count="1" chance="2" /> <!-- Благословенная Серьга Кадейры -->
 		</products>
 	</recipe>
-	<recipe id="1196" item_id="35450" name="Рецепт - Кольца Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1196" item_id="35450" name="Recipe - Ring Seraph (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35450" count="1" /> <!-- Рецепт - Кольца Кадейры(60%) -->
 			<item id="35326" count="10" /> <!-- Камень Кольца Кадейры -->
@@ -17843,7 +17843,7 @@
 			<item id="18068" count="1" chance="2" /> <!-- Благословенное Кольцо Кадейры -->
 		</products>
 	</recipe>
-	<recipe id="1197" item_id="35451" name="Рецепт - Острия Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1197" item_id="35451" name="Recipe - Island of Helios (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35451" count="1" /> <!-- Рецепт - Острия Хелиоса(60%) -->
 			<item id="35327" count="10" /> <!-- Часть Острия Хелиоса -->
@@ -17857,7 +17857,7 @@
 			<item id="18069" count="1" chance="2" /> <!-- Благословенное Острие Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1198" item_id="35452" name="Рецепт - Резака Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1198" item_id="35452" name="Recipe - Helios Cutter (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35452" count="1" /> <!-- Рецепт - Резака Хелиоса(60%) -->
 			<item id="35328" count="10" /> <!-- Часть Резака Хелиоса -->
@@ -17871,7 +17871,7 @@
 			<item id="18070" count="1" chance="2" /> <!-- Благословенный Резак Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1199" item_id="35453" name="Рецепт - Эспадона Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1199" item_id="35453" name="Recipe - Slasher Amaranthine (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35453" count="1" /> <!-- Рецепт - Эспадона Хелиоса(60%) -->
 			<item id="35329" count="10" /> <!-- Часть Эспадона Хелиоса -->
@@ -17885,7 +17885,7 @@
 			<item id="18071" count="1" chance="2" /> <!-- Благословенный Эспадон Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1200" item_id="35454" name="Рецепт - Мстителя Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1200" item_id="35454" name="Recipe - Helios Avenger (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35454" count="1" /> <!-- Рецепт - Мстителя Хелиоса(60%) -->
 			<item id="35330" count="10" /> <!-- Часть Мстителя Хелиоса -->
@@ -17899,7 +17899,7 @@
 			<item id="18072" count="1" chance="2" /> <!-- Благословенный Мститель Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1201" item_id="35455" name="Рецепт - Воителя Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1201" item_id="35455" name="Recipe - Helios Warrior (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35455" count="1" /> <!-- Рецепт - Воителя Хелиоса(60%) -->
 			<item id="35331" count="10" /> <!-- Часть Воителя Хелиоса -->
@@ -17913,7 +17913,7 @@
 			<item id="18073" count="1" chance="2" /> <!-- Благословенный Воитель Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1202" item_id="35456" name="Рецепт - Буревестника Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1202" item_id="35456" name="Recipe - Puffin Amaranthine (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35456" count="1" /> <!-- Рецепт - Буревестника Хелиоса(60%) -->
 			<item id="35332" count="10" /> <!-- Часть Буревестника Хелиоса -->
@@ -17927,7 +17927,7 @@
 			<item id="18074" count="1" chance="2" /> <!-- Благословенный Буревестник Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1203" item_id="35457" name="Рецепт - Броска Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1203" item_id="35457" name="Recipe - Cast Amaranthine (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35457" count="1" /> <!-- Рецепт - Броска Хелиоса(60%) -->
 			<item id="35333" count="10" /> <!-- Часть Броска Хелиоса -->
@@ -17941,7 +17941,7 @@
 			<item id="18075" count="1" chance="2" /> <!-- Благословенный Бросок Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1204" item_id="35458" name="Рецепт - Стража Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1204" item_id="35458" name="Recipe - Helios Guardian (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35458" count="1" /> <!-- Рецепт - Стража Хелиоса(60%) -->
 			<item id="35334" count="10" /> <!-- Часть Стража Хелиоса -->
@@ -17955,7 +17955,7 @@
 			<item id="18076" count="1" chance="2" /> <!-- Благословенный Страж Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1205" item_id="35459" name="Рецепт - Расчленителя Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1205" item_id="35459" name="Recipe - Buster Amaranthine (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35459" count="1" /> <!-- Рецепт - Расчленителя Хелиоса(60%) -->
 			<item id="35335" count="10" /> <!-- Часть Расчленителя Хелиоса -->
@@ -17969,7 +17969,7 @@
 			<item id="18077" count="1" chance="2" /> <!-- Благословенный Расчленитель Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1206" item_id="35460" name="Рецепт - Заклинателя Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1206" item_id="35460" name="Recipe - Charmer Amaranthine (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35460" count="1" /> <!-- Рецепт - Заклинателя Хелиоса(60%) -->
 			<item id="35336" count="10" /> <!-- Часть Заклинателя Хелиоса -->
@@ -17983,7 +17983,7 @@
 			<item id="18078" count="1" chance="2" /> <!-- Благословенный Заклинатель Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1207" item_id="35461" name="Рецепт - Возмездия Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1207" item_id="35461" name="Recipe - Retribution Amaranthine (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35461" count="1" /> <!-- Рецепт - Возмездия Хелиоса(60%) -->
 			<item id="35337" count="10" /> <!-- Часть Возмездия Хелиоса -->
@@ -17997,7 +17997,7 @@
 			<item id="18079" count="1" chance="2" /> <!-- Благословенное Возмездие Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1208" item_id="35462" name="Рецепт - Шлема Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1208" item_id="35462" name="Recipe - Eternal Helmet (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35462" count="1" /> <!-- Рецепт - Шлема Айдиоса(60%) -->
 			<item id="35338" count="10" /> <!-- Материал Шлема Айдиоса -->
@@ -18011,7 +18011,7 @@
 			<item id="18083" count="1" chance="2" /> <!-- Благословенный Шлем Айдиоса Тяжелый -->
 		</products>
 	</recipe>
-	<recipe id="1209" item_id="35463" name="Рецепт - Кирасы Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1209" item_id="35463" name="Recipe - Eternal Breastplate (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35463" count="1" /> <!-- Рецепт - Кирасы Айдиоса(60%) -->
 			<item id="35339" count="10" /> <!-- Материал Кирасы Айдиоса -->
@@ -18025,7 +18025,7 @@
 			<item id="18084" count="1" chance="2" /> <!-- Благословенная Кираса Айдиоса Тяжелый -->
 		</products>
 	</recipe>
-	<recipe id="1210" item_id="35464" name="Рецепт - Набедренников Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1210" item_id="35464" name="Recipe - Eternal Gaiters (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35464" count="1" /> <!-- Рецепт - Набедренников Айдиоса(60%) -->
 			<item id="35340" count="10" /> <!-- Материал Набедренников Айдиоса -->
@@ -18039,7 +18039,7 @@
 			<item id="18085" count="1" chance="2" /> <!-- Благословенные Набедренники Айдиоса Тяжелый -->
 		</products>
 	</recipe>
-	<recipe id="1211" item_id="35465" name="Рецепт - Рукавиц Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1211" item_id="35465" name="Recipe - Eternal Gauntlet (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35465" count="1" /> <!-- Рецепт - Рукавиц Айдиоса(60%) -->
 			<item id="35341" count="10" /> <!-- Материал Рукавиц Айдиоса -->
@@ -18053,7 +18053,7 @@
 			<item id="18086" count="1" chance="2" /> <!-- Благословенные Рукавицы Айдиоса Тяжелый -->
 		</products>
 	</recipe>
-	<recipe id="1212" item_id="35466" name="Рецепт - Сапог Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1212" item_id="35466" name="Recipe - Eternal Boots (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35466" count="1" /> <!-- Рецепт - Сапог Айдиоса(60%) -->
 			<item id="35342" count="10" /> <!-- Материал Сапог Айдиоса -->
@@ -18067,7 +18067,7 @@
 			<item id="18087" count="1" chance="2" /> <!-- Благословенные Сапоги Айдиоса Тяжелый -->
 		</products>
 	</recipe>
-	<recipe id="1213" item_id="35467" name="Рецепт - Щита Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1213" item_id="35467" name="Recipe - Eternal Shield (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35467" count="1" /> <!-- Рецепт - Щита Айдиоса(60%) -->
 			<item id="35343" count="10" /> <!-- Материал Щита Айдиоса -->
@@ -18081,7 +18081,7 @@
 			<item id="18088" count="1" chance="2" /> <!-- Благословенный Щит Айдиоса Тяжелый -->
 		</products>
 	</recipe>
-	<recipe id="1214" item_id="35468" name="Рецепт - Шлема Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1214" item_id="35468" name="Recipe - Eternal Helmet (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35468" count="1" /> <!-- Рецепт - Шлема Айдиоса(60%) -->
 			<item id="35344" count="10" /> <!-- Материал Шлема Айдиоса -->
@@ -18095,7 +18095,7 @@
 			<item id="18089" count="1" chance="2" /> <!-- Благословенный Кожаный Шлем Айдиоса Легкий -->
 		</products>
 	</recipe>
-	<recipe id="1215" item_id="35469" name="Рецепт - Кирасы Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1215" item_id="35469" name="Recipe - Eternal Breastplate (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35469" count="1" /> <!-- Рецепт - Кирасы Айдиоса(60%) -->
 			<item id="35345" count="10" /> <!-- Материал Кирасы Айдиоса -->
@@ -18109,7 +18109,7 @@
 			<item id="18090" count="1" chance="2" /> <!-- Благословенный Кожаный Доспех Айдиоса Легкий -->
 		</products>
 	</recipe>
-	<recipe id="1216" item_id="35470" name="Рецепт - Кожаных Брюк Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1216" item_id="35470" name="Recipe - Eternal Leather Leggings (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35470" count="1" /> <!-- Рецепт - Кожаных Брюк Айдиоса(60%) -->
 			<item id="35346" count="10" /> <!-- Материал Кожаных Брюк Айдиоса -->
@@ -18123,7 +18123,7 @@
 			<item id="18091" count="1" chance="2" /> <!-- Благословенные Кожаные Брюки Айдиоса Легкий -->
 		</products>
 	</recipe>
-	<recipe id="1217" item_id="35471" name="Рецепт - Перчаток Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1217" item_id="35471" name="Recipe - Eternal Gloves (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35471" count="1" /> <!-- Рецепт - Перчаток Айдиоса(60%) -->
 			<item id="35347" count="10" /> <!-- Материал Перчаток Айдиоса -->
@@ -18137,7 +18137,7 @@
 			<item id="18092" count="1" chance="2" /> <!-- Благословенные Кожаные Перчатки Айдиоса Легкий -->
 		</products>
 	</recipe>
-	<recipe id="1218" item_id="35472" name="Рецепт - Сапог Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1218" item_id="35472" name="Recipe - Eternal Boots (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35472" count="1" /> <!-- Рецепт - Сапог Айдиоса(60%) -->
 			<item id="35348" count="10" /> <!-- Материал Сапог Айдиоса -->
@@ -18151,7 +18151,7 @@
 			<item id="18093" count="1" chance="2" /> <!-- Благословенные Кожаные Сапоги Айдиоса Легкий -->
 		</products>
 	</recipe>
-	<recipe id="1219" item_id="35473" name="Рецепт - Диадемы Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1219" item_id="35473" name="Recipe - Eternal Tiaras (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35473" count="1" /> <!-- Рецепт - Диадемы Айдиоса(60%) -->
 			<item id="35349" count="10" /> <!-- Материал Диадемы Айдиоса -->
@@ -18165,7 +18165,7 @@
 			<item id="18094" count="1" chance="2" /> <!-- Благословенная Диадема Айдиоса Магический -->
 		</products>
 	</recipe>
-	<recipe id="1220" item_id="35474" name="Рецепт - Туники Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1220" item_id="35474" name="Recipe - Eternal Tunics (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35474" count="1" /> <!-- Рецепт - Туники Айдиоса(60%) -->
 			<item id="35350" count="10" /> <!-- Материал Туники Айдиоса -->
@@ -18179,7 +18179,7 @@
 			<item id="18095" count="1" chance="2" /> <!-- Благословенная Туника Айдиоса Магический -->
 		</products>
 	</recipe>
-	<recipe id="1221" item_id="35475" name="Рецепт - Штанов Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1221" item_id="35475" name="Recipe - Stocking Eternal (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35475" count="1" /> <!-- Рецепт - Штанов Айдиоса(60%) -->
 			<item id="35351" count="10" /> <!-- Материал Штанов Айдиоса -->
@@ -18193,7 +18193,7 @@
 			<item id="18096" count="1" chance="2" /> <!-- Благословенные Штаны Айдиоса Магический -->
 		</products>
 	</recipe>
-	<recipe id="1222" item_id="35476" name="Рецепт - Перчаток Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1222" item_id="35476" name="Recipe - Eternal Gloves (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35476" count="1" /> <!-- Рецепт - Перчаток Айдиоса(60%) -->
 			<item id="35352" count="10" /> <!-- Материал Перчаток Айдиоса -->
@@ -18207,7 +18207,7 @@
 			<item id="18097" count="1" chance="2" /> <!-- Благословенные Перчатки Айдиоса Магический -->
 		</products>
 	</recipe>
-	<recipe id="1223" item_id="35477" name="Рецепт - Ботинок Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1223" item_id="35477" name="Recipe - Eternal Boots (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35477" count="1" /> <!-- Рецепт - Ботинок Айдиоса(60%) -->
 			<item id="35353" count="10" /> <!-- Материал Ботинок Айдиоса -->
@@ -18221,7 +18221,7 @@
 			<item id="18098" count="1" chance="2" /> <!-- Благословенные Ботинки Айдиоса Магический -->
 		</products>
 	</recipe>
-	<recipe id="1224" item_id="35478" name="Рецепт - Символа Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1224" item_id="35478" name="Recipe - Symbol of Eternal (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35478" count="1" /> <!-- Рецепт - Символа Айдиоса(60%) -->
 			<item id="35354" count="10" /> <!-- Материал Символа Айдиоса -->
@@ -18235,7 +18235,7 @@
 			<item id="18099" count="1" chance="2" /> <!-- Благословенный Символ Айдиоса Магический -->
 		</products>
 	</recipe>
-	<recipe id="1225" item_id="35479" name="Рецепт - Ожерелья Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1225" item_id="35479" name="Recipe - Necklace of Eternal (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35479" count="1" /> <!-- Рецепт - Ожерелья Айдиоса(60%) -->
 			<item id="35355" count="10" /> <!-- Камень Ожерелья Айдиоса -->
@@ -18249,7 +18249,7 @@
 			<item id="18100" count="1" chance="2" /> <!-- Благословенное Ожерелье Айдиоса -->
 		</products>
 	</recipe>
-	<recipe id="1226" item_id="35480" name="Рецепт - Серьги Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1226" item_id="35480" name="Recipe - Eternal Earrings (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35480" count="1" /> <!-- Рецепт - Серьги Айдиоса(60%) -->
 			<item id="35356" count="10" /> <!-- Камень Серьги Айдиоса -->
@@ -18263,7 +18263,7 @@
 			<item id="18101" count="1" chance="2" /> <!-- Благословенная Серьга Айдиоса -->
 		</products>
 	</recipe>
-	<recipe id="1227" item_id="35481" name="Рецепт - Кольца Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1227" item_id="35481" name="Recipe - Eternal Ring (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35481" count="1" /> <!-- Рецепт - Кольца Айдиоса(60%) -->
 			<item id="35357" count="10" /> <!-- Камень Кольца Айдиоса -->
@@ -18277,7 +18277,7 @@
 			<item id="18102" count="1" chance="2" /> <!-- Благословенное Кольцо Айдиоса -->
 	</products>
 	</recipe>
-	<recipe id="1228" item_id="35482" name="Рецепт - Благословенного Острия Фантазмы(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1228" item_id="35482" name="Recipe - blessed island Phantasms (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35482" count="1" /> <!-- Рецепт - Благословенного Острия Фантазмы(60%) -->
 			<item id="35358" count="10" /> <!-- Часть Благословенного Острия Фантазмы -->
@@ -18290,7 +18290,7 @@
 			<item id="18035" count="1" chance="100" /> <!-- Благословенное Острие Фантазмы -->
 		</products>
 	</recipe>
-	<recipe id="1229" item_id="35483" name="Рецепт - Благословенного Резака Фантазмы(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1229" item_id="35483" name="Recipe - Blessed Cutter Phantasms (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35483" count="1" /> <!-- Рецепт - Благословенного Резака Фантазмы(60%) -->
 			<item id="35359" count="10" /> <!-- Часть Благословенного Резака Фантазмы -->
@@ -18303,7 +18303,7 @@
 			<item id="18036" count="1" chance="100" /> <!-- Благословенный Резак Фантазмы -->
 		</products>
 	</recipe>
-	<recipe id="1230" item_id="35484" name="Рецепт - Благословенного Эспадона Фантазмы(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1230" item_id="35484" name="Recipe - Blessed Slasher Phantasms (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35484" count="1" /> <!-- Рецепт - Благословенного Эспадона Фантазмы(60%) -->
 			<item id="35360" count="10" /> <!-- Часть Благословенного Эспадона Фантазмы -->
@@ -18316,7 +18316,7 @@
 			<item id="18037" count="1" chance="100" /> <!-- Благословенный Эспадон Фантазмы -->
 		</products>
 	</recipe>
-	<recipe id="1231" item_id="35485" name="Рецепт - Благословенного Мстителя Фантазмы(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1231" item_id="35485" name="Recipe - Blessed Avenger Phantasms (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35485" count="1" /> <!-- Рецепт - Благословенного Мстителя Фантазмы(60%) -->
 			<item id="35361" count="10" /> <!-- Часть Благословенного Мстителя Фантазмы -->
@@ -18329,7 +18329,7 @@
 			<item id="18038" count="1" chance="100" /> <!-- Благословенный Мститель Фантазмы -->
 		</products>
 	</recipe>
-	<recipe id="1232" item_id="35486" name="Рецепт - Благословенного Воителя Фантазмы(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1232" item_id="35486" name="Recipe - Blessed Warrior Phantasms (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35486" count="1" /> <!-- Рецепт - Благословенного Воителя Фантазмы(60%) -->
 			<item id="35362" count="10" /> <!-- Часть Благословенного Воителя Фантазмы -->
@@ -18342,7 +18342,7 @@
 			<item id="18039" count="1" chance="100" /> <!-- Благословенный Воитель Фантазмы -->
 		</products>
 	</recipe>
-	<recipe id="1233" item_id="35487" name="Рецепт - Благословенного Буревестника Фантазмы(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1233" item_id="35487" name="Recipe - Blessed Puffin Phantasms (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35487" count="1" /> <!-- Рецепт - Благословенного Буревестника Фантазмы(60%) -->
 			<item id="35363" count="10" /> <!-- Часть Благословенного Буревестника Фантазмы -->
@@ -18355,7 +18355,7 @@
 			<item id="18040" count="1" chance="100" /> <!-- Благословенный Буревестник Фантазмы -->
 		</products>
 	</recipe>
-	<recipe id="1234" item_id="35488" name="Рецепт - Благословенного Броска Фантазмы(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1234" item_id="35488" name="Recipe - Blessed Cast Phantasms (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35488" count="1" /> <!-- Рецепт - Благословенного Броска Фантазмы(60%) -->
 			<item id="35364" count="10" /> <!-- Часть Благословенного Броска Фантазмы -->
@@ -18368,7 +18368,7 @@
 			<item id="18041" count="1" chance="100" /> <!-- Благословенный Бросок Фантазмы -->
 		</products>
 	</recipe>
-	<recipe id="1235" item_id="35489" name="Рецепт - Благословенного Стража Фантазмы(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1235" item_id="35489" name="Recipe - Blessed Guardian Phantasms (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35489" count="1" /> <!-- Рецепт - Благословенного Стража Фантазмы(60%) -->
 			<item id="35365" count="10" /> <!-- Часть Благословенного Стража Фантазмы -->
@@ -18381,7 +18381,7 @@
 			<item id="18042" count="1" chance="100" /> <!-- Благословенный Страж Фантазмы -->
 		</products>
 	</recipe>
-	<recipe id="1236" item_id="35490" name="Рецепт - Благословенного Расчленителя Фантазмы(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1236" item_id="35490" name="Recipe - Blessed Buster Phantasms (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35490" count="1" /> <!-- Рецепт - Благословенного Расчленителя Фантазмы(60%) -->
 			<item id="35366" count="10" /> <!-- Часть Благословенного Расчленителя Фантазмы -->
@@ -18394,7 +18394,7 @@
 			<item id="18043" count="1" chance="100" /> <!-- Благословенный Расчленитель Фантазмы -->
 		</products>
 	</recipe>
-	<recipe id="1237" item_id="35491" name="Рецепт - Благословенного Заклинателя Фантазмы(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1237" item_id="35491" name="Recipe - Blessed caster Phantasms (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35491" count="1" /> <!-- Рецепт - Благословенного Заклинателя Фантазмы(60%) -->
 			<item id="35367" count="10" /> <!-- Часть Благословенного Заклинателя Фантазмы -->
@@ -18407,7 +18407,7 @@
 			<item id="18044" count="1" chance="100" /> <!-- Благословенный Заклинатель Фантазмы -->
 		</products>
 	</recipe>
-	<recipe id="1238" item_id="35492" name="Рецепт - Благословенного Возмездия Фантазмы(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1238" item_id="35492" name="Recipe - Blessed Vengeance Phantasms (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35492" count="1" /> <!-- Рецепт - Благословенного Возмездия Фантазмы(60%) -->
 			<item id="35368" count="10" /> <!-- Часть Благословенного Возмездия Фантазмы -->
@@ -18420,7 +18420,7 @@
 			<item id="18045" count="1" chance="100" /> <!-- Благословенное Возмездие Фантазмы -->
 		</products>
 	</recipe>
-	<recipe id="1239" item_id="35493" name="Рецепт - Благословенного Шлема Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1239" item_id="35493" name="Recipe - Blessed Seraph Slam (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35493" count="1" /> <!-- Рецепт - Благословенного Шлема Кадейры(60%) -->
 			<item id="35369" count="10" /> <!-- Материал Благословенного Шлема Кадейры -->
@@ -18433,7 +18433,7 @@
 			<item id="18049" count="1" chance="100" /> <!-- Благословенный Шлем Кадейры Тяжелый -->
 		</products>
 	</recipe>
-	<recipe id="1240" item_id="35494" name="Рецепт - Благословенной Кирасы Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1240" item_id="35494" name="Recipe - Blessed Breastplate Seraph (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35494" count="1" /> <!-- Рецепт - Благословенной Кирасы Кадейры(60%) -->
 			<item id="35370" count="10" /> <!-- Материал Благословенной Кирасы Кадейры -->
@@ -18446,7 +18446,7 @@
 			<item id="18050" count="1" chance="100" /> <!-- Благословенная Кираса Кадейры Тяжелый -->
 		</products>
 	</recipe>
-	<recipe id="1241" item_id="35495" name="Рецепт - Благословенных Набедренников Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1241" item_id="35495" name="Recipe - Blessed Seraph Gaiters (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35495" count="1" /> <!-- Рецепт - Благословенных Набедренников Кадейры(60%) -->
 			<item id="35371" count="10" /> <!-- Материал Благословенных Набедренников Кадейры -->
@@ -18459,7 +18459,7 @@
 			<item id="18051" count="1" chance="100" /> <!-- Благословенные Набедренники Кадейры Тяжелый -->
 		</products>
 	</recipe>
-	<recipe id="1242" item_id="35496" name="Рецепт - Благословенных Рукавиц Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1242" item_id="35496" name="Recipe - Blessed Gauntlets Seraph (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35496" count="1" /> <!-- Рецепт - Благословенных Рукавиц Кадейры(60%) -->
 			<item id="35372" count="10" /> <!-- Материал Благословенных Рукавиц Кадейры -->
@@ -18472,7 +18472,7 @@
 			<item id="18052" count="1" chance="100" /> <!-- Благословенные Рукавицы Кадейры Тяжелый -->
 		</products>
 	</recipe>
-	<recipe id="1243" item_id="35497" name="Рецепт - Благословенных Сапог Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1243" item_id="35497" name="Recipe - Blessed Seraph Boots (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35497" count="1" /> <!-- Рецепт - Благословенных Сапог Кадейры(60%) -->
 			<item id="35373" count="10" /> <!-- Материал БлагословенныхСапог Кадейры -->
@@ -18485,7 +18485,7 @@
 			<item id="18053" count="1" chance="100" /> <!-- Благословенные Сапоги Кадейры Тяжелый -->
 		</products>
 	</recipe>
-	<recipe id="1244" item_id="35498" name="Рецепт - Благословенного Щита Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1244" item_id="35498" name="Recipe - Blessed Shield Seraphim (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35498" count="1" /> <!-- Рецепт - Благословенного Щита Кадейры(60%) -->
 			<item id="35374" count="10" /> <!-- Материал Благословенного Щита Кадейры -->
@@ -18498,7 +18498,7 @@
 			<item id="18054" count="1" chance="100" /> <!-- Благословенный Щит Кадейры Тяжелый -->
 		</products>
 	</recipe>
-	<recipe id="1245" item_id="35499" name="Рецепт - Благословенного Шлема Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1245" item_id="35499" name="Recipe - Blessed Seraphim Slam (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35499" count="1" /> <!-- Рецепт - Благословенного Шлема Кадейры(60%) -->
 			<item id="35375" count="10" /> <!-- Материал Благословенного Шлема Кадейры -->
@@ -18511,7 +18511,7 @@
 			<item id="18055" count="1" chance="100" /> <!-- Благословенный Кожаный Шлем Кадейры Легкий -->
 		</products>
 	</recipe>
-	<recipe id="1246" item_id="35500" name="Рецепт - Благословенной Кожаной Кирасы Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1246" item_id="35500" name="Recipe - Blessed Seraph Leather Breastplate (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35500" count="1" /> <!-- Рецепт - Благословенной Кожаной Кирасы Кадейры(60%) -->
 			<item id="35376" count="10" /> <!-- Материал Благословенной Кожаной Кирасы Кадейры -->
@@ -18524,7 +18524,7 @@
 			<item id="18056" count="1" chance="100" /> <!-- Благословенный Кожаный Доспех Кадейры Легкий -->
 		</products>
 	</recipe>
-	<recipe id="1247" item_id="35501" name="Рецепт - Благословенных Кожаных Брюк Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1247" item_id="35501" name="Recipe - Blessed Seraph Leather Leggings (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35501" count="1" /> <!-- Рецепт - Благословенных Кожаных Брюк Кадейры(60%) -->
 			<item id="35377" count="10" /> <!-- Материал Благословенных Кожаных Брюк Кадейры -->
@@ -18537,7 +18537,7 @@
 			<item id="18057" count="1" chance="100" /> <!-- Благословенные Кожаные Брюки Кадейры Легкий -->
 		</products>
 	</recipe>
-	<recipe id="1248" item_id="35502" name="Рецепт - Благословенных Кожаных Перчаток Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1248" item_id="35502" name="Recipe - Blessed Seraph Leather Gloves (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35502" count="1" /> <!-- Рецепт - Благословенных Кожаных Перчаток Кадейры(60%) -->
 			<item id="35378" count="10" /> <!-- Материал Благословенных Кожаных Перчаток Кадейры -->
@@ -18550,7 +18550,7 @@
 			<item id="18058" count="1" chance="100" /> <!-- Благословенные Кожаные Перчатки Кадейры Легкий -->
 		</products>
 	</recipe>
-	<recipe id="1249" item_id="35503" name="Рецепт - Благословенных Кожаных Сапог Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1249" item_id="35503" name="Recipe - Blessed Seraph Leather Boots (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35503" count="1" /> <!-- Рецепт - Благословенных Кожаных Сапог Кадейры(60%) -->
 			<item id="35379" count="10" /> <!-- Материал Благословенных Кожаных Сапог Кадейры -->
@@ -18563,7 +18563,7 @@
 			<item id="18059" count="1" chance="100" /> <!-- Благословенные Кожаные Сапоги Кадейры Легкий -->
 		</products>
 	</recipe>
-	<recipe id="1250" item_id="35504" name="Рецепт - Благословенной Диадемы Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1250" item_id="35504" name="Recipe - Blessed Seraph Tiaras (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35504" count="1" /> <!-- Рецепт - Благословенной Диадемы Кадейры(60%) -->
 			<item id="35380" count="10" /> <!-- Материал Благословенной Диадемы Кадейры -->
@@ -18576,7 +18576,7 @@
 			<item id="18060" count="1" chance="100" /> <!-- Благословенная Диадема Кадейры Магический -->
 		</products>
 	</recipe>
-	<recipe id="1251" item_id="35505" name="Рецепт - Благословенной Туники Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1251" item_id="35505" name="Recipe - Blessed Tunic Seraph (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35505" count="1" /> <!-- Рецепт - Благословенной Туники Кадейры(60%) -->
 			<item id="35381" count="10" /> <!-- Материал Благословенной Туники Кадейры -->
@@ -18589,7 +18589,7 @@
 			<item id="18061" count="1" chance="100" /> <!-- Благословенная Туника Кадейры Магический -->
 		</products>
 	</recipe>
-	<recipe id="1252" item_id="35506" name="Рецепт - Благословенных Штанов Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1252" item_id="35506" name="Recipe - Blessed Seraph Stocking (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35506" count="1" /> <!-- Рецепт - Благословенных Штанов Кадейры(60%) -->
 			<item id="35382" count="10" /> <!-- Материал Благословенных Штанов Кадейры -->
@@ -18602,7 +18602,7 @@
 			<item id="18062" count="1" chance="100" /> <!-- Благословенные Штаны Кадейры Магический -->
 		</products>
 	</recipe>
-	<recipe id="1253" item_id="35507" name="Рецепт - Благословенных Перчаток Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1253" item_id="35507" name="Recipe - Blessed Gloves Seraphim (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35507" count="1" /> <!-- Рецепт - Благословенных Перчаток Кадейры(60%) -->
 			<item id="35383" count="10" /> <!-- Материал Благословенных Перчаток Кадейры -->
@@ -18615,7 +18615,7 @@
 			<item id="18063" count="1" chance="100" /> <!-- Благословенные Перчатки Кадейры Магический -->
 		</products>
 	</recipe>
-	<recipe id="1254" item_id="35508" name="Рецепт - Благословенных Ботинок Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1254" item_id="35508" name="Recipe - Blessed Boot Seraphim (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35508" count="1" /> <!-- Рецепт - Благословенных Ботинок Кадейры(60%) -->
 			<item id="35384" count="10" /> <!-- Материал Благословенных Ботинок Кадейры -->
@@ -18628,7 +18628,7 @@
 			<item id="18064" count="1" chance="100" /> <!-- Благословенные Ботинки Кадейры Магический -->
 		</products>
 	</recipe>
-	<recipe id="1255" item_id="35509" name="Рецепт - Благословенного Символа Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1255" item_id="35509" name="Recipe - Symbol of the Blessed Seraph (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35509" count="1" /> <!-- Рецепт - Благословенного Символа Кадейры(60%) -->
 			<item id="35385" count="10" /> <!-- Материал Благословенного Символа Кадейры -->
@@ -18641,7 +18641,7 @@
 			<item id="18065" count="1" chance="100" /> <!-- Благословенный Символ Кадейры Магический -->
 		</products>
 	</recipe>
-	<recipe id="1256" item_id="35510" name="Рецепт - Благословенного Ожерелья Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1256" item_id="35510" name="Recipe - Blessed Seraph Necklace (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35510" count="1" /> <!-- Рецепт - Благословенного Ожерелья Кадейры(60%) -->
 			<item id="35386" count="10" /> <!-- Камень Благословенного Ожерелья Кадейры -->
@@ -18654,7 +18654,7 @@
 			<item id="18066" count="1" chance="100" /> <!-- Благословенное Ожерелье Кадейры -->
 		</products>
 	</recipe>
-	<recipe id="1257" item_id="35511" name="Рецепт - Благословенной Серьги Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1257" item_id="35511" name="Recipe - Blessed Seraphim Earrings (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35511" count="1" /> <!-- Рецепт - Благословенной Серьги Кадейры(60%) -->
 			<item id="35387" count="10" /> <!-- Камень Благословенной Серьги Кадейры -->
@@ -18667,7 +18667,7 @@
 			<item id="18067" count="1" chance="100" /> <!-- Благословенная Серьга Кадейры -->
 		</products>
 	</recipe>
-	<recipe id="1258" item_id="35512" name="Рецепт - Благословенного Кольца Кадейры(60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
+	<recipe id="1258" item_id="35512" name="Recipe - Blessed Ring Seraphim (60%)" mp_consume="270" level="13" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35512" count="1" /> <!-- Рецепт - Благословенного Кольца Кадейры(60%) -->
 			<item id="35388" count="10" /> <!-- Камень Благословенного Кольца Кадейры u,Важный материал для создания Благословенного Кольца Кадейры.\0 -->
@@ -18680,7 +18680,7 @@
 			<item id="18068" count="1" chance="100" /> <!-- Благословенное Кольцо Кадейры -->
 		</products>
 	</recipe>
-	<recipe id="1259" item_id="35513" name="Рецепт - Благословенного Острия Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1259" item_id="35513" name="Recipe - Blessed Island Amaranthine (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35513" count="1" /> <!-- Рецепт - Благословенного Острия Хелиоса(60%) -->
 			<item id="35389" count="10" /> <!-- Часть Благословенного Острия Хелиоса -->
@@ -18693,7 +18693,7 @@
 			<item id="18069" count="1" chance="100" /> <!-- Благословенное Острие Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1260" item_id="35514" name="Рецепт - Благословенного Резака Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1260" item_id="35514" name="Recipe - Blessed Amaranthine Cutter (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35514" count="1" /> <!-- Рецепт - Благословенного Резака Хелиоса(60%) -->
 			<item id="35390" count="10" /> <!-- Часть Благословенного Резака Хелиоса -->
@@ -18706,7 +18706,7 @@
 			<item id="18070" count="1" chance="100" /> <!-- Благословенный Резак Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1261" item_id="35515" name="Рецепт - Благословенного Эспадона Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1261" item_id="35515" name="Recipe - Blessed Amaranthine Slasher (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35515" count="1" /> <!-- Рецепт - Благословенного Эспадона Хелиоса(60%) -->
 			<item id="35391" count="10" /> <!-- Часть Благословенного Эспадона Хелиоса -->
@@ -18719,7 +18719,7 @@
 			<item id="18071" count="1" chance="100" /> <!-- Благословенный Эспадон Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1262" item_id="35516" name="Рецепт - Благословенного Мстителя Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1262" item_id="35516" name="Recipe - Blessed Amaranthine Avenger (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35516" count="1" /> <!-- Рецепт - Благословенного Мстителя Хелиоса(60%) -->
 			<item id="35392" count="10" /> <!-- Часть Благословенного Мстителя Хелиоса -->
@@ -18732,7 +18732,7 @@
 			<item id="18072" count="1" chance="100" /> <!-- Благословенный Мститель Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1263" item_id="35517" name="Рецепт - Благословенного Воителя Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1263" item_id="35517" name="Recipe - Blessed Amaranthine Warrior (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35517" count="1" /> <!-- Рецепт - Благословенного Воителя Хелиоса(60%) -->
 			<item id="35393" count="10" /> <!-- Часть Благословенного Воителя Хелиоса -->
@@ -18745,7 +18745,7 @@
 			<item id="18073" count="1" chance="100" /> <!-- Благословенный Воитель Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1264" item_id="35518" name="Рецепт - Благословенного Буревестника Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1264" item_id="35518" name="Recipe - Blessed Amaranthine Petrel (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35518" count="1" /> <!-- Рецепт - Благословенного Буревестника Хелиоса(60%) -->
 			<item id="35394" count="10" /> <!-- Часть Благословенного Буревестника Хелиоса -->
@@ -18758,7 +18758,7 @@
 			<item id="18074" count="1" chance="100" /> <!-- Благословенный Буревестник Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1265" item_id="35519" name="Рецепт - Благословенного Броска Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1265" item_id="35519" name="Recipe - Blessed Amaranthine Throw (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35519" count="1" /> <!-- Рецепт - Благословенного Броска Хелиоса(60%) -->
 			<item id="35395" count="10" /> <!-- Часть Благословенного Броска Хелиоса -->
@@ -18771,7 +18771,7 @@
 			<item id="18075" count="1" chance="100" /> <!-- Благословенный Бросок Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1266" item_id="35520" name="Рецепт - Благословенного Стража Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1266" item_id="35520" name="Recipe - Blessed Guardian Amaranthine (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35520" count="1" /> <!-- Рецепт - Благословенного Стража Хелиоса(60%) -->
 			<item id="35396" count="10" /> <!-- Часть Благословенного Стража Хелиоса -->
@@ -18784,7 +18784,7 @@
 			<item id="18076" count="1" chance="100" /> <!-- Благословенный Страж Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1267" item_id="35521" name="Рецепт - Благословенного Расчленителя Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1267" item_id="35521" name="Recipe - Blessed Amaranthine Buster (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35521" count="1" /> <!-- Рецепт - Благословенного Расчленителя Хелиоса(60%) -->
 			<item id="35397" count="10" /> <!-- Часть Благословенного Расчленителя Хелиоса -->
@@ -18797,7 +18797,7 @@
 			<item id="18077" count="1" chance="100" /> <!-- Благословенный Расчленитель Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1268" item_id="35522" name="Рецепт - Благословенного Заклинателя Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1268" item_id="35522" name="Recipe - Blessed Amaranthine Exorcist (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35522" count="1" /> <!-- Рецепт - Благословенного Заклинателя Хелиоса(60%) -->
 			<item id="35398" count="10" /> <!-- Часть Благословенного Заклинателя Хелиоса -->
@@ -18810,7 +18810,7 @@
 			<item id="18078" count="1" chance="100" /> <!-- Благословенный Заклинатель Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1269" item_id="35523" name="Рецепт - Благословенного Возмездия Хелиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1269" item_id="35523" name="Recipe - Revenge of the Blessed Amaranthine (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35523" count="1" /> <!-- Рецепт - Благословенного Возмездия Хелиоса(60%) -->
 			<item id="35399" count="10" /> <!-- Часть Благословенного Возмездия Хелиоса -->
@@ -18823,7 +18823,7 @@
 			<item id="18079" count="1" chance="100" /> <!-- Благословенное Возмездие Хелиоса -->
 		</products>
 	</recipe>
-	<recipe id="1270" item_id="35524" name="Рецепт - Благословенного Шлема Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1270" item_id="35524" name="Recipe - Blessed Eternal Helmet (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35524" count="1" /> <!-- Рецепт - Благословенного Шлема Айдиоса(60%) -->
 			<item id="35400" count="10" /> <!-- Материал Благословенного Шлема Айдиоса -->
@@ -18836,7 +18836,7 @@
 			<item id="18083" count="1" chance="100" /> <!-- Благословенный Шлем Айдиоса Тяжелый -->
 		</products>
 	</recipe>
-	<recipe id="1271" item_id="35525" name="Рецепт - Благословенной Кирасы Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1271" item_id="35525" name="Recipe - Blessed Eternal Breastplate (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35525" count="1" /> <!-- Рецепт - Благословенной Кирасы Айдиоса(60%) -->
 			<item id="35401" count="10" /> <!-- Материал Благословенной Кирасы Айдиоса -->
@@ -18849,7 +18849,7 @@
 			<item id="18084" count="1" chance="100" /> <!-- Благословенная Кираса Айдиоса Тяжелый -->
 		</products>
 	</recipe>
-	<recipe id="1272" item_id="35526" name="Рецепт - Благословенных Набедренников Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1272" item_id="35526" name="Recipe - Blessed Eternal Gaiters (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35526" count="1" /> <!-- Рецепт - Благословенных Набедренников Айдиоса(60%) -->
 			<item id="35402" count="10" /> <!-- Материал Благословенных Набедренников Айдиоса -->
@@ -18862,7 +18862,7 @@
 			<item id="18085" count="1" chance="100" /> <!-- Благословенные Набедренники Айдиоса Тяжелый -->
 		</products>
 	</recipe>
-	<recipe id="1273" item_id="35527" name="Рецепт - Благословенных Рукавиц Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1273" item_id="35527" name="Recipe - Eternal Blessed Gauntlets (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35527" count="1" /> <!-- Рецепт - Благословенных Рукавиц Айдиоса(60%) -->
 			<item id="35403" count="10" /> <!-- Материал Благословенных Рукавиц Айдиоса -->
@@ -18875,7 +18875,7 @@
 			<item id="18086" count="1" chance="100" /> <!-- Благословенные Рукавицы Айдиоса Тяжелый -->
 		</products>
 	</recipe>
-	<recipe id="1274" item_id="35528" name="Рецепт - Благословенных Сапог Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1274" item_id="35528" name="Recipe - Blessed Eternal Boots (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35528" count="1" /> <!-- Рецепт - Благословенных Сапог Айдиоса(60%) -->
 			<item id="35404" count="10" /> <!-- Материал Благословенных Сапог Айдиоса -->
@@ -18888,7 +18888,7 @@
 			<item id="18087" count="1" chance="100" /> <!-- Благословенные Сапоги Айдиоса Тяжелый -->
 		</products>
 	</recipe>
-	<recipe id="1275" item_id="35529" name="Рецепт - Благословенного Щита Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1275" item_id="35529" name="Recipe - Blessed Eternal Shield (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35529" count="1" /> <!-- Рецепт - Благословенного Щита Айдиоса(60%) -->
 			<item id="35405" count="10" /> <!-- Материал Благословенного Щита Айдиоса -->
@@ -18901,7 +18901,7 @@
 			<item id="18088" count="1" chance="100" /> <!-- Благословенный Щит Айдиоса Тяжелый -->
 		</products>
 	</recipe>
-	<recipe id="1276" item_id="35530" name="Рецепт - Благословенного Шлема Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1276" item_id="35530" name="Recipe - Blessed Eternal Helmet (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35530" count="1" /> <!-- Рецепт - Благословенного Шлема Айдиоса(60%) -->
 			<item id="35406" count="10" /> <!-- Материал Благословенного Шлема Айдиоса -->
@@ -18914,7 +18914,7 @@
 			<item id="18089" count="1" chance="100" /> <!-- Благословенный Кожаный Шлем Айдиоса Легкий -->
 		</products>
 	</recipe>
-	<recipe id="1277" item_id="35531" name="Рецепт - Благословенной Кирасы Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1277" item_id="35531" name="Recipe - Blessed Eternal Breastplate (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35531" count="1" /> <!-- Рецепт - Благословенной Кирасы Айдиоса(60%) -->
 			<item id="35407" count="10" /> <!-- Материал Благословенной Кирасы Айдиоса -->
@@ -18927,7 +18927,7 @@
 			<item id="18090" count="1" chance="100" /> <!-- Благословенный Кожаный Доспех Айдиоса Легкий -->
 		</products>
 	</recipe>
-	<recipe id="1278" item_id="35532" name="Рецепт - Благословенных Кожаных Брюк Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1278" item_id="35532" name="Recipe - Blessed Eternal Leather Leggings (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35532" count="1" /> <!-- Рецепт - Благословенных Кожаных Брюк Айдиоса(60%) -->
 			<item id="35408" count="10" /> <!-- Материал Благословенных Кожаных Брюк Айдиоса -->
@@ -18940,7 +18940,7 @@
 			<item id="18091" count="1" chance="100" /> <!-- Благословенные Кожаные Брюки Айдиоса Легкий -->
 		</products>
 	</recipe>
-	<recipe id="1279" item_id="35533" name="Рецепт - Благословенных Перчаток Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1279" item_id="35533" name="Recipe - Eternal Blessed Gloves (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35533" count="1" /> <!-- Рецепт - Благословенных Перчаток Айдиоса(60%) -->
 			<item id="35409" count="10" /> <!-- Материал Благословенных Перчаток Айдиоса -->
@@ -18953,7 +18953,7 @@
 			<item id="18092" count="1" chance="100" /> <!-- Благословенные Кожаные Перчатки Айдиоса Легкий -->
 		</products>
 	</recipe>
-	<recipe id="1280" item_id="35534" name="Рецепт - Благословенных Сапог Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1280" item_id="35534" name="Recipe - Blessed Eternal Boots (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35534" count="1" /> <!-- Рецепт - Благословенных Сапог Айдиоса(60%) -->
 			<item id="35410" count="10" /> <!-- Материал Благословенных Сапог Айдиоса -->
@@ -18966,7 +18966,7 @@
 			<item id="18093" count="1" chance="100" /> <!-- Благословенные Кожаные Сапоги Айдиоса Легкий -->
 		</products>
 	</recipe>
-	<recipe id="1281" item_id="35535" name="Рецепт - Благословенной Диадемы Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1281" item_id="35535" name="Recipe - Blessed Eternal Tiaras (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35535" count="1" /> <!-- Рецепт - Благословенной Диадемы Айдиоса(60%) -->
 			<item id="35411" count="10" /> <!-- Материал Благословенной Диадемы Айдиоса -->
@@ -18979,7 +18979,7 @@
 			<item id="18094" count="1" chance="100" /> <!-- Благословенная Диадема Айдиоса Магический -->
 		</products>
 	</recipe>
-	<recipe id="1282" item_id="35536" name="Рецепт - Благословенной Туники Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1282" item_id="35536" name="Recipe - Eternal Blessed Tunic (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35536" count="1" /> <!-- Рецепт - Благословенной Туники Айдиоса(60%) -->
 			<item id="35412" count="10" /> <!-- Материал Благословенной Туники Айдиоса -->
@@ -18992,7 +18992,7 @@
 			<item id="18095" count="1" chance="100" /> <!-- Благословенная Туника Айдиоса Магический -->
 		</products>
 	</recipe>
-	<recipe id="1283" item_id="35537" name="Рецепт - Благословенных Штанов Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1283" item_id="35537" name="Recipe - Blessed Eternal Stockings (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35537" count="1" /> <!-- Рецепт - Благословенных Штанов Айдиоса(60%) -->
 			<item id="35413" count="10" /> <!-- Материал Благословенных Штанов Айдиоса -->
@@ -19005,7 +19005,7 @@
 			<item id="18096" count="1" chance="100" /> <!-- Благословенные Штаны Айдиоса Магический -->
 		</products>
 	</recipe>
-	<recipe id="1284" item_id="35538" name="Рецепт - Благословенных Перчаток Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1284" item_id="35538" name="Recipe - Eternal Blessed Gloves (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35538" count="1" /> <!-- Рецепт - Благословенных Перчаток Айдиоса(60%) -->
 			<item id="35414" count="10" /> <!-- Материал Благословенных Перчаток Айдиоса -->
@@ -19018,7 +19018,7 @@
 			<item id="18097" count="1" chance="100" /> <!-- Благословенные Перчатки Айдиоса Магический -->
 		</products>
 	</recipe>
-	<recipe id="1285" item_id="35539" name="Рецепт - Благословенных Ботинок Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1285" item_id="35539" name="Recipe - Blessed Eternal Boots (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35539" count="1" /> <!-- Рецепт - Благословенных Ботинок Айдиоса(60%) -->
 			<item id="35415" count="10" /> <!-- Материал Благословенных Ботинок Айдиоса -->
@@ -19031,7 +19031,7 @@
 			<item id="18098" count="1" chance="100" /> <!-- Благословенные Ботинки Айдиоса Магический -->
 		</products>
 	</recipe>
-	<recipe id="1286" item_id="35540" name="Рецепт - Благословенного Символа Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1286" item_id="35540" name="Recipe - Symbol of Eternal Blessed (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35540" count="1" /> <!-- Рецепт - Благословенного Символа Айдиоса(60%) -->
 			<item id="35416" count="10" /> <!-- Материал Благословенного Символа Айдиоса -->
@@ -19044,7 +19044,7 @@
 			<item id="18099" count="1" chance="100" /> <!-- Благословенный Символ Айдиоса Магический -->
 		</products>
 	</recipe>
-	<recipe id="1287" item_id="35541" name="Рецепт - Благословенного Ожерелья Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1287" item_id="35541" name="Recipe - Blessed Eternal Necklace (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35541" count="1" /> <!-- Рецепт - Благословенного Ожерелья Айдиоса(60%) -->
 			<item id="35417" count="10" /> <!-- Камень Благословенного Ожерелья Айдиоса -->
@@ -19057,7 +19057,7 @@
 			<item id="18100" count="1" chance="100" /> <!-- Благословенное Ожерелье Айдиоса -->
 		</products>
 	</recipe>
-	<recipe id="1288" item_id="35542" name="Рецепт - Благословенной Серьги Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1288" item_id="35542" name="Recipe - Blessed Eternal Earrings (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35542" count="1" /> <!-- Рецепт - Благословенной Серьги Айдиоса(60%) -->
 			<item id="35418" count="10" /> <!-- Камень Благословенной Серьги Айдиоса -->
@@ -19070,7 +19070,7 @@
 			<item id="18101" count="1" chance="100" /> <!-- Благословенная Серьга Айдиоса -->
 		</products>
 	</recipe>
-	<recipe id="1289" item_id="35543" name="Рецепт - Благословенного Кольца Айдиоса(60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
+	<recipe id="1289" item_id="35543" name="Recipe - Blessed Eternal Ring (60%)" mp_consume="276" level="14" is_dwarven="true" success_rate="60">
 		<materials>
 			<item id="35543" count="1" /> <!-- Рецепт - Благословенного Кольца Айдиоса(60%) -->
 			<item id="35419" count="10" /> <!-- Камень Благословенного Кольца Айдиоса -->
@@ -19083,7 +19083,7 @@
 			<item id="18102" count="1" chance="100" /> <!-- Благословенное Кольцо Айдиоса -->
 		</products>
 	</recipe>
-	<recipe id="3000" name="Секретное Заклинание Валентина" level="1" mp_consume="50" success_rate="95" item_id="20191" is_dwarven="false">
+	<recipe id="3000" name="Secret Spell Valentine" level="1" mp_consume="50" success_rate="95" item_id="20191" is_dwarven="false">
 		<materials>
 			<item id="20192" count="10"/>	<!--Черный Шоколад Валентина-->
 			<item id="20193" count="10"/>	<!--Белый Шоколад Валентина-->
@@ -19093,14 +19093,14 @@
 			<item id="20195" count="1" chance="100"/>	<!--Невзрачный Торт Валентина-->
 		</products>
 	</recipe>
-	<recipe id="3001" name="Рецепт - Торт Счастья" level="1" mp_consume="50" success_rate="95" item_id="22290" is_dwarven="false">
+	<recipe id="3001" name="Recipe - Cake of Happiness" level="1" mp_consume="50" success_rate="95" item_id="22290" is_dwarven="false">
 		<materials>
-			<item id="22296" count="10"/>	<!--Продукты для торта - Темный шоколад-->
-			<item id="22297" count="10"/>	<!--Продукты для торта - Белый шоколад-->
-			<item id="22298" count="5"/>	<!--Продукты для торта - Сливки-->
+			<item id="22296" count="10"/>	<!--Products for the cake - Dark chocolate-->
+			<item id="22297" count="10"/>	<!--Products for the cake - White chocolate-->
+			<item id="22298" count="5"/>	<!--Food Cake - Cream-->
 		</materials>
 		<products>
-			<item id="22291" count="1" chance="100"/>	<!--Торт Счастья-->
+			<item id="22291" count="1" chance="100"/>	<!--Happiness cake-->
 		</products>
 	</recipe>
 </list>

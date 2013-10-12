@@ -366,26 +366,26 @@
 		<set name="icon" value="BranchSys3.icon.g_cash_fortuna_cube_r"/>
 	</etcitem>
 	<etcitem id="22433" name="Soulshot (R-grade)">
-	<!-- Dimensional Item
-	The power of a higher-level spirit is bestowed upon a weapon, temporarily increasing its P. Atk. significantly. Can be used with an R-grade weapon. Cannot be exchanged or dropped. Can be shared between characters within the same account through the Dimensional Merchant. -->
-		<set name="class" value="OTHER"/>
-		<set name="ex_type" value="OTHER_ITEMS"/>
-		<set name="crystal_type" value="NONE"/>
-		<set name="weight" value="0"/>
-		<set name="stackable" value="true"/>
-		<set name="type" value="OTHER"/>
+	<!-- Dimensional Item - The power of a higher-level spirit is bestowed upon a weapon, temporarily increasing its P. Atk. significantly. Can be used with an R-grade weapon. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="CONSUMABLE"/>
+		<set name="crystal_type" value="R"/>
+		<set name="dropable" value="false"/>
 		<set name="icon" value="icon.soulshot_r_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SHOT"/>
+		<set name="weight" value="1"/>
 	</etcitem>
 	<etcitem id="22434" name="Blessed Spiritshot (R-grade)">
-	<!-- Dimensional Item
-	The power of a higher-level spirit is bestowed upon a weapon, temporarily increasing its M. Atk. significantly. Can be used with an R-grade weapon. Cannot be exchanged or dropped. Can be shared between characters within the same account through the Dimensional Merchant. -->
-		<set name="class" value="OTHER"/>
-		<set name="ex_type" value="OTHER_ITEMS"/>
-		<set name="crystal_type" value="NONE"/>
-		<set name="weight" value="0"/>
+	<!-- Dimensional Item - The power of a higher-level spirit is bestowed upon a weapon, temporarily increasing its M. Atk. significantly. Can be used with an R-grade weapon. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="CONSUMABLE"/>
+		<set name="crystal_type" value="R"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.blessed_spiritshot_r_i00"/>
 		<set name="stackable" value="true"/>
 		<set name="type" value="OTHER"/>
-		<set name="icon" value="icon.blessed_spiritshot_r_i00"/>
+		<set name="weight" value="1"/>
 	</etcitem>
 	<etcitem id="22435" name="Scroll of Escape">
 	<!-- Dimensional Item
