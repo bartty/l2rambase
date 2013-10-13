@@ -21,6 +21,9 @@ import lineage2.gameserver.templates.npc.NpcTemplate;
  */
 public class ReflectionBossInstance extends RaidBossInstance
 {
+	
+	protected boolean disable_colapse=false; 
+	
 	/**
 	 * 
 	 */
@@ -49,7 +52,8 @@ public class ReflectionBossInstance extends RaidBossInstance
 	{
 		getMinionList().unspawnMinions();
 		super.onDeath(killer);
-		clearReflection();
+		if(!disable_colapse)
+			clearReflection();
 	}
 	
 	/**

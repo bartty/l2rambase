@@ -36,6 +36,12 @@ import lineage2.gameserver.utils.Location;
 public class Teredor extends Fighter
 {
 	/**
+	 * Field quest teredor.
+	 */
+	static int quest_teredor = 25785;
+	
+	
+	/**
 	 * Field teredor.
 	 */
 	static int teredor = 19160;
@@ -186,7 +192,7 @@ public class Teredor extends Fighter
 		@Override
 		public void onCurrentHpDamage(Creature actor, double damage, Creature attacker, Skill skill)
 		{
-			if ((actor == null) || actor.isDead() || (actor.getNpcId() != teredor))
+			if ((actor == null) || actor.isDead() || (actor.getNpcId() != teredor  && actor.getNpcId() != quest_teredor ))
 			{
 				return;
 			}
