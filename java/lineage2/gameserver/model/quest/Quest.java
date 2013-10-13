@@ -1488,6 +1488,10 @@ public class Quest
 				npc.spawnMe(npc.getSpawnedLoc());
 				return npc;
 			}
+			else
+			{
+				_log.warn("Could not find template for npcid "+npcId);
+			}
 		}
 		catch (Exception e1)
 		{

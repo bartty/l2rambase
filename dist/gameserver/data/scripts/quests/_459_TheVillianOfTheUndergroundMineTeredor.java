@@ -4,20 +4,37 @@ import lineage2.gameserver.model.instances.NpcInstance;
 import lineage2.gameserver.model.quest.Quest;
 import lineage2.gameserver.model.quest.QuestState;
 import lineage2.gameserver.scripts.ScriptFile;
+import lineage2.gameserver.utils.ReflectionUtils;
+import lineage2.gameserver.model.Player;
+import lineage2.gameserver.model.entity.Reflection;
+import lineage2.gameserver.model.instances.NpcInstance;
+import lineage2.gameserver.data.xml.holder.NpcHolder;
+import lineage2.gameserver.model.SimpleSpawner;
+import lineage2.gameserver.templates.npc.NpcTemplate;
+import lineage2.gameserver.utils.Location;
+import instances.TeredorCavern;
 
 /**
  */
 public class _459_TheVillianOfTheUndergroundMineTeredor extends Quest implements ScriptFile
 {
 	private static final int NPC_FILAUR = 30535;
+
 	private static final int MOB_HENCHMAN = 25785;    // Teredor
 	private static final int ITEM_PROOF_OF_FIDELITY = 19450;
 
+	private static final int izId = 160;
+	
+	static NpcInstance adventurer = null;
+
+	
 	public _459_TheVillianOfTheUndergroundMineTeredor()
 	{
 		super(PARTY_ALL);
-
+		
+		
 		addStartNpc(NPC_FILAUR);
+
 		addKillId(MOB_HENCHMAN);
 		addLevelCheck(85, 99);
 	}
@@ -25,8 +42,17 @@ public class _459_TheVillianOfTheUndergroundMineTeredor extends Quest implements
 	@Override
 	public String onEvent(String event, QuestState st, NpcInstance npc)
 	{
+
+		Player player = st.getPlayer();
 		String htmltext = event;
 
+		
+		if (event.equalsIgnoreCase("Enter"))
+		{
+			myEnterInstance(st,izId);
+			return null;
+		}
+		
 		if(event.equalsIgnoreCase("30535-04.htm"))
 		{
 			st.setState(STARTED);
@@ -97,13 +123,40 @@ public class _459_TheVillianOfTheUndergroundMineTeredor extends Quest implements
 	@Override
 	public String onKill(NpcInstance npc, QuestState st)
 	{
-		if((npc.getNpcId() == MOB_HENCHMAN) && (st.getCond() == 1))
+		if ((npc.getNpcId() == MOB_HENCHMAN) && (st.getCond() == 1))
 		{
 			st.setCond(2);
 		}
-
+		
 		return null;
 	}
+	
+	
+	private void myEnterInstance(QuestState st, int instancedZoneId)
+	{
+		Player player = st.getPlayer();
+		if (player == null)
+		{
+			return;
+		}
+		Reflection reflection = player.getActiveReflection();
+		if (reflection != null)
+		{
+			if (player.canReenterInstance(instancedZoneId))
+			{
+				player.teleToLocation(reflection.getTeleportLoc(), reflection);
+				onReenterInstance(st, reflection);
+			}
+		}
+		else if (player.canEnterInstance(instancedZoneId))
+		{
+			Reflection newReflection = 	ReflectionUtils.enterReflection(player, new TeredorCavern(),izId);
+			onEnterInstance(st, newReflection);
+		}
+		
+	
+	}
+	
 
 	@Override
 	public void onLoad()
