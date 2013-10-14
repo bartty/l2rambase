@@ -501,9 +501,6 @@
 
 			
 		</spawns>	
-		
-		<zones>
-			<zone name="[Teredor_zone]" active="true"/>
-		</zones>
+
 	</instance>
 </list>
