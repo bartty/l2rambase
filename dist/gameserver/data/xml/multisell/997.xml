@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+    <config showall="true" notax="true" keepenchanted="false"/>
+    <item>
+        <ingredient id="17740" count="1"/>		<!-- Adventurer's Mark - Pledge -->
+        <production id="17744" count="20"/>		<!-- Seal of Pledge  -->
+    </item>
+</list>
