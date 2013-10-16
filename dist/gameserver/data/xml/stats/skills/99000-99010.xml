@@ -41,6 +41,8 @@
 	<skill id="99003" levels="15" name="Self Heal">
     <!-- Restores one's HP with 42 Power. -->
     	<table name="#power">1500 1600 1700 1800 1900 2000 2100 2200 2300 2400 2500 2600 2700 2800 2900</table>
+		<table name="#effectPoint">50 100 150 200 230 260 290 320 340 360 380 400 410 420 430 </table>
+		
 		<set name="magicType" val="MAGIC"/>
 		<set name="icon" val="icon.skill1216"/>
 		<set name="reuseDelay" val="30000"/>
