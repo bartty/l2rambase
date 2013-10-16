@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+    <config showall="true" notax="true" keepenchanted="false"/>
+    <item>
+        <ingredient id="17739" count="1"/>		<!-- Adventurer's Mark - Loyalty -->
+        <production id="17743" count="20"/>		<!-- Seal of Loyalty  -->
+    </item>
+</list>
