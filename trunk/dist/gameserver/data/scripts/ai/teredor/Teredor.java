@@ -86,7 +86,7 @@ public class Teredor extends Fighter
 	/**
 	 * Field timeFromPassiveToActive.
 	 */
-	static int timeFromPassiveToActive = 60000;
+	static int timeFromPassiveToActive = 6000;
 	/**
 	 * Field delayEggTask.
 	 */
