@@ -565,6 +565,19 @@ public class Quest
 	}
 	
 	/**
+	 * Method addKillId.
+	 * @param killIds List<Integer>
+	 */
+	public void addKillId(List<Integer> killIds)
+	{
+		for (int killid : killIds)
+		{
+			addEventId(killid, QuestEventType.MOB_KILLED_WITH_QUEST);
+		}
+	}
+	
+	
+	/**
 	 * Method addKillNpcWithLog.
 	 * @param cond int
 	 * @param varName String

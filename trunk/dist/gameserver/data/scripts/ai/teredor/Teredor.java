@@ -13,6 +13,7 @@
 package ai.teredor;
 
 import java.util.List;
+//import java.util.logging.Logger;
 
 import lineage2.commons.threading.RunnableImpl;
 import lineage2.commons.util.Rnd;
@@ -29,22 +30,35 @@ import lineage2.gameserver.model.entity.Reflection;
 import lineage2.gameserver.model.instances.NpcInstance;
 import lineage2.gameserver.utils.Location;
 
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 /**
  * @author Mobius
  * @version $Revision: 1.0 $
  */
 public class Teredor extends Fighter
 {
+	
 	/**
-	 * Field quest teredor.
+	 * Field _log.
 	 */
-	static int quest_teredor = 25785;
+	private static final Logger _log = LoggerFactory.getLogger(Teredor.class);
+	
+	/**
+	 * Field teredor, by voronius changed from the other one
+	 */
+	static int teredor = 25785;
+	
+	
 	
 	
 	/**
 	 * Field teredor.
 	 */
-	static int teredor = 19160;
+	//static int teredor = 19160;
+	
+	
 	/**
 	 * Field eliteMillipede.
 	 */
@@ -134,6 +148,7 @@ public class Teredor extends Fighter
 	@Override
 	protected void thinkAttack()
 	{
+		
 		if (!_battleActive)
 		{
 			_battleActive = true;
@@ -192,20 +207,37 @@ public class Teredor extends Fighter
 		@Override
 		public void onCurrentHpDamage(Creature actor, double damage, Creature attacker, Skill skill)
 		{
-			if ((actor == null) || actor.isDead() || (actor.getNpcId() != teredor  && actor.getNpcId() != quest_teredor ))
+			
+	
+			_log.info("In Teredor AI : hp listener");
+
+			if ((actor == null) || actor.isDead() || actor.getNpcId() != teredor )
 			{
 				return;
 			}
+			
+			final double oldHp = actor.getCurrentHp();
 			final double newHp = actor.getCurrentHp() - damage;
 			final double maxHp = actor.getMaxHp();
-			if (_teredorActive && ((newHp == (0.8 * maxHp)) || (newHp == (0.6 * maxHp)) || (newHp == (0.4 * maxHp)) || (newHp == (0.2 * maxHp))))
+			
+			
+			
+			if (_teredorActive && ( (oldHp>=(0.8 * maxHp) &&  newHp <(0.8 * maxHp)) ||
+					(oldHp>=(0.6 * maxHp) &&  newHp < (0.6 * maxHp)) || 
+					(oldHp>=(0.4 * maxHp) &&  newHp < (0.4 * maxHp)) || 
+					(oldHp>=(0.2 * maxHp) &&  newHp < (0.2 * maxHp))
+					))
 			{
+			
+				
+				_log.info("In Teredor AI : hp listener 2");
 				_teredorActive = false;
 				_eliteSpawned = false;
 				ThreadPoolManager.getInstance().execute(new TeredorPassiveTask((NpcInstance) actor));
 				if ((newHp <= (0.8 * maxHp)) && !_canUsePoison)
 				{
 					_canUsePoison = true;
+					
 				}
 			}
 		}

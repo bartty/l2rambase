@@ -39,6 +39,10 @@ import lineage2.gameserver.skills.effects.EffectTemplate;
 import lineage2.gameserver.templates.CharTemplate;
 import lineage2.gameserver.templates.StatsSet;
 
+import lineage2.gameserver.tables.SkillTable;
+
+
+
 import org.apache.commons.lang3.ArrayUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -63,6 +67,18 @@ public final class NpcTemplate extends CharTemplate
 	 */
 	@SuppressWarnings("unchecked")
 	public static final Constructor<CharacterAI> DEFAULT_AI_CONSTRUCTOR = (Constructor<CharacterAI>) CharacterAI.class.getConstructors()[0];
+	
+	
+	/*DEfault AI Skills  by Voronius */
+	public static int[] defaultAiSkills =
+	{
+		90001,
+		90002,
+		90003,
+		90004
+	};
+	
+	
 	
 	/**
 	 * @author Mobius
@@ -632,12 +648,38 @@ public final class NpcTemplate extends CharTemplate
 		}
 	}
 	
+	public int getLevel()
+	{
+		return level;
+	}
+	
+	public void addDefaultAiSkills()
+	{
+		
+		for(int id : defaultAiSkills)
+		{
+			Skill skill = SkillTable.getInstance().getInfo(id, 1+(getLevel()-85));
+			if (skill == null)
+			{
+				continue;
+			}
+			addSkill(skill);
+		}
+	}
+	
 	/**
 	 * Method getDamageSkills.
 	 * @return Skill[]
 	 */
 	public Skill[] getDamageSkills()
 	{
+		
+		if(_damageSkills.length==0 && _dotSkills.length==0 && _debuffSkills.length==0 && _buffSkills.length==0 &&
+				 _stunSkills.length==0 && _healSkills.length==0)
+		{
+			addDefaultAiSkills();
+		}
+		
 		return _damageSkills;
 	}
 	
@@ -647,6 +689,11 @@ public final class NpcTemplate extends CharTemplate
 	 */
 	public Skill[] getDotSkills()
 	{
+		if(_damageSkills.length==0 && _dotSkills.length==0 && _debuffSkills.length==0 && _buffSkills.length==0 &&
+				 _stunSkills.length==0 && _healSkills.length==0)
+		{
+			addDefaultAiSkills();
+		}
 		return _dotSkills;
 	}
 	
@@ -656,6 +703,12 @@ public final class NpcTemplate extends CharTemplate
 	 */
 	public Skill[] getDebuffSkills()
 	{
+		if(_damageSkills.length==0 && _dotSkills.length==0 && _debuffSkills.length==0 && _buffSkills.length==0 &&
+				_stunSkills.length==0 && _healSkills.length==0)
+		{
+			addDefaultAiSkills();
+		}
+		
 		return _debuffSkills;
 	}
 	
@@ -665,6 +718,12 @@ public final class NpcTemplate extends CharTemplate
 	 */
 	public Skill[] getBuffSkills()
 	{
+		if(_damageSkills.length==0 && _dotSkills.length==0 && _debuffSkills.length==0 && _buffSkills.length==0 &&
+				_stunSkills.length==0 && _healSkills.length==0)
+		{
+			addDefaultAiSkills();
+		}
+		
 		return _buffSkills;
 	}
 	
@@ -674,6 +733,11 @@ public final class NpcTemplate extends CharTemplate
 	 */
 	public Skill[] getStunSkills()
 	{
+		if(_damageSkills.length==0 && _dotSkills.length==0 && _debuffSkills.length==0 && _buffSkills.length==0 &&
+				_stunSkills.length==0 && _healSkills.length==0)
+		{
+			addDefaultAiSkills();
+		}
 		return _stunSkills;
 	}
 	
@@ -683,6 +747,12 @@ public final class NpcTemplate extends CharTemplate
 	 */
 	public Skill[] getHealSkills()
 	{
+		if(_damageSkills.length==0 && _dotSkills.length==0 && _debuffSkills.length==0 && _buffSkills.length==0 &&
+				_stunSkills.length==0 && _healSkills.length==0)
+		{
+			addDefaultAiSkills();
+		}
+		
 		return _healSkills;
 	}
 	

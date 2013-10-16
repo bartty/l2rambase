@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="90001" levels="15" name="Power Strike">
+    <!-- none -->
+    	<table name="#power">5000 6000 7000 8000 9000 10000 11000 12000 13000 14000 15000 16000 17000 18000 19000</table>
+		<table name="#magicLevel">85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 </table>
+		<set name="icon" val="icon.skill6876"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="30000"/>
+		<set name="power" val="#power"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="displayId" val="6750"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		
+	</skill>
+	
+
+	<skill id="90002" levels="15" name="Whirlwind">
+    <!-- Swings a spear to attack nearby enemies with 554 Power added to P. Atk. Requires a polearm to be equipped. Ignores Shield Defense. Over-hit and Critical hit are possible. -->
+	   	<table name="#power">2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 7500 8000 8500 9000 9500</table>
+		<table name="#magicLevel">85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 </table>
+		<set name="icon" val="icon.skill0036"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="30000"/>
+		<set name="power" val="#power"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="4500"/>
+		<set name="hitCancelTime" val="1500"/>
+		<set name="mpConsume1" val="20"/>
+		<set name="mpConsume2" val="70"/>
+		<set name="target" val="TARGET_AREA"/>
+		<set name="skillRadius" val="200"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="displayId" val="6047"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="overHit" val="true"/>
+		<set name="shieldignore" val="true"/>
+	</skill>
+
+	<skill id="90003" levels="15" name="Self Heal">
+    <!-- Restores one's HP with 42 Power. -->
+    	<table name="#power">500 600 700 800 900 1000 1100 1200 1300 1400 1500 1600 1700 1800 1900</table>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1216"/>
+		<set name="reuseDelay" val="30000"/>
+		<set name="power" val="42"/>
+		<set name="magicLevel" val="1"/>
+		<set name="hitTime" val="8000"/>
+		<set name="hitCancelTime" val="2000"/>
+		<set name="mpConsume1" val="20"/>
+		<set name="mpConsume2" val="70"/>
+		<set name="effectPoint" val="10"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="HEAL"/>
+		<set name="displayId" val="6847"/>
+		
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+
+	
+	<skill id="90004" levels="15" name="Drain Health">
+    <!-- Inflicts dark damage on the target with 20 Power added to M. Atk. Absorbs 20% of the damage inflicted on target as HP. -->
+		<table name="#effectPoint">2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 7500 8000 8500 9000 9500</table>
+		<table name="#magicLevel">85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 </table>
+		<table name="#power">500 600 700 800 900 1000 1100 1200 1300 1400 1500 1600 1700 1800 1900</table>
+		<table name="#absorbPart">0.1</table>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill0070"/>
+		<set name="reuseDelay" val="30000"/>
+		<set name="power" val="#power"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="castRange" val="600"/>
+		<set name="hitTime" val="12000"/>
+		<set name="hitCancelTime" val="3000"/>
+		<set name="mpConsume1" val="20"/>
+		<set name="mpConsume2" val="70"/>
+		<set name="effectPoint" val="#effectPoint"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="DRAIN"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="displayId" val="4002"/>
+		
+		<set name="absorbPart" val="#absorbPart"/>
+		<set name="absorbAbs" val="0"/>
+	</skill>
+	
+	
+	
+	</list>
+	
