@@ -15,6 +15,7 @@ package ai.teredor;
 import java.util.List;
 //import java.util.logging.Logger;
 
+
 import lineage2.commons.threading.RunnableImpl;
 import lineage2.commons.util.Rnd;
 import lineage2.gameserver.ThreadPoolManager;
@@ -29,6 +30,13 @@ import lineage2.gameserver.model.Skill;
 import lineage2.gameserver.model.entity.Reflection;
 import lineage2.gameserver.model.instances.NpcInstance;
 import lineage2.gameserver.utils.Location;
+import lineage2.gameserver.model.Player;
+import lineage2.gameserver.model.Party;
+import lineage2.gameserver.model.Playable;
+import lineage2.gameserver.tables.SkillTable;
+
+
+
 
 
 import org.slf4j.Logger;
@@ -78,7 +86,7 @@ public class Teredor extends Fighter
 	/**
 	 * Field timeFromPassiveToActive.
 	 */
-	static int timeFromPassiveToActive = 10;
+	static int timeFromPassiveToActive = 60000;
 	/**
 	 * Field delayEggTask.
 	 */
@@ -111,6 +119,8 @@ public class Teredor extends Fighter
 	 * Field teredorEggs.
 	 */
 	List<NpcInstance> teredorEggs;
+	
+	
 	/**
 	 * Field actor.
 	 */
@@ -119,6 +129,17 @@ public class Teredor extends Fighter
 	 * Field _currentHpListener.
 	 */
 	private final CurrentHpListener _currentHpListener = new CurrentHpListener();
+	
+	
+	
+	/**
+	 * Field FLOOD.
+	 */
+	static final Skill Poison = SkillTable.getInstance().getInfo(14112, 1);
+	
+	
+	
+	
 	
 	/**
 	 * Constructor for Teredor.
@@ -156,19 +177,21 @@ public class Teredor extends Fighter
 			teredorEggs = r.getAllByNpcId(teredorLairEgg, true);
 			ThreadPoolManager.getInstance().scheduleAtFixedDelay(new EggSpawnTask(r), 1000, delayEggTask * 1000);
 		}
-		if (!_eliteSpawned)
-		{
-			final SimpleSpawner sp = new SimpleSpawner(NpcHolder.getInstance().getTemplate(eliteMillipede));
-			sp.setLoc(Location.findPointToStay(actor, 100, 120));
-			for (int i = 0; i == 2; i++)
-			{
-				NpcInstance npc = sp.doSpawn(true);
-				npc.getAI().notifyEvent(CtrlEvent.EVT_AGGRESSION, actor.getAggroList().getMostHated(), Rnd.get(1, 100));
-			}
-			_eliteSpawned = true;
-		}
+
 		super.thinkAttack();
 	}
+
+	public void millipedeSpawn()
+	{
+		
+		_log.info("In Teredor AI : spawning millipede");
+		final Reflection r = actor.getReflection();
+		final Location _coords = Location.findPointToStay(coordsToSpawnEggs[Rnd.get(1)], 50, 100);
+		r.addSpawnWithoutRespawn(eliteMillipede, _coords, 0);
+		r.addSpawnWithoutRespawn(eliteMillipede, _coords, 0);
+		
+	}
+	
 	
 	/**
 	 * Method onEvtDead.
@@ -209,7 +232,7 @@ public class Teredor extends Fighter
 		{
 			
 	
-			_log.info("In Teredor AI : hp listener");
+		
 
 			if ((actor == null) || actor.isDead() || actor.getNpcId() != teredor )
 			{
@@ -229,18 +252,35 @@ public class Teredor extends Fighter
 					))
 			{
 			
-				
-				_log.info("In Teredor AI : hp listener 2");
+				millipedeSpawn();
 				_teredorActive = false;
 				_eliteSpawned = false;
-				ThreadPoolManager.getInstance().execute(new TeredorPassiveTask((NpcInstance) actor));
+				ThreadPoolManager.getInstance().execute(new TeredorPassiveTask((NpcInstance) actor,attacker.getPlayer()));
 				if ((newHp <= (0.8 * maxHp)) && !_canUsePoison)
 				{
 					_canUsePoison = true;
 					
 				}
 			}
-		}
+			else if(_teredorActive && newHp<=100)
+			{
+				millipedeSpawn();
+			}
+			else if(_teredorActive && _canUsePoison)
+			{
+				if (!((NpcInstance) actor).isCastingNow())
+				{
+				
+						if(Poison!=null && canUseSkill(Poison,attacker))
+						{
+					
+							((NpcInstance) actor).doCast(Poison,attacker, false);
+						}
+				}
+			}
+				
+			
+	}
 	}
 	
 	/**
@@ -252,14 +292,15 @@ public class Teredor extends Fighter
 		 * Field _npc.
 		 */
 		NpcInstance _npc;
-		
+		Player _p;
 		/**
 		 * Constructor for TeredorPassiveTask.
 		 * @param npc NpcInstance
 		 */
-		public TeredorPassiveTask(NpcInstance npc)
+		public TeredorPassiveTask(NpcInstance npc,Player p)
 		{
 			_npc = npc;
+			_p=p;
 		}
 		
 		/**
@@ -268,12 +309,30 @@ public class Teredor extends Fighter
 		@Override
 		public void runImpl()
 		{
-			if ((_npc != null) && (!_npc.isDead()))
+			if ((_npc != null) && (!_npc.isDead()) && _p!=null)
 			{
-				_npc.getAI().notifyEvent(CtrlEvent.EVT_FORGET_OBJECT);
+				Party pty=_p.getParty();
+				if(pty!=null)
+				{
+					List<Playable> pl=_p.getParty().getPartyMembersWithPets();
+					Object[] aggro=new Object[pl.size()];
+					pl.toArray(aggro);
+					_npc.getAI().notifyEvent(CtrlEvent.EVT_FORGET_OBJECT,aggro);
+				}
+				else
+				{
+					_npc.getAI().notifyEvent(CtrlEvent.EVT_FORGET_OBJECT,_p);
+				}
+				
+				
+				
 				_npc.getAggroList().clear();
 				_npc.setTargetable(false);
 				_npc.setIsInvul(true);
+				setIntention(CtrlIntention.AI_INTENTION_IDLE);
+				final Location _coords = Location.findAroundPosition(_npc,300,500);
+				_npc.moveToLocation(_coords,10,true);
+				
 				ThreadPoolManager.getInstance().schedule(new TeredorActiveTask(_npc), timeFromPassiveToActive * 10);
 			}
 		}
