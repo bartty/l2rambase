@@ -26,6 +26,8 @@ public class TeredorCavern extends Reflection
 	private int instanceId=160;
 	private static final Logger _log = LoggerFactory.getLogger(TeredorCavern.class);
 	private static int Teredor = 25785;
+	private static int AdventurerId=50038;
+	
 	private boolean cleanup_ready=true;
 	
 	
@@ -82,7 +84,7 @@ public class TeredorCavern extends Reflection
 	
 				
 				cleanup_ready=false;
-				addSpawnWithoutRespawn(32337, TeredorSpawnCoords, 0);
+				addSpawnWithoutRespawn(AdventurerId, TeredorSpawnCoords, 0);
 				ThreadPoolManager.getInstance().schedule(new FinalAndCollapse(), 5*60*1000);
 				_log.info("Teredor cleanup scheduled ...");
 				for ( Player p : killer.getPlayer().getParty().getPartyMembers())

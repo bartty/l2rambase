@@ -631,7 +631,7 @@
 		<set name="collision_height" value="22.5"/>
 		<set name="level" value="88"/>
 		<set name="type" value="Monster"/>
-			<set name="aggroRange" value="300"/>
+			<set name="aggroRange" value="1500"/>
 		<set name="ai_type" value="Fighter"/>
 		<set name="baseAtkRange" value="40"/>
 		<set name="baseHpMax" value="497254"/>
