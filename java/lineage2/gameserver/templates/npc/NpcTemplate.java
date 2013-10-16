@@ -72,10 +72,10 @@ public final class NpcTemplate extends CharTemplate
 	/*DEfault AI Skills  by Voronius */
 	public static int[] defaultAiSkills =
 	{
-		90001,
-		90002,
-		90003,
-		90004
+		99001,
+		99002,
+		99003,
+		99004
 	};
 	
 	
