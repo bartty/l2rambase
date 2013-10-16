@@ -260,6 +260,8 @@ public final class NpcParser extends AbstractDirParser<NpcHolder>
 						}
 						template.addSkill(skill);
 					}
+					
+					
 				}
 				else if (nodeName.equalsIgnoreCase("minions"))
 				{
@@ -351,6 +353,7 @@ public final class NpcParser extends AbstractDirParser<NpcHolder>
 			getHolder().addTemplate(template);
 		}
 	}
+
 	
 	/**
 	 * Method parseReward.

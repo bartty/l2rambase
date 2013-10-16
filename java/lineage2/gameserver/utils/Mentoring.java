@@ -140,7 +140,7 @@ public class Mentoring
 	public static void applyMenteeBuffs(Player mentee)
 	{
 		
-		if (mentee.canBeMentee())
+		if (mentee!=null && mentee.canBeMentee())
 		{
 			addMentoringSkills(mentee);	
 			for (int sid : effectsForMentee)

@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list>
+
+    <skill id="14112" levels="1" name="Poison Zone">
+    <!-- Sprays poison onto nearby targets for 15 seconds. Decreases P. Atk., Speed, Shield Def., P. Def., and M. Def. Inflicts Poison. -->
+        <set name="magicLevel" val="90"/>
+		<set name="lifeTime" val="45"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="summonType" val="SYMBOL"/>
+		<set name="reuseDelay" val="120000"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="isDebuff" val="true"/>
+		<set name="isOffensive" val="true"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="addSkills" val="10523;3"/>
+		<set name="npcId" val="19115"/>
+        <set name="relationSkillsId" val="102;115;"/>
+	</skill>
+
 	<skill id="14156" levels="1" name="Snake">
     <!-- none -->
 		<set name="icon" val="icon.skill0006"/>

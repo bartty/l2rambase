@@ -1036,6 +1036,10 @@ public final class Player extends Playable implements PlayerGroup
 	 */
 	private final SummonList _summonList = new SummonList(this);
 	
+	
+	protected boolean has_daily_mark=false;
+	
+	
 	/**
 	 * Constructor for Player.
 	 * @param objectId int
@@ -5401,6 +5405,13 @@ public final class Player extends Playable implements PlayerGroup
 			_matchingRoom.broadcastPlayerUpdate(this);
 		}
 		rewardSkills(true,false);
+		
+	
+		//start marks quest upon reaching 85
+		if(getLevel()>84)
+		{
+			updateDaily();
+		}
 	}
 	
 	/**
@@ -6471,6 +6482,7 @@ public final class Player extends Playable implements PlayerGroup
 					player.setSitting(true);
 				}
 				player.updateKetraVarka();
+				player.updateDaily();
 				player.updateRam();
 				player.checkRecom();
 				player.restoreVitality();
@@ -8978,6 +8990,51 @@ public final class Player extends Playable implements PlayerGroup
 	public int getRam()
 	{
 		return _ram;
+	}
+	
+	
+	
+	
+	public void updateDaily()
+	{
+		
+		if(getLevel()<85)
+		{
+			return;
+		}
+		Quest q=QuestManager.getQuest(10000);
+		if(q==null)
+		{
+			_log.info("Quest not found , id 10000 for player "+getName());
+			return;
+		}
+	
+		QuestState qs = getQuestState(q.getName());
+		
+		if(qs==null)
+		{
+			_log.info("QuestState not found , id 10000 for player "+getName());
+			qs = q.newQuestState(this, Quest.CREATED);
+			qs.setState(Quest.STARTED);
+		}
+		
+			
+		if(qs.isNowAvailableByTime())
+		{
+			has_daily_mark=true;
+			_log.info("Daily marks available for "+getName());
+		}
+
+	}
+	
+	public boolean canGetDailyMark()
+	{
+		return has_daily_mark;
+	}
+	
+	public void disableDailyMark()
+	{
+		has_daily_mark=false;
 	}
 	
 	/**
@@ -13417,14 +13474,17 @@ public final class Player extends Playable implements PlayerGroup
 				for (MenteeMentor mentee : getMenteeMentorList().getList().values())
 				{
 					Player menteePlayer = World.getPlayer(mentee.getName());
-					Mentoring.applyMenteeBuffs(menteePlayer);
+					if(menteePlayer!=null && menteePlayer.isOnline())
+						Mentoring.applyMenteeBuffs(menteePlayer);
 				}
 			}
 			else if(canBeMentee())
 			{
 				Mentoring.applyMenteeBuffs(this);
+				
 				Player mentorPlayer = World.getPlayer(getMenteeMentorList().getMentor());
-				Mentoring.applyMentorBuffs(mentorPlayer);
+				if(mentorPlayer!=null && mentorPlayer.isOnline())
+					Mentoring.applyMentorBuffs(mentorPlayer);
 			}
 		}
 	}
@@ -13450,7 +13510,8 @@ public final class Player extends Playable implements PlayerGroup
 			else
 			{
 				Player mentorPlayer = World.getPlayer(getMenteeMentorList().getMentor());
-				Mentoring.cancelMentorBuffs(mentorPlayer);
+				if(mentorPlayer!=null && mentorPlayer.isOnline())
+					Mentoring.cancelMentorBuffs(mentorPlayer);
 			}
 		}
 	}
