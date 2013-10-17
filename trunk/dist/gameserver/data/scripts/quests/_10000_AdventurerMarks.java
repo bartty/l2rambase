@@ -142,21 +142,21 @@ public class _10000_AdventurerMarks extends Quest implements ScriptFile
 	*/	
 	
 	/**
-	 * Adventurerfs Mark - Loyalty
+	 * Adventurerï¿½fs Mark - Loyalty
 	 */
 	private static int MARK_LOYALTY = 17739;
 	/**
-	 * Adventurerfs Mark - Pledge
+	 * Adventurerï¿½fs Mark - Pledge
 	 */
 	private static int MARK_PLEDGE = 17740;
 	
 	
 	/**
-	 * Adventurerfs Mark - Sincerity
+	 * Adventurerï¿½fs Mark - Sincerity
 	 */
 	private static int MARK_SINCERITY = 17741;
 	/**
-	 * Adventurerfs Mark - Spirit
+	 * Adventurerï¿½fs Mark - Spirit
 	 */
 	private static int MARK_SPIRIT = 17742;
 	
@@ -179,7 +179,7 @@ public class _10000_AdventurerMarks extends Quest implements ScriptFile
 	
 	public _10000_AdventurerMarks()
 	{
-		super(false);
+		super(true);
 		addKillId(mobs1);
 		addKillId(mobs2);
 		addKillId(mobs1and2);
@@ -206,22 +206,22 @@ public class _10000_AdventurerMarks extends Quest implements ScriptFile
 		/*1st 2 can be compressed  - i keep them as such for clarity */
 		if(p.getLevel()>96 && mobs3.contains(npcId))
 		{
+			Functions.addItem(p, MARK_LOYALTY, 1);
 			Functions.addItem(p, MARK_SPIRIT, 1);
 			
 		}
 		else if (p.getLevel()>94 && mobs3.contains(npcId))
 		{
-			Functions.addItem(p, MARK_SPIRIT, 1);
+			Functions.addItem(p, MARK_LOYALTY, 1);
 			Functions.addItem(p, MARK_SINCERITY, 1);
 		}
 		else if (p.getLevel()>89 && (mobs2.contains(npcId) || mobs1and2.contains(npcId) ))
 		{
-			Functions.addItem(p, MARK_SPIRIT, 1);
+			Functions.addItem(p, MARK_LOYALTY, 1);
 			Functions.addItem(p, MARK_PLEDGE, 1);
 		}
 		else if (p.getLevel()>84 && ( mobs1and2.contains(npcId) || mobs1.contains(npcId) ) )
 		{
-			Functions.addItem(p, MARK_SPIRIT, 1);
 			Functions.addItem(p, MARK_LOYALTY, 1);
 		}
 		else
