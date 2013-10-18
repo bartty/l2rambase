@@ -442,6 +442,8 @@
 				<keepSkill id="1559"/>
 				<keepSkill id="997"/>
 				<keepSkill id="1560"/>
+				<keepSkill id="302"/>
+				<keepSkill id="444"/>
 			</fromClass>
 		</awakenClass>
 		<awakenClass id="142"> <!-- Yul Archer -->
