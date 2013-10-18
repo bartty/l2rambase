@@ -14,15 +14,19 @@ package lineage2.gameserver.skills.skillclasses;
 
 import java.util.List;
 
+import lineage2.commons.util.Rnd;
+import lineage2.gameserver.Config;
 import lineage2.gameserver.ai.CtrlEvent;
 import lineage2.gameserver.cache.Msg;
 import lineage2.gameserver.model.Creature;
 import lineage2.gameserver.model.Player;
 import lineage2.gameserver.model.Skill;
 import lineage2.gameserver.model.instances.MonsterInstance;
+import lineage2.gameserver.model.instances.NpcInstance;
 import lineage2.gameserver.model.items.ItemInstance;
 import lineage2.gameserver.model.reward.RewardItem;
 import lineage2.gameserver.network.serverpackets.SystemMessage;
+import lineage2.gameserver.network.serverpackets.components.CustomMessage;
 import lineage2.gameserver.stats.Formulas;
 import lineage2.gameserver.stats.Formulas.AttackInfo;
 import lineage2.gameserver.templates.StatsSet;
@@ -93,11 +97,43 @@ public class Plunder extends Skill
 			{
 				if (target.isMonster())
 				{
-					if (!((MonsterInstance) target).isSpoiled())
+					if (((MonsterInstance) target).isSpoiled())
+					{
+						activeChar.sendPacket(Msg.ALREADY_SPOILED);
+					}
+					else
 					{
 						MonsterInstance monster = (MonsterInstance) target;
 						boolean success;
-						success = Formulas.calcSkillSuccess(activeChar, target, this, getActivateRate());
+						if (!Config.ALT_SPOIL_FORMULA)
+						{
+							int monsterLevel = monster.getLevel();
+							int modifier = Math.abs(monsterLevel - activeChar.getLevel());
+							double rateOfSpoil = Config.BASE_SPOIL_RATE;
+							if (modifier > 8)
+							{
+								rateOfSpoil = rateOfSpoil - ((rateOfSpoil * (modifier - 8) * 9) / 100);
+							}
+							rateOfSpoil = (rateOfSpoil * getMagicLevel()) / monsterLevel;
+							if (rateOfSpoil < Config.MINIMUM_SPOIL_RATE)
+							{
+								rateOfSpoil = Config.MINIMUM_SPOIL_RATE;
+							}
+							else if (rateOfSpoil > 99.)
+							{
+								rateOfSpoil = 99.;
+							}
+							if (((Player) activeChar).isGM())
+							{
+								activeChar.sendMessage(new CustomMessage("lineage2.gameserver.skills.skillclasses.Spoil.Chance", (Player) activeChar).addNumber((long) rateOfSpoil));
+							}
+							success = Rnd.chance(rateOfSpoil);
+						}
+						else
+						{
+							success = Formulas.calcSkillSuccess(activeChar, target, this, getActivateRate());
+						}
+						
 						if (success && monster.setSpoiled((Player) activeChar))
 						{
 							activeChar.sendPacket(new SystemMessage(SystemMessage.S1_HAS_SUCCEEDED).addSkillName(_id, getDisplayLevel()));
@@ -105,10 +141,9 @@ public class Plunder extends Skill
 						else
 						{
 							activeChar.sendPacket(new SystemMessage(SystemMessage.S1_HAS_FAILED).addSkillName(_id, getDisplayLevel()));
-							return;
 						}
 					}
-				}
+				}	
 				if (getPower() > 0)
 				{
 					double damage, reflectableDamage = 0;
@@ -136,7 +171,8 @@ public class Plunder extends Skill
 			}
 			//SWEEP PART
 			Player player = (Player) activeChar;
-			if ((target == null) || !target.isMonster())
+			for (Creature targ : targets)
+			if ((target == null) || !target.isMonster() || !target.isDead() || !((MonsterInstance) target).isSpoiled())
 			{
 				continue;
 			}

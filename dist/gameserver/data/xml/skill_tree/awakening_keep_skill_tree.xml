@@ -415,6 +415,7 @@
 			</fromClass>
 			<fromClass id="117"><!-- Fortune Seeker -->
 				<keepSkill id="998"/>
+				<keepSkill id="172"/>
 				<keepSkill id="60"/>
 				<keepSkill id="34"/>
 				<keepSkill id="248"/>
@@ -440,6 +441,7 @@
 				<keepSkill id="347"/>
 				<keepSkill id="1559"/>
 				<keepSkill id="997"/>
+				<keepSkill id="1560"/>
 			</fromClass>
 		</awakenClass>
 		<awakenClass id="142"> <!-- Yul Archer -->

@@ -15591,6 +15591,15 @@
 			<skill id="1560" level="1" cost="100000000" name="Lucky Blow" min_level="83" />
 			<skill id="997" level="24" cost="18800000" name="Crushing Strike" min_level="84" />
 			<skill id="997" level="25" cost="19800000" name="Crushing Strike" min_level="85" />
+			<skill id="172" level="2" name="Create Item" min_level="85"/>
+			<skill id="172" level="3" name="Create Item" min_level="85"/>
+			<skill id="172" level="4" name="Create Item" min_level="85"/>
+			<skill id="172" level="5" name="Create Item" min_level="85"/>
+			<skill id="172" level="6" name="Create Item" min_level="85"/>
+			<skill id="172" level="7" name="Create Item" min_level="85"/>
+			<skill id="172" level="8" name="Create Item" min_level="85"/>
+			<skill id="172" level="9" name="Create Item" min_level="85"/>
+			<skill id="172" level="10" name="Create Item" min_level="85"/>
 		</class>
 		<class id="118"> <!--maestro-->
 			<skill id="329" level="1" cost="10000000" name="Health" min_level="76" />
@@ -17388,7 +17397,6 @@
 			<skill id="507" level="29" cost="180000" name="Twin Shot" min_level="66" />
 			<skill id="510" level="1" cost="350000" name="Deadly Roulette" min_level="66" />
 			<skill id="627" level="31" cost="180000" name="Soul Shock" min_level="66" />
-
 			<skill id="627" level="32" cost="180000" name="Soul Shock" min_level="66" />
 			<skill id="473" level="38" cost="240000" name="Crossbow Mastery" min_level="68" />
 			<skill id="473" level="39" cost="240000" name="Crossbow Mastery" min_level="68" />
@@ -17869,7 +17877,7 @@
 			<skill id="1515" level="1" cost="100000000" name="Lightning Barrier" min_level="80" />
 		</class>
 		<!-- Goddess of Destruction -->
-		<class id="139">
+		<class id="139">	<!--Sigel Knight-->
 			<!--Race Skills-->
 			<!--Human-->
 			<skill id="1901" level="1" min_level="85" name="Aim" race="human"/>
@@ -17901,19 +17909,6 @@
 			<skill id="19089" level="1" min_level="85" name="Summon Wild Hog Cannon" race="dwarf"/>
 			<skill id="19090" level="1" min_level="85" name="Summon Swoop Cannon" race="dwarf"/>
 			<skill id="1321" level="1" min_level="85" name="Dwarven Craft" race="dwarf"/>
-			<skill id="172" level="2" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="3" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="4" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="5" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="6" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="7" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="8" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="9" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="10" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="11" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="12" name="Create Item" min_level="90" race="dwarf"/>
-			<skill id="172" level="13" name="Create Item" min_level="95" race="dwarf"/>
-			<skill id="172" level="14" name="Create Item" min_level="99" race="dwarf"/>
 			<!--kamael-->
 			<skill id="1923" level="1" min_level="85" name="Battle Instinct" race="kamael"/>
 			<skill id="1924" level="1" min_level="85" name="Dark Blessing" race="kamael"/>
@@ -18070,7 +18065,7 @@
 			<skill id="10043" level="8" cost="50000000" name="Summon Knight Cubic" min_level="98" />
 			<skill id="10044" level="1" cost="10000000" name="Superior Elemental Mastery" min_level="85" />
 		</class>
-		<class id="140">
+		<class id="140">	<!--Tyrr-->
 			<!--Race Skills-->
 			<!--Human-->
 			<skill id="1901" level="1" name="Aim" race="human" min_level="85"/>
@@ -18102,15 +18097,6 @@
 			<skill id="19089" level="1" name="Summon Wild Hog Cannon" race="dwarf" min_level="85"/>
 			<skill id="19090" level="1" name="Summon Swoop Cannon" race="dwarf" min_level="85"/>
 			<skill id="1321" level="1" name="Dwarven Craft" race="dwarf" min_level="85"/>
-			<skill id="172" level="2" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="3" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="4" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="5" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="6" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="7" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="8" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="9" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="10" name="Create Item" min_level="85" race="dwarf"/>
 			<skill id="172" level="11" name="Create Item" min_level="85" race="dwarf"/>
 			<skill id="172" level="12" name="Create Item" min_level="90" race="dwarf"/>
 			<skill id="172" level="13" name="Create Item" min_level="95" race="dwarf"/>
@@ -18266,7 +18252,7 @@
 			<skill id="10297" level="1" cost="10000000" name="Spirit of the Slayer" min_level="85" />
 			<skill id="10298" level="1" cost="10000000" name="Power Revival" min_level="85" />
 		</class>
-		<class id="141">
+		<class id="141">	<!--Othell-->
 			<!--Race Skills-->
 			<!--Human-->
 			<skill id="1901" level="1" name="Aim" race="human" min_level="85"/>
@@ -18298,19 +18284,19 @@
 			<skill id="19089" level="1" name="Summon Wild Hog Cannon" race="dwarf" min_level="85"/>
 			<skill id="19090" level="1" name="Summon Swoop Cannon" race="dwarf" min_level="85"/>
 			<skill id="1321" level="1" name="Dwarven Craft" race="dwarf" min_level="85"/>
-			<skill id="172" level="2" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="3" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="4" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="5" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="6" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="7" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="8" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="9" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="10" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="11" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="12" name="Create Item" min_level="90" race="dwarf"/>
-			<skill id="172" level="13" name="Create Item" min_level="95" race="dwarf"/>
-			<skill id="172" level="14" name="Create Item" min_level="99" race="dwarf"/>
+			<skill id="172" level="2" name="Create Item" race="dwarf" min_level="85"/>
+			<skill id="172" level="3" name="Create Item" race="dwarf" min_level="85"/>
+			<skill id="172" level="4" name="Create Item" race="dwarf" min_level="85"/>
+			<skill id="172" level="5" name="Create Item" race="dwarf" min_level="85"/>
+			<skill id="172" level="6" name="Create Item" race="dwarf" min_level="85"/>
+			<skill id="172" level="7" name="Create Item" race="dwarf" min_level="85"/>
+			<skill id="172" level="8" name="Create Item" race="dwarf" min_level="85"/>
+			<skill id="172" level="9" name="Create Item" race="dwarf" min_level="85"/>
+			<skill id="172" level="10" name="Create Item" race="dwarf" min_level="85"/>
+			<skill id="172" level="11" name="Create Item" race="dwarf" min_level="85"/>
+			<skill id="172" level="12" name="Create Item" race="dwarf" min_level="90"/>
+			<skill id="172" level="13" name="Create Item" race="dwarf" min_level="95"/>
+			<skill id="172" level="14" name="Create Item" race="dwarf" min_level="99"/>
 			<!--kamael-->
 			<skill id="1923" level="1" name="Battle Instinct" race="kamael" min_level="85"/>
 			<skill id="1924" level="1" name="Dark Blessing" race="kamael" min_level="85"/>
@@ -18480,7 +18466,7 @@
 			<skill id="10552" level="1" cost="10000000" name="Superior Resistance" min_level="85" />
 			<skill id="10554" level="1" cost="10000000" name="Power Bluff" min_level="85" />
 		</class>
-		<class id="142">
+		<class id="142">	<!--Yul Archer-->
 			<!--Race Skills-->
 			<!--Human-->
 			<skill id="1901" level="1" name="Aim" race="human" min_level="85"/>
@@ -18512,19 +18498,6 @@
 			<skill id="19089" level="1" name="Summon Wild Hog Cannon" race="dwarf" min_level="85"/>
 			<skill id="19090" level="1" name="Summon Swoop Cannon" race="dwarf" min_level="85"/>
 			<skill id="1321" level="1" name="Dwarven Craft" race="dwarf" min_level="85"/>
-			<skill id="172" level="2" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="3" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="4" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="5" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="6" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="7" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="8" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="9" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="10" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="11" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="12" name="Create Item" min_level="90" race="dwarf"/>
-			<skill id="172" level="13" name="Create Item" min_level="95" race="dwarf"/>
-			<skill id="172" level="14" name="Create Item" min_level="99" race="dwarf"/>
 			<!--kamael-->
 			<skill id="1923" level="1" name="Battle Instinct" race="kamael" min_level="85"/>
 			<skill id="1924" level="1" name="Dark Blessing" race="kamael" min_level="85"/>
@@ -18694,7 +18667,7 @@
 			<skill id="10805" level="3" cost="50000000" name="Quick Charge" min_level="95" />
 			<skill id="10805" level="4" cost="50000000" name="Quick Charge" min_level="98" />
 		</class>
-		<class id="143">
+		<class id="143">	<!--Feoh Wizard-->
 			<!--Race Skills-->
 			<!--Human-->
 			<skill id="1901" level="1" name="Aim" race="human" min_level="85"/>
@@ -18726,19 +18699,6 @@
 			<skill id="19089" level="1" name="Summon Wild Hog Cannon" race="dwarf" min_level="85"/>
 			<skill id="19090" level="1" name="Summon Swoop Cannon" race="dwarf" min_level="85"/>
 			<skill id="1321" level="1" name="Dwarven Craft" race="dwarf" min_level="85"/>
-			<skill id="172" level="2" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="3" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="4" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="5" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="6" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="7" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="8" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="9" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="10" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="11" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="12" name="Create Item" min_level="90" race="dwarf"/>
-			<skill id="172" level="13" name="Create Item" min_level="95" race="dwarf"/>
-			<skill id="172" level="14" name="Create Item" min_level="99" race="dwarf"/>
 			<!--kamael-->
 			<skill id="1923" level="1" name="Battle Instinct" race="kamael" min_level="85"/>
 			<skill id="1924" level="1" name="Dark Blessing" race="kamael" min_level="85"/>
@@ -18912,7 +18872,7 @@
 			<skill id="11186" level="1" cost="10000000" name="Superior Fast MP Recovery" min_level="85" />
 			<skill id="11187" level="1" cost="10000000" name="Superior Clear Mind" min_level="85" />
 		</class>
-		<class id="144">
+		<class id="144">	<!--ISS Enchanter-->
 			<!--Race Skills-->
 			<!--Human-->
 			<skill id="1901" level="1" name="Aim" race="human" min_level="85"/>
@@ -18944,19 +18904,6 @@
 			<skill id="19089" level="1" name="Summon Wild Hog Cannon" race="dwarf" min_level="85"/>
 			<skill id="19090" level="1" name="Summon Swoop Cannon" race="dwarf" min_level="85"/>
 			<skill id="1321" level="1" name="Dwarven Craft" race="dwarf" min_level="85"/>
-			<skill id="172" level="2" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="3" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="4" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="5" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="6" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="7" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="8" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="9" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="10" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="11" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="12" name="Create Item" min_level="90" race="dwarf"/>
-			<skill id="172" level="13" name="Create Item" min_level="95" race="dwarf"/>
-			<skill id="172" level="14" name="Create Item" min_level="99" race="dwarf"/>
 			<!--kamael-->
 			<skill id="1923" level="1" name="Battle Instinct" race="kamael" min_level="85"/>
 			<skill id="1924" level="1" name="Dark Blessing" race="kamael" min_level="85"/>
@@ -19139,7 +19086,7 @@
 			<skill id="11570" level="1" cost="10000000" name="Healing Melody" min_level="85" />
 			<skill id="11571" level="1" cost="10000000" name="Recovery Melody" min_level="85" />
 		</class>
-		<class id="145">
+		<class id="145">	<!--Wynn Summoner-->
 			<!--Race Skills-->
 			<!--Human-->
 			<skill id="1901" level="1" name="Aim" race="human" min_level="85"/>
@@ -19171,19 +19118,6 @@
 			<skill id="19089" level="1" name="Summon Wild Hog Cannon" race="dwarf" min_level="85"/>
 			<skill id="19090" level="1" name="Summon Swoop Cannon" race="dwarf" min_level="85"/>
 			<skill id="1321" level="1" name="Dwarven Craft" race="dwarf" min_level="85"/>
-			<skill id="172" level="2" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="3" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="4" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="5" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="6" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="7" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="8" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="9" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="10" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="11" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="12" name="Create Item" min_level="90" race="dwarf"/>
-			<skill id="172" level="13" name="Create Item" min_level="95" race="dwarf"/>
-			<skill id="172" level="14" name="Create Item" min_level="99" race="dwarf"/>
 			<!--kamael-->
 			<skill id="1923" level="1" name="Battle Instinct" race="kamael" min_level="85"/>
 			<skill id="1924" level="1" name="Dark Blessing" race="kamael" min_level="85"/>
@@ -19367,7 +19301,7 @@
 			<skill id="11310" level="1" cost="10000000" name="Mass Servitor Ultimate Defense" min_level="85" />
 			<skill id="11316" level="1" cost="10000000" name="Summon Soulshots" min_level="85" />
 		</class>
-		<class id="146">
+		<class id="146">	<!--Aero Healer-->
 			<!--Race Skills-->
 			<!--Human-->
 			<skill id="1901" level="1" name="Aim" race="human" min_level="85"/>
@@ -19399,19 +19333,6 @@
 			<skill id="19089" level="1" name="Summon Wild Hog Cannon" race="dwarf" min_level="85"/>
 			<skill id="19090" level="1" name="Summon Swoop Cannon" race="dwarf" min_level="85"/>
 			<skill id="1321" level="1" name="Dwarven Craft" race="dwarf" min_level="85"/>
-			<skill id="172" level="2" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="3" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="4" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="5" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="6" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="7" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="8" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="9" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="10" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="11" name="Create Item" min_level="85" race="dwarf"/>
-			<skill id="172" level="12" name="Create Item" min_level="90" race="dwarf"/>
-			<skill id="172" level="13" name="Create Item" min_level="95" race="dwarf"/>
-			<skill id="172" level="14" name="Create Item" min_level="99" race="dwarf"/>
 			<!--kamael-->
 			<skill id="1923" level="1" name="Battle Instinct" race="kamael" min_level="85"/>
 			<skill id="1924" level="1" name="Dark Blessing" race="kamael" min_level="85"/>
@@ -19593,7 +19514,6 @@
 			<skill id="11821" level="1" cost="10000000" name="Critical of Saha" min_level="85" />
 			<skill id="11822" level="1" cost="10000000" name="Force of Saha" min_level="85" />
 			<skill id="11823" level="1" cost="10000000" name="Speed of Saha" min_level="85" />
-
 			<skill id="11824" level="1" cost="10000000" name="Resistance of Saha" min_level="85" />
 			<skill id="11825" level="1" cost="10000000" name="Clarity of Saha" min_level="85" />
 			<skill id="11826" level="1" cost="10000000" name="Emblem of Salvation" min_level="85" />
