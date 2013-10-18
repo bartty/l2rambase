@@ -275,7 +275,7 @@
 		108	Summon Cute Bear	Summons a fearless Cute Bear from the fairy dimension. Consumes 2 summon points. Enchant Power: Increases the effect.	+ 8 Power
 		109	Summon Cute Bear	Summons a fearless Cute Bear from the fairy dimension. Consumes 2 summon points. Enchant Power: Increases the effect.	+ 9 Power
 		110	Summon Cute Bear	Summons a fearless Cute Bear from the fairy dimension. Consumes 2 summon points. Enchant Power: Increases the effect.	+ 10 Power-->
-        <table name="#lifeTime">3600 3600 3600 3600 3600 3600 3600 3600</table>
+        <table name="#lifeTime">36000 36000 36000 36000 36000 36000 36000 36000</table>
         <table name="#magicLevel">85 86 87 88 89 90 91 92</table>
         <table name="#mpConsume2">351 361 376 391 406 421 436 456</table>
         <table name="#npcIds">14929 14947 14948 14949 14950 14951 14952 14953</table>
@@ -314,7 +314,7 @@
 		108	Summon Saber Tooth Cougar	Summons a dauntless Saber Tooth Cougar from the beast dimension. Consumes 2 summon points. Enchant Power: Increases the effect.	+ 8 Power
 		109	Summon Saber Tooth Cougar	Summons a dauntless Saber Tooth Cougar from the beast dimension. Consumes 2 summon points. Enchant Power: Increases the effect.	+ 9 Power
 		110	Summon Saber Tooth Cougar	Summons a dauntless Saber Tooth Cougar from the beast dimension. Consumes 2 summon points. Enchant Power: Increases the effect.	+ 10 Power-->
-        <table name="#lifeTime">3600 3600 3600 3600 3600 3600 3600 3600</table>
+        <table name="#lifeTime">36000 36000 36000 36000 36000 36000 36000 36000</table>
         <table name="#magicLevel">85 86 87 88 89 90 91 92</table>
         <table name="#mpConsume2">351 361 376 391 406 421 436 456</table>
         <set name="mpConsume2" val="#mpConsume2"/>
@@ -352,7 +352,7 @@
 		108	Summon Grim Reaper	Summons a nefarious Grim Reaper from the demonic dimension. Consumes 2 summon points. Enchant Power: Increases the effect.	+ 8 Power
 		109	Summon Grim Reaper	Summons a nefarious Grim Reaper from the demonic dimension. Consumes 2 summon points. Enchant Power: Increases the effect.	+ 9 Power
 		110	Summon Grim Reaper	Summons a nefarious Grim Reaper from the demonic dimension. Consumes 2 summon points. Enchant Power: Increases the effect.	+ 10 Power-->
-        <table name="#lifeTime">3600 3600 3600 3600 3600 3600 3600 3600</table>
+        <table name="#lifeTime">36000 36000 36000 36000 36000 36000 36000 36000</table>
         <table name="#magicLevel">85 86 87 88 89 90 91 92</table>
         <table name="#mpConsume2">351 361 376 391 406 421 436 456</table>
         <set name="mpConsume2" val="#mpConsume2"/>

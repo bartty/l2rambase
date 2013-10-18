@@ -1035,8 +1035,8 @@
 		<set name="collision_height" value="27.0"/>
 		<set name="level" value="88"/>
 		<set name="type" value="Monster"/>
-			<set name="aggroRange" value="300"/>
-		<set name="ai_type" value="Fighter"/>
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="teredor.TeredorLairEggs"/>
 		<set name="baseAtkRange" value="40"/>
 		<set name="baseHpMax" value="8650"/>
 		<set name="baseHpRate" value="1.0"/>

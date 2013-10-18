@@ -16,6 +16,8 @@ import java.util.List;
 //import java.util.logging.Logger;
 
 
+
+
 import lineage2.commons.threading.RunnableImpl;
 import lineage2.commons.util.Rnd;
 import lineage2.gameserver.ThreadPoolManager;
@@ -34,7 +36,9 @@ import lineage2.gameserver.model.Player;
 import lineage2.gameserver.model.Party;
 import lineage2.gameserver.model.Playable;
 import lineage2.gameserver.tables.SkillTable;
+import lineage2.gameserver.geodata.GeoEngine;
 
+import lineage2.gameserver.ai.DefaultAI;
 
 
 
@@ -83,6 +87,20 @@ public class Teredor extends Fighter
 		new Location(176360, -185096, -3826),
 		new Location(175896, -185576, -3826)
 	};
+	
+	/**
+	 * Field Teredor position.
+	 */
+	final Location[] pos =
+	{
+		new Location(176312, -186808, -3826),
+		new Location(175432, -185752, -3826),
+		new Location(175992, -184568, -3826),
+		new Location(176872, -184136, -3826)
+	};
+	
+	
+	
 	/**
 	 * Field timeFromPassiveToActive.
 	 */
@@ -90,7 +108,7 @@ public class Teredor extends Fighter
 	/**
 	 * Field delayEggTask.
 	 */
-	private static final int delayEggTask = 90;
+	private static final int delayEggTask = 180;
 	/**
 	 * Field _teredorActive.
 	 */
@@ -100,9 +118,7 @@ public class Teredor extends Fighter
 	 */
 	boolean _eliteSpawned = false;
 	/**
-	 * Field _battleActive.
-	 */
-	boolean _battleActive = false;
+
 	/**
 	 * Field _jumpAttacked.
 	 */
@@ -115,6 +131,10 @@ public class Teredor extends Fighter
 	 * Field _poisonCasted.
 	 */
 	boolean _poisonCasted = false;
+
+	boolean is_passive=true;
+	boolean can_move=true;
+	
 	/**
 	 * Field teredorEggs.
 	 */
@@ -139,7 +159,14 @@ public class Teredor extends Fighter
 	
 	
 	
+	public static enum stateType
+	{
+		START,
+		ACTIVE,
+		PASIVE
+	}
 	
+	private stateType state=stateType.START;
 	
 	/**
 	 * Constructor for Teredor.
@@ -148,8 +175,9 @@ public class Teredor extends Fighter
 	public Teredor(NpcInstance actor)
 	{
 		super(actor);
-		MAX_PURSUE_RANGE = 7000;
+		MAX_PURSUE_RANGE = 3000;
 		actor.addListener(_currentHpListener);
+		ThreadPoolManager.getInstance().schedule(new startMovingTask(), 3);
 	}
 	
 	/**
@@ -160,8 +188,61 @@ public class Teredor extends Fighter
 	@Override
 	protected void onEvtAggression(Creature attacker, int aggro)
 	{
-		super.onEvtAggression(attacker, aggro);
+		if(state==stateType.START)
+		{
+			
+			
+			is_passive = false;
+			can_move=false;	
+			actor.stopMove();
+			state=stateType.ACTIVE;
+			setIntention(CtrlIntention.	AI_INTENTION_ATTACK);
+			actor.doAttack(attacker);
+			//ThreadPoolManager.getInstance().schedule(new TeredorActiveTask(actor), 3);
+			super.onEvtAggression(attacker, aggro);
+			return;
+		}
+/*
+		if(state==stateType.ACTIVE)
+		{
+			is_passive = false;
+			can_move=false;	
+			setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
+			ThreadPoolManager.getInstance().schedule(new TeredorActiveTask(actor), 3);
+			super.onEvtAggression(attacker, aggro);
+			return;
+			
+		}
+*/		
 	}
+	
+	
+	/**
+	 * Method onEvtAggression.
+	 * @param attacker Creature
+	 * @param aggro int
+	 */
+	@Override
+	protected void onEvtAttacked(Creature attacker, int damage)
+	{
+		if(state==stateType.START)
+		{
+			
+			
+			
+			is_passive = false;
+			can_move=false;	
+			actor.stopMove();
+			state=stateType.ACTIVE;
+			setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
+			actor.doAttack(attacker);
+			//ThreadPoolManager.getInstance().schedule(new TeredorActiveTask(actor), 3);
+			super.onEvtAttacked(attacker, damage);
+			return;
+		}
+		
+	}
+	
 	
 	/**
 	 * Method thinkAttack.
@@ -170,25 +251,48 @@ public class Teredor extends Fighter
 	protected void thinkAttack()
 	{
 		
-		if (!_battleActive)
+		if(is_passive)
 		{
-			_battleActive = true;
-			final Reflection r = actor.getReflection();
-			teredorEggs = r.getAllByNpcId(teredorLairEgg, true);
-			ThreadPoolManager.getInstance().scheduleAtFixedDelay(new EggSpawnTask(r), 1000, delayEggTask * 1000);
+			return;
 		}
-
+	
+		final Reflection r = actor.getReflection();
+		teredorEggs = r.getAllByNpcId(teredorLairEgg, true);
+		ThreadPoolManager.getInstance().scheduleAtFixedDelay(new EggSpawnTask(r), 1000, delayEggTask * 1000);
 		super.thinkAttack();
 	}
 
 	public void millipedeSpawn()
 	{
 		
-		_log.info("In Teredor AI : spawning millipede");
 		final Reflection r = actor.getReflection();
-		final Location _coords = Location.findPointToStay(coordsToSpawnEggs[Rnd.get(1)], 50, 100);
-		r.addSpawnWithoutRespawn(eliteMillipede, _coords, 0);
-		r.addSpawnWithoutRespawn(eliteMillipede, _coords, 0);
+		final Location _coords = Location.findPointToStay(((NpcInstance) actor).getLoc(), 50, 100);
+		NpcInstance elite1=r.addSpawnWithoutRespawn(eliteMillipede, _coords, 0);
+		NpcInstance elite2=r.addSpawnWithoutRespawn(eliteMillipede, _coords, 0);
+		NpcInstance elite3=r.addSpawnWithoutRespawn(eliteMillipede, _coords, 0);
+		
+		Party party=r.getParty();
+		
+		if(party!=null)
+		{
+			Player target=null;
+					for(Player p:party)
+					{
+						if(p!=null && elite1.isInRange(target, 1000))
+						{
+							target=p;
+						}
+						if(Rnd.get(1,100)<50)
+							continue;
+					}
+					if(target!=null)
+					{
+						elite1.getAI().notifyEvent(CtrlEvent.EVT_AGGRESSION, target, 100);
+						elite2.getAI().notifyEvent(CtrlEvent.EVT_AGGRESSION, target, 100);
+						elite3.getAI().notifyEvent(CtrlEvent.EVT_AGGRESSION, target, 100);
+					}
+		}
+		
 		
 	}
 	
@@ -200,7 +304,8 @@ public class Teredor extends Fighter
 	@Override
 	protected void onEvtDead(Creature killer)
 	{
-		_battleActive = false;
+		is_passive = true;
+		can_move=false;
 		actor.removeListener(_currentHpListener);
 		super.onEvtDead(killer);
 	}
@@ -255,6 +360,7 @@ public class Teredor extends Fighter
 				millipedeSpawn();
 				_teredorActive = false;
 				_eliteSpawned = false;
+				state=stateType.PASIVE;
 				ThreadPoolManager.getInstance().execute(new TeredorPassiveTask((NpcInstance) actor,attacker.getPlayer()));
 				if ((newHp <= (0.8 * maxHp)) && !_canUsePoison)
 				{
@@ -266,6 +372,8 @@ public class Teredor extends Fighter
 			{
 				millipedeSpawn();
 			}
+		
+			/*
 			else if(_teredorActive && _canUsePoison)
 			{
 				if (!((NpcInstance) actor).isCastingNow())
@@ -278,7 +386,7 @@ public class Teredor extends Fighter
 						}
 				}
 			}
-				
+			*/	
 			
 	}
 	}
@@ -315,6 +423,22 @@ public class Teredor extends Fighter
 				if(pty!=null)
 				{
 					List<Playable> pl=_p.getParty().getPartyMembersWithPets();
+					for(Playable tmp:pl)
+					{
+						if(tmp.getTarget()==_npc)
+						{
+							tmp.abortAttack(true, true);
+							tmp.abortCast(true, true);
+							tmp.setTarget(null);
+							tmp.stopAttackStanceTask();
+							tmp.getAI().setIntention(CtrlIntention.AI_INTENTION_REST);
+							tmp.getAI().notifyEvent(CtrlEvent.EVT_FORGET_OBJECT,_npc);
+							_npc.abortAttack(true, true);
+							_npc.abortCast(true, true);
+
+						}
+					}
+						
 					Object[] aggro=new Object[pl.size()];
 					pl.toArray(aggro);
 					_npc.getAI().notifyEvent(CtrlEvent.EVT_FORGET_OBJECT,aggro);
@@ -325,15 +449,25 @@ public class Teredor extends Fighter
 				}
 				
 				
+				is_passive=true;
+				can_move=true;
 				
+				_npc.abortAttack(true, true);
+				_npc.abortCast(true, true);
 				_npc.getAggroList().clear();
+				_npc.setUnAggred(true);
 				_npc.setTargetable(false);
+				_npc.setAttackable(false);
 				_npc.setIsInvul(true);
-				setIntention(CtrlIntention.AI_INTENTION_IDLE);
-				final Location _coords = Location.findAroundPosition(_npc,300,500);
-				_npc.moveToLocation(_coords,10,true);
+				_npc.setTarget(null);
+				_npc.stopMove();
+			
+				setGlobalAggro(System.currentTimeMillis() + (timeFromPassiveToActive * 10));
 				
+				long now = System.currentTimeMillis();
 				ThreadPoolManager.getInstance().schedule(new TeredorActiveTask(_npc), timeFromPassiveToActive * 10);
+				ThreadPoolManager.getInstance().schedule(new startMovingTask(), 3);
+	
 			}
 		}
 	}
@@ -365,14 +499,19 @@ public class Teredor extends Fighter
 		{
 			if ((_npc != null) && (!_npc.isDead()))
 			{
+				state=stateType.ACTIVE;
 				_npc.getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
-				_npc.setTargetable(true);
 				_npc.setUnAggred(false);
 				_npc.setIsInvul(false);
+				_npc.setTargetable(true);
+				_npc.setAttackable(true);
 				_eliteSpawned = false;
 				_teredorActive = true;
 				_jumpAttacked = false;
 				_poisonCasted = false;
+				is_passive=false;
+				can_move=false;
+				_checkAggroTimestamp=0;
 			}
 		}
 	}
@@ -402,11 +541,68 @@ public class Teredor extends Fighter
 		@Override
 		public void runImpl()
 		{
-			if (_battleActive)
+			if (!is_passive && !actor.isDead())
 			{
 				final Location _coords = Location.findPointToStay(coordsToSpawnEggs[Rnd.get(1)], 50, 100);
 				_r.addSpawnWithoutRespawn(teredorLairEgg, _coords, 0);
 			}
 		}
 	}
+	
+	public class startMovingTask extends RunnableImpl
+	{
+
+		public void startMoving()
+		{
+			if(is_passive && can_move)
+			{
+				int i=10;
+				int j=0;
+				for(j=0;j<3;++j)
+				{
+					ThreadPoolManager.getInstance().schedule(new MoveAwayTask(pos[j],false), i);
+					i+=15000;
+				}
+				
+				ThreadPoolManager.getInstance().schedule(new MoveAwayTask(pos[j],true), i);
+				
+			}
+		}
+		
+		public void runImpl()
+		{
+			if (is_passive && can_move)
+			{
+				startMoving();
+			}	
+		}
+	}
+	
+	
+	public class MoveAwayTask extends RunnableImpl
+	{
+		Location loc=null;
+		boolean rearm=false;
+		public MoveAwayTask(Location l, boolean re)
+		{
+			loc=l;
+			rearm=re;
+		}
+		
+		public void runImpl()
+		{
+			if (is_passive && can_move)
+			{
+				actor.moveToLocation(loc, 0,false);
+				if(rearm)
+				{
+					ThreadPoolManager.getInstance().schedule(new startMovingTask(), 10);
+				}
+			}
+		}
+		
+	 }
+
+
+	
 }

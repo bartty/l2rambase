@@ -708,13 +708,14 @@
 	<skill id="6268" levels="1" name="Jump Attack">
     <!-- none -->
 		<set name="icon" val="icon.skill0000"/>
-		<set name="power" val="2617"/>
+		<set name="reuseDelay" val="30000"/>
+		<set name="power" val="10617"/>
 		<set name="magicLevel" val="84"/>
 		<set name="castRange" val="250"/>
 		<set name="hitTime" val="5000"/>
 		<set name="hitCancelTime" val="500"/>
 		<set name="mpConsume2" val="164"/>
-		<set name="target" val="TARGET_ONE"/>
+		<set name="target" val="TARGET_AREA"/>
 		<set name="skillType" val="PDAM"/>
 		<set name="operateType" val="OP_ACTIVE"/>
 	</skill>
