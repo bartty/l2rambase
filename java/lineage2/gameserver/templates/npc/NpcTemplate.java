@@ -75,7 +75,9 @@ public final class NpcTemplate extends CharTemplate
 		99001,
 		99002,
 		99003,
-		99004
+		99004,
+		99005,
+		99006
 	};
 	
 	

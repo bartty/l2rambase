@@ -198,7 +198,8 @@ public class _10000_AdventurerMarks extends Quest implements ScriptFile
 			
 		}
 		
-		if(Rnd.get(1,100)<90)
+		/* 30% chance, was 10% */
+		if(Rnd.get(1,100)<70)
 			return;
 		
 		int npcId = npc.getNpcId();

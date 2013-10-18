@@ -26,7 +26,7 @@ public class TeredorCavern extends Reflection
 	private int instanceId=160;
 	private static final Logger _log = LoggerFactory.getLogger(TeredorCavern.class);
 	private static int Teredor = 25785;
-	private static int AdventurerId=50038;
+	private static int AdventurerId=60000;
 	
 	private boolean cleanup_ready=true;
 	

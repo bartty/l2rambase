@@ -25,8 +25,6 @@ public class _459_TheVillianOfTheUndergroundMineTeredor extends Quest implements
 
 	private static final int izId = 160;
 	
-	static NpcInstance adventurer = null;
-
 	
 	public _459_TheVillianOfTheUndergroundMineTeredor()
 	{

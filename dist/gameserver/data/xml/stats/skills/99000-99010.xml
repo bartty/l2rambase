@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list>
 	<skill id="99001" levels="15" name="Power Strike">
-    <!-- none -->
-    	<table name="#power">15000 16000 17000 18000 19000 20000 21000 22000 23000 24000 25000 26000 27000 28000 29000</table>
+    <!-- bloody karik's starts at 22k power -->
+    	<table name="#power">20000 21000 22000 23000 24000 25000 26000 27000 28000 29000 30000 31000 32000 33000 34000</table>
 		<table name="#magicLevel">85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 </table>
-		<set name="icon" val="icon.skill6876"/>
+		<set name="icon" val="icon.skill0000"/>
 		<set name="coolTime" val="300"/>
-		<set name="reuseDelay" val="30000"/>
+		<set name="reuseDelay" val="12000"/>
 		<set name="power" val="#power"/>
-		<set name="magicLevel" val="83"/>
+		<set name="magicLevel" val="#magicLevel"/>
 		<set name="hitTime" val="1500"/>
 		<set name="hitCancelTime" val="500"/>
 		<set name="mpConsume2" val="34"/>
 		<set name="target" val="TARGET_ONE"/>
 		<set name="skillType" val="PDAM"/>
-		<set name="displayId" val="6750"/>
+		<set name="displayId" val="6860"/>
 		<set name="operateType" val="OP_ACTIVE"/>	
 	</skill>
 	<skill id="99002" levels="15" name="Whirlwind">
     <!-- Swings a spear to attack nearby enemies with 554 Power added to P. Atk. Requires a polearm to be equipped. Ignores Shield Defense. Over-hit and Critical hit are possible. -->
-	   	<table name="#power">1000 1200 1600 2000 2400 2600 2800 3200 3400 4000 4200 4500 5000 5300 5500</table>
+	   	<table name="#power">1500 1800 2100 2400 2400 3000 3300 3600 3900 4200 4500 4800 5100 5400 5700</table>
 		<table name="#magicLevel">85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 </table>
-		<set name="icon" val="icon.skill0036"/>
+		<set name="icon" val="icon.skill0000"/>
 		<set name="coolTime" val="300"/>
 		<set name="reuseDelay" val="30000"/>
 		<set name="power" val="#power"/>
-		<set name="magicLevel" val="83"/>
+		<set name="magicLevel" val="#magicLevel"/>
 		<set name="hitTime" val="4500"/>
 		<set name="hitCancelTime" val="1500"/>
 		<set name="mpConsume1" val="20"/>
@@ -42,46 +42,87 @@
     <!-- Restores one's HP with 42 Power. -->
     	<table name="#power">1500 1600 1700 1800 1900 2000 2100 2200 2300 2400 2500 2600 2700 2800 2900</table>
 		<table name="#effectPoint">50 100 150 200 230 260 290 320 340 360 380 400 410 420 430 </table>
-		
 		<set name="magicType" val="MAGIC"/>
-		<set name="icon" val="icon.skill1216"/>
-		<set name="reuseDelay" val="30000"/>
-		<set name="power" val="42"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="reuseDelay" val="45000"/>
+		<set name="power" val="#power"/>
 		<set name="magicLevel" val="1"/>
-		<set name="hitTime" val="8000"/>
-		<set name="hitCancelTime" val="2000"/>
+		<set name="hitTime" val="3000"/>
+		<set name="hitCancelTime" val="500"/>
 		<set name="mpConsume1" val="20"/>
 		<set name="mpConsume2" val="70"/>
 		<set name="effectPoint" val="10"/>
 		<set name="target" val="TARGET_SELF"/>
 		<set name="skillType" val="HEAL"/>
-		<set name="displayId" val="6847"/>
+		<set name="displayId" val="4065"/>
 		
 		<set name="operateType" val="OP_ACTIVE"/>
 	</skill>
 	<skill id="99004" levels="15" name="Drain Health">
     <!-- Inflicts dark damage on the target with 20 Power added to M. Atk. Absorbs 20% of the damage inflicted on target as HP. -->
-		<table name="#effectPoint">2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 7500 8000 8500 9000 9500</table>
+	
+	<!--	<table name="#effectPoint">2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 7500 8000 8500 9000 9500</table> -->
 		<table name="#magicLevel">85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 </table>
 		<table name="#power">1500 1600 1700 1800 1900 2000 2100 2200 2300 2400 2500 2600 2700 2800 2900</table>
-		<table name="#absorbPart">0.2</table>
 		<set name="magicType" val="MAGIC"/>
-		<set name="icon" val="icon.skill0070"/>
+		<set name="icon" val="icon.skill0000"/>
 		<set name="reuseDelay" val="30000"/>
 		<set name="power" val="#power"/>
 		<set name="magicLevel" val="#magicLevel"/>
 		<set name="castRange" val="600"/>
-		<set name="hitTime" val="12000"/>
+		<set name="hitTime" val="4000"/>
 		<set name="hitCancelTime" val="3000"/>
 		<set name="mpConsume1" val="20"/>
 		<set name="mpConsume2" val="70"/>
-		<set name="effectPoint" val="#effectPoint"/>
+	<!--	<set name="effectPoint" val="#effectPoint"/> -->
 		<set name="target" val="TARGET_ONE"/>
 		<set name="skillType" val="DRAIN"/>
 		<set name="operateType" val="OP_ACTIVE"/>
-		<set name="displayId" val="4002"/>
-		<set name="absorbPart" val="#absorbPart"/>
-		<set name="absorbAbs" val="0"/>
+		<set name="displayId" val="4152"/>
+		<set name="absorbPart" val="0.8"/>
 	</skill>
+		
+	<skill id="99005" levels="15" name="Shield">
+    	<!-- Increases P. Def. by 8% for 5 minutes. -->
+		<table name="#Tab-pDef">1.07 1.07 1.07 1.08 1.08 1.09 1.09 1.10 1.11 1.11 1.12 1.13 1.13 1.14 1.15</table>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="displayId" val="4029"/>
+		<set name="reuseDelay" val="90000"/>
+		<set name="magicLevel" val="70"/>
+		<set name="hitTime" val="800"/>
+		<set name="hitCancelTime" val="100"/>
+		<set name="mpConsume2" val="20"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pDef" time="60" val="0">
+				<mul order="0x30" stat="pDef" val="#Tab-pDef"/>
+			</effect>
+		</for>
+	</skill>
+	
+	<skill id="99006" levels="15" name="Might">
+    <!-- Increases P. Atk. by 8% for 5 minutes. -->
+		<table name="#Tab-pAtk">1.07 1.07 1.07 1.08 1.08 1.09 1.09 1.10 1.11 1.11 1.12 1.13 1.13 1.14 1.15</table>
+		<table name="#mpConsume2">10 18 33</table>
+		<table name="#magicLevel">20 40 70</table>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="displayId" val="4028"/>
+		<set name="reuseDelay" val="90000"/>
+		<set name="magicLevel" val="70"/>
+		<set name="hitTime" val="800"/>
+		<set name="hitCancelTime" val="100"/>
+		<set name="mpConsume2" val="20"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pAtk" time="60" val="0">
+				<mul order="0x30" stat="pAtk" val="#Tab-pAtk"/>
+			</effect>
+		</for>
+	</skill>
+	
 </list>
 	
