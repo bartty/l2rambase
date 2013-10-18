@@ -3006,7 +3006,7 @@
 	</spawn>
 	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
 		<point x="87700" y="-143253" z="-1296" h="7728" />
-		<npc id="30537" /><!--Дайчир-->
+		<npc id="30537" /><!--Daichir-->
 	</spawn>
 	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
 		<point x="77795" y="-153326" z="-514" h="14662" />
@@ -3118,7 +3118,7 @@
 	</spawn>
 	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
 		<point x="85572" y="-142477" z="-1336" h="60060" />
-		<npc id="30535" /><!--Филар-->
+		<npc id="30535" /><!--Filaur-->
 	</spawn>
 	<spawn count="1" respawn="60" respawn_random="0" period_of_day="none">
 		<point x="86073" y="-143494" z="-1336" h="52510" />
