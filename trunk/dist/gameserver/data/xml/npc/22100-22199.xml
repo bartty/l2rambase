@@ -3527,35 +3527,33 @@
 	<npc id="22139" name="Old Aristocrat's Soldier" title="">
 		<set name="aggroRange" value="0"/>
 		<set name="ai_type" value="Mystic"/>
-		<set name="baseAtkRange" value="40"/>
-		<set name="baseCON" value="43"/>
-		<set name="baseCritRate" value="40"/>
-		<set name="baseDEX" value="30"/>
-		<set name="baseHpMax" value="68170"/>
-		<set name="baseHpRate" value="4.0"/>
-		<set name="baseHpReg" value="13"/>
-		<set name="baseINT" value="21"/>
-		<set name="baseMAtk" value="2077"/>
-		<set name="baseMAtkSpd" value="333"/>
-		<set name="baseMDef" value="701"/>
-		<set name="baseMEN" value="20"/>
-		<set name="baseMpMax" value="2901"/>
+		<set name="level" value="98"/>
+		<set name="baseAtkRange" value="60"/>
+		<set name="baseHpMax" value="272678"/>
+		<set name="baseHpRate" value="4"/>
+		<set name="baseHpReg" value="109"/>
+		<set name="baseMpMax" value="3510"/>
 		<set name="baseMpReg" value="4"/>
-		<set name="basePAtk" value="4479"/>
-		<set name="basePAtkSpd" value="253"/>
-		<set name="basePDef" value="789"/>
+		<set name="baseSTR" value="39"/>
+		<set name="baseCON" value="76"/>
+		<set name="baseDEX" value="40"/>
+		<set name="baseINT" value="76"/>
+		<set name="baseWIT" value="76"/>
+		<set name="baseMEN" value="40"/>
+		<set name="rewardExp" value="2936558"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="293656"/>
+		<set name="basePAtk" value="9093"/>
+		<set name="basePDef" value="10103"/>
+		<set name="baseMAtk" value="2021"/>
+		<set name="baseMDef" value="1616"/>
+		<set name="basePAtkSpd" value="505"/>
+		<set name="baseCritRate" value="4"/>
+		<set name="baseMAtkSpd" value="455"/>
 		<set name="baseRunSpd" value="200"/>
-		<set name="baseSTR" value="40"/>
-		<set name="baseShldDef" value="0"/>
-		<set name="baseShldRate" value="0"/>
-		<set name="baseWIT" value="70"/>
-		<set name="baseWalkSpd" value="38"/>
+		<set name="baseWalkSpd" value="50"/>
 		<set name="collision_height" value="22.3"/>
 		<set name="collision_radius" value="17.0"/>
-		<set name="level" value="98"/>
-		<set name="rewardExp" value="39757"/>
-		<set name="rewardRp" value="0"/>
-		<set name="rewardSp" value="4287"/>
 		<set name="shots" value="NONE"/>
 		<set name="type" value="Monster"/>
 		<faction name="trioll_clan" range="300"/>
@@ -3585,22 +3583,20 @@
 				<reward item_id="57" min="4525" max="9265" chance="100.0000"/>	<!--Adena-->
 			</group>
 			<group chance="0.4672">
-				<reward item_id="305" min="1" max="1" chance="0.3504"/>	<!--Tallum Glaive-->
-				<reward item_id="5541" min="1" max="1" chance="99.6496"/>	<!--Tallum Glaive Edge-->
+				<reward item_id="1052" min="1" max="1" chance="5"/>	<!-- Recipe: Unidentified Amaranthine Stormer (60%) -->
+				<reward item_id="1577" min="1" max="1" chance="5"/>	<!-- Legendary Warsmith's Holder -->
+				<reward item_id="1605" min="1" max="1" chance="90"/>	<!--Unidentified Amaranthine Stormer Fragment-->
 			</group>
-			<group chance="41.6228">
-				<reward item_id="1894" min="1" max="1" chance="4.7707"/>	<!--Crafted Leather-->
-				<reward item_id="4039" min="1" max="1" chance="4.5321"/>	<!--Mold Glue-->
-				<reward item_id="4041" min="1" max="1" chance="1.1823"/>	<!--Mold Hardener-->
-				<reward item_id="4044" min="1" max="1" chance="4.5321"/>	<!--Thons-->
-				<reward item_id="959" min="1" max="1" chance="0.0054"/>	<!--Scroll: Enchant Weapon (S-Grade)-->
-				<reward item_id="1344" min="20" max="60" chance="84.9774"/>	<!--Mithril Arrow-->
+			<group chance="10">
+				<reward item_id="1573" min="1" max="1" chance="39.005"/>	<!--Durandil Temper-->
+				<reward item_id="1570" min="1" max="1" chance="60"/>	<!--High-Grade Synthetic Cokes-->
+				<reward item_id="17526" min="1" max="1" chance="0.005"/>	<!--Scroll: Enchant Weapon (R-Grade)-->
 			</group>
 		</rewardlist>
 		<rewardlist type="SWEEP">
-			<reward item_id="5515" min="1" max="1" chance="15.5316"/>	<!--Sealed Majestic Gauntlets Design-->
-			<reward item_id="3957" min="1" max="1" chance="0.4087"/>	<!--Recipe: Blessed Spiritshot S-->
-			<reward item_id="5522" min="1" max="1" chance="3.1318"/>	<!--Sealed Armor of Nightmare Pattern-->
+				<reward item_id="1573" min="1" max="1" chance="20"/>	<!--Durandil Temper-->
+				<reward item_id="1570" min="1" max="1" chance="40"/>	<!--High-Grade Synthetic Cokes-->
+				<reward item_id="17526" min="1" max="1" chance="0.005"/>	<!--Scroll: Enchant Weapon (R-Grade)-->
 		</rewardlist>
 		<attributes>
 			<attack attribute="unholy" value="20"/>
