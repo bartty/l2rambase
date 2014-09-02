@@ -3526,30 +3526,30 @@
 	</npc>
 	<npc id="22139" name="Old Aristocrat's Soldier" title="">
 		<set name="aggroRange" value="0"/>
-		<set name="ai_type" value="Mystic"/>
+		<set name="ai_type" value="Fighter"/>
 		<set name="level" value="98"/>
-		<set name="baseAtkRange" value="60"/>
-		<set name="baseHpMax" value="272678"/>
+		<set name="baseAtkRange" value="20"/>
+		<set name="baseHpMax" value="68000"/>
 		<set name="baseHpRate" value="4"/>
-		<set name="baseHpReg" value="109"/>
+		<set name="baseHpReg" value="20"/>
 		<set name="baseMpMax" value="3510"/>
-		<set name="baseMpReg" value="4"/>
-		<set name="baseSTR" value="39"/>
-		<set name="baseCON" value="76"/>
-		<set name="baseDEX" value="40"/>
-		<set name="baseINT" value="76"/>
-		<set name="baseWIT" value="76"/>
+		<set name="baseMpReg" value="3"/>
+		<set name="baseSTR" value="79"/>
+		<set name="baseCON" value="91"/>
+		<set name="baseDEX" value="51"/>
+		<set name="baseINT" value="40"/>
+		<set name="baseWIT" value="40"/>
 		<set name="baseMEN" value="40"/>
 		<set name="rewardExp" value="2936558"/>
 		<set name="rewardRp" value="0"/>
 		<set name="rewardSp" value="293656"/>
-		<set name="basePAtk" value="9093"/>
-		<set name="basePDef" value="10103"/>
-		<set name="baseMAtk" value="2021"/>
-		<set name="baseMDef" value="1616"/>
-		<set name="basePAtkSpd" value="505"/>
-		<set name="baseCritRate" value="4"/>
-		<set name="baseMAtkSpd" value="455"/>
+		<set name="basePAtk" value="13134"/>
+		<set name="basePDef" value="8082"/>
+		<set name="baseMAtk" value="1718"/>
+		<set name="baseMDef" value="1010"/>
+		<set name="basePAtkSpd" value="606"/>
+		<set name="baseCritRate" value="5"/>
+		<set name="baseMAtkSpd" value="354"/>
 		<set name="baseRunSpd" value="200"/>
 		<set name="baseWalkSpd" value="50"/>
 		<set name="collision_height" value="22.3"/>
@@ -3578,26 +3578,7 @@
 			<skill id="4665" level="9"/>	<!--NPC 100% HP Drain - Magic-->
 			<skill id="4789" level="9"/>	<!--NPC High Level-->
 		</skills>
-		<rewardlist type="RATED_GROUPED">
-			<group chance="70.0">
-				<reward item_id="57" min="4525" max="9265" chance="100.0000"/>	<!--Adena-->
-			</group>
-			<group chance="0.4672">
-				<reward item_id="1052" min="1" max="1" chance="5"/>	<!-- Recipe: Unidentified Amaranthine Stormer (60%) -->
-				<reward item_id="1577" min="1" max="1" chance="5"/>	<!-- Legendary Warsmith's Holder -->
-				<reward item_id="1605" min="1" max="1" chance="90"/>	<!--Unidentified Amaranthine Stormer Fragment-->
-			</group>
-			<group chance="10">
-				<reward item_id="1573" min="1" max="1" chance="39.005"/>	<!--Durandil Temper-->
-				<reward item_id="1570" min="1" max="1" chance="60"/>	<!--High-Grade Synthetic Cokes-->
-				<reward item_id="17526" min="1" max="1" chance="0.005"/>	<!--Scroll: Enchant Weapon (R-Grade)-->
-			</group>
-		</rewardlist>
-		<rewardlist type="SWEEP">
-				<reward item_id="1573" min="1" max="1" chance="20"/>	<!--Durandil Temper-->
-				<reward item_id="1570" min="1" max="1" chance="40"/>	<!--High-Grade Synthetic Cokes-->
-				<reward item_id="17526" min="1" max="1" chance="0.005"/>	<!--Scroll: Enchant Weapon (R-Grade)-->
-		</rewardlist>
+
 		<attributes>
 			<attack attribute="unholy" value="20"/>
 			<defence attribute="fire" value="20"/>
@@ -3609,36 +3590,34 @@
 	</npc>
 	<npc id="22140" name="Resurrected Worker" title="">
 		<set name="aggroRange" value="0"/>
-		<set name="ai_type" value="Mystic"/>
-		<set name="baseAtkRange" value="40"/>
-		<set name="baseCON" value="43"/>
-		<set name="baseCritRate" value="40"/>
-		<set name="baseDEX" value="30"/>
-		<set name="baseHpMax" value="68170"/>
-		<set name="baseHpRate" value="4.0"/>
-		<set name="baseHpReg" value="13"/>
-		<set name="baseINT" value="21"/>
-		<set name="baseMAtk" value="2077"/>
-		<set name="baseMAtkSpd" value="333"/>
-		<set name="baseMDef" value="701"/>
-		<set name="baseMEN" value="20"/>
-		<set name="baseMpMax" value="2901"/>
-		<set name="baseMpReg" value="4"/>
-		<set name="basePAtk" value="4479"/>
-		<set name="basePAtkSpd" value="253"/>
-		<set name="basePDef" value="789"/>
-		<set name="baseRunSpd" value="120"/>
-		<set name="baseSTR" value="40"/>
-		<set name="baseShldDef" value="0"/>
-		<set name="baseShldRate" value="0"/>
-		<set name="baseWIT" value="70"/>
-		<set name="baseWalkSpd" value="36"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="level" value="98"/>
+		<set name="baseAtkRange" value="20"/>
+		<set name="baseHpMax" value="68000"/>
+		<set name="baseHpRate" value="4"/>
+		<set name="baseHpReg" value="20"/>
+		<set name="baseMpMax" value="3510"/>
+		<set name="baseMpReg" value="3"/>
+		<set name="baseSTR" value="79"/>
+		<set name="baseCON" value="91"/>
+		<set name="baseDEX" value="51"/>
+		<set name="baseINT" value="40"/>
+		<set name="baseWIT" value="40"/>
+		<set name="baseMEN" value="40"/>
+		<set name="rewardExp" value="2936558"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="293656"/>
+		<set name="basePAtk" value="13134"/>
+		<set name="basePDef" value="8082"/>
+		<set name="baseMAtk" value="1718"/>
+		<set name="baseMDef" value="1010"/>
+		<set name="basePAtkSpd" value="606"/>
+		<set name="baseCritRate" value="5"/>
+		<set name="baseMAtkSpd" value="354"/>
+		<set name="baseRunSpd" value="200"/>
+		<set name="baseWalkSpd" value="50"/>
 		<set name="collision_height" value="24.6"/>
 		<set name="collision_radius" value="11.0"/>
-		<set name="level" value="98"/>
-		<set name="rewardExp" value="38782"/>
-		<set name="rewardRp" value="0"/>
-		<set name="rewardSp" value="4135"/>
 		<set name="shots" value="NONE"/>
 		<set name="type" value="Monster"/>
 		<faction name="trioll_clan" range="300"/>
@@ -3662,35 +3641,6 @@
 			<skill id="4649" level="1"/>	<!--Poison-->
 			<skill id="4789" level="6"/>	<!--NPC High Level-->
 		</skills>
-		<rewardlist type="RATED_GROUPED">
-			<group chance="70.0">
-				<reward item_id="57" min="4415" max="9013" chance="100.0000"/>	<!--Adena-->
-			</group>
-			<group chance="2.8165">
-				<reward item_id="5313" min="1" max="1" chance="0.2166"/>	<!--Sealed Gauntlets of Nightmare-->
-				<reward item_id="5514" min="1" max="1" chance="24.7834"/>	<!--Sealed Gauntlets of Nightmare Design-->
-				<reward item_id="5314" min="1" max="1" chance="0.2166"/>	<!--Sealed Boots of Nightmare-->
-				<reward item_id="5502" min="1" max="1" chance="24.7834"/>	<!--Sealed Boots of Nightmare Lining-->
-				<reward item_id="5318" min="1" max="1" chance="0.2166"/>	<!--Sealed Majestic Gauntlets-->
-				<reward item_id="5515" min="1" max="1" chance="24.7834"/>	<!--Sealed Majestic Gauntlets Design-->
-				<reward item_id="5319" min="1" max="1" chance="0.2166"/>	<!--Sealed Majestic Boots-->
-				<reward item_id="5503" min="1" max="1" chance="24.7834"/>	<!--Sealed Majestic Boots Lining-->
-			</group>
-			<group chance="32.7862">
-				<reward item_id="1871" min="1" max="3" chance="48.0241"/>	<!--Charcoal-->
-				<reward item_id="1866" min="2" max="6" chance="24.0121"/>	<!--Suede-->
-				<reward item_id="1877" min="1" max="1" chance="5.7629"/>	<!--Adamantite Nugget-->
-				<reward item_id="4041" min="1" max="1" chance="1.2528"/>	<!--Mold Hardener-->
-				<reward item_id="4040" min="1" max="1" chance="2.8814"/>	<!--Mold Lubricant-->
-				<reward item_id="960" min="1" max="1" chance="0.0576"/>	<!--Scroll: Enchant Armor (S-Grade)-->
-				<reward item_id="1344" min="100" max="300" chance="18.0091"/>	<!--Mithril Arrow-->
-			</group>
-		</rewardlist>
-		<rewardlist type="SWEEP">
-			<reward item_id="5488" min="1" max="1" chance="4.0326"/>	<!--Sealed Majestic Robe Fabric-->
-			<reward item_id="5495" min="1" max="1" chance="13.5982"/>	<!--Sealed Shield of Nightmare Fragment-->
-			<reward item_id="730" min="1" max="1" chance="0.7463"/>	<!--Scroll: Enchant Armor (A-Grade)-->
-		</rewardlist>
 		<attributes>
 			<attack attribute="unholy" value="20"/>
 			<defence attribute="fire" value="20"/>
@@ -3702,36 +3652,34 @@
 	</npc>
 	<npc id="22141" name="Forgotten Victim" title="">
 		<set name="aggroRange" value="0"/>
-		<set name="ai_type" value="Mystic"/>
-		<set name="baseAtkRange" value="40"/>
-		<set name="baseCON" value="43"/>
-		<set name="baseCritRate" value="40"/>
-		<set name="baseDEX" value="30"/>
-		<set name="baseHpMax" value="68170"/>
-		<set name="baseHpRate" value="4.0"/>
-		<set name="baseHpReg" value="13"/>
-		<set name="baseINT" value="21"/>
-		<set name="baseMAtk" value="2077"/>
-		<set name="baseMAtkSpd" value="333"/>
-		<set name="baseMDef" value="701"/>
-		<set name="baseMEN" value="20"/>
-		<set name="baseMpMax" value="2901"/>
-		<set name="baseMpReg" value="4"/>
-		<set name="basePAtk" value="4479"/>
-		<set name="basePAtkSpd" value="253"/>
-		<set name="basePDef" value="789"/>
-		<set name="baseRunSpd" value="120"/>
-		<set name="baseSTR" value="40"/>
-		<set name="baseShldDef" value="0"/>
-		<set name="baseShldRate" value="0"/>
-		<set name="baseWIT" value="70"/>
-		<set name="baseWalkSpd" value="36"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="level" value="98"/>
+		<set name="baseAtkRange" value="20"/>
+		<set name="baseHpMax" value="68000"/>
+		<set name="baseHpRate" value="4"/>
+		<set name="baseHpReg" value="20"/>
+		<set name="baseMpMax" value="3510"/>
+		<set name="baseMpReg" value="3"/>
+		<set name="baseSTR" value="79"/>
+		<set name="baseCON" value="91"/>
+		<set name="baseDEX" value="51"/>
+		<set name="baseINT" value="40"/>
+		<set name="baseWIT" value="40"/>
+		<set name="baseMEN" value="40"/>
+		<set name="rewardExp" value="2936558"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="293656"/>
+		<set name="basePAtk" value="13134"/>
+		<set name="basePDef" value="8082"/>
+		<set name="baseMAtk" value="1718"/>
+		<set name="baseMDef" value="1010"/>
+		<set name="basePAtkSpd" value="606"/>
+		<set name="baseCritRate" value="5"/>
+		<set name="baseMAtkSpd" value="354"/>
+		<set name="baseRunSpd" value="200"/>
+		<set name="baseWalkSpd" value="50"/>
 		<set name="collision_height" value="24.6"/>
 		<set name="collision_radius" value="11.0"/>
-		<set name="level" value="98"/>
-		<set name="rewardExp" value="40072"/>
-		<set name="rewardRp" value="0"/>
-		<set name="rewardSp" value="4279"/>
 		<set name="shots" value="NONE"/>
 		<set name="type" value="Monster"/>
 		<faction name="trioll_clan" range="300"/>
@@ -3754,36 +3702,6 @@
 			<skill id="4422" level="3"/>	<!--Dark Attacks-->
 			<skill id="4789" level="6"/>	<!--NPC High Level-->
 		</skills>
-		<rewardlist type="RATED_GROUPED">
-			<group chance="70.0">
-				<reward item_id="57" min="4566" max="9322" chance="100.0000"/>	<!--Adena-->
-			</group>
-			<group chance="2.2477">
-				<reward item_id="5312" min="1" max="1" chance="0.2496"/>	<!--Sealed Helm of Nightmare-->
-				<reward item_id="5527" min="1" max="1" chance="30.3187"/>	<!--Sealed Helm of Nightmare Design-->
-				<reward item_id="5315" min="1" max="1" chance="0.3567"/>	<!--Sealed Shield of Nightmare-->
-				<reward item_id="5495" min="1" max="1" chance="38.5067"/>	<!--Sealed Shield of Nightmare Fragment-->
-				<reward item_id="5317" min="1" max="1" chance="0.2496"/>	<!--Sealed Majestic Circlet-->
-				<reward item_id="5528" min="1" max="1" chance="30.3187"/>	<!--Sealed Majestic Circlet Design-->
-			</group>
-			<group chance="33.2873">
-				<reward item_id="1865" min="1" max="3" chance="34.2480"/>	<!--Varnish-->
-				<reward item_id="1870" min="2" max="6" chance="25.6860"/>	<!--Coal-->
-				<reward item_id="1879" min="1" max="1" chance="17.1240"/>	<!--Cokes-->
-				<reward item_id="1875" min="1" max="1" chance="6.8496"/>	<!--Stone of Purity-->
-				<reward item_id="4040" min="1" max="1" chance="2.0549"/>	<!--Mold Lubricant-->
-				<reward item_id="6901" min="1" max="1" chance="0.1027"/>	<!--Recipe: Shining Arrow (100%)-->
-				<reward item_id="8732" min="1" max="1" chance="0.8562"/>	<!--Life Stone -  Level 76-->
-				<reward item_id="8742" min="1" max="1" chance="0.2141"/>	<!--Mid-Grade Life Stone -  Level 76-->
-				<reward item_id="8752" min="1" max="1" chance="0.0214"/>	<!--High-Grade Life Stone -  Level 76-->
-				<reward item_id="1344" min="100" max="300" chance="12.8431"/>	<!--Mithril Arrow-->
-			</group>
-		</rewardlist>
-		<rewardlist type="SWEEP">
-			<reward item_id="5488" min="1" max="1" chance="4.1711"/>	<!--Sealed Majestic Robe Fabric-->
-			<reward item_id="730" min="1" max="1" chance="0.7719"/>	<!--Scroll: Enchant Armor (A-Grade)-->
-			<reward item_id="5480" min="1" max="1" chance="4.1564"/>	<!--Sealed Leather Armor of Nightmare Fabric-->
-		</rewardlist>
 		<attributes>
 			<attack attribute="unholy" value="20"/>
 			<defence attribute="fire" value="20"/>
@@ -3795,36 +3713,34 @@
 	</npc>
 	<npc id="22142" name="Triol's Layperson" title="">
 		<set name="aggroRange" value="300"/>
-		<set name="ai_type" value="Fighter"/>
-		<set name="baseAtkRange" value="40"/>
-		<set name="baseCON" value="43"/>
-		<set name="baseCritRate" value="40"/>
-		<set name="baseDEX" value="30"/>
-		<set name="baseHpMax" value="54536"/>
-		<set name="baseHpRate" value="5.0"/>
-		<set name="baseHpReg" value="13"/>
-		<set name="baseINT" value="21"/>
-		<set name="baseMAtk" value="2077"/>
-		<set name="baseMAtkSpd" value="333"/>
-		<set name="baseMDef" value="701"/>
-		<set name="baseMEN" value="20"/>
-		<set name="baseMpMax" value="2901"/>
+		<set name="ai_type" value="Mystic"/>
+		<set name="level" value="98"/>
+		<set name="baseAtkRange" value="60"/>
+		<set name="baseHpMax" value="68000"/>
+		<set name="baseHpRate" value="5"/>
+		<set name="baseHpReg" value="15"/>
+		<set name="baseMpMax" value="3510"/>
 		<set name="baseMpReg" value="4"/>
-		<set name="basePAtk" value="4479"/>
-		<set name="basePAtkSpd" value="253"/>
-		<set name="basePDef" value="789"/>
+		<set name="baseSTR" value="39"/>
+		<set name="baseCON" value="76"/>
+		<set name="baseDEX" value="40"/>
+		<set name="baseINT" value="76"/>
+		<set name="baseWIT" value="76"/>
+		<set name="baseMEN" value="40"/>
+		<set name="rewardExp" value="3636558"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="363656"/>
+		<set name="basePAtk" value="9093"/>
+		<set name="basePDef" value="6062"/>
+		<set name="baseMAtk" value="2021"/>
+		<set name="baseMDef" value="1212"/>
+		<set name="basePAtkSpd" value="505"/>
+		<set name="baseCritRate" value="4"/>
+		<set name="baseMAtkSpd" value="455"/>
 		<set name="baseRunSpd" value="200"/>
-		<set name="baseSTR" value="40"/>
-		<set name="baseShldDef" value="0"/>
-		<set name="baseShldRate" value="0"/>
-		<set name="baseWIT" value="70"/>
-		<set name="baseWalkSpd" value="58"/>
+		<set name="baseWalkSpd" value="50"/>
 		<set name="collision_height" value="28.4"/>
 		<set name="collision_radius" value="7.7"/>
-		<set name="level" value="98"/>
-		<set name="rewardExp" value="40625"/>
-		<set name="rewardRp" value="0"/>
-		<set name="rewardSp" value="4381"/>
 		<set name="shots" value="NONE"/>
 		<set name="type" value="Monster"/>
 		<ai_params>
@@ -3855,32 +3771,6 @@
 			<skill id="4665" level="1"/>	<!--NPC 100% HP Drain - Magic-->
 			<skill id="4789" level="9"/>	<!--NPC High Level-->
 		</skills>
-		<rewardlist type="RATED_GROUPED">
-			<group chance="70.0">
-				<reward item_id="57" min="4584" max="9387" chance="100.0000"/>	<!--Adena-->
-			</group>
-			<group chance="2.261">
-				<reward item_id="5312" min="1" max="1" chance="0.2496"/>	<!--Sealed Helm of Nightmare-->
-				<reward item_id="5527" min="1" max="1" chance="30.3187"/>	<!--Sealed Helm of Nightmare Design-->
-				<reward item_id="5315" min="1" max="1" chance="0.3567"/>	<!--Sealed Shield of Nightmare-->
-				<reward item_id="5495" min="1" max="1" chance="38.5067"/>	<!--Sealed Shield of Nightmare Fragment-->
-				<reward item_id="5317" min="1" max="1" chance="0.2496"/>	<!--Sealed Majestic Circlet-->
-				<reward item_id="5528" min="1" max="1" chance="30.3187"/>	<!--Sealed Majestic Circlet Design-->
-			</group>
-			<group chance="48.9837">
-				<reward item_id="1866" min="1" max="3" chance="26.0125"/>	<!--Suede-->
-				<reward item_id="1871" min="1" max="3" chance="58.5281"/>	<!--Charcoal-->
-				<reward item_id="5220" min="1" max="1" chance="4.6822"/>	<!--Metal Hardener-->
-				<reward item_id="1885" min="1" max="1" chance="9.7547"/>	<!--High-Grade Suede-->
-				<reward item_id="4041" min="1" max="1" chance="1.0179"/>	<!--Mold Hardener-->
-				<reward item_id="959" min="1" max="1" chance="0.0046"/>	<!--Scroll: Enchant Weapon (S-Grade)-->
-			</group>
-		</rewardlist>
-		<rewardlist type="SWEEP">
-			<reward item_id="5220" min="1" max="1" chance="37.2700"/>	<!--Metal Hardener-->
-			<reward item_id="5495" min="1" max="1" chance="14.1485"/>	<!--Sealed Shield of Nightmare Fragment-->
-			<reward item_id="3957" min="1" max="1" chance="0.4141"/>	<!--Recipe: Blessed Spiritshot S-->
-		</rewardlist>
 		<attributes>
 			<attack attribute="unholy" value="20"/>
 			<defence attribute="fire" value="20"/>
