@@ -5,19 +5,20 @@
 		<category id="1" chance="70.000">
 			<item id="57" min="4525" max="9265" chance="100.0000"/>	<!--Adena-->
 		</category>
+
 		<category id="2" chance="0.7">
-		<item id="19431" min="1" max="1" chance="1.99" /> <!--Recipe: Unidentified Eternal Circlet (60%)  -->
+
+		<item id="19431" min="1" max="1" chance="2.35" /> <!--Recipe: Unidentified Eternal Circlet (60%)  -->
 		<item id="19435" min="1" max="1" chance="2.8" /> <!--Recipe: Unidentified Eternal Shoes (60%)  -->
 		<item id="19434" min="1" max="1" chance="2.8" /> <!--Recipe: Unidentified Eternal Gloves (60%)  -->
 		
 		<item id="19296" min="1" max="1" chance="30" /> <!--Unidentified Eternal Circlet Ingredient  -->
 		<item id="19300" min="1" max="1" chance="31" /> <!--Unidentified Eternal Shoes Ingredient  -->	
 		<item id="19299" min="1" max="1" chance="31" /> <!--Unidentified Eternal Gloves Ingredient  -->	
-	
-
 		<item id="18230" min="1" max="1" chance="0.01" /> <!--Unidentified Eternal Circlet  -->
 		<item id="18234" min="1" max="1" chance="0.02" /> <!--Unidentified Eternal Shoes  -->
 		<item id="18233" min="1" max="1" chance="0.02" /> <!--Unidentified Eternal Gloves  -->
+
 		</category>
 		<category id="3" chance="10">
 				<item id="19519" min="1" max="1" chance="2.15" /> <!--Legendary Reorin's Mold  -->	
