@@ -1282,6 +1282,7 @@ public class Reflection
 		setCollapseIfEmptyTime(instantZone.getCollapseIfEmpty());
 		startCollapseTimer(instantZone.getTimelimit() * 60 * 1000L);
 		onCreate();
+		_log.info("Done init for instant zone "+instantZone.getName());
 	}
 	
 	/**

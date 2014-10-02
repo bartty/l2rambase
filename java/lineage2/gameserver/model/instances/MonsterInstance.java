@@ -39,6 +39,7 @@ import lineage2.gameserver.model.Player;
 import lineage2.gameserver.model.Skill;
 import lineage2.gameserver.model.base.Experience;
 import lineage2.gameserver.model.base.TeamType;
+import lineage2.gameserver.model.base.ClassId;
 import lineage2.gameserver.model.entity.Reflection;
 import lineage2.gameserver.model.pledge.Clan;
 import lineage2.gameserver.model.quest.Quest;
@@ -47,6 +48,9 @@ import lineage2.gameserver.model.quest.QuestState;
 import lineage2.gameserver.model.reward.RewardItem;
 import lineage2.gameserver.model.reward.RewardList;
 import lineage2.gameserver.model.reward.RewardType;
+import lineage2.gameserver.model.items.ItemInstance;
+
+
 import lineage2.gameserver.network.serverpackets.SocialAction;
 import lineage2.gameserver.network.serverpackets.SystemMessage;
 import lineage2.gameserver.stats.Stats;
@@ -54,6 +58,7 @@ import lineage2.gameserver.tables.SkillTable;
 import lineage2.gameserver.templates.npc.Faction;
 import lineage2.gameserver.templates.npc.NpcTemplate;
 import lineage2.gameserver.utils.Location;
+import lineage2.gameserver.utils.ItemFunctions;
 
 /**
  * @author Mobius
@@ -507,6 +512,8 @@ public class MonsterInstance extends NpcInstance
 	 */
 	public void calculateRewards(Creature lastAttacker)
 	{
+		
+		boolean handleSpoil=false;
 		Creature topDamager = getAggroList().getTopDamager();
 		if ((lastAttacker == null) || !lastAttacker.isPlayable())
 		{
@@ -603,7 +610,7 @@ public class MonsterInstance extends NpcInstance
 		Map<Player, RewardInfo> rewards = new HashMap<>();
 		for (HateInfo info : aggroMap.values())
 		{
-			if (info.damage <= 1)
+			if (info.hate <= 1)
 			{
 				continue;
 			}
@@ -612,17 +619,18 @@ public class MonsterInstance extends NpcInstance
 			RewardInfo reward = rewards.get(player);
 			if (reward == null)
 			{
-				rewards.put(player, new RewardInfo(player, info.damage));
+				rewards.put(player, new RewardInfo(player, (info.damage>=1)?info.damage:1));
 			}
 			else
 			{
-				reward.addDamage(info.damage);
+				reward.addDamage((info.damage>=1)?info.damage:0);
 			}
 		}
 		Player[] attackers = rewards.keySet().toArray(new Player[rewards.size()]);
 		double[] xpsp = new double[2];
 		for (Player attacker : attackers)
 		{
+			
 			if (attacker.isDead())
 			{
 				continue;
@@ -632,6 +640,12 @@ public class MonsterInstance extends NpcInstance
 			{
 				continue;
 			}
+			if(isSpoiled(attacker) && attacker.getClassId()==ClassId.othellRogue)
+			{
+				lastAttacker=attacker;
+				handleSpoil=true;
+			}
+			
 			Party party = attacker.getParty();
 			int maxHp = getMaxHp();
 			xpsp[0] = 0.;
@@ -692,6 +706,49 @@ public class MonsterInstance extends NpcInstance
 		for (Map.Entry<RewardType, RewardList> entry : getTemplate().getRewards().entrySet())
 		{
 			rollRewards(entry, lastAttacker, topDamager);
+		}
+		
+		//sweep happens auto for othells
+		if(handleSpoil==true)
+		{
+			Player spoiler=(Player)lastAttacker;
+			List<RewardItem> items = takeSweep();
+			
+			if (items != null)
+			{
+
+				for (RewardItem item : items)
+				{
+					ItemInstance sweep = ItemFunctions.createItem(item.itemId);
+					sweep.setCount(item.count);
+					if ( spoiler.isInParty() && spoiler.getParty().isDistributeSpoilLoot())
+					{
+						spoiler.getParty().distributeItem(spoiler, sweep, null);
+						continue;
+					}
+					if (!spoiler.getInventory().validateCapacity(sweep) || !spoiler.getInventory().validateWeight(sweep))
+					{
+						sweep.dropToTheGround(spoiler, this);
+						continue;
+					}
+					spoiler.getInventory().addItem(sweep);
+					SystemMessage smsg;
+					if (item.count == 1)
+					{
+						smsg = new SystemMessage(SystemMessage.YOU_HAVE_OBTAINED_S1);
+						smsg.addItemName(item.itemId);
+						spoiler.sendPacket(smsg);
+					}
+					else
+					{
+						smsg = new SystemMessage(SystemMessage.YOU_HAVE_OBTAINED_S2_S1);
+						smsg.addItemName(item.itemId);
+						smsg.addNumber(item.count);
+						spoiler.sendPacket(smsg);
+					}
+				}
+			}
+			
 		}
 	}
 	
