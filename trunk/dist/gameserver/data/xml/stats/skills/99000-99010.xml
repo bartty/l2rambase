@@ -123,6 +123,117 @@
 			</effect>
 		</for>
 	</skill>
+
+	<skill id="99007" levels="2" name="Drain Health">
+    <!-- none -->
+		<table name="#mpConsume2">241 241</table>
+		<table name="#mpConsume1">61 61</table>
+		<table name="#magicLevel">98 99</table>
+		<table name="#power">2000 2600</table>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="power" val="#power"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="castRange" val="500"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="3500"/>
+		<set name="displayId" val="4622"/>
+		<set name="reuseDelay" val="40000"/>
+		<set name="mpConsume1" val="#mpConsume1"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="element" val="unholy"/>
+		<set name="target" val="TARGET_AREA"/>
+		<set name="skillRadius" val="200"/>
+		<set name="skillType" val="DRAIN"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="absorbPart" val="10.0"/>
+	</skill>
 	
+	<skill id="99008" levels="2" name="Drain Health">
+    <!-- none -->
+		<table name="#mpConsume2">61 62</table>
+		<table name="#mpConsume1">16 16</table>
+		<table name="#magicLevel">98 99</table>
+		<table name="#power">3000 4000</table>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="power" val="#power"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="castRange" val="600"/>
+		<set name="displayId" val="4665"/>
+		<set name="reuseDelay" val="20000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="hitCancelTime" val="1500"/>
+		<set name="mpConsume1" val="#mpConsume1"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="element" val="unholy"/>
+		<set name="skillType" val="DRAIN"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="absorbPart" val="20"/>
+		<set name="absorbAbs" val="0"/>
+	</skill>
+		<skill id="99009" levels="2" name="Sonic Blaster">
+    <!-- none -->
+		<table name="#mpConsume2">84 85</table>
+		<table name="#magicLevel">98 99</table>
+		<table name="#power">40000 50000</table>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="displayId" val="4573"/>
+		<set name="reuseDelay" val="15000"/>
+		<set name="power" val="#power"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="castRange" val="600"/>
+		<set name="hitTime" val="1900"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="criticalRate" val="20"/>
+	</skill>	
+		<skill id="99010" levels="2" name="Power Strike">
+    <!-- none -->
+		<table name="#mpConsume2">14 15</table>
+		<table name="#magicLevel">98 99</table>
+		<table name="#power">40000 50000</table>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="coolTime" val="800"/>
+		<set name="displayId" val="4032"/>
+		<set name="reuseDelay" val="10000"/>
+		<set name="power" val="#power"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="hitTime" val="1000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="99011" levels="2" name="Poison">
+    <!-- A toxin that gradually reduces HP. Effect 2. -->
+		<table name="#abnormal_lv">14 15</table>
+		<table name="#mpConsume2">23 24</table>
+		<table name="#mpConsume1">23 24</table>
+		<table name="#magicLevel">98 99</table>
+		<set name="displayId" val="4649"/>
+		<set name="reuseDelay" val="5000"/>
+		<set name="levelModifier" val="1"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill4036"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="mpConsume1" val="#mpConsume1"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="activateRate" val="35"/>
+		<set name="target" val="TARGET_AURA"/>
+		<set name="skillRadius" val="200"/>
+		<set name="skillType" val="POISON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="trait" val="POISON"/>
+		<set name="saveVs" val="CON"/>
+		<for>
+			<effect abnormal="poison" count="15" name="Poison" stackOrder="#abnormal_lv" time="3" val="0"/>
+		</for>
+	</skill>
 </list>
 	

@@ -6,7 +6,10 @@ import lineage2.gameserver.model.instances.NpcInstance;
 import lineage2.gameserver.network.serverpackets.NpcHtmlMessage;
 import lineage2.gameserver.templates.npc.NpcTemplate;
 import lineage2.gameserver.utils.Location;
+import lineage2.gameserver.utils.ReflectionUtils;
+import lineage2.gameserver.model.entity.Reflection;
 
+import instances.AltarShilen;
 /**
  * @author Awakeninger
  */
@@ -17,6 +20,9 @@ public final class ShilenAltarInstance extends NpcInstance
 	/**
 	 * 
 	 */
+	
+	private static final int instanceId = 193;
+	
 	//private static final int DoorEnter1 = 25180001;
 	//private static final int DoorEnter2 = 25180002;
 	//private static final int DoorEnter3 = 25180003;
@@ -45,6 +51,18 @@ public final class ShilenAltarInstance extends NpcInstance
 
 		if(command.startsWith("start1"))
 		{
+			Reflection r = player.getActiveReflection();
+			if (r != null)
+			{
+				if (player.canReenterInstance(instanceId))
+				{
+					player.teleToLocation(r.getTeleportLoc(), r);
+				}
+			}
+			else if (player.canEnterInstance(193))
+			{
+				ReflectionUtils.enterReflection(player, new AltarShilen(),instanceId );
+			}
 		}
 		else if(command.startsWith("start2"))
 		{

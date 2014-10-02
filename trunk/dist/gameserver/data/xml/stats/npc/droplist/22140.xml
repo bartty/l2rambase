@@ -4,7 +4,7 @@
 <npc id="22140">
 	<droplist>
 		<category id="1" chance="70.000">
-			<item id="57" min="4415" max="9013" chance="100.00000" />		<!-- Адена -->
+			<item id="57" min="44150" max="90130" chance="100.00000" />		<!-- Адена -->
 		</category>
 		<category id="2" chance="0.6">
 		<item id="19423" min="1" max="1" chance="4.995" /> <!--Recipe: Unidentified Eternal Gauntlets (60%)  -->

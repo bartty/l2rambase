@@ -4,7 +4,7 @@
 <npc id="22139">
 	<droplist>
 		<category id="1" chance="70.000">
-			<item id="57" min="4525" max="9265" chance="100.0000"/>	<!--Adena-->
+			<item id="57" min="45250" max="92650" chance="100.0000"/>	<!--Adena-->
 		</category>
 		<category id="2" chance="0.4">
 

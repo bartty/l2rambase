@@ -3,9 +3,9 @@
     <!-- Hall of Erosion Defense -->
     <instance id="120" name="Seed of Infinity (Hall of Erosion)" maxChannels="3" collapseIfEmpty="10" timelimit="40"
               dispelBuffs="false" respawn="60">
-        <collapse on-party-dismiss="true" timer="60"/>
+        <collapse on-party-dismiss="false" timer="60"/>
         <level min="75" max="85"/>
-        <party min="18" max="27"/>
+        <party min="2" max="27"/>
         <return loc="-183656 206264 -12928"/>
         <teleport loc="-179659 211061 -12784"/>
         <remove itemId="0" count="0" necessary="false"/>
