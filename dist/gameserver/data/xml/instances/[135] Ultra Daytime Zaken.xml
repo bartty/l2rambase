@@ -2,7 +2,7 @@
 <list>
     <!-- Ultra Daytime Zaken -->
     <instance id="135" name="Cavern of the Pirate Captain (daydream)" maxChannels="20" collapseIfEmpty="10" timelimit="60" dispelBuffs="true">
-        <collapse on-party-dismiss="true" timer="60"/>
+        <collapse on-party-dismiss="false" timer="60"/>
         <level min="78" max="91"/>
         <party min="2" max="7"/>
         <return loc="52212 218998 -3208"/>

@@ -2,8 +2,9 @@
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/DropListData.xsd">
 <!-- Дилетант Тироля -->
 <npc id="22142">
+	<droplist>
 		<category id="1" chance="70.000">
-			<item id="57" min="4525" max="9265" chance="100.0000"/>	<!--Adena-->
+			<item id="57" min="45250" max="92650" chance="100.0000"/>	<!--Adena-->
 		</category>
 
 		<category id="2" chance="0.7">
@@ -21,7 +22,7 @@
 
 		</category>
 		<category id="3" chance="10">
-				<item id="19519" min="1" max="1" chance="2.15" /> <!--Legendary Reorin's Mold  -->	
+				<item id="19519" min="1" max="1" chance="3" /> <!--Legendary Reorin's Mold  -->	
 				<item id="19309" min="1" max="1" chance="30"/>	<!--Durandil Temper-->
 				<item id="19313" min="1" max="1" chance="60"/>	<!--High-Grade Synthetic Cokes-->
 				<item id="17526" min="1" max="1" chance="0.85"/>	<!--Scroll: Enchant Weapon (R-Grade)-->

@@ -3526,7 +3526,8 @@
 	</npc>
 	<npc id="22139" name="Old Aristocrat's Soldier" title="">
 		<set name="aggroRange" value="0"/>
-		<set name="ai_type" value="Fighter"/>
+		<set name="ai_type" value="Mystic"/>
+
 		<set name="level" value="98"/>
 		<set name="baseAtkRange" value="20"/>
 		<set name="baseHpMax" value="68000"/>
@@ -3540,16 +3541,16 @@
 		<set name="baseINT" value="40"/>
 		<set name="baseWIT" value="40"/>
 		<set name="baseMEN" value="40"/>
-		<set name="rewardExp" value="2936558"/>
+		<set name="rewardExp" value="4237588"/>
 		<set name="rewardRp" value="0"/>
-		<set name="rewardSp" value="293656"/>
-		<set name="basePAtk" value="13134"/>
-		<set name="basePDef" value="8082"/>
-		<set name="baseMAtk" value="1718"/>
-		<set name="baseMDef" value="1010"/>
-		<set name="basePAtkSpd" value="606"/>
+		<set name="rewardSp" value="423759"/>
+		<set name="basePAtk" value="50515"/>
+		<set name="basePDef" value="11113"/>
+		<set name="baseMAtk" value="30309"/>
+		<set name="baseMDef" value="1515"/>
+		<set name="basePAtkSpd" value="758"/>
 		<set name="baseCritRate" value="5"/>
-		<set name="baseMAtkSpd" value="354"/>
+		<set name="baseMAtkSpd" value="404"/>
 		<set name="baseRunSpd" value="200"/>
 		<set name="baseWalkSpd" value="50"/>
 		<set name="collision_height" value="22.3"/>
@@ -3574,13 +3575,13 @@
 			<skill id="4417" level="35"/>	<!--Undead-->
 			<skill id="4422" level="3"/>	<!--Dark Attacks-->
 			<skill id="4466" level="3"/>	<!--Surrender To Darkness-->
-			<skill id="4622" level="9"/>	<!--NPC AE - 80% HP Drain - Magic-->
-			<skill id="4665" level="9"/>	<!--NPC 100% HP Drain - Magic-->
-			<skill id="4789" level="9"/>	<!--NPC High Level-->
+			<skill id="99007" level="1"/>	<!--NPC AE - 80% HP Drain - Magic-->
+			<skill id="99008" level="1"/>	<!--NPC 100% HP Drain - Magic-->
+			<skill id="4789" level="10"/>	<!--NPC High Level-->
 		</skills>
 
 		<attributes>
-			<attack attribute="unholy" value="20"/>
+			<attack attribute="unholy" value="300"/>
 			<defence attribute="fire" value="20"/>
 			<defence attribute="water" value="20"/>
 			<defence attribute="wind" value="20"/>
@@ -3604,16 +3605,16 @@
 		<set name="baseINT" value="40"/>
 		<set name="baseWIT" value="40"/>
 		<set name="baseMEN" value="40"/>
-		<set name="rewardExp" value="2936558"/>
+		<set name="rewardExp" value="4237588"/>
 		<set name="rewardRp" value="0"/>
-		<set name="rewardSp" value="293656"/>
-		<set name="basePAtk" value="13134"/>
-		<set name="basePDef" value="8082"/>
-		<set name="baseMAtk" value="1718"/>
-		<set name="baseMDef" value="1010"/>
-		<set name="basePAtkSpd" value="606"/>
+		<set name="rewardSp" value="423759"/>
+		<set name="basePAtk" value="50515"/>
+		<set name="basePDef" value="11113"/>
+		<set name="baseMAtk" value="30309"/>
+		<set name="baseMDef" value="1515"/>
+		<set name="basePAtkSpd" value="758"/>
 		<set name="baseCritRate" value="5"/>
-		<set name="baseMAtkSpd" value="354"/>
+		<set name="baseMAtkSpd" value="404"/>
 		<set name="baseRunSpd" value="200"/>
 		<set name="baseWalkSpd" value="50"/>
 		<set name="collision_height" value="24.6"/>
@@ -3625,7 +3626,7 @@
 			<rhand item_id="123"/>	<!--Saber-->
 		</equip>
 		<skills>
-			<skill id="4032" level="1"/>	<!--NPC Strike-->
+			<skill id="99010" level="1"/>	<!--NPC Strike-->
 			<skill id="4275" level="2"/>	<!--Sacred Attack Weak Point-->
 			<skill id="4408" level="12"/>	<!--HP Increase (4x)-->
 			<skill id="4409" level="1"/>	<!--MP Increase (1x)-->
@@ -3638,11 +3639,11 @@
 			<skill id="4416" level="1"/>	<!--Undead-->
 			<skill id="4417" level="35"/>	<!--Undead-->
 			<skill id="4422" level="3"/>	<!--Dark Attacks-->
-			<skill id="4649" level="1"/>	<!--Poison-->
-			<skill id="4789" level="6"/>	<!--NPC High Level-->
+			<skill id="99011" level="1"/>	<!--Poison-->
+			<skill id="4789" level="10"/>	<!--NPC High Level-->
 		</skills>
 		<attributes>
-			<attack attribute="unholy" value="20"/>
+			<attack attribute="unholy" value="300"/>
 			<defence attribute="fire" value="20"/>
 			<defence attribute="water" value="20"/>
 			<defence attribute="wind" value="20"/>
@@ -3653,6 +3654,7 @@
 	<npc id="22141" name="Forgotten Victim" title="">
 		<set name="aggroRange" value="0"/>
 		<set name="ai_type" value="Fighter"/>
+
 		<set name="level" value="98"/>
 		<set name="baseAtkRange" value="20"/>
 		<set name="baseHpMax" value="68000"/>
@@ -3666,16 +3668,16 @@
 		<set name="baseINT" value="40"/>
 		<set name="baseWIT" value="40"/>
 		<set name="baseMEN" value="40"/>
-		<set name="rewardExp" value="2936558"/>
+		<set name="rewardExp" value="4237588"/>
 		<set name="rewardRp" value="0"/>
-		<set name="rewardSp" value="293656"/>
-		<set name="basePAtk" value="13134"/>
-		<set name="basePDef" value="8082"/>
-		<set name="baseMAtk" value="1718"/>
-		<set name="baseMDef" value="1010"/>
-		<set name="basePAtkSpd" value="606"/>
+		<set name="rewardSp" value="423759"/>
+		<set name="basePAtk" value="50515"/>
+		<set name="basePDef" value="11113"/>
+		<set name="baseMAtk" value="30309"/>
+		<set name="baseMDef" value="1515"/>
+		<set name="basePAtkSpd" value="758"/>
 		<set name="baseCritRate" value="5"/>
-		<set name="baseMAtkSpd" value="354"/>
+		<set name="baseMAtkSpd" value="404"/>
 		<set name="baseRunSpd" value="200"/>
 		<set name="baseWalkSpd" value="50"/>
 		<set name="collision_height" value="24.6"/>
@@ -3687,7 +3689,8 @@
 			<rhand item_id="123"/>	<!--Saber-->
 		</equip>
 		<skills>
-			<skill id="4088" level="1"/>	<!--Bleed-->
+			<skill id="99010" level="1"/>	<!--NPC Strike-->
+			<skill id="4088" level="12"/>	<!--Bleed-->
 			<skill id="4275" level="2"/>	<!--Sacred Attack Weak Point-->
 			<skill id="4408" level="12"/>	<!--HP Increase (4x)-->
 			<skill id="4409" level="1"/>	<!--MP Increase (1x)-->
@@ -3700,10 +3703,10 @@
 			<skill id="4416" level="1"/>	<!--Undead-->
 			<skill id="4417" level="35"/>	<!--Undead-->
 			<skill id="4422" level="3"/>	<!--Dark Attacks-->
-			<skill id="4789" level="6"/>	<!--NPC High Level-->
+			<skill id="4789" level="10"/>	<!--NPC High Level-->
 		</skills>
 		<attributes>
-			<attack attribute="unholy" value="20"/>
+			<attack attribute="unholy" value="300"/>
 			<defence attribute="fire" value="20"/>
 			<defence attribute="water" value="20"/>
 			<defence attribute="wind" value="20"/>
@@ -3715,7 +3718,7 @@
 		<set name="aggroRange" value="300"/>
 		<set name="ai_type" value="Mystic"/>
 		<set name="level" value="98"/>
-		<set name="baseAtkRange" value="60"/>
+		<set name="baseAtkRange" value="70"/>
 		<set name="baseHpMax" value="68000"/>
 		<set name="baseHpRate" value="5"/>
 		<set name="baseHpReg" value="15"/>
@@ -3727,16 +3730,16 @@
 		<set name="baseINT" value="76"/>
 		<set name="baseWIT" value="76"/>
 		<set name="baseMEN" value="40"/>
-		<set name="rewardExp" value="3636558"/>
+		<set name="rewardExp" value="5436588"/>
 		<set name="rewardRp" value="0"/>
-		<set name="rewardSp" value="363656"/>
-		<set name="basePAtk" value="9093"/>
-		<set name="basePDef" value="6062"/>
-		<set name="baseMAtk" value="2021"/>
-		<set name="baseMDef" value="1212"/>
-		<set name="basePAtkSpd" value="505"/>
+		<set name="rewardSp" value="543659"/>
+		<set name="basePAtk" value="40412"/>
+		<set name="basePDef" value="9093"/>
+		<set name="baseMAtk" value="45464"/>
+		<set name="baseMDef" value="2021"/>
+		<set name="basePAtkSpd" value="556"/>
 		<set name="baseCritRate" value="4"/>
-		<set name="baseMAtkSpd" value="455"/>
+		<set name="baseMAtkSpd" value="606"/>
 		<set name="baseRunSpd" value="200"/>
 		<set name="baseWalkSpd" value="50"/>
 		<set name="collision_height" value="28.4"/>
@@ -3752,8 +3755,8 @@
 			<lhand item_id="8207"/>	<!--Monster Only (Heretic Private Axe)-->
 		</equip>
 		<skills>
-			<skill id="4032" level="1"/>	<!--NPC Strike-->
-			<skill id="4047" level="1"/>	<!--Hold-->
+			<skill id="99010" level="1"/>	<!--NPC Strike-->
+			<skill id="4047" level="12"/>	<!--Hold-->
 			<skill id="4275" level="2"/>	<!--Sacred Attack Weak Point-->
 			<skill id="4408" level="13"/>	<!--HP Increase (5x)-->
 			<skill id="4409" level="1"/>	<!--MP Increase (1x)-->
@@ -3766,13 +3769,13 @@
 			<skill id="4416" level="6"/>	<!--Humanoids-->
 			<skill id="4417" level="26"/>	<!--Humanoids-->
 			<skill id="4422" level="3"/>	<!--Dark Attacks-->
-			<skill id="4573" level="1"/>	<!--NPC Sonic Blaster-->
-			<skill id="4622" level="1"/>	<!--NPC AE - 80% HP Drain - Magic-->
-			<skill id="4665" level="1"/>	<!--NPC 100% HP Drain - Magic-->
-			<skill id="4789" level="9"/>	<!--NPC High Level-->
+			<skill id="99009" level="1"/>	<!--NPC Sonic Blaster-->
+			<skill id="99007" level="1"/>	<!--NPC AE - 80% HP Drain - Magic-->
+			<skill id="99008" level="1"/>	<!--NPC 100% HP Drain - Magic-->
+			<skill id="4789" level="10"/>	<!--NPC High Level-->
 		</skills>
 		<attributes>
-			<attack attribute="unholy" value="20"/>
+			<attack attribute="unholy" value="300"/>
 			<defence attribute="fire" value="20"/>
 			<defence attribute="water" value="20"/>
 			<defence attribute="wind" value="20"/>

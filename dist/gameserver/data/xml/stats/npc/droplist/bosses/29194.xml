@@ -3,6 +3,7 @@
 <!-- Октавис -->
 <npc id="29194">
 	<droplist>
+	<!-- unidentified seraph -->
 		<category id="1" chance="47.17588">
 			<item id="18178" min="1" max="1" chance="8.28048" />		<!-- Неопознанный Страж Фантазмы -->
 			<item id="18197" min="1" max="1" chance="5.44839" />		<!-- Неопознанная Туника Кадейры -->
@@ -23,6 +24,7 @@
 			<item id="18193" min="1" max="1" chance="5.34374" />		<!-- Неопознанные Кожаные Брюки Кадейры -->
 			<item id="18195" min="1" max="1" chance="5.33548" />		<!-- Неопознанные Кожаные Сапоги Кадейры -->
 		</category>
+			<!-- unidentified specter -->
 		<category id="2" chance="43.29201">
 			<item id="18181" min="1" max="1" chance="9.15739" />		<!-- Неопознанное Возмездие Фантазмы -->
 			<item id="18171" min="1" max="1" chance="9.14237" />		<!-- Неопознанное Острие Фантазмы -->
@@ -36,6 +38,7 @@
 			<item id="18174" min="1" max="1" chance="9.04233" />		<!-- Неопознанный Мститель Фантазмы -->
 			<item id="18178" min="1" max="1" chance="9.02335" />		<!-- Неопознанный Страж Фантазмы -->
 		</category>
+					<!-- normal seraph -->
 		<category id="3" chance="5.52177">
 			<item id="17404" min="1" max="1" chance="5.88235" />		<!-- Кожаные Брюки Кадейры -->
 			<item id="17407" min="1" max="1" chance="5.88235" />		<!-- Диадема Кадейры -->
@@ -55,6 +58,7 @@
 			<item id="17412" min="1" max="1" chance="5.88235" />		<!-- Символ Кадейры -->
 			<item id="17399" min="1" max="1" chance="5.88235" />		<!-- Рукавицы Кадейры -->
 		</category>
+		<!-- normal specter -->
 		<category id="4" chance="3.57291">
 			<item id="17383" min="1" max="1" chance="9.09090" />		<!-- Резак Фантазмы -->
 			<item id="17389" min="1" max="1" chance="9.09090" />		<!-- Страж Фантазмы -->
@@ -68,10 +72,12 @@
 			<item id="17390" min="1" max="1" chance="9.09090" />		<!-- Расчленитель Фантазмы -->
 			<item id="17392" min="1" max="1" chance="9.09090" />		<!-- Возмездие Фантазмы -->
 		</category>
-		<category id="5" chance="4.34379">
-			<item id="19457" min="1" max="1" chance="33.83842" />		<!-- Кольцо Октависа -->
-			<item id="19458" min="1" max="1" chance="33.31008" />		<!-- Серьга Октависа -->
-			<item id="19459" min="1" max="1" chance="32.85149" />		<!-- Ожерелье Октависа -->
+		<!-- jewels were about 1.3 % each , fixed to 0.3% , added shirt with 10% -->
+		<category id="5" chance="11">
+			<item id="19462" min="1" max="1" chance="90" />	<!-- Octavis Shirt 9.9% chance -->
+			<item id="19457" min="1" max="1" chance="3.44" />		<!-- Octavis ring 0.344% -->
+			<item id="19458" min="1" max="1" chance="3.33" />		<!-- Octavis earring 0.333% -->
+			<item id="19459" min="1" max="1" chance="3.23" />		<!-- Octavis necklace 0.323% -->
 		</category>
 		<category id="6" chance="25.079">
 			<item id="19447" min="1" max="1" chance="39.92982" />		<!-- Благословенный Свиток: Модифицировать Оружие (R) -->
