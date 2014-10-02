@@ -169,49 +169,9 @@ public class Plunder extends Skill
 				getEffects(activeChar, target, false, false);
 				target.getAI().notifyEvent(CtrlEvent.EVT_AGGRESSION, activeChar, Math.max(_effectPoint, 1));
 			}
-			//SWEEP PART
-			Player player = (Player) activeChar;
-			for (Creature targ : targets)
-			if ((target == null) || !target.isMonster() || !target.isDead() || !((MonsterInstance) target).isSpoiled())
-			{
-				continue;
-			}
-			MonsterInstance targetMonster = (MonsterInstance) target;
-			List<RewardItem> items = targetMonster.takeSweep();
-			if (items == null)
-			{
-				continue;
-			}
-			for (RewardItem item : items)
-			{
-				ItemInstance sweep = ItemFunctions.createItem(item.itemId);
-				sweep.setCount(item.count);
-				if (player.isInParty() && player.getParty().isDistributeSpoilLoot())
-				{
-					player.getParty().distributeItem(player, sweep, null);
-					continue;
-				}
-				if (!player.getInventory().validateCapacity(sweep) || !player.getInventory().validateWeight(sweep))
-				{
-					sweep.dropToTheGround(player, targetMonster);
-					continue;
-				}
-				player.getInventory().addItem(sweep);
-				SystemMessage smsg;
-				if (item.count == 1)
-				{
-					smsg = new SystemMessage(SystemMessage.YOU_HAVE_OBTAINED_S1);
-					smsg.addItemName(item.itemId);
-					player.sendPacket(smsg);
-				}
-				else
-				{
-					smsg = new SystemMessage(SystemMessage.YOU_HAVE_OBTAINED_S2_S1);
-					smsg.addItemName(item.itemId);
-					smsg.addNumber(item.count);
-					player.sendPacket(smsg);
-				}
-			}
+
+		
+
 		}
 	}
 }

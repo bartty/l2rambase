@@ -118,6 +118,7 @@ public class ReflectionUtils
 	 */
 	public static Reflection enterReflection(Player invoker, Reflection r, InstantZone iz)
 	{
+		_log.info("Player: " + invoker.getName() + " started instance "+ r.getName() +" id:" + r.getId()+", requesting init");
 		r.init(iz);
 		
 		_log.info("Player: " + invoker.getName() + " started instance "+ r.getName() +" id:" + r.getId());
@@ -200,6 +201,11 @@ public class ReflectionUtils
 					member.teleToLocation(iz.getTeleportCoord(), r);
 				}
 				break;
+			default :
+			{
+				_log.info("Unhandled entry type");
+				
+			}
 		}
 		return r;
 	}
