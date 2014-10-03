@@ -370,22 +370,38 @@ public final class NpcTemplate extends CharTemplate
 	private void setType(String type)
 	{
 		Class<NpcInstance> classType = null;
-		try
+		String status="model for id "+npcId+", type "+type+",name "+name+",";
+		
+		classType = (Class<NpcInstance>) Scripts.getInstance().getClasses().get("npc.model.ClassId" +npcId);
+		status+="\n  npc.model.ClassId" +npcId+" is "+((classType!=null )?classType.getName():"null");
+
+		if(classType==null)
 		{
-			classType = (Class<NpcInstance>) Class.forName("lineage2.gameserver.model.instances." + type + "Instance");
-		}
-		catch (ClassNotFoundException e)
-		{
-			classType = (Class<NpcInstance>) Scripts.getInstance().getClasses().get("npc.model." + type + "Instance");
+			try
+			{
+				classType = (Class<NpcInstance>) Class.forName("lineage2.gameserver.model.instances." + type + "Instance");
+				status+="then lineage2.gameserver.model.instances." + type + "Instance";
+			}
+			catch (ClassNotFoundException e)
+			{
+				classType = (Class<NpcInstance>) Scripts.getInstance().getClasses().get("npc.model." + type + "Instance");
+				status+="\n Exception,then  "+((classType!=null )?classType.getName():"null");
+			}
 		}
 		if (classType == null)
 		{
 			_log.error("Not found type class for type: " + type + ". NpcId: " + npcId);
+			status+="\n finaly default class used\n";
 		}
 		else
 		{
 			_classType = classType;
 			_constructorType = (Constructor<NpcInstance>) _classType.getConstructors()[0];
+			status+="\n we do have a class\n";
+		}
+		if(npcId==33523 || npcId==18850)
+		{
+			System.out.println(status);
 		}
 		if (_classType.isAnnotationPresent(Deprecated.class))
 		{

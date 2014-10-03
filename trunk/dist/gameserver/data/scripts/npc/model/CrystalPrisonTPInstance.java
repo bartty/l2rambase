@@ -11,6 +11,7 @@ import lineage2.gameserver.model.entity.Reflection;
 import lineage2.gameserver.model.instances.NpcInstance;
 import lineage2.gameserver.templates.npc.NpcTemplate;
 import lineage2.gameserver.utils.ReflectionUtils;
+import lineage2.gameserver.network.serverpackets.NpcHtmlMessage;
 
 /**
  * @author Awakeninger
@@ -31,7 +32,13 @@ public final class CrystalPrisonTPInstance extends NpcInstance {
     }
 
     @Override
-    public void onBypassFeedback(Player player, String command) {
+    public void onBypassFeedback(Player player, String command)
+    {
+		NpcHtmlMessage htmlMessage = new NpcHtmlMessage(getObjectId());
+		htmlMessage.setHtml("<html><body>"+command+"</body></html>");
+		player.sendPacket(htmlMessage);
+    	
+    	System.out.println("In bypass feedback for Crystal prison tp !");
         if (!canBypassCheck(player, this))
         {
         	_log.info("can't bypass feed");
