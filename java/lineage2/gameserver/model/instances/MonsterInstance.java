@@ -735,19 +735,43 @@ public class MonsterInstance extends NpcInstance
 					SystemMessage smsg;
 					if (item.count == 1)
 					{
-						smsg = new SystemMessage(SystemMessage.YOU_HAVE_OBTAINED_S1);
+						smsg = new SystemMessage(SystemMessage.S1_HAS_OBTAINED_S2_BY_USING_SWEEPER);
+						smsg.addName(spoiler);
 						smsg.addItemName(item.itemId);
 						spoiler.sendPacket(smsg);
 					}
 					else
 					{
-						smsg = new SystemMessage(SystemMessage.YOU_HAVE_OBTAINED_S2_S1);
+						smsg = new SystemMessage(SystemMessage.S1_HAS_OBTAINED_3_S2_S_BY_USING_SWEEPER);
+						smsg.addName(spoiler);
 						smsg.addItemName(item.itemId);
 						smsg.addNumber(item.count);
 						spoiler.sendPacket(smsg);
 					}
+					
+					if (spoiler.isInParty())
+					{
+						if (item.count == 1)
+						{
+							smsg = new SystemMessage(SystemMessage.S1_HAS_OBTAINED_S2_BY_USING_SWEEPER);
+							smsg.addName(spoiler);
+							smsg.addItemName(item.itemId);
+							spoiler.getParty().broadcastToPartyMembers(spoiler, smsg);
+						}
+						else
+						{
+							smsg = new SystemMessage(SystemMessage.S1_HAS_OBTAINED_3_S2_S_BY_USING_SWEEPER);
+							smsg.addName(spoiler);
+							smsg.addItemName(item.itemId);
+							smsg.addNumber(item.count);
+							spoiler.getParty().broadcastToPartyMembers(spoiler, smsg);
+						}
+					}
+					
 				}
 			}
+			spoiler.getAI().setAttackTarget(null);
+			endDecayTask();
 			
 		}
 	}

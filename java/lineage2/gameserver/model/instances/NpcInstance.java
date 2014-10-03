@@ -1305,12 +1305,15 @@ public class NpcInstance extends Creature
 	 */
 	public void onBypassFeedback(Player player, String command)
 	{
+    	System.out.println("In bypass feedback for NpcInstance, player "+player.getName()+" , command "+command);
 		if (!canBypassCheck(player, this))
 		{
+			System.out.println("cannot bypass!");
 			return;
 		}
 		try
 		{
+			System.out.println("doing bypass!");
 			if (command.equalsIgnoreCase("TerritoryStatus"))
 			{
 				NpcHtmlMessage html = new NpcHtmlMessage(player, this);
@@ -1977,7 +1980,7 @@ public class NpcInstance extends Creature
 			}
 			else
 			{
-				sb.append("Я не могу обучит�? теб�?. Дл�? твоего кла�?�?а мой �?пи�?ок пу�?т.<br> Св�?жи�?�? �? админом дл�? фик�?а �?того. <br>NpcId:" + npcId + ", твой classId:" + player.getClassId().getId() + "<br>");
+				sb.append("japan text. <br>NpcId:" + npcId + ", japanese classId:" + player.getClassId().getId() + "<br>");
 			}
 			sb.append("</body></html>");
 			html.setHtml(sb.toString());

@@ -154,10 +154,13 @@ public class RequestBypassToServer extends L2GameClientPacket
 				{
 					id = bp.bypass.substring(4);
 				}
+		    	System.out.println("In bypass feedback packet handler :npcid="+id+",command="+bp.bypass.substring(endOfId + 1));
+
 				GameObject object = activeChar.getVisibleObject(Integer.parseInt(id));
 				if ((object != null) && object.isNpc() && (endOfId > 0) && activeChar.isInRange(object.getLoc(), Creature.INTERACTION_DISTANCE))
 				{
 					activeChar.setLastNpc((NpcInstance) object);
+					System.out.println("Forwarding to a "+object.getClass().getName());
 					((NpcInstance) object).onBypassFeedback(activeChar, bp.bypass.substring(endOfId + 1));
 				}
 			}

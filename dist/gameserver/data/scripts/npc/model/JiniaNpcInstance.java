@@ -59,6 +59,7 @@ public final class JiniaNpcInstance extends NpcInstance
 	@Override
 	public void onBypassFeedback(Player player, String command)
 	{
+		System.out.println("In Jinia bypass");
 		if (!canBypassCheck(player, this))
 		{
 			return;

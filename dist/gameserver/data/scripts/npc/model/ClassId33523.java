@@ -17,7 +17,7 @@ import lineage2.gameserver.network.serverpackets.NpcHtmlMessage;
  * @author Awakeninger
  */
 
-public final class CrystalPrisonTPInstance extends NpcInstance {
+public final class ClassId33523 extends NpcInstance {
     /**
 	 * 
 	 */
@@ -25,9 +25,9 @@ public final class CrystalPrisonTPInstance extends NpcInstance {
 	private static final int VullockInstance = 166;
     private static final int BaylorInstance = 167;
 
-    private static final Logger _log = LoggerFactory.getLogger(CrystalPrisonTPInstance.class);
+    private static final Logger _log = LoggerFactory.getLogger(ClassId33523.class);
     
-    public CrystalPrisonTPInstance(int objectId, NpcTemplate template) {
+    public ClassId33523(int objectId, NpcTemplate template) {
         super(objectId, template);
     }
 
