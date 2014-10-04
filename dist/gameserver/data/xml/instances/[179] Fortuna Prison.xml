@@ -1,7 +1,7 @@
 <!DOCTYPE list SYSTEM "instances.dtd">
 <list>
-	<instance id="179" name="Fortuna Prison" maxChannels="1" collapseIfEmpty="10" timelimit="180" dispelBuffs="false">
-		<collapse on-party-dismiss="false" timer="600"/>
+	<instance id="179" name="Fortuna Prison" maxChannels="1" collapseIfEmpty="3" timelimit="180" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="600"/>
 		<level min="90" max="99"/>
 		<return loc="206856 89992 -1037"/>
 		<teleport loc="42104 -172712 -7980"/>

@@ -1,9 +1,9 @@
 <!DOCTYPE list SYSTEM "instances.dtd">
 <list>
-    <instance id="218" name="Tauti Warzone - Normal" maxChannels="1" collapseIfEmpty="10" timelimit="60"> <!-- TODO -->
+    <instance id="218" name="Tauti Warzone - Normal" maxChannels="1" collapseIfEmpty="3" timelimit="60"> <!-- TODO -->
         <collapse on-party-dismiss="true" timer="60"/> <!-- TODO -->
         <level min="97" max="99"/>
-        <party min="1" max="7"/> <!-- TODO -->
+        <party min="2" max="7"/> <!-- TODO -->
         <teleport loc="-146088 186552 -11757 0"/>
         <return loc="-146856 152696 -14084 0"/>
         <remove itemId="0" count="0" necessary="false"/>

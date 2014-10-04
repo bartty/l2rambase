@@ -1,7 +1,7 @@
 <!DOCTYPE list SYSTEM "instances.dtd">
 <list>
     <!-- Nornil's Garden (Level 15-22) -->
-    <instance id="11" name="Nornil's Garden" maxChannels="20" collapseIfEmpty="10" timelimit="120">
+    <instance id="11" name="Nornil's Garden" maxChannels="20" collapseIfEmpty="3" timelimit="120">
         <collapse on-party-dismiss="true" timer="60"/>
         <level min="15" max="22"/>
         <party min="2" max="7"/>

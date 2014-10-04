@@ -1,10 +1,10 @@
 <!DOCTYPE list SYSTEM "instances.dtd">
 <list>
 	<!-- Isthina - Normal Mode -->
-	<instance id="169" name="Isthina Cavern" maxChannels="10" collapseIfEmpty="10" timelimit="120" dispelBuffs="true" respawn="60">
-		<collapse on-party-dismiss="false" timer="60"/>
+	<instance id="169" name="Isthina Cavern" maxChannels="10" collapseIfEmpty="3" timelimit="120" dispelBuffs="true" respawn="60">
+		<collapse on-party-dismiss="true" timer="60"/>
 		<level min="95" max="99"/>
-		<party min="1" max="7"/>
+		<party min="2" max="7"/>
 		<return loc="115576 -125688 -3456"/>
 		<teleport loc="-178428 147061 2131"/>
 		<remove itemId="0" count="0" necessary="false"/>
