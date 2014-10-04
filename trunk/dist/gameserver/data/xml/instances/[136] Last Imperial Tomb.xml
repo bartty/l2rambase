@@ -1,10 +1,10 @@
 <!DOCTYPE list SYSTEM "instances.dtd">
 <list>
     <!-- Frintezza -->
-    <instance id="136" name="Final Emperial Tomb" maxChannels="5" collapseIfEmpty="10" timelimit="120" dispelBuffs="false">
-        <collapse on-party-dismiss="false" timer="60"/>
+    <instance id="136" name="Final Emperial Tomb" maxChannels="5" collapseIfEmpty="3" timelimit="120" dispelBuffs="false">
+        <collapse on-party-dismiss="true" timer="60"/>
         <level min="80" max="99"/>
-        <party min="1" max="7"/>
+        <party min="2" max="7"/>
         <return loc="181384 -80840 -2757"/>
         <teleport loc="-88015 -141153 -9168"/>
         <remove itemId="0" count="0" necessary="false"/>

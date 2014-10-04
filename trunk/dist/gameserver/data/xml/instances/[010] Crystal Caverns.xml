@@ -1,7 +1,7 @@
 <!DOCTYPE list SYSTEM "instances.dtd">
 <list>
     <!-- Crystal Caverns -->
-    <instance id="10" name="Crystal Caverns" maxChannels="20" collapseIfEmpty="10" timelimit="90">
+    <instance id="10" name="Crystal Caverns" maxChannels="20" collapseIfEmpty="3" timelimit="90">
         <collapse on-party-dismiss="true" timer="60"/>
         <level min="78" max="85"/>
         <party min="2" max="7"/>
