@@ -159,57 +159,7 @@ public class Baylor extends DefaultAI
 		Stun3 = skills.get(5232);
 	}
 	
-	/**
-	 * Method onEvtSpawn.
-	 */
-	@Override
-	protected void onEvtSpawn()
-	{
-		ThreadPoolManager.getInstance().schedule(new SpawnSocial(), 20000);
-		super.onEvtSpawn();
-	}
-	
-	/**
-	 * Method onEvtSeeSpell.
-	 * @param skill Skill
-	 * @param caster Creature
-	 */
-	@Override
-	protected void onEvtSeeSpell(Skill skill, Creature caster)
-	{
-		final NpcInstance actor = getActor();
-		if (actor.isDead() || (skill == null) || (caster == null))
-		{
-			return;
-		}
-		if ((System.currentTimeMillis() - _last_claw_time) > 5000)
-		{
-			_claw_count = 0;
-		}
-		if (skill.getId() == Water_Dragon_Claw)
-		{
-			_claw_count++;
-			_last_claw_time = System.currentTimeMillis();
-		}
-		final Player player = caster.getPlayer();
-		if (player == null)
-		{
-			return;
-		}
-		int count = 1;
-		final Party party = player.getParty();
-		if (party != null)
-		{
-			count = party.getMemberCount();
-		}
-		if (_claw_count >= count)
-		{
-			_claw_count = 0;
-			actor.getEffectList().stopEffect(Invincible);
-			Functions.npcSay(actor, "Да как вы по�?мели! Я непоб��дим!!!");
-		}
-	}
-	
+
 	/**
 	 * Method createNewTask.
 	 * @return boolean
@@ -230,18 +180,11 @@ public class Baylor extends DefaultAI
 		}
 		final double distance = actor.getDistance(target);
 		final double actor_hp_precent = actor.getCurrentHpPercents();
-		if ((actor_hp_precent < 30) && !_isUsedInvincible)
-		{
-			_isUsedInvincible = true;
-			addTaskBuff(actor, Invincible);
-			Functions.npcSay(actor, "�?хаха! Тепер�? вы в�?е умрете.");
-			return true;
-		}
 		final int rnd_per = Rnd.get(100);
 		if ((rnd_per < 7) && (actor.getEffectList().getEffectsBySkill(Berserk) == null))
 		{
 			addTaskBuff(actor, Berserk);
-			Functions.npcSay(actor, "Beleth, дай мне �?илу!");
+			Functions.npcSay(actor, "Beleth, ﾐｴﾐｰﾐｹ ﾐｼﾐｽﾐｵ �ｿｽ?ﾐｸﾐｻﾑ�!");
 			return true;
 		}
 		if ((rnd_per < 15) || ((rnd_per < 33) && (actor.getEffectList().getEffectsBySkill(Berserk) != null)))
@@ -264,6 +207,7 @@ public class Baylor extends DefaultAI
 		{
 			target = actor;
 		}
+
 		return chooseTaskAndTargets(skill, target, distance);
 	}
 	

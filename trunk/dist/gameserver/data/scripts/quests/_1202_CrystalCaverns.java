@@ -35,7 +35,7 @@ import lineage2.gameserver.stats.Stats;
 import lineage2.gameserver.stats.funcs.FuncMul;
 import lineage2.gameserver.utils.Location;
 import lineage2.gameserver.utils.ReflectionUtils;
-import bosses.BaylorManager;
+
 
 public class _1202_CrystalCaverns extends Quest implements ScriptFile
 {
@@ -383,6 +383,7 @@ public class _1202_CrystalCaverns extends Quest implements ScriptFile
 		}
 		else if (event.equalsIgnoreCase("meet"))
 		{
+			/* TO DO
 			int state = BaylorManager.canIntoBaylorLair(player);
 			if ((state == 1) || (state == 2))
 			{
@@ -398,6 +399,7 @@ public class _1202_CrystalCaverns extends Quest implements ScriptFile
 			}
 			st.giveItems(PRISON_KEY, 1, false);
 			BaylorManager.entryToBaylorLair(player);
+			*/
 			return "meeting.htm";
 		}
 		else if (event.equalsIgnoreCase("out"))
@@ -425,6 +427,7 @@ public class _1202_CrystalCaverns extends Quest implements ScriptFile
 		int npcId = npc.getNpcId();
 		if (npcId == ORACLE_GUIDE3)
 		{
+			/* TO DO
 			int state = BaylorManager.canIntoBaylorLair(st.getPlayer());
 			if ((state == 1) || (state == 2))
 			{
@@ -442,6 +445,7 @@ public class _1202_CrystalCaverns extends Quest implements ScriptFile
 			{
 				return "meetingOk.htm";
 			}
+			*/
 			return "32280.htm";
 		}
 		return null;

@@ -428,8 +428,8 @@
 	<skill id="5227" levels="1" name="Ground Strike">
     <!-- Powerful attack on surrounding area. -->
 		<set name="icon" val="icon.skill0000"/>
-		<set name="power" val="15000"/>
-		<set name="magicLevel" val="85"/>
+		<set name="power" val="55000"/>
+		<set name="magicLevel" val="98"/>
 		<set name="hitTime" val="2500"/>
 		<set name="hitCancelTime" val="500"/>
 		<set name="mpConsume2" val="187"/>
@@ -442,8 +442,8 @@
     <!-- Powerful attack on surrounding area. -->
 		<set name="icon" val="icon.skill0000"/>
 		<set name="reuseDelay" val="1000"/>
-		<set name="power" val="15000"/>
-		<set name="magicLevel" val="85"/>
+		<set name="power" val="55000"/>
+		<set name="magicLevel" val="98"/>
 		<set name="hitTime" val="2500"/>
 		<set name="hitCancelTime" val="500"/>
 		<set name="mpConsume2" val="373"/>
@@ -457,7 +457,8 @@
     <!-- Stunned by a Heavy Punch Attack. -->
 		<set name="levelModifier" val="2"/>
 		<set name="icon" val="icon.skill0100"/>
-		<set name="magicLevel" val="85"/>
+		<set name="magicLevel" val="98"/>
+		<set name="power" val="37840"/>
 		<set name="castRange" val="600"/>
 		<set name="hitTime" val="2800"/>
 		<set name="hitCancelTime" val="500"/>
@@ -477,7 +478,7 @@
     <!-- You are stunned and temporarily prohibited from movement. -->
 		<set name="levelModifier" val="1"/>
 		<set name="icon" val="icon.skill0100"/>
-		<set name="power" val="2784"/>
+		<set name="power" val="27840"/>
 		<set name="magicLevel" val="85"/>
 		<set name="hitTime" val="5000"/>
 		<set name="hitCancelTime" val="500"/>
@@ -497,7 +498,7 @@
     <!-- You are stunned and temporarily prohibited from movement. -->
 		<set name="levelModifier" val="1"/>
 		<set name="icon" val="icon.skill0100"/>
-		<set name="power" val="5704"/>
+		<set name="power" val="35704"/>
 		<set name="magicLevel" val="85"/>
 		<set name="hitTime" val="3000"/>
 		<set name="hitCancelTime" val="500"/>
@@ -517,7 +518,7 @@
     <!-- You are stunned and temporarily prohibited from movement. -->
 		<set name="levelModifier" val="1"/>
 		<set name="icon" val="icon.skill0100"/>
-		<set name="power" val="11407"/>
+		<set name="power" val="51407"/>
 		<set name="magicLevel" val="85"/>
 		<set name="hitTime" val="2000"/>
 		<set name="hitCancelTime" val="500"/>

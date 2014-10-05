@@ -68,7 +68,7 @@ public class Extractable extends SimpleItemHandler
 			20458, 20459, 20460, 20461, 20462, 20463, 20464, 20465, 20466, 20467, 20468, 20469, 20470, 20471, 20472,
 			20473, 20474, 20475, 20476, 20477, 20478, 20479, 20480, 20481, 20482, 20483, 20484, 20485, 20486, 20487,
 			20488, 20489, 20490, 20491, 20492, 14635, 14636, 14637, 14638, 20607, 20608, 20609, 20610, 20611, 20612,
-			20619, 20620, 20623, 20624, 20625, 20627, 20631, 20632, 20680, 20681, 20682, 20683, 20684, 20685, 21325,
+			20619, 20620, 20623, 20624, 20625, 20627, 20631, 20632, 20680, 20681, 20682, 20683, 20684, 20685,
 			20686, 20687, 20688, 20689, 20690, 20691, 20692, 20693, 20694, 20695, 20696, 20697, 20698, 20699, 20800,
 			20801, 20802, 20803, 20869, 20898, 20505, 20506, 20507, 20508, 20509, 20510, 20511, 20512, 20513, 20514,
 			20540, 20541, 20542, 20543, 20544, 20548, 20549, 20550, 20551, 20552, 20553, 20554, 20555, 20556, 20557,
@@ -140,7 +140,8 @@ public class Extractable extends SimpleItemHandler
 			30388,
 			30389,
 			30390,
-			30391
+			30391,
+			34955 //ancient dye lvl 5 box
 	};
 
 	// TODO 
@@ -3490,6 +3491,9 @@ public class Extractable extends SimpleItemHandler
 		case 30391:
 			use30391(player, ctrl);
 			break;
+		case 34955:
+			use34955(player, ctrl);
+			break;	
 		default:
 			return false;
 		}
@@ -12686,4 +12690,27 @@ public class Extractable extends SimpleItemHandler
 		else player.sendPacket(Msg.THERE_WAS_NOTHING_FOUND_INSIDE_OF_THAT);
 	}
 
+	
+	private void use34955(Player player, boolean ctrl)
+	{
+		if (Rnd.chance(90))
+		{
+			if (Rnd.chance(17))
+				Functions.addItem(player, 23060, 1L);
+			else if (Rnd.chance(17))
+				Functions.addItem(player, 23061, 1L);
+			else if (Rnd.chance(17))
+				Functions.addItem(player, 23062, 1L);
+			else if (Rnd.chance(17))
+				Functions.addItem(player, 23063, 1L);
+			else if (Rnd.chance(16))
+				Functions.addItem(player, 23064, 1L);
+			else if (Rnd.chance(16))
+				Functions.addItem(player, 23065, 1L);
+			
+			
+		}
+		else player.sendPacket(Msg.THERE_WAS_NOTHING_FOUND_INSIDE_OF_THAT);
+	}
+	
 }

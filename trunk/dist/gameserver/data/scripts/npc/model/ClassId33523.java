@@ -22,8 +22,8 @@ public final class ClassId33523 extends NpcInstance {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private static final int VullockInstance = 166;
-    private static final int BaylorInstance = 167;
+	private static final int VullockInstance = 167;
+    private static final int BaylorInstance = 166;
 
     private static final Logger _log = LoggerFactory.getLogger(ClassId33523.class);
     

@@ -1,6 +1,6 @@
 package instances;
 
-
+import java.util.concurrent.atomic.AtomicInteger;
 import lineage2.commons.threading.RunnableImpl;
 import lineage2.gameserver.ThreadPoolManager;
 import lineage2.gameserver.listener.actor.OnDeathListener;
@@ -15,6 +15,8 @@ import lineage2.gameserver.model.Territory;
 import lineage2.gameserver.network.serverpackets.components.*;
 import lineage2.gameserver.network.serverpackets.*;
 import lineage2.gameserver.utils.Location;
+import lineage2.gameserver.model.Zone;
+import lineage2.gameserver.listener.zone.OnZoneEnterLeaveListener;
 
 /**
  *
@@ -29,27 +31,75 @@ public class Vullock extends Reflection {
 	private static final int Golem2 = 23123;   
 	private static final int Golem3 = 23123;
 	private static final int Golem4 = 23123;
-	private Player player;
+	
+	
+	private static final int Door = 24220008;
 	private Location Golem1Loc = new Location(152712,142936,-12762,57343);
 	private Location Golem2Loc = new Location(154360,142936,-12762,40959);
 	private Location Golem3Loc = new Location(154360,141288,-12762,25029);
 	private Location Golem4Loc = new Location(152712,141288,-12762,8740);
     private Location vullockspawn = new Location(153576,142088,-12762,16383);
-	private DeathListener _deathListener = new DeathListener();
+	
+	private ZoneListener _epicZoneListener = new ZoneListener();
+    private DeathListener _deathListener = new DeathListener();
 	private CurrentHpListener _currentHpListener = new CurrentHpListener();
+	
+	private AtomicInteger raidplayers = new AtomicInteger();
+	
 	private static final long BeforeDelay = 60 * 1000L;
 	private static final long BeforeDelayVDO = 42 * 1000L;
+	
+	
+	private boolean _entryLocked = false;
+	private boolean _startLaunched = false;
 	//private boolean _lockedTurn = false;
 	private static Territory centralRoomPoint = new Territory().add(new Polygon().add(152712,142936).add(154360,142936).add(154360,141288).add(152712,141288).setZmax(-12862).setZmin(-12700));
 	
-   @Override
-   public void onPlayerEnter(Player player) {
-        super.onPlayerEnter(player);
-		ThreadPoolManager.getInstance().schedule(new FirstStage(), BeforeDelayVDO);
-		ThreadPoolManager.getInstance().schedule(new VullockSpawn(this), BeforeDelay);
-		
-    }
+  
+	@Override
+	protected void onCreate()
+	{
+		super.onCreate();
+		getZone("[baylor_epic]").addListener(_epicZoneListener);
+	}	
 	
+   
+	public class ZoneListener implements OnZoneEnterLeaveListener
+	{
+		@Override
+		public void onZoneEnter(Zone zone, Creature cha)
+		{
+			if(_entryLocked)
+				return;
+
+			Player player = cha.getPlayer();
+			if(player == null || !cha.isPlayer())
+				return;
+
+			if(checkstartCond(raidplayers.incrementAndGet()))
+			{
+				ThreadPoolManager.getInstance().schedule(new FirstStage(), BeforeDelayVDO);
+				ThreadPoolManager.getInstance().schedule(new VullockSpawn(), BeforeDelay);
+				_startLaunched = true;
+			}
+		}
+
+		@Override
+		public void onZoneLeave(Zone zone, Creature cha)
+		{
+			Player player = cha.getPlayer();
+			if(player == null || !cha.isPlayer())
+				return;
+
+			raidplayers.decrementAndGet();
+		}
+	}
+   
+	private boolean checkstartCond(int raidplayers)
+	{
+		return !(raidplayers < getInstancedZone().getMinParty() || _startLaunched);
+	}
+   
 	private class DeathListener implements OnDeathListener {
         @Override
         public void onDeath(Creature self, Creature killer) {
@@ -66,6 +116,8 @@ public class Vullock extends Reflection {
 		@Override
 		public void runImpl() throws Exception
 		{
+			_entryLocked = true;
+			closeDoor(Door);
 			for(Player player : getPlayers())
 				player.showQuestMovie(SceneMovie.si_barlog_opening);			
 		}
@@ -108,26 +160,26 @@ public class Vullock extends Reflection {
         public void runImpl() {
 		_log.info("Cave Active");
         NpcInstance Slave1 = addSpawnWithoutRespawn(VullockSlave, Territory.getRandomLoc(centralRoomPoint, getGeoIndex()), 150);
-		Slave1.getAI().Attack(player, true, false);
+		//Slave1.getAI().Attack(player, true, false);
 		NpcInstance Slave2 = addSpawnWithoutRespawn(VullockSlave, Territory.getRandomLoc(centralRoomPoint, getGeoIndex()), 150);
-		Slave2.getAI().Attack(player, true, false);
+		//Slave2.getAI().Attack(player, true, false);
 		NpcInstance Slave3 = addSpawnWithoutRespawn(VullockSlave, Territory.getRandomLoc(centralRoomPoint, getGeoIndex()), 150);
-		Slave3.getAI().Attack(player, true, false);
+		//Slave3.getAI().Attack(player, true, false);
 		NpcInstance Slave4 = addSpawnWithoutRespawn(VullockSlave, Territory.getRandomLoc(centralRoomPoint, getGeoIndex()), 150);
-		Slave4.getAI().Attack(player, true, false);
+		//Slave4.getAI().Attack(player, true, false);
 		NpcInstance Slave5 = addSpawnWithoutRespawn(VullockSlave, Territory.getRandomLoc(centralRoomPoint, getGeoIndex()), 150);
-		Slave5.getAI().Attack(player, true, false);
+		//Slave5.getAI().Attack(player, true, false);
 		NpcInstance Slave6 = addSpawnWithoutRespawn(VullockSlave, Territory.getRandomLoc(centralRoomPoint, getGeoIndex()), 150);
-		Slave6.getAI().Attack(player, true, false);
+		//Slave6.getAI().Attack(player, true, false);
 
         }
     }
 	
 	public class VullockSpawn extends RunnableImpl {
-        Reflection _r;
 
-        public VullockSpawn(Reflection r) {
-            _r = r;
+
+        public VullockSpawn() {
+
         }
 
         @Override
@@ -140,10 +192,10 @@ public class Vullock extends Reflection {
 			NpcInstance VullockStay = addSpawnWithoutRespawn(Vullock, Loc, 0);
 			VullockStay.addListener(_deathListener);
 			VullockStay.addListener(_currentHpListener);
-			_r.addSpawnWithoutRespawn(Golem1, Loc1, 0);
-			_r.addSpawnWithoutRespawn(Golem2, Loc2, 0);
-			_r.addSpawnWithoutRespawn(Golem3, Loc3, 0);
-			_r.addSpawnWithoutRespawn(Golem4, Loc4, 0);
+			addSpawnWithoutRespawn(Golem1, Loc1, 0);
+			addSpawnWithoutRespawn(Golem2, Loc2, 0);
+			addSpawnWithoutRespawn(Golem3, Loc3, 0);
+			addSpawnWithoutRespawn(Golem4, Loc4, 0);
         }
     }
 }
