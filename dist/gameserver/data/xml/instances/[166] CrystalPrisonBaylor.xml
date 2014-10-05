@@ -13,5 +13,8 @@
 		<doors>
 			<door id="24220008" opened="true"/>
 		</doors>
+			<zones>
+			<zone name="[baylor_epic]" active="true"/>
+		</zones>
     </instance>
 </list>

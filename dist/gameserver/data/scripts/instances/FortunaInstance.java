@@ -48,6 +48,7 @@ public class FortunaInstance extends Reflection
 	{
 		super.onCreate();
 		getZone("[fortuna_start]").addListener(_epicZoneListener);
+		openDoor(21120001);
 	}
 	
 	@Override

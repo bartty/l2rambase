@@ -13,7 +13,7 @@
 		<spawns>
 		</spawns>
 		<doors>
-			<door id="21120001" opened="true" />
+			<door id="21120001" opened="true"/>
 		</doors>
         <zones>
             <zone name="[fortuna_start]" active="true"/>

@@ -19,7 +19,7 @@
 	</skill>
 	<skill id="99002" levels="15" name="Whirlwind">
     <!-- Swings a spear to attack nearby enemies with 554 Power added to P. Atk. Requires a polearm to be equipped. Ignores Shield Defense. Over-hit and Critical hit are possible. -->
-	   	<table name="#power">1500 1800 2100 2400 2400 3000 3300 3600 3900 4200 4500 4800 5100 5400 5700</table>
+	   	<table name="#power">500 800 1100 1200 1400 1600 1800 2000 2100 2200 2300 2400 2500 2600 2700</table>
 		<table name="#magicLevel">85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 </table>
 		<set name="icon" val="icon.skill0000"/>
 		<set name="coolTime" val="300"/>

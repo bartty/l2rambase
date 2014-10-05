@@ -1,12 +1,18 @@
 package instances;
 
-
+import java.util.concurrent.atomic.AtomicInteger;
 import lineage2.commons.threading.RunnableImpl;
 import lineage2.gameserver.ThreadPoolManager;
 import lineage2.gameserver.model.Player;
 import lineage2.gameserver.model.entity.Reflection;
 import lineage2.gameserver.network.serverpackets.ExStartScenePlayer;
 import lineage2.gameserver.utils.Location;
+import lineage2.gameserver.listener.actor.OnDeathListener;
+import lineage2.gameserver.model.instances.NpcInstance;
+import lineage2.gameserver.model.Creature;
+
+import lineage2.gameserver.model.Zone;
+import lineage2.gameserver.listener.zone.OnZoneEnterLeaveListener;
 
 /**
  *
@@ -14,7 +20,12 @@ import lineage2.gameserver.utils.Location;
  */
 
 public class Baylor extends Reflection {
+	
+	
+	
 	private static final int Baylor = 29213;
+	private static final int BaylorDummy = 60001;
+	NpcInstance trueBaylor;
 	private static final int Golem1 = 23123;
 	private static final int Golem2 = 23123;   
 	private static final int Golem3 = 23123;
@@ -29,13 +40,61 @@ public class Baylor extends Reflection {
 	private static final long BeforeDelay = 60 * 1000L;
 	private static final long BeforeDelayVDO = 47 * 1000L;
 	
-   @Override
-   public void onPlayerEnter(Player player) {
-        super.onPlayerEnter(player);
-		ThreadPoolManager.getInstance().schedule(new FirstStage(), BeforeDelayVDO);
-		ThreadPoolManager.getInstance().schedule(new BaylorSpawn(this), BeforeDelay);
-    }
-        //ExStartScenePlayer.SCENE_BALROG_OPENING
+	private static final int Door = 24220008;
+	private boolean _entryLocked = false;
+	private boolean _startLaunched = false;
+	private ZoneListener _epicZoneListener = new ZoneListener();
+	
+	private DeathListener _deathListener1 = new DeathListener();
+	private DeathListener _deathListener2 = new DeathListener();	
+	
+	private AtomicInteger raidplayers = new AtomicInteger();
+	
+   
+	@Override
+	protected void onCreate()
+	{
+		super.onCreate();
+		getZone("[baylor_epic]").addListener(_epicZoneListener);
+	}	
+	
+	
+	public class ZoneListener implements OnZoneEnterLeaveListener
+	{
+		@Override
+		public void onZoneEnter(Zone zone, Creature cha)
+		{
+			if(_entryLocked)
+				return;
+
+			Player player = cha.getPlayer();
+			if(player == null || !cha.isPlayer())
+				return;
+
+			if(checkstartCond(raidplayers.incrementAndGet()))
+			{
+				ThreadPoolManager.getInstance().schedule(new FirstStage(), BeforeDelayVDO);
+				ThreadPoolManager.getInstance().schedule(new BaylorSpawn(), BeforeDelay);
+				_startLaunched = true;
+			}
+		}
+
+		@Override
+		public void onZoneLeave(Zone zone, Creature cha)
+		{
+			Player player = cha.getPlayer();
+			if(player == null || !cha.isPlayer())
+				return;
+
+			raidplayers.decrementAndGet();
+		}
+	}
+	private boolean checkstartCond(int raidplayers)
+	{
+		return !(raidplayers < getInstancedZone().getMinParty() || _startLaunched);
+	}
+	
+   //ExStartScenePlayer.SCENE_BALROG_OPENING
 		//player.showQuestMovie(SceneMovie.si_barlog_opening);
 	private class FirstStage extends RunnableImpl
 	{
@@ -43,19 +102,45 @@ public class Baylor extends Reflection {
 		public void runImpl() throws Exception
 		{
 
-			//closeDoor(Door);
+			_entryLocked = true;
+			closeDoor(Door);
 
 			for(Player player : getPlayers())
-				player.showQuestMovie(ExStartScenePlayer.SCENE_SC_NOBLE_OPENING);
+				player.showQuestMovie(ExStartScenePlayer.SCENE_SI_BARLOG_OPENING);
 				_log.info("43 Video");
 					
 		}
 	}
+	
+	private class DeathListener implements OnDeathListener
+	{
+		@Override
+		public void onDeath(Creature self, Creature killer)
+		{
+			if(self.isNpc())
+			{
+					if(self.getNpcId() == BaylorDummy)
+					{
+			
+						trueBaylor.setIsInvul(false);
+					}
+					else
+					{
+						for(Player player : getPlayers())
+						{
+							player.showQuestMovie(ExStartScenePlayer.SCENE_SI_BARLOG_STORY);
+						}
+					}
+			}
+		}
+	}
+	
+	
 	public class BaylorSpawn extends RunnableImpl {
-        Reflection _r;
 
-        public BaylorSpawn(Reflection r) {
-            _r = r;
+
+        public BaylorSpawn() {
+
         }
 
         @Override
@@ -66,12 +151,17 @@ public class Baylor extends Reflection {
 			Location Loc4 = Golem4Loc;
             Location Loc = vullockspawn1;
 			Location Loc5 = vullockspawn2;
-            _r.addSpawnWithoutRespawn(Baylor, Loc, 0);
-			_r.addSpawnWithoutRespawn(Baylor, Loc5, 0);
-			_r.addSpawnWithoutRespawn(Golem1, Loc1, 0);
-			_r.addSpawnWithoutRespawn(Golem2, Loc2, 0);
-			_r.addSpawnWithoutRespawn(Golem3, Loc3, 0);
-			_r.addSpawnWithoutRespawn(Golem4, Loc4, 0);
+            trueBaylor=addSpawnWithoutRespawn(Baylor, Loc, 0);
+            trueBaylor.addListener(_deathListener2);
+			
+			trueBaylor.setIsInvul(true);
+            NpcInstance bDummy =addSpawnWithoutRespawn(BaylorDummy, Loc5, 0);
+			bDummy.addListener(_deathListener1);
+			
+			addSpawnWithoutRespawn(Golem1, Loc1, 0);
+			addSpawnWithoutRespawn(Golem2, Loc2, 0);
+			addSpawnWithoutRespawn(Golem3, Loc3, 0);
+			addSpawnWithoutRespawn(Golem4, Loc4, 0);
         }
     }
 }
